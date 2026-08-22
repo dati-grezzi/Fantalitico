@@ -279,6 +279,20 @@ async def main_async():
 
     if not partite:
         print("\n⚠️  ATTENZIONE: nessuna partita estratta dal calendario.")
+        print("Possibile causa: la pagina potrebbe aver cambiato struttura ora che")
+        print("le partite della giornata sono in corso/giocate (prima era in modalità")
+        print("anteprima). Diagnostica sull'HTML statico reale:\n")
+        idx = html_statico.find('data-match-id')
+        if idx >= 0:
+            print("="*70)
+            print("DIAGNOSTICA — HTML reale attorno al primo 'data-match-id':")
+            print("="*70)
+            print(html_statico[max(0, idx-300): idx+3000])
+            print("="*70)
+        else:
+            print("Nemmeno 'data-match-id' trovato nell'HTML — la struttura è cambiata")
+            print("più profondamente. Primi 3000 caratteri della pagina:")
+            print(html_statico[:3000])
         return 1
 
     return 0
