@@ -1673,7 +1673,7 @@ function renderMercato(){
     Object.values(S.leagueRosters).forEach(cods=>cods.forEach(c=>owned2.add(c)));
     const freeByRoleFvm={P:[],D:[],C:[],A:[]};
     for(const g of S.listone.giocatori){
-      if(owned2.has(g.id) || g.fvm==null || !freeByRoleFvm[g.ruolo]) continue;
+      if(owned2.has(g.id) || g.fvm==null || g.fuoriSerieA || !freeByRoleFvm[g.ruolo]) continue;
       freeByRoleFvm[g.ruolo].push(g);
     }
     ROLES.forEach(r=>freeByRoleFvm[r].sort((a,b)=>(b.fvm||0)-(a.fvm||0)));
@@ -1698,7 +1698,7 @@ function renderMercato(){
   const owned=new Set();
   Object.values(S.leagueRosters).forEach(cods=>cods.forEach(c=>owned.add(c)));
   const freeByRole={P:[],D:[],C:[],A:[]};
-  for(const p of S.db){ if(p.id==null||owned.has(p.id)) continue; const r=roleOf(p); if(freeByRole[r]) freeByRole[r].push(p); }
+  for(const p of S.db){ if(p.id==null||owned.has(p.id)||p.fuoriSerieA) continue; const r=roleOf(p); if(freeByRole[r]) freeByRole[r].push(p); }
   ROLES.forEach(r=>freeByRole[r].sort((a,b)=>marketScore(b)-marketScore(a)));
 
   // i tuoi peggiori (per punteggio di mercato: scarso rendimento O poca titolarità)
