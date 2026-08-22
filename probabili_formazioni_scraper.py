@@ -131,7 +131,7 @@ def parse_titolarita(risultati_dom):
     return giocatori
 
 
-MATCH_BLOCK_START = re.compile(r'<li data-match-id="(\d+)" data-teams-id="(\d+)\|(\d+)" class="match">')
+MATCH_BLOCK_START = re.compile(r'<li data-match-id="(\d+)"[^>]*?data-teams-id="(\d+)\|(\d+)"[^>]*?class="match">')
 TEAM_HOME_PATTERN = re.compile(r'class="team-home\s*"[\s\S]{0,400}?href="https://www\.fantacalcio\.it/serie-a/squadre/([a-z\-]+)"')
 TEAM_AWAY_PATTERN = re.compile(r'class="team-away\s*"[\s\S]{0,400}?href="https://www\.fantacalcio\.it/serie-a/squadre/([a-z\-]+)"')
 START_DATE_PATTERN = re.compile(r'<meta itemprop="startDate" content="([^"]+)"')
