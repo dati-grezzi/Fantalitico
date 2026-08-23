@@ -2552,6 +2552,10 @@ function renderAltro(){
 }
 
 function render(){
+  try{
+    localStorage.setItem("fantalitico-tab", S.tab);
+    if(S._oggiSquadra) localStorage.setItem("fantalitico-oggisquadra", S._oggiSquadra);
+  }catch(e){}
   const attivo = SOTTO_ALTRO.includes(S.tab) || SOTTO_ASTA.includes(S.tab) ? "altro" : SOTTO_FORMAZIONE.includes(S.tab) ? "formazione" : S.tab;
   document.querySelectorAll("nav button").forEach(b =>
     b.classList.toggle("on", b.dataset.tab === attivo));
@@ -2614,6 +2618,21 @@ function toggleTheme() {
 applyTheme(savedTheme);
 
 loadLocal();
+
+// Ripristina l'ultima schermata aperta (se l'app viene ricaricata da zero dal
+// sistema operativo dopo essere stata minimizzata — comune su mobile — l'utente
+// riparte da dove era, non sempre dalla Rosa). Validato contro le schermate
+// esistenti, per non rompersi se un aggiornamento futuro ne rimuove qualcuna.
+try{
+  const tabSalvato = localStorage.getItem("fantalitico-tab");
+  const TAB_VALIDI = ["rosa","giornata","formazione","altro","fattorec","sfida","mercato",
+    "cellha","listone","asta","regolelega","top11","calendariolega","dettagliformazione",
+    "piucomprati","oggigiocherebbero","oggigiocherebberosquadra"];
+  if(tabSalvato && TAB_VALIDI.includes(tabSalvato)) S.tab = tabSalvato;
+  const squadraSalvata = localStorage.getItem("fantalitico-oggisquadra");
+  if(squadraSalvata) S._oggiSquadra = squadraSalvata;
+}catch(e){}
+
 loadData().then(render).catch(() => {
   el("main").innerHTML = `<div class="empty">⚠ Impossibile caricare i dati.<br>
     Verifica che la cartella <b>data/</b> con i JSON sia nel repository.</div>`;
