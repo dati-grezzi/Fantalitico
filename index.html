@@ -1741,7 +1741,7 @@ function renderMercato(){
 
 /* ---------- routing ---------- */
 const SOTTO_ALTRO = ["sfida","mercato","fattorec","cellha","listone","asta","regolelega","top11","calendariolega"];
-const SOTTO_ASTA = ["piucomprati", "oggigiocherebbero", "oggigiocherebberosquadra"];
+const SOTTO_ASTA = ["piucomprati", "oggigiocherebbero", "oggigiocherebberosquadra", "miglioriperreparto"];
 const SOTTO_FORMAZIONE = ["dettagliformazione"];
 
 /* nome per il confronto: toglie l'iniziale puntata del nome (es. "Sucic P." → "sucic") */
@@ -1964,6 +1964,9 @@ function renderAsta(){
 
   head += `<button class="btn" style="width:100%; padding:10px; margin-top:8px"
     onclick="S.tab='oggigiocherebbero'; render()">⚽ Oggi giocherebbero così — le 20 squadre</button>`;
+
+  head += `<button class="btn" style="width:100%; padding:10px; margin-top:8px"
+    onclick="S.tab='miglioriperreparto'; render()">🏆 Migliori per reparto — ordinati per FVM</button>`;
 
   // barra di ricerca per aggiungere
   head += `<input class="ch-input" type="text" placeholder="Aggiungi un giocatore…" value="${esc(S._astaQ||"")}"
@@ -2411,6 +2414,63 @@ function renderOggiGiocherebberoSquadra(){
   }
   el("main").innerHTML = html;
 }
+function insiemeTitolariOggi(){
+  // Costruisce un Set di nomi normalizzati di tutti i giocatori titolari nelle
+  // 20 squadre di "Oggi giocherebbero così" — usato per l'etichetta T.
+  const set = new Set();
+  for(const sq of Object.values(OGGI_GIOCHEREBBERO)){
+    for(const ruolo of ["P","D","C","A"]){
+      for(const nome of (sq[ruolo]||[])) set.add(normName(nome));
+    }
+  }
+  return set;
+}
+function renderMiglioriPerReparto(){
+  if(!S.listone || !S.listone.giocatori || !S.listone.giocatori.length){
+    el("main").innerHTML = `<div class="empty">Importa prima il listone (Altro → Listone) per vedere questa schermata.<br>
+      <button class="btn primary" onclick="S.tab='listone'; render()">Vai a Listone</button></div>`;
+    return;
+  }
+  const titolariOggi = insiemeTitolariOggi();
+  const ruoloAttivo = S._migliRepRuolo || "P";
+  const q = (S._migliRepQ || "").trim();
+  const nq = normName(q);
+
+  let righe = S.listone.giocatori.filter(g => g.ruolo === ruoloAttivo && g.fvm != null && !g.fuoriSerieA);
+  if(nq.length >= 2) righe = righe.filter(g => nomeMatch(nomeCore(g.nome), nq));
+  righe.sort((a,b) => (b.fvm||0) - (a.fvm||0));
+  const top = righe.slice(0, 60);
+
+  let html = `<h1>Migliori per reparto</h1>
+    <div class="sub" style="margin-bottom:10px">Ordinati per FVM. La spunta <b style="color:var(--fluo)">T</b> indica che il giocatore risulta titolare in "Oggi giocherebbero così". Tocca "+" per aggiungerlo ai tuoi appunti d'asta.</div>
+    <input class="ch-input" type="text" placeholder="Cerca un giocatore…" value="${esc(S._migliRepQ||"")}"
+      oninput="S._migliRepQ=this.value; render()" autocomplete="off">
+    <div class="rolechips" style="margin:10px 0">
+      ${["P","D","C","A"].map(r => `<button class="rolechip${ruoloAttivo===r?' on':''}"
+        style="${ruoloAttivo===r?`background:${ROLE_COLOR[r]}; border-color:${ROLE_COLOR[r]}; color:#fff`:''}"
+        onclick="S._migliRepRuolo='${r}'; render()">${r}</button>`).join("")}
+    </div>`;
+
+  html += top.map(g => {
+    const inAsta = S.asta?.giocatori?.some(x => x.id === g.id);
+    const eTitolare = titolariOggi.has(normName(g.nome));
+    return `<div class="card" style="padding:10px 12px; margin-bottom:6px; display:flex; align-items:center; gap:10px">
+      <div style="flex:1; min-width:0">
+        <div style="font-weight:700; display:flex; align-items:baseline; gap:6px; min-width:0">
+          <span style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis">${esc(g.nome)}</span>
+          <span style="font-size:12px; color:var(--dim); flex-shrink:0">${esc(g.squadra||"")}</span>
+          ${eTitolare ? `<span class="chip" style="color:var(--fluo); border-color:var(--fluo); flex-shrink:0" title="Titolare in Oggi giocherebbero così">T</span>` : ""}
+        </div>
+        <div class="sub" style="margin-top:3px"><b style="color:var(--fluo)">FVM ${g.fvm}</b> · Qt.A ${g.qt ?? "–"}</div>
+      </div>
+      <button class="addbtn" ${inAsta?"disabled":""} onclick="astaAdd({id:${JSON.stringify(g.id)}, nome:${JSON.stringify(g.nome)}, squadra:${JSON.stringify(g.squadra||"")}, ruolo:${JSON.stringify(g.ruolo||"?")}, qt:${g.qt??"null"}}); render()">${inAsta?"✓":"+"}</button>
+    </div>`;
+  }).join("");
+
+  if(righe.length > top.length) html += `<div class="sub" style="text-align:center; margin-top:8px">Altri ${righe.length-top.length} — affina la ricerca per vederli</div>`;
+
+  el("main").innerHTML = html;
+}
 function renderPiuComprati(){
   const dati = S.prezziRealiAsta ? Object.entries(S.prezziRealiAsta).map(([id,g]) => ({id:+id||id, ...g})) : [];
   if(!dati.length){
@@ -2562,7 +2622,7 @@ function render(){
   ({rosa:renderRosa, giornata:renderGiornata, formazione:renderFormazione, altro:renderAltro,
     fattorec:renderFattoreC, sfida:renderSfida, mercato:renderMercato, cellha:renderCellHa, listone:renderListone, asta:renderAsta, regolelega:renderRegoleLega, top11:renderTop11, calendariolega:renderCalendarioLega,
     dettagliformazione:renderDettagliFormazione, piucomprati:renderPiuComprati,
-    oggigiocherebbero:renderOggiGiocherebbero, oggigiocherebberosquadra:renderOggiGiocherebberoSquadra})[S.tab]();
+    oggigiocherebbero:renderOggiGiocherebbero, oggigiocherebberosquadra:renderOggiGiocherebberoSquadra, miglioriperreparto:renderMiglioriPerReparto})[S.tab]();
   if(SOTTO_ASTA.includes(S.tab)){
     const m=el("main");
     const back=document.createElement("div");
@@ -2627,7 +2687,7 @@ try{
   const tabSalvato = localStorage.getItem("fantalitico-tab");
   const TAB_VALIDI = ["rosa","giornata","formazione","altro","fattorec","sfida","mercato",
     "cellha","listone","asta","regolelega","top11","calendariolega","dettagliformazione",
-    "piucomprati","oggigiocherebbero","oggigiocherebberosquadra"];
+    "piucomprati","oggigiocherebbero","oggigiocherebberosquadra","miglioriperreparto"];
   if(tabSalvato && TAB_VALIDI.includes(tabSalvato)) S.tab = tabSalvato;
   const squadraSalvata = localStorage.getItem("fantalitico-oggisquadra");
   if(squadraSalvata) S._oggiSquadra = squadraSalvata;
