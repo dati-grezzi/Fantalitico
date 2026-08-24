@@ -2373,10 +2373,11 @@ function pitchSVGStatico(sq){
   for(const [role, nomi, y] of rows){
     nomi.forEach((nome, i) => {
       const x = 340/(nomi.length+1)*(i+1);
-      const maxc = nomi.length >= 5 ? 7 : nomi.length === 4 ? 8 : 11;
+      const maxc = nomi.length >= 5 ? 9 : nomi.length === 4 ? 9 : 11;
+      const fontSize = nomi.length >= 5 ? 10.5 : nomi.length === 4 ? 12 : 14;
       const nm = nome.length > maxc ? nome.slice(0, maxc-1)+"…" : nome;
       g += `<circle cx="${x}" cy="${y}" r="17" fill="var(--card)" stroke="${ROLE_COLOR[role]}" stroke-width="2"/>
-        <text x="${x}" y="${y+34}" text-anchor="middle" font-size="14" font-weight="700" fill="var(--chalk)">${esc(nm)}</text>`;
+        <text x="${x}" y="${y+34}" text-anchor="middle" font-size="${fontSize}" font-weight="700" fill="var(--chalk)">${esc(nm)}</text>`;
     });
   }
   return `<svg viewBox="0 0 340 396" style="width:100%; max-height:460px">
@@ -2463,7 +2464,7 @@ function renderMiglioriPerReparto(){
         </div>
         <div class="sub" style="margin-top:3px"><b style="color:var(--fluo)">FVM ${g.fvm}</b> · Qt.A ${g.qt ?? "–"}</div>
       </div>
-      <button class="addbtn" ${inAsta?"disabled":""} onclick="astaAdd({id:${JSON.stringify(g.id)}, nome:${JSON.stringify(g.nome)}, squadra:${JSON.stringify(g.squadra||"")}, ruolo:${JSON.stringify(g.ruolo||"?")}, qt:${g.qt??"null"}}); render()">${inAsta?"✓":"+"}</button>
+      <button class="addbtn" ${inAsta?"disabled":""} onclick="astaAdd(${JSON.stringify({id:g.id, nome:g.nome, squadra:g.squadra||"", ruolo:g.ruolo||"?", qt:g.qt??null}).replace(/"/g,"&quot;")}); render()">${inAsta?"✓":"+"}</button>
     </div>`;
   }).join("");
 
@@ -2512,7 +2513,7 @@ function renderPiuComprati(){
             g.prezzo_350!=null?`≈ ${fmt(g.prezzo_350,0)} cr (lega 350)`:"prezzo n/d"}
         </div>
       </div>
-      <button class="addbtn" ${inAsta?"disabled":""} onclick="astaAdd({id:${JSON.stringify(g.id)}, nome:${JSON.stringify(g.nome)}, squadra:${JSON.stringify(g.squadra||"")}, ruolo:${JSON.stringify(g.ruolo||"?")}, qt:${g.quotazione??"null"}}); render()">${inAsta?"✓":"+"}</button>
+      <button class="addbtn" ${inAsta?"disabled":""} onclick="astaAdd(${JSON.stringify({id:g.id, nome:g.nome, squadra:g.squadra||"", ruolo:g.ruolo||"?", qt:g.quotazione??null}).replace(/"/g,"&quot;")}); render()">${inAsta?"✓":"+"}</button>
     </div>`;
   }).join("");
 
