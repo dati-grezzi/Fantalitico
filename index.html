@@ -872,24 +872,32 @@ function buildNameIndex(){
 }
 function parseLeagueWorkbook(buf){
   const wb=XLSX.read(buf,{type:"array"});
-  const ws=wb.Sheets["TutteLeRose"]||wb.Sheets[wb.SheetNames[0]];
-  const rows=XLSX.utils.sheet_to_json(ws,{header:1,raw:true});
-  const RS=new Set(["P","D","C","A"]); const teams={}; let league=null;
-  for(const off of [0,5]){
-    let cur=null;
-    for(const r of rows){
-      const a=(r[off]??"").toString().trim(), b=(r[off+1]??"").toString().trim();
-      if(!a) continue;
-      const low=a.toLowerCase();
-      if(low.startsWith("rose lega")){ if(!league) league=a.replace(/rose lega/i,"").trim()||null; continue; }
-      if(RS.has(a) && b){ if(cur) teams[cur].push({ruolo:a, nome:b, squadra:(r[off+2]??"").toString().trim()}); }
-      else if(low!=="ruolo" && !a.startsWith("http") && !a.startsWith("*")){
-        cur=a; if(!teams[cur]) teams[cur]=[];
-      }
+  const ws=wb.Sheets["ROSE"]||wb.Sheets[wb.SheetNames[0]];
+  const grid=XLSX.utils.sheet_to_json(ws,{header:1,raw:true,defval:null});
+  if(!grid.length) throw new Error("foglio vuoto");
+
+  // Formato attuale (cambiato rispetto al precedente): niente più colonne
+  // Ruolo/Nome/Squadra — solo Nome+Costo, squadre affiancate a gruppi di 3
+  // colonne (nome squadra, "costo", separatore vuoto), righe 2..N giocatori,
+  // ultima riga "totale". Il ruolo si ricava dal matching col listone.
+  const header = grid[0] || [];
+  const teams = {};
+  for(let c=0; c<header.length; c+=3){
+    const teamName = header[c];
+    if(!teamName || typeof teamName!=="string") continue;
+    const players=[];
+    for(let r=1; r<grid.length; r++){
+      const riga = grid[r]||[];
+      const nome = riga[c];
+      if(!nome || typeof nome!=="string") continue;
+      if(nome.trim().toLowerCase()==="totale") continue;
+      const costo = riga[c+1];
+      players.push({nome:nome.trim(), squadra:"", costo:(typeof costo==="number")?costo:null});
     }
+    if(players.length) teams[teamName.trim()] = players;
   }
-  const out={}; for(const k in teams){ if(teams[k].length>=15) out[k]=teams[k]; }
-  return {league, teams:out};
+  const out={}; for(const k in teams){ if(teams[k].length>=10) out[k]=teams[k]; }
+  return {league:null, teams:out};
 }
 function syncExtraNamesIntoById(){
   // Giocatori non riconosciuti durante un import (ID sintetico "x:nome") non sono mai
@@ -930,6 +938,15 @@ function nomeDaCod(id){
   if(ex) return {nome:ex.nome, squadra:ex.squadra, ruolo:"?", inDb:false};
   return null;
 }
+/* Il nuovo formato del file rose non riporta più il nome della lega nel
+   contenuto — lo ricavo dal nome del file stesso (es.
+   "falsacalciotrepuntozero-rosters-123.xlsx" -> "falsacalciotrepuntozero"),
+   così un reimport dello stesso file aggiorna la lega esistente invece di
+   crearne una copia duplicata ogni volta. */
+function estraiNomeLegaDaFile(filename){
+  const m = /^(.+?)-rosters-\d+/i.exec(filename||"");
+  return m ? m[1] : null;
+}
 function triggerImport(){ el("leaguefile").click(); }
 function onLeagueFile(input){
   const file=input.files && input.files[0]; if(!file) return;
@@ -944,10 +961,12 @@ function onLeagueFile(input){
         rosters[name]=cods; report[name]={n:players.length, matched:cods.length, missed:missed.length, missedNames:missed};
       }
       syncExtraNamesIntoById();   // stub subito, non solo al prossimo reload della pagina
-      // nome lega dal file, o generato se assente/duplicato
-      let lname=league || ("Lega " + (Object.keys(S.leagues).length+1));
-      if(S.leagues[lname] && league) lname=league;            // stesso nome → aggiorna quella lega
-      else if(S.leagues[lname]) lname=lname+" ("+(Object.keys(S.leagues).length+1)+")";
+      // nome lega: dal file (se il formato lo riporta), altrimenti dal nome del
+      // file caricato, altrimenti generato — un identificatore stabile fa sì
+      // che un reimport aggiorni la stessa lega invece di duplicarla
+      const nomeStabile = league || estraiNomeLegaDaFile(file.name);
+      let lname = nomeStabile || ("Lega " + (Object.keys(S.leagues).length+1));
+      if(!nomeStabile && S.leagues[lname]) lname = lname+" ("+(Object.keys(S.leagues).length+1)+")";
       S.leagues[lname]={rosters, myTeam:(S.leagues[lname]?S.leagues[lname].myTeam:null), roster:(S.leagues[lname]?S.leagues[lname].roster:[])};
       S.currentLeague=lname; syncActive();
       S._importReport=report; saveLocal(); render();
