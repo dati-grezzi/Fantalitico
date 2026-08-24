@@ -957,38 +957,72 @@ function onLeagueFile(input){
   input.value="";
 }
 /* ============================================================
-   CALENDARIO DI LEGA — round-robin generato automaticamente
-   (metodo del cerchio, andata+ritorno), editabile manualmente
-   perché il vero sorteggio della lega può differire.
+   CALENDARIO DI LEGA — importato da file Excel (export ufficiale
+   fantacalcio.it leghe, foglio "Calendario"). Niente più generazione
+   casuale: il file riporta il vero sorteggio della lega.
    ============================================================ */
-function generateRoundRobin(teams){
-  const list = [...teams];
-  const bye = "(riposo)";
-  if(list.length % 2 === 1) list.push(bye);
-  const n = list.length, roundsAndata = n - 1;
-  const cal = {};
-  let arr = [...list];
-  for(let r = 0; r < roundsAndata; r++){
-    const giornata = r + 1;
-    cal[giornata] = {};
-    for(let i = 0; i < n/2; i++){
-      const a = arr[i], b = arr[n-1-i];
-      if(a !== bye && b !== bye){ cal[giornata][a] = b; cal[giornata][b] = a; }
+function parseCalendarioLegaWorkbook(buf){
+  const wb = XLSX.read(buf, {type:"array"});
+  const ws = wb.Sheets["Calendario"] || wb.Sheets[wb.SheetNames[0]];
+  if(!ws) throw new Error("nessun foglio trovato nel file");
+  const grid = XLSX.utils.sheet_to_json(ws, {header:1, raw:true, defval:null});
+
+  const pattern = /^(\d+)ª\s*Giornata\s*lega$/i;
+  const calendario = {};        // {giornata: [[teamA,teamB], ...]}
+  const squadreViste = new Set();
+
+  for(let r = 0; r < grid.length; r++){
+    const riga = grid[r] || [];
+    for(let c = 0; c < riga.length; c++){
+      const val = riga[c];
+      if(typeof val !== "string") continue;
+      const m = pattern.exec(val.trim());
+      if(!m) continue;
+      const giornata = parseInt(m[1], 10);
+      if(!calendario[giornata]) calendario[giornata] = [];
+      for(let i = 1; i <= 5; i++){          // 5 partite = 10 squadre per giornata
+        const rigaPartita = grid[r+i];
+        if(!rigaPartita) continue;
+        const team = rigaPartita[c], opp = rigaPartita[c+3];
+        if(team && opp){
+          calendario[giornata].push([String(team).trim(), String(opp).trim()]);
+          squadreViste.add(String(team).trim());
+          squadreViste.add(String(opp).trim());
+        }
+      }
     }
-    arr = [arr[0], ...arr.slice(-1), ...arr.slice(1, -1)];   // ruota tutti tranne il primo
   }
-  for(let r = 0; r < roundsAndata; r++){                     // ritorno: stessi accoppiamenti
-    cal[roundsAndata + r + 1] = {...cal[r + 1]};
-  }
-  return cal;
+  if(Object.keys(calendario).length === 0)
+    throw new Error("nessuna giornata riconosciuta — formato file diverso da quello atteso (cercavo celle tipo \"1ª Giornata lega\")");
+  return {calendario, squadre:[...squadreViste]};
 }
-function regenCalendario(){
-  const teams = Object.keys(S.leagueRosters);
-  if(teams.length < 2) return;
-  const L = S.leagues[S.currentLeague];
-  L.calendar = generateRoundRobin(teams);
-  S.leagueCalendar = L.calendar;
-  saveLocal(); render();
+function onCalendarioLegaFile(input){
+  const file = input.files && input.files[0]; if(!file){ return; }
+  const reader = new FileReader();
+  reader.onload = e => {
+    try{
+      const {calendario, squadre} = parseCalendarioLegaWorkbook(e.target.result);
+      const teamsLega = Object.keys(S.leagueRosters||{});
+      const nonTrovate = squadre.filter(s => !teamsLega.includes(s));
+
+      const cal = {};
+      for(const [giornataStr, partite] of Object.entries(calendario)){
+        cal[giornataStr] = {};
+        for(const [a,b] of partite){ cal[giornataStr][a] = b; cal[giornataStr][b] = a; }
+      }
+      const L = S.leagues[S.currentLeague];
+      L.calendar = cal;
+      S.leagueCalendar = cal;
+      S._calendarioReport = { nGiornate: Object.keys(cal).length, nonTrovate };
+      saveLocal(); render();
+    }catch(err){
+      S._calendarioReport = {errore: err.message||String(err)};
+      render();
+    }
+  };
+  reader.onerror = () => { S._calendarioReport = {errore:"lettura del file non riuscita"}; render(); };
+  reader.readAsArrayBuffer(file);
+  input.value = "";
 }
 function setCalendarioMatch(giornata, team, opponent){
   const L = S.leagues[S.currentLeague];
@@ -2320,18 +2354,34 @@ function renderCalendarioLega(){
       <button class="btn primary" onclick="S.tab='rosa'; render()">Vai a Rosa → Importa</button></div>`;
     return;
   }
+  const rep = S._calendarioReport;
+  let repHtml = "";
+  if(rep){
+    if(rep.errore){
+      repHtml = `<div class="card" style="padding:12px; margin-bottom:12px; border-color:var(--red)">⚠️ ${esc(rep.errore)}</div>`;
+    }else{
+      repHtml = `<div class="card" style="padding:12px; margin-bottom:12px; border-color:var(--fluo)">
+        ✅ Importate ${rep.nGiornate} giornate.
+        ${rep.nonTrovate.length ? `<br><span style="color:var(--amber)">⚠️ ${rep.nonTrovate.length} nome/i squadra nel file non corrisponde/ono a quelli già importati nella lega: ${rep.nonTrovate.map(esc).join(", ")} — verifica che coincidano esattamente.</span>` : ""}
+      </div>`;
+    }
+  }
   const nGiornate = numGiornateCalendario();
   if(!nGiornate){
-    el("main").innerHTML = `<div class="empty">${ill("formazione")}Nessun calendario ancora generato per <b>${esc(S.currentLeague)}</b>.<br><br>
-      <button class="btn primary" onclick="regenCalendario()">Genera calendario automatico</button><br>
-      <p class="sub" style="margin-top:10px">Round-robin andata+ritorno tra le ${teams.length} squadre.
-      Potrai correggere le partite a mano se il vero sorteggio della lega è diverso.</p></div>`;
+    el("main").innerHTML = `<div class="empty">${ill("formazione")}Nessun calendario ancora importato per <b>${esc(S.currentLeague)}</b>.<br><br>
+      ${repHtml}
+      <label class="btn primary" style="display:inline-block; cursor:pointer">📅 Importa calendario da file
+        <input type="file" accept=".xlsx,.xls" style="display:none" onchange="onCalendarioLegaFile(this)"></label><br>
+      <p class="sub" style="margin-top:10px">Il file Excel del calendario si scarica dalla tua lega su fantacalcio.it
+      (foglio "Calendario"). Potrai correggere le singole partite a mano dopo l'import, se serve.</p></div>`;
     return;
   }
   let html = `<h1>Calendario Lega</h1>
     <p class="sub" style="margin:0 0 14px">${esc(S.currentLeague)} · ${nGiornate} giornate.
-    Modifica le tendine se il sorteggio reale della tua lega è diverso da quello generato.</p>
-    <button class="btn" style="margin-bottom:14px" onclick="if(confirm('Rigenerare da zero? Le modifiche manuali andranno perse.')) regenCalendario()">↻ Rigenera automatico</button>`;
+    Modifica le tendine se una partita è sbagliata, o reimporta il file per sovrascrivere tutto.</p>
+    ${repHtml}
+    <label class="btn" style="display:inline-block; cursor:pointer; margin-bottom:14px">↻ Reimporta da file
+      <input type="file" accept=".xlsx,.xls" style="display:none" onchange="onCalendarioLegaFile(this)"></label>`;
 
   for(let g = 1; g <= nGiornate; g++){
     const partite = S.leagueCalendar[g] || {};
