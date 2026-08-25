@@ -91,6 +91,30 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
         altezza = await page.evaluate("document.body.scrollHeight")
     await page.wait_for_timeout(800)
 
+    # DIAGNOSTICA MIRATA (temporanea) — solo per Roma-Fiorentina, confronta l'HTML
+    # esatto di un giocatore con voto sbagliato (Mancini, id 2296) con uno corretto
+    # (N'Dicka, id 4317), per trovare la differenza strutturale che causa il bug.
+    if casa == "roma" and trasferta == "fiorentina":
+        diag = await page.evaluate("""
+            () => {
+                const out = {};
+                for (const id of ["2296", "4317"]) {
+                    const li = document.querySelector('li[data-id="' + id + '"]');
+                    out[id] = li ? li.outerHTML : "NON TROVATO";
+                }
+                return out;
+            }
+        """)
+        print("\n" + "="*70)
+        print("DIAGNOSTICA MIRATA — Mancini (id 2296, voto sbagliato nei nostri dati):")
+        print("="*70)
+        print(diag.get("2296", "?"))
+        print("\n" + "="*70)
+        print("DIAGNOSTICA MIRATA — N'Dicka (id 4317, voto corretto nei nostri dati):")
+        print("="*70)
+        print(diag.get("4317", "?"))
+        print("="*70 + "\n")
+
     data = await page.evaluate("""
         () => {
             const parseVoto = (s) => {
