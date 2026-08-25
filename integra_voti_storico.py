@@ -38,9 +38,13 @@ def flatten(teams_data, giornata):
             if not p.get("player_id"):
                 continue  # giocatori senza id (raro, es. nome non linkato) scartati
 
+            voto_puro = p.get("voto_puro")
             fantavoto = p.get("fantavoto")
-            if fantavoto is not None and abs(fantavoto) > 15:
-                print(f"⚠️  Valore sospetto: {p.get('name')} (id={p.get('player_id')}) fantavoto={fantavoto} — verifica a vista")
+            # Il voto puro in Classic non supera mai ~11 (nemmeno con Player of the
+            # Match) — il fantavoto invece può salire parecchio con più bonus insieme
+            # (es. tripletta = +9), quindi controllo la soglia solo sul voto puro.
+            if voto_puro is not None and abs(voto_puro) > 11:
+                print(f"⚠️  Valore sospetto: {p.get('name')} (id={p.get('player_id')}) voto_puro={voto_puro} — verifica a vista")
 
             rows.append({
                 "player_id": p["player_id"],
@@ -48,15 +52,11 @@ def flatten(teams_data, giornata):
                 "squadra": squadra,
                 "ruolo": p.get("role"),
                 "giornata": giornata,
-                # NOTA: il nostro scraper cattura un solo numero per giocatore (non
-                # più voto e fantavoto separati come nella versione precedente del
-                # sito) — non è ancora chiaro con certezza se sia voto puro o
-                # fantavoto. Finché non lo chiariamo, popolo entrambi i campi con
-                # lo stesso valore: l'app (Modificatore di Difesa in Top 11) si
-                # aspetta "voto_consensus" per funzionare, e senza questo campo
-                # restava null, rompendo il calcolo — meglio un'approssimazione
-                # dichiarata che un dato mancante silenzioso.
-                "voto_consensus": fantavoto,
+                # voto_puro: usato dal Modificatore di Difesa in Top 11 (media
+                # portiere + 3 migliori difensori). fantavoto: già calcolato dallo
+                # scraper sommando i bonus/malus reali (gol, assist, ammonizioni...)
+                # al voto puro — è il numero giusto per il punteggio complessivo.
+                "voto_consensus": voto_puro,
                 "fantavoto_consensus": fantavoto,
                 "eventi": p.get("eventi", []),
             })
