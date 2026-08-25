@@ -62,17 +62,19 @@ jobs:
 
       - name: Commit dei JSON aggiornati
         run: |
-          git config user.name "fantalitico-bot"
+          git config user.name "fantassist-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/*.json
           git diff --cached --quiet || git commit -m "Dati aggiornati $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
 
   voti-giornata:
-    # Job separato: gira SOLO se lanci manualmente il workflow specificando il
-    # numero di giornata. Scarica i voti reali (3 redazioni) di quella giornata
-    # e li integra nello storico data/voti_storico.json.
-    if: github.event_name == 'workflow_dispatch' && inputs.giornata != ''
+    # Gira SEMPRE (non più solo su lancio manuale) — uno step interno decide
+    # da solo se c'è davvero una giornata da processare, guardando quale
+    # giornata è "in vetrina" sul calendario (quella successiva alla più
+    # recente conclusa) e se è già stata integrata nello storico. Lasciato
+    # comunque disponibile l'override manuale (campo "giornata" su Run
+    # workflow) per un eventuale recupero.
     needs: update
     runs-on: ubuntu-latest
     steps:
@@ -84,21 +86,31 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Determina se c'è una giornata da processare
+        id: determina
+        env:
+          GIORNATA_MANUALE: ${{ inputs.giornata }}
+        run: python determina_giornata_voti.py
+
       - name: Installa Playwright
+        if: steps.determina.outputs.giornata != ''
         run: |
           pip install playwright
           python -m playwright install chromium --with-deps
 
-      - name: Scarica voti giornata ${{ inputs.giornata }}
-        run: python voti_giornata_scraper_v2.py ${{ inputs.giornata }}
+      - name: Scarica voti giornata ${{ steps.determina.outputs.giornata }}
+        if: steps.determina.outputs.giornata != ''
+        run: python voti_giornata_scraper_v2.py ${{ steps.determina.outputs.giornata }}
 
       - name: Integra nello storico
-        run: python integra_voti_storico.py data/voti_giornata_${{ inputs.giornata }}.json ${{ inputs.giornata }}
+        if: steps.determina.outputs.giornata != ''
+        run: python integra_voti_storico.py data/voti_giornata_${{ steps.determina.outputs.giornata }}.json ${{ steps.determina.outputs.giornata }}
 
       - name: Commit voti storico aggiornato
+        if: steps.determina.outputs.giornata != ''
         run: |
           git config user.name "fantalitico-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/voti_storico.json data/voti_giornata_${{ inputs.giornata }}.json
-          git diff --cached --quiet || git commit -m "Voti giornata ${{ inputs.giornata }} integrati $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git add data/voti_storico.json data/voti_giornata_${{ steps.determina.outputs.giornata }}.json
+          git diff --cached --quiet || git commit -m "Voti giornata ${{ steps.determina.outputs.giornata }} integrati $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
