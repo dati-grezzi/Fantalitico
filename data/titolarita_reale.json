@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-25T13:48:47.660924+00:00",
+  "aggiornato": "2026-08-25T18:38:19.413728+00:00",
   "fonti_usate": [
     "fantacalcio.it",
     "sosfanta.com"
@@ -1140,15 +1140,6 @@
       ],
       "n_fonti": 2
     },
-    "6925": {
-      "nome": "Palma",
-      "squadra": "udinese",
-      "confidence": 0.55,
-      "fonti": [
-        "fantacalcio.it"
-      ],
-      "n_fonti": 1
-    },
     "6956": {
       "nome": "Solet",
       "squadra": "udinese",
@@ -1158,6 +1149,15 @@
         "sosfanta.com"
       ],
       "n_fonti": 2
+    },
+    "5820": {
+      "nome": "Bertola",
+      "squadra": "udinese",
+      "confidence": 0.75,
+      "fonti": [
+        "fantacalcio.it"
+      ],
+      "n_fonti": 1
     },
     "4994": {
       "nome": "Vojvoda",
@@ -1273,15 +1273,6 @@
       ],
       "n_fonti": 1
     },
-    "5820": {
-      "nome": "Bertola",
-      "squadra": "udinese",
-      "confidence": 0.45,
-      "fonti": [
-        "fantacalcio.it"
-      ],
-      "n_fonti": 1
-    },
     "7312": {
       "nome": "Arizala",
       "squadra": "udinese",
@@ -1304,7 +1295,7 @@
     "6212": {
       "nome": "Zarraga",
       "squadra": "udinese",
-      "confidence": 0.4,
+      "confidence": 0.5,
       "fonti": [
         "fantacalcio.it"
       ],
@@ -1873,19 +1864,10 @@
       ],
       "n_fonti": 2
     },
-    "218": {
-      "nome": "Perin",
-      "squadra": "juventus",
-      "confidence": 0.05,
-      "fonti": [
-        "fantacalcio.it"
-      ],
-      "n_fonti": 1
-    },
     "1930": {
       "nome": "Pinsoglio",
       "squadra": "juventus",
-      "confidence": 0.01,
+      "confidence": 0.05,
       "fonti": [
         "fantacalcio.it"
       ],
@@ -3272,15 +3254,6 @@
       ],
       "n_fonti": 1
     },
-    "2728": {
-      "nome": "Pellegrini Lu.",
-      "squadra": "lazio",
-      "confidence": 0.4,
-      "fonti": [
-        "fantacalcio.it"
-      ],
-      "n_fonti": 1
-    },
     "2263": {
       "nome": "Lazzari",
       "squadra": "lazio",
@@ -3729,7 +3702,7 @@
     "7571": {
       "nome": "Laerke",
       "squadra": "lecce",
-      "confidence": 0.4,
+      "confidence": 0.25,
       "fonti": [
         "fantacalcio.it"
       ],
@@ -3747,7 +3720,16 @@
     "7319": {
       "nome": "Fofana Sa.",
       "squadra": "lecce",
-      "confidence": 0.5,
+      "confidence": 0.35,
+      "fonti": [
+        "fantacalcio.it"
+      ],
+      "n_fonti": 1
+    },
+    "7602": {
+      "nome": "Fatah",
+      "squadra": "lecce",
+      "confidence": 0.55,
       "fonti": [
         "fantacalcio.it"
       ],
