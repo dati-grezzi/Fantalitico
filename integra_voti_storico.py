@@ -48,6 +48,15 @@ def flatten(teams_data, giornata):
                 "squadra": squadra,
                 "ruolo": p.get("role"),
                 "giornata": giornata,
+                # NOTA: il nostro scraper cattura un solo numero per giocatore (non
+                # più voto e fantavoto separati come nella versione precedente del
+                # sito) — non è ancora chiaro con certezza se sia voto puro o
+                # fantavoto. Finché non lo chiariamo, popolo entrambi i campi con
+                # lo stesso valore: l'app (Modificatore di Difesa in Top 11) si
+                # aspetta "voto_consensus" per funzionare, e senza questo campo
+                # restava null, rompendo il calcolo — meglio un'approssimazione
+                # dichiarata che un dato mancante silenzioso.
+                "voto_consensus": fantavoto,
                 "fantavoto_consensus": fantavoto,
                 "eventi": p.get("eventi", []),
             })
@@ -103,6 +112,7 @@ def main():
             aggiornati += 1
 
         storico[pid]["giornate"][str(giornata)] = {
+            "voto_consensus": r["voto_consensus"],
             "fantavoto_consensus": r["fantavoto_consensus"],
             "eventi": r["eventi"],
         }
