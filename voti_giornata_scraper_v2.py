@@ -91,6 +91,23 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
         altezza = await page.evaluate("document.body.scrollHeight")
     await page.wait_for_timeout(800)
 
+    # DIAGNOSTICA MIRATA (temporanea) — solo per Roma-Fiorentina, HTML completo
+    # di Malen (id 5585, tripletta + Man of the Match), per capire se il vero
+    # fantavoto con i bonus (atteso 17,5) è in un elemento separato da quello
+    # che stiamo già leggendo (che dà solo il voto puro, 8,5).
+    if casa == "roma" and trasferta == "fiorentina":
+        diag = await page.evaluate("""
+            () => {
+                const li = document.querySelector('li[data-id="5585"]');
+                return li ? li.outerHTML : "NON TROVATO";
+            }
+        """)
+        print("\n" + "="*70)
+        print("DIAGNOSTICA MIRATA — Malen (id 5585, tripletta + MOTM):")
+        print("="*70)
+        print(diag)
+        print("="*70 + "\n")
+
     data = await page.evaluate("""
         () => {
             const parseVoto = (s) => {
