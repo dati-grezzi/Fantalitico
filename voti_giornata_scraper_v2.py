@@ -1,23 +1,24 @@
 # -*- coding: utf-8 -*-
 """
-VOTI GIORNATA — Scraper (riscritto: schema URL cambiato)
+VOTI GIORNATA — Scraper (v3: pagina generale con le 3 fonti)
 
-CAMBIO STRUTTURALE IMPORTANTE (scoperto 24/08/2026): fantacalcio.it non ha
-più un'unica pagina "voti-fantacalcio-serie-a/{stagione}/{giornata}" con
-tutte le partite della giornata insieme — ora ogni partita ha la sua pagina
-voti separata:
-  https://www.fantacalcio.it/serie-a/calendario/{giornata}/{stagione}/{casa}-{trasferta}/{match_id}/voti
+CAMBIO IMPORTANTE (24/08/2026): la pagina giusta è quella generale
+"voti-fantacalcio-serie-a", che mostra TUTTE e 10 le partite della giornata
+in una sola pagina, con una tabella per squadra che riporta Voto e Fantavoto
+di 3 fonti diverse (redazione Fantacalcio, voto statistico, voto Italia) più
+Bonus/Malus. Prendiamo le prime due colonne (V e FV della prima fonte,
+"Redazione Fantacalcio") come da indicazione esplicita.
 
-Serve quindi prima l'elenco delle partite della giornata (già disponibile in
-data/calendario.json, prodotto da probabili_formazioni_scraper.py, che
-include già il match_id di ognuna) — poi si scarica il voto di ogni singola
-partita e si aggregano.
+Non serve più il match_id delle singole partite (né quindi
+data/calendario_storico.json per questo script specifico) — un solo
+caricamento di pagina copre tutta la giornata.
 
-NOTA: la struttura DOM interna (classi CSS di voto/fantavoto/bonus) NON è
-stata riverificata su questa nuova pagina — l'ho ereditata dal vecchio
-script (funzionava sulla vecchia pagina, ora sostituita). Se l'estrazione
-fallisce, questo script stampa l'HTML vero nel log invece di fallire senza
-spiegazioni, così un giro reale basta a correggere i selettori.
+NOTA ONESTA: la struttura DOM interna esatta di QUESTA tabella (classi CSS
+delle celle V/FV) non è stata ancora verificata su dati reali — è un
+tentativo ragionato (righe ripetute per giocatore, prime due celle numeriche
+= V e FV) con diagnostica ampia in caso di fallimento, stessa disciplina
+di sempre: se fallisce, l'HTML vero finisce nel log per correggere i
+selettori in un solo giro invece di continuare a indovinare.
 
 USO
 ---
@@ -28,6 +29,7 @@ USO
 
 import asyncio
 import json
+import re
 import sys
 import os
 from playwright.async_api import async_playwright
@@ -37,174 +39,112 @@ GIORNATA = int(sys.argv[1]) if len(sys.argv) > 1 else 1
 os.makedirs("data", exist_ok=True)
 OUT_JSON = f"data/voti_giornata_{GIORNATA}.json"
 
+URL = f"https://www.fantacalcio.it/voti-fantacalcio-serie-a/{SEASON}/{GIORNATA}"
 
 
-
-
-CALENDARIO_STORICO = "data/calendario_storico.json"
-
-
-def carica_match_ids_giornata(giornata):
-    """I match_id vengono dall'archivio permanente (data/calendario_storico.json,
-    costruito da probabili_formazioni_scraper.py ogni volta che gira) — NON da
-    calendario.json, che tiene solo la giornata 'in vetrina' del momento e si
-    sovrascrive appena la stagione avanza (motivo del fallimento precedente:
-    a giornata 1 conclusa, il sito era già passato alla 2, e con lui il file)."""
-    if not os.path.exists(CALENDARIO_STORICO):
-        raise FileNotFoundError(
-            f"{CALENDARIO_STORICO} non trovato. Questo file si costruisce da solo, "
-            f"un giorno alla volta, ogni volta che gira probabili_formazioni_scraper.py — "
-            f"se non esiste ancora, vuol dire che questa pipeline non ha ancora attraversato "
-            f"la giornata {giornata} da quando l'archivio è stato introdotto. Le giornate "
-            f"precedenti a questo aggiornamento vanno recuperate a mano dalla cronologia Git."
-        )
-    with open(CALENDARIO_STORICO, encoding="utf-8") as f:
-        storico = json.load(f)
-    partite = storico.get(str(giornata))
-    if not partite:
-        disponibili = sorted(int(g) for g in storico) if storico else []
-        raise KeyError(
-            f"Giornata {giornata} non presente nell'archivio. Giornate disponibili: {disponibili}. "
-            f"Se la giornata {giornata} è passata prima che questo archivio esistesse, va "
-            f"recuperata a mano dalla cronologia Git di data/calendario.json."
-        )
-    return partite
-
-
-async def scrape_una_partita(page, casa, trasferta, match_id):
-    url = f"https://www.fantacalcio.it/serie-a/calendario/{GIORNATA}/{SEASON}/{casa}-{trasferta}/{match_id}/voti"
-    print(f"📡 {casa} - {trasferta}: {url}")
-    await page.goto(url, wait_until="load", timeout=45000)
-    try:
-        await page.wait_for_selector("#playersListsTemplateTarget", timeout=15000)
-    except Exception:
-        pass  # la diagnostica sotto rivelerà la struttura vera se questo fallisce
-    await page.wait_for_timeout(1000)
-
-    # Scroll di sicurezza: su questo stesso sito altre pagine (probabili
-    # formazioni) caricano contenuti solo quando entrano in viewport.
-    altezza = await page.evaluate("document.body.scrollHeight")
-    y, step, i = 0, 1200, 0
-    while y < altezza and i < 15:
-        await page.evaluate(f"window.scrollTo(0, {y})")
-        await page.wait_for_timeout(300)
-        y += step; i += 1
-        altezza = await page.evaluate("document.body.scrollHeight")
-    await page.wait_for_timeout(800)
-
-    # Struttura reale confermata su dati veri (24/08/2026): niente più
-    # table.grades-table/3-pill per redazione — ora #playersListsTemplateTarget
-    # con blocchi div.col (uno per squadra), ogni giocatore un <li data-id="...">.
-    # NOTA: catturo sia il testo mostrato sia il data-value del voto — non ancora
-    # confermato quale dei due sia il "fantavoto" da usare (verifica in corso).
-    data = await page.evaluate("""
-        () => {
-            const parseVoto = (s) => {
-                if (s == null || s === "" || s.toLowerCase() === "sv") return null;   // "sv" = senza voto (non entrato)
-                const n = parseFloat(String(s).trim().replace(",", "."));
-                return isNaN(n) ? null : n;
-            };
-            const teams = [];
-            document.querySelectorAll('#playersListsTemplateTarget > div.col').forEach(col => {
-                const teamNameEl = col.querySelector('.team-name');
-                const teamName = teamNameEl ? teamNameEl.textContent.trim() : null;
-                const players = [];
-                col.querySelectorAll('ul.player-list > li.player-item').forEach(li => {
-                    const playerId = li.getAttribute('data-id') || null;
-                    const nameEl = li.querySelector('a.player-name span');
-                    const name = nameEl ? nameEl.textContent.trim() : null;
-                    const roleSpan = li.querySelector('span.role[data-value]');
-                    const role = roleSpan ? roleSpan.getAttribute('data-value') : null;
-                    const gradeDiv = li.querySelector('.player-grade');
-                    // Il testo mostrato è il fantavoto giusto — confermato confrontando
-                    // con le pagelle pubblicate da più fonti indipendenti (Calciomagazine,
-                    // SOS Fanta) su Inter-Monza 22/08/2026: coincide esattamente.
-                    // Il data-value (a volte con segno diverso, es. -6) NON è questo valore
-                    // pubblico — probabilmente un campo interno, non lo usiamo.
-                    const fantavoto = gradeDiv ? parseVoto(gradeDiv.textContent) : null;
-                    const eventi = Array.from(li.querySelectorAll('.player-event')).map(ev => ({
-                        tipo: (ev.getAttribute('title') || '').trim(),
-                        count: ev.getAttribute('data-count'),
-                        eventId: ev.getAttribute('data-event-id')
-                    }));
-                    if (playerId) players.push({ player_id: playerId, name, role, fantavoto, eventi });
-                });
-                teams.push({ team: teamName, players });
-            });
-            return teams;
-        }
-    """)
-
-    if not data or all(len(t["players"]) == 0 for t in data):
-        html = await page.content()
-        # Provo più parole-chiave plausibili, non solo "grades-table" (che potrebbe
-        # essere stata rinominata) — se nessuna si trova, mostro comunque il corpo
-        # vero della pagina (non solo l'intestazione con gli script di tracciamento).
-        idx = -1
-        for chiave in ["playersListsTemplateTarget", "player-grade", "player-item", "team-formation"]:
-            idx = html.find(chiave)
-            if idx >= 0:
-                break
-        if idx >= 0:
-            diagnostica = html[max(0, idx-500): idx+3000]
-        else:
-            idx_body = html.find("<body")
-            diagnostica = html[idx_body: idx_body+6000] if idx_body >= 0 else html[:6000]
-        return None, diagnostica
-    return data, None
-
-
-async def main_async():
-    partite = carica_match_ids_giornata(GIORNATA)
-    print(f"Partite da scaricare per la giornata {GIORNATA}: {len(partite)}\n")
-
-    tutte_squadre = []
-    diagnostica_salvata = None
+async def scarica_pagina_giornata():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()
 
-        for partita in partite:
-            try:
-                data, diag = await scrape_una_partita(page, partita["casa"], partita["trasferta"], partita["match_id"])
-                if data:
-                    tutte_squadre.extend(data)
-                    n = sum(len(t["players"]) for t in data)
-                    print(f"   ✅ {n} giocatori estratti\n")
-                else:
-                    print(f"   ⚠️  0 giocatori estratti per questa partita\n")
-                    if diagnostica_salvata is None:
-                        diagnostica_salvata = diag
-            except Exception as e:
-                print(f"   ❌ Errore su questa partita: {e}\n")
+        print(f"📡 {URL}")
+        await page.goto(URL, wait_until="load", timeout=45000)
+        await page.wait_for_timeout(1000)
+
+        # Scroll di sicurezza (stesso pattern già validato su altre pagine di
+        # questo sito, che caricano contenuti solo quando entrano in viewport)
+        altezza = await page.evaluate("document.body.scrollHeight")
+        y, step, i = 0, 1200, 0
+        while y < altezza and i < 30:   # pagina lunga, 20 tabelle squadra: più iterazioni
+            await page.evaluate(f"window.scrollTo(0, {y})")
+            await page.wait_for_timeout(250)
+            y += step; i += 1
+            altezza = await page.evaluate("document.body.scrollHeight")
+        await page.wait_for_timeout(1000)
+
+        # Tentativo di estrazione ragionato: per ogni riga-giocatore, prendo le
+        # prime due celle che contengono un numero (virgola o punto decimale)
+        # come Voto e Fantavoto della prima fonte (Redazione Fantacalcio).
+        data = await page.evaluate("""
+            () => {
+                const numRe = /^\\d{1,2}([.,]\\d)?$/;
+                const teams = [];
+                document.querySelectorAll('[class*="team"]').forEach(() => {});  // no-op, solo per chiarezza
+
+                // Ogni blocco squadra: cerco contenitori con un'intestazione nome
+                // squadra seguita da righe giocatore (link a /squadre/.../ID)
+                document.querySelectorAll('a[href*="/serie-a/squadre/"]').forEach(a => {
+                    const href = a.getAttribute('href') || '';
+                    const m = href.match(/\\/squadre\\/([a-z0-9\\-]+)\\/([a-z0-9\\-]+)\\/(\\d+)$/);
+                    if (!m) return;   // non è un link giocatore (es. link squadra generico)
+                    const teamSlug = m[1], playerId = m[3];
+                    const name = a.textContent.trim();
+                    if (!name) return;
+
+                    // Risalgo al contenitore riga (il player-name è quasi sempre
+                    // dentro una riga/li/tr che contiene anche i voti accanto)
+                    let riga = a.closest('tr, li, .player-row, [class*="row"]') || a.parentElement;
+                    if (!riga) return;
+
+                    // Cerco celle numeriche nella riga (voto/fantavoto), scartando
+                    // il testo del link stesso
+                    const testiCelle = Array.from(riga.querySelectorAll('td, div, span'))
+                        .map(el => el.textContent.trim())
+                        .filter(t => numRe.test(t));
+
+                    if (testiCelle.length >= 2) {
+                        teams.push({
+                            team_slug: teamSlug, player_id: playerId, name,
+                            voto: testiCelle[0], fantavoto: testiCelle[1]
+                        });
+                    }
+                });
+                return teams;
+            }
+        """)
+
+        diagnostica = None
+        if not data:
+            html = await page.content()
+            idx = -1
+            for chiave in ["Voto e Fantavoto", "player-grade", "grades-table", "Redazione Fantacalcio"]:
+                idx = html.find(chiave)
+                if idx >= 0:
+                    break
+            if idx >= 0:
+                diagnostica = html[max(0, idx-500): idx+4000]
+            else:
+                idx_body = html.find("<body")
+                diagnostica = html[idx_body: idx_body+6000] if idx_body >= 0 else html[:6000]
+
         await browser.close()
-
-    if not tutte_squadre:
-        print("\n⚠️  ATTENZIONE: nessun dato estratto da nessuna partita.")
-        if diagnostica_salvata:
-            print("\n" + "="*70)
-            print("DIAGNOSTICA — HTML reale (prima partita fallita):")
-            print("="*70)
-            print(diagnostica_salvata)
-            print("="*70)
-        return 1
-
-    total_players = sum(len(t["players"]) for t in tutte_squadre)
-    print(f"✅ Totale: {len(tutte_squadre)} squadre, {total_players} giocatori\n")
-    with open(OUT_JSON, "w", encoding="utf-8") as f:
-        json.dump(tutte_squadre, f, ensure_ascii=False, indent=2)
-    print(f"📝 Salvato in {OUT_JSON}")
-    return 0
+        return data, diagnostica
 
 
 def main():
     try:
-        return asyncio.run(main_async())
+        data, diagnostica = asyncio.run(scarica_pagina_giornata())
     except Exception as e:
         print(f"\n❌ Errore: {e}")
         import traceback
         traceback.print_exc()
         return 1
+
+    if not data:
+        print("\n⚠️  ATTENZIONE: 0 giocatori estratti.")
+        if diagnostica:
+            print("\n" + "="*70)
+            print("DIAGNOSTICA — HTML reale:")
+            print("="*70)
+            print(diagnostica)
+            print("="*70)
+        return 1
+
+    print(f"✅ {len(data)} giocatori estratti\n")
+    with open(OUT_JSON, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    print(f"📝 Salvato in {OUT_JSON}")
+    return 0
 
 
 if __name__ == "__main__":
