@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-08-25T06:48:10.503298+00:00",
+  "aggiornato": "2026-08-25T07:52:53.911654+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -9,13 +9,6 @@
           "dettaglio": "Distrazione di basso grado a carico dei muscoli adduttori della gamba destra, in dubbio per la 2a",
           "rientro_giornata": 2,
           "id": "6916",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Scalvini",
-          "dettaglio": "Trauma distorsivo alla caviglia, in dubbio per la 1a",
-          "rientro_giornata": 1,
-          "id": "5526",
           "match_score": 1.0
         },
         {
@@ -30,6 +23,13 @@
           "dettaglio": "Lesione del collaterale mediale di secondo grado del ginocchio sinistro, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "6024",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Kristensen T.",
+          "dettaglio": "Trauma distorsivo alla caviglia, in dubbio per la 2a",
+          "rientro_giornata": 2,
+          "id": "6485",
           "match_score": 1.0
         }
       ],
@@ -115,17 +115,6 @@
       "squalificati": [],
       "diffidati": []
     },
-    "inter": {
-      "infortunati": [],
-      "squalificati": [
-        {
-          "nome": "Mkhitaryan",
-          "id": "2529",
-          "match_score": 1.0
-        }
-      ],
-      "diffidati": []
-    },
     "juventus": {
       "infortunati": [
         {
@@ -141,6 +130,13 @@
           "rientro_giornata": 2,
           "id": "5831",
           "match_score": 1.0
+        },
+        {
+          "nome": "Yildiz",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "6434",
+          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -149,10 +145,17 @@
     "lazio": {
       "infortunati": [
         {
-          "nome": "Romagnoli",
-          "dettaglio": "Problema muscolare, in dubbio per la 2a",
+          "nome": "Dele-Bashiru",
+          "dettaglio": "Risentimento ai flessori, in dubbio per la 2a",
           "rientro_giornata": 2,
-          "id": "460",
+          "id": "6629",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Marusic",
+          "dettaglio": "Risentimento ai flessori, in dubbio per la 2a",
+          "rientro_giornata": 2,
+          "id": "2188",
           "match_score": 1.0
         },
         {
@@ -160,13 +163,6 @@
           "dettaglio": "Intervento chirurgico per risolvere i problemi con la pubalgia, in dubbio per la 3a",
           "rientro_giornata": 3,
           "id": "333",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Isaksen",
-          "dettaglio": "Intervento chirurgico per sports hernia bilaterale, in dubbio per la 3a",
-          "rientro_giornata": 3,
-          "id": "6398",
           "match_score": 1.0
         },
         {
@@ -244,18 +240,7 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [
-        {
-          "nome": "Mota",
-          "id": "5882",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Thiam",
-          "id": "4485",
-          "match_score": 1.0
-        }
-      ],
+      "squalificati": [],
       "diffidati": []
     },
     "napoli": {
@@ -295,13 +280,7 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [
-        {
-          "nome": "Britschgi",
-          "id": "7255",
-          "match_score": 1.0
-        }
-      ],
+      "squalificati": [],
       "diffidati": []
     },
     "roma": {
@@ -314,10 +293,10 @@
           "match_score": 1.0
         },
         {
-          "nome": "Vaz",
-          "dettaglio": "Lesione del legamento collaterale mediale del ginocchio destro, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "6981",
+          "nome": "Rensch",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "6986",
           "match_score": 1.0
         }
       ],
@@ -367,20 +346,29 @@
           "rientro_giornata": null,
           "id": "2038",
           "match_score": 1.0
+        },
+        {
+          "nome": "Walukiewicz",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "4374",
+          "match_score": 1.0
         }
       ],
       "squalificati": [],
       "diffidati": []
     },
     "torino": {
-      "infortunati": [],
-      "squalificati": [
+      "infortunati": [
         {
-          "nome": "Comert",
-          "id": "7526",
+          "nome": "Anjorin",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "6889",
           "match_score": 1.0
         }
       ],
+      "squalificati": [],
       "diffidati": []
     },
     "udinese": {
@@ -404,6 +392,20 @@
           "dettaglio": "Intervento chirurgico per lesione del legamento crociato anteriore del ginocchio destro, in dubbio per la 4a",
           "rientro_giornata": 4,
           "id": "5527",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Zaniolo",
+          "dettaglio": "Stiramento, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "2766",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Palma",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "6925",
           "match_score": 1.0
         }
       ],
