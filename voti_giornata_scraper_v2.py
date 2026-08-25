@@ -91,23 +91,6 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
         altezza = await page.evaluate("document.body.scrollHeight")
     await page.wait_for_timeout(800)
 
-    # DIAGNOSTICA MIRATA (temporanea) — solo per Roma-Fiorentina, HTML completo
-    # di Malen (id 5585, tripletta + Man of the Match), per capire se il vero
-    # fantavoto con i bonus (atteso 17,5) è in un elemento separato da quello
-    # che stiamo già leggendo (che dà solo il voto puro, 8,5).
-    if casa == "roma" and trasferta == "fiorentina":
-        diag = await page.evaluate("""
-            () => {
-                const li = document.querySelector('li[data-id="5585"]');
-                return li ? li.outerHTML : "NON TROVATO";
-            }
-        """)
-        print("\n" + "="*70)
-        print("DIAGNOSTICA MIRATA — Malen (id 5585, tripletta + MOTM):")
-        print("="*70)
-        print(diag)
-        print("="*70 + "\n")
-
     data = await page.evaluate("""
         () => {
             const parseVoto = (s) => {
@@ -117,6 +100,16 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
             };
             const teams = [];
             let scartateOrfane = 0;
+
+            // Tabella bonus/malus standard Classic, per data-event-id (più stabile
+            // del testo, che include il minuto tipo " (86°)"). Valori confermati:
+            // id 3 "Gol segnato" +3, id 1 "Ammonizione" -0.5, id 4 "Gol subito" -1,
+            // id 22 "Assist" +1. Gli altri (23 "Assist GOLD", 26 "Man of the match",
+            // 17 "Uscito per infortunio") non hanno ancora un valore confermato — li
+            // tratto come 0 per ora, values_sconosciuti li segnala per revisione.
+            const BONUS_PER_EVENTO = { "1": -0.5, "3": 3, "4": -1, "22": 1 };
+            const eventi_sconosciuti = new Set();
+
             document.querySelectorAll('#playersListsTemplateTarget > div.col').forEach(col => {
                 const teamNameEl = col.querySelector('.team-name');
                 const teamName = teamNameEl ? teamNameEl.textContent.trim() : null;
@@ -128,32 +121,45 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
                     const roleSpan = li.querySelector('span.role[data-value]');
                     const role = roleSpan ? roleSpan.getAttribute('data-value') : null;
                     const gradeDiv = li.querySelector('.player-grade');
-                    // IMPORTANTE (corretto 25/08, dopo aver trovato il bug con dati
-                    // reali): il fantavoto giusto è nel data-value, non nel testo
-                    // mostrato — il testo può differire dal valore vero (visto su
-                    // Mancini: testo "9,5" ma data-value "6,5", quest'ultimo corretto).
-                    // Il valore assoluto perché a volte data-value ha un segno meno
-                    // il cui significato non è chiaro, ma la grandezza è giusta
-                    // (visto su Martinez Jo.: data-value "-6", voto vero 6).
-                    const fantavoto = gradeDiv ? parseVoto(gradeDiv.getAttribute('data-value')) : null;
-                    const eventi = Array.from(li.querySelectorAll('.player-event')).map(ev => ({
+                    // Il data-value è il VOTO PURO (confermato 25/08 con dati reali,
+                    // caso Malen: data-value 8,5 = voto puro, non il fantavoto 17,5
+                    // che include i bonus per la tripletta).
+                    const votoPuro = gradeDiv ? parseVoto(gradeDiv.getAttribute('data-value')) : null;
+                    const eventiRaw = Array.from(li.querySelectorAll('.player-event')).map(ev => ({
                         tipo: (ev.getAttribute('title') || '').trim(),
                         count: ev.getAttribute('data-count'),
                         eventId: ev.getAttribute('data-event-id')
                     }));
+                    // Il "count" è un valore CUMULATIVO (es. 3 gol = tre eventi con
+                    // count 1,2,3, non tre gol separati da sommare) — prendo il
+                    // massimo per tipo di evento, non la somma di tutte le occorrenze.
+                    const maxPerEvento = {};
+                    for (const ev of eventiRaw) {
+                        const c = parseInt(ev.count, 10) || 1;
+                        if (!(ev.eventId in maxPerEvento) || c > maxPerEvento[ev.eventId]) maxPerEvento[ev.eventId] = c;
+                        if (!(ev.eventId in BONUS_PER_EVENTO)) eventi_sconosciuti.add(ev.eventId + ":" + ev.tipo);
+                    }
+                    let bonusMalusTotale = 0;
+                    for (const [eventId, count] of Object.entries(maxPerEvento)) {
+                        bonusMalusTotale += (BONUS_PER_EVENTO[eventId] || 0) * count;
+                    }
+                    const fantavoto = votoPuro != null ? Math.round((votoPuro + bonusMalusTotale) * 2) / 2 : null;
                     // Scarto le righe senza nome collegato (voti "orfani", probabilmente
                     // di sostituti mostrati in forma compatta) — meglio perdere quel
                     // singolo dato che rischiare di attribuirlo al giocatore vicino
                     // sbagliato (bug reale scoperto il 25/08: un voto orfano è finito
                     // attaccato a un altro giocatore).
-                    if (playerId && name) players.push({ player_id: playerId, name, role, fantavoto, eventi });
+                    if (playerId && name) players.push({ player_id: playerId, name, role, voto_puro: votoPuro, fantavoto, eventi: eventiRaw });
                     else if (playerId) scartateOrfane++;
                 });
                 teams.push({ team: teamName, players });
             });
-            return { teams, scartateOrfane };
+            return { teams, scartateOrfane, eventi_sconosciuti: [...eventi_sconosciuti] };
         }
     """)
+
+    if data and data.get("eventi_sconosciuti"):
+        print(f"   ℹ️  Tipi di evento senza bonus/malus mappato (trattati come 0): {data['eventi_sconosciuti']}")
 
     teams = data.get("teams", []) if data else []
     scartate = data.get("scartateOrfane", 0) if data else 0
