@@ -99,6 +99,7 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
                 return isNaN(n) ? null : n;
             };
             const teams = [];
+            let scartateOrfane = 0;
             document.querySelectorAll('#playersListsTemplateTarget > div.col').forEach(col => {
                 const teamNameEl = col.querySelector('.team-name');
                 const teamName = teamNameEl ? teamNameEl.textContent.trim() : null;
@@ -116,15 +117,26 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
                         count: ev.getAttribute('data-count'),
                         eventId: ev.getAttribute('data-event-id')
                     }));
-                    if (playerId) players.push({ player_id: playerId, name, role, fantavoto, eventi });
+                    // Scarto le righe senza nome collegato (voti "orfani", probabilmente
+                    // di sostituti mostrati in forma compatta) — meglio perdere quel
+                    // singolo dato che rischiare di attribuirlo al giocatore vicino
+                    // sbagliato (bug reale scoperto il 25/08: un voto orfano è finito
+                    // attaccato a un altro giocatore).
+                    if (playerId && name) players.push({ player_id: playerId, name, role, fantavoto, eventi });
+                    else if (playerId) scartateOrfane++;
                 });
                 teams.push({ team: teamName, players });
             });
-            return teams;
+            return { teams, scartateOrfane };
         }
     """)
 
-    if not data or all(len(t["players"]) == 0 for t in data):
+    teams = data.get("teams", []) if data else []
+    scartate = data.get("scartateOrfane", 0) if data else 0
+    if scartate:
+        print(f"   ℹ️  {scartate} righe voto senza nome collegato scartate (probabili sostituti in forma compatta)")
+
+    if not teams or all(len(t["players"]) == 0 for t in teams):
         html = await page.content()
         idx = -1
         for chiave in ["playersListsTemplateTarget", "player-grade", "player-item", "team-formation"]:
@@ -137,7 +149,7 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
             idx_body = html.find("<body")
             diagnostica = html[idx_body: idx_body+6000] if idx_body >= 0 else html[:6000]
         return None, diagnostica
-    return data, None
+    return teams, None
 
 
 async def main_async():
