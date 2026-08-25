@@ -178,18 +178,23 @@ async def main_async():
     total_players = sum(len(t["players"]) for t in tutte_squadre)
     print(f"✅ Totale: {len(tutte_squadre)} squadre, {total_players} giocatori\n")
 
-    # Anteprima concreta, per verificare a occhio prima di fidarsi del salvataggio
-    print("📊 Anteprima primi 5 giocatori estratti:")
+    # Salvo SUBITO, prima di qualunque altra cosa — i dati veri non devono mai
+    # dipendere dalla riuscita di un'anteprima di debug
+    with open(OUT_JSON, "w", encoding="utf-8") as f:
+        json.dump(tutte_squadre, f, ensure_ascii=False, indent=2)
+    print(f"📝 Salvato in {OUT_JSON}")
+
+    # Anteprima concreta (solo dopo il salvataggio) — robusta a nomi mancanti
+    # (es. voci allenatore o giocatori senza link nel DOM)
+    print("\n📊 Anteprima primi 5 giocatori estratti:")
     conteggio = 0
     for t in tutte_squadre:
         for p in t["players"][:2]:
             if conteggio >= 5: break
-            print(f"   {p['name']:20s} ruolo={p['role']} fantavoto={p['fantavoto']}")
+            nome = p.get("name") or "(nome mancante)"
+            print(f"   {nome:20s} ruolo={p.get('role')} fantavoto={p.get('fantavoto')}")
             conteggio += 1
 
-    with open(OUT_JSON, "w", encoding="utf-8") as f:
-        json.dump(tutte_squadre, f, ensure_ascii=False, indent=2)
-    print(f"\n📝 Salvato in {OUT_JSON}")
     return 0
 
 
