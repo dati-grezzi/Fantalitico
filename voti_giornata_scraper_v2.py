@@ -91,36 +91,12 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
         altezza = await page.evaluate("document.body.scrollHeight")
     await page.wait_for_timeout(800)
 
-    # DIAGNOSTICA MIRATA (temporanea) — solo per Roma-Fiorentina, confronta l'HTML
-    # esatto di un giocatore con voto sbagliato (Mancini, id 2296) con uno corretto
-    # (N'Dicka, id 4317), per trovare la differenza strutturale che causa il bug.
-    if casa == "roma" and trasferta == "fiorentina":
-        diag = await page.evaluate("""
-            () => {
-                const out = {};
-                for (const id of ["2296", "4317"]) {
-                    const li = document.querySelector('li[data-id="' + id + '"]');
-                    out[id] = li ? li.outerHTML : "NON TROVATO";
-                }
-                return out;
-            }
-        """)
-        print("\n" + "="*70)
-        print("DIAGNOSTICA MIRATA — Mancini (id 2296, voto sbagliato nei nostri dati):")
-        print("="*70)
-        print(diag.get("2296", "?"))
-        print("\n" + "="*70)
-        print("DIAGNOSTICA MIRATA — N'Dicka (id 4317, voto corretto nei nostri dati):")
-        print("="*70)
-        print(diag.get("4317", "?"))
-        print("="*70 + "\n")
-
     data = await page.evaluate("""
         () => {
             const parseVoto = (s) => {
                 if (s == null || s === "" || s.toLowerCase() === "sv") return null;
                 const n = parseFloat(String(s).trim().replace(",", "."));
-                return isNaN(n) ? null : n;
+                return isNaN(n) ? null : Math.abs(n);
             };
             const teams = [];
             let scartateOrfane = 0;
@@ -135,7 +111,14 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
                     const roleSpan = li.querySelector('span.role[data-value]');
                     const role = roleSpan ? roleSpan.getAttribute('data-value') : null;
                     const gradeDiv = li.querySelector('.player-grade');
-                    const fantavoto = gradeDiv ? parseVoto(gradeDiv.textContent) : null;
+                    // IMPORTANTE (corretto 25/08, dopo aver trovato il bug con dati
+                    // reali): il fantavoto giusto è nel data-value, non nel testo
+                    // mostrato — il testo può differire dal valore vero (visto su
+                    // Mancini: testo "9,5" ma data-value "6,5", quest'ultimo corretto).
+                    // Il valore assoluto perché a volte data-value ha un segno meno
+                    // il cui significato non è chiaro, ma la grandezza è giusta
+                    // (visto su Martinez Jo.: data-value "-6", voto vero 6).
+                    const fantavoto = gradeDiv ? parseVoto(gradeDiv.getAttribute('data-value')) : null;
                     const eventi = Array.from(li.querySelectorAll('.player-event')).map(ev => ({
                         tipo: (ev.getAttribute('title') || '').trim(),
                         count: ev.getAttribute('data-count'),
