@@ -1,0 +1,78 @@
+# -*- coding: utf-8 -*-
+"""
+DETERMINA GIORNATA DA PROCESSARE — decide in automatico se c'è una giornata
+di voti da scaricare, senza bisogno di lanciarlo a mano ogni settimana.
+
+Logica: data/calendario.json riporta la giornata "in vetrina" sulla pagina
+probabili formazioni (quella futura/in corso). Se quella giornata è la N,
+significa che la N-1 è verosimilmente conclusa — è quella di cui controllare
+i voti. Se i voti di quella giornata sono già stati integrati in
+data/voti_storico.json, non c'è nulla da fare.
+
+Uso da workflow GitHub Actions: stampa "giornata=N" (o "giornata=") su
+GITHUB_OUTPUT, così lo step successivo può essere condizionato al risultato.
+"""
+
+import json
+import os
+import sys
+
+
+def main():
+    github_output = os.environ.get("GITHUB_OUTPUT")
+
+    def emetti(giornata):
+        riga = f"giornata={giornata if giornata is not None else ''}\n"
+        if github_output:
+            with open(github_output, "a", encoding="utf-8") as f:
+                f.write(riga)
+        print(riga.strip())
+
+    # Override manuale: se lanciato a mano specificando una giornata, usa
+    # quella direttamente (utile per un recupero), saltando il controllo
+    # "già fatta" — un override esplicito è un'intenzione deliberata.
+    override = os.environ.get("GIORNATA_MANUALE", "").strip()
+    if override:
+        print(f"Giornata forzata manualmente: {override}")
+        emetti(override)
+        return 0
+
+    if not os.path.exists("data/calendario.json"):
+        print("⚠️  data/calendario.json non trovato, impossibile determinare la giornata")
+        emetti(None)
+        return 0
+
+    with open("data/calendario.json", encoding="utf-8") as f:
+        cal = json.load(f)
+    giornata_in_vetrina = cal.get("giornata")
+    if not giornata_in_vetrina or giornata_in_vetrina < 2:
+        print(f"Giornata in vetrina: {giornata_in_vetrina} — nessuna giornata precedente da processare ancora")
+        emetti(None)
+        return 0
+
+    giornata_candidata = giornata_in_vetrina - 1
+
+    gia_fatta = False
+    if os.path.exists("data/voti_storico.json"):
+        with open("data/voti_storico.json", encoding="utf-8") as f:
+            storico = json.load(f)
+        # Struttura vera: { "player_id": { "nome":.., "giornate": { "16": {...} } } }
+        # — indicizzato per giocatore, "giornate" è un dizionario con chiave stringa.
+        chiave = str(giornata_candidata)
+        for dati_giocatore in storico.values():
+            if isinstance(dati_giocatore, dict) and chiave in dati_giocatore.get("giornate", {}):
+                gia_fatta = True
+                break
+
+    if gia_fatta:
+        print(f"Giornata {giornata_candidata} risulta già integrata in voti_storico.json — nulla da fare")
+        emetti(None)
+        return 0
+
+    print(f"Giornata da processare: {giornata_candidata}")
+    emetti(giornata_candidata)
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
