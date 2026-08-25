@@ -40,27 +40,46 @@ OUT_JSON = f"data/voti_giornata_{GIORNATA}.json"
 FONTI = ["redazione_fantacalcio", "voto_statistico", "voto_italia"]
 
 
-def slug(nome):
-    return nome.strip().lower().replace(" ", "-")
+
+import re
+
+# Stesso pattern tollerante già validato su probabili_formazioni_scraper.py —
+# regge eventuali attributi extra tra data-match-id e data-teams-id.
+BLOCK_RE = re.compile(r'<li data-match-id="(\d+)"[^>]*?class="match">(.*?)</li>', re.DOTALL)
+TEAM_HREF_RE = re.compile(r'/serie-a/squadre/([a-z0-9\-]+)"')
 
 
-def carica_partite_giornata():
-    """Legge data/calendario.json (prodotto da probabili_formazioni_scraper.py),
-    che include già il match_id di ogni partita — evita di doverlo recuperare
-    di nuovo con un'altra chiamata di rete."""
-    if not os.path.exists("data/calendario.json"):
-        raise FileNotFoundError("data/calendario.json non trovato — lancia prima probabili_formazioni_scraper.py")
-    with open("data/calendario.json", encoding="utf-8") as f:
-        cal = json.load(f)
-    partite = cal.get("partite", [])
-    mancanti_id = [p for p in partite if not p.get("match_id")]
-    if mancanti_id:
-        print(f"⚠️  {len(mancanti_id)} partite senza match_id nel calendario — verranno saltate")
-    return [p for p in partite if p.get("match_id")]
+async def scarica_match_ids_giornata(page, giornata):
+    """calendario.json tiene solo la giornata 'in vetrina' del momento (si
+    sovrascrive appena la stagione avanza) — inutile per recuperare i match_id
+    di una giornata già conclusa. Li prendo direttamente dalla pagina
+    calendario di QUELLA specifica giornata, usando lo slug squadra così come
+    compare nei link del sito stesso (più affidabile di ricostruirlo a mano)."""
+    url = f"https://www.fantacalcio.it/serie-a/calendario/{giornata}/{SEASON}"
+    print(f"📅 Recupero le partite della giornata {giornata} da {url}...")
+    await page.goto(url, wait_until="load", timeout=45000)
+    await page.wait_for_timeout(1200)
+    html = await page.content()
+
+    partite = []
+    for m in BLOCK_RE.finditer(html):
+        match_id = m.group(1)
+        blocco = m.group(2)
+        squadre = TEAM_HREF_RE.findall(blocco)
+        if len(squadre) >= 2:
+            partite.append({"casa": squadre[0], "trasferta": squadre[1], "match_id": match_id})
+
+    if not partite:
+        idx = html.find('data-match-id')
+        diagnostica = html[max(0, idx-300): idx+3000] if idx >= 0 else html[:3000]
+        raise RuntimeError(f"nessuna partita trovata nella pagina calendario giornata {giornata}\n\nDIAGNOSTICA:\n{diagnostica}")
+
+    print(f"   ✅ {len(partite)} partite trovate")
+    return partite
 
 
 async def scrape_una_partita(page, casa, trasferta, match_id):
-    url = f"https://www.fantacalcio.it/serie-a/calendario/{GIORNATA}/{SEASON}/{slug(casa)}-{slug(trasferta)}/{match_id}/voti"
+    url = f"https://www.fantacalcio.it/serie-a/calendario/{GIORNATA}/{SEASON}/{casa}-{trasferta}/{match_id}/voti"
     print(f"📡 {casa} - {trasferta}: {url}")
     await page.goto(url, wait_until="load", timeout=45000)
     try:
@@ -123,14 +142,15 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
 
 
 async def main_async():
-    partite = carica_partite_giornata()
-    print(f"Partite da scaricare per la giornata {GIORNATA}: {len(partite)}\n")
-
     tutte_squadre = []
     diagnostica_salvata = None
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()
+
+        partite = await scarica_match_ids_giornata(page, GIORNATA)
+        print(f"Partite da scaricare per la giornata {GIORNATA}: {len(partite)}\n")
+
         for partita in partite:
             try:
                 data, diag = await scrape_una_partita(page, partita["casa"], partita["trasferta"], partita["match_id"])
