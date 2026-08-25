@@ -37,7 +37,7 @@ GIORNATA = int(sys.argv[1]) if len(sys.argv) > 1 else 1
 os.makedirs("data", exist_ok=True)
 OUT_JSON = f"data/voti_giornata_{GIORNATA}.json"
 
-FONTI = ["redazione_fantacalcio", "voto_statistico", "voto_italia"]
+
 
 
 
@@ -76,7 +76,7 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
     print(f"📡 {casa} - {trasferta}: {url}")
     await page.goto(url, wait_until="load", timeout=45000)
     try:
-        await page.wait_for_selector("table.grades-table", timeout=15000)
+        await page.wait_for_selector("#playersListsTemplateTarget", timeout=15000)
     except Exception:
         pass  # la diagnostica sotto rivelerà la struttura vera se questo fallisce
     await page.wait_for_timeout(1000)
@@ -92,46 +92,44 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
         altezza = await page.evaluate("document.body.scrollHeight")
     await page.wait_for_timeout(800)
 
+    # Struttura reale confermata su dati veri (24/08/2026): niente più
+    # table.grades-table/3-pill per redazione — ora #playersListsTemplateTarget
+    # con blocchi div.col (uno per squadra), ogni giocatore un <li data-id="...">.
+    # NOTA: catturo sia il testo mostrato sia il data-value del voto — non ancora
+    # confermato quale dei due sia il "fantavoto" da usare (verifica in corso).
     data = await page.evaluate("""
         () => {
-            const parseNum = (s) => {
-                if (s == null || s === "") return null;
-                const n = parseFloat(String(s).replace(",", "."));
-                if (isNaN(n)) return null;
-                if (n === 55) return null;   // sentinella "non votato da questa fonte"
-                return n;
+            const parseVoto = (s) => {
+                if (s == null || s === "" || s.toLowerCase() === "sv") return null;   // "sv" = senza voto (non entrato)
+                const n = parseFloat(String(s).trim().replace(",", "."));
+                return isNaN(n) ? null : n;
             };
             const teams = [];
-            document.querySelectorAll('div.team-table-body').forEach(teamBlock => {
-                const teamNameEl = teamBlock.querySelector('.team-name');
+            document.querySelectorAll('#playersListsTemplateTarget > div.col').forEach(col => {
+                const teamNameEl = col.querySelector('.team-name');
                 const teamName = teamNameEl ? teamNameEl.textContent.trim() : null;
-                const teamHref = teamBlock.querySelector('a.team-link')?.getAttribute('href') || '';
-                const teamSlug = (teamHref.match(/\\/squadre\\/([^\\/]+)/) || [])[1] || null;
                 const players = [];
-                teamBlock.querySelectorAll('table.grades-table tbody tr').forEach(row => {
-                    const nameA = row.querySelector('a.player-name');
-                    if (!nameA) return;
-                    const href = nameA.getAttribute('href') || '';
-                    const idMatch = href.match(/\\/(\\d+)\\/\\d{4}-\\d{2}\\/?$/);
-                    const playerId = idMatch ? idMatch[1] : null;
-                    const name = nameA.querySelector('span')?.textContent.trim() || nameA.textContent.trim();
-                    const role = row.querySelector('span.role')?.getAttribute('data-value') || null;
-                    const sostituito = !!row.querySelector('img.player-icon[title*="Sostitu" i]');
-                    const pills = row.querySelectorAll('td:nth-child(2) .pill');
-                    const voti = Array.from(pills).map((pill, i) => ({
-                        fonte: i,
-                        voto: parseNum(pill.querySelector('.player-grade')?.getAttribute('data-value')),
-                        fantavoto: parseNum(pill.querySelector('.player-fanta-grade')?.getAttribute('data-value'))
+                col.querySelectorAll('ul.player-list > li.player-item').forEach(li => {
+                    const playerId = li.getAttribute('data-id') || null;
+                    const nameEl = li.querySelector('a.player-name span');
+                    const name = nameEl ? nameEl.textContent.trim() : null;
+                    const roleSpan = li.querySelector('span.role[data-value]');
+                    const role = roleSpan ? roleSpan.getAttribute('data-value') : null;
+                    const gradeDiv = li.querySelector('.player-grade');
+                    // Il testo mostrato è il fantavoto giusto — confermato confrontando
+                    // con le pagelle pubblicate da più fonti indipendenti (Calciomagazine,
+                    // SOS Fanta) su Inter-Monza 22/08/2026: coincide esattamente.
+                    // Il data-value (a volte con segno diverso, es. -6) NON è questo valore
+                    // pubblico — probabilmente un campo interno, non lo usiamo.
+                    const fantavoto = gradeDiv ? parseVoto(gradeDiv.textContent) : null;
+                    const eventi = Array.from(li.querySelectorAll('.player-event')).map(ev => ({
+                        tipo: (ev.getAttribute('title') || '').trim(),
+                        count: ev.getAttribute('data-count'),
+                        eventId: ev.getAttribute('data-event-id')
                     }));
-                    const bmEls = row.querySelectorAll('td:nth-child(3) .player-bonus');
-                    const bonusMalus = Array.from(bmEls).map(el => ({
-                        tipo: el.getAttribute('title') || null,
-                        segno: el.classList.contains('malus') ? '-' : '+',
-                        valore: parseNum(el.getAttribute('data-value'))
-                    })).filter(b => b.valore !== null && b.valore !== 0);
-                    players.push({ player_id: playerId, name, role, sostituito, voti, bonus_malus: bonusMalus });
+                    if (playerId) players.push({ player_id: playerId, name, role, fantavoto, eventi });
                 });
-                teams.push({ team: teamName, team_slug: teamSlug, players });
+                teams.push({ team: teamName, players });
             });
             return teams;
         }
@@ -143,7 +141,7 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
         # essere stata rinominata) — se nessuna si trova, mostro comunque il corpo
         # vero della pagina (non solo l'intestazione con gli script di tracciamento).
         idx = -1
-        for chiave in ["grades-table", "player-grade", "player-fanta-grade", "team-table-body", "Voti Ufficiali"]:
+        for chiave in ["playersListsTemplateTarget", "player-grade", "player-item", "team-formation"]:
             idx = html.find(chiave)
             if idx >= 0:
                 break
@@ -185,7 +183,7 @@ async def main_async():
         print("\n⚠️  ATTENZIONE: nessun dato estratto da nessuna partita.")
         if diagnostica_salvata:
             print("\n" + "="*70)
-            print("DIAGNOSTICA — HTML reale attorno a 'grades-table' (prima partita fallita):")
+            print("DIAGNOSTICA — HTML reale (prima partita fallita):")
             print("="*70)
             print(diagnostica_salvata)
             print("="*70)
