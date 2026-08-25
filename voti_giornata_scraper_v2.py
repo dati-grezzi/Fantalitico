@@ -79,7 +79,18 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
         await page.wait_for_selector("table.grades-table", timeout=15000)
     except Exception:
         pass  # la diagnostica sotto rivelerà la struttura vera se questo fallisce
-    await page.wait_for_timeout(1200)
+    await page.wait_for_timeout(1000)
+
+    # Scroll di sicurezza: su questo stesso sito altre pagine (probabili
+    # formazioni) caricano contenuti solo quando entrano in viewport.
+    altezza = await page.evaluate("document.body.scrollHeight")
+    y, step, i = 0, 1200, 0
+    while y < altezza and i < 15:
+        await page.evaluate(f"window.scrollTo(0, {y})")
+        await page.wait_for_timeout(300)
+        y += step; i += 1
+        altezza = await page.evaluate("document.body.scrollHeight")
+    await page.wait_for_timeout(800)
 
     data = await page.evaluate("""
         () => {
@@ -128,8 +139,19 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
 
     if not data or all(len(t["players"]) == 0 for t in data):
         html = await page.content()
-        idx = html.find("grades-table")
-        diagnostica = html[max(0, idx-500): idx+3000] if idx >= 0 else html[:3000]
+        # Provo più parole-chiave plausibili, non solo "grades-table" (che potrebbe
+        # essere stata rinominata) — se nessuna si trova, mostro comunque il corpo
+        # vero della pagina (non solo l'intestazione con gli script di tracciamento).
+        idx = -1
+        for chiave in ["grades-table", "player-grade", "player-fanta-grade", "team-table-body", "Voti Ufficiali"]:
+            idx = html.find(chiave)
+            if idx >= 0:
+                break
+        if idx >= 0:
+            diagnostica = html[max(0, idx-500): idx+3000]
+        else:
+            idx_body = html.find("<body")
+            diagnostica = html[idx_body: idx_body+6000] if idx_body >= 0 else html[:6000]
         return None, diagnostica
     return data, None
 
