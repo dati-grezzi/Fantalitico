@@ -32,6 +32,7 @@ os.makedirs("data/fonti_titolarita", exist_ok=True)
 
 OUT_TITOLARITA = "data/fonti_titolarita/fantacalcio.json"
 OUT_CALENDARIO = "data/calendario.json"
+OUT_CALENDARIO_STORICO = "data/calendario_storico.json"
 OUT_INDISPONIBILI = "data/indisponibili.json"
 
 MESI = {'gennaio':1,'febbraio':2,'marzo':3,'aprile':4,'maggio':5,'giugno':6,
@@ -250,6 +251,23 @@ async def main_async():
         json.dump({"giornata": GIORNATA, "aggiornato": datetime.now(timezone.utc).isoformat(),
                     "partite": partite}, f, ensure_ascii=False, indent=2)
     print(f"Salvato {OUT_CALENDARIO}")
+
+    # Archivio permanente: calendario.json tiene SOLO la giornata "in vetrina"
+    # del momento e si sovrascrive appena la stagione avanza — inutile per
+    # recuperare i match_id di una giornata già conclusa (es. per i voti).
+    # Qui accumuliamo ogni giornata vista, senza mai cancellare le precedenti.
+    if partite and all(p.get("match_id") for p in partite):
+        storico = {}
+        if os.path.exists(OUT_CALENDARIO_STORICO):
+            try:
+                with open(OUT_CALENDARIO_STORICO, encoding="utf-8") as f:
+                    storico = json.load(f)
+            except (json.JSONDecodeError, OSError):
+                storico = {}
+        storico[str(GIORNATA)] = partite
+        with open(OUT_CALENDARIO_STORICO, "w", encoding="utf-8") as f:
+            json.dump(storico, f, ensure_ascii=False, indent=2)
+        print(f"Salvato {OUT_CALENDARIO_STORICO} (giornate archiviate finora: {sorted(int(g) for g in storico)})")
 
     # --- Titolarità + Indisponibili (via browser, JS-caricati) ---
     print(f"\nScaricando {URL} (Playwright, per titolarità/indisponibili)...")
