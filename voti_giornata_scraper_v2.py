@@ -62,44 +62,42 @@ async def scarica_pagina_giornata():
             altezza = await page.evaluate("document.body.scrollHeight")
         await page.wait_for_timeout(1000)
 
-        # Tentativo di estrazione ragionato: per ogni riga-giocatore, prendo le
-        # prime due celle che contengono un numero (virgola o punto decimale)
-        # come Voto e Fantavoto della prima fonte (Redazione Fantacalcio).
+        # Estrazione basata sulla struttura reale confermata dalla diagnostica
+        # (24/08/2026): table > tbody > tr, prima cella = div.player-item con
+        # span.role — stessa "firma" già vista e validata sulla pagina della
+        # singola partita. Cattura generosa (testo E data-value di ogni cella
+        # della riga) per non doverci rifare un altro giro se l'ipotesi su
+        # quale valore sia "il" voto non fosse esatta al primo colpo.
         data = await page.evaluate("""
             () => {
-                const numRe = /^\\d{1,2}([.,]\\d)?$/;
-                const teams = [];
-                document.querySelectorAll('[class*="team"]').forEach(() => {});  // no-op, solo per chiarezza
+                const risultati = [];
+                document.querySelectorAll('table tbody tr').forEach(tr => {
+                    const playerItem = tr.querySelector('.player-item');
+                    if (!playerItem) return;   // riga senza giocatore (es. riga allenatore)
 
-                // Ogni blocco squadra: cerco contenitori con un'intestazione nome
-                // squadra seguita da righe giocatore (link a /squadre/.../ID)
-                document.querySelectorAll('a[href*="/serie-a/squadre/"]').forEach(a => {
-                    const href = a.getAttribute('href') || '';
-                    const m = href.match(/\\/squadre\\/([a-z0-9\\-]+)\\/([a-z0-9\\-]+)\\/(\\d+)$/);
-                    if (!m) return;   // non è un link giocatore (es. link squadra generico)
-                    const teamSlug = m[1], playerId = m[3];
-                    const name = a.textContent.trim();
+                    const roleSpan = playerItem.querySelector('span.role[data-value]');
+                    const role = roleSpan ? roleSpan.getAttribute('data-value') : null;
+
+                    const nameLink = playerItem.querySelector('a[href*="/squadre/"]');
+                    const name = nameLink ? nameLink.textContent.trim() : playerItem.textContent.trim();
+                    const href = nameLink ? (nameLink.getAttribute('href')||'') : '';
+                    const idMatch = href.match(/\\/(\\d+)(?:\\/[\\d-]+)?\\/?$/);
+                    const playerId = idMatch ? idMatch[1] : null;
                     if (!name) return;
 
-                    // Risalgo al contenitore riga (il player-name è quasi sempre
-                    // dentro una riga/li/tr che contiene anche i voti accanto)
-                    let riga = a.closest('tr, li, .player-row, [class*="row"]') || a.parentElement;
-                    if (!riga) return;
-
-                    // Cerco celle numeriche nella riga (voto/fantavoto), scartando
-                    // il testo del link stesso
-                    const testiCelle = Array.from(riga.querySelectorAll('td, div, span'))
-                        .map(el => el.textContent.trim())
-                        .filter(t => numRe.test(t));
-
-                    if (testiCelle.length >= 2) {
-                        teams.push({
-                            team_slug: teamSlug, player_id: playerId, name,
-                            voto: testiCelle[0], fantavoto: testiCelle[1]
+                    // Tutte le celle della riga DOPO la prima (che è il player-item)
+                    const celle = [];
+                    tr.querySelectorAll('td').forEach((td, idx) => {
+                        if (idx === 0) return;
+                        celle.push({
+                            testo: td.textContent.replace(/\\s+/g, ' ').trim(),
+                            dataValues: Array.from(td.querySelectorAll('[data-value]')).map(el => el.getAttribute('data-value'))
                         });
-                    }
+                    });
+
+                    risultati.push({ role, name, player_id: playerId, celle });
                 });
-                return teams;
+                return risultati;
             }
         """)
 
@@ -112,7 +110,7 @@ async def scarica_pagina_giornata():
                 if idx >= 0:
                     break
             if idx >= 0:
-                diagnostica = html[max(0, idx-500): idx+4000]
+                diagnostica = html[max(0, idx-500): idx+9000]
             else:
                 idx_body = html.find("<body")
                 diagnostica = html[idx_body: idx_body+6000] if idx_body >= 0 else html[:6000]
@@ -131,7 +129,7 @@ def main():
         return 1
 
     if not data:
-        print("\n⚠️  ATTENZIONE: 0 giocatori estratti.")
+        print("\n⚠️  ATTENZIONE: 0 giocatori estratti (nessuna riga con .player-item trovata).")
         if diagnostica:
             print("\n" + "="*70)
             print("DIAGNOSTICA — HTML reale:")
@@ -140,10 +138,17 @@ def main():
             print("="*70)
         return 1
 
-    print(f"✅ {len(data)} giocatori estratti\n")
+    print(f"✅ {len(data)} giocatori trovati (righe con nome/ruolo riconosciuti)\n")
+    print("📊 Anteprima celle grezze (primi 3 giocatori) — serve a scegliere")
+    print("   quale cella/data-value è il voto giusto, prima di pulire il formato finale:")
+    for p in data[:3]:
+        print(f"\n   {p['name']} (ruolo={p['role']}, id={p['player_id']})")
+        for i, c in enumerate(p["celle"]):
+            print(f"      cella[{i}]: testo={c['testo']!r}  data-values={c['dataValues']}")
+
     with open(OUT_JSON, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
-    print(f"📝 Salvato in {OUT_JSON}")
+    print(f"\n📝 Salvato (formato grezzo, da rifinire) in {OUT_JSON}")
     return 0
 
 
