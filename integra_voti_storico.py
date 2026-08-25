@@ -15,67 +15,45 @@ import json
 import sys
 import os
 from pathlib import Path
-from statistics import mean
 
 STORICO_PATH = "data/voti_storico.json"
 
 
-def clamp_voto(v):
-    """'55' è un valore SENTINELLA usato dal sito per 'non votato da questa fonte'
-    (verificato sui dati reali: 182/188 valori >11 erano esattamente 55; i rimanenti
-    erano fantavoti alti ma legittimi, es. doppietta+Player of the match=13,5 —
-    quelli NON vanno toccati). Qualsiasi altro valore fuori range viene lasciato
-    invariato ma segnalato per revisione manuale."""
-    if v is None:
-        return None, False
-    if v == 55:
-        return None, True  # sentinel → dato mancante
-    return v, False
-
-
 def flatten(teams_data, giornata):
-    """Appiattisce il formato per-squadra in una lista per player_id."""
+    """Appiattisce il formato per-squadra prodotto dallo scraper attuale:
+    [{team: "Inter", players: [{player_id, name, role, fantavoto, eventi}]}]
+    — un solo fantavoto per giocatore (verificato contro fonti esterne), non
+    più 3 redazioni da mediare come nella versione precedente del sito.
+    Difensiva: una squadra con formato inatteso viene saltata con un avviso,
+    non manda in crash tutto lo script."""
     rows = []
-    sentinel_rimossi = []
-    da_rivedere = []
+    squadre_saltate = []
     for team in teams_data:
+        if not isinstance(team, dict) or "players" not in team:
+            squadre_saltate.append(team.get("team", "?") if isinstance(team, dict) else str(team)[:50])
+            continue
+
+        squadra = (team.get("team") or "").strip().lower()
         for p in team["players"]:
             if not p.get("player_id"):
                 continue  # giocatori senza id (raro, es. nome non linkato) scartati
 
-            voti_puliti = []
-            for v in p["voti"]:
-                voto_c, sent_v = clamp_voto(v["voto"])
-                fanta_c, sent_f = clamp_voto(v["fantavoto"])
-                if sent_v or sent_f:
-                    sentinel_rimossi.append((p["name"], p["player_id"], v["fonte"]))
-                elif (voto_c is not None and abs(voto_c) > 11) or (fanta_c is not None and abs(fanta_c) > 11):
-                    da_rivedere.append((p["name"], p["player_id"], voto_c, fanta_c))
-                voti_puliti.append({**v, "voto": voto_c, "fantavoto": fanta_c})
-            p["voti"] = voti_puliti
-
-            fantavoti = [v["fantavoto"] for v in p["voti"] if v["fantavoto"] is not None]
-            voti = [v["voto"] for v in p["voti"] if v["voto"] is not None]
+            fantavoto = p.get("fantavoto")
+            if fantavoto is not None and abs(fantavoto) > 15:
+                print(f"⚠️  Valore sospetto: {p.get('name')} (id={p.get('player_id')}) fantavoto={fantavoto} — verifica a vista")
 
             rows.append({
                 "player_id": p["player_id"],
-                "nome": p["name"],
-                "squadra": team["team_slug"],
-                "ruolo": p["role"],
+                "nome": p.get("name"),
+                "squadra": squadra,
+                "ruolo": p.get("role"),
                 "giornata": giornata,
-                "sostituito": p["sostituito"],
-                "voto_consensus": round(mean(voti), 2) if voti else None,
-                "fantavoto_consensus": round(mean(fantavoti), 2) if fantavoti else None,
-                "voti_per_fonte": p["voti"],          # dettaglio 3 redazioni, per audit
-                "bonus_malus": p["bonus_malus"],
+                "fantavoto_consensus": fantavoto,
+                "eventi": p.get("eventi", []),
             })
 
-    if sentinel_rimossi:
-        print(f"ℹ️  {len(sentinel_rimossi)} voti sentinella (55 = non votato da quella fonte) esclusi dal consensus")
-    if da_rivedere:
-        print(f"⚠️  {len(da_rivedere)} valori fuori range MA NON toccati (probabile fantavoto alto legittimo) — controlla a vista:")
-        for nome, pid, v, fv in da_rivedere[:10]:
-            print(f"   {nome} (id={pid}): V={v} FV={fv}")
+    if squadre_saltate:
+        print(f"⚠️  {len(squadre_saltate)} blocchi squadra saltati (formato inatteso, niente 'players'): {squadre_saltate}")
 
     return rows
 
@@ -125,11 +103,8 @@ def main():
             aggiornati += 1
 
         storico[pid]["giornate"][str(giornata)] = {
-            "voto_consensus": r["voto_consensus"],
             "fantavoto_consensus": r["fantavoto_consensus"],
-            "sostituito": r["sostituito"],
-            "voti_per_fonte": r["voti_per_fonte"],
-            "bonus_malus": r["bonus_malus"],
+            "eventi": r["eventi"],
         }
 
     save_storico(storico)
@@ -137,10 +112,9 @@ def main():
     print(f"   Totale giocatori nello storico: {len(storico)}")
 
     # Anteprima consensus
-    print("\n📊 Anteprima consensus (primi 5):")
+    print("\n📊 Anteprima (primi 5):")
     for r in rows[:5]:
-        print(f"   {r['nome']:20s} id={r['player_id']:>6s} → "
-              f"V={r['voto_consensus']} FV={r['fantavoto_consensus']}")
+        print(f"   {r['nome']:20s} id={r['player_id']:>6s} squadra={r['squadra']:12s} FV={r['fantavoto_consensus']}")
 
     return 0
 
