@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-08-25T18:38:19.413728+00:00",
+  "aggiornato": "2026-08-26T06:40:36.670767+00:00",
   "fonti_usate": [
     "fantacalcio.it",
     "sosfanta.com"
@@ -835,7 +835,16 @@
     "7553": {
       "nome": "Omar Fayed",
       "squadra": "frosinone",
-      "confidence": 0.15,
+      "confidence": 0.25,
+      "fonti": [
+        "fantacalcio.it"
+      ],
+      "n_fonti": 1
+    },
+    "7605": {
+      "nome": "Tchato",
+      "squadra": "frosinone",
+      "confidence": 0.3,
       "fonti": [
         "fantacalcio.it"
       ],
@@ -1060,7 +1069,7 @@
     "5399": {
       "nome": "Antov",
       "squadra": "monza",
-      "confidence": 0.3,
+      "confidence": 0.2,
       "fonti": [
         "fantacalcio.it"
       ],
@@ -1070,6 +1079,15 @@
       "nome": "Bakoune",
       "squadra": "monza",
       "confidence": 0.6,
+      "fonti": [
+        "fantacalcio.it"
+      ],
+      "n_fonti": 1
+    },
+    "7604": {
+      "nome": "Maye",
+      "squadra": "monza",
+      "confidence": 0.35,
       "fonti": [
         "fantacalcio.it"
       ],
@@ -1864,10 +1882,19 @@
       ],
       "n_fonti": 2
     },
+    "7603": {
+      "nome": "Grabara",
+      "squadra": "juventus",
+      "confidence": 0.05,
+      "fonti": [
+        "fantacalcio.it"
+      ],
+      "n_fonti": 1
+    },
     "1930": {
       "nome": "Pinsoglio",
       "squadra": "juventus",
-      "confidence": 0.05,
+      "confidence": 0.01,
       "fonti": [
         "fantacalcio.it"
       ],
