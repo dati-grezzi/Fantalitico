@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-08-26T06:40:32.496534+00:00",
+  "aggiornato": "2026-08-26T19:46:22.893818+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -118,23 +118,9 @@
     "juventus": {
       "infortunati": [
         {
-          "nome": "Ekhator",
-          "dettaglio": "Lesione di basso grado del bicipite femorale della coscia destra, in dubbio per la 1a",
-          "rientro_giornata": 1,
-          "id": "6822",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Gatti",
-          "dettaglio": "Problema alla caviglia, in dubbio per la 2a",
-          "rientro_giornata": 2,
-          "id": "5831",
-          "match_score": 1.0
-        },
-        {
           "nome": "Yildiz",
-          "dettaglio": "",
-          "rientro_giornata": null,
+          "dettaglio": "Frattura al quinto metatarso del piede sinistro, in dubbio per la 12a in caso di operazione chirurgica",
+          "rientro_giornata": 12,
           "id": "6434",
           "match_score": 1.0
         }
@@ -145,13 +131,6 @@
     "lazio": {
       "infortunati": [
         {
-          "nome": "Dele-Bashiru",
-          "dettaglio": "Risentimento ai flessori, in dubbio per la 2a",
-          "rientro_giornata": 2,
-          "id": "6629",
-          "match_score": 1.0
-        },
-        {
           "nome": "Marusic",
           "dettaglio": "Risentimento ai flessori, in dubbio per la 2a",
           "rientro_giornata": 2,
@@ -159,17 +138,24 @@
           "match_score": 1.0
         },
         {
-          "nome": "Cataldi",
-          "dettaglio": "Intervento chirurgico per risolvere i problemi con la pubalgia, in dubbio per la 3a",
-          "rientro_giornata": 3,
-          "id": "333",
-          "match_score": 1.0
-        },
-        {
           "nome": "Patric",
           "dettaglio": "Autorizzato a osservare alcuni giorni di temporanea indisponibilità per completare un percorso clinico già programmato, in dubbio per la 3a",
           "rientro_giornata": 3,
           "id": "327",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Dele-Bashiru",
+          "dettaglio": "Lesione di primo grado ai flessori della coscia destra, in dubbio per la 4a",
+          "rientro_giornata": 4,
+          "id": "6629",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Cataldi",
+          "dettaglio": "Intervento chirurgico per risolvere i problemi con la pubalgia, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "333",
           "match_score": 1.0
         }
       ],
@@ -183,19 +169,6 @@
           "dettaglio": "Intervento chirurgico per una lesione del tendine riflesso del retto femorale destro, in dubbio per la 2a",
           "rientro_giornata": 2,
           "id": "6015",
-          "match_score": 1.0
-        }
-      ],
-      "squalificati": [],
-      "diffidati": []
-    },
-    "milan": {
-      "infortunati": [
-        {
-          "nome": "Leao",
-          "dettaglio": "Risentimento muscolare, in dubbio per la 2a",
-          "rientro_giornata": 2,
-          "id": "4510",
           "match_score": 1.0
         }
       ],
@@ -274,8 +247,8 @@
       "infortunati": [
         {
           "nome": "Nicolussi Caviglia",
-          "dettaglio": "Lesione di medio grado della coscia destra, in dubbio per la 3a",
-          "rientro_giornata": 3,
+          "dettaglio": "Sindrome pubalgica, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "4349",
           "match_score": 1.0
         }
@@ -287,15 +260,15 @@
       "infortunati": [
         {
           "nome": "Pellegrini Lo.",
-          "dettaglio": "Ritardo di condizione, in dubbio per la 3a",
-          "rientro_giornata": 3,
+          "dettaglio": "Ritardo di condizione, in dubbio per la 2a",
+          "rientro_giornata": 2,
           "id": "530",
           "match_score": 1.0
         },
         {
           "nome": "Rensch",
-          "dettaglio": "",
-          "rientro_giornata": null,
+          "dettaglio": "Affaticamento al flessore della coscia sinistra, in dubbio per la 3a",
+          "rientro_giornata": 3,
           "id": "6986",
           "match_score": 1.0
         }
@@ -306,9 +279,16 @@
     "sassuolo": {
       "infortunati": [
         {
-          "nome": "Berardi",
-          "dettaglio": "Sovraccarico alla caviglia destra, in dubbio per la 2a",
+          "nome": "Walukiewicz",
+          "dettaglio": "Fuori per un problema fisico, in dubbio per la 2a",
           "rientro_giornata": 2,
+          "id": "4374",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Berardi",
+          "dettaglio": "Sovraccarico alla caviglia destra, in dubbio per la 3a",
+          "rientro_giornata": 3,
           "id": "531",
           "match_score": 1.0
         },
@@ -339,20 +319,6 @@
           "rientro_giornata": 20,
           "id": "6717",
           "match_score": 1.0
-        },
-        {
-          "nome": "Pinamonti",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "2038",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Walukiewicz",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "4374",
-          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -362,8 +328,8 @@
       "infortunati": [
         {
           "nome": "Anjorin",
-          "dettaglio": "",
-          "rientro_giornata": null,
+          "dettaglio": "Fuori per un problema fisico, in dubbio per la 2a",
+          "rientro_giornata": 2,
           "id": "6889",
           "match_score": 1.0
         }
@@ -395,17 +361,17 @@
           "match_score": 1.0
         },
         {
+          "nome": "Palma",
+          "dettaglio": "Lesione all'adduttore. In dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "6925",
+          "match_score": 1.0
+        },
+        {
           "nome": "Zaniolo",
           "dettaglio": "Stiramento, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "2766",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Palma",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "6925",
           "match_score": 1.0
         }
       ],
