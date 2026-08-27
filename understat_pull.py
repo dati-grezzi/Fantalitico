@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Understat — statistiche offensive Serie A 2025-26 partita per partita.
+Understat — statistiche offensive Serie A 2026-27 partita per partita.
 Tiri, xG, npxG, assist, xA, key passes e minuti per ogni giocatore in ogni gara.
 Nessun browser: solo richieste HTTP, quindi gira ovunque senza blocchi.
 
@@ -21,7 +21,7 @@ import sys
 import time
 import requests
 
-SEASON = "2025"                       # Understat: 2025 = stagione 2025-26
+SEASON = "2026"                       # Understat: 2026 = stagione 2026-27
 BASE = "https://understat.com"
 LEAGUE_URL = f"{BASE}/league/Serie_A/{SEASON}"
 OUT = "understat_2025_26_permatch.csv"
