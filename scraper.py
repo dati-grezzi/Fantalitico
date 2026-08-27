@@ -187,11 +187,25 @@ def job_statistiche() -> None:
         raise ValueError(f"Statistiche: trovati solo {len(players)} giocatori, struttura pagina cambiata?")
 
     # Controllo esplicito per il bug scoperto il 25/08: la tabella può caricarsi
-    # con la struttura giusta ma i valori ancora a zero/vuoti (JS non finito di
-    # popolare). Se succede di nuovo, meglio un errore chiaro che salvare dati
-    # silenziosamente vuoti come è successo oggi.
+    # con la struttura giusta ma i valori ancora a zero/vuoti. Fallito 3 volte
+    # di fila con approcci diversi (Playwright, richiesta semplice, matching
+    # per title) — invece di tentare una quarta ipotesi alla cieca, stampo
+    # l'HTML vero della prima riga di intestazione e della prima riga dati,
+    # così la prossima volta vediamo la realtà invece di indovinare ancora.
     con_mv = sum(1 for p in players if p["mv"] is not None)
     if con_mv < len(players) * 0.5:
+        print("\n" + "="*70)
+        print("DIAGNOSTICA — HTML vero della riga di intestazione trovata:")
+        print("="*70)
+        for th in header_cells:
+            print(repr(str(th)))
+        print("\n" + "="*70)
+        print("DIAGNOSTICA — HTML vero della prima riga dati:")
+        print("="*70)
+        prima_riga = table.select_one("tbody tr")
+        if prima_riga:
+            print(str(prima_riga)[:3000])
+        print("="*70)
         raise ValueError(
             f"Statistiche: solo {con_mv}/{len(players)} giocatori hanno un MV valido — "
             "la tabella sembra non essersi popolata del tutto (dati ancora a zero/vuoti)."
