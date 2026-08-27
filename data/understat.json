@@ -1,0 +1,43 @@
+{
+ "aggiornato": "2026-08-27T11:26:42.983133+00:00",
+ "fonte": "Understat (tabella Players, totali di stagione)",
+ "note": "Mapping ID fantacalcio → {apps, minutes_total, goals, assists, xG, xA, xG90, xA90}. Da understat_players_2026.csv.",
+ "giocatori": {
+  "5555": {
+   "apps": 1,
+   "minutes_total": 90,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.55,
+   "xA90": 0.0,
+   "understat_name": "Hassane Kamara",
+   "match_score": 0.85
+  },
+  "6217": {
+   "apps": 1,
+   "minutes_total": 90,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.08,
+   "xA90": 0.02,
+   "understat_name": "Yann Bisseck",
+   "match_score": 0.85
+  },
+  "2788": {
+   "apps": 1,
+   "minutes_total": 90,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.62,
+   "xA90": 0.55,
+   "understat_name": "Bremer",
+   "match_score": 1.0
+  }
+ }
+}
