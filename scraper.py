@@ -83,10 +83,32 @@ def job_statistiche() -> None:
     if table is None:
         raise ValueError("Tabella statistiche non trovata nella pagina")
 
-    headers = [norm(th.get_text()).lower() for th in table.select("thead th, tr th")]
+    header_cells = table.select("thead th, tr th")
+    headers_testo = [norm(th.get_text()).lower() for th in header_cells]
+    # L'attributo title (es. title="Media voto") è più stabile del testo
+    # visibile — quest'ultimo può avere icone di ordinamento appiccicate
+    # (es. "MV ↓") che rompono un confronto esatto. Confermato il 25/08:
+    # il testo confrontava sempre falso nonostante i dati fossero presenti.
+    headers_title = [norm(th.get("title", "")).lower() for th in header_cells]
+    TITLE_PER_LABEL = {
+        "sq": "squadra", "pv": "partite a voto", "mv": "media voto", "fm": "fantamedia",
+        "gol": "gol segnati", "gs": "gol subiti", "rig": "rigori segnati / tirati",
+        "rp": "rigori parati", "ass": "assist", "amm": "ammonizioni", "esp": "espulsioni",
+        "au": "autogol",
+    }
 
     def col(label):
-        return headers.index(label) if label in headers else None
+        # 1) per attributo title (esatto)
+        titolo_atteso = TITLE_PER_LABEL.get(label)
+        if titolo_atteso and titolo_atteso in headers_title:
+            return headers_title.index(titolo_atteso)
+        # 2) per testo, con "inizia con" invece di uguaglianza esatta
+        #    (tollera icone/testo aggiuntivo dopo l'etichetta)
+        for i, h in enumerate(headers_testo):
+            if h == label or h.startswith(label + " ") or h.startswith(label + "\u00a0"):
+                return i
+        # 3) uguaglianza esatta come ultima risorsa
+        return headers_testo.index(label) if label in headers_testo else None
 
     idx = {
         "pv": col("pv"), "mv": col("mv"), "fm": col("fm"),
