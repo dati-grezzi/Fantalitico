@@ -52,13 +52,16 @@ jobs:
       - name: Consensus titolarità (fantacalcio.it + sosfanta.com)
         run: python titolarita_consensus.py
 
-      # UNDERSTAT TEMPORANEAMENTE DISABILITATO (fuori stagione)
-      # - name: Esegui scraper Understat
-      #   run: python understat_pull.py
-      #   continue-on-error: true
-      # - name: Elabora Understat (CSV → JSON)
-      #   run: python understat_process.py
-      #   continue-on-error: true
+      # UNDERSTAT riattivato il 25/08 — il sito ha finalmente pubblicato la
+      # pagina 2026-27. continue-on-error resta attivo: se i loro dati non
+      # fossero ancora completi per la Giornata 1, non deve bloccare il resto.
+      - name: Esegui scraper Understat
+        run: python understat_pull.py
+        continue-on-error: true
+
+      - name: Elabora Understat (CSV → JSON)
+        run: python understat_process.py
+        continue-on-error: true
 
       - name: Commit dei JSON aggiornati
         run: |
