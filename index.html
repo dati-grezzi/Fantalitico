@@ -444,12 +444,29 @@ const MODULES = [
    bonus_FV = beta · FV_sd(ruolo) · clamp((valore−media)/sd, −2, +2) */
 const PERF_W = {
   cap: 2.0,
-  FV_sd: { A: 1.895, C: 1.328, D: 1.071 },
+  FV_sd: { A: 1.895, C: 1.328, D: 1.071, P: 0.9 },
+  // NOTA (25/08/2026): Understat non ha mai avuto tackle/intercetti/rinvii —
+  // verificato controllando la lista ufficiale dei campi che espone (solo
+  // tiri/xG). Per D/C/P ora usiamo SofaScore (tackles_p90, interceptions_p90,
+  // clearances_p90, duels_won_pct, passes_accurate_pct, key_passes_p90).
+  // mean/sd sono stime ragionate (nessun dato storico accumulato ancora per
+  // calibrarle sul serio) — stesso principio del documento originale sui
+  // pesi Understat: baseline in attesa di calibrazione con dati reali.
   ruoli: {
     A: { shots_p90: { beta: 0.112, mean: 2.451, sd: 0.943 }, xa_p90: { beta: 0.0, mean: 0.1425, sd: 0.1015 } },
-    C: { shots_p90: { beta: 0.103, mean: 1.357, sd: 0.7967 }, xa_p90: { beta: 0.0, mean: 0.1134, sd: 0.091 } },
-    D: { shots_p90: { beta: 0.051, mean: 0.6181, sd: 0.3926 }, xa_p90: { beta: 0.077, mean: 0.0678, sd: 0.0843 } },
-    P: {},
+    C: {
+      key_passes_p90: { beta: 0.10, mean: 0.8, sd: 0.6 },
+      tackles_p90: { beta: 0.06, mean: 1.3, sd: 1.0 },
+      interceptions_p90: { beta: 0.04, mean: 1.0, sd: 0.8 },
+    },
+    D: {
+      tackles_p90: { beta: 0.08, mean: 1.5, sd: 1.0 },
+      interceptions_p90: { beta: 0.06, mean: 1.2, sd: 0.8 },
+      clearances_p90: { beta: 0.03, mean: 2.0, sd: 1.5 },
+    },
+    P: {
+      saves_box_p90: { beta: 0.15, mean: 1.0, sd: 0.9 },
+    },
   },
 };
 
@@ -471,6 +488,7 @@ const S = {                    // stato applicazione
   rigoristi: {},               // slug → [slug giocatori]
   indisponibili: {},           // slug → [slug giocatori]
   understat: {},               // id(cod) → {shots_p90, xa_p90} (feed offensivo, quando presente)
+  sofascore: {},                // id(cod) → {tackles_p90, interceptions_p90, clearances_p90, ...} (feed difensivo/passaggio)
   votiStorico: {},             // id(cod) → {nome,squadra,ruolo,giornate:{"16":{voto_consensus,fantavoto_consensus,...}}}
   storicoPresenze: {},         // id(cod) → {pv, rateo} stagione precedente conclusa, per l'Indice di Titolarità (TS)
   titolarita_reale: {},        // id(cod) → {confidence,...} consensus probabili formazioni (fonte reale per l'IT)
@@ -569,10 +587,10 @@ async function loadData(){
   const res = await Promise.allSettled([
     getJSON("players.json"), getJSON("classifica.json"), getJSON("calendario.json"),
     getJSON("rigoristi.json"), getJSON("indisponibili.json"), getJSON("meta.json"),
-    getJSON("understat.json"), getJSON("voti_storico.json"), getJSON("storico_presenze.json"),
+    getJSON("understat.json"), getJSON("sofascore.json"), getJSON("voti_storico.json"), getJSON("storico_presenze.json"),
     getJSON("titolarita_reale.json"), getJSON("prezzi_reali_asta.json"),
   ]);
-  const [pl, cl, cal, rig, ind, meta, us, vs, sp, tr, pa] = res.map(r => r.status==="fulfilled" ? r.value : null);
+  const [pl, cl, cal, rig, ind, meta, us, sf, vs, sp, tr, pa] = res.map(r => r.status==="fulfilled" ? r.value : null);
 
   if(pl){
     S.db = pl.giocatori.filter(p => p.id && p.nome);
@@ -601,6 +619,9 @@ async function loadData(){
   if(ind) S.indisponibili = ind.squadre || {};   // { team: {squalificati:[{nome,id}], diffidati:[...], infortunati:[{nome,id,dettaglio}], dubbio:[...]} }
   if(us && us.giocatori){                      // feed offensivo: { giocatori: { cod: {shots_p90, xa_p90} } }
     S.understat = us.giocatori;
+  }
+  if(sf && sf.giocatori){                       // feed difensivo/passaggio: { giocatori: { cod: {tackles_p90, ...} } }
+    S.sofascore = sf.giocatori;
   }
   if(vs) S.votiStorico = vs;                    // storico voti reali per giornata: { player_id: {nome,squadra,ruolo,giornate:{...}} }
   if(sp && sp.giocatori) S.storicoPresenze = sp.giocatori;  // { player_id: {nome,squadra,pv,rateo} } stagione precedente
@@ -668,23 +689,19 @@ function teamAdj(st){
   return GAMMA_TEAM[roleOf(st)] * (strength(st.squadra) - 0.5);
 }
 function roleOf(st){ return st ? (st.ruolo || "C") : "?"; }
-function perfBonus(st){                          // bonus da statistiche Understat role-specific
-  const role = roleOf(st), w = PERF_W.ruoli[role], u = S.understat[st.id];
-  if (!w || !u) return { val: 0, has: false };   // nessun feed (es. campionato fermo) → 0
+function perfBonus(st){                          // bonus da statistiche Understat (A) o SofaScore (C/D/P)
+  const role = roleOf(st), w = PERF_W.ruoli[role];
+  // Attaccanti: Understat (confermato avere xG/xA/tiri). Altri ruoli:
+  // SofaScore (tackle, intercetti, rinvii — Understat non li ha mai avuti).
+  const fonte = role === "A" ? (S.understat && S.understat[st.id]) : (S.sofascore && S.sofascore[st.id]);
+  if (!w || !fonte) return { val: 0, has: false };   // nessun feed (es. campionato fermo) → 0
   const fvsd = PERF_W.FV_sd[role] || 0;
   let b = 0, used = false;
-  
-  // Metriche specifiche per ruolo
-  let metrics = ["shots_p90", "xa_p90"];  // Default
-  if(role === "A") metrics = ["shots_p90", "xa_p90", "xg_p90"];  // Attaccanti: aggiungi xG
-  if(role === "C") metrics = ["xa_p90", "tackles_interceptions_p90", "passes_progressive_p90"];  // Centrocampisti
-  if(role === "D") metrics = ["tackles_interceptions_p90", "xga_90", "clearances_p90"];  // Difensori
-  if(role === "P") metrics = ["xga_90", "shots_on_target_p90"];  // Portieri (no save_rate, non disponibile)
-  
-  for (const sig of metrics) {
+
+  for (const sig of Object.keys(w)) {
     const c = w[sig];
-    if (!c || !c.beta || u[sig] == null) continue;
-    const z = Math.max(-PERF_W.cap, Math.min(PERF_W.cap, (u[sig] - c.mean) / c.sd));
+    if (!c || !c.beta || fonte[sig] == null) continue;
+    const z = Math.max(-PERF_W.cap, Math.min(PERF_W.cap, (fonte[sig] - c.mean) / c.sd));
     b += c.beta * fvsd * z; used = true;
   }
   return { val: b, has: used };
