@@ -1,0 +1,323 @@
+# -*- coding: utf-8 -*-
+"""
+FANTALITICO — pipeline dati
+Scarica statistiche giocatori (tabella pubblica fantacalcio.it),
+classifica, calendario, rigoristi e indisponibili di Serie A,
+e salva tutto come JSON nella cartella /data, pronta per la PWA.
+
+Ogni fonte è indipendente: se una fallisce, le altre vengono
+comunque aggiornate e il JSON precedente resta al suo posto.
+"""
+
+import io
+import json
+import re
+import sys
+import datetime as dt
+from pathlib import Path
+
+import requests
+import pandas as pd
+
+BASE = "https://www.fantacalcio.it"
+
+CLASSIFICA_URL = f"{BASE}/serie-a/classifica"
+RIGORISTI_URL = f"{BASE}/rigoristi-serie-a"
+
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36"
+    ),
+    "Accept-Language": "it-IT,it;q=0.9",
+}
+
+DATA_DIR = Path(__file__).parent / "data"
+DATA_DIR.mkdir(exist_ok=True)
+
+
+# ── UTILITÀ ───────────────────────────────────────────────────────
+def fetch(url: str) -> requests.Response:
+    r = requests.get(url, headers=HEADERS, timeout=40)
+    r.raise_for_status()
+    return r
+
+
+def save_json(name: str, payload) -> None:
+    path = DATA_DIR / name
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(payload, f, ensure_ascii=False, indent=1)
+    print(f"  ✔ scritto {path.name}")
+
+
+def norm(s) -> str:
+    return re.sub(r"\s+", " ", str(s)).strip()
+
+
+# ── 1. STATISTICHE GIOCATORI (tabella HTML, nessun login richiesto) ──
+def job_statistiche() -> None:
+    """
+    RISCRITTO IL 25/08/2026: la tabella non è più renderizzata lato server
+    (come indicato nel commento precedente) — verificato che i dati reali
+    esistono sulla pagina (confermato con Gaetano: PV=1, MV=6,5, FM=7,5) ma
+    una richiesta HTTP semplice probabilmente prende solo il guscio vuoto
+    prima che il JavaScript la popoli. Serve un browser vero (Playwright),
+    stesso motivo di quasi tutte le altre pagine di questo sito.
+
+    La logica di estrazione (allineamento celle-intestazioni per nome,
+    euristiche multiple per il ruolo) resta INVARIATA — funzionava già bene,
+    il problema era solo *come* scaricare l'HTML, non come leggerlo.
+    """
+    from bs4 import BeautifulSoup
+    from playwright.sync_api import sync_playwright
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+        page.goto(f"{BASE}/statistiche-serie-a", wait_until="load", timeout=45000)
+        # NOTA (25/08): avevo provato "networkidle" per essere più sicuro, ma è
+        # noto per restare bloccato a lungo su pagine con attività di rete
+        # continua in background (pubblicità, widget) — è successo qui, un
+        # lancio è arrivato a 12 minuti. Torno a "load" + il controllo mirato
+        # sotto (che aspetta la tabella vera, non la rete) fa il lavoro pesante.
+        # I dati arrivano via JS dopo il caricamento iniziale. Il primo tentativo
+        # (25/08) cercava un numero tipo "6,5" in QUALSIASI cella della pagina —
+        # troppo generico, probabilmente trovava un falso positivo altrove (menu,
+        # pubblicità) e si fermava subito, prima che la tabella vera fosse pronta.
+        # Ora cerco specificamente dentro la tabella con intestazioni mv/fm —
+        # la stessa che il parsing userà dopo — e dentro il suo tbody, non
+        # nell'intestazione stessa (che potrebbe contenere testo simile).
+        try:
+            page.wait_for_function(
+                """() => {
+                    const tabelle = Array.from(document.querySelectorAll('table'));
+                    for (const t of tabelle) {
+                        const head = Array.from(t.querySelectorAll('thead th, tr th'))
+                            .map(th => th.textContent.trim().toLowerCase());
+                        if (!head.includes('mv') || !head.includes('fm')) continue;
+                        const celleBody = Array.from(t.querySelectorAll('tbody td'));
+                        if (celleBody.some(td => /^\\d+,\\d+$/.test(td.textContent.trim()))) return true;
+                    }
+                    return false;
+                }""",
+                timeout=25000,
+            )
+        except Exception:
+            pass  # procedo comunque: se non arriva, il controllo "con_mv" più sotto lo segnala con un errore chiaro
+        page.wait_for_timeout(1000)  # margine di sicurezza dopo la comparsa dei dati
+        html = page.content()
+        browser.close()
+
+    soup = BeautifulSoup(html, "lxml")
+
+    table = None
+    for t in soup.select("table"):
+        head = " ".join(norm(th.get_text()) for th in t.select("thead th, tr th")).lower()
+        if "mv" in head.split() and "fm" in head.split():
+            table = t
+            break
+    if table is None:
+        raise ValueError("Tabella statistiche non trovata nella pagina")
+
+    headers = [norm(th.get_text()).lower() for th in table.select("thead th, tr th")]
+
+    def col(label):
+        return headers.index(label) if label in headers else None
+
+    idx = {
+        "pv": col("pv"), "mv": col("mv"), "fm": col("fm"),
+        "gol": col("gol"), "golSubiti": col("gs"), "rig": col("rig"),
+        "rigoriParati": col("rp"), "assist": col("ass"),
+        "ammonizioni": col("amm"), "espulsioni": col("esp"), "autogol": col("au"),
+    }
+
+    def to_num(s):
+        s = norm(s).replace(",", ".") if s else ""
+        if not s or s == "-":
+            return None
+        try:
+            f = float(s)
+            return int(f) if f.is_integer() else round(f, 3)
+        except ValueError:
+            return None
+
+    ROLE_TITLES = {"portiere": "P", "difensore": "D",
+                   "centrocampista": "C", "attaccante": "A"}
+
+    players = []
+    for tr in table.select("tbody tr"):
+        a = tr.select_one("a[href*='/serie-a/squadre/']")
+        if not a:
+            continue
+        m = re.search(r"/serie-a/squadre/([^/]+)/([^/]+)/(\d+)", a.get("href", ""))
+        cells = [norm(td.get_text()) for td in tr.select("td")]
+
+        # ruolo: 1) attributo data-value  2) classe role-x  3) title/aria-label
+        role = None
+        el = tr.select_one("[data-value]")
+        if el and norm(el.get("data-value", "")).lower() in ("p", "d", "c", "a"):
+            role = norm(el.get("data-value")).upper()
+        if role is None:
+            for el in tr.select("[class]"):
+                for cls in el.get("class", []):
+                    mm = re.fullmatch(r"role[-_]?([pdca])", cls.lower())
+                    if mm:
+                        role = mm.group(1).upper()
+                        break
+                if role:
+                    break
+        if role is None:
+            for el in tr.select("[title], [aria-label]"):
+                lab = (el.get("title") or el.get("aria-label") or "").strip().lower()
+                if lab in ROLE_TITLES:
+                    role = ROLE_TITLES[lab]
+                    break
+
+        def cell(key):
+            i = idx.get(key)
+            return cells[i] if i is not None and i < len(cells) else None
+
+        rig_s = rig_c = None
+        rig_raw = cell("rig")
+        if rig_raw:
+            mm = re.match(r"(\d+)\s*/\s*(\d+)", rig_raw)
+            if mm:
+                rig_s, rig_c = int(mm.group(1)), int(mm.group(2))
+
+        players.append({
+            "id": int(m.group(3)) if m else None,
+            "nome": norm(a.get_text()),
+            "squadra": m.group(1) if m else None,
+            "ruolo": role,
+            "pv": to_num(cell("pv")), "mv": to_num(cell("mv")), "fm": to_num(cell("fm")),
+            "gol": to_num(cell("gol")), "golSubiti": to_num(cell("golSubiti")),
+            "rigoriSegnati": rig_s, "rigoriCalciati": rig_c,
+            "rigoriParati": to_num(cell("rigoriParati")), "assist": to_num(cell("assist")),
+            "ammonizioni": to_num(cell("ammonizioni")), "espulsioni": to_num(cell("espulsioni")),
+            "autogol": to_num(cell("autogol")),
+        })
+
+    if len(players) < 200:
+        raise ValueError(f"Statistiche: trovati solo {len(players)} giocatori, struttura pagina cambiata?")
+
+    # Controllo esplicito per il bug scoperto il 25/08: la tabella può caricarsi
+    # con la struttura giusta ma i valori ancora a zero/vuoti (JS non finito di
+    # popolare). Se succede di nuovo, meglio un errore chiaro che salvare dati
+    # silenziosamente vuoti come è successo oggi.
+    con_mv = sum(1 for p in players if p["mv"] is not None)
+    if con_mv < len(players) * 0.5:
+        raise ValueError(
+            f"Statistiche: solo {con_mv}/{len(players)} giocatori hanno un MV valido — "
+            "la tabella sembra non essersi popolata del tutto (dati ancora a zero/vuoti)."
+        )
+
+    con_ruolo = sum(1 for p in players if p["ruolo"])
+    save_json("players.json", {
+        "aggiornato": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "fonte": "tabella HTML statistiche-serie-a (Playwright)",
+        "giocatori": players,
+    })
+    print(f"    {len(players)} giocatori ({con_ruolo} con ruolo riconosciuto, {con_mv} con MV valido)")
+
+
+# ── 2. CLASSIFICA ─────────────────────────────────────────────────
+def job_classifica() -> None:
+    html = fetch(CLASSIFICA_URL).text
+    tables = pd.read_html(io.StringIO(html))
+    # scegliamo la tabella che contiene sia 'Squadra' sia i punti
+    table = None
+    for t in tables:
+        cols = [norm(c).lower() for c in t.columns.astype(str)]
+        if any("squadra" in c for c in cols) and any(c in ("pt", "punti", "pti") for c in cols):
+            table = t
+            break
+    if table is None:
+        raise ValueError("Tabella classifica non trovata")
+
+    table.columns = [norm(c).lower() for c in table.columns.astype(str)]
+    col_sq = next(c for c in table.columns if "squadra" in c)
+    col_pt = next(c for c in table.columns if c in ("pt", "punti", "pti"))
+
+    standings = []
+    for _, r in table.iterrows():
+        squadra = norm(r[col_sq])
+        # la cella spesso ripete il nome (logo+testo): teniamo l'ultimo token utile
+        squadra = re.sub(r"^(\d+\s*)", "", squadra)
+        try:
+            punti = int(r[col_pt])
+        except (ValueError, TypeError):
+            continue
+        standings.append({"squadra": squadra, "punti": punti})
+
+    if len(standings) < 18:
+        raise ValueError(f"Classifica incompleta: {len(standings)} squadre")
+    save_json("classifica.json", {
+        "aggiornato": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "classifica": standings,
+    })
+    print(f"    {len(standings)} squadre")
+
+
+# ── 3. CALENDARIO — SUPERATO da probabili_formazioni_scraper.py ───
+# Quella fonte dà anche data/ora/stadio reali (qui mancavano), in un
+# solo fetch condiviso con titolarità e indisponibili. Vedi quello script.
+
+
+# ── 4. RIGORISTI ──────────────────────────────────────────────────
+def job_rigoristi() -> None:
+    html = fetch(RIGORISTI_URL).text
+    # i nomi giocatore compaiono come link /serie-a/squadre/<team>/<player>/<id>
+    matches = re.findall(r"/serie-a/squadre/([^/]+)/([^/]+)/\d+", html)
+    per_team = {}
+    for team, player in matches:
+        per_team.setdefault(team, [])
+        if player not in per_team[team] and len(per_team[team]) < 3:
+            per_team[team].append(player)  # primi ~3 = gerarchia rigoristi
+
+    if len(per_team) < 15:
+        raise ValueError("Rigoristi: meno di 15 squadre trovate (normale a campionato fermo)")
+    save_json("rigoristi.json", {
+        "aggiornato": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "rigoristi": per_team,
+    })
+    print(f"    {len(per_team)} squadre")
+
+
+# ── 5. INDISPONIBILI — SUPERATO da probabili_formazioni_scraper.py ─
+# Quella fonte distingue squalificati/diffidati/infortunati/in dubbio
+# (qui erano tutti mescolati in un'unica lista) e include il dettaglio
+# dell'infortunio con rientro atteso. Vedi quello script.
+
+
+# ── MAIN ──────────────────────────────────────────────────────────
+JOBS = [
+    ("Statistiche giocatori", job_statistiche),
+    ("Classifica", job_classifica),
+    ("Rigoristi", job_rigoristi),
+]
+# Calendario/Indisponibili/Titolarità: vedi probabili_formazioni_scraper.py,
+# lanciato come step separato nel workflow (stessa fonte, un solo fetch).
+
+
+def main() -> int:
+    esiti = {}
+    for nome, fn in JOBS:
+        print(f"\n▶ {nome}")
+        try:
+            fn()
+            esiti[nome] = "ok"
+        except Exception as e:  # noqa: BLE001 — vogliamo continuare con le altre fonti
+            esiti[nome] = f"ERRORE: {e}"
+            print(f"  ✘ {e}", file=sys.stderr)
+
+    save_json("meta.json", {
+        "aggiornato": dt.datetime.now(dt.timezone.utc).isoformat(),
+        "esiti": esiti,
+    })
+    # exit code 0 anche con errori parziali: i JSON validi vanno comunque committati
+    print("\nRiepilogo:", json.dumps(esiti, ensure_ascii=False, indent=1))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
