@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-08-27T13:40:38.820515+00:00",
+  "aggiornato": "2026-08-27T17:00:07.841595+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -43,6 +43,13 @@
           "dettaglio": "Risentimento agli adduttori di sinistra, in dubbio per la 2a",
           "rientro_giornata": 2,
           "id": "5498",
+          "match_score": 1.0
+        },
+        {
+          "nome": "El Azzouzi O.",
+          "dettaglio": "Lesione del bicipite femorale della coscia sinistra, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "6225",
           "match_score": 1.0
         }
       ],
@@ -131,13 +138,6 @@
     "lazio": {
       "infortunati": [
         {
-          "nome": "Marusic",
-          "dettaglio": "Risentimento ai flessori, in dubbio per la 2a",
-          "rientro_giornata": 2,
-          "id": "2188",
-          "match_score": 1.0
-        },
-        {
           "nome": "Patric",
           "dettaglio": "Autorizzato a osservare alcuni giorni di temporanea indisponibilità per completare un percorso clinico già programmato, in dubbio per la 3a",
           "rientro_giornata": 3,
@@ -149,6 +149,13 @@
           "dettaglio": "Lesione di primo grado ai flessori della coscia destra, in dubbio per la 4a",
           "rientro_giornata": 4,
           "id": "6629",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Marusic",
+          "dettaglio": "Stiramento ai flessori, in dubbio per la 4a",
+          "rientro_giornata": 4,
+          "id": "2188",
           "match_score": 1.0
         },
         {
@@ -169,6 +176,19 @@
           "dettaglio": "Intervento chirurgico per una lesione del tendine riflesso del retto femorale destro, in dubbio per la 2a",
           "rientro_giornata": 2,
           "id": "6015",
+          "match_score": 1.0
+        }
+      ],
+      "squalificati": [],
+      "diffidati": []
+    },
+    "milan": {
+      "infortunati": [
+        {
+          "nome": "Leao",
+          "dettaglio": "Non in condizione per scendere in campo post-infortunio, in dubbio per la 3a",
+          "rientro_giornata": 3,
+          "id": "4510",
           "match_score": 1.0
         }
       ],
@@ -388,8 +408,8 @@
       "infortunati": [
         {
           "nome": "Moreno M.",
-          "dettaglio": "Fastidio muscolare, in dubbio per la 2a",
-          "rientro_giornata": 2,
+          "dettaglio": "Fastidio muscolare, in dubbio per la 3a",
+          "rientro_giornata": 3,
           "id": "6890",
           "match_score": 1.0
         },
