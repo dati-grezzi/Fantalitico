@@ -86,7 +86,7 @@ def job_statistiche() -> None:
         "pv": col("pv"), "mv": col("mv"), "fm": col("fm"),
         "gol": col("gol"), "golSubiti": col("gs"), "rig": col("rig"),
         "rigoriParati": col("rp"), "assist": col("ass"),
-        "ammonizioni": col("amm"), "espulsioni": col("esp"),
+        "ammonizioni": col("amm"), "espulsioni": col("esp"), "autogol": col("au"),
     }
 
     def to_num(s):
@@ -152,6 +152,7 @@ def job_statistiche() -> None:
             "rigoriSegnati": rig_s, "rigoriCalciati": rig_c,
             "rigoriParati": to_num(cell("rigoriParati")), "assist": to_num(cell("assist")),
             "ammonizioni": to_num(cell("ammonizioni")), "espulsioni": to_num(cell("espulsioni")),
+            "autogol": to_num(cell("autogol")),
         })
 
     if len(players) < 200:
