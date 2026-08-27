@@ -36,6 +36,8 @@ jobs:
 
       - name: Esegui scraper fantacalcio.it (statistiche stagionali)
         run: python scraper.py
+        timeout-minutes: 3  # rete di sicurezza: non deve mai più restare bloccato a lungo (successo il 25/08, 12 min)
+        continue-on-error: true  # se scade il tempo, il resto della pipeline continua comunque (players.json resta quello precedente)
 
       - name: Probabili formazioni (titolarità + calendario + indisponibili)
         run: python probabili_formazioni_scraper.py
