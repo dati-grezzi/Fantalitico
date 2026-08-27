@@ -41,36 +41,75 @@ async def main_async():
 
         # La pagina ha più tabelle (classifica squadre, giocatori, portieri...).
         # Cerco quella con le colonne dei giocatori (contiene "xG90" in intestazione).
-        righe = await page.evaluate("""
-            () => {
-                const tabelle = Array.from(document.querySelectorAll('table'));
-                for (const t of tabelle) {
-                    const intestazioni = Array.from(t.querySelectorAll('th')).map(th => th.textContent.trim());
-                    if (!intestazioni.some(h => h.toLowerCase().includes('xg90'))) continue;
-                    const idx = {};
-                    intestazioni.forEach((h, i) => idx[h.toLowerCase()] = i);
-                    const out = [];
-                    t.querySelectorAll('tbody tr').forEach(tr => {
-                        const celle = Array.from(tr.querySelectorAll('td')).map(td => td.textContent.trim());
-                        if (!celle.length) return;
-                        out.push({
-                            player: celle[idx['player']] ?? null,
-                            team: celle[idx['team']] ?? null,
-                            apps: celle[idx['apps']] ?? null,
-                            min: celle[idx['min']] ?? null,
-                            goals: celle[idx['goals']] ?? null,
-                            assists: celle[idx['a']] ?? null,
-                            xG: celle[idx['xg']] ?? null,
-                            xA: celle[idx['xa']] ?? null,
-                            xG90: celle[idx['xg90']] ?? null,
-                            xA90: celle[idx['xa90']] ?? null,
+        def estrai_pagina_corrente():
+            return page.evaluate("""
+                () => {
+                    const tabelle = Array.from(document.querySelectorAll('table'));
+                    for (const t of tabelle) {
+                        const intestazioni = Array.from(t.querySelectorAll('th')).map(th => th.textContent.trim());
+                        if (!intestazioni.some(h => h.toLowerCase().includes('xg90'))) continue;
+                        const idx = {};
+                        intestazioni.forEach((h, i) => idx[h.toLowerCase()] = i);
+                        const out = [];
+                        t.querySelectorAll('tbody tr').forEach(tr => {
+                            const celle = Array.from(tr.querySelectorAll('td')).map(td => td.textContent.trim());
+                            if (!celle.length) return;
+                            out.push({
+                                player: celle[idx['player']] ?? null,
+                                team: celle[idx['team']] ?? null,
+                                apps: celle[idx['apps']] ?? null,
+                                min: celle[idx['min']] ?? null,
+                                goals: celle[idx['goals']] ?? null,
+                                assists: celle[idx['a']] ?? null,
+                                xG: celle[idx['xg']] ?? null,
+                                xA: celle[idx['xa']] ?? null,
+                                xG90: celle[idx['xg90']] ?? null,
+                                xA90: celle[idx['xa90']] ?? null,
+                            });
                         });
-                    });
-                    if (out.length) return out;
+                        if (out.length) return out;
+                    }
+                    return [];
                 }
-                return [];
-            }
-        """)
+            """)
+
+        # La tabella "Players" mostra i risultati paginati (visto nello screenshot:
+        # controlli "« 1 »" in fondo alla tabella) — raccolgo tutte le pagine,
+        # cliccando avanti finché non trovo più un pulsante "successiva" attivo.
+        righe = await estrai_pagina_corrente()
+        visti = {(r["player"], r["team"]) for r in righe}
+        for _ in range(40):  # limite di sicurezza (~319 giocatori / ~11 a pagina ≈ 29)
+            cliccato = await page.evaluate("""
+                () => {
+                    // Cerco un elemento cliccabile "pagina successiva": simbolo »,
+                    // freccia, o testo "next" — non disabilitato.
+                    const candidati = Array.from(document.querySelectorAll('a, button, span, li'));
+                    for (const el of candidati) {
+                        const testo = (el.textContent || '').trim();
+                        const disabilitato = el.classList.contains('disabled') ||
+                            el.closest('.disabled') ||
+                            el.getAttribute('aria-disabled') === 'true';
+                        if (disabilitato) continue;
+                        if (testo === '»' || testo === '›' || testo.toLowerCase() === 'next') {
+                            el.click();
+                            return true;
+                        }
+                    }
+                    return false;
+                }
+            """)
+            if not cliccato:
+                break
+            await page.wait_for_timeout(900)
+            nuova_pagina = await estrai_pagina_corrente()
+            nuove = [r for r in nuova_pagina if (r["player"], r["team"]) not in visti]
+            if not nuove:
+                break  # la pagina non è cambiata davvero (bottone finto/ultima pagina)
+            righe.extend(nuove)
+            for r in nuove:
+                visti.add((r["player"], r["team"]))
+
+        print(f"Pagine raccolte, totale righe: {len(righe)}")
 
         if not righe:
             html = await page.content()
