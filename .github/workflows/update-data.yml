@@ -63,16 +63,10 @@ jobs:
         run: python understat_process.py
         continue-on-error: true
 
-      # SOFASCORE (25/08) — metriche difensive/di passaggio (tackle, intercetti,
-      # rinvii) che Understat non ha mai avuto. continue-on-error per lo stesso
-      # motivo di Understat: non deve bloccare il resto della pipeline.
-      - name: Esegui scraper SofaScore
-        run: python sofascore_pull.py
-        continue-on-error: true
-
-      - name: Elabora SofaScore (JSON → JSON)
-        run: python sofascore_process.py
-        continue-on-error: true
+      # SOFASCORE: NON automatizzato (25/08) — il sito blocca gli indirizzi IP
+      # dei server GitHub Actions (403 Forbidden), non i normali PC di casa.
+      # sofascore_pull.py e sofascore_process.py restano nel repo per uso
+      # manuale dal tuo PC quando vuoi aggiornare i dati (funzionano bene lì).
 
       - name: Commit dei JSON aggiornati
         run: |
