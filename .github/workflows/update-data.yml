@@ -63,9 +63,20 @@ jobs:
         run: python understat_process.py
         continue-on-error: true
 
+      # SOFASCORE (25/08) — metriche difensive/di passaggio (tackle, intercetti,
+      # rinvii) che Understat non ha mai avuto. continue-on-error per lo stesso
+      # motivo di Understat: non deve bloccare il resto della pipeline.
+      - name: Esegui scraper SofaScore
+        run: python sofascore_pull.py
+        continue-on-error: true
+
+      - name: Elabora SofaScore (JSON → JSON)
+        run: python sofascore_process.py
+        continue-on-error: true
+
       - name: Commit dei JSON aggiornati
         run: |
-          git config user.name "fantassist-bot"
+          git config user.name "fantalitico-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/*.json
           git diff --cached --quiet || git commit -m "Dati aggiornati $(date -u +'%Y-%m-%d %H:%M UTC')"
