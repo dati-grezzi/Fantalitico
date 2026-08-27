@@ -74,48 +74,36 @@ def job_statistiche() -> None:
 
     soup = BeautifulSoup(html, "lxml")
 
-    table = None
-    for t in soup.select("table"):
-        head = " ".join(norm(th.get_text()) for th in t.select("thead th, tr th")).lower()
-        if "mv" in head.split() and "fm" in head.split():
-            table = t
-            break
+    # La riga di intestazione vera è quella con celle data-col-key="mv" e
+    # data-col-key="mfv" (FM) — identificatori diretti e univoci, molto più
+    # solidi del testo o del title (che sta sull'<a> annidato, non sul <th>).
+    # NON uso più "tr th" per trovarla: le righe DATI usano <th> anche per i
+    # primi campi (nome, ruoli) — un selettore così ampio mescola centinaia
+    # di celle giocatore con le vere intestazioni, sballando tutto (bug
+    # scoperto il 25/08 dopo 3 tentativi falliti con altri approcci).
+    header_row = soup.select_one('th[data-col-key="mv"]')
+    header_row = header_row.find_parent("tr") if header_row else None
+    if header_row is None:
+        raise ValueError("Riga di intestazione (con data-col-key='mv') non trovata nella pagina")
+    table = header_row.find_parent("table")
     if table is None:
-        raise ValueError("Tabella statistiche non trovata nella pagina")
+        raise ValueError("Tabella statistiche non trovata a partire dalla riga di intestazione")
 
-    header_cells = table.select("thead th, tr th")
-    headers_testo = [norm(th.get_text()).lower() for th in header_cells]
-    # L'attributo title (es. title="Media voto") è più stabile del testo
-    # visibile — quest'ultimo può avere icone di ordinamento appiccicate
-    # (es. "MV ↓") che rompono un confronto esatto. Confermato il 25/08:
-    # il testo confrontava sempre falso nonostante i dati fossero presenti.
-    headers_title = [norm(th.get("title", "")).lower() for th in header_cells]
-    TITLE_PER_LABEL = {
-        "sq": "squadra", "pv": "partite a voto", "mv": "media voto", "fm": "fantamedia",
-        "gol": "gol segnati", "gs": "gol subiti", "rig": "rigori segnati / tirati",
-        "rp": "rigori parati", "ass": "assist", "amm": "ammonizioni", "esp": "espulsioni",
-        "au": "autogol",
+    header_cells = header_row.find_all(["th", "td"], recursive=False)
+    # Mappa: data-col-key vero → nostra etichetta interna
+    COLKEY_PER_LABEL = {
+        "sq": "sq", "pv": "pg", "mv": "mv", "fm": "mfv",
+        "gol": "gol", "golSubiti": "gs", "rig": "rig",
+        "rigoriParati": "rp", "assist": "ass",
+        "ammonizioni": "amm", "espulsioni": "esp", "autogol": "au",
     }
+    colkey_to_index = {}
+    for i, th in enumerate(header_cells):
+        k = th.get("data-col-key")
+        if k:
+            colkey_to_index[k] = i
 
-    def col(label):
-        # 1) per attributo title (esatto)
-        titolo_atteso = TITLE_PER_LABEL.get(label)
-        if titolo_atteso and titolo_atteso in headers_title:
-            return headers_title.index(titolo_atteso)
-        # 2) per testo, con "inizia con" invece di uguaglianza esatta
-        #    (tollera icone/testo aggiuntivo dopo l'etichetta)
-        for i, h in enumerate(headers_testo):
-            if h == label or h.startswith(label + " ") or h.startswith(label + "\u00a0"):
-                return i
-        # 3) uguaglianza esatta come ultima risorsa
-        return headers_testo.index(label) if label in headers_testo else None
-
-    idx = {
-        "pv": col("pv"), "mv": col("mv"), "fm": col("fm"),
-        "gol": col("gol"), "golSubiti": col("gs"), "rig": col("rig"),
-        "rigoriParati": col("rp"), "assist": col("ass"),
-        "ammonizioni": col("amm"), "espulsioni": col("esp"), "autogol": col("au"),
-    }
+    idx = {label: colkey_to_index.get(colkey) for label, colkey in COLKEY_PER_LABEL.items()}
 
     def to_num(s):
         s = norm(s).replace(",", ".") if s else ""
@@ -131,12 +119,18 @@ def job_statistiche() -> None:
                    "centrocampista": "C", "attaccante": "A"}
 
     players = []
-    for tr in table.select("tbody tr"):
+    for tr in table.find_all("tr"):
+        if tr is header_row:
+            continue
         a = tr.select_one("a[href*='/serie-a/squadre/']")
         if not a:
             continue
         m = re.search(r"/serie-a/squadre/([^/]+)/([^/]+)/(\d+)", a.get("href", ""))
-        cells = [norm(td.get_text()) for td in tr.select("td")]
+        # Stesso metodo usato per l'intestazione (th+td, diretti, in ordine) —
+        # prima usavo solo "td", ma le righe dati hanno <th> per i primi campi
+        # (nome, ruoli) esattamente come l'intestazione, quindi serve lo stesso
+        # criterio da entrambe le parti per restare allineati.
+        cells = [norm(c.get_text()) for c in tr.find_all(["th", "td"], recursive=False)]
 
         # ruolo: 1) attributo data-value  2) classe role-x  3) title/aria-label
         role = None
@@ -195,14 +189,15 @@ def job_statistiche() -> None:
     con_mv = sum(1 for p in players if p["mv"] is not None)
     if con_mv < len(players) * 0.5:
         print("\n" + "="*70)
-        print("DIAGNOSTICA — HTML vero della riga di intestazione trovata:")
+        print("DIAGNOSTICA — celle di intestazione (data-col-key → indice):")
         print("="*70)
-        for th in header_cells:
-            print(repr(str(th)))
+        for i, th in enumerate(header_cells):
+            print(i, repr(th.get("data-col-key")), repr(str(th)[:200]))
+        print("Indici mappati:", idx)
         print("\n" + "="*70)
         print("DIAGNOSTICA — HTML vero della prima riga dati:")
         print("="*70)
-        prima_riga = table.select_one("tbody tr")
+        prima_riga = next((tr for tr in table.find_all("tr") if tr is not header_row), None)
         if prima_riga:
             print(str(prima_riga)[:3000])
         print("="*70)
