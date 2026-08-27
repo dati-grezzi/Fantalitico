@@ -54,40 +54,37 @@ def get_json(url):
 
 
 def main():
-    # 1) Info lega — per trovare l'id di stagione corrente (serve per le
-    #    statistiche, che sono legate a una stagione specifica).
-    url_lega = f"{API_BASE}/leagues?id={LEAGUE_ID}"
-    print(f"📡 Info lega: {url_lega}")
-    dati_lega = get_json(url_lega)
+    # Provo più varianti in un solo lancio (invece di un tentativo alla volta,
+    # costoso da rilanciare da cellulare) — la documentazione trovata non è
+    # stata chiara sull'URL esatto per le statistiche di lega.
+    candidati = [
+        f"{API_BASE}/leagues?id={LEAGUE_ID}",
+        f"{API_BASE}/leagues?id={LEAGUE_ID}&type=season",
+        f"{API_BASE}/leagues?id={LEAGUE_ID}&tab=stats",
+        f"{API_BASE}/leagues?id={LEAGUE_ID}&season=2026-2027",
+        "https://www.fotmob.com/api/allLeagues",
+    ]
 
-    # Diagnostica ampia: non sapendo con certezza dove sia annidato l'elenco
-    # statistiche giocatori, stampo le chiavi di primo livello e una parte
-    # della struttura, così anche in caso di fallimento sappiamo dove guardare.
-    print("\n📊 Chiavi di primo livello nella risposta:")
-    print(list(dati_lega.keys()) if isinstance(dati_lega, dict) else type(dati_lega))
+    for url in candidati:
+        print(f"\n{'='*70}")
+        print(f"📡 Provo: {url}")
+        print('='*70)
+        try:
+            r = requests.get(url, headers=HEADERS, timeout=20)
+            print(f"Status: {r.status_code}")
+            if r.status_code == 200:
+                dati = r.json()
+                print("✅ SUCCESSO — chiavi di primo livello:")
+                print(list(dati.keys()) if isinstance(dati, dict) else f"(tipo: {type(dati)})")
+                with open(OUT_JSON, "w", encoding="utf-8") as f:
+                    json.dump(dati, f, ensure_ascii=False, indent=1)
+                print(f"📝 Salvato in {OUT_JSON}")
+            else:
+                print(f"❌ {r.status_code}: {r.text[:200]}")
+        except Exception as e:
+            print(f"❌ Errore: {e}")
+        time.sleep(2)
 
-    # Tentativo: molte implementazioni note (LanusStats, worldfootballR)
-    # trovano le statistiche di stagione sotto una chiave tipo "stats" o
-    # dentro "table"/"season" — provo i percorsi più comuni.
-    candidati_stats = None
-    for chiave in ("stats", "playerStats", "topPlayers", "table"):
-        if isinstance(dati_lega, dict) and chiave in dati_lega:
-            candidati_stats = dati_lega[chiave]
-            print(f"\n✅ Trovata chiave '{chiave}' nella risposta")
-            break
-
-    if candidati_stats is None:
-        print("\n⚠️  Nessuna chiave statistiche riconosciuta tra quelle attese.")
-        print("Anteprima completa della risposta (primi 3000 caratteri):")
-        print(json.dumps(dati_lega, ensure_ascii=False, indent=1)[:3000])
-        with open(OUT_JSON, "w", encoding="utf-8") as f:
-            json.dump(dati_lega, f, ensure_ascii=False, indent=1)
-        print(f"\n📝 Salvata comunque la risposta grezza in {OUT_JSON} per analisi manuale")
-        return 1
-
-    with open(OUT_JSON, "w", encoding="utf-8") as f:
-        json.dump(candidati_stats, f, ensure_ascii=False, indent=1)
-    print(f"\n📝 Salvato in {OUT_JSON}")
     return 0
 
 
