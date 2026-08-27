@@ -57,15 +57,28 @@ def norm(s) -> str:
 # ── 1. STATISTICHE GIOCATORI (tabella HTML, nessun login richiesto) ──
 def job_statistiche() -> None:
     """
-    L'endpoint Excel richiede il login (401), ma la tabella della pagina
-    /statistiche-serie-a è renderizzata lato server e liberamente leggibile.
-    Le celle vengono allineate alle intestazioni per nome, così l'ordine o
-    le colonne-icona in più non rompono nulla. Il ruolo (P/D/C/A) è cercato
-    con più euristiche; se non trovato resta null e si integra in app.
+    RISCRITTO IL 25/08/2026: la tabella non è più renderizzata lato server
+    (come indicato nel commento precedente) — verificato che i dati reali
+    esistono sulla pagina (confermato con Gaetano: PV=1, MV=6,5, FM=7,5) ma
+    una richiesta HTTP semplice probabilmente prende solo il guscio vuoto
+    prima che il JavaScript la popoli. Serve un browser vero (Playwright),
+    stesso motivo di quasi tutte le altre pagine di questo sito.
+
+    La logica di estrazione (allineamento celle-intestazioni per nome,
+    euristiche multiple per il ruolo) resta INVARIATA — funzionava già bene,
+    il problema era solo *come* scaricare l'HTML, non come leggerlo.
     """
     from bs4 import BeautifulSoup
+    from playwright.sync_api import sync_playwright
 
-    html = fetch(f"{BASE}/statistiche-serie-a").text
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
+        page.goto(f"{BASE}/statistiche-serie-a", wait_until="load", timeout=45000)
+        page.wait_for_timeout(2000)
+        html = page.content()
+        browser.close()
+
     soup = BeautifulSoup(html, "lxml")
 
     table = None
@@ -161,7 +174,7 @@ def job_statistiche() -> None:
     con_ruolo = sum(1 for p in players if p["ruolo"])
     save_json("players.json", {
         "aggiornato": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "fonte": "tabella HTML statistiche-serie-a",
+        "fonte": "tabella HTML statistiche-serie-a (Playwright)",
         "giocatori": players,
     })
     print(f"    {len(players)} giocatori ({con_ruolo} con ruolo riconosciuto)")
