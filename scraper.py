@@ -57,65 +57,20 @@ def norm(s) -> str:
 # ── 1. STATISTICHE GIOCATORI (tabella HTML, nessun login richiesto) ──
 def job_statistiche() -> None:
     """
-    RISCRITTO IL 25/08/2026: la tabella non è più renderizzata lato server
-    (come indicato nel commento precedente) — verificato che i dati reali
-    esistono sulla pagina (confermato con Gaetano: PV=1, MV=6,5, FM=7,5) ma
-    una richiesta HTTP semplice probabilmente prende solo il guscio vuoto
-    prima che il JavaScript la popoli. Serve un browser vero (Playwright),
-    stesso motivo di quasi tutte le altre pagine di questo sito.
+    RIPORTATO IL 25/08/2026 a una richiesta HTTP semplice, dopo un tentativo
+    con Playwright che ha creato più problemi di quanti ne risolvesse (falsi
+    blocchi, rilevamento bot). Non avevo mai verificato con certezza che una
+    richiesta semplice non prendesse dati reali — l'avevo solo supposto per
+    analogia con altre pagine del sito che DAVVERO richiedono JavaScript.
+    Se questa pagina è invece renderizzata lato server (come diceva il
+    commento originale), la richiesta semplice dovrebbe bastare.
 
     La logica di estrazione (allineamento celle-intestazioni per nome,
-    euristiche multiple per il ruolo) resta INVARIATA — funzionava già bene,
-    il problema era solo *come* scaricare l'HTML, non come leggerlo.
+    euristiche multiple per il ruolo) resta INVARIATA.
     """
     from bs4 import BeautifulSoup
-    from playwright.sync_api import sync_playwright
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(
-            headless=True,
-            args=["--disable-blink-features=AutomationControlled"],
-        )
-        page = browser.new_page(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-                       "(KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36",
-        )
-        page.add_init_script("""
-            Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
-        """)
-        page.goto(f"{BASE}/statistiche-serie-a", wait_until="load", timeout=45000)
-        # NOTA (25/08): avevo provato "networkidle" per essere più sicuro, ma è
-        # noto per restare bloccato a lungo su pagine con attività di rete
-        # continua in background (pubblicità, widget) — è successo qui, un
-        # lancio è arrivato a 12 minuti. Torno a "load" + il controllo mirato
-        # sotto (che aspetta la tabella vera, non la rete) fa il lavoro pesante.
-        # I dati arrivano via JS dopo il caricamento iniziale. Il primo tentativo
-        # (25/08) cercava un numero tipo "6,5" in QUALSIASI cella della pagina —
-        # troppo generico, probabilmente trovava un falso positivo altrove (menu,
-        # pubblicità) e si fermava subito, prima che la tabella vera fosse pronta.
-        # Ora cerco specificamente dentro la tabella con intestazioni mv/fm —
-        # la stessa che il parsing userà dopo — e dentro il suo tbody, non
-        # nell'intestazione stessa (che potrebbe contenere testo simile).
-        try:
-            page.wait_for_function(
-                """() => {
-                    const tabelle = Array.from(document.querySelectorAll('table'));
-                    for (const t of tabelle) {
-                        const head = Array.from(t.querySelectorAll('thead th, tr th'))
-                            .map(th => th.textContent.trim().toLowerCase());
-                        if (!head.includes('mv') || !head.includes('fm')) continue;
-                        const celleBody = Array.from(t.querySelectorAll('tbody td'));
-                        if (celleBody.some(td => /^\\d+,\\d+$/.test(td.textContent.trim()))) return true;
-                    }
-                    return false;
-                }""",
-                timeout=25000,
-            )
-        except Exception:
-            pass  # procedo comunque: se non arriva, il controllo "con_mv" più sotto lo segnala con un errore chiaro
-        page.wait_for_timeout(1000)  # margine di sicurezza dopo la comparsa dei dati
-        html = page.content()
-        browser.close()
+    html = fetch(f"{BASE}/statistiche-serie-a").text
 
     soup = BeautifulSoup(html, "lxml")
 
@@ -223,7 +178,7 @@ def job_statistiche() -> None:
     con_ruolo = sum(1 for p in players if p["ruolo"])
     save_json("players.json", {
         "aggiornato": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "fonte": "tabella HTML statistiche-serie-a (Playwright)",
+        "fonte": "tabella HTML statistiche-serie-a",
         "giocatori": players,
     })
     print(f"    {len(players)} giocatori ({con_ruolo} con ruolo riconosciuto, {con_mv} con MV valido)")
