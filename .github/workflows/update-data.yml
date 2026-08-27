@@ -29,13 +29,13 @@ jobs:
       - name: Installa dipendenze
         run: pip install -r requirements.txt
 
-      - name: Esegui scraper fantacalcio.it (statistiche stagionali)
-        run: python scraper.py
-
-      - name: Installa Playwright (titolarità/indisponibili sono caricati via JS)
+      - name: Installa Playwright (titolarità/indisponibili/statistiche sono caricati via JS)
         run: |
           pip install playwright
           python -m playwright install chromium --with-deps
+
+      - name: Esegui scraper fantacalcio.it (statistiche stagionali)
+        run: python scraper.py
 
       - name: Probabili formazioni (titolarità + calendario + indisponibili)
         run: python probabili_formazioni_scraper.py
