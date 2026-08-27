@@ -1,103 +1,109 @@
 # -*- coding: utf-8 -*-
 """
-Understat — statistiche offensive Serie A 2026-27 partita per partita.
-Tiri, xG, npxG, assist, xA, key passes e minuti per ogni giocatore in ogni gara.
-Nessun browser: solo richieste HTTP, quindi gira ovunque senza blocchi.
+FANTALITICO — Understat, statistiche per giocatore (Serie A).
+
+RISCRITTO IL 25/08/2026: il sito è passato da dati incorporati staticamente
+nell'HTML (una variabile JS "datesData" che il vecchio script cercava con
+una richiesta HTTP semplice) a un caricamento dinamico via JavaScript — la
+tabella si popola solo dopo che la pagina carica ed esegue script. Serve
+un browser vero (Playwright), non una richiesta HTTP semplice.
+
+In più, la tabella "Players" ora dà già i totali di stagione per giocatore
+(presenze, minuti, gol, assist, xG, xA, xG90, xA90) — non serve più
+ricostruire tutto sommando partita per partita come nella versione precedente.
 
 USO
 ---
-  pip install requests            (se non già presente)
+  pip install playwright
+  python -m playwright install chromium
   python understat_pull.py
-
-Produce:  understat_2025_26_permatch.csv  → poi caricalo nella chat.
-Understat è tollerante ma restiamo gentili: una breve pausa tra le richieste.
-Durata stimata: 5-10 minuti per ~380 partite.
 """
 
-import re
+import asyncio
 import csv
-import json
 import sys
-import time
-import requests
+from pathlib import Path
+from playwright.async_api import async_playwright
 
 SEASON = "2026"                       # Understat: 2026 = stagione 2026-27
-BASE = "https://understat.com"
-LEAGUE_URL = f"{BASE}/league/Serie_A/{SEASON}"
-OUT = "understat_2025_26_permatch.csv"
-HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Fantalitico/1.0"}
-PAUSE = 0.6
+URL = f"https://understat.com/league/Serie_A/{SEASON}"
+OUT_CSV = Path(__file__).parent / "understat_players_2026.csv"
 
 
-def extract_json(html, var):
-    """Estrae il payload di  var X = JSON.parse('...')  e lo decodifica."""
-    m = re.search(var + r"\s*=\s*JSON\.parse\('(.*?)'\)", html, re.S)
-    if not m:
-        return None
-    raw = m.group(1).encode("utf-8").decode("unicode_escape")
-    return json.loads(raw)
+async def main_async():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
 
+        print(f"Scaricando {URL} (Playwright, il sito carica i dati via JS)...")
+        await page.goto(URL, wait_until="load", timeout=45000)
+        await page.wait_for_timeout(2000)
 
-def get(url):
-    r = requests.get(url, headers=HEADERS, timeout=30)
-    r.raise_for_status()
-    return r.text
+        # La pagina ha più tabelle (classifica squadre, giocatori, portieri...).
+        # Cerco quella con le colonne dei giocatori (contiene "xG90" in intestazione).
+        righe = await page.evaluate("""
+            () => {
+                const tabelle = Array.from(document.querySelectorAll('table'));
+                for (const t of tabelle) {
+                    const intestazioni = Array.from(t.querySelectorAll('th')).map(th => th.textContent.trim());
+                    if (!intestazioni.some(h => h.toLowerCase().includes('xg90'))) continue;
+                    const idx = {};
+                    intestazioni.forEach((h, i) => idx[h.toLowerCase()] = i);
+                    const out = [];
+                    t.querySelectorAll('tbody tr').forEach(tr => {
+                        const celle = Array.from(tr.querySelectorAll('td')).map(td => td.textContent.trim());
+                        if (!celle.length) return;
+                        out.push({
+                            player: celle[idx['player']] ?? null,
+                            team: celle[idx['team']] ?? null,
+                            apps: celle[idx['apps']] ?? null,
+                            min: celle[idx['min']] ?? null,
+                            goals: celle[idx['goals']] ?? null,
+                            assists: celle[idx['a']] ?? null,
+                            xG: celle[idx['xg']] ?? null,
+                            xA: celle[idx['xa']] ?? null,
+                            xG90: celle[idx['xg90']] ?? null,
+                            xA90: celle[idx['xa90']] ?? null,
+                        });
+                    });
+                    if (out.length) return out;
+                }
+                return [];
+            }
+        """)
+
+        if not righe:
+            html = await page.content()
+            idx = html.find("<table")
+            diagnostica = html[max(0, idx-500): idx+5000] if idx >= 0 else html[:5000]
+            print("\n⚠️  ATTENZIONE: nessuna tabella giocatori trovata (0 righe).")
+            print("\n" + "="*70)
+            print("DIAGNOSTICA — HTML reale attorno alla prima <table>:")
+            print("="*70)
+            print(diagnostica)
+            print("="*70)
+            await browser.close()
+            return 1
+
+        print(f"✅ {len(righe)} giocatori estratti")
+        with open(OUT_CSV, "w", newline="", encoding="utf-8") as f:
+            writer = csv.DictWriter(f, fieldnames=["player", "team", "apps", "min", "goals", "assists", "xG", "xA", "xG90", "xA90"])
+            writer.writeheader()
+            writer.writerows(righe)
+        print(f"📝 Salvato in {OUT_CSV}")
+
+        await browser.close()
+        return 0
 
 
 def main():
-    print(f"Scarico l'indice della stagione: {LEAGUE_URL}")
-    html = get(LEAGUE_URL)
-    dates = extract_json(html, "datesData")
-    if not dates:
-        print("ERRORE: non trovo datesData (Understat può aver cambiato struttura). Fermati e avvisa.")
+    try:
+        return asyncio.run(main_async())
+    except Exception as e:
+        print(f"\n❌ Errore: {e}")
+        import traceback
+        traceback.print_exc()
         return 1
-    matches = [d for d in dates if d.get("isResult")]
-    print(f"  partite giocate trovate: {len(matches)}")
-
-    rows = []
-    for i, d in enumerate(matches, 1):
-        mid = d["id"]
-        date = d.get("datetime")
-        ht = d["h"]["title"]
-        at = d["a"]["title"]
-        try:
-            rosters = extract_json(get(f"{BASE}/match/{mid}"), "rostersData")
-        except Exception as e:
-            print(f"  ! partita {mid} saltata: {e}")
-            continue
-        if not rosters:
-            continue
-        for side, team, opp, home in (("h", ht, at, 1), ("a", at, ht, 0)):
-            for pid, p in rosters.get(side, {}).items():
-                rows.append({
-                    "match_id": mid, "date": date, "team": team,
-                    "opponent": opp, "home": home,
-                    "understat_pid": p.get("player_id", pid),
-                    "player": p.get("player"), "position": p.get("position"),
-                    "minutes": p.get("time"), "shots": p.get("shots"),
-                    "goals": p.get("goals"), "xG": p.get("xG"),
-                    "npxG": p.get("npxG"), "assists": p.get("assists"),
-                    "xA": p.get("xA"), "key_passes": p.get("key_passes"),
-                    "yellow": p.get("yellow_card"), "red": p.get("red_card"),
-                })
-        if i % 20 == 0:
-            print(f"  …{i}/{len(matches)} partite")
-        time.sleep(PAUSE)
-
-    if not rows:
-        print("ERRORE: nessun dato raccolto.")
-        return 1
-
-    cols = ["match_id", "date", "team", "opponent", "home", "understat_pid",
-            "player", "position", "minutes", "shots", "goals", "xG", "npxG",
-            "assists", "xA", "key_passes", "yellow", "red"]
-    with open(OUT, "w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, fieldnames=cols)
-        w.writeheader()
-        w.writerows(rows)
-    print(f"\n✔ Salvato {OUT} — {len(rows)} righe (giocatore × partita)")
-    print("  Caricalo nella chat per l'incrocio con i voti.")
-    return 0
 
 
 if __name__ == "__main__":
