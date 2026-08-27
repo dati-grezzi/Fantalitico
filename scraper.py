@@ -74,8 +74,22 @@ def job_statistiche() -> None:
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
-        page.goto(f"{BASE}/statistiche-serie-a", wait_until="load", timeout=45000)
-        page.wait_for_timeout(2000)
+        page.goto(f"{BASE}/statistiche-serie-a", wait_until="networkidle", timeout=60000)
+        # I dati arrivano via JS dopo il caricamento iniziale — invece di un'attesa
+        # fissa (rivelatasi insufficiente: la tabella risultava con mv/fm sempre
+        # vuoti), aspetto finché non compare un valore MV vero (es. "6,5") in
+        # almeno una cella, con un limite di sicurezza.
+        try:
+            page.wait_for_function(
+                """() => {
+                    const cells = Array.from(document.querySelectorAll('td'));
+                    return cells.some(td => /^\\d,\\d$/.test(td.textContent.trim()));
+                }""",
+                timeout=20000,
+            )
+        except Exception:
+            pass  # procedo comunque: se non arriva, il controllo "len(players)<200" più sotto lo segnala
+        page.wait_for_timeout(1000)  # margine di sicurezza dopo la comparsa dei dati
         html = page.content()
         browser.close()
 
@@ -171,13 +185,24 @@ def job_statistiche() -> None:
     if len(players) < 200:
         raise ValueError(f"Statistiche: trovati solo {len(players)} giocatori, struttura pagina cambiata?")
 
+    # Controllo esplicito per il bug scoperto il 25/08: la tabella può caricarsi
+    # con la struttura giusta ma i valori ancora a zero/vuoti (JS non finito di
+    # popolare). Se succede di nuovo, meglio un errore chiaro che salvare dati
+    # silenziosamente vuoti come è successo oggi.
+    con_mv = sum(1 for p in players if p["mv"] is not None)
+    if con_mv < len(players) * 0.5:
+        raise ValueError(
+            f"Statistiche: solo {con_mv}/{len(players)} giocatori hanno un MV valido — "
+            "la tabella sembra non essersi popolata del tutto (dati ancora a zero/vuoti)."
+        )
+
     con_ruolo = sum(1 for p in players if p["ruolo"])
     save_json("players.json", {
         "aggiornato": dt.datetime.now(dt.timezone.utc).isoformat(),
         "fonte": "tabella HTML statistiche-serie-a (Playwright)",
         "giocatori": players,
     })
-    print(f"    {len(players)} giocatori ({con_ruolo} con ruolo riconosciuto)")
+    print(f"    {len(players)} giocatori ({con_ruolo} con ruolo riconosciuto, {con_mv} con MV valido)")
 
 
 # ── 2. CLASSIFICA ─────────────────────────────────────────────────
