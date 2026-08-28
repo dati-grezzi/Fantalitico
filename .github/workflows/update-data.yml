@@ -65,24 +65,11 @@ jobs:
         run: python understat_process.py
         continue-on-error: true
 
-      # SOFASCORE (riattivato 28/08) — bloccato dagli IP dei server GitHub
-      # Actions (403 Forbidden) fino a quando non passa da un proxy esterno
-      # (Webshare). Le credenziali sono nei Secrets del repository, mai qui.
-      # continue-on-error: se il proxy gratuito non bastasse (potrebbe essere
-      # un IP "datacenter", che SofaScore potrebbe bloccare comunque), non
-      # deve bloccare il resto della pipeline.
-      - name: Esegui scraper SofaScore (via proxy)
-        run: python sofascore_pull.py
-        continue-on-error: true
-        env:
-          PROXY_HOST: ${{ secrets.PROXY_HOST }}
-          PROXY_PORT: ${{ secrets.PROXY_PORT }}
-          PROXY_USER: ${{ secrets.PROXY_USER }}
-          PROXY_PASS: ${{ secrets.PROXY_PASS }}
-
-      - name: Elabora SofaScore (JSON → JSON)
-        run: python sofascore_process.py
-        continue-on-error: true
+      # SOFASCORE: NON automatizzato (28/08) — confermato bloccato dagli IP
+      # dei server GitHub Actions anche passando da un proxy gratuito
+      # (403 "challenge"). sofascore_pull.py e sofascore_process.py restano
+      # nel repo per uso manuale dal tuo PC (unica fonte per saves_box_p90
+      # dei portieri, che playerstats.football non copre).
 
       # PLAYERSTATS.FOOTBALL (28/08) — fonte AUTOMATICA per tackle/intercetti/
       # rinvii/duelli (verificato con dati veri prima di scrivere il codice,
