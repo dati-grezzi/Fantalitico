@@ -246,6 +246,32 @@ def job_classifica() -> None:
 
     if len(standings) < 18:
         raise ValueError(f"Classifica incompleta: {len(standings)} squadre")
+
+    # Controllo esplicito (bug scoperto il 28/08: nomi tutti vuoti, punti tutti
+    # uguali a 3 — pandas aveva selezionato colonne sbagliate/non quelle vere).
+    # Se il pattern è sospetto, meglio un errore con diagnostica reale che
+    # salvare dati silenziosamente rotti come è successo quella volta.
+    nomi_vuoti = sum(1 for s in standings if not s["squadra"])
+    punti_distinti = len(set(s["punti"] for s in standings))
+    if nomi_vuoti > 2 or punti_distinti <= 1:
+        print("\n" + "="*70)
+        print(f"DIAGNOSTICA — nomi vuoti: {nomi_vuoti}/{len(standings)}, valori punti distinti: {punti_distinti}")
+        print("="*70)
+        print("Tabelle trovate nella pagina (indice, colonne, prime 2 righe):")
+        for i, t in enumerate(tables):
+            print(f"\n--- Tabella {i} ---")
+            print("Colonne:", list(t.columns.astype(str)))
+            print(t.head(2).to_string())
+        print("\n" + "="*70)
+        print(f"Tabella scelta: colonna squadra='{col_sq}', colonna punti='{col_pt}'")
+        print("Prime 3 righe della tabella scelta (grezze, prima della pulizia):")
+        print(table.head(3).to_string())
+        print("="*70)
+        raise ValueError(
+            f"Classifica sospetta: {nomi_vuoti}/{len(standings)} nomi vuoti, "
+            f"{punti_distinti} valori di punti distinti — probabile tabella o colonne sbagliate."
+        )
+
     save_json("classifica.json", {
         "aggiornato": dt.datetime.now(dt.timezone.utc).isoformat(),
         "classifica": standings,
