@@ -108,7 +108,18 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
             // 17 "Uscito per infortunio") non hanno ancora un valore confermato — li
             // tratto come 0 per ora, values_sconosciuti li segnala per revisione.
             const BONUS_PER_EVENTO = { "1": -0.5, "3": 3, "4": -1, "22": 1 };
+            // Espulsione e autogol aggiunti il 28/08 SENZA un id numerico
+            // confermato (mai visto un caso reale con questi eventi finora)
+            // — li riconosco dal testo invece che dall'id, più sicuro che
+            // indovinare un numero a caso. I rigori restano fuori apposta:
+            // rischio di doppio conteggio con "Gol segnato" mai verificato.
+            const BONUS_PER_TESTO = [
+                { prefisso: "espulsione", valore: -1 },
+                { prefisso: "autogol", valore: -2 },
+                { prefisso: "autorete", valore: -2 },
+            ];
             const eventi_sconosciuti = new Set();
+            const rigoriTrovati = [];
 
             document.querySelectorAll('#playersListsTemplateTarget > div.col').forEach(col => {
                 const teamNameEl = col.querySelector('.team-name');
@@ -134,14 +145,33 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
                     // count 1,2,3, non tre gol separati da sommare) — prendo il
                     // massimo per tipo di evento, non la somma di tutte le occorrenze.
                     const maxPerEvento = {};
+                    const tipoPerEvento = {};
                     for (const ev of eventiRaw) {
                         const c = parseInt(ev.count, 10) || 1;
-                        if (!(ev.eventId in maxPerEvento) || c > maxPerEvento[ev.eventId]) maxPerEvento[ev.eventId] = c;
+                        if (!(ev.eventId in maxPerEvento) || c > maxPerEvento[ev.eventId]) {
+                            maxPerEvento[ev.eventId] = c;
+                            tipoPerEvento[ev.eventId] = ev.tipo;
+                        }
                         if (!(ev.eventId in BONUS_PER_EVENTO)) eventi_sconosciuti.add(ev.eventId + ":" + ev.tipo);
+                    }
+                    // Diagnostica automatica sui rigori (28/08): non abbiamo ancora
+                    // un caso reale per sapere se un rigore segnato genera SIA
+                    // "Gol segnato" SIA un evento "Rigore" separato (rischio doppio
+                    // conteggio se sommassimo entrambi alla cieca). Appena capita,
+                    // questo blocco lo segnala con tutti gli eventi del giocatore.
+                    if (eventiRaw.some(ev => ev.tipo.toLowerCase().includes("rigore"))) {
+                        rigoriTrovati.push({ nome, eventi: eventiRaw });
                     }
                     let bonusMalusTotale = 0;
                     for (const [eventId, count] of Object.entries(maxPerEvento)) {
-                        bonusMalusTotale += (BONUS_PER_EVENTO[eventId] || 0) * count;
+                        if (eventId in BONUS_PER_EVENTO) {
+                            bonusMalusTotale += BONUS_PER_EVENTO[eventId] * count;
+                            continue;
+                        }
+                        // Fallback per testo (espulsione, autogol — id non confermato)
+                        const testoNorm = (tipoPerEvento[eventId] || "").trim().toLowerCase();
+                        const match = BONUS_PER_TESTO.find(b => testoNorm.startsWith(b.prefisso));
+                        if (match) bonusMalusTotale += match.valore * count;
                     }
                     const fantavoto = votoPuro != null ? Math.round((votoPuro + bonusMalusTotale) * 2) / 2 : null;
                     // Scarto le righe senza nome collegato (voti "orfani", probabilmente
@@ -154,12 +184,21 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
                 });
                 teams.push({ team: teamName, players });
             });
-            return { teams, scartateOrfane, eventi_sconosciuti: [...eventi_sconosciuti] };
+            return { teams, scartateOrfane, eventi_sconosciuti: [...eventi_sconosciuti], rigoriTrovati };
         }
     """)
 
     if data and data.get("eventi_sconosciuti"):
         print(f"   ℹ️  Tipi di evento senza bonus/malus mappato (trattati come 0): {data['eventi_sconosciuti']}")
+
+    if data and data.get("rigoriTrovati"):
+        print("\n" + "="*70)
+        print("DIAGNOSTICA RIGORI — trovato un caso reale, ecco tutti gli eventi:")
+        print("="*70)
+        for caso in data["rigoriTrovati"]:
+            print(json.dumps(caso, ensure_ascii=False, indent=2))
+        print("="*70)
+        print("Manda questa sezione a Claude per sistemare finalmente i rigori con dati veri.\n")
 
     teams = data.get("teams", []) if data else []
     scartate = data.get("scartateOrfane", 0) if data else 0
