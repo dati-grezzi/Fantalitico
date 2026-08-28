@@ -94,10 +94,31 @@ async def scarica_statistiche(page, season_id, accumulation="per90"):
 
 
 async def main_async():
+    # Proxy Webshare (o altro), per aggirare il blocco IP dei server GitHub
+    # Actions su SofaScore. Credenziali da variabili d'ambiente — MAI scritte
+    # nel codice. Se non impostate, funziona comunque senza proxy (utile per
+    # i test in locale, dove il tuo IP normale funziona già).
+    import os
+    proxy_host = os.environ.get("PROXY_HOST")
+    proxy_port = os.environ.get("PROXY_PORT")
+    proxy_user = os.environ.get("PROXY_USER")
+    proxy_pass = os.environ.get("PROXY_PASS")
+
+    proxy_config = None
+    if proxy_host and proxy_port:
+        proxy_config = {"server": f"http://{proxy_host}:{proxy_port}"}
+        if proxy_user:
+            proxy_config["username"] = proxy_user
+            proxy_config["password"] = proxy_pass or ""
+        print(f"🌐 Uso il proxy {proxy_host}:{proxy_port}")
+    else:
+        print("🌐 Nessun proxy configurato, richiesta diretta")
+
     async with async_playwright() as p:
         browser = await p.chromium.launch(
             headless=True,
             args=["--disable-blink-features=AutomationControlled"],
+            proxy=proxy_config,
         )
         page = await browser.new_page(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
