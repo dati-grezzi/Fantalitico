@@ -107,7 +107,15 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
             // id 22 "Assist" +1. Gli altri (23 "Assist GOLD", 26 "Man of the match",
             // 17 "Uscito per infortunio") non hanno ancora un valore confermato — li
             // tratto come 0 per ora, values_sconosciuti li segnala per revisione.
-            const BONUS_PER_EVENTO = { "1": -0.5, "3": 3, "4": -1, "22": 1 };
+            const BONUS_PER_EVENTO = {
+                "1": -0.5,   // Ammonizione
+                "3": 3,      // Gol segnato
+                "4": -1,     // Gol subito
+                "21": 1,     // Assist soft — stesso valore dell'assist normale per
+                "22": 1,     // Assist        regolamento ufficiale fantacalcio.it: tutti
+                "23": 1,     // Assist GOLD    e 3 i tipi valgono +1 di default (confermato
+                             //                28/08, id reali visti nei log di produzione)
+            };
             // Espulsione e autogol aggiunti il 28/08 SENZA un id numerico
             // confermato (mai visto un caso reale con questi eventi finora)
             // — li riconosco dal testo invece che dall'id, più sicuro che
