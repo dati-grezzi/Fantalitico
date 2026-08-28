@@ -230,7 +230,23 @@ def job_classifica() -> None:
         raise ValueError("Tabella classifica non trovata")
 
     table.columns = [norm(c).lower() for c in table.columns.astype(str)]
-    col_sq = next(c for c in table.columns if "squadra" in c)
+    # Possono esserci più colonne con "squadra" nel nome (pandas rinomina i
+    # duplicati "squadra", "squadra.1", ...) — una spesso contiene solo il
+    # numero di posizione, l'altra il nome vero. Scelgo quella il cui
+    # contenuto è testo (non numeri), non semplicemente la prima trovata.
+    # Bug reale scoperto il 28/08: la prima era quella coi numeri di
+    # posizione, e i nomi finivano tutti vuoti.
+    candidate_sq = [c for c in table.columns if "squadra" in c]
+    col_sq = None
+    for c in candidate_sq:
+        valori = table[c].astype(str).head(5)
+        if not all(v.strip().isdigit() for v in valori):
+            col_sq = c
+            break
+    if col_sq is None:
+        col_sq = candidate_sq[0] if candidate_sq else None
+    if col_sq is None:
+        raise ValueError("Nessuna colonna 'squadra' trovata nella tabella")
     col_pt = next(c for c in table.columns if c in ("pt", "punti", "pti"))
 
     standings = []
