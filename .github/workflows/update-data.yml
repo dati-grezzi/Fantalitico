@@ -84,6 +84,18 @@ jobs:
         run: python sofascore_process.py
         continue-on-error: true
 
+      # PLAYERSTATS.FOOTBALL (28/08) — fonte AUTOMATICA per tackle/intercetti/
+      # rinvii/duelli (verificato con dati veri prima di scrivere il codice,
+      # nessun blocco riscontrato). Copre i primi 50 per categoria, non tutti
+      # i giocatori — normale, non un errore.
+      - name: Esegui scraper playerstats.football
+        run: python playerstats_pull.py
+        continue-on-error: true
+
+      - name: Elabora playerstats.football (JSON → JSON)
+        run: python playerstats_process.py
+        continue-on-error: true
+
       - name: Commit dei JSON aggiornati
         run: |
           git config user.name "fantalitico-bot"
