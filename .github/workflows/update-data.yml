@@ -65,10 +65,24 @@ jobs:
         run: python understat_process.py
         continue-on-error: true
 
-      # SOFASCORE: NON automatizzato (25/08) — il sito blocca gli indirizzi IP
-      # dei server GitHub Actions (403 Forbidden), non i normali PC di casa.
-      # sofascore_pull.py e sofascore_process.py restano nel repo per uso
-      # manuale dal tuo PC quando vuoi aggiornare i dati (funzionano bene lì).
+      # SOFASCORE (riattivato 28/08) — bloccato dagli IP dei server GitHub
+      # Actions (403 Forbidden) fino a quando non passa da un proxy esterno
+      # (Webshare). Le credenziali sono nei Secrets del repository, mai qui.
+      # continue-on-error: se il proxy gratuito non bastasse (potrebbe essere
+      # un IP "datacenter", che SofaScore potrebbe bloccare comunque), non
+      # deve bloccare il resto della pipeline.
+      - name: Esegui scraper SofaScore (via proxy)
+        run: python sofascore_pull.py
+        continue-on-error: true
+        env:
+          PROXY_HOST: ${{ secrets.PROXY_HOST }}
+          PROXY_PORT: ${{ secrets.PROXY_PORT }}
+          PROXY_USER: ${{ secrets.PROXY_USER }}
+          PROXY_PASS: ${{ secrets.PROXY_PASS }}
+
+      - name: Elabora SofaScore (JSON → JSON)
+        run: python sofascore_process.py
+        continue-on-error: true
 
       - name: Commit dei JSON aggiornati
         run: |
