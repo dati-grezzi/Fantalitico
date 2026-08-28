@@ -740,7 +740,8 @@ function expFV(r){                               // r = elemento roster
            cal, base, team, rating: shrunk(st), st, perf };
 }
 function slotEV(r){
-  return (r.pTit/100) * expFV(r).val + (1 - r.pTit/100) * BENCH_FV;
+  const pTit = pTitEffettivo(r);
+  return (pTit/100) * expFV(r).val + (1 - pTit/100) * BENCH_FV;
 }
 function rosterByRole(role){
   return S.roster.filter(r => roleOf(S.byId.get(r.id)) === role);
@@ -1343,7 +1344,7 @@ function renderRosa(){
               st.fuoriSerieA?'<span class="chip out" title="Non più tesserato per un club di Serie A (fonte: listone ufficiale)">EX</span>':""}</div>
             <div class="bar"><i style="width:${Math.min(100, combinato/9*100)}%; background:${ROLE_COLOR[role]}"></i></div>
           </div>
-          <div class="pnum"><div class="v" style="color:${ROLE_COLOR[role]}">${fmt(combinato)}</div><div class="l">E[slot] · tit ${r.pTit}%</div></div>
+          <div class="pnum"><div class="v" style="color:${ROLE_COLOR[role]}">${fmt(combinato)}</div><div class="l">E[slot] · tit ${pTitEffettivo(r)}%</div></div>
         </div>
         ${open ? `<div class="pedit">
           <div class="grid2">
@@ -1357,7 +1358,8 @@ function renderRosa(){
             return form.length ? `<div class="sub" style="margin:8px 0 0">Ultimi voti reali:
               ${form.map(x => `<b style="color:var(--chalk)">${fmt(x.fv,1)}</b><span style="color:var(--dim)">(G${x.giornata})</span>`).join(" · ")}</div>` : "";
           })()}
-          <label>Titolarità: <b style="color:var(--chalk)">${r.pTit}%</b>
+          <label>Titolarità: <b style="color:var(--chalk)">${pTitEffettivo(r)}%</b>${
+            pTitEffettivo(r) !== r.pTit ? '<span style="color:var(--dim)"> (indisponibile: valore salvato ignorato)</span>' : ""}
             <input type="range" min="0" max="100" step="5" value="${r.pTit}"
               oninput="patch(${r.id},'pTit',+this.value)"></label>
           <div class="togglerow">
@@ -1718,6 +1720,23 @@ function indiceTitolarita(st){
   const fonte = S.titolarita_reale && S.titolarita_reale[st.id];
   if(!fonte || fonte.confidence == null) return ts;             // nessuna fonte reale (es. fuori giornata)
   return IT_PESO_STORICO*ts + (1-IT_PESO_STORICO)*fonte.confidence;
+}
+// pTit in rosa viene "congelato" al momento in cui il giocatore entra (vedi
+// commento in risincronizzaRosa) — se dopo risulta infortunato/squalificato,
+// il valore vecchio resta finché non si preme "Aggiorna con dati live".
+// Bug reale scoperto il 28/08: un giocatore rientrato indisponibile
+// continuava a mostrare una titolarità alta. Questa funzione forza SEMPRE
+// il controllo live sopra il valore salvato, per sicurezza — non serve
+// aspettare una risincronizzazione manuale per vedere lo stato vero.
+function pTitEffettivo(r){
+  const st = S.byId.get(r.id);
+  if(!st) return r.pTit;
+  const cat = S.indisponibili && S.indisponibili[st.squadra];
+  const fuoriCerto = cat && (
+    (cat.squalificati||[]).some(x => String(x.id) === String(st.id)) ||
+    (cat.infortunati||[]).some(x => String(x.id) === String(st.id))
+  );
+  return fuoriCerto ? 2 : r.pTit;   // 2% invece del valore salvato, stesso criterio di indiceTitolarita
 }
 const MKT_REG = 25;                       // presenze ~ titolare fisso in una stagione (legacy, vedi indiceTitolarita)
 function availab(st){ return indiceTitolarita(st); }
