@@ -488,7 +488,8 @@ const S = {                    // stato applicazione
   rigoristi: {},               // slug → [slug giocatori]
   indisponibili: {},           // slug → [slug giocatori]
   understat: {},               // id(cod) → {shots_p90, xa_p90} (feed offensivo, quando presente)
-  sofascore: {},                // id(cod) → {tackles_p90, interceptions_p90, clearances_p90, ...} (feed difensivo/passaggio)
+  sofascore: {},                // id(cod) → {tackles_p90, interceptions_p90, clearances_p90, ...} (feed difensivo/passaggio, solo manuale dal PC)
+  playerstats: {},              // id(cod) → {tackles_p90, interceptions_p90, ...} (feed difensivo/passaggio, automatico)
   votiStorico: {},             // id(cod) → {nome,squadra,ruolo,giornate:{"16":{voto_consensus,fantavoto_consensus,...}}}
   storicoPresenze: {},         // id(cod) → {pv, rateo} stagione precedente conclusa, per l'Indice di Titolarità (TS)
   titolarita_reale: {},        // id(cod) → {confidence,...} consensus probabili formazioni (fonte reale per l'IT)
@@ -587,10 +588,11 @@ async function loadData(){
   const res = await Promise.allSettled([
     getJSON("players.json"), getJSON("classifica.json"), getJSON("calendario.json"),
     getJSON("rigoristi.json"), getJSON("indisponibili.json"), getJSON("meta.json"),
-    getJSON("understat.json"), getJSON("sofascore.json"), getJSON("voti_storico.json"), getJSON("storico_presenze.json"),
+    getJSON("understat.json"), getJSON("sofascore.json"), getJSON("playerstats.json"),
+    getJSON("voti_storico.json"), getJSON("storico_presenze.json"),
     getJSON("titolarita_reale.json"), getJSON("prezzi_reali_asta.json"),
   ]);
-  const [pl, cl, cal, rig, ind, meta, us, sf, vs, sp, tr, pa] = res.map(r => r.status==="fulfilled" ? r.value : null);
+  const [pl, cl, cal, rig, ind, meta, us, sf, ps, vs, sp, tr, pa] = res.map(r => r.status==="fulfilled" ? r.value : null);
 
   if(pl){
     S.db = pl.giocatori.filter(p => p.id && p.nome);
@@ -622,6 +624,9 @@ async function loadData(){
   }
   if(sf && sf.giocatori){                       // feed difensivo/passaggio: { giocatori: { cod: {tackles_p90, ...} } }
     S.sofascore = sf.giocatori;
+  }
+  if(ps && ps.giocatori){                        // feed difensivo/passaggio automatico (playerstats.football)
+    S.playerstats = ps.giocatori;
   }
   if(vs) S.votiStorico = vs;                    // storico voti reali per giornata: { player_id: {nome,squadra,ruolo,giornate:{...}} }
   if(sp && sp.giocatori) S.storicoPresenze = sp.giocatori;  // { player_id: {nome,squadra,pv,rateo} } stagione precedente
@@ -689,11 +694,22 @@ function teamAdj(st){
   return GAMMA_TEAM[roleOf(st)] * (strength(st.squadra) - 0.5);
 }
 function roleOf(st){ return st ? (st.ruolo || "C") : "?"; }
-function perfBonus(st){                          // bonus da statistiche Understat (A) o SofaScore (C/D/P)
+function perfBonus(st){                          // bonus da statistiche Understat (A) o playerstats.football + SofaScore (C/D/P)
   const role = roleOf(st), w = PERF_W.ruoli[role];
   // Attaccanti: Understat (confermato avere xG/xA/tiri). Altri ruoli:
-  // SofaScore (tackle, intercetti, rinvii — Understat non li ha mai avuti).
-  const fonte = role === "A" ? (S.understat && S.understat[st.id]) : (S.sofascore && S.sofascore[st.id]);
+  // playerstats.football (automatico, gira da solo nella pipeline) unito a
+  // SofaScore (manuale dal PC, quando disponibile — ha qualche campo in più
+  // che playerstats non copre, es. saves_box_p90 per i portieri). Se un
+  // campo è in entrambi, vince playerstats: è garantito aggiornato ad ogni
+  // lancio automatico, SofaScore potrebbe essere di un lancio manuale vecchio.
+  let fonte = null;
+  if (role !== "A") {
+    const daSofa = S.sofascore && S.sofascore[st.id];
+    const daPlayerstats = S.playerstats && S.playerstats[st.id];
+    if (daSofa || daPlayerstats) fonte = { ...(daSofa || {}), ...(daPlayerstats || {}) };
+  } else {
+    fonte = S.understat && S.understat[st.id];
+  }
   if (!w || !fonte) return { val: 0, has: false };   // nessun feed (es. campionato fermo) → 0
   const fvsd = PERF_W.FV_sd[role] || 0;
   let b = 0, used = false;
