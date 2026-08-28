@@ -1358,6 +1358,9 @@ function renderRosa(){
             return form.length ? `<div class="sub" style="margin:8px 0 0">Ultimi voti reali:
               ${form.map(x => `<b style="color:var(--chalk)">${fmt(x.fv,1)}</b><span style="color:var(--dim)">(G${x.giornata})</span>`).join(" · ")}</div>` : "";
           })()}
+          ${conflittoTitolarita(r) ? `<div class="sub" style="margin:8px 0 0; color:var(--red,#e55)">
+            ⚠️ Contrasto tra fonti: elencato indisponibile, ma le probabili formazioni lo danno oltre il 50% titolare —
+            controlla tu la situazione reale prima di affidarti al valore mostrato.</div>` : ""}
           <label>Titolarità: <b style="color:var(--chalk)">${pTitEffettivo(r)}%</b>${
             pTitEffettivo(r) !== r.pTit ? '<span style="color:var(--dim)"> (indisponibile: valore salvato ignorato)</span>' : ""}
             <input type="range" min="0" max="100" step="5" value="${r.pTit}"
@@ -1728,6 +1731,27 @@ function indiceTitolarita(st){
 // continuava a mostrare una titolarità alta. Questa funzione forza SEMPRE
 // il controllo live sopra il valore salvato, per sicurezza — non serve
 // aspettare una risincronizzazione manuale per vedere lo stato vero.
+//
+// CASO DI CONFLITTO (aggiunto 28/08, su segnalazione): se indisponibili.json
+// dice "fuori" ma titolarita_reale.json (doppio consensus fantacalcio.it +
+// sosfanta.com, aggiornato più vicino alla giornata) mostra oltre il 50% di
+// probabilità di titolarità, le due fonti si contraddicono — non scegliamo
+// automaticamente una delle due (potrebbe essere la lista infortunati quella
+// non aggiornata). Per prudenza il valore resta basso di default (meglio non
+// consigliare un giocatore forse ancora out), ma il conflitto viene segnalato
+// chiaramente: la decisione finale spetta a chi conosce meglio la situazione.
+function conflittoTitolarita(r){
+  const st = S.byId.get(r.id);
+  if(!st) return false;
+  const cat = S.indisponibili && S.indisponibili[st.squadra];
+  const fuoriCerto = cat && (
+    (cat.squalificati||[]).some(x => String(x.id) === String(st.id)) ||
+    (cat.infortunati||[]).some(x => String(x.id) === String(st.id))
+  );
+  if(!fuoriCerto) return false;
+  const fonte = S.titolarita_reale && S.titolarita_reale[st.id];
+  return !!(fonte && fonte.confidence != null && fonte.confidence > 0.5);
+}
 function pTitEffettivo(r){
   const st = S.byId.get(r.id);
   if(!st) return r.pTit;
