@@ -211,8 +211,11 @@ input[type=range]{width:100%; accent-color:var(--fluo); height:26px}
 .modbtn{flex-shrink:0; border-radius:12px; padding:8px 13px; text-align:center; cursor:pointer;
   background:var(--card); color:var(--chalk); border:1px solid var(--line); font-family:'Saira'}
 .modbtn.on{background:var(--fluo); color:var(--bg); border-color:var(--fluo)}
+.modbtn .tag{font-size:9px; font-weight:800; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--fluo); margin-bottom:2px; white-space:nowrap}
+.modbtn.on .tag{color:var(--bg)}
 .modbtn .n{font-weight:900; font-size:15px}
-.modbtn .e{font-size:11px; font-variant-numeric:tabular-nums; opacity:.75}
+.modbtn .e{font-size:19px; font-weight:800; font-variant-numeric:tabular-nums}
 .bighead{display:flex; justify-content:space-between; align-items:baseline; padding:12px 14px 0}
 .bighead .l{font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--dim)}
 .bighead .v{font-size:24px; font-weight:900; font-variant-numeric:tabular-nums}
@@ -1480,6 +1483,7 @@ function renderFormazione(){
   el("main").innerHTML = `
     <div class="modscroll">${ranking.map(x =>
       `<div class="modbtn ${x===sel?"on":""}" onclick="S.selMod='${x.mod.name}'; S.mcSeed++; render()">
+        ${x===ranking[0] ? `<div class="tag">Formazione consigliata</div>` : ""}
         <div class="n">${x.mod.name}</div><div class="e">${x.lu.complete ? fmt(x.lu.ev,1) : "n/d"}</div></div>`).join("")}
     </div>
     <div class="card">
