@@ -1341,6 +1341,7 @@ function renderRosa(){
             <div class="pname"><span class="nametext">${esc(st.nome)}</span><span class="pteam">${esc(st.squadra)}</span>${
               r.rig?'<span class="chip rig">R</span>':""}${r.sq?'<span class="chip out">SQ</span>':""}${
               r.inf?'<span class="chip out">IND</span>':""}${
+              conflittoTitolarita(r)?'<span class="chip" style="background:#a66; color:#fff" title="Elencato indisponibile, ma le probabili formazioni lo danno oltre il 50% titolare">DUB</span>':""}${
               st.fuoriSerieA?'<span class="chip out" title="Non più tesserato per un club di Serie A (fonte: listone ufficiale)">EX</span>':""}</div>
             <div class="bar"><i style="width:${Math.min(100, combinato/9*100)}%; background:${ROLE_COLOR[role]}"></i></div>
           </div>
@@ -1760,7 +1761,16 @@ function pTitEffettivo(r){
     (cat.squalificati||[]).some(x => String(x.id) === String(st.id)) ||
     (cat.infortunati||[]).some(x => String(x.id) === String(st.id))
   );
-  return fuoriCerto ? 2 : r.pTit;   // 2% invece del valore salvato, stesso criterio di indiceTitolarita
+  if(!fuoriCerto) return r.pTit;
+  // In caso di conflitto (indisponibile MA le probabili formazioni lo danno
+  // titolare) mostro il valore del consensus, non un 2% forzato che
+  // nasconderebbe l'informazione — l'avviso ⚠️ resta comunque visibile,
+  // così chi guarda sa che va verificato, ma il numero non mente per difetto.
+  const fonte = S.titolarita_reale && S.titolarita_reale[st.id];
+  if(fonte && fonte.confidence != null && fonte.confidence > 0.5){
+    return Math.round(fonte.confidence * 100);
+  }
+  return 2;   // nessun conflitto: 2% invece del valore salvato, stesso criterio di indiceTitolarita
 }
 const MKT_REG = 25;                       // presenze ~ titolare fisso in una stagione (legacy, vedi indiceTitolarita)
 function availab(st){ return indiceTitolarita(st); }
