@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-08-28T18:08:41.176742+00:00",
+ "aggiornato": "2026-08-29T01:29:49.776618+00:00",
  "fonte": "Understat (tabella Players, totali di stagione)",
  "note": "Mapping ID fantacalcio → {apps, minutes_total, goals, assists, xG, xA, xG90, xA90}. Da understat_players_2026.csv.",
  "giocatori": {
@@ -38,6 +38,30 @@
    "xA90": 0.55,
    "understat_name": "Bremer",
    "match_score": 1.0
+  },
+  "6618": {
+   "apps": 2,
+   "minutes_total": 128,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.1,
+   "xA90": 0.02,
+   "understat_name": "Alphadjo Cissè",
+   "match_score": 0.85
+  },
+  "6397": {
+   "apps": 2,
+   "minutes_total": 180,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 1.13,
+   "xA90": 0.06,
+   "understat_name": "Gonçalo Ramos",
+   "match_score": 0.85
   },
   "7017": {
    "apps": 1,
@@ -85,6 +109,18 @@
    "xG90": 0.0,
    "xA90": 0.0,
    "understat_name": "David de Gea",
+   "match_score": 0.85
+  },
+  "4199": {
+   "apps": 2,
+   "minutes_total": 118,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.21,
+   "xA90": 0.32,
+   "understat_name": "Ruben Loftus-Cheek",
    "match_score": 0.85
   },
   "4260": {
@@ -231,6 +267,18 @@
    "understat_name": "Mattia Zaccagni",
    "match_score": 0.85
   },
+  "2606": {
+   "apps": 2,
+   "minutes_total": 111,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.0,
+   "xA90": 0.15,
+   "understat_name": "Luka Modric",
+   "match_score": 0.85
+  },
   "5504": {
    "apps": 1,
    "minutes_total": 90,
@@ -244,8 +292,8 @@
    "match_score": 0.85
   },
   "4312": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
@@ -459,6 +507,18 @@
    "understat_name": "Ndary Adopo",
    "match_score": 0.85
   },
+  "5674": {
+   "apps": 2,
+   "minutes_total": 155,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.0,
+   "xA90": 0.33,
+   "understat_name": "Toma Basic",
+   "match_score": 0.85
+  },
   "2816": {
    "apps": 1,
    "minutes_total": 90,
@@ -520,26 +580,26 @@
    "match_score": 0.85
   },
   "4856": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 1,
    "xG": 0.0,
-   "xA": 0.0,
-   "xG90": 0.18,
-   "xA90": 0.69,
+   "xA": 1.0,
+   "xG90": 0.1,
+   "xA90": 0.5,
    "understat_name": "Samuel Chukwueze",
    "match_score": 0.85
   },
   "6904": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 173,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.54,
-   "xA90": 0.37,
+   "xG90": 0.36,
+   "xA90": 0.3,
    "understat_name": "John Yeboah",
    "match_score": 0.85
   },
@@ -652,8 +712,8 @@
    "match_score": 0.85
   },
   "6248": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
@@ -675,14 +735,26 @@
    "understat_name": "Maduka Okoye",
    "match_score": 0.85
   },
-  "5022": {
-   "apps": 1,
-   "minutes_total": 90,
+  "6994": {
+   "apps": 2,
+   "minutes_total": 155,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
    "xG90": 0.0,
+   "xA90": 0.02,
+   "understat_name": "Kike Pérez",
+   "match_score": 0.85
+  },
+  "5022": {
+   "apps": 2,
+   "minutes_total": 180,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.03,
    "xA90": 0.0,
    "understat_name": "Strahinja Pavlovic",
    "match_score": 0.85
@@ -700,14 +772,14 @@
    "match_score": 0.85
   },
   "5295": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.0,
-   "xA90": 0.0,
+   "xG90": 0.3,
+   "xA90": 0.01,
    "understat_name": "Yunus Musah",
    "match_score": 0.85
   },
@@ -820,13 +892,13 @@
    "match_score": 0.85
   },
   "7253": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.49,
+   "xG90": 0.25,
    "xA90": 0.0,
    "understat_name": "Armel Bella Kotchap",
    "match_score": 0.75
@@ -856,25 +928,37 @@
    "match_score": 0.85
   },
   "5507": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.26,
-   "xA90": 0.02,
+   "xG90": 0.13,
+   "xA90": 0.05,
    "understat_name": "Gianluca Busio",
    "match_score": 0.85
   },
-  "5739": {
-   "apps": 1,
-   "minutes_total": 90,
+  "5695": {
+   "apps": 2,
+   "minutes_total": 93,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.02,
+   "xG90": 0.56,
+   "xA90": 0.28,
+   "understat_name": "Ridgeciano Haps",
+   "match_score": 0.85
+  },
+  "5739": {
+   "apps": 2,
+   "minutes_total": 180,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.09,
    "xA90": 0.0,
    "understat_name": "Koni de Winter",
    "match_score": 0.85
@@ -927,6 +1011,18 @@
    "understat_name": "Éderson",
    "match_score": 0.8
   },
+  "5833": {
+   "apps": 2,
+   "minutes_total": 166,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.0,
+   "xA90": 0.09,
+   "understat_name": "Mario Gila",
+   "match_score": 0.85
+  },
   "6320": {
    "apps": 1,
    "minutes_total": 90,
@@ -940,13 +1036,13 @@
    "match_score": 0.85
   },
   "7478": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 137,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.44,
+   "xG90": 0.29,
    "xA90": 0.0,
    "understat_name": "Bartol Franjic",
    "match_score": 0.85
@@ -1107,18 +1203,6 @@
    "understat_name": "Saúl Coco",
    "match_score": 0.85
   },
-  "6397": {
-   "apps": 1,
-   "minutes_total": 90,
-   "goals": 0,
-   "assists": 0,
-   "xG": 0.0,
-   "xA": 0.0,
-   "xG90": 0.47,
-   "xA90": 0.12,
-   "understat_name": "Gonçalo Ramos",
-   "match_score": 0.85
-  },
   "6294": {
    "apps": 1,
    "minutes_total": 90,
@@ -1132,13 +1216,13 @@
    "match_score": 0.85
   },
   "6646": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.11,
+   "xG90": 0.18,
    "xA90": 0.0,
    "understat_name": "Akor Adams",
    "match_score": 0.85
@@ -1165,6 +1249,18 @@
    "xG90": 0.0,
    "xA90": 0.03,
    "understat_name": "Lorenzo Palmisani",
+   "match_score": 0.85
+  },
+  "6496": {
+   "apps": 2,
+   "minutes_total": 114,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.0,
+   "xA90": 0.55,
+   "understat_name": "Davide Bartesaghi",
    "match_score": 0.85
   },
   "6482": {
@@ -1213,6 +1309,18 @@
    "xG90": 0.05,
    "xA90": 0.0,
    "understat_name": "Darryl Bakola",
+   "match_score": 0.85
+  },
+  "6821": {
+   "apps": 2,
+   "minutes_total": 177,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.16,
+   "xA90": 0.04,
+   "understat_name": "Antoine Hainaut",
    "match_score": 0.85
   },
   "6867": {
@@ -1264,14 +1372,14 @@
    "match_score": 0.85
   },
   "6892": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
    "xG90": 0.0,
-   "xA90": 0.09,
+   "xA90": 0.04,
    "understat_name": "Joël Schingtienne",
    "match_score": 0.85
   },
