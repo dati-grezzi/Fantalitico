@@ -1354,7 +1354,7 @@ function renderRosa(){
           <div class="grid2">
             <div>Rating base: <b>${fmt(e.base)}</b></div>
             <div>FM: <b>${fmt(st.fm)}</b> (${st.pv||0} pv)</div>
-            <div>Forza squadra: <b>${e.team ? signedSpan(e.team) : "n/d"}</b></div>
+            <div>Forza squadra: <b>${S.points[st.squadra] != null ? signedSpan(e.team) : "n/d"}</b></div>
             <div>Δ calendario: <b>${e.cal.opp ? signedSpan(e.cal.adj) : "n/d"}</b></div>
             <div>Performance: <b>${e.perf && e.perf.has ? signedSpan(e.perf.val) : "n/d"}</b></div>
           </div>
@@ -1558,9 +1558,10 @@ function renderFattoreC(){
 function openMetodo(){
   el("sheet").innerHTML = `<div class="sheet-bg" onclick="el('sheet').innerHTML=''">
     <div class="sheet" onclick="event.stopPropagation()">
-      <h3>Il metodo, in breve · <span style="font-size:14px; color:var(--dim)">v2.1.0</span></h3>
+      <h3>Il metodo, in breve · <span style="font-size:14px; color:var(--dim)">v2.2.0</span></h3>
       <p style="font-size:12px; color:var(--fluo)">Taratura 31/07/2026 — costanti misurate su
-      10.504 fantavoti reali (Serie A 2025-26), metriche Understat role-specific, titolarità reale (agosto).</p>
+      10.504 fantavoti reali (Serie A 2025-26). Motore performance rivisto il 25/08/2026
+      (fonti difensive) e matching nomi corretto il 29/08/2026.</p>
       <p><b>Rating base</b> — fantamedia con shrinkage bayesiano verso il prior di ruolo:
       (pv·FM + K·prior)/(pv + K), con K per ruolo (P 28 · D 16 · C 15 · A 19) stimato per
       Bayes empirico. Si restringe molto perché il rumore di una giornata è 10-28 volte più
@@ -1571,12 +1572,18 @@ function openMetodo(){
       <p><b>Δ calendario</b> — casa/trasferta e forza dell'avversario, entrambi <b>dipendenti dal
       ruolo</b>: un portiere subisce l'avversario forte 2,3 volte più di un centrocampista.
       A campionato fermo vale 0 per tutti.</p>
-      <p><b>Performance Understat (role-specific)</b> — bonus da statistiche Understat con pesi <b>diversi per ruolo</b>:
-      <br><b>Attaccanti:</b> tiri (shots_p90, β=0.12), xA (β=0.08), xG (β=0.15)
-      <br><b>Centrocampisti:</b> xA (β=0.07), tackle+intercetti (β=0.04), passaggi progressivi (β=0.05)
-      <br><b>Difensori:</b> tackle+intercetti (β=0.08), xG concesso (β=-0.10), rinvii (β=0.03)
-      <br><b>Portieri:</b> xG concesso (β=-0.15), tiri in porta subiti (β=-0.08)
-      <br>Effetto volutamente contenuto (tie-breaker). Attivo quando è presente il feed; a campionato fermo vale 0.</p>
+      <p><b>Performance (role-specific)</b> — bonus da statistiche avanzate, con segnali e pesi
+      <b>diversi per ruolo</b>. Ogni segnale viene standardizzato (z = (valore − media)/σ, tagliato a ±2)
+      e pesato: <i>bonus = Σ β · σ<sub>FV</sub> · z</i>.
+      <br><b>Attaccanti</b> (fonte Understat): tiri p90 β 0,112 · xA p90 β 0,0
+      <br><b>Centrocampisti</b>: passaggi chiave p90 β 0,10 · tackle p90 β 0,06 · intercetti p90 β 0,04
+      <br><b>Difensori</b>: tackle p90 β 0,08 · intercetti p90 β 0,06 · rinvii p90 β 0,03
+      <br><b>Portieri</b>: parate in area p90 β 0,15
+      <br>Per i ruoli diversi da attaccante la fonte è playerstats.football, integrata da SofaScore
+      quando disponibile. Effetto volutamente contenuto (tie-breaker); vale 0 se il feed non copre
+      il giocatore — la copertura è limitata ai primi 50 di ogni categoria.
+      <br><span style="color:var(--dim)">Onestà intellettuale: i β degli attaccanti sono <b>misurati</b>
+      sui 10.504 fantavoti; quelli di C, D e P sono <b>stime ragionate</b> in attesa di calibrazione.</span></p>
       <p><b>Rigorista</b> — +0,30 al fantavoto atteso; il flag viene proposto in automatico
       dalla gerarchia rigoristi del web, ma resta modificabile.</p>
       <p><b>Indisponibili</b> — squalificati e infortunati vengono proposti dai dati web
@@ -1594,6 +1601,40 @@ function openMetodo(){
       (σ misurate: P 1,55 · D 1,07 · C 1,33 · A 1,90): mediana, banda P10–P90 e
       probabilità di superare la soglia scelta. I portieri sono molto più volatili di
       quanto assumessi prima.</p>
+      <h3 style="margin-top:18px">Leggenda delle sigle</h3>
+      <p style="font-size:12px; color:var(--dim)">Ogni sigla che compare nelle schermate, con la formula da cui esce.</p>
+      <table style="width:100%; border-collapse:collapse; font-size:13px">
+        <tr><th style="text-align:left; padding:4px 6px; border-bottom:1px solid var(--dim)">Sigla</th>
+            <th style="text-align:left; padding:4px 6px; border-bottom:1px solid var(--dim)">Significato e formula</th></tr>
+
+        <tr><td style="padding:5px 6px"><b>FM</b></td><td style="padding:5px 6px">Fantamedia: media dei fantavoti reali del giocatore. Dato grezzo dal listone, non calcolato dall'app.</td></tr>
+        <tr><td style="padding:5px 6px"><b>PV</b></td><td style="padding:5px 6px">Presenze con voto. Entra nel peso dello shrinkage: più partite, più la fantamedia è credibile.</td></tr>
+        <tr><td style="padding:5px 6px"><b>FVM</b></td><td style="padding:5px 6px">Fantavalore di Mercato, la quotazione ufficiale del listone. Usata per la ripartizione del budget e come ripiego quando manca il prezzo reale d'asta.</td></tr>
+
+        <tr><td style="padding:5px 6px"><b>Rating base</b></td><td style="padding:5px 6px">Fantamedia ristretta più contesto squadra:<br><code>(PV·FM + K·prior) / (PV + K) + γ·(forza − 0,5)</code><br>K per ruolo: P 28 · D 16 · C 15 · A 19. Prior: P 5,02 · D 5,99 · C 6,20 · A 6,53.</td></tr>
+        <tr><td style="padding:5px 6px"><b>K</b></td><td style="padding:5px 6px">Peso dello shrinkage bayesiano: quante partite servono perché la fantamedia conti quanto il prior di ruolo.</td></tr>
+        <tr><td style="padding:5px 6px"><b>Forza squadra</b> (γ)</td><td style="padding:5px 6px"><code>γ · (punti − min) / (max − min) − 0,5)</code>, con γ per ruolo P 0,476 · D 0,432 · C 0,436 · A 0,464. Vale <b>+0,00</b> per una squadra esattamente a metà classifica; <i>n/d</i> solo se la classifica non è caricata.</td></tr>
+        <tr><td style="padding:5px 6px"><b>Δ calendario</b></td><td style="padding:5px 6px">Correzione della singola giornata:<br><code>casa · (±0,5) + avversario · (forza avv. − 0,5)</code><br>Pesi casa P 0,167 · D 0,172 · C 0,144 · A 0,155; pesi avversario P −1,018 · D −0,534 · C −0,444 · A −0,891. A campionato fermo vale 0.</td></tr>
+        <tr><td style="padding:5px 6px"><b>β</b> · <b>z</b> · <b>σ<sub>FV</sub></b></td><td style="padding:5px 6px">Ingredienti del bonus Performance: β è il peso del segnale, z lo scarto standardizzato (tagliato a ±2), σ<sub>FV</sub> la volatilità del fantavoto per ruolo (P 0,90 · D 1,07 · C 1,33 · A 1,90).</td></tr>
+        <tr><td style="padding:5px 6px"><b>p90</b></td><td style="padding:5px 6px">Valore riportato a 90 minuti giocati, così chi entra dalla panchina è confrontabile con chi gioca sempre.</td></tr>
+        <tr><td style="padding:5px 6px"><b>xG</b> · <b>xA</b></td><td style="padding:5px 6px">Gol e assist attesi: quanto valevano le occasioni create, al netto di fortuna e bravura del portiere. Fonte Understat.</td></tr>
+
+        <tr><td style="padding:5px 6px"><b>E[fv]</b></td><td style="padding:5px 6px">Fantavoto atteso se il giocatore scende in campo:<br><code>Rating base + Δ calendario + Performance + rigorista</code></td></tr>
+        <tr><td style="padding:5px 6px"><b>tit %</b></td><td style="padding:5px 6px">Probabilità che giochi. Dalle probabili formazioni quando ci sono (consensus di più fonti), altrimenti dalle presenze storiche. Scende al 2% per squalificati e infortunati.</td></tr>
+        <tr><td style="padding:5px 6px"><b>E[slot]</b></td><td style="padding:5px 6px">Quanto rende <i>lo slot</i>, non il giocatore:<br><code>tit · E[fv] + (1 − tit) · 4,0</code><br>dove 4,0 è il valore di ripiego di una riserva. È il numero grande nella Rosa: tiene conto del rischio che non giochi.</td></tr>
+        <tr><td style="padding:5px 6px"><b>IT</b></td><td style="padding:5px 6px">Indice di Schierabilità: <code>E[fv] × titolarità</code>. Risponde a “se gioca, quanto varrà?”</td></tr>
+        <tr><td style="padding:5px 6px"><b>P10–P90</b></td><td style="padding:5px 6px">Banda di incertezza del Monte Carlo: in 8 giornate su 10 il risultato cade qui dentro. Da ${N_SIM} simulazioni.</td></tr>
+
+        <tr><td style="padding:5px 6px"><b>R</b></td><td style="padding:5px 6px">Rigorista designato: +0,30 al fantavoto atteso. Proposto dalla gerarchia rigoristi, modificabile a mano.</td></tr>
+        <tr><td style="padding:5px 6px"><b>SQ</b> · <b>IND</b></td><td style="padding:5px 6px">Squalificato · Indisponibile per infortunio. Portano la titolarità al 2%.</td></tr>
+        <tr><td style="padding:5px 6px"><b>DUB</b></td><td style="padding:5px 6px">Dato per indisponibile da una fonte, ma le probabili formazioni lo danno titolare oltre il 50%. Da verificare a mano.</td></tr>
+        <tr><td style="padding:5px 6px"><b>EX</b></td><td style="padding:5px 6px">Non più tesserato per un club di Serie A, secondo il listone ufficiale.</td></tr>
+        <tr><td style="padding:5px 6px"><b>C</b></td><td style="padding:5px 6px">Capitano nel Top 11, con il bonus previsto dalle Regole Lega.</td></tr>
+        <tr><td style="padding:5px 6px"><b>Mod. Difesa</b></td><td style="padding:5px 6px">Modificatore di difesa: bonus unico alla squadra dalla media del voto puro di portiere più i 3 migliori difensori. Richiede almeno 4 difensori schierati. Solo nel Top 11.</td></tr>
+        <tr><td style="padding:5px 6px"><b>Max %</b></td><td style="padding:5px 6px">Quota massima consigliata del budget d'asta per quel giocatore. Dai prezzi medi reali quando disponibili, altrimenti dal peso del suo FVM sul totale del ruolo.</td></tr>
+        <tr><td style="padding:5px 6px"><b>Fattore C</b></td><td style="padding:5px 6px">Quanto la fortuna ha inciso sui risultati di lega: scarto fra i punti presi e quelli che i fantavoti avrebbero meritato.</td></tr>
+      </table>
+
       <p style="font-size:12px">Dati: fantacalcio.it via pipeline GitHub Actions ·
       ${S.meta ? "ultimo aggiornamento " + new Date(S.meta.aggiornato).toLocaleString("it-IT") : ""}</p>
       <button class="btn" style="width:100%; padding:13px; margin-top:8px"
