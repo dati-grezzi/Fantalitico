@@ -17,6 +17,9 @@ import json
 import os
 import sys
 
+# Una giornata di Serie A è completa quando tutte e 20 le squadre hanno voti.
+SQUADRE_ATTESE = 20
+
 
 def main():
     github_output = os.environ.get("GITHUB_OUTPUT")
@@ -52,25 +55,46 @@ def main():
 
     giornata_candidata = giornata_in_vetrina - 1
 
-    # Controllo "già fatta" — RIATTIVATO il 29/08 (era stato disattivato il
+    # Controllo "già COMPLETA" — RIATTIVATO il 29/08 (era stato disattivato il
     # 25/08 per facilitare i lanci ripetuti durante il debug del bug dei voti
     # duplicati, ora chiuso e confermato su più giornate). Senza questo
     # controllo la pipeline avrebbe rilavorato la Giornata 1 all'infinito,
     # senza mai passare alla successiva — bug scoperto durante la verifica
     # completa pre-deploy del 29/08.
-    gia_fatta = False
+    #
+    # Non basta però chiedersi se la giornata è "già toccata": lo scraper
+    # salva anche un turno parziale (salta le partite senza voti e fallisce
+    # solo se sono vuote tutte e dieci). Se la pagina delle probabili passa
+    # alla giornata successiva mentre un posticipo o un recupero non ha
+    # ancora i voti, un solo giocatore integrato basterebbe a dichiarare
+    # chiusa la giornata, e le partite mancanti non entrerebbero mai più.
+    # Quindi la soglia è la copertura: finché non ci sono tutte e 20 le
+    # squadre, la giornata si riprocessa e assorbe da sé le partite arrivate
+    # nel frattempo.
+    squadre_presenti = set()
     if os.path.exists("data/voti_storico.json"):
         with open("data/voti_storico.json", encoding="utf-8") as f:
             storico = json.load(f)
         chiave = str(giornata_candidata)
         for dati_giocatore in storico.values():
-            if isinstance(dati_giocatore, dict) and chiave in dati_giocatore.get("giornate", {}):
-                gia_fatta = True
-                break
-    if gia_fatta:
-        print(f"Giornata {giornata_candidata} risulta già integrata in voti_storico.json — nulla da fare")
+            if not isinstance(dati_giocatore, dict):
+                continue
+            if chiave in dati_giocatore.get("giornate", {}):
+                squadra = (dati_giocatore.get("squadra") or "").strip()
+                if squadra:
+                    squadre_presenti.add(squadra)
+
+    if len(squadre_presenti) >= SQUADRE_ATTESE:
+        print(f"Giornata {giornata_candidata} già integrata e completa "
+              f"({len(squadre_presenti)}/{SQUADRE_ATTESE} squadre) — nulla da fare")
         emetti(None)
         return 0
+
+    if squadre_presenti:
+        print(f"Giornata {giornata_candidata} presente ma INCOMPLETA: "
+              f"{len(squadre_presenti)}/{SQUADRE_ATTESE} squadre "
+              f"({', '.join(sorted(squadre_presenti))}). La riprocesso per "
+              f"recuperare le partite mancanti.")
 
     print(f"Giornata da processare: {giornata_candidata}")
     emetti(giornata_candidata)
