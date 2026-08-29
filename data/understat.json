@@ -1,7 +1,7 @@
 {
- "aggiornato": "2026-08-29T08:22:59.353620+00:00",
+ "aggiornato": "2026-08-29T10:25:32.906569+00:00",
  "fonte": "Understat (tabella Players, totali di stagione)",
- "note": "Mapping ID fantacalcio → {apps, minutes_total, goals, assists, xG, xA, xG90, xA90}. Da understat_players_2026.csv.",
+ "note": "Mapping ID fantacalcio → {apps, minutes_total, goals, assists, xG, xA, xG90, xA90, shots_p90, key_passes_p90}. Da understat_players_2026.csv.",
  "giocatori": {
   "5555": {
    "apps": 1,
@@ -12,6 +12,8 @@
    "xA": 0.0,
    "xG90": 0.55,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Hassane Kamara",
    "match_score": 0.85
   },
@@ -24,6 +26,8 @@
    "xA": 0.0,
    "xG90": 0.08,
    "xA90": 0.02,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Yann Bisseck",
    "match_score": 0.85
   },
@@ -36,6 +40,8 @@
    "xA": 0.0,
    "xG90": 0.62,
    "xA90": 0.55,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Bremer",
    "match_score": 1.0
   },
@@ -48,6 +54,8 @@
    "xA": 0.0,
    "xG90": 0.1,
    "xA90": 0.02,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Alphadjo Cissè",
    "match_score": 0.85
   },
@@ -60,6 +68,8 @@
    "xA": 0.0,
    "xG90": 1.13,
    "xA90": 0.06,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Gonçalo Ramos",
    "match_score": 0.85
   },
@@ -72,6 +82,8 @@
    "xA": 0.0,
    "xG90": 1.36,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Tasos Douvikas",
    "match_score": 0.85
   },
@@ -84,6 +96,8 @@
    "xA": 0.0,
    "xG90": 0.09,
    "xA90": 0.26,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Alessandro Romano",
    "match_score": 0.85
   },
@@ -96,6 +110,8 @@
    "xA": 0.0,
    "xG90": 0.52,
    "xA90": 0.01,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Cas Odenthal",
    "match_score": 0.85
   },
@@ -108,6 +124,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "David de Gea",
    "match_score": 0.85
   },
@@ -120,6 +138,8 @@
    "xA": 0.0,
    "xG90": 0.21,
    "xA90": 0.32,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Ruben Loftus-Cheek",
    "match_score": 0.85
   },
@@ -132,6 +152,8 @@
    "xA": 0.0,
    "xG90": 0.06,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Harry Winks",
    "match_score": 0.85
   },
@@ -144,6 +166,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.05,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Manuel Locatelli",
    "match_score": 0.85
   },
@@ -156,6 +180,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.05,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Bryan Cristante",
    "match_score": 0.85
   },
@@ -168,6 +194,8 @@
    "xA": 0.0,
    "xG90": 0.08,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Davide Zappacosta",
    "match_score": 0.85
   },
@@ -180,6 +208,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Lukasz Skorupski",
    "match_score": 0.85
   },
@@ -192,6 +222,8 @@
    "xA": 0.0,
    "xG90": 0.03,
    "xA90": 0.1,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Federico Dimarco",
    "match_score": 0.85
   },
@@ -204,6 +236,8 @@
    "xA": 0.0,
    "xG90": 0.07,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Nicolò Barella",
    "match_score": 0.85
   },
@@ -216,6 +250,8 @@
    "xA": 0.0,
    "xG90": 0.11,
    "xA90": 0.02,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Leonardo Spinazzola",
    "match_score": 0.85
   },
@@ -228,6 +264,8 @@
    "xA": 0.0,
    "xG90": 0.26,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Alessandro Deiola",
    "match_score": 0.85
   },
@@ -240,6 +278,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.08,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Giacomo Calo",
    "match_score": 0.85
   },
@@ -252,6 +292,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Alex Meret",
    "match_score": 0.85
   },
@@ -264,6 +306,8 @@
    "xA": 0.0,
    "xG90": 0.14,
    "xA90": 0.06,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Mattia Zaccagni",
    "match_score": 0.85
   },
@@ -276,6 +320,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.15,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Luka Modric",
    "match_score": 0.85
   },
@@ -288,6 +334,8 @@
    "xA": 0.0,
    "xG90": 0.05,
    "xA90": 0.08,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Lassana Coulibaly",
    "match_score": 0.85
   },
@@ -300,6 +348,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Mike Maignan",
    "match_score": 0.85
   },
@@ -312,6 +362,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.13,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Alessandro Bastoni",
    "match_score": 0.85
   },
@@ -324,6 +376,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Wladimiro Falcone",
    "match_score": 0.85
   },
@@ -336,6 +390,8 @@
    "xA": 0.0,
    "xG90": 0.16,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Weston McKennie",
    "match_score": 0.85
   },
@@ -348,6 +404,8 @@
    "xA": 0.0,
    "xG90": 0.02,
    "xA90": 0.11,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Scott McTominay",
    "match_score": 0.85
   },
@@ -360,6 +418,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Jean Butez",
    "match_score": 0.85
   },
@@ -372,6 +432,8 @@
    "xA": 0.0,
    "xG90": 0.65,
    "xA90": 0.11,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Randal Kolo Muani",
    "match_score": 0.85
   },
@@ -384,6 +446,8 @@
    "xA": 0.0,
    "xG90": 0.08,
    "xA90": 0.02,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Stanislav Lobotka",
    "match_score": 0.85
   },
@@ -396,6 +460,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.56,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Gianluca Mancini",
    "match_score": 0.85
   },
@@ -408,6 +474,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Nikola Vlasic",
    "match_score": 0.85
   },
@@ -420,6 +488,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Semuel Pizzignacco",
    "match_score": 0.85
   },
@@ -432,6 +502,8 @@
    "xA": 0.0,
    "xG90": 0.07,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Trevoh Chalobah",
    "match_score": 0.85
   },
@@ -444,6 +516,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.02,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Oumar Solet",
    "match_score": 0.85
   },
@@ -456,6 +530,8 @@
    "xA": 0.0,
    "xG90": 0.11,
    "xA90": 0.58,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Nicolo Zaniolo",
    "match_score": 0.85
   },
@@ -468,6 +544,8 @@
    "xA": 0.0,
    "xG90": 0.08,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Enrico Del Prato",
    "match_score": 0.667
   },
@@ -480,6 +558,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Luca Ranieri",
    "match_score": 0.85
   },
@@ -492,6 +572,8 @@
    "xA": 0.0,
    "xG90": 0.57,
    "xA90": 0.5,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Armand Lauriente",
    "match_score": 0.85
   },
@@ -504,6 +586,8 @@
    "xA": 0.0,
    "xG90": 0.06,
    "xA90": 0.08,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Ndary Adopo",
    "match_score": 0.85
   },
@@ -516,6 +600,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.33,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Toma Basic",
    "match_score": 0.85
   },
@@ -528,6 +614,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Giovanni Di Lorenzo",
    "match_score": 0.85
   },
@@ -540,6 +628,8 @@
    "xA": 0.0,
    "xG90": 0.63,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Jens Odgaard",
    "match_score": 0.85
   },
@@ -552,6 +642,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Arijanet Muric",
    "match_score": 0.85
   },
@@ -564,6 +656,8 @@
    "xA": 0.0,
    "xG90": 0.45,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Evan Ndicka",
    "match_score": 0.667
   },
@@ -576,6 +670,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Elia Caprile",
    "match_score": 0.85
   },
@@ -588,6 +684,8 @@
    "xA": 1.0,
    "xG90": 0.1,
    "xA90": 0.5,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Samuel Chukwueze",
    "match_score": 0.85
   },
@@ -600,6 +698,8 @@
    "xA": 0.0,
    "xG90": 0.36,
    "xA90": 0.3,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "John Yeboah",
    "match_score": 0.85
   },
@@ -612,6 +712,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.1,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Juan Miranda",
    "match_score": 0.85
   },
@@ -624,6 +726,8 @@
    "xA": 0.0,
    "xG90": 0.04,
    "xA90": 0.03,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Nicolo Rovella",
    "match_score": 0.85
   },
@@ -636,6 +740,8 @@
    "xA": 0.0,
    "xG90": 0.01,
    "xA90": 0.07,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Gianluca Gaetano",
    "match_score": 0.85
   },
@@ -648,6 +754,8 @@
    "xA": 0.0,
    "xG90": 0.02,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Amir Rrahmani",
    "match_score": 0.85
   },
@@ -660,6 +768,8 @@
    "xA": 0.0,
    "xG90": 0.12,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Lloyd Kelly",
    "match_score": 0.85
   },
@@ -672,6 +782,8 @@
    "xA": 0.0,
    "xG90": 0.02,
    "xA90": 0.17,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Daniel Maldini",
    "match_score": 0.85
   },
@@ -684,6 +796,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.3,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Andrea Carboni",
    "match_score": 0.85
   },
@@ -696,6 +810,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Edoardo Corvi",
    "match_score": 0.85
   },
@@ -708,6 +824,8 @@
    "xA": 0.0,
    "xG90": 0.03,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "El Bilal Touré",
    "match_score": 0.85
   },
@@ -720,6 +838,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Filip Stankovic",
    "match_score": 0.85
   },
@@ -732,6 +852,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Maduka Okoye",
    "match_score": 0.85
   },
@@ -744,6 +866,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.02,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Kike Pérez",
    "match_score": 0.85
   },
@@ -756,6 +880,8 @@
    "xA": 0.0,
    "xG90": 0.03,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Strahinja Pavlovic",
    "match_score": 0.85
   },
@@ -768,6 +894,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.67,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Luis Milla",
    "match_score": 0.85
   },
@@ -780,6 +908,8 @@
    "xA": 0.0,
    "xG90": 0.3,
    "xA90": 0.01,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Yunus Musah",
    "match_score": 0.85
   },
@@ -792,6 +922,8 @@
    "xA": 0.0,
    "xG90": 0.07,
    "xA90": 0.14,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Mergim Vojvoda",
    "match_score": 0.85
   },
@@ -804,6 +936,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Guglielmo Vicario",
    "match_score": 0.85
   },
@@ -816,6 +950,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Marco Carnesecchi",
    "match_score": 0.85
   },
@@ -828,6 +964,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Josep Martínez",
    "match_score": 0.85
   },
@@ -840,6 +978,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Ardian Ismajli",
    "match_score": 0.85
   },
@@ -852,6 +992,8 @@
    "xA": 0.0,
    "xG90": 0.02,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Radu Dragusin",
    "match_score": 0.85
   },
@@ -864,6 +1006,8 @@
    "xA": 0.0,
    "xG90": 0.03,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Giorgio Scalvini",
    "match_score": 0.85
   },
@@ -876,6 +1020,8 @@
    "xA": 0.0,
    "xG90": 0.45,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Niakhate Ndiaye",
    "match_score": 0.85
   },
@@ -888,6 +1034,8 @@
    "xA": 0.0,
    "xG90": 0.08,
    "xA90": 0.05,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Antonio Raimondo",
    "match_score": 0.85
   },
@@ -900,6 +1048,8 @@
    "xA": 0.0,
    "xG90": 0.25,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Armel Bella Kotchap",
    "match_score": 0.75
   },
@@ -912,6 +1062,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Odilon Kossounou",
    "match_score": 0.85
   },
@@ -924,6 +1076,8 @@
    "xA": 0.0,
    "xG90": 0.42,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Ricardo Mangas",
    "match_score": 0.85
   },
@@ -936,6 +1090,8 @@
    "xA": 0.0,
    "xG90": 0.13,
    "xA90": 0.05,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Gianluca Busio",
    "match_score": 0.85
   },
@@ -948,6 +1104,8 @@
    "xA": 0.0,
    "xG90": 0.56,
    "xA90": 0.28,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Ridgeciano Haps",
    "match_score": 0.85
   },
@@ -960,6 +1118,8 @@
    "xA": 0.0,
    "xG90": 0.09,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Koni de Winter",
    "match_score": 0.85
   },
@@ -972,6 +1132,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.13,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Adam Obert",
    "match_score": 0.85
   },
@@ -984,6 +1146,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Giorgio Cittadini",
    "match_score": 0.85
   },
@@ -996,6 +1160,8 @@
    "xA": 0.0,
    "xG90": 0.03,
    "xA90": 0.02,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Morten Frendrup",
    "match_score": 0.85
   },
@@ -1008,6 +1174,8 @@
    "xA": 0.0,
    "xG90": 0.04,
    "xA90": 0.08,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Éderson",
    "match_score": 0.8
   },
@@ -1020,6 +1188,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.09,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Mario Gila",
    "match_score": 0.85
   },
@@ -1032,6 +1202,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Danilho Doekhi",
    "match_score": 0.85
   },
@@ -1044,6 +1216,8 @@
    "xA": 0.0,
    "xG90": 0.29,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Bartol Franjic",
    "match_score": 0.85
   },
@@ -1056,6 +1230,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "James Abankwah",
    "match_score": 0.85
   },
@@ -1068,6 +1244,8 @@
    "xA": 0.0,
    "xG90": 0.05,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Samuele Birindelli",
    "match_score": 0.85
   },
@@ -1080,6 +1258,8 @@
    "xA": 0.0,
    "xG90": 0.01,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Dodô",
    "match_score": 1.0
   },
@@ -1092,6 +1272,8 @@
    "xA": 0.0,
    "xG90": 0.01,
    "xA90": 0.09,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Yan Couto",
    "match_score": 0.85
   },
@@ -1104,6 +1286,8 @@
    "xA": 0.0,
    "xG90": 0.04,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Mikael Ellertsson",
    "match_score": 0.85
   },
@@ -1116,6 +1300,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Mile Svilar",
    "match_score": 0.85
   },
@@ -1128,6 +1314,8 @@
    "xA": 0.0,
    "xG90": 0.02,
    "xA90": 0.13,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Josh Doig",
    "match_score": 0.85
   },
@@ -1140,6 +1328,8 @@
    "xA": 0.0,
    "xG90": 0.04,
    "xA90": 0.31,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Emanuele Valeri",
    "match_score": 0.85
   },
@@ -1152,6 +1342,8 @@
    "xA": 0.0,
    "xG90": 0.42,
    "xA90": 0.47,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Lewis Ferguson",
    "match_score": 0.85
   },
@@ -1164,6 +1356,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.05,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Gvidas Gineitis",
    "match_score": 0.85
   },
@@ -1176,6 +1370,8 @@
    "xA": 0.0,
    "xG90": 0.15,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Vitinha",
    "match_score": 1.0
   },
@@ -1188,6 +1384,8 @@
    "xA": 0.0,
    "xG90": 0.14,
    "xA90": 0.05,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Nico Paz",
    "match_score": 0.85
   },
@@ -1200,6 +1398,8 @@
    "xA": 0.0,
    "xG90": 0.06,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Saúl Coco",
    "match_score": 0.85
   },
@@ -1212,6 +1412,8 @@
    "xA": 0.0,
    "xG90": 0.06,
    "xA90": 0.02,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Cher Ndour",
    "match_score": 0.85
   },
@@ -1224,6 +1426,8 @@
    "xA": 0.0,
    "xG90": 0.18,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Akor Adams",
    "match_score": 0.85
   },
@@ -1236,6 +1440,8 @@
    "xA": 0.0,
    "xG90": 0.1,
    "xA90": 0.08,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Giorgi Kvernadze",
    "match_score": 0.85
   },
@@ -1248,6 +1454,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.03,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Lorenzo Palmisani",
    "match_score": 0.85
   },
@@ -1260,6 +1468,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.55,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Davide Bartesaghi",
    "match_score": 0.85
   },
@@ -1272,6 +1482,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Christos Mandas",
    "match_score": 0.85
   },
@@ -1284,6 +1496,8 @@
    "xA": 0.0,
    "xG90": 0.17,
    "xA90": 0.61,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Santiago Pierotti",
    "match_score": 0.85
   },
@@ -1296,6 +1510,8 @@
    "xA": 0.0,
    "xG90": 0.48,
    "xA90": 0.02,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Jacobo Ramón",
    "match_score": 0.85
   },
@@ -1308,6 +1524,8 @@
    "xA": 0.0,
    "xG90": 0.05,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Darryl Bakola",
    "match_score": 0.85
   },
@@ -1320,6 +1538,8 @@
    "xA": 0.0,
    "xG90": 0.16,
    "xA90": 0.04,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Antoine Hainaut",
    "match_score": 0.85
   },
@@ -1332,6 +1552,8 @@
    "xA": 0.0,
    "xG90": 0.05,
    "xA90": 0.04,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Álex Valle",
    "match_score": 0.85
   },
@@ -1344,6 +1566,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.05,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Jesper Karlström",
    "match_score": 0.85
   },
@@ -1356,6 +1580,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Kialonda Gaspar",
    "match_score": 0.85
   },
@@ -1368,6 +1594,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Alessandro Marcandalli",
    "match_score": 0.85
   },
@@ -1380,6 +1608,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.04,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Joël Schingtienne",
    "match_score": 0.85
   },
@@ -1392,6 +1622,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Eddy Kouadio",
    "match_score": 0.85
   },
@@ -1404,6 +1636,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.08,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Brooke Norton-Cuffy",
    "match_score": 0.85
   },
@@ -1416,6 +1650,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Danilo Veiga",
    "match_score": 0.85
   },
@@ -1428,6 +1664,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.02,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Mateo Pellegrino",
    "match_score": 0.85
   },
@@ -1440,6 +1678,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Oliver Provstgaard",
    "match_score": 0.85
   },
@@ -1452,6 +1692,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.62,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Jamil Siebert",
    "match_score": 0.85
   },
@@ -1464,6 +1706,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.16,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Wesley",
    "match_score": 1.0
   },
@@ -1476,6 +1720,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.12,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Torbjørn Heggem",
    "match_score": 0.85
   },
@@ -1488,6 +1734,8 @@
    "xA": 0.0,
    "xG90": 0.1,
    "xA90": 0.04,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Christian Ordóñez",
    "match_score": 0.85
   },
@@ -1500,6 +1748,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Juan Rodríguez",
    "match_score": 0.667
   },
@@ -1512,6 +1762,8 @@
    "xA": 0.0,
    "xG90": 0.02,
    "xA90": 0.05,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Simone Cinquegrano",
    "match_score": 0.85
   },
@@ -1524,6 +1776,8 @@
    "xA": 0.0,
    "xG90": 0.06,
    "xA90": 0.1,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Emanuele Lulli",
    "match_score": 0.85
   },
@@ -1536,6 +1790,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.09,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Kenneth Taylor",
    "match_score": 0.85
   },
@@ -1548,6 +1804,8 @@
    "xA": 0.0,
    "xG90": 0.02,
    "xA90": 0.01,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Oumar Ngom",
    "match_score": 0.85
   },
@@ -1560,6 +1818,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Justin Bijlow",
    "match_score": 0.85
   },
@@ -1572,6 +1832,8 @@
    "xA": 0.0,
    "xG90": 0.16,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Eivind Helland",
    "match_score": 0.85
   },
@@ -1584,6 +1846,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.06,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Manga Foe Ondoa",
    "match_score": 0.85
   },
@@ -1596,6 +1860,8 @@
    "xA": 0.0,
    "xG90": 0.04,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Gabriele Calvani",
    "match_score": 0.85
   },
@@ -1608,6 +1874,8 @@
    "xA": 0.0,
    "xG90": 0.0,
    "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Diego Mascardi",
    "match_score": 0.85
   },
@@ -1620,6 +1888,8 @@
    "xA": 0.0,
    "xG90": 0.01,
    "xA90": 0.62,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
    "understat_name": "Kian Fitz-Jim",
    "match_score": 0.85
   }
