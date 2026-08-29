@@ -1526,22 +1526,23 @@ function disegnaCampoCondivisibile(lu, mod, mediaAttesa){
   const c = document.createElement("canvas");
   c.width = SHARE_W; c.height = SHARE_H;
   const x = c.getContext("2d");
+  // Palette del tema scuro dell'app, valori presi dalle variabili CSS.
   const COL = {P:"#D4A830", D:"#2E7D32", C:"#1565C0", A:"#D32F2F"};
-  const VERDE = "#4C7A3D", SCURO = "#1E2A20", CARTA = "#FFFFFF";
-  const F = n => `'Saira', system-ui, sans-serif`.replace("'Saira'", n);
+  const BG = "#0C1A12", BG2 = "#10231A", CARD = "#16301F", LINEA = "#2A4A35";
+  const CHALK = "#EAF4EC", DIM = "#9DB8A5", FLUO = "#D8F651";
 
-  x.fillStyle = "#F7F8F3"; x.fillRect(0, 0, SHARE_W, SHARE_H);
-
+  x.fillStyle = BG; x.fillRect(0, 0, SHARE_W, SHARE_H);
   x.textAlign = "center";
-  x.fillStyle = SCURO; x.font = "500 62px 'Saira Condensed', sans-serif";
-  x.fillText("Migliore formazione possibile", SHARE_W/2, 150);
-  x.fillStyle = "#71806E"; x.font = "400 40px 'Saira', sans-serif";
+
+  x.fillStyle = CHALK; x.font = "900 62px 'Saira Condensed', sans-serif";
+  x.fillText("MIGLIORE FORMAZIONE POSSIBILE", SHARE_W/2, 150);
+  x.fillStyle = DIM; x.font = "400 40px 'Saira', sans-serif";
   x.fillText(`modulo ${mod.name} · totale atteso ${fmt(mediaAttesa,1)}`, SHARE_W/2, 215);
 
   const px = 70, py = 290, pw = SHARE_W - 140, ph = 1180;
-  x.fillStyle = "#EFF1E8";
+  x.fillStyle = BG2;
   x.beginPath(); x.roundRect(px, py, pw, ph, 28); x.fill();
-  x.strokeStyle = "#DBE0D2"; x.lineWidth = 3; x.stroke();
+  x.strokeStyle = LINEA; x.lineWidth = 3; x.stroke();
   x.beginPath(); x.moveTo(px, py+70); x.lineTo(px+pw, py+70); x.stroke();
   x.beginPath(); x.arc(px+pw/2, py+70, 110, 0, Math.PI*2); x.stroke();
   x.strokeRect(px+pw/2-240, py+ph-200, 480, 200);
@@ -1556,30 +1557,35 @@ function disegnaCampoCondivisibile(lu, mod, mediaAttesa){
       const cx = px + pw/(n+1)*(i+1);
       const st = S.byId.get(r.id), val = scheierability(r);
       x.beginPath(); x.arc(cx, y, 52, 0, Math.PI*2);
-      x.fillStyle = CARTA; x.fill();
+      x.fillStyle = CARD; x.fill();
       x.strokeStyle = COL[ruolo]; x.lineWidth = 6; x.stroke();
-      x.fillStyle = COL[ruolo]; x.font = "500 40px 'Saira', sans-serif";
+      x.fillStyle = COL[ruolo]; x.font = "900 40px 'Saira', sans-serif";
       x.fillText(fmt(val, 1), cx, y+14);
       const maxc = n >= 5 ? 10 : 13;
       const nome = st.nome.length > maxc ? st.nome.slice(0, maxc-1)+"…" : st.nome;
-      x.fillStyle = SCURO; x.font = "500 34px 'Saira', sans-serif";
+      x.fillStyle = CHALK; x.font = "700 34px 'Saira', sans-serif";
       x.fillText(nome, cx, y+96);
     });
   }
 
-  x.fillStyle = "#71806E"; x.font = "400 32px 'Saira', sans-serif";
-  x.fillText("i numeri sono il rendimento atteso di ogni slot", SHARE_W/2, py+ph+80);
+  x.fillStyle = DIM; x.font = "400 30px 'Saira', sans-serif";
+  x.fillText("rendimento atteso di ogni slot — scala 4,0–8,0", SHARE_W/2, py+ph+70);
+  x.font = "400 26px 'Saira', sans-serif";
+  x.fillText("4,0 è chi quasi certamente non gioca", SHARE_W/2, py+ph+112);
 
+  // Logo: Saira Condensed 900 con la spaziatura del titolo dell'app (.03em).
   const yLogo = SHARE_H - 170;
-  x.font = "500 68px 'Saira Condensed', sans-serif";
+  x.font = "900 68px 'Saira Condensed', sans-serif";
+  if("letterSpacing" in x) x.letterSpacing = "2px";
   const a = "FANTA", b = "LITICO";
   const wa = x.measureText(a).width, wb = x.measureText(b).width;
   const x0 = (SHARE_W - wa - wb)/2;
   x.textAlign = "left";
-  x.fillStyle = SCURO; x.fillText(a, x0, yLogo);
-  x.fillStyle = VERDE; x.fillText(b, x0+wa, yLogo);
+  x.fillStyle = CHALK; x.fillText(a, x0, yLogo);
+  x.fillStyle = FLUO; x.fillText(b, x0+wa, yLogo);
+  if("letterSpacing" in x) x.letterSpacing = "0px";
   x.textAlign = "center";
-  x.fillStyle = "#71806E"; x.font = "400 34px 'Saira', sans-serif";
+  x.fillStyle = DIM; x.font = "400 34px 'Saira', sans-serif";
   x.fillText("fantalitico.datigrezzi.it", SHARE_W/2, yLogo+58);
 
   return c;
