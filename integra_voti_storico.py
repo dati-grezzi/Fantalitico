@@ -28,6 +28,7 @@ def flatten(teams_data, giornata):
     non manda in crash tutto lo script."""
     rows = []
     squadre_saltate = []
+    senza_nome = []
     for team in teams_data:
         if not isinstance(team, dict) or "players" not in team:
             squadre_saltate.append(team.get("team", "?") if isinstance(team, dict) else str(team)[:50])
@@ -37,6 +38,15 @@ def flatten(teams_data, giornata):
         for p in team["players"]:
             if not p.get("player_id"):
                 continue  # giocatori senza id (raro, es. nome non linkato) scartati
+
+            # Guardrail anagrafica: una riga senza nome non è attribuibile a
+            # nessuno. In passato righe del genere (id presi da un attributo
+            # sbagliato, fuori dal range del listone) sono finite nello storico
+            # come voci fantasma, e in 3 casi hanno pure sovrascritto giocatori
+            # veri collidendo sull'id. Meglio perderle che sporcare lo storico.
+            if not (p.get("name") or "").strip():
+                senza_nome.append(str(p.get("player_id")))
+                continue
 
             voto_puro = p.get("voto_puro")
             fantavoto = p.get("fantavoto")
@@ -63,6 +73,11 @@ def flatten(teams_data, giornata):
 
     if squadre_saltate:
         print(f"⚠️  {len(squadre_saltate)} blocchi squadra saltati (formato inatteso, niente 'players'): {squadre_saltate}")
+
+    if senza_nome:
+        print(f"⚠️  {len(senza_nome)} righe scartate perché senza nome (id: {', '.join(senza_nome[:10])}"
+              f"{'...' if len(senza_nome) > 10 else ''})")
+        print("    Se il numero è alto, lo scraper ha smesso di collegare i nomi: controllalo.")
 
     return rows
 
@@ -109,6 +124,13 @@ def main():
             storico[pid] = {"nome": r["nome"], "squadra": r["squadra"], "ruolo": r["ruolo"], "giornate": {}}
             nuovi += 1
         else:
+            # L'anagrafica va rinfrescata, non solo creata: prima veniva scritta
+            # una volta sola alla creazione del record, così un record nato male
+            # restava sbagliato per sempre. Serve anche per chi cambia squadra
+            # a mercato aperto.
+            storico[pid]["nome"] = r["nome"]
+            storico[pid]["squadra"] = r["squadra"]
+            storico[pid]["ruolo"] = r["ruolo"]
             aggiornati += 1
 
         storico[pid]["giornate"][str(giornata)] = {
