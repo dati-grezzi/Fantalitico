@@ -1,6 +1,6 @@
 # Fantalitico — Il motore, in dettaglio
 
-*Relazione tecnica · luglio 2026 · motore ricalibrato il 17/07/2026*
+*Relazione tecnica · luglio 2026 · motore ricalibrato il 17/07/2026 · stato pipeline aggiornato il 29/08/2026*
 
 Questo documento descrive **tutte** le formule del motore, la teoria che le giustifica, e — la parte più
 importante — il confronto tra le costanti che ho **assunto a tavolino** e quelle **misurate** sui dati veri
@@ -12,6 +12,11 @@ Anticipo le conclusioni:
 3. Una misura mette in discussione un'assunzione di fondo dell'intero impianto (3.6).
 4. Le correzioni migliorano tutte le metriche fuori campione, ma il guadagno finale **non è ancora
    statisticamente dimostrato** (3-bis). Lo scrivo perché è vero.
+
+*Aggiornamento 29/08/2026 — i due blocchi segnalati come critici nella Parte 4 sono stati risolti: la
+pipeline statistiche legge le colonne giuste e il feed Understat esiste. Al loro posto ne è comparso uno
+nuovo, più sottile: il feed c'è ma **non porta i tiri**, cioè proprio il segnale su cui poggia il bonus
+performance — e non perché la fonte non li abbia, ma per una regressione nostra. Vedi Parte 4.*
 
 ---
 
@@ -191,7 +196,23 @@ partita) faccia esplodere il bonus.
 **Effetto pratico**: un attaccante che tira molto (+1 dev. std.) guadagna ≈ **+0,21** di fantavoto atteso;
 un cecchino estremo (+2 sd) ≈ +0,42. È un tie-breaker, non un ribaltone — ed è giusto così.
 
-⚠️ **Stato attuale: il bonus è spento**, perché manca il feed `understat.json`. Vedi Parte 4.
+⚠️ **Stato al 29/08/2026 — la tabella qui sopra descrive la calibrazione, non il codice che gira.**
+Il 25/08 il motore è stato rifatto: solo gli **attaccanti** leggono ancora Understat, mentre C, D e P
+prendono i dati da playerstats.football (uniti a SofaScore quando disponibile) con segnali e pesi diversi
+da quelli misurati qui:
+
+| Ruolo | Segnali attivi nel codice | β |
+|---|---|---|
+| Attaccanti | `shots_p90` · `xa_p90` | 0,112 · **0,0** |
+| Centrocampisti | `key_passes_p90` · `tackles_p90` · `interceptions_p90` | 0,10 · 0,06 · 0,04 |
+| Difensori | `tackles_p90` · `interceptions_p90` · `clearances_p90` | 0,08 · 0,06 · 0,03 |
+
+Due conseguenze da guardare in faccia. **Per gli attaccanti il bonus è esattamente zero**: `xa_p90` ha β
+nullo per costruzione e `shots_p90` non arriva nel feed, quindi il ciclo salta entrambi i segnali e
+restituisce `{val: 0, has: false}` — indistinguibile dal caso "campionato fermo", nessun errore a
+schermo. **Per C e D i β non sono misurati**: il commento nel codice lo dichiara apertamente, sono stime
+ragionate in attesa di calibrazione. Sono cioè costanti assunte a tavolino, la categoria che questo
+documento serviva a eliminare. Vedi Parte 4.
 
 ---
 
@@ -227,9 +248,10 @@ Per ciascuno dei 7 moduli si prende il meglio disponibile per reparto e si somma
 
 **Perché il greedy è corretto qui**: i vincoli sono *separabili per ruolo* (1 portiere, D difensori,
 C centrocampisti, A attaccanti) e non c'è interazione tra giocatori. In queste condizioni prendere i
-migliori per ruolo è **provatamente ottimo**, non un'euristica. (Se un domani introducessimo il
-modificatore di difesa, che premia la difesa *della stessa squadra*, questa proprietà cadrebbe e servirebbe
-un solver vero — il tuo CP-SAT, per capirci.)
+migliori per ruolo è **provatamente ottimo**, non un'euristica. (Il modificatore di difesa, che premia la difesa
+*della stessa squadra*, romperebbe questa proprietà: per questo si applica al **Top 11** — dove la
+formazione è già data e va solo valutata — e non alla Formazione consigliata, dove il greedy resta
+ottimo. Estenderlo anche lì richiederebbe un solver vero, il tuo CP-SAT.)
 
 ---
 
@@ -420,23 +442,41 @@ ritarato.
 
 ## Parte 4 — Cosa non va, in ordine di gravità
 
-### 🔴 1. La pipeline legge colonne sbagliate (bloccante)
+### ✅ 1. La pipeline leggeva colonne sbagliate — RISOLTO il 29/08/2026
 
-La `players.json` attuale ha **fantamedie tra 0 e 3** (media 0,03) e presenze fino a **54** in una stagione
-da 38. I portieri hanno "fantamedia" uguale ai gol subiti. Traduzione: **il motore sta girando su dati non
-validi**, non solo il Mercato ma anche i rating in Formazione e Sfida.
+Fuori stagione la pagina statistiche di fantacalcio.it aveva un'altra struttura e l'abbinamento delle
+colonne pescava le caselle sbagliate: fantamedie tra 0 e 3, presenze fino a 54 in una stagione da 38,
+portieri con "fantamedia" uguale ai gol subiti. Il motore girava su dati non validi.
 
-Causa: fuori stagione la pagina statistiche di fantacalcio.it ha un'altra struttura e l'abbinamento delle
-colonne pesca le caselle sbagliate.
+Causa reale, trovata a campionato ripartito: le intestazioni della tabella si identificano con
+l'attributo `data-col-key`, e le righe dati mischiano `<th>` e `<td>` — selezionando solo i `<td>` gli
+indici slittavano. Corretto usando `data-col-key` per le colonne e
+`find_all(["th", "td"], recursive=False)` per intestazioni e righe. Oggi: 553 giocatori, 553 con MV valido.
 
-**Quando**: fine agosto, a campionato ripartito. Serve una diagnosi dal vivo della pagina vera.
+### 🟠 2. I tiri non arrivano più — regressione nostra, non della fonte
 
-### 🟠 2. Il feed Understat non esiste → bonus performance spento
+Il job c'è e gira (`understat_pull.py` + `understat_process.py`, 135 giocatori mappati), ma il campo dei
+tiri non c'è: la pipeline scrive `apps, minutes_total, goals, assists, xG, xA, xG90, xA90`.
 
-L'unico pezzo del motore *validato sui dati* è inattivo, perché manca il job che produce `understat.json`
-con `shots_p90` e `xa_p90` aggiornati. Il codice è pronto e testato: manca la benzina.
+**Su Understat i tiri ci sono ancora.** La tabella dei giocatori espone `Sh90` (tiri per 90') accanto a
+`KP90`, `xG90` e `xA90`. Il campo si è perso il 25/08/2026, quando `understat_pull.py` è stato riscritto
+per via del passaggio di Understat al caricamento via JavaScript: nella riscrittura la mappatura delle
+colonne è stata rifatta da zero e `Sh90` non è stato più richiesto. `understat_process.py` a valle
+propaga solo i campi che riceve.
 
-**Quando**: a stagione avviata. Lo scraper Understat via `soccerdata` funziona già (l'abbiamo collaudato).
+È il segnale peggiore da perdere. Il bonus performance è l'unico pezzo del motore validato sui dati, e il
+suo peso dominante per attaccanti (β = 0,112) e centrocampisti (β = 0,103) è proprio il volume di tiri p90.
+Con l'xA a β ≈ 0 per quei ruoli, oggi il bonus è acceso solo per i difensori.
+
+**Da fare**: rimettere `Sh90` (e già che ci siamo `KP90`) nell'estrazione di `understat_pull.py` e nel
+JSON di `understat_process.py`. Non serve una fonte nuova né una nuova calibrazione: i β misurati valgono
+già per quel campo. Attenzione al nome: `perfBonus()` cerca `shots_p90`, mentre il feed scrive `xG90`
+e `xA90` — se il campo arriva con un nome che il motore non cerca viene ignorato in silenzio, che è
+esattamente il modo in cui il bug è passato inosservato. Se dopo la modifica la colonna non venisse
+trovata, la diagnostica dello scraper stampa l'HTML reale della tabella.
+
+**Da fare, separatamente e con più calma**: misurare i β di C e D. Oggi quei ruoli hanno un bonus che si
+muove, ma su costanti inventate — è la situazione che la Parte 3 aveva smontato per il resto del motore.
 
 ### ✅ 3. Le costanti sbagliate — CORRETTO il 17/07/2026
 
@@ -514,11 +554,19 @@ sbagliato, `−2` autogol, `−1` gol subito, `−0,5` ammonizione, `−1` espul
 Ma le leghe cambiano: **assist +1 o +3**, modificatore di difesa sì/no, portiere imbattuto. Se la tua
 FantaPasseri usa regole diverse, il motore ottimizza per il gioco sbagliato.
 
-### 🟡 5. Palle recuperate: mancano ancora
+### 🟡 5. Palle recuperate: la fonte c'è, il motore non le usa ancora
 
-Il segnale difensivo del tuo Excel 2019 non è mai rientrato. Understat non le ha; legaseriea.it sì, ma ha
-rifatto l'API e va ritrovata. Con quelle, i difensori avrebbero il loro segnale proprio invece di
-accontentarsi dell'xA.
+Il segnale difensivo del tuo Excel 2019 è finalmente disponibile. Dopo aver scartato SofaScore (funziona
+in locale via Playwright, ma risponde 403 dagli IP di GitHub Actions) e FBref (Cloudflare),
+**playerstats.football** si è rivelata automatizzabile: `playerstats.json` porta `tackles_p90`,
+`interceptions_p90`, `clearances_p90`, `duels_p90`, `key_passes_p90`, `accurate_passes_p90` e `rating`.
+
+Due limiti da tenere presenti. La copertura è parziale — solo chi rientra nei primi 50 di almeno una
+categoria, cioè ~170 giocatori su 553 — quindi serve un ripiego per tutti gli altri, e un segnale che
+esiste solo per i migliori rischia di essere un premio alla notorietà più che un'informazione. E i pesi
+**non sono ancora stati misurati**: i β della Parte 2.4 valgono per tiri e xA, non per questi campi.
+Prima di attaccarli al motore va rifatta la regressione, altrimenti si torna alle costanti inventate che
+questo documento serviva a togliere.
 
 ### 🟡 6. Limiti del Monte Carlo
 
@@ -531,19 +579,23 @@ accontentarsi dell'xA.
 ### 🟢 7. Cose minori
 
 - Nella Sfida, l'avversario è valutato con impostazioni standard (asimmetria dichiarata).
-- Il modificatore di difesa non esiste (e romperebbe l'ottimalità del greedy: servirebbe un solver).
+- Il modificatore di difesa esiste ma solo nel Top 11, dove la formazione è già data. Estenderlo alla
+  Formazione consigliata romperebbe l'ottimalità del greedy e richiederebbe un solver.
 - Nessuna sincronizzazione tra dispositivi (scelta consapevole).
 
 ---
 
 ## Parte 5 — Cosa farei, in ordine
 
-1. **Agosto, a campionato avviato**: riparare la pipeline (🔴 1). Senza dati veri, tutto il resto è teoria.
-2. **Subito dopo**: aggiungere il job Understat (🟠 2) → si accende il bonus performance già validato.
+1. ~~Riparare la pipeline statistiche~~ ✅ **fatto il 29/08/2026** (vedi 1).
+2. ~~Aggiungere il job Understat~~ ✅ **fatto**, ma la riscrittura del 25/08 ha perso per strada `Sh90`:
+   la priorità ora è **rimetterlo nell'estrazione** (🟠 2). È una modifica piccola e non richiede
+   ricalibrazioni.
 3. ~~Applicare le correzioni misurate~~ ✅ **fatto il 17/07/2026** (vedi 3-bis).
 4. **Prima giornata utile**: verificare le regole bonus della tua lega e renderle configurabili (🟡 4).
-5. **Durante la stagione**: agganciare le palle recuperate dalla Lega (🟡 5) e rifare la validazione dei
-   difensori con quel quarto segnale.
+5. **Con qualche giornata di dati veri**: misurare i β dei campi difensivi di playerstats.football
+   (🟡 5), che nel motore sono **già attivi** per C e D ma con costanti stimate a occhio. Qui il codice
+   ha preceduto la regressione: va rimesso l'ordine giusto.
 6. **A fine stagione 2026-27**: rifare *tutta* la validazione su due stagioni. Allora i pesi non saranno più
    una fotografia, ma una stima.
 

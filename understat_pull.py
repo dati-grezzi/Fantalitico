@@ -50,6 +50,17 @@ async def main_async():
                         if (!intestazioni.some(h => h.toLowerCase().includes('xg90'))) continue;
                         const idx = {};
                         intestazioni.forEach((h, i) => idx[h.toLowerCase()] = i);
+                        // Sh90 (tiri per 90') e KP90 (passaggi chiave) servono al bonus
+                        // performance del motore: Sh90 è il segnale col peso più alto per
+                        // gli attaccanti (beta 0,112). Vanno cercati in modo tollerante
+                        // perché l'intestazione può comparire come "Sh90" o "Sh", e se
+                        // mancano del tutto il campo resta null invece di rompere la riga.
+                        const prendi = (celle, ...nomi) => {
+                            for (const n of nomi) {
+                                if (idx[n] !== undefined && celle[idx[n]] !== undefined) return celle[idx[n]];
+                            }
+                            return null;
+                        };
                         const out = [];
                         t.querySelectorAll('tbody tr').forEach(tr => {
                             const celle = Array.from(tr.querySelectorAll('td')).map(td => td.textContent.trim());
@@ -65,6 +76,8 @@ async def main_async():
                                 xA: celle[idx['xa']] ?? null,
                                 xG90: celle[idx['xg90']] ?? null,
                                 xA90: celle[idx['xa90']] ?? null,
+                                sh90: prendi(celle, 'sh90', 'sh'),
+                                kp90: prendi(celle, 'kp90', 'kp'),
                             });
                         });
                         if (out.length) return out;
@@ -126,7 +139,7 @@ async def main_async():
 
         print(f"✅ {len(righe)} giocatori estratti")
         with open(OUT_CSV, "w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=["player", "team", "apps", "min", "goals", "assists", "xG", "xA", "xG90", "xA90"])
+            writer = csv.DictWriter(f, fieldnames=["player", "team", "apps", "min", "goals", "assists", "xG", "xA", "xG90", "xA90", "sh90", "kp90"])
             writer.writeheader()
             writer.writerows(righe)
         print(f"📝 Salvato in {OUT_CSV}")

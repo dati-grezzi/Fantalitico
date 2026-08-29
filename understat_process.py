@@ -118,6 +118,12 @@ def main() -> int:
                     "xA": to_float(row.get('xA')),
                     "xG90": to_float(row.get('xG90')),
                     "xA90": to_float(row.get('xA90')),
+                    # Nomi allineati a quelli che cerca perfBonus() in index.html:
+                    # PERF_W.ruoli.A usa shots_p90 (beta 0,112). Se il campo arriva
+                    # con un nome diverso il motore lo ignora in silenzio e il bonus
+                    # attaccanti resta a zero, che è esattamente il bug del 25/08.
+                    "shots_p90": to_float(row.get('sh90')),
+                    "key_passes_p90": to_float(row.get('kp90')),
                     "understat_name": nome,
                     "match_score": round(best_score, 3),
                 }
@@ -136,7 +142,7 @@ def main() -> int:
     result = {
         "aggiornato": dt.datetime.now(dt.timezone.utc).isoformat(),
         "fonte": "Understat (tabella Players, totali di stagione)",
-        "note": "Mapping ID fantacalcio → {apps, minutes_total, goals, assists, xG, xA, xG90, xA90}. Da understat_players_2026.csv.",
+        "note": "Mapping ID fantacalcio → {apps, minutes_total, goals, assists, xG, xA, xG90, xA90, shots_p90, key_passes_p90}. Da understat_players_2026.csv.",
         "giocatori": understat_by_id
     }
     with open(DATA_DIR / "understat.json", "w", encoding='utf-8') as f:
