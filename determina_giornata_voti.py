@@ -52,26 +52,25 @@ def main():
 
     giornata_candidata = giornata_in_vetrina - 1
 
-    # NOTA TEMPORANEA (fase di debug, 25/08): il controllo "già fatta" è
-    # disattivato apposta — durante il debug del bug dei voti duplicati
-    # serve poter rilanciare senza dover ricordarsi di compilare un campo
-    # nel form di GitHub. Un semplice "Run workflow" forza sempre la
-    # riesecuzione. Da riattivare quando il bug è chiuso (basta togliere
-    # il commento sul blocco sotto).
-    #
-    # gia_fatta = False
-    # if os.path.exists("data/voti_storico.json"):
-    #     with open("data/voti_storico.json", encoding="utf-8") as f:
-    #         storico = json.load(f)
-    #     chiave = str(giornata_candidata)
-    #     for dati_giocatore in storico.values():
-    #         if isinstance(dati_giocatore, dict) and chiave in dati_giocatore.get("giornate", {}):
-    #             gia_fatta = True
-    #             break
-    # if gia_fatta:
-    #     print(f"Giornata {giornata_candidata} risulta già integrata in voti_storico.json — nulla da fare")
-    #     emetti(None)
-    #     return 0
+    # Controllo "già fatta" — RIATTIVATO il 29/08 (era stato disattivato il
+    # 25/08 per facilitare i lanci ripetuti durante il debug del bug dei voti
+    # duplicati, ora chiuso e confermato su più giornate). Senza questo
+    # controllo la pipeline avrebbe rilavorato la Giornata 1 all'infinito,
+    # senza mai passare alla successiva — bug scoperto durante la verifica
+    # completa pre-deploy del 29/08.
+    gia_fatta = False
+    if os.path.exists("data/voti_storico.json"):
+        with open("data/voti_storico.json", encoding="utf-8") as f:
+            storico = json.load(f)
+        chiave = str(giornata_candidata)
+        for dati_giocatore in storico.values():
+            if isinstance(dati_giocatore, dict) and chiave in dati_giocatore.get("giornate", {}):
+                gia_fatta = True
+                break
+    if gia_fatta:
+        print(f"Giornata {giornata_candidata} risulta già integrata in voti_storico.json — nulla da fare")
+        emetti(None)
+        return 0
 
     print(f"Giornata da processare: {giornata_candidata}")
     emetti(giornata_candidata)
