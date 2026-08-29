@@ -1,4494 +1,4494 @@
 {
- "5116": {
-  "nome": "Martinez Jo.",
-  "squadra": "inter",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Gol subito",
-      "count": "1",
-      "eventId": "4"
-     }
-    ]
-   }
+  "5116": {
+    "nome": "Martinez Jo.",
+    "squadra": "inter",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Gol subito",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      }
+    }
+  },
+  "6217": {
+    "nome": "Bisseck",
+    "squadra": "inter",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (63°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
+      }
+    }
+  },
+  "4159": {
+    "nome": "Akanji",
+    "squadra": "inter",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "2514": {
+    "nome": "Stones",
+    "squadra": "inter",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "2120": {
+    "nome": "Bastoni",
+    "squadra": "inter",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6274": {
+    "nome": "Diouf",
+    "squadra": "inter",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 9,
+        "eventi": [
+          {
+            "tipo": "Assist",
+            "count": "2",
+            "eventId": "22"
+          },
+          {
+            "tipo": "Assist  (55°)",
+            "count": "1",
+            "eventId": "22"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
+      }
+    }
+  },
+  "5301": {
+    "nome": "Luis Henrique",
+    "squadra": "inter",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "1870": {
+    "nome": "Barella",
+    "squadra": "inter",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "2194": {
+    "nome": "Calhanoglu",
+    "squadra": "inter",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 9.5,
+        "eventi": [
+          {
+            "tipo": "Gol segnato",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "7070": {
+    "nome": "Sucic P.",
+    "squadra": "inter",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "152": {
+    "nome": "Zielinski",
+    "squadra": "inter",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (48°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
+      }
+    }
+  },
+  "6503": {
+    "nome": "Stankovic A.",
+    "squadra": "inter",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "254": {
+    "nome": "Dimarco",
+    "squadra": "inter",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7071": {
+    "nome": "Esposito F.P.",
+    "squadra": "inter",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7.5,
+        "fantavoto_consensus": 11.5,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (55°)",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Assist soft  (63°)",
+            "count": "1",
+            "eventId": "21"
+          }
+        ]
+      }
+    }
+  },
+  "2764": {
+    "nome": "Martinez L.",
+    "squadra": "inter",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "6669": {
+    "nome": "Bonny",
+    "squadra": "inter",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6682": {
+    "nome": "Pizzignacco",
+    "squadra": "monza",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 1,
+        "eventi": [
+          {
+            "tipo": "Gol subito",
+            "count": "4",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (48°)",
+            "count": "3",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (55°)",
+            "count": "2",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (63°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      }
+    }
+  },
+  "7238": {
+    "nome": "Kouadio",
+    "squadra": "monza",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (69°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "6659": {
+    "nome": "Lucchesi",
+    "squadra": "monza",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 4.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (85°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "2115": {
+    "nome": "Delli Carri",
+    "squadra": "monza",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "4925": {
+    "nome": "Carboni A.",
+    "squadra": "monza",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "5838": {
+    "nome": "Birindelli",
+    "squadra": "monza",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7574": {
+    "nome": "Foe Ondoa",
+    "squadra": "monza",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7575": {
+    "nome": "Mout",
+    "squadra": "monza",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 7,
+        "eventi": [
+          {
+            "tipo": "Assist",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
+      }
+    }
+  },
+  "5525": {
+    "nome": "Galazzi",
+    "squadra": "monza",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7485": {
+    "nome": "Mangas",
+    "squadra": "monza",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "5878": {
+    "nome": "Colpani",
+    "squadra": "monza",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "6592": {
+    "nome": "Forson O.",
+    "squadra": "monza",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7476": {
+    "nome": "Bakoune",
+    "squadra": "monza",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "2155": {
+    "nome": "Cutrone",
+    "squadra": "monza",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6660": {
+    "nome": "Marcandalli",
+    "squadra": "genoa",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7523": {
+    "nome": "Varela G.",
+    "squadra": "monza",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
+      }
+    }
+  },
+  "7546": {
+    "nome": "Robinson J.",
+    "squadra": "monza",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "6462": {
+    "nome": "Okoye",
+    "squadra": "udinese",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Gol subito  (54°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      }
+    }
+  },
+  "6021": {
+    "nome": "Abankwah",
+    "squadra": "udinese",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "6925": {
+    "nome": "Palma",
+    "squadra": "udinese",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "5994": {
+    "nome": "Ebosse",
+    "squadra": "udinese",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6956": {
+    "nome": "Solet",
+    "squadra": "udinese",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "4994": {
+    "nome": "Vojvoda",
+    "squadra": "udinese",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "6680": {
+    "nome": "Karlstrom",
+    "squadra": "udinese",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "7198": {
+    "nome": "Piotrowski",
+    "squadra": "udinese",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "7208": {
+    "nome": "Miller L.",
+    "squadra": "udinese",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5555": {
+    "nome": "Kamara H.",
+    "squadra": "udinese",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
+      }
+    }
+  },
+  "2766": {
+    "nome": "Zaniolo",
+    "squadra": "udinese",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "6212": {
+    "nome": "Zarraga",
+    "squadra": "udinese",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "6684": {
+    "nome": "Ekkelenkamp",
+    "squadra": "udinese",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
+      }
+    }
+  },
+  "6783": {
+    "nome": "Unai Gomez",
+    "squadra": "udinese",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (93°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "7272": {
+    "nome": "Gueye",
+    "squadra": "udinese",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Uscito per infortunio  (72°)",
+            "count": "1",
+            "eventId": "17"
+          }
+        ]
+      }
+    }
+  },
+  "7161": {
+    "nome": "Bayo V.",
+    "squadra": "udinese",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "6966": {
+    "nome": "Butez",
+    "squadra": "como",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Gol subito",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      }
+    }
+  },
+  "6727": {
+    "nome": "Couto",
+    "squadra": "como",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "7014": {
+    "nome": "Smolcic I.",
+    "squadra": "como",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "6869": {
+    "nome": "Ramon",
+    "squadra": "como",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5641": {
+    "nome": "Chalobah T.",
+    "squadra": "como",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "6867": {
+    "nome": "Valle",
+    "squadra": "como",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6151": {
+    "nome": "Perrone",
+    "squadra": "como",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5559": {
+    "nome": "Da Cunha",
+    "squadra": "como",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7412": {
+    "nome": "Milla",
+    "squadra": "como",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "7129": {
+    "nome": "Rodriguez Je.",
+    "squadra": "como",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6678": {
+    "nome": "Liberali",
+    "squadra": "como",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6875": {
+    "nome": "Paz N.",
+    "squadra": "como",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "5036": {
+    "nome": "Caqueret",
+    "squadra": "como",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "7126": {
+    "nome": "Baturina",
+    "squadra": "como",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6967": {
+    "nome": "Diao",
+    "squadra": "como",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7017": {
+    "nome": "Douvikas",
+    "squadra": "como",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 9.5,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (54°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
+      }
+    }
+  },
+  "7332": {
+    "nome": "Bijlow",
+    "squadra": "genoa",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 4,
+        "eventi": [
+          {
+            "tipo": "Gol subito  (82°)",
+            "count": "2",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (87°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      }
+    }
+  },
+  "5750": {
+    "nome": "Ostigard",
+    "squadra": "genoa",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 6.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (94°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "6977": {
+    "nome": "Otoa",
+    "squadra": "genoa",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 4.5,
+        "fantavoto_consensus": 4.5,
+        "eventi": []
+      }
+    }
+  },
+  "5514": {
+    "nome": "Vasquez",
+    "squadra": "genoa",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7582": {
+    "nome": "Zulevic",
+    "squadra": "genoa",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "6814": {
+    "nome": "Norton-Cuffy",
+    "squadra": "genoa",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5791": {
+    "nome": "Frendrup",
+    "squadra": "genoa",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7341": {
+    "nome": "Amorim",
+    "squadra": "genoa",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "5946": {
+    "nome": "Sow",
+    "squadra": "genoa",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6020": {
+    "nome": "Ellertsson",
+    "squadra": "genoa",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "5823": {
+    "nome": "Baldanzi",
+    "squadra": "genoa",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "4970": {
+    "nome": "Messias",
+    "squadra": "genoa",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6164": {
+    "nome": "Vitinha O.",
+    "squadra": "genoa",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "4923": {
+    "nome": "Colombo",
+    "squadra": "genoa",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7409": {
+    "nome": "Meichtry",
+    "squadra": "genoa",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "572": {
+    "nome": "Meret",
+    "squadra": "napoli",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "2816": {
+    "nome": "Di Lorenzo",
+    "squadra": "napoli",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "4409": {
+    "nome": "Rrahmani",
+    "squadra": "napoli",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "6638": {
+    "nome": "Marin R.",
+    "squadra": "napoli",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Uscito per infortunio  (82°)",
+            "count": "1",
+            "eventId": "17"
+          }
+        ]
+      }
+    }
+  },
+  "5840": {
+    "nome": "Olivera",
+    "squadra": "napoli",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "1852": {
+    "nome": "Spinazzola",
+    "squadra": "napoli",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "4220": {
+    "nome": "Zambo Anguissa",
+    "squadra": "napoli",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "2517": {
+    "nome": "De Bruyne",
+    "squadra": "napoli",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7.5,
+        "fantavoto_consensus": 11.5,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (82°)",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Assist  (87°)",
+            "count": "1",
+            "eventId": "22"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
+      }
+    }
+  },
+  "4657": {
+    "nome": "Celik",
+    "squadra": "juventus",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (50°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "4287": {
+    "nome": "Lobotka",
+    "squadra": "napoli",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "4777": {
+    "nome": "McTominay",
+    "squadra": "napoli",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "536": {
+    "nome": "Politano",
+    "squadra": "napoli",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (55°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "7223": {
+    "nome": "Vergara",
+    "squadra": "napoli",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7.5,
+        "fantavoto_consensus": 11.5,
+        "eventi": [
+          {
+            "tipo": "Assist GOLD  (82°)",
+            "count": "1",
+            "eventId": "23"
+          },
+          {
+            "tipo": "Gol segnato  (87°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
+      }
+    }
+  },
+  "6052": {
+    "nome": "Hojlund",
+    "squadra": "napoli",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6215": {
+    "nome": "Lucca",
+    "squadra": "napoli",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "7351": {
+    "nome": "Santos A.",
+    "squadra": "napoli",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7120": {
+    "nome": "Lang",
+    "squadra": "napoli",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6662": {
+    "nome": "Corvi",
+    "squadra": "parma",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 4.5,
+        "eventi": [
+          {
+            "tipo": "Gol subito  (79°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      }
+    }
+  },
+  "6664": {
+    "nome": "Delprato",
+    "squadra": "parma",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7235": {
+    "nome": "Troilo",
+    "squadra": "parma",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7276": {
+    "nome": "Cremaschi",
+    "squadra": "parma",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "7202": {
+    "nome": "Ndiaye",
+    "squadra": "parma",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5862": {
+    "nome": "Valeri",
+    "squadra": "parma",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6898": {
+    "nome": "Keita M.",
+    "squadra": "parma",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6897": {
+    "nome": "Kouda",
+    "squadra": "parma",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7581": {
+    "nome": "Konaté A.",
+    "squadra": "parma",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7342": {
+    "nome": "Elphege",
+    "squadra": "parma",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7138": {
+    "nome": "Ordonez C.",
+    "squadra": "parma",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6666": {
+    "nome": "Bernabè",
+    "squadra": "parma",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6207": {
+    "nome": "Almqvist",
+    "squadra": "parma",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6229": {
+    "nome": "Tourè E.",
+    "squadra": "parma",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7561": {
+    "nome": "Lontani",
+    "squadra": "parma",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "7536": {
+    "nome": "Diallo O.",
+    "squadra": "parma",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "4360": {
+    "nome": "Caprile",
+    "squadra": "cagliari",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7274": {
+    "nome": "Zè Pedro",
+    "squadra": "cagliari",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "4461": {
+    "nome": "Zappa",
+    "squadra": "cagliari",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "1871": {
+    "nome": "Deiola",
+    "squadra": "cagliari",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7268": {
+    "nome": "Rodriguez Ju.",
+    "squadra": "cagliari",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "5701": {
+    "nome": "Obert",
+    "squadra": "cagliari",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7548": {
+    "nome": "Aurelio",
+    "squadra": "cagliari",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "4870": {
+    "nome": "Adopo",
+    "squadra": "cagliari",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist soft  (79°)",
+            "count": "1",
+            "eventId": "21"
+          }
+        ]
+      }
+    }
+  },
+  "4260": {
+    "nome": "Winks",
+    "squadra": "cagliari",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7311": {
+    "nome": "Romano",
+    "squadra": "cagliari",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (79°)",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
+      }
+    }
+  },
+  "6010": {
+    "nome": "Fazzini",
+    "squadra": "cagliari",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (58°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "6640": {
+    "nome": "Felici",
+    "squadra": "cagliari",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "4896": {
+    "nome": "Maldini",
+    "squadra": "cagliari",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6598": {
+    "nome": "Mutandwa",
+    "squadra": "cagliari",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "7374": {
+    "nome": "Mendy P.",
+    "squadra": "cagliari",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6243": {
+    "nome": "Borrelli",
+    "squadra": "cagliari",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6415": {
+    "nome": "Palmisani",
+    "squadra": "frosinone",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Gol subito",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      }
+    }
+  },
+  "7467": {
+    "nome": "Calvani",
+    "squadra": "frosinone",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (93°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "5757": {
+    "nome": "Cittadini",
+    "squadra": "frosinone",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "4952": {
+    "nome": "Monterisi",
+    "squadra": "frosinone",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "6238": {
+    "nome": "Oyono A.",
+    "squadra": "frosinone",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7469": {
+    "nome": "Bracaglia",
+    "squadra": "frosinone",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "4375": {
+    "nome": "Terzic",
+    "squadra": "frosinone",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7473": {
+    "nome": "Cichella",
+    "squadra": "frosinone",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6903": {
+    "nome": "Hasa",
+    "squadra": "frosinone",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7472": {
+    "nome": "Calò",
+    "squadra": "frosinone",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6204": {
+    "nome": "Kvernadze",
+    "squadra": "frosinone",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7551": {
+    "nome": "Schmid",
+    "squadra": "frosinone",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 4.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "6917": {
+    "nome": "Masini",
+    "squadra": "frosinone",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6506": {
+    "nome": "Fini",
+    "squadra": "frosinone",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5998": {
+    "nome": "Zerbin",
+    "squadra": "frosinone",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5436": {
+    "nome": "Raimondo",
+    "squadra": "frosinone",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "4964": {
+    "nome": "Vicario",
+    "squadra": "juventus",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": [
+          {
+            "tipo": "Uscito per infortunio  (92°)",
+            "count": "1",
+            "eventId": "17"
+          }
+        ]
+      }
+    }
+  },
+  "218": {
+    "nome": "Perin",
+    "squadra": "juventus",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "4976": {
+    "nome": "Kalulu",
+    "squadra": "juventus",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "2788": {
+    "nome": "Bremer",
+    "squadra": "juventus",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7.5,
+        "fantavoto_consensus": 10.5,
+        "eventi": [
+          {
+            "tipo": "Gol segnato",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
+      }
+    }
+  },
+  "6766": {
+    "nome": "Kelly L.",
+    "squadra": "juventus",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "5520": {
+    "nome": "Cambiaso",
+    "squadra": "juventus",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (83°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "4911": {
+    "nome": "Douglas Luiz",
+    "squadra": "juventus",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "5685": {
+    "nome": "Koopmeiners",
+    "squadra": "juventus",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "827": {
+    "nome": "Locatelli",
+    "squadra": "juventus",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6884": {
+    "nome": "Conceicao",
+    "squadra": "juventus",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
+      }
+    }
+  },
+  "5761": {
+    "nome": "Zhegrova",
+    "squadra": "juventus",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "4973": {
+    "nome": "McKennie",
+    "squadra": "juventus",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6434": {
+    "nome": "Yildiz",
+    "squadra": "juventus",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "2832": {
+    "nome": "Boga",
+    "squadra": "juventus",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5951": {
+    "nome": "Kolo Muani",
+    "squadra": "juventus",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "6248": {
+    "nome": "Stankovic F.",
+    "squadra": "venezia",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 3.5,
+        "eventi": [
+          {
+            "tipo": "Gol subito  (46°)",
+            "count": "2",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (80°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      }
+    }
+  },
+  "6892": {
+    "nome": "Schingtienne",
+    "squadra": "venezia",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "7253": {
+    "nome": "Bella-Kotchap",
+    "squadra": "venezia",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "7478": {
+    "nome": "Franjic",
+    "squadra": "venezia",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6496": {
+    "nome": "Bartesaghi",
+    "squadra": "milan",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6821": {
+    "nome": "Hainaut",
+    "squadra": "venezia",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6681": {
+    "nome": "Sagrado",
+    "squadra": "venezia",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "5674": {
+    "nome": "Basic",
+    "squadra": "venezia",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7449": {
+    "nome": "Rrahmani Al.",
+    "squadra": "venezia",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "5507": {
+    "nome": "Busio",
+    "squadra": "venezia",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6994": {
+    "nome": "Perez K.",
+    "squadra": "venezia",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7481": {
+    "nome": "Dagasso",
+    "squadra": "venezia",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 4.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (88°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "4845": {
+    "nome": "Correia T.",
+    "squadra": "venezia",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": [
+          {
+            "tipo": "Gol annullato dal VAR",
+            "count": "1",
+            "eventId": "16"
+          }
+        ]
+      }
+    }
+  },
+  "5695": {
+    "nome": "Haps",
+    "squadra": "venezia",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6904": {
+    "nome": "Yeboah J.",
+    "squadra": "venezia",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7484": {
+    "nome": "Adams A.",
+    "squadra": "venezia",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "2134": {
+    "nome": "Falcone",
+    "squadra": "lecce",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 7,
+        "eventi": []
+      }
+    }
+  },
+  "6990": {
+    "nome": "Veiga D.",
+    "squadra": "lecce",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (71°)",
+            "count": "1",
+            "eventId": "1"
+          },
+          {
+            "tipo": "Assist  (80°)",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
+      }
+    }
+  },
+  "6632": {
+    "nome": "Gaspar K.",
+    "squadra": "lecce",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 6.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "7240": {
+    "nome": "Siebert",
+    "squadra": "lecce",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "4502": {
+    "nome": "Gallo",
+    "squadra": "lecce",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Uscito per infortunio  (46°)",
+            "count": "1",
+            "eventId": "17"
+          }
+        ]
+      }
+    }
+  },
+  "7182": {
+    "nome": "Ndaba",
+    "squadra": "lecce",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7248": {
+    "nome": "Gorter",
+    "squadra": "lecce",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (46°)",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
+      }
+    }
+  },
+  "5457": {
+    "nome": "Maleh",
+    "squadra": "lecce",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "5504": {
+    "nome": "Coulibaly L.",
+    "squadra": "lecce",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 8,
+        "eventi": [
+          {
+            "tipo": "Assist  (46°)",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
+      }
+    }
+  },
+  "7322": {
+    "nome": "Ngom",
+    "squadra": "lecce",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (59°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "6549": {
+    "nome": "Pierotti",
+    "squadra": "lecce",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7318": {
+    "nome": "Gandelman",
+    "squadra": "lecce",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "5029": {
+    "nome": "Geubbels",
+    "squadra": "lecce",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7252": {
+    "nome": "Stulic",
+    "squadra": "lecce",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7001": {
+    "nome": "N'Dri",
+    "squadra": "lecce",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6989": {
+    "nome": "Tiago Gabriel",
+    "squadra": "lecce",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (80°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
+      }
+    }
+  },
+  "4431": {
+    "nome": "Carnesecchi",
+    "squadra": "atalanta",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": [
+          {
+            "tipo": "Gol subito  (55°)",
+            "count": "1",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Assist  (66°)",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
+      }
+    }
+  },
+  "554": {
+    "nome": "Zappacosta",
+    "squadra": "atalanta",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "5578": {
+    "nome": "Kossounou",
+    "squadra": "atalanta",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "5526": {
+    "nome": "Scalvini",
+    "squadra": "atalanta",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7219": {
+    "nome": "Bernasconi",
+    "squadra": "atalanta",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "2640": {
+    "nome": "Kolasinac",
+    "squadra": "atalanta",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "2077": {
+    "nome": "Pasalic",
+    "squadra": "atalanta",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "5119": {
+    "nome": "Samardzic",
+    "squadra": "atalanta",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "4364": {
+    "nome": "Gaetano",
+    "squadra": "atalanta",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
+      }
+    }
+  },
+  "5792": {
+    "nome": "Ederson D.S.",
+    "squadra": "atalanta",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5422": {
+    "nome": "Zalewski",
+    "squadra": "atalanta",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5995": {
+    "nome": "De Ketelaere",
+    "squadra": "atalanta",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "2137": {
+    "nome": "Scamacca",
+    "squadra": "atalanta",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6435": {
+    "nome": "Krstovic",
+    "squadra": "atalanta",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (66°)",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
+      }
+    }
+  },
+  "4371": {
+    "nome": "Raspadori",
+    "squadra": "atalanta",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
+      }
+    }
+  },
+  "4479": {
+    "nome": "Elmas",
+    "squadra": "atalanta",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "4236": {
+    "nome": "Muric",
+    "squadra": "sassuolo",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 4,
+        "eventi": [
+          {
+            "tipo": "Gol subito",
+            "count": "2",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (65°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      }
+    }
+  },
+  "7573": {
+    "nome": "Cinquegrano",
+    "squadra": "sassuolo",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7154": {
+    "nome": "Odenthal",
+    "squadra": "sassuolo",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (55°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
+      }
+    }
+  },
+  "7396": {
+    "nome": "Macchioni",
+    "squadra": "sassuolo",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "7564": {
+    "nome": "Leysen F.",
+    "squadra": "sassuolo",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "5851": {
+    "nome": "Doig",
+    "squadra": "sassuolo",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6677": {
+    "nome": "Adzic",
+    "squadra": "sassuolo",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "5844": {
+    "nome": "Thorstvedt",
+    "squadra": "sassuolo",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "2528": {
+    "nome": "Matic",
+    "squadra": "sassuolo",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "6895": {
+    "nome": "Dominguez B.",
+    "squadra": "sassuolo",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7036": {
+    "nome": "Bakola",
+    "squadra": "sassuolo",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5735": {
+    "nome": "Volpato",
+    "squadra": "sassuolo",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "5462": {
+    "nome": "Ciervo",
+    "squadra": "sassuolo",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "7347": {
+    "nome": "Bowie",
+    "squadra": "sassuolo",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7591": {
+    "nome": "Kulla",
+    "squadra": "sassuolo",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "6060": {
+    "nome": "Laurientè",
+    "squadra": "sassuolo",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7457": {
+    "nome": "Mascardi",
+    "squadra": "torino",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 4,
+        "eventi": [
+          {
+            "tipo": "Gol subito  (64°)",
+            "count": "2",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (67°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      }
+    }
+  },
+  "6642": {
+    "nome": "Coco",
+    "squadra": "torino",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "5010": {
+    "nome": "Ismajli",
+    "squadra": "torino",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6495": {
+    "nome": "Comuzzo",
+    "squadra": "torino",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7349": {
+    "nome": "Kulenovic",
+    "squadra": "torino",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "6426": {
+    "nome": "Pedersen",
+    "squadra": "torino",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7069": {
+    "nome": "Fortini",
+    "squadra": "torino",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6170": {
+    "nome": "Gineitis",
+    "squadra": "torino",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": [
+          {
+            "tipo": "Assist soft  (93°)",
+            "count": "1",
+            "eventId": "21"
+          }
+        ]
+      }
+    }
+  },
+  "7535": {
+    "nome": "Fitz-Jim",
+    "squadra": "torino",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7060": {
+    "nome": "Cacciamani",
+    "squadra": "torino",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7183": {
+    "nome": "Aboukhlal",
+    "squadra": "torino",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "5687": {
+    "nome": "Vlasic",
+    "squadra": "torino",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "5888": {
+    "nome": "Casadei",
+    "squadra": "torino",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "6646": {
+    "nome": "Adams C.",
+    "squadra": "torino",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (93°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
+      }
+    }
+  },
+  "2061": {
+    "nome": "Simeone",
+    "squadra": "torino",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6827": {
+    "nome": "Njie",
+    "squadra": "torino",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "4312": {
+    "nome": "Maignan",
+    "squadra": "milan",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Gol subito  (93°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      }
+    }
+  },
+  "5833": {
+    "nome": "Gila",
+    "squadra": "milan",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "4401": {
+    "nome": "Gabbia",
+    "squadra": "milan",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5739": {
+    "nome": "De Winter",
+    "squadra": "milan",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 7,
+        "eventi": []
+      }
+    }
+  },
+  "5022": {
+    "nome": "Pavlovic",
+    "squadra": "milan",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "4856": {
+    "nome": "Chukwueze",
+    "squadra": "milan",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 8,
+        "eventi": [
+          {
+            "tipo": "Assist  (67°)",
+            "count": "1",
+            "eventId": "22"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
+      }
+    }
+  },
+  "5295": {
+    "nome": "Musah",
+    "squadra": "milan",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7203": {
+    "nome": "Jashari",
+    "squadra": "milan",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "2379": {
+    "nome": "Rabiot",
+    "squadra": "milan",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7.5,
+        "fantavoto_consensus": 11.5,
+        "eventi": [
+          {
+            "tipo": "Assist  (64°)",
+            "count": "1",
+            "eventId": "22"
+          },
+          {
+            "tipo": "Gol segnato  (67°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
+      }
+    }
+  },
+  "5273": {
+    "nome": "Estupinan",
+    "squadra": "milan",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "4199": {
+    "nome": "Loftus-Cheek",
+    "squadra": "milan",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (53°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "2606": {
+    "nome": "Modric",
+    "squadra": "milan",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6618": {
+    "nome": "Cissè A.",
+    "squadra": "milan",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (64°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
+      }
+    }
+  },
+  "4892": {
+    "nome": "Saelemaekers",
+    "squadra": "milan",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6397": {
+    "nome": "Ramos G.",
+    "squadra": "milan",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "133": {
+    "nome": "Skorupski",
+    "squadra": "bologna",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Gol subito  (59°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      }
+    }
+  },
+  "4433": {
+    "nome": "Zortea",
+    "squadra": "bologna",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5678": {
+    "nome": "Holm",
+    "squadra": "bologna",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7212": {
+    "nome": "Heggem",
+    "squadra": "bologna",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (84°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "7326": {
+    "nome": "Helland",
+    "squadra": "bologna",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "4734": {
+    "nome": "Miranda J.",
+    "squadra": "bologna",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "2765": {
+    "nome": "Odgaard",
+    "squadra": "bologna",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (83°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "6225": {
+    "nome": "El Azzouzi O.",
+    "squadra": "bologna",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 4.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "7528": {
+    "nome": "Amondarain",
+    "squadra": "bologna",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "5858": {
+    "nome": "Ferguson",
+    "squadra": "bologna",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "2167": {
+    "nome": "Orsolini",
+    "squadra": "bologna",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "184": {
+    "nome": "Bernardeschi",
+    "squadra": "bologna",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "4359": {
+    "nome": "Piccoli",
+    "squadra": "bologna",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6675": {
+    "nome": "Dovbyk",
+    "squadra": "bologna",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "4436": {
+    "nome": "Cambiaghi",
+    "squadra": "bologna",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "6844": {
+    "nome": "Rowe",
+    "squadra": "bologna",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6482": {
+    "nome": "Mandas",
+    "squadra": "lazio",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "2188": {
+    "nome": "Marusic",
+    "squadra": "lazio",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": [
+          {
+            "tipo": "Uscito per infortunio",
+            "count": "1",
+            "eventId": "17"
+          }
+        ]
+      }
+    }
+  },
+  "7131": {
+    "nome": "Floriani Mussolini",
+    "squadra": "lazio",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "6320": {
+    "nome": "Doekhi",
+    "squadra": "lazio",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "7012": {
+    "nome": "Provstgaard",
+    "squadra": "lazio",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (94°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "4817": {
+    "nome": "Pedraza",
+    "squadra": "lazio",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5620": {
+    "nome": "Tavares N.",
+    "squadra": "lazio",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "6629": {
+    "nome": "Dele-Bashiru",
+    "squadra": "lazio",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Uscito per infortunio  (54°)",
+            "count": "1",
+            "eventId": "17"
+          }
+        ]
+      }
+    }
+  },
+  "2848": {
+    "nome": "Frattesi",
+    "squadra": "lazio",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 7.5,
+        "fantavoto_consensus": 10.5,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (59°)",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
+      }
+    }
+  },
+  "4459": {
+    "nome": "Rovella",
+    "squadra": "lazio",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "7314": {
+    "nome": "Taylor K.",
+    "squadra": "lazio",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5500": {
+    "nome": "Cancellieri",
+    "squadra": "lazio",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "6398": {
+    "nome": "Isaksen",
+    "squadra": "lazio",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5672": {
+    "nome": "Dia",
+    "squadra": "lazio",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          },
+          {
+            "tipo": "Assist GOLD  (59°)",
+            "count": "1",
+            "eventId": "23"
+          }
+        ]
+      }
+    }
+  },
+  "6556": {
+    "nome": "Noslin",
+    "squadra": "lazio",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "632": {
+    "nome": "Zaccagni",
+    "squadra": "lazio",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5841": {
+    "nome": "Svilar",
+    "squadra": "roma",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "2296": {
+    "nome": "Mancini",
+    "squadra": "roma",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "4317": {
+    "nome": "N'Dicka",
+    "squadra": "roma",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "4807": {
+    "nome": "Hermoso",
+    "squadra": "roma",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "7529": {
+    "nome": "Koulierakis",
+    "squadra": "roma",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "7599": {
+    "nome": "Lulli",
+    "squadra": "roma",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "7181": {
+    "nome": "Wesley",
+    "squadra": "roma",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "5589": {
+    "nome": "Konè M.",
+    "squadra": "roma",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (49°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "6190": {
+    "nome": "Pisilli",
+    "squadra": "roma",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 9.5,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (86°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
+      }
+    }
+  },
+  "779": {
+    "nome": "Cristante",
+    "squadra": "roma",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "7556": {
+    "nome": "Mora",
+    "squadra": "roma",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "5734": {
+    "nome": "Soulè",
+    "squadra": "roma",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "309": {
+    "nome": "Dybala",
+    "squadra": "roma",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 8,
+        "fantavoto_consensus": 11,
+        "eventi": [
+          {
+            "tipo": "Assist",
+            "count": "2",
+            "eventId": "22"
+          },
+          {
+            "tipo": "Assist  (53°)",
+            "count": "1",
+            "eventId": "22"
+          },
+          {
+            "tipo": "Assist GOLD  (60°)",
+            "count": "1",
+            "eventId": "23"
+          }
+        ]
+      }
+    }
+  },
+  "6271": {
+    "nome": "El Aynaoui",
+    "squadra": "roma",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "5585": {
+    "nome": "Malen",
+    "squadra": "roma",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 8.5,
+        "fantavoto_consensus": 17.5,
+        "eventi": [
+          {
+            "tipo": "Gol segnato",
+            "count": "3",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Gol segnato  (53°)",
+            "count": "2",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Gol segnato  (60°)",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
+      }
+    }
+  },
+  "6572": {
+    "nome": "Castro S.",
+    "squadra": "roma",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "2521": {
+    "nome": "De Gea",
+    "squadra": "fiorentina",
+    "ruolo": "p",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 1.5,
+        "eventi": [
+          {
+            "tipo": "Gol subito",
+            "count": "4",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (52°)",
+            "count": "3",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (60°)",
+            "count": "2",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (86°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      }
+    }
+  },
+  "5885": {
+    "nome": "Dodò",
+    "squadra": "fiorentina",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "5365": {
+    "nome": "Dragusin",
+    "squadra": "fiorentina",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 4,
+        "fantavoto_consensus": 4,
+        "eventi": []
+      }
+    }
+  },
+  "4378": {
+    "nome": "Ranieri L.",
+    "squadra": "fiorentina",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "7175": {
+    "nome": "Joao Mario",
+    "squadra": "fiorentina",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "7294": {
+    "nome": "Valdepenas",
+    "squadra": "fiorentina",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "6294": {
+    "nome": "Ndour",
+    "squadra": "fiorentina",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "4465": {
+    "nome": "Fagioli",
+    "squadra": "fiorentina",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "7464": {
+    "nome": "Oulai",
+    "squadra": "fiorentina",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "4947": {
+    "nome": "Brescianini",
+    "squadra": "fiorentina",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6531": {
+    "nome": "Jimenez A.",
+    "squadra": "fiorentina",
+    "ruolo": "d",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7078": {
+    "nome": "Mastantuono",
+    "squadra": "fiorentina",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "2097": {
+    "nome": "Kean",
+    "squadra": "fiorentina",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "6908": {
+    "nome": "Atta",
+    "squadra": "fiorentina",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "1933": {
+    "nome": "Mandragora",
+    "squadra": "fiorentina",
+    "ruolo": "c",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
+      }
+    }
+  },
+  "7023": {
+    "nome": "Pellegrino M.",
+    "squadra": "fiorentina",
+    "ruolo": "a",
+    "giornate": {
+      "1": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 4.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (64°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
   }
- },
- "6217": {
-  "nome": "Bisseck",
-  "squadra": "inter",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 10,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (63°)",
-      "count": "1",
-      "eventId": "3"
-     }
-    ]
-   }
-  }
- },
- "4159": {
-  "nome": "Akanji",
-  "squadra": "inter",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "2514": {
-  "nome": "Stones",
-  "squadra": "inter",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "2120": {
-  "nome": "Bastoni",
-  "squadra": "inter",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6274": {
-  "nome": "Diouf",
-  "squadra": "inter",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 9,
-    "eventi": [
-     {
-      "tipo": "Assist",
-      "count": "2",
-      "eventId": "22"
-     },
-     {
-      "tipo": "Assist  (55°)",
-      "count": "1",
-      "eventId": "22"
-     },
-     {
-      "tipo": "Man of the match",
-      "count": "1",
-      "eventId": "26"
-     }
-    ]
-   }
-  }
- },
- "5301": {
-  "nome": "Luis Henrique",
-  "squadra": "inter",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "1870": {
-  "nome": "Barella",
-  "squadra": "inter",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "2194": {
-  "nome": "Calhanoglu",
-  "squadra": "inter",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 9.5,
-    "eventi": [
-     {
-      "tipo": "Gol segnato",
-      "count": "1",
-      "eventId": "3"
-     },
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "7070": {
-  "nome": "Sucic P.",
-  "squadra": "inter",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "152": {
-  "nome": "Zielinski",
-  "squadra": "inter",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 10,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (48°)",
-      "count": "1",
-      "eventId": "3"
-     }
-    ]
-   }
-  }
- },
- "6503": {
-  "nome": "Stankovic A.",
-  "squadra": "inter",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "254": {
-  "nome": "Dimarco",
-  "squadra": "inter",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7071": {
-  "nome": "Esposito F.P.",
-  "squadra": "inter",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7.5,
-    "fantavoto_consensus": 11.5,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (55°)",
-      "count": "1",
-      "eventId": "3"
-     },
-     {
-      "tipo": "Assist soft  (63°)",
-      "count": "1",
-      "eventId": "21"
-     }
-    ]
-   }
-  }
- },
- "2764": {
-  "nome": "Martinez L.",
-  "squadra": "inter",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "6669": {
-  "nome": "Bonny",
-  "squadra": "inter",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6682": {
-  "nome": "Pizzignacco",
-  "squadra": "monza",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 1,
-    "eventi": [
-     {
-      "tipo": "Gol subito",
-      "count": "4",
-      "eventId": "4"
-     },
-     {
-      "tipo": "Gol subito  (48°)",
-      "count": "3",
-      "eventId": "4"
-     },
-     {
-      "tipo": "Gol subito  (55°)",
-      "count": "2",
-      "eventId": "4"
-     },
-     {
-      "tipo": "Gol subito  (63°)",
-      "count": "1",
-      "eventId": "4"
-     }
-    ]
-   }
-  }
- },
- "7238": {
-  "nome": "Kouadio",
-  "squadra": "monza",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (69°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "6659": {
-  "nome": "Lucchesi",
-  "squadra": "monza",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 4.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (85°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "2115": {
-  "nome": "Delli Carri",
-  "squadra": "monza",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "4925": {
-  "nome": "Carboni A.",
-  "squadra": "monza",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "5838": {
-  "nome": "Birindelli",
-  "squadra": "monza",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7574": {
-  "nome": "Foe Ondoa",
-  "squadra": "monza",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7575": {
-  "nome": "Mout",
-  "squadra": "monza",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 7,
-    "eventi": [
-     {
-      "tipo": "Assist",
-      "count": "1",
-      "eventId": "22"
-     }
-    ]
-   }
-  }
- },
- "5525": {
-  "nome": "Galazzi",
-  "squadra": "monza",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7485": {
-  "nome": "Mangas",
-  "squadra": "monza",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "5878": {
-  "nome": "Colpani",
-  "squadra": "monza",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "6592": {
-  "nome": "Forson O.",
-  "squadra": "monza",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7476": {
-  "nome": "Bakoune",
-  "squadra": "monza",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "2155": {
-  "nome": "Cutrone",
-  "squadra": "monza",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6660": {
-  "nome": "Marcandalli",
-  "squadra": "genoa",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7523": {
-  "nome": "Varela G.",
-  "squadra": "monza",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 10,
-    "eventi": [
-     {
-      "tipo": "Gol segnato",
-      "count": "1",
-      "eventId": "3"
-     }
-    ]
-   }
-  }
- },
- "7546": {
-  "nome": "Robinson J.",
-  "squadra": "monza",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "6462": {
-  "nome": "Okoye",
-  "squadra": "udinese",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Gol subito  (54°)",
-      "count": "1",
-      "eventId": "4"
-     }
-    ]
-   }
-  }
- },
- "6021": {
-  "nome": "Abankwah",
-  "squadra": "udinese",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "6925": {
-  "nome": "Palma",
-  "squadra": "udinese",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "5994": {
-  "nome": "Ebosse",
-  "squadra": "udinese",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6956": {
-  "nome": "Solet",
-  "squadra": "udinese",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "4994": {
-  "nome": "Vojvoda",
-  "squadra": "udinese",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "6680": {
-  "nome": "Karlstrom",
-  "squadra": "udinese",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "7198": {
-  "nome": "Piotrowski",
-  "squadra": "udinese",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "7208": {
-  "nome": "Miller L.",
-  "squadra": "udinese",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5555": {
-  "nome": "Kamara H.",
-  "squadra": "udinese",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 10,
-    "eventi": [
-     {
-      "tipo": "Gol segnato",
-      "count": "1",
-      "eventId": "3"
-     }
-    ]
-   }
-  }
- },
- "2766": {
-  "nome": "Zaniolo",
-  "squadra": "udinese",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "6212": {
-  "nome": "Zarraga",
-  "squadra": "udinese",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "6684": {
-  "nome": "Ekkelenkamp",
-  "squadra": "udinese",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 7.5,
-    "eventi": [
-     {
-      "tipo": "Assist",
-      "count": "1",
-      "eventId": "22"
-     }
-    ]
-   }
-  }
- },
- "6783": {
-  "nome": "Unai Gomez",
-  "squadra": "udinese",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (93°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "7272": {
-  "nome": "Gueye",
-  "squadra": "udinese",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Uscito per infortunio  (72°)",
-      "count": "1",
-      "eventId": "17"
-     }
-    ]
-   }
-  }
- },
- "7161": {
-  "nome": "Bayo V.",
-  "squadra": "udinese",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "6966": {
-  "nome": "Butez",
-  "squadra": "como",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Gol subito",
-      "count": "1",
-      "eventId": "4"
-     }
-    ]
-   }
-  }
- },
- "6727": {
-  "nome": "Couto",
-  "squadra": "como",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "7014": {
-  "nome": "Smolcic I.",
-  "squadra": "como",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "6869": {
-  "nome": "Ramon",
-  "squadra": "como",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5641": {
-  "nome": "Chalobah T.",
-  "squadra": "como",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "6867": {
-  "nome": "Valle",
-  "squadra": "como",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6151": {
-  "nome": "Perrone",
-  "squadra": "como",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5559": {
-  "nome": "Da Cunha",
-  "squadra": "como",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7412": {
-  "nome": "Milla",
-  "squadra": "como",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "7129": {
-  "nome": "Rodriguez Je.",
-  "squadra": "como",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6678": {
-  "nome": "Liberali",
-  "squadra": "como",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6875": {
-  "nome": "Paz N.",
-  "squadra": "como",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "5036": {
-  "nome": "Caqueret",
-  "squadra": "como",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "7126": {
-  "nome": "Baturina",
-  "squadra": "como",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6967": {
-  "nome": "Diao",
-  "squadra": "como",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7017": {
-  "nome": "Douvikas",
-  "squadra": "como",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 9.5,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (54°)",
-      "count": "1",
-      "eventId": "3"
-     }
-    ]
-   }
-  }
- },
- "7332": {
-  "nome": "Bijlow",
-  "squadra": "genoa",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 4,
-    "eventi": [
-     {
-      "tipo": "Gol subito  (82°)",
-      "count": "2",
-      "eventId": "4"
-     },
-     {
-      "tipo": "Gol subito  (87°)",
-      "count": "1",
-      "eventId": "4"
-     }
-    ]
-   }
-  }
- },
- "5750": {
-  "nome": "Ostigard",
-  "squadra": "genoa",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 6.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (94°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "6977": {
-  "nome": "Otoa",
-  "squadra": "genoa",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 4.5,
-    "fantavoto_consensus": 4.5,
-    "eventi": []
-   }
-  }
- },
- "5514": {
-  "nome": "Vasquez",
-  "squadra": "genoa",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7582": {
-  "nome": "Zulevic",
-  "squadra": "genoa",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "6814": {
-  "nome": "Norton-Cuffy",
-  "squadra": "genoa",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5791": {
-  "nome": "Frendrup",
-  "squadra": "genoa",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7341": {
-  "nome": "Amorim",
-  "squadra": "genoa",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "5946": {
-  "nome": "Sow",
-  "squadra": "genoa",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6020": {
-  "nome": "Ellertsson",
-  "squadra": "genoa",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "5823": {
-  "nome": "Baldanzi",
-  "squadra": "genoa",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "4970": {
-  "nome": "Messias",
-  "squadra": "genoa",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6164": {
-  "nome": "Vitinha O.",
-  "squadra": "genoa",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "4923": {
-  "nome": "Colombo",
-  "squadra": "genoa",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7409": {
-  "nome": "Meichtry",
-  "squadra": "genoa",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "572": {
-  "nome": "Meret",
-  "squadra": "napoli",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "2816": {
-  "nome": "Di Lorenzo",
-  "squadra": "napoli",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "4409": {
-  "nome": "Rrahmani",
-  "squadra": "napoli",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "6638": {
-  "nome": "Marin R.",
-  "squadra": "napoli",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Uscito per infortunio  (82°)",
-      "count": "1",
-      "eventId": "17"
-     }
-    ]
-   }
-  }
- },
- "5840": {
-  "nome": "Olivera",
-  "squadra": "napoli",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "1852": {
-  "nome": "Spinazzola",
-  "squadra": "napoli",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "4220": {
-  "nome": "Zambo Anguissa",
-  "squadra": "napoli",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "2517": {
-  "nome": "De Bruyne",
-  "squadra": "napoli",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7.5,
-    "fantavoto_consensus": 11.5,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (82°)",
-      "count": "1",
-      "eventId": "3"
-     },
-     {
-      "tipo": "Assist  (87°)",
-      "count": "1",
-      "eventId": "22"
-     },
-     {
-      "tipo": "Man of the match",
-      "count": "1",
-      "eventId": "26"
-     }
-    ]
-   }
-  }
- },
- "4657": {
-  "nome": "Celik",
-  "squadra": "juventus",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (50°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "4287": {
-  "nome": "Lobotka",
-  "squadra": "napoli",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "4777": {
-  "nome": "McTominay",
-  "squadra": "napoli",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "536": {
-  "nome": "Politano",
-  "squadra": "napoli",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (55°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "7223": {
-  "nome": "Vergara",
-  "squadra": "napoli",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7.5,
-    "fantavoto_consensus": 11.5,
-    "eventi": [
-     {
-      "tipo": "Assist GOLD  (82°)",
-      "count": "1",
-      "eventId": "23"
-     },
-     {
-      "tipo": "Gol segnato  (87°)",
-      "count": "1",
-      "eventId": "3"
-     }
-    ]
-   }
-  }
- },
- "6052": {
-  "nome": "Hojlund",
-  "squadra": "napoli",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6215": {
-  "nome": "Lucca",
-  "squadra": "napoli",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "7351": {
-  "nome": "Santos A.",
-  "squadra": "napoli",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7120": {
-  "nome": "Lang",
-  "squadra": "napoli",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6662": {
-  "nome": "Corvi",
-  "squadra": "parma",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 4.5,
-    "eventi": [
-     {
-      "tipo": "Gol subito  (79°)",
-      "count": "1",
-      "eventId": "4"
-     }
-    ]
-   }
-  }
- },
- "6664": {
-  "nome": "Delprato",
-  "squadra": "parma",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7235": {
-  "nome": "Troilo",
-  "squadra": "parma",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7276": {
-  "nome": "Cremaschi",
-  "squadra": "parma",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "7202": {
-  "nome": "Ndiaye",
-  "squadra": "parma",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5862": {
-  "nome": "Valeri",
-  "squadra": "parma",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6898": {
-  "nome": "Keita M.",
-  "squadra": "parma",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6897": {
-  "nome": "Kouda",
-  "squadra": "parma",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7581": {
-  "nome": "Konaté A.",
-  "squadra": "parma",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7342": {
-  "nome": "Elphege",
-  "squadra": "parma",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7138": {
-  "nome": "Ordonez C.",
-  "squadra": "parma",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6666": {
-  "nome": "Bernabè",
-  "squadra": "parma",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6207": {
-  "nome": "Almqvist",
-  "squadra": "parma",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6229": {
-  "nome": "Tourè E.",
-  "squadra": "parma",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7561": {
-  "nome": "Lontani",
-  "squadra": "parma",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "7536": {
-  "nome": "Diallo O.",
-  "squadra": "parma",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "4360": {
-  "nome": "Caprile",
-  "squadra": "cagliari",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7274": {
-  "nome": "Zè Pedro",
-  "squadra": "cagliari",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "4461": {
-  "nome": "Zappa",
-  "squadra": "cagliari",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "1871": {
-  "nome": "Deiola",
-  "squadra": "cagliari",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7268": {
-  "nome": "Rodriguez Ju.",
-  "squadra": "cagliari",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "5701": {
-  "nome": "Obert",
-  "squadra": "cagliari",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7548": {
-  "nome": "Aurelio",
-  "squadra": "cagliari",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "4870": {
-  "nome": "Adopo",
-  "squadra": "cagliari",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 7.5,
-    "eventi": [
-     {
-      "tipo": "Assist soft  (79°)",
-      "count": "1",
-      "eventId": "21"
-     }
-    ]
-   }
-  }
- },
- "4260": {
-  "nome": "Winks",
-  "squadra": "cagliari",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7311": {
-  "nome": "Romano",
-  "squadra": "cagliari",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 10,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (79°)",
-      "count": "1",
-      "eventId": "3"
-     },
-     {
-      "tipo": "Man of the match",
-      "count": "1",
-      "eventId": "26"
-     }
-    ]
-   }
-  }
- },
- "6010": {
-  "nome": "Fazzini",
-  "squadra": "cagliari",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (58°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "6640": {
-  "nome": "Felici",
-  "squadra": "cagliari",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "4896": {
-  "nome": "Maldini",
-  "squadra": "cagliari",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6598": {
-  "nome": "Mutandwa",
-  "squadra": "cagliari",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "7374": {
-  "nome": "Mendy P.",
-  "squadra": "cagliari",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6243": {
-  "nome": "Borrelli",
-  "squadra": "cagliari",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6415": {
-  "nome": "Palmisani",
-  "squadra": "frosinone",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Gol subito",
-      "count": "1",
-      "eventId": "4"
-     }
-    ]
-   }
-  }
- },
- "7467": {
-  "nome": "Calvani",
-  "squadra": "frosinone",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (93°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "5757": {
-  "nome": "Cittadini",
-  "squadra": "frosinone",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "4952": {
-  "nome": "Monterisi",
-  "squadra": "frosinone",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "6238": {
-  "nome": "Oyono A.",
-  "squadra": "frosinone",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7469": {
-  "nome": "Bracaglia",
-  "squadra": "frosinone",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "4375": {
-  "nome": "Terzic",
-  "squadra": "frosinone",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7473": {
-  "nome": "Cichella",
-  "squadra": "frosinone",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6903": {
-  "nome": "Hasa",
-  "squadra": "frosinone",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7472": {
-  "nome": "Calò",
-  "squadra": "frosinone",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6204": {
-  "nome": "Kvernadze",
-  "squadra": "frosinone",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7551": {
-  "nome": "Schmid",
-  "squadra": "frosinone",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 4.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "6917": {
-  "nome": "Masini",
-  "squadra": "frosinone",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6506": {
-  "nome": "Fini",
-  "squadra": "frosinone",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5998": {
-  "nome": "Zerbin",
-  "squadra": "frosinone",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5436": {
-  "nome": "Raimondo",
-  "squadra": "frosinone",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "4964": {
-  "nome": "Vicario",
-  "squadra": "juventus",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": [
-     {
-      "tipo": "Uscito per infortunio  (92°)",
-      "count": "1",
-      "eventId": "17"
-     }
-    ]
-   }
-  }
- },
- "218": {
-  "nome": "Perin",
-  "squadra": "juventus",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "4976": {
-  "nome": "Kalulu",
-  "squadra": "juventus",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "2788": {
-  "nome": "Bremer",
-  "squadra": "juventus",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7.5,
-    "fantavoto_consensus": 10.5,
-    "eventi": [
-     {
-      "tipo": "Gol segnato",
-      "count": "1",
-      "eventId": "3"
-     },
-     {
-      "tipo": "Man of the match",
-      "count": "1",
-      "eventId": "26"
-     }
-    ]
-   }
-  }
- },
- "6766": {
-  "nome": "Kelly L.",
-  "squadra": "juventus",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "5520": {
-  "nome": "Cambiaso",
-  "squadra": "juventus",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (83°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "4911": {
-  "nome": "Douglas Luiz",
-  "squadra": "juventus",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "5685": {
-  "nome": "Koopmeiners",
-  "squadra": "juventus",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "827": {
-  "nome": "Locatelli",
-  "squadra": "juventus",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6884": {
-  "nome": "Conceicao",
-  "squadra": "juventus",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 7.5,
-    "eventi": [
-     {
-      "tipo": "Assist",
-      "count": "1",
-      "eventId": "22"
-     }
-    ]
-   }
-  }
- },
- "5761": {
-  "nome": "Zhegrova",
-  "squadra": "juventus",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "4973": {
-  "nome": "McKennie",
-  "squadra": "juventus",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6434": {
-  "nome": "Yildiz",
-  "squadra": "juventus",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "2832": {
-  "nome": "Boga",
-  "squadra": "juventus",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5951": {
-  "nome": "Kolo Muani",
-  "squadra": "juventus",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "6248": {
-  "nome": "Stankovic F.",
-  "squadra": "venezia",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 3.5,
-    "eventi": [
-     {
-      "tipo": "Gol subito  (46°)",
-      "count": "2",
-      "eventId": "4"
-     },
-     {
-      "tipo": "Gol subito  (80°)",
-      "count": "1",
-      "eventId": "4"
-     }
-    ]
-   }
-  }
- },
- "6892": {
-  "nome": "Schingtienne",
-  "squadra": "venezia",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "7253": {
-  "nome": "Bella-Kotchap",
-  "squadra": "venezia",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "7478": {
-  "nome": "Franjic",
-  "squadra": "venezia",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6496": {
-  "nome": "Bartesaghi",
-  "squadra": "milan",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6821": {
-  "nome": "Hainaut",
-  "squadra": "venezia",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6681": {
-  "nome": "Sagrado",
-  "squadra": "venezia",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "5674": {
-  "nome": "Basic",
-  "squadra": "venezia",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7449": {
-  "nome": "Rrahmani Al.",
-  "squadra": "venezia",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "5507": {
-  "nome": "Busio",
-  "squadra": "venezia",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6994": {
-  "nome": "Perez K.",
-  "squadra": "venezia",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7481": {
-  "nome": "Dagasso",
-  "squadra": "venezia",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 4.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (88°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "4845": {
-  "nome": "Correia T.",
-  "squadra": "venezia",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": [
-     {
-      "tipo": "Gol annullato dal VAR",
-      "count": "1",
-      "eventId": "16"
-     }
-    ]
-   }
-  }
- },
- "5695": {
-  "nome": "Haps",
-  "squadra": "venezia",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6904": {
-  "nome": "Yeboah J.",
-  "squadra": "venezia",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7484": {
-  "nome": "Adams A.",
-  "squadra": "venezia",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "2134": {
-  "nome": "Falcone",
-  "squadra": "lecce",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 7,
-    "eventi": []
-   }
-  }
- },
- "6990": {
-  "nome": "Veiga D.",
-  "squadra": "lecce",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 7,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (71°)",
-      "count": "1",
-      "eventId": "1"
-     },
-     {
-      "tipo": "Assist  (80°)",
-      "count": "1",
-      "eventId": "22"
-     }
-    ]
-   }
-  }
- },
- "6632": {
-  "nome": "Gaspar K.",
-  "squadra": "lecce",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 6.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "7240": {
-  "nome": "Siebert",
-  "squadra": "lecce",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "4502": {
-  "nome": "Gallo",
-  "squadra": "lecce",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Uscito per infortunio  (46°)",
-      "count": "1",
-      "eventId": "17"
-     }
-    ]
-   }
-  }
- },
- "7182": {
-  "nome": "Ndaba",
-  "squadra": "lecce",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7248": {
-  "nome": "Gorter",
-  "squadra": "lecce",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 10,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (46°)",
-      "count": "1",
-      "eventId": "3"
-     },
-     {
-      "tipo": "Man of the match",
-      "count": "1",
-      "eventId": "26"
-     }
-    ]
-   }
-  }
- },
- "5457": {
-  "nome": "Maleh",
-  "squadra": "lecce",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "5504": {
-  "nome": "Coulibaly L.",
-  "squadra": "lecce",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 8,
-    "eventi": [
-     {
-      "tipo": "Assist  (46°)",
-      "count": "1",
-      "eventId": "22"
-     }
-    ]
-   }
-  }
- },
- "7322": {
-  "nome": "Ngom",
-  "squadra": "lecce",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (59°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "6549": {
-  "nome": "Pierotti",
-  "squadra": "lecce",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7318": {
-  "nome": "Gandelman",
-  "squadra": "lecce",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "5029": {
-  "nome": "Geubbels",
-  "squadra": "lecce",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7252": {
-  "nome": "Stulic",
-  "squadra": "lecce",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7001": {
-  "nome": "N'Dri",
-  "squadra": "lecce",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6989": {
-  "nome": "Tiago Gabriel",
-  "squadra": "lecce",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 10,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (80°)",
-      "count": "1",
-      "eventId": "3"
-     }
-    ]
-   }
-  }
- },
- "4431": {
-  "nome": "Carnesecchi",
-  "squadra": "atalanta",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": [
-     {
-      "tipo": "Gol subito  (55°)",
-      "count": "1",
-      "eventId": "4"
-     },
-     {
-      "tipo": "Assist  (66°)",
-      "count": "1",
-      "eventId": "22"
-     }
-    ]
-   }
-  }
- },
- "554": {
-  "nome": "Zappacosta",
-  "squadra": "atalanta",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "5578": {
-  "nome": "Kossounou",
-  "squadra": "atalanta",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "5526": {
-  "nome": "Scalvini",
-  "squadra": "atalanta",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7219": {
-  "nome": "Bernasconi",
-  "squadra": "atalanta",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "2640": {
-  "nome": "Kolasinac",
-  "squadra": "atalanta",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "2077": {
-  "nome": "Pasalic",
-  "squadra": "atalanta",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "5119": {
-  "nome": "Samardzic",
-  "squadra": "atalanta",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "4364": {
-  "nome": "Gaetano",
-  "squadra": "atalanta",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 7.5,
-    "eventi": [
-     {
-      "tipo": "Assist",
-      "count": "1",
-      "eventId": "22"
-     }
-    ]
-   }
-  }
- },
- "5792": {
-  "nome": "Ederson D.S.",
-  "squadra": "atalanta",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5422": {
-  "nome": "Zalewski",
-  "squadra": "atalanta",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5995": {
-  "nome": "De Ketelaere",
-  "squadra": "atalanta",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "2137": {
-  "nome": "Scamacca",
-  "squadra": "atalanta",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6435": {
-  "nome": "Krstovic",
-  "squadra": "atalanta",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 10,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (66°)",
-      "count": "1",
-      "eventId": "3"
-     },
-     {
-      "tipo": "Man of the match",
-      "count": "1",
-      "eventId": "26"
-     }
-    ]
-   }
-  }
- },
- "4371": {
-  "nome": "Raspadori",
-  "squadra": "atalanta",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 10,
-    "eventi": [
-     {
-      "tipo": "Gol segnato",
-      "count": "1",
-      "eventId": "3"
-     }
-    ]
-   }
-  }
- },
- "4479": {
-  "nome": "Elmas",
-  "squadra": "atalanta",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "4236": {
-  "nome": "Muric",
-  "squadra": "sassuolo",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 4,
-    "eventi": [
-     {
-      "tipo": "Gol subito",
-      "count": "2",
-      "eventId": "4"
-     },
-     {
-      "tipo": "Gol subito  (65°)",
-      "count": "1",
-      "eventId": "4"
-     }
-    ]
-   }
-  }
- },
- "7573": {
-  "nome": "Cinquegrano",
-  "squadra": "sassuolo",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7154": {
-  "nome": "Odenthal",
-  "squadra": "sassuolo",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 10,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (55°)",
-      "count": "1",
-      "eventId": "3"
-     }
-    ]
-   }
-  }
- },
- "7396": {
-  "nome": "Macchioni",
-  "squadra": "sassuolo",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "7564": {
-  "nome": "Leysen F.",
-  "squadra": "sassuolo",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "5851": {
-  "nome": "Doig",
-  "squadra": "sassuolo",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6677": {
-  "nome": "Adzic",
-  "squadra": "sassuolo",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "5844": {
-  "nome": "Thorstvedt",
-  "squadra": "sassuolo",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "2528": {
-  "nome": "Matic",
-  "squadra": "sassuolo",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "6895": {
-  "nome": "Dominguez B.",
-  "squadra": "sassuolo",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7036": {
-  "nome": "Bakola",
-  "squadra": "sassuolo",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5735": {
-  "nome": "Volpato",
-  "squadra": "sassuolo",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "5462": {
-  "nome": "Ciervo",
-  "squadra": "sassuolo",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "7347": {
-  "nome": "Bowie",
-  "squadra": "sassuolo",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7591": {
-  "nome": "Kulla",
-  "squadra": "sassuolo",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "6060": {
-  "nome": "Laurientè",
-  "squadra": "sassuolo",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7457": {
-  "nome": "Mascardi",
-  "squadra": "torino",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 4,
-    "eventi": [
-     {
-      "tipo": "Gol subito  (64°)",
-      "count": "2",
-      "eventId": "4"
-     },
-     {
-      "tipo": "Gol subito  (67°)",
-      "count": "1",
-      "eventId": "4"
-     }
-    ]
-   }
-  }
- },
- "6642": {
-  "nome": "Coco",
-  "squadra": "torino",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "5010": {
-  "nome": "Ismajli",
-  "squadra": "torino",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6495": {
-  "nome": "Comuzzo",
-  "squadra": "torino",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7349": {
-  "nome": "Kulenovic",
-  "squadra": "torino",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "6426": {
-  "nome": "Pedersen",
-  "squadra": "torino",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7069": {
-  "nome": "Fortini",
-  "squadra": "torino",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6170": {
-  "nome": "Gineitis",
-  "squadra": "torino",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": [
-     {
-      "tipo": "Assist soft  (93°)",
-      "count": "1",
-      "eventId": "21"
-     }
-    ]
-   }
-  }
- },
- "7535": {
-  "nome": "Fitz-Jim",
-  "squadra": "torino",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7060": {
-  "nome": "Cacciamani",
-  "squadra": "torino",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7183": {
-  "nome": "Aboukhlal",
-  "squadra": "torino",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "5687": {
-  "nome": "Vlasic",
-  "squadra": "torino",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "5888": {
-  "nome": "Casadei",
-  "squadra": "torino",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "6646": {
-  "nome": "Adams C.",
-  "squadra": "torino",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 10,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (93°)",
-      "count": "1",
-      "eventId": "3"
-     }
-    ]
-   }
-  }
- },
- "2061": {
-  "nome": "Simeone",
-  "squadra": "torino",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6827": {
-  "nome": "Njie",
-  "squadra": "torino",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "4312": {
-  "nome": "Maignan",
-  "squadra": "milan",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Gol subito  (93°)",
-      "count": "1",
-      "eventId": "4"
-     }
-    ]
-   }
-  }
- },
- "5833": {
-  "nome": "Gila",
-  "squadra": "milan",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "4401": {
-  "nome": "Gabbia",
-  "squadra": "milan",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5739": {
-  "nome": "De Winter",
-  "squadra": "milan",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 7,
-    "eventi": []
-   }
-  }
- },
- "5022": {
-  "nome": "Pavlovic",
-  "squadra": "milan",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "4856": {
-  "nome": "Chukwueze",
-  "squadra": "milan",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 8,
-    "eventi": [
-     {
-      "tipo": "Assist  (67°)",
-      "count": "1",
-      "eventId": "22"
-     },
-     {
-      "tipo": "Man of the match",
-      "count": "1",
-      "eventId": "26"
-     }
-    ]
-   }
-  }
- },
- "5295": {
-  "nome": "Musah",
-  "squadra": "milan",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7203": {
-  "nome": "Jashari",
-  "squadra": "milan",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "2379": {
-  "nome": "Rabiot",
-  "squadra": "milan",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7.5,
-    "fantavoto_consensus": 11.5,
-    "eventi": [
-     {
-      "tipo": "Assist  (64°)",
-      "count": "1",
-      "eventId": "22"
-     },
-     {
-      "tipo": "Gol segnato  (67°)",
-      "count": "1",
-      "eventId": "3"
-     }
-    ]
-   }
-  }
- },
- "5273": {
-  "nome": "Estupinan",
-  "squadra": "milan",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "4199": {
-  "nome": "Loftus-Cheek",
-  "squadra": "milan",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (53°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "2606": {
-  "nome": "Modric",
-  "squadra": "milan",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6618": {
-  "nome": "Cissè A.",
-  "squadra": "milan",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7,
-    "fantavoto_consensus": 10,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (64°)",
-      "count": "1",
-      "eventId": "3"
-     }
-    ]
-   }
-  }
- },
- "4892": {
-  "nome": "Saelemaekers",
-  "squadra": "milan",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6397": {
-  "nome": "Ramos G.",
-  "squadra": "milan",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "133": {
-  "nome": "Skorupski",
-  "squadra": "bologna",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Gol subito  (59°)",
-      "count": "1",
-      "eventId": "4"
-     }
-    ]
-   }
-  }
- },
- "4433": {
-  "nome": "Zortea",
-  "squadra": "bologna",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5678": {
-  "nome": "Holm",
-  "squadra": "bologna",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7212": {
-  "nome": "Heggem",
-  "squadra": "bologna",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (84°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "7326": {
-  "nome": "Helland",
-  "squadra": "bologna",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "4734": {
-  "nome": "Miranda J.",
-  "squadra": "bologna",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "2765": {
-  "nome": "Odgaard",
-  "squadra": "bologna",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (83°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "6225": {
-  "nome": "El Azzouzi O.",
-  "squadra": "bologna",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 4.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "7528": {
-  "nome": "Amondarain",
-  "squadra": "bologna",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "5858": {
-  "nome": "Ferguson",
-  "squadra": "bologna",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "2167": {
-  "nome": "Orsolini",
-  "squadra": "bologna",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "184": {
-  "nome": "Bernardeschi",
-  "squadra": "bologna",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "4359": {
-  "nome": "Piccoli",
-  "squadra": "bologna",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6675": {
-  "nome": "Dovbyk",
-  "squadra": "bologna",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "4436": {
-  "nome": "Cambiaghi",
-  "squadra": "bologna",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "6844": {
-  "nome": "Rowe",
-  "squadra": "bologna",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6482": {
-  "nome": "Mandas",
-  "squadra": "lazio",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "2188": {
-  "nome": "Marusic",
-  "squadra": "lazio",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": [
-     {
-      "tipo": "Uscito per infortunio",
-      "count": "1",
-      "eventId": "17"
-     }
-    ]
-   }
-  }
- },
- "7131": {
-  "nome": "Floriani Mussolini",
-  "squadra": "lazio",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "6320": {
-  "nome": "Doekhi",
-  "squadra": "lazio",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "7012": {
-  "nome": "Provstgaard",
-  "squadra": "lazio",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (94°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "4817": {
-  "nome": "Pedraza",
-  "squadra": "lazio",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5620": {
-  "nome": "Tavares N.",
-  "squadra": "lazio",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "6629": {
-  "nome": "Dele-Bashiru",
-  "squadra": "lazio",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Uscito per infortunio  (54°)",
-      "count": "1",
-      "eventId": "17"
-     }
-    ]
-   }
-  }
- },
- "2848": {
-  "nome": "Frattesi",
-  "squadra": "lazio",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 7.5,
-    "fantavoto_consensus": 10.5,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (59°)",
-      "count": "1",
-      "eventId": "3"
-     },
-     {
-      "tipo": "Man of the match",
-      "count": "1",
-      "eventId": "26"
-     }
-    ]
-   }
-  }
- },
- "4459": {
-  "nome": "Rovella",
-  "squadra": "lazio",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "7314": {
-  "nome": "Taylor K.",
-  "squadra": "lazio",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5500": {
-  "nome": "Cancellieri",
-  "squadra": "lazio",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "6398": {
-  "nome": "Isaksen",
-  "squadra": "lazio",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5672": {
-  "nome": "Dia",
-  "squadra": "lazio",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 7,
-    "eventi": [
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     },
-     {
-      "tipo": "Assist GOLD  (59°)",
-      "count": "1",
-      "eventId": "23"
-     }
-    ]
-   }
-  }
- },
- "6556": {
-  "nome": "Noslin",
-  "squadra": "lazio",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "632": {
-  "nome": "Zaccagni",
-  "squadra": "lazio",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "5841": {
-  "nome": "Svilar",
-  "squadra": "roma",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "2296": {
-  "nome": "Mancini",
-  "squadra": "roma",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "4317": {
-  "nome": "N'Dicka",
-  "squadra": "roma",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "4807": {
-  "nome": "Hermoso",
-  "squadra": "roma",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6,
-    "eventi": [
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "7529": {
-  "nome": "Koulierakis",
-  "squadra": "roma",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "7599": {
-  "nome": "Lulli",
-  "squadra": "roma",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "7181": {
-  "nome": "Wesley",
-  "squadra": "roma",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "5589": {
-  "nome": "Konè M.",
-  "squadra": "roma",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 5.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (49°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "6190": {
-  "nome": "Pisilli",
-  "squadra": "roma",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 9.5,
-    "eventi": [
-     {
-      "tipo": "Gol segnato  (86°)",
-      "count": "1",
-      "eventId": "3"
-     }
-    ]
-   }
-  }
- },
- "779": {
-  "nome": "Cristante",
-  "squadra": "roma",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "7556": {
-  "nome": "Mora",
-  "squadra": "roma",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6.5,
-    "fantavoto_consensus": 6.5,
-    "eventi": []
-   }
-  }
- },
- "5734": {
-  "nome": "Soulè",
-  "squadra": "roma",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "309": {
-  "nome": "Dybala",
-  "squadra": "roma",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 8,
-    "fantavoto_consensus": 11,
-    "eventi": [
-     {
-      "tipo": "Assist",
-      "count": "2",
-      "eventId": "22"
-     },
-     {
-      "tipo": "Assist  (53°)",
-      "count": "1",
-      "eventId": "22"
-     },
-     {
-      "tipo": "Assist GOLD  (60°)",
-      "count": "1",
-      "eventId": "23"
-     }
-    ]
-   }
-  }
- },
- "6271": {
-  "nome": "El Aynaoui",
-  "squadra": "roma",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "5585": {
-  "nome": "Malen",
-  "squadra": "roma",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 8.5,
-    "fantavoto_consensus": 17.5,
-    "eventi": [
-     {
-      "tipo": "Gol segnato",
-      "count": "3",
-      "eventId": "3"
-     },
-     {
-      "tipo": "Gol segnato  (53°)",
-      "count": "2",
-      "eventId": "3"
-     },
-     {
-      "tipo": "Gol segnato  (60°)",
-      "count": "1",
-      "eventId": "3"
-     },
-     {
-      "tipo": "Man of the match",
-      "count": "1",
-      "eventId": "26"
-     }
-    ]
-   }
-  }
- },
- "6572": {
-  "nome": "Castro S.",
-  "squadra": "roma",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "2521": {
-  "nome": "De Gea",
-  "squadra": "fiorentina",
-  "ruolo": "p",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 1.5,
-    "eventi": [
-     {
-      "tipo": "Gol subito",
-      "count": "4",
-      "eventId": "4"
-     },
-     {
-      "tipo": "Gol subito  (52°)",
-      "count": "3",
-      "eventId": "4"
-     },
-     {
-      "tipo": "Gol subito  (60°)",
-      "count": "2",
-      "eventId": "4"
-     },
-     {
-      "tipo": "Gol subito  (86°)",
-      "count": "1",
-      "eventId": "4"
-     }
-    ]
-   }
-  }
- },
- "5885": {
-  "nome": "Dodò",
-  "squadra": "fiorentina",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "5365": {
-  "nome": "Dragusin",
-  "squadra": "fiorentina",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 4,
-    "fantavoto_consensus": 4,
-    "eventi": []
-   }
-  }
- },
- "4378": {
-  "nome": "Ranieri L.",
-  "squadra": "fiorentina",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "7175": {
-  "nome": "Joao Mario",
-  "squadra": "fiorentina",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "7294": {
-  "nome": "Valdepenas",
-  "squadra": "fiorentina",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": null,
-    "fantavoto_consensus": null,
-    "eventi": []
-   }
-  }
- },
- "6294": {
-  "nome": "Ndour",
-  "squadra": "fiorentina",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "4465": {
-  "nome": "Fagioli",
-  "squadra": "fiorentina",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- },
- "7464": {
-  "nome": "Oulai",
-  "squadra": "fiorentina",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "4947": {
-  "nome": "Brescianini",
-  "squadra": "fiorentina",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "6531": {
-  "nome": "Jimenez A.",
-  "squadra": "fiorentina",
-  "ruolo": "d",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "7078": {
-  "nome": "Mastantuono",
-  "squadra": "fiorentina",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5.5,
-    "fantavoto_consensus": 5.5,
-    "eventi": []
-   }
-  }
- },
- "2097": {
-  "nome": "Kean",
-  "squadra": "fiorentina",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 6,
-    "fantavoto_consensus": 6,
-    "eventi": []
-   }
-  }
- },
- "6908": {
-  "nome": "Atta",
-  "squadra": "fiorentina",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "1933": {
-  "nome": "Mandragora",
-  "squadra": "fiorentina",
-  "ruolo": "c",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 5,
-    "eventi": []
-   }
-  }
- },
- "7023": {
-  "nome": "Pellegrino M.",
-  "squadra": "fiorentina",
-  "ruolo": "a",
-  "giornate": {
-   "1": {
-    "voto_consensus": 5,
-    "fantavoto_consensus": 4.5,
-    "eventi": [
-     {
-      "tipo": "Ammonizione  (64°)",
-      "count": "1",
-      "eventId": "1"
-     }
-    ]
-   }
-  }
- }
 }
