@@ -27,14 +27,18 @@ Il sistema ha tre stadi indipendenti:
 ```
 [1] PIPELINE DATI          [2] MOTORE (in app)        [3] DECISIONI
     GitHub Actions             JavaScript locale          cosa vedi
-    2 volte/settimana          gira sul telefono
+    2 volte al giorno          gira sul telefono
     ↓                          ↓                          ↓
     players.json               rating giocatore           formazione ottima
     classifica.json      →     fantavoto atteso     →     distribuzione del punteggio
     calendario.json            simulazione                probabilità di vittoria
     rigoristi.json                                        spunti di mercato
     indisponibili.json
-    (understat.json)
+    understat.json             (xG/xA, tiri p90)
+    playerstats.json           (tackle, intercetti, rinvii, parate)
+    titolarita_reale.json      (consensus probabili formazioni)
+    voti_storico.json          (voti reali giornata per giornata)
+    prezzi_reali_asta.json     (prezzi medi pagati in asta)
 ```
 
 Scelta progettuale di fondo: **nessun server, nessun account**. La pipeline produce file statici, l'app li
