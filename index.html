@@ -1495,6 +1495,7 @@ function renderFormazione(){
       </div>
       <div style="padding:8px">${pitchSVG(sel.lu, sel.mod)}</div>
       <button class="btn" style="width:100%; padding:12px; margin-top:4px" onclick="S.tab='dettagliformazione'; render()">📋 Dettagli lineup — i nostri calcoli</button>
+      <button class="btn" id="btnShareLineup" style="width:100%; padding:12px; margin-top:8px" onclick="condividiFormazione()">📤 Condividi la formazione</button>
     </div>
     <div class="card">
       <div class="bighead"><div class="l">Simulazione · ${N_SIM} giornate</div>
@@ -1516,6 +1517,108 @@ function renderFormazione(){
       </div>
     </div>
     ${!S.fixtures.length ? `<div class="note">Campionato fermo: Δ calendario neutro per tutti.</div>` : ""}`;
+}
+
+/* ---------- CONDIVISIONE FORMAZIONE (PNG 1080×1920 per WhatsApp) ---------- */
+const SHARE_W = 1080, SHARE_H = 1920;
+
+function disegnaCampoCondivisibile(lu, mod, mediaAttesa){
+  const c = document.createElement("canvas");
+  c.width = SHARE_W; c.height = SHARE_H;
+  const x = c.getContext("2d");
+  const COL = {P:"#D4A830", D:"#2E7D32", C:"#1565C0", A:"#D32F2F"};
+  const VERDE = "#4C7A3D", SCURO = "#1E2A20", CARTA = "#FFFFFF";
+  const F = n => `'Saira', system-ui, sans-serif`.replace("'Saira'", n);
+
+  x.fillStyle = "#F7F8F3"; x.fillRect(0, 0, SHARE_W, SHARE_H);
+
+  x.textAlign = "center";
+  x.fillStyle = SCURO; x.font = "500 62px 'Saira Condensed', sans-serif";
+  x.fillText("Migliore formazione possibile", SHARE_W/2, 150);
+  x.fillStyle = "#71806E"; x.font = "400 40px 'Saira', sans-serif";
+  x.fillText(`modulo ${mod.name} · totale atteso ${fmt(mediaAttesa,1)}`, SHARE_W/2, 215);
+
+  const px = 70, py = 290, pw = SHARE_W - 140, ph = 1180;
+  x.fillStyle = "#EFF1E8";
+  x.beginPath(); x.roundRect(px, py, pw, ph, 28); x.fill();
+  x.strokeStyle = "#DBE0D2"; x.lineWidth = 3; x.stroke();
+  x.beginPath(); x.moveTo(px, py+70); x.lineTo(px+pw, py+70); x.stroke();
+  x.beginPath(); x.arc(px+pw/2, py+70, 110, 0, Math.PI*2); x.stroke();
+  x.strokeRect(px+pw/2-240, py+ph-200, 480, 200);
+  x.strokeRect(px+pw/2-110, py+ph-88, 220, 88);
+
+  const byRole = {P:[], D:[], C:[], A:[]};
+  lu.xi.forEach(r => byRole[roleOf(S.byId.get(r.id))].push(r));
+  const righe = [["A", mod.a, py+200], ["C", mod.c, py+490], ["D", mod.d, py+780], ["P", 1, py+1060]];
+
+  for(const [ruolo, n, y] of righe){
+    byRole[ruolo].slice(0, n).forEach((r, i) => {
+      const cx = px + pw/(n+1)*(i+1);
+      const st = S.byId.get(r.id), val = scheierability(r);
+      x.beginPath(); x.arc(cx, y, 52, 0, Math.PI*2);
+      x.fillStyle = CARTA; x.fill();
+      x.strokeStyle = COL[ruolo]; x.lineWidth = 6; x.stroke();
+      x.fillStyle = COL[ruolo]; x.font = "500 40px 'Saira', sans-serif";
+      x.fillText(fmt(val, 1), cx, y+14);
+      const maxc = n >= 5 ? 10 : 13;
+      const nome = st.nome.length > maxc ? st.nome.slice(0, maxc-1)+"…" : st.nome;
+      x.fillStyle = SCURO; x.font = "500 34px 'Saira', sans-serif";
+      x.fillText(nome, cx, y+96);
+    });
+  }
+
+  x.fillStyle = "#71806E"; x.font = "400 32px 'Saira', sans-serif";
+  x.fillText("i numeri sono il rendimento atteso di ogni slot", SHARE_W/2, py+ph+80);
+
+  const yLogo = SHARE_H - 170;
+  x.font = "500 68px 'Saira Condensed', sans-serif";
+  const a = "FANTA", b = "LITICO";
+  const wa = x.measureText(a).width, wb = x.measureText(b).width;
+  const x0 = (SHARE_W - wa - wb)/2;
+  x.textAlign = "left";
+  x.fillStyle = SCURO; x.fillText(a, x0, yLogo);
+  x.fillStyle = VERDE; x.fillText(b, x0+wa, yLogo);
+  x.textAlign = "center";
+  x.fillStyle = "#71806E"; x.font = "400 34px 'Saira', sans-serif";
+  x.fillText("fantalitico.datigrezzi.it", SHARE_W/2, yLogo+58);
+
+  return c;
+}
+
+async function condividiFormazione(){
+  const btn = el("btnShareLineup");
+  const testoOriginale = btn ? btn.textContent : "";
+  try{
+    if(btn){ btn.disabled = true; btn.textContent = "Preparo l'immagine…"; }
+    // I caratteri vanno attesi: senza questo il canvas disegna con un ripiego di sistema.
+    if(document.fonts && document.fonts.ready) await document.fonts.ready;
+
+    const ranking = MODULES.map(m => ({mod:m, lu:bestLineup(m)})).sort((a,b) => b.lu.ev - a.lu.ev);
+    const sel = S.selMod ? ranking.find(v => v.mod.name === S.selMod) || ranking[0] : ranking[0];
+    if(!sel.lu.complete){ alert("Formazione incompleta: mancano giocatori per questo modulo."); return; }
+
+    const canvas = disegnaCampoCondivisibile(sel.lu, sel.mod, monteCarlo(sel.lu).mean);
+    const blob = await new Promise(res => canvas.toBlob(res, "image/png"));
+    if(!blob) throw new Error("canvas vuoto");
+
+    const file = new File([blob], "formazione-fantalitico.png", {type:"image/png"});
+    const testo = `Migliore formazione possibile (${sel.mod.name}) feat. Fantalitico — fantalitico.datigrezzi.it`;
+
+    if(navigator.canShare && navigator.canShare({files:[file]})){
+      await navigator.share({files:[file], text:testo});
+    } else {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url; a.download = "formazione-fantalitico.png"; a.click();
+      setTimeout(() => URL.revokeObjectURL(url), 5000);
+    }
+  } catch(e){
+    if(e && e.name === "AbortError") return;   // l'utente ha chiuso il pannello di condivisione
+    console.error(e);
+    alert("Non sono riuscito a creare l'immagine.");
+  } finally {
+    if(btn){ btn.disabled = false; btn.textContent = testoOriginale; }
+  }
 }
 
 /* ---------- TAB: FATTORE C ---------- */
