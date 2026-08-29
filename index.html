@@ -1555,7 +1555,10 @@ function disegnaCampoCondivisibile(lu, mod, mediaAttesa){
   for(const [ruolo, n, y] of righe){
     byRole[ruolo].slice(0, n).forEach((r, i) => {
       const cx = px + pw/(n+1)*(i+1);
-      const st = S.byId.get(r.id), val = scheierability(r);
+      // Stesso valore che pitchSVG() disegna a schermo: E[fv], cioè quanto
+      // vale il giocatore SE gioca. Non E[slot] (che ha il pavimento a 4,0 per
+      // il rischio panchina) e non la schierabilità (E[fv] × titolarità).
+      const st = S.byId.get(r.id), val = expFV(r).val;
       x.beginPath(); x.arc(cx, y, 52, 0, Math.PI*2);
       x.fillStyle = CARD; x.fill();
       x.strokeStyle = COL[ruolo]; x.lineWidth = 6; x.stroke();
@@ -1569,9 +1572,9 @@ function disegnaCampoCondivisibile(lu, mod, mediaAttesa){
   }
 
   x.fillStyle = DIM; x.font = "400 30px 'Saira', sans-serif";
-  x.fillText("rendimento atteso di ogni slot — scala 4,0–8,0", SHARE_W/2, py+ph+70);
+  x.fillText("fantavoto atteso se scende in campo", SHARE_W/2, py+ph+70);
   x.font = "400 26px 'Saira', sans-serif";
-  x.fillText("4,0 è chi quasi certamente non gioca", SHARE_W/2, py+ph+112);
+  x.fillText("in pratica da 5 a 8 — un portiere parte più basso di un attaccante", SHARE_W/2, py+ph+112);
 
   // Logo: Saira Condensed 900 con la spaziatura del titolo dell'app (.03em).
   const yLogo = SHARE_H - 170;
@@ -1585,8 +1588,6 @@ function disegnaCampoCondivisibile(lu, mod, mediaAttesa){
   x.fillStyle = FLUO; x.fillText(b, x0+wa, yLogo);
   if("letterSpacing" in x) x.letterSpacing = "0px";
   x.textAlign = "center";
-  x.fillStyle = DIM; x.font = "400 34px 'Saira', sans-serif";
-  x.fillText("fantalitico.datigrezzi.it", SHARE_W/2, yLogo+58);
 
   return c;
 }
@@ -1608,7 +1609,7 @@ async function condividiFormazione(){
     if(!blob) throw new Error("canvas vuoto");
 
     const file = new File([blob], "formazione-fantalitico.png", {type:"image/png"});
-    const testo = `Migliore formazione possibile (${sel.mod.name}) feat. Fantalitico — fantalitico.datigrezzi.it`;
+    const testo = `Migliore formazione possibile (${sel.mod.name}) feat. Fantalitico`;
 
     if(navigator.canShare && navigator.canShare({files:[file]})){
       await navigator.share({files:[file], text:testo});
