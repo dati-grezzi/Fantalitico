@@ -2,8 +2,6 @@ name: Aggiorna dati Fantalitico
 
 on:
   schedule:
-    # Lunedì 05:00 UTC (dopo la giornata) e venerdì 12:00 UTC (prima della giornata,
-    # per classifica, rigoristi e indisponibili aggiornati)
     - cron: "0 6 * * *"    # ogni giorno, 6:00 UTC
     - cron: "0 18 * * *"   # ogni giorno, 18:00 UTC (notizie formazioni tardo pomeriggio)
   workflow_dispatch:   # avvio manuale dal tab Actions
@@ -19,10 +17,11 @@ permissions:
 jobs:
   update:
     runs-on: ubuntu-latest
+    timeout-minutes: 30   # rete di sicurezza sul job intero, non solo sui singoli step
     steps:
-      - uses: actions/checkout@v4.2.0
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5.2.0
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -48,10 +47,19 @@ jobs:
       - name: Titolarità da SOS Fanta (seconda fonte per il consensus)
         run: python sosfanta_titolarita_scraper.py
 
+      # TERZA FONTE (30/08) — Calciomagazine. Serve soprattutto per COPERTURA:
+      # con due sole fonti, su 461 giocatori solo 220 erano visti da entrambe.
+      # Questa pagina pubblica titolari, panchina, squalificati e indisponibili
+      # di tutte e 20 le squadre (oltre 450 nomi), e nei ballottaggi dà anche
+      # la percentuale vera. È HTML servito dal server: niente Playwright.
+      - name: Titolarità da Calciomagazine (terza fonte per il consensus)
+        run: python calciomagazine_scraper.py
+        continue-on-error: true
+
       - name: Prezzi reali d'asta da Fantacalcio-Online (sostituisce la stima FVM per il Max % in Asta)
         run: python fantacalcio_online_scraper.py
 
-      - name: Consensus titolarità (fantacalcio.it + sosfanta.com)
+      - name: Consensus titolarità (fantacalcio.it + sosfanta.com + calciomagazine.it)
         run: python titolarita_consensus.py
 
       # UNDERSTAT riattivato il 25/08 — il sito ha finalmente pubblicato la
@@ -87,7 +95,12 @@ jobs:
         run: |
           git config user.name "fantalitico-bot"
           git config user.email "actions@users.noreply.github.com"
+          # data/*.json non pesca dentro le sottocartelle: senza la seconda
+          # riga gli output per-fonte restano solo nel runner e si perdono,
+          # e non c'è modo di sapere a posteriori quale fonte ha prodotto un
+          # valore sospetto nel consensus.
           git add data/*.json
+          git add data/fonti_titolarita/*.json || true
           git diff --cached --quiet || git commit -m "Dati aggiornati $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
 
@@ -95,17 +108,20 @@ jobs:
     # Gira SEMPRE (non più solo su lancio manuale) — uno step interno decide
     # da solo se c'è davvero una giornata da processare, guardando quale
     # giornata è "in vetrina" sul calendario (quella successiva alla più
-    # recente conclusa) e se è già stata integrata nello storico. Lasciato
-    # comunque disponibile l'override manuale (campo "giornata" su Run
-    # workflow) per un eventuale recupero.
+    # recente conclusa) e se è già stata integrata nello storico. Dal 29/08
+    # il criterio è la COPERTURA (tutte e 20 le squadre), non la semplice
+    # presenza: così un turno spezzato da un posticipo viene ripreso e
+    # completato, invece di restare congelato a metà. Lasciato comunque
+    # disponibile l'override manuale (campo "giornata" su Run workflow).
     needs: update
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4.2.0
+      - uses: actions/checkout@v5
         with:
           ref: main   # riparte dal commit appena pushato dal job 'update'
 
-      - uses: actions/setup-python@v5.2.0
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
