@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-08-30T11:07:30.062530+00:00",
+ "aggiornato": "2026-08-30T20:30:34.799199+00:00",
  "fonte": "Understat (tabella Players, totali di stagione)",
  "note": "Mapping ID fantacalcio → {apps, minutes_total, goals, assists, xG, xA, xG90, xA90, shots_p90, key_passes_p90}. Da understat_players_2026.csv.",
  "giocatori": {
@@ -29,6 +29,20 @@
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
    "understat_name": "Antonio Raimondo",
+   "match_score": 0.9
+  },
+  "7017": {
+   "apps": 2,
+   "minutes_total": 180,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.78,
+   "xA90": 0.08,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
+   "understat_name": "Tasos Douvikas",
    "match_score": 0.9
   },
   "7523": {
@@ -129,6 +143,20 @@
    "understat_name": "Cristian Volpato",
    "match_score": 0.9
   },
+  "6052": {
+   "apps": 2,
+   "minutes_total": 162,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.12,
+   "xA90": 0.01,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
+   "understat_name": "Rasmus Højlund",
+   "match_score": 0.9
+  },
   "6618": {
    "apps": 2,
    "minutes_total": 128,
@@ -171,20 +199,6 @@
    "understat_name": "Pietro Comuzzo",
    "match_score": 0.9
   },
-  "7017": {
-   "apps": 1,
-   "minutes_total": 90,
-   "goals": 0,
-   "assists": 0,
-   "xG": 0.0,
-   "xA": 0.0,
-   "xG90": 1.36,
-   "xA90": 0.0,
-   "shots_p90": 0.0,
-   "key_passes_p90": 0.0,
-   "understat_name": "Tasos Douvikas",
-   "match_score": 0.9
-  },
   "7311": {
    "apps": 1,
    "minutes_total": 90,
@@ -197,6 +211,20 @@
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
    "understat_name": "Alessandro Romano",
+   "match_score": 0.9
+  },
+  "7126": {
+   "apps": 2,
+   "minutes_total": 111,
+   "goals": 0,
+   "assists": 1,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.23,
+   "xA90": 0.16,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
+   "understat_name": "Martin Baturina",
    "match_score": 0.9
   },
   "7198": {
@@ -409,14 +437,28 @@
    "understat_name": "Nicolò Barella",
    "match_score": 0.9
   },
-  "1852": {
-   "apps": 1,
-   "minutes_total": 90,
+  "536": {
+   "apps": 2,
+   "minutes_total": 157,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.11,
+   "xG90": 0.0,
+   "xA90": 0.19,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
+   "understat_name": "Matteo Politano",
+   "match_score": 0.9
+  },
+  "1852": {
+   "apps": 2,
+   "minutes_total": 120,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.08,
    "xA90": 0.02,
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
@@ -452,8 +494,8 @@
    "match_score": 0.9
   },
   "572": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
@@ -578,22 +620,22 @@
    "match_score": 0.9
   },
   "4777": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 150,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.02,
-   "xA90": 0.11,
+   "xG90": 0.11,
+   "xA90": 0.07,
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
    "understat_name": "Scott McTominay",
    "match_score": 0.9
   },
   "6966": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
@@ -634,14 +676,14 @@
    "match_score": 1.0
   },
   "4287": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.08,
-   "xA90": 0.02,
+   "xG90": 0.04,
+   "xA90": 0.01,
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
    "understat_name": "Stanislav Lobotka",
@@ -675,6 +717,20 @@
    "understat_name": "Nikola Vlasic",
    "match_score": 0.9
   },
+  "4220": {
+   "apps": 2,
+   "minutes_total": 151,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.02,
+   "xA90": 0.03,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
+   "understat_name": "Franck Zambo",
+   "match_score": 0.9
+  },
   "6682": {
    "apps": 1,
    "minutes_total": 90,
@@ -690,14 +746,14 @@
    "match_score": 0.9
   },
   "5641": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.07,
-   "xA90": 0.0,
+   "xG90": 0.04,
+   "xA90": 0.01,
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
    "understat_name": "Trevoh Chalobah",
@@ -830,13 +886,13 @@
    "match_score": 0.9
   },
   "2816": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.0,
+   "xG90": 0.01,
    "xA90": 0.0,
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
@@ -984,14 +1040,14 @@
    "match_score": 0.9
   },
   "4409": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
-   "assists": 0,
+   "assists": 1,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.02,
-   "xA90": 0.0,
+   "xG90": 0.01,
+   "xA90": 0.03,
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
    "understat_name": "Amir Rrahmani",
@@ -1023,6 +1079,20 @@
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
    "understat_name": "Daniel Maldini",
+   "match_score": 0.9
+  },
+  "5559": {
+   "apps": 2,
+   "minutes_total": 111,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.03,
+   "xA90": 0.07,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
+   "understat_name": "Lucas Da Cunha",
    "match_score": 0.9
   },
   "4952": {
@@ -1166,14 +1236,14 @@
    "match_score": 0.9
   },
   "7412": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
    "xG90": 0.0,
-   "xA90": 0.67,
+   "xA90": 0.37,
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
    "understat_name": "Luis Milla",
@@ -1431,6 +1501,20 @@
    "understat_name": "Adam Obert",
    "match_score": 0.9
   },
+  "6638": {
+   "apps": 2,
+   "minutes_total": 171,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.0,
+   "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
+   "understat_name": "Rafa Marín",
+   "match_score": 0.9
+  },
   "5757": {
    "apps": 2,
    "minutes_total": 103,
@@ -1558,14 +1642,14 @@
    "match_score": 1.0
   },
   "6727": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 152,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
    "xG90": 0.01,
-   "xA90": 0.09,
+   "xA90": 0.05,
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
    "understat_name": "Yan Couto",
@@ -1670,14 +1754,14 @@
    "match_score": 0.9
   },
   "6875": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 175,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.14,
-   "xA90": 0.05,
+   "xG90": 0.22,
+   "xA90": 0.06,
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
    "understat_name": "Nico Paz",
@@ -1823,6 +1907,20 @@
    "understat_name": "Christos Mandas",
    "match_score": 0.9
   },
+  "6967": {
+   "apps": 2,
+   "minutes_total": 110,
+   "goals": 0,
+   "assists": 1,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.17,
+   "xA90": 0.63,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
+   "understat_name": "Assane Diao",
+   "match_score": 0.9
+  },
   "6531": {
    "apps": 2,
    "minutes_total": 113,
@@ -1852,14 +1950,14 @@
    "match_score": 0.9
   },
   "6869": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.48,
-   "xA90": 0.02,
+   "xG90": 0.25,
+   "xA90": 0.01,
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
    "understat_name": "Jacobo Ramón",
@@ -1922,14 +2020,14 @@
    "match_score": 0.9
   },
   "6867": {
-   "apps": 1,
-   "minutes_total": 90,
+   "apps": 2,
+   "minutes_total": 180,
    "goals": 0,
    "assists": 0,
    "xG": 0.0,
    "xA": 0.0,
-   "xG90": 0.05,
-   "xA90": 0.04,
+   "xG90": 0.08,
+   "xA90": 0.09,
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
    "understat_name": "Álex Valle",
@@ -2381,6 +2479,20 @@
    "shots_p90": 0.0,
    "key_passes_p90": 0.0,
    "understat_name": "Kieron Bowie",
+   "match_score": 0.9
+  },
+  "7351": {
+   "apps": 2,
+   "minutes_total": 96,
+   "goals": 0,
+   "assists": 0,
+   "xG": 0.0,
+   "xA": 0.0,
+   "xG90": 0.12,
+   "xA90": 0.0,
+   "shots_p90": 0.0,
+   "key_passes_p90": 0.0,
+   "understat_name": "Alisson Santos",
    "match_score": 0.9
   },
   "7574": {
