@@ -639,7 +639,10 @@ async function loadData(){
 
   const dt = pl ? new Date(pl.aggiornato) : null;
   document.getElementById("subtitle").textContent = pl
-    ? `${S.db.length} giocatori · dati ${dt.toLocaleDateString("it-IT")}`
+    // Ora oltre alla data: la pipeline gira due volte al giorno, quindi due
+    // aperture nello stesso giorno possono avere dati diversi. Senza l'ora
+    // sembrava che l'app cambiasse consiglio da sola.
+    ? `${S.db.length} giocatori · dati ${dt.toLocaleDateString("it-IT")} ${dt.toLocaleTimeString("it-IT",{hour:"2-digit",minute:"2-digit"})}`
     : "⚠ dati non raggiungibili";
 }
 
@@ -772,7 +775,7 @@ function gauss(){
 }
 function monteCarlo(lu){
   const totals = new Float64Array(N_SIM);
-  const xi = lu.xi.map(r => ({p:r.pTit/100, e:expFV(r).val, s:SIGMA[roleOf(S.byId.get(r.id))], role:roleOf(S.byId.get(r.id))}));
+  const xi = lu.xi.map(r => ({p:pTitEffettivo(r)/100, e:expFV(r).val, s:SIGMA[roleOf(S.byId.get(r.id))], role:roleOf(S.byId.get(r.id))}));
   const bench = {};
   ROLES.forEach(role => bench[role] = lu.bench[role].map(r =>
     ({e:expFV(r).val, s:SIGMA[role]})));
@@ -1365,10 +1368,8 @@ function renderRosa(){
           ${conflittoTitolarita(r) ? `<div class="sub" style="margin:8px 0 0; color:var(--red,#e55)">
             ⚠️ Contrasto tra fonti: elencato indisponibile, ma le probabili formazioni lo danno oltre il 50% titolare —
             controlla tu la situazione reale prima di affidarti al valore mostrato.</div>` : ""}
-          <label>Titolarità: <b style="color:var(--chalk)">${pTitEffettivo(r)}%</b>${
-            pTitEffettivo(r) !== r.pTit ? '<span style="color:var(--dim)"> (indisponibile: valore salvato ignorato)</span>' : ""}
-            <input type="range" min="0" max="100" step="5" value="${r.pTit}"
-              oninput="patch(${r.id},'pTit',+this.value)"></label>
+          <div>Titolarità: <b style="color:var(--chalk)">${pTitEffettivo(r)}%</b>
+            <span style="color:var(--dim); font-size:12px"> — da probabili formazioni e presenze</span></div>
           <div class="togglerow">
             <button class="tog ${r.sq?"on red":""}" onclick="patch(${r.id},'sq',${!r.sq})">Squalificato</button>
             <button class="tog ${r.inf?"on red":""}" onclick="patch(${r.id},'inf',${!r.inf})">Indisponibile</button>
@@ -1699,7 +1700,7 @@ function openMetodo(){
       <p><b>Indisponibili</b> — squalificati e infortunati vengono proposti dai dati web
       al momento dell'aggiunta in rosa; verifica sempre prima della giornata.</p>
       <p><b>Titolarità</b> — Indice di Schierabilità = base × titolarità.
-      Titolarità reale da probabili formazioni (SOS Fanta, Fantacalcio.it, Calciomagazine) quando disponibili (agosto);
+      Titolarità reale da probabili formazioni (Fantacalcio.it peso 1,0 · SOS Fanta peso 0,8) quando disponibili;
       altrimenti fallback a presenze storiche (PV). E[slot] = p·E[fv] + (1−p)·valore riserva per la Rosa.</p>
       <p><b>Regole Lega</b> — Bonus Capitano e Modificatore di Difesa sono <i>opzionali</i>,
       configurabili in Altro → Regole Lega, e si applicano al <b>Top 11</b> (dati reali a giornata
@@ -1910,14 +1911,24 @@ function conflittoTitolarita(r){
   return !!(fonte && fonte.confidence != null && fonte.confidence > 0.5);
 }
 function pTitEffettivo(r){
+  // Dal 30/08 la titolarità NON è più modificabile a mano e non viene più letta
+  // dal valore salvato in rosa. Motivo: la barra era un residuo di quando non
+  // avevamo fonti reali, e scorrendo la lista bastava sfiorarla per alterare la
+  // titolarità di un giocatore. Siccome la titolarità entra in scheierability(),
+  // cioè nel criterio con cui il greedy sceglie gli undici, un tocco accidentale
+  // cambiava la formazione consigliata — sintomo osservato: consigli diversi a
+  // ogni apertura, senza che l'utente avesse cambiato nulla.
+  // Ora la verità è una sola: indiceTitolarita(), che fonde storico presenze e
+  // consensus delle probabili formazioni. r.pTit resta nel dato per le rose
+  // importate e per compatibilità, ma non guida più niente.
   const st = S.byId.get(r.id);
-  if(!st) return r.pTit;
+  if(!st) return r.pTit;   // giocatore sintetico: non abbiamo fonti, resta il salvato
   const cat = S.indisponibili && S.indisponibili[st.squadra];
   const fuoriCerto = cat && (
     (cat.squalificati||[]).some(x => String(x.id) === String(st.id)) ||
     (cat.infortunati||[]).some(x => String(x.id) === String(st.id))
   );
-  if(!fuoriCerto) return r.pTit;
+  if(!fuoriCerto) return Math.round(indiceTitolarita(st)*100);
   // In caso di conflitto (indisponibile MA le probabili formazioni lo danno
   // titolare) mostro il valore del consensus, non un 2% forzato che
   // nasconderebbe l'informazione — l'avviso ⚠️ resta comunque visibile,

@@ -28,6 +28,11 @@ OUT_JSON = "data/titolarita_reale.json"
 PESI_FONTE = {
     "fantacalcio.it": 1.0,
     "sosfanta.com": 0.8,      # meno storicamente validata di fantacalcio.it in questo progetto, peso minore
+    # Terza fonte, aggiunta il 30/08 per coprire i giocatori visti da una sola
+    # delle prime due. Peso più basso non per sfiducia nella redazione, ma
+    # perché il suo segnale è meno fine: se non pubblica percentuali, la
+    # confidence è quasi binaria e porta meno informazione di un "73%".
+    "calciomagazine.it": 0.6,
 }
 PESO_DEFAULT = 0.5  # per fonti non ancora presenti in PESI_FONTE (nuove, non tarate)
 
@@ -67,11 +72,22 @@ def combina(fonti):
         if peso_tot <= 0:
             continue
         confidence = sum(c * p for c, p, _ in letture) / peso_tot
+        # Conserviamo anche il valore GREZZO di ogni fonte, non solo la media.
+        # Senza questo, se il consensus dà un numero sospetto non c'è modo di
+        # sapere quale fonte l'ha prodotto: i file per-fonte vivono solo dentro
+        # il runner e non vengono committati. Costa pochi byte e permette di
+        # misurare quanto le fonti sono davvero d'accordo — che è la domanda
+        # che dice se l'incrocio sta lavorando o se stiamo solo ricopiando
+        # due volte lo stesso dato.
+        valori = {fn: round(c, 3) for c, _, fn in letture}
+        scarto = round(max(valori.values()) - min(valori.values()), 3) if len(valori) > 1 else None
         risultato[pid] = {
             **anagrafica[pid],
             "confidence": round(confidence, 3),
             "fonti": [fn for _, _, fn in letture],
             "n_fonti": len(letture),
+            "valori": valori,
+            "scarto": scarto,
         }
     return risultato
 
@@ -91,6 +107,25 @@ def main():
 
     multi_fonte = [pid for pid, g in consensus.items() if g["n_fonti"] > 1]
     print(f"   di cui {len(multi_fonte)} confermati da piu' di una fonte")
+
+    # Quanto sono d'accordo le fonti, dove si sovrappongono
+    scarti = [consensus[pid]["scarto"] for pid in multi_fonte if consensus[pid]["scarto"] is not None]
+    if scarti:
+        scarti_ord = sorted(scarti)
+        medio = sum(scarti) / len(scarti)
+        mediano = scarti_ord[len(scarti_ord) // 2]
+        concordi = sum(1 for x in scarti if x <= 0.10)
+        discordi = sorted(
+            ((consensus[pid]["scarto"], consensus[pid].get("nome"), consensus[pid]["valori"])
+             for pid in multi_fonte if consensus[pid]["scarto"] is not None),
+            reverse=True,
+        )[:5]
+        print(f"   scarto tra fonti: medio {medio:.3f}, mediano {mediano:.3f}")
+        print(f"   d'accordo entro 10 punti: {concordi}/{len(scarti)} ({100*concordi/len(scarti):.0f}%)")
+        print("   maggiori disaccordi:")
+        for sc, nome, val in discordi:
+            dettaglio = " vs ".join(f"{fn} {v:.2f}" for fn, v in val.items())
+            print(f"      {nome or '?':22s} scarto {sc:.2f}  ({dettaglio})")
 
     os.makedirs("data", exist_ok=True)
     output = {
