@@ -115,17 +115,21 @@ def main():
         medio = sum(scarti) / len(scarti)
         mediano = scarti_ord[len(scarti_ord) // 2]
         concordi = sum(1 for x in scarti if x <= 0.10)
+        # Ordino con una chiave esplicita sul solo scarto: confrontando le
+        # tuple intere, a parita' di scarto Python finiva per confrontare i
+        # dizionari dei valori e sollevava TypeError.
         discordi = sorted(
-            ((consensus[pid]["scarto"], consensus[pid].get("nome"), consensus[pid]["valori"])
-             for pid in multi_fonte if consensus[pid]["scarto"] is not None),
+            (pid for pid in multi_fonte if consensus[pid]["scarto"] is not None),
+            key=lambda pid: consensus[pid]["scarto"],
             reverse=True,
         )[:5]
         print(f"   scarto tra fonti: medio {medio:.3f}, mediano {mediano:.3f}")
         print(f"   d'accordo entro 10 punti: {concordi}/{len(scarti)} ({100*concordi/len(scarti):.0f}%)")
         print("   maggiori disaccordi:")
-        for sc, nome, val in discordi:
-            dettaglio = " vs ".join(f"{fn} {v:.2f}" for fn, v in val.items())
-            print(f"      {nome or '?':22s} scarto {sc:.2f}  ({dettaglio})")
+        for pid in discordi:
+            g = consensus[pid]
+            dettaglio = " vs ".join(f"{fn} {v:.2f}" for fn, v in g["valori"].items())
+            print(f"      {(g.get('nome') or '?'):22s} scarto {g['scarto']:.2f}  ({dettaglio})")
 
     os.makedirs("data", exist_ok=True)
     output = {
