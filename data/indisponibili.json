@@ -1,13 +1,13 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-08-31T12:29:44.109138+00:00",
+  "aggiornato": "2026-08-31T22:27:59.171489+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
         {
           "nome": "Kristensen T.",
-          "dettaglio": "Trauma distorsivo alla caviglia, in dubbio per la 2a",
-          "rientro_giornata": 2,
+          "dettaglio": "Trauma distorsivo alla caviglia, in dubbio per la 3a",
+          "rientro_giornata": 3,
           "id": "6485",
           "match_score": 1.0
         },
@@ -45,17 +45,17 @@
     "cagliari": {
       "infortunati": [
         {
+          "nome": "Mina",
+          "dettaglio": "Affaticamento al polpaccio, in dubbio per la 3a",
+          "rientro_giornata": 3,
+          "id": "4210",
+          "match_score": 1.0
+        },
+        {
           "nome": "Idrissi R.",
           "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "7125",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Mina",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "4210",
           "match_score": 1.0
         }
       ],
@@ -91,13 +91,6 @@
     "genoa": {
       "infortunati": [
         {
-          "nome": "Havel",
-          "dettaglio": "Risentimento muscolare all’adduttore della coscia destra, rientro previsto per la 2a",
-          "rientro_giornata": 2,
-          "id": "7453",
-          "match_score": 1.0
-        },
-        {
           "nome": "Venturino",
           "dettaglio": "Intervento chirurgico di “pulizia” del tendine rotuleo, in dubbio per la 3a",
           "rientro_giornata": 3,
@@ -111,6 +104,13 @@
     "juventus": {
       "infortunati": [
         {
+          "nome": "Cambiaso",
+          "dettaglio": "Problema alla caviglia, in dubbio per la 3a",
+          "rientro_giornata": 3,
+          "id": "5520",
+          "match_score": 1.0
+        },
+        {
           "nome": "Mckennie",
           "dettaglio": "Affaticamento muscolare, in dubbio per la 3a",
           "rientro_giornata": 3,
@@ -118,17 +118,24 @@
           "match_score": 1.0
         },
         {
-          "nome": "Yildiz",
-          "dettaglio": "Frattura al quinto metatarso del piede sinistro, in dubbio per la 12a in caso di operazione chirurgica",
-          "rientro_giornata": 12,
-          "id": "6434",
+          "nome": "Thuram K.",
+          "dettaglio": "Problema al ginocchio, da valutare",
+          "rientro_giornata": null,
+          "id": "5562",
           "match_score": 1.0
         },
         {
-          "nome": "Thuram K.",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "5562",
+          "nome": "Ekhator",
+          "dettaglio": "Lesione di medio grado del muscolo semitendinoso, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "6822",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Yildiz",
+          "dettaglio": "Operato per frattura al quinto metatarso del piede sinistro, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "6434",
           "match_score": 1.0
         }
       ],
@@ -142,6 +149,13 @@
           "dettaglio": "Autorizzato a osservare alcuni giorni di temporanea indisponibilità per completare un percorso clinico già programmato, in dubbio per la 3a",
           "rientro_giornata": 3,
           "id": "327",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Rovella",
+          "dettaglio": "Problema al polpaccio, in dubbio per la 3a",
+          "rientro_giornata": 3,
+          "id": "4459",
           "match_score": 1.0
         },
         {
@@ -164,13 +178,6 @@
           "rientro_giornata": 6,
           "id": "333",
           "match_score": 1.0
-        },
-        {
-          "nome": "Pellegrini Lu.",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "2728",
-          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -178,6 +185,20 @@
     },
     "monza": {
       "infortunati": [
+        {
+          "nome": "Ciurria",
+          "dettaglio": "Problema fisico, in dubbio per la 3a",
+          "rientro_giornata": 3,
+          "id": "5880",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Tourè I.",
+          "dettaglio": "Fastidio articolare, in dubbio per la 3a",
+          "rientro_giornata": 3,
+          "id": "7146",
+          "match_score": 1.0
+        },
         {
           "nome": "Pessina",
           "dettaglio": "Operato per lussazione della rotula del ginocchio destro, in dubbio per la 9a",
@@ -193,8 +214,8 @@
       "infortunati": [
         {
           "nome": "Mazzocchi",
-          "dettaglio": "L'esterno del Napoli non si è allenato a causa di un sovraccarico al ginocchio",
-          "rientro_giornata": null,
+          "dettaglio": "Sovraccarico al ginocchio, in dubbio per la 3a",
+          "rientro_giornata": 3,
           "id": "5481",
           "match_score": 1.0
         },
@@ -232,6 +253,13 @@
     "roma": {
       "infortunati": [
         {
+          "nome": "N'dicka",
+          "dettaglio": "Problema all'adduttore, in dubbio per la 3a",
+          "rientro_giornata": 3,
+          "id": "4317",
+          "match_score": 1.0
+        },
+        {
           "nome": "Pellegrini Lo.",
           "dettaglio": "Ritardo di condizione, in dubbio per la 3a",
           "rientro_giornata": 3,
@@ -251,13 +279,6 @@
     },
     "sassuolo": {
       "infortunati": [
-        {
-          "nome": "Walukiewicz",
-          "dettaglio": "Fuori per un problema fisico, in dubbio per la 2a",
-          "rientro_giornata": 2,
-          "id": "4374",
-          "match_score": 1.0
-        },
         {
           "nome": "Boloca",
           "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per la 3a",
@@ -280,6 +301,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Walukiewicz",
+          "dettaglio": "Fuori per un problema fisico, in dubbio per la 3a",
+          "rientro_giornata": 3,
+          "id": "4374",
+          "match_score": 1.0
+        },
+        {
           "nome": "Konè I.",
           "dettaglio": "Intervento di riduzione della frattura della gamba sinistra, in dubbio per la 20a",
           "rientro_giornata": 20,
@@ -292,13 +320,6 @@
     },
     "torino": {
       "infortunati": [
-        {
-          "nome": "Anjorin",
-          "dettaglio": "Fuori per un problema fisico, in dubbio per la 2a",
-          "rientro_giornata": 2,
-          "id": "6889",
-          "match_score": 1.0
-        },
         {
           "nome": "Casadei",
           "dettaglio": "Affaticamento muscolare, in dubbio per la 3a",
@@ -314,8 +335,8 @@
       "infortunati": [
         {
           "nome": "Chakvetadze",
-          "dettaglio": "Frattura al terzo metatarso del piede destro, in dubbio per la 2a",
-          "rientro_giornata": 2,
+          "dettaglio": "Frattura al terzo metatarso del piede destro, in dubbio per la 3a",
+          "rientro_giornata": 3,
           "id": "7418",
           "match_score": 1.0
         },
@@ -328,7 +349,7 @@
         },
         {
           "nome": "Palma",
-          "dettaglio": "Lesione all'adduttore. In dubbio per la 6a",
+          "dettaglio": "Lesione all'adduttore, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "6925",
           "match_score": 1.0
@@ -341,13 +362,7 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [
-        {
-          "nome": "Kabasele",
-          "id": "4263",
-          "match_score": 1.0
-        }
-      ],
+      "squalificati": [],
       "diffidati": []
     },
     "venezia": {

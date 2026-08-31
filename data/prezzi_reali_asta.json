@@ -1,6 +1,6 @@
 {
   "fonte": "fantacalcio-online.com",
-  "aggiornato": "2026-08-31T12:29:54.447898+00:00",
+  "aggiornato": "2026-08-31T22:28:09.982648+00:00",
   "giocatori": {
     "5585": {
       "nome": "MALEN Donyell",
@@ -1905,17 +1905,6 @@
       "quotazione": 7.0,
       "match_score": 0.95
     },
-    "7603": {
-      "nome": "GRABARA Kamil",
-      "squadra": "Juventus",
-      "ruolo": "P",
-      "percMax": 0.27,
-      "comprato_pct": 4.4,
-      "prezzo_350": 0.93,
-      "prezzo_500": null,
-      "quotazione": 1.0,
-      "match_score": 0.95
-    },
     "7301": {
       "nome": "TORNQVIST Noel",
       "squadra": "Como",
@@ -1924,6 +1913,17 @@
       "comprato_pct": 4.4,
       "prezzo_350": 3.12,
       "prezzo_500": 0.94,
+      "quotazione": 1.0,
+      "match_score": 0.95
+    },
+    "7603": {
+      "nome": "GRABARA Kamil",
+      "squadra": "Juventus",
+      "ruolo": "P",
+      "percMax": 0.27,
+      "comprato_pct": 4.4,
+      "prezzo_350": 0.93,
+      "prezzo_500": null,
       "quotazione": 1.0,
       "match_score": 0.95
     },
@@ -3467,17 +3467,6 @@
       "quotazione": 5.0,
       "match_score": 0.95
     },
-    "6271": {
-      "nome": "EL AYNAOUI Neil",
-      "squadra": "Roma",
-      "ruolo": "C",
-      "percMax": 2.87,
-      "comprato_pct": 1.9,
-      "prezzo_350": 15.78,
-      "prezzo_500": 14.34,
-      "quotazione": 7.0,
-      "match_score": 0.85
-    },
     "6415": {
       "nome": "PALMISANI Lorenzo",
       "squadra": "Frosinone",
@@ -3488,6 +3477,17 @@
       "prezzo_500": null,
       "quotazione": 7.0,
       "match_score": 0.95
+    },
+    "6271": {
+      "nome": "EL AYNAOUI Neil",
+      "squadra": "Roma",
+      "ruolo": "C",
+      "percMax": 2.87,
+      "comprato_pct": 1.9,
+      "prezzo_350": 15.78,
+      "prezzo_500": 14.34,
+      "quotazione": 7.0,
+      "match_score": 0.85
     },
     "6986": {
       "nome": "RENSCH Devyne",
@@ -3995,17 +3995,6 @@
       "quotazione": 5.0,
       "match_score": 0.95
     },
-    "4867": {
-      "nome": "TURATI Stefano",
-      "squadra": "Sassuolo",
-      "ruolo": "P",
-      "percMax": 2.44,
-      "comprato_pct": 1.4,
-      "prezzo_350": 1.0,
-      "prezzo_500": 12.19,
-      "quotazione": 1.0,
-      "match_score": 0.95
-    },
     "6682": {
       "nome": "PIZZIGNACCO Semuel",
       "squadra": "Serie Minori",
@@ -4014,6 +4003,17 @@
       "comprato_pct": 1.4,
       "prezzo_350": null,
       "prezzo_500": null,
+      "quotazione": 1.0,
+      "match_score": 0.95
+    },
+    "4867": {
+      "nome": "TURATI Stefano",
+      "squadra": "Sassuolo",
+      "ruolo": "P",
+      "percMax": 2.44,
+      "comprato_pct": 1.4,
+      "prezzo_350": 1.0,
+      "prezzo_500": 12.19,
       "quotazione": 1.0,
       "match_score": 0.95
     },
@@ -5436,10 +5436,10 @@
       "quotazione": 1.0,
       "match_score": 0.95
     },
-    "6640": {
-      "nome": "FELICI Mattia",
-      "squadra": "Cagliari",
-      "ruolo": "C",
+    "7453": {
+      "nome": "HAVEL Elias",
+      "squadra": "Genoa",
+      "ruolo": "A",
       "percMax": null,
       "comprato_pct": 0.3,
       "prezzo_350": null,
@@ -5447,10 +5447,10 @@
       "quotazione": 9.0,
       "match_score": 0.95
     },
-    "7453": {
-      "nome": "HAVEL Elias",
-      "squadra": "Genoa",
-      "ruolo": "A",
+    "6640": {
+      "nome": "FELICI Mattia",
+      "squadra": "Cagliari",
+      "ruolo": "C",
       "percMax": null,
       "comprato_pct": 0.3,
       "prezzo_350": null,
@@ -5491,17 +5491,6 @@
       "quotazione": 1.0,
       "match_score": 0.95
     },
-    "7564": {
-      "nome": "LEYSEN Fedde",
-      "squadra": "Sassuolo",
-      "ruolo": "D",
-      "percMax": null,
-      "comprato_pct": 0.3,
-      "prezzo_350": null,
-      "prezzo_500": null,
-      "quotazione": 8.0,
-      "match_score": 0.95
-    },
     "7146": {
       "nome": "TOURE Idrissa",
       "squadra": "Monza",
@@ -5512,6 +5501,17 @@
       "prezzo_500": 11.97,
       "quotazione": 8.0,
       "match_score": 0.9
+    },
+    "7564": {
+      "nome": "LEYSEN Fedde",
+      "squadra": "Sassuolo",
+      "ruolo": "D",
+      "percMax": null,
+      "comprato_pct": 0.3,
+      "prezzo_350": null,
+      "prezzo_500": null,
+      "quotazione": 8.0,
+      "match_score": 0.95
     },
     "6207": {
       "nome": "ALMQVIST Pontus",
@@ -5568,17 +5568,6 @@
       "quotazione": 9.0,
       "match_score": 0.95
     },
-    "4772": {
-      "nome": "ANGELINO Jose",
-      "squadra": "Estero",
-      "ruolo": "C",
-      "percMax": 3.67,
-      "comprato_pct": 0.3,
-      "prezzo_350": 13.22,
-      "prezzo_500": 18.34,
-      "quotazione": 4.0,
-      "match_score": 0.95
-    },
     "6681": {
       "nome": "SAGRADO Richie",
       "squadra": "Venezia",
@@ -5587,6 +5576,17 @@
       "comprato_pct": 0.3,
       "prezzo_350": null,
       "prezzo_500": null,
+      "quotazione": 4.0,
+      "match_score": 0.95
+    },
+    "4772": {
+      "nome": "ANGELINO Jose",
+      "squadra": "Estero",
+      "ruolo": "C",
+      "percMax": 3.67,
+      "comprato_pct": 0.3,
+      "prezzo_350": 13.22,
+      "prezzo_500": 18.34,
       "quotazione": 4.0,
       "match_score": 0.95
     },
@@ -5755,9 +5755,9 @@
       "quotazione": 2.0,
       "match_score": 0.95
     },
-    "7363": {
-      "nome": "SIVIERO Lapo",
-      "squadra": "Torino",
+    "7560": {
+      "nome": "PISSERI Matteo",
+      "squadra": "Frosinone",
       "ruolo": "P",
       "percMax": null,
       "comprato_pct": 0.2,
@@ -5766,9 +5766,9 @@
       "quotazione": 1.0,
       "match_score": 0.95
     },
-    "7560": {
-      "nome": "PISSERI Matteo",
-      "squadra": "Frosinone",
+    "7363": {
+      "nome": "SIVIERO Lapo",
+      "squadra": "Torino",
       "ruolo": "P",
       "percMax": null,
       "comprato_pct": 0.2,
@@ -5854,9 +5854,9 @@
       "quotazione": 9.0,
       "match_score": 0.95
     },
-    "4929": {
-      "nome": "CIOCCI Giuseppe",
-      "squadra": "Serie Minori",
+    "4468": {
+      "nome": "BLEVE Marco",
+      "squadra": "Lecce",
       "ruolo": "P",
       "percMax": null,
       "comprato_pct": 0.1,
@@ -5865,9 +5865,9 @@
       "quotazione": 1.0,
       "match_score": 0.95
     },
-    "4468": {
-      "nome": "BLEVE Marco",
-      "squadra": "Lecce",
+    "4929": {
+      "nome": "CIOCCI Giuseppe",
+      "squadra": "Serie Minori",
       "ruolo": "P",
       "percMax": null,
       "comprato_pct": 0.1,
