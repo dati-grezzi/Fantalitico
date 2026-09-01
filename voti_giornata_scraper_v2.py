@@ -276,16 +276,30 @@ JS_ESTRAI_PAGINA_GENERALE = r"""
         // Ci sono 3 pill per riga: Redazione Fantacalcio, Voto Statistico e
         // Voto Italia. Prendiamo la PRIMA, che e' la redazione, coerente con
         // quanto fa l'altro canale.
-        const num = (el) => {
+        // Il sito scrive alcuni mezzi voti SENZA separatore decimale:
+        // data-value="55" per 5,5 (verificato l'1/09/2026 su Bellanova, che era
+        // subentrato — il template dei subentrati sembra perdere la virgola).
+        // Su 160 giocatori del canale aggregato erano 12: se non lo si tratta,
+        // finiscono nello storico come fantavoto 55 e sfondano ogni classifica.
+        // La correzione si applica SOLO quando la stringa è di sole cifre e il
+        // valore supera il massimo possibile: "10" resta un dieci legittimo.
+        const grezzo = (el) => {
             if (!el) return null;
-            const v = (el.getAttribute('data-value') || '').trim().replace(',', '.');
-            if (v === '' || v.toLowerCase() === 'sv') return null;
-            const n = parseFloat(v);
-            return isNaN(n) ? null : n;
+            const v = (el.getAttribute('data-value') || '').trim();
+            return (v === '' || v.toLowerCase() === 'sv') ? null : v;
+        };
+        const num = (el) => {
+            const v = grezzo(el);
+            if (v === null) return null;
+            const n = parseFloat(v.replace(',', '.'));
+            if (isNaN(n)) return null;
+            if (/^\d+$/.test(v) && n > 10) return n / 10;
+            return n;
         };
 
         const perSquadra = {};
         let senzaVoto = 0, senzaLink = 0;
+        const fuoriScala = [];
 
         document.querySelectorAll('tr').forEach(tr => {
             const a = tr.querySelector('a.player-name[href*="/serie-a/squadre/"]');
@@ -302,9 +316,33 @@ JS_ESTRAI_PAGINA_GENERALE = r"""
             const roleSpan = tr.querySelector('span.role[data-value]');
             const role = roleSpan ? roleSpan.getAttribute('data-value') : null;
 
-            const votoPuro = num(tr.querySelector('.player-grade'));
-            const fantavoto = num(tr.querySelector('.player-fanta-grade'));
+            const elVoto = tr.querySelector('.player-grade');
+            const elFanta = tr.querySelector('.player-fanta-grade');
+            let votoPuro = num(elVoto);
+            let fantavoto = num(elFanta);
             if (votoPuro === null && fantavoto === null) { senzaVoto++; return; }
+
+            // Le due caselle escono dallo stesso template: se il voto puro ha
+            // perso la virgola, l'ha persa anche il fantavoto. Applicare la
+            // stessa correzione a entrambi evita di indovinare sul secondo,
+            // dove un valore alto può essere legittimo (una tripletta vale 17,5).
+            const vGrezzo = grezzo(elVoto), fGrezzo = grezzo(elFanta);
+            const vCorretto = vGrezzo !== null && /^\d+$/.test(vGrezzo) && parseFloat(vGrezzo) > 10;
+            if (vCorretto && fGrezzo !== null && /^\d+$/.test(fGrezzo) && fantavoto > 10) {
+                fantavoto = parseFloat(fGrezzo) / 10;
+            }
+
+            // Rete di sicurezza: un voto puro sta fra 0 e 10. Fuori scala
+            // significa che il formato è cambiato ancora: meglio nessun dato
+            // che un dato assurdo scritto in silenzio nello storico.
+            if (votoPuro !== null && (votoPuro < 0 || votoPuro > 10)) {
+                fuoriScala.push(name + ' voto=' + votoPuro);
+                return;
+            }
+            if (fantavoto !== null && (fantavoto < -10 || fantavoto > 30)) {
+                fuoriScala.push(name + ' fv=' + fantavoto);
+                return;
+            }
 
             if (!perSquadra[squadra]) perSquadra[squadra] = [];
             perSquadra[squadra].push({
@@ -320,7 +358,7 @@ JS_ESTRAI_PAGINA_GENERALE = r"""
         const teams = Object.keys(perSquadra).map(sq => ({
             team: sq, players: perSquadra[sq]
         }));
-        return { teams, senzaVoto, senzaLink };
+        return { teams, senzaVoto, senzaLink, fuoriScala };
     }
 """
 
@@ -361,6 +399,9 @@ async def scrape_pagina_generale(page, squadre_attese):
         print(f"   ({data['senzaVoto']} righe senza voto: non hanno giocato)")
     if data.get("senzaLink"):
         print(f"   ⚠️  {data['senzaLink']} righe con link non interpretabile")
+    if data.get("fuoriScala"):
+        print(f"   ⚠️  {len(data['fuoriScala'])} righe scartate per valore fuori scala: "
+              f"{', '.join(data['fuoriScala'][:5])}")
 
     volute = {_slug(x) for x in squadre_attese}
     tenute = [t for t in data["teams"]
