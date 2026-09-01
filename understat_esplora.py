@@ -1,147 +1,129 @@
 # -*- coding: utf-8 -*-
 """
-FANTALITICO — sonda: dove tiene i tiri, Understat?
+FANTALITICO — sonda 2: attivare le colonne dei tiri su Understat.
 
-CONTESTO
---------
-La tabella della pagina di lega espone solo:
-    №, Player, Team, Apps, Min, G, A, xG, xA, xG90, xA90
-Niente Sh90 né KP90 (verificato dal log dell'1/09/2026). Ma il volume di tiri
-è il segnale col peso più alto del bonus performance per gli attaccanti
-(beta 0,112), quindi vale la pena cercarlo prima di rinunciare.
+COSA SAPPIAMO (sonda 1, 1/09/2026)
+----------------------------------
+- I tiri NON sono in un JSON incorporato né in una chiamata di rete.
+- Esiste pero' un selettore di colonne: pannelli ".table-options" con una riga
+  ".table-options-row" per colonna. Quello letto dalla prima sonda era della
+  tabella SQUADRE (N, Team, M, W, D, L, G, GA, PTS, xG...).
+- Dopo 4 secondi era renderizzata solo la tabella squadre: serve attendere di
+  piu' perche' compaia quella dei giocatori.
 
-Tre posti plausibili, che questo script controlla in ordine:
-  1. un JSON incorporato negli script della pagina (Understat storicamente
-     usava "playersData" con dentro shots e key_passes come TOTALI);
-  2. una chiamata di rete che popola la tabella;
-  3. un selettore di colonne nell'interfaccia, che aggiunga Sh90 e KP90.
-
-Se troviamo i TOTALI va benissimo lo stesso, anzi meglio: i per-90 li
-calcoliamo noi dividendo per i minuti, senza dipendere da come li arrotonda
-il sito.
-
-USO
----
-  python understat_esplora.py
-Non scrive nulla: stampa e basta.
+COSA FA QUESTA
+--------------
+1. Aspetta la tabella giocatori (intestazione con xG90).
+2. Elenca TUTTI i pannelli di opzioni con le rispettive righe.
+3. Prova ad attivare Sh90 e KP90 e ristampa le intestazioni.
+Se al punto 3 le colonne compaiono, la stessa sequenza va messa in
+understat_pull.py e il problema e' chiuso.
 """
 
 import asyncio
-import json
-import re
 import sys
 
 from playwright.async_api import async_playwright
 
 URL = "https://understat.com/league/Serie_A/2026"
-SPIE = ("shots", "key_passes", "npxG", "xGChain")
+VOLUTE = ("sh90", "kp90")
+
+
+async def intestazioni(page):
+    return await page.evaluate("""
+        () => {
+            const t = Array.from(document.querySelectorAll('table'))
+                .find(t => Array.from(t.querySelectorAll('th'))
+                    .some(th => th.textContent.toLowerCase().includes('xg90')));
+            return t ? Array.from(t.querySelectorAll('th'))
+                .map(th => th.textContent.trim()).filter(Boolean) : [];
+        }
+    """)
 
 
 async def main_async():
-    risposte = []
-
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()
-
-        async def raccogli(resp):
-            try:
-                ct = (resp.headers or {}).get("content-type", "")
-                if "json" not in ct and not resp.url.endswith(".json"):
-                    return
-                corpo = await resp.text()
-                if any(s in corpo for s in SPIE):
-                    risposte.append((resp.url, len(corpo), corpo[:400]))
-            except Exception:
-                pass
-
-        page.on("response", lambda r: asyncio.create_task(raccogli(r)))
-
         print(f"Apro {URL} ...")
         await page.goto(URL, wait_until="load", timeout=45000)
-        await page.wait_for_timeout(4000)
 
-        # ── 1. JSON incorporato negli script ──────────────────────────────
+        # La tabella giocatori arriva dopo quella delle squadre.
+        try:
+            await page.wait_for_function(
+                """() => Array.from(document.querySelectorAll('th'))
+                        .some(th => th.textContent.toLowerCase().includes('xg90'))""",
+                timeout=25000)
+            print("Tabella giocatori comparsa.")
+        except Exception:
+            print("ATTENZIONE: la tabella giocatori non e' comparsa entro 25s")
+        await page.wait_for_timeout(2500)
+
         print("\n" + "=" * 64)
-        print("1. JSON INCORPORATO NEGLI SCRIPT")
+        print("A. INTESTAZIONI ATTUALI")
         print("=" * 64)
-        trovati = await page.evaluate("""
-            () => {
-                const spie = ['shots', 'key_passes', 'npxG', 'xGChain'];
-                const out = [];
-                document.querySelectorAll('script').forEach((s, i) => {
-                    const t = s.textContent || '';
-                    if (!t) return;
-                    const presenti = spie.filter(x => t.includes(x));
-                    if (!presenti.length) return;
-                    const nomi = (t.match(/var\\s+(\\w+)\\s*=/g) || []).slice(0, 6);
-                    out.push({indice: i, lunghezza: t.length, spie: presenti,
-                              variabili: nomi, estratto: t.slice(0, 500)});
-                });
-                return out;
-            }
+        print(" ", await intestazioni(page))
+
+        print("\n" + "=" * 64)
+        print("B. PANNELLI DI OPZIONI COLONNE")
+        print("=" * 64)
+        pannelli = await page.evaluate("""
+            () => Array.from(document.querySelectorAll('.table-options')).map((p, i) => ({
+                indice: i,
+                classe: p.className,
+                righe: Array.from(p.querySelectorAll('.table-options-row'))
+                        .map(r => r.textContent.trim()).filter(Boolean),
+                visibile: !!(p.offsetWidth || p.offsetHeight)
+            }))
         """)
-        if trovati:
-            for t in trovati:
-                print(f"\n  script #{t['indice']} — {t['lunghezza']} caratteri")
-                print(f"  contiene: {t['spie']}")
-                print(f"  variabili: {t['variabili']}")
-                print(f"  estratto: {t['estratto'][:300]!r}")
-        else:
-            print("  Nessuno script contiene i campi cercati.")
+        for pa in pannelli:
+            print(f"\n  pannello #{pa['indice']} (visibile: {pa['visibile']}) "
+                  f"class=\"{pa['classe']}\"")
+            print(f"  {len(pa['righe'])} righe: {pa['righe']}")
+        if not pannelli:
+            print("  Nessun pannello .table-options trovato.")
 
-        # ── 2. Chiamate di rete ───────────────────────────────────────────
         print("\n" + "=" * 64)
-        print("2. CHIAMATE DI RETE CON QUEI CAMPI")
+        print("C. TENTATIVO DI ATTIVARE Sh90 e KP90")
         print("=" * 64)
-        if risposte:
-            for url, n, estratto in risposte:
-                print(f"\n  {url}  ({n} caratteri)")
-                print(f"  {estratto[:300]!r}")
-        else:
-            print("  Nessuna risposta JSON contiene i campi cercati.")
-
-        # ── 3. Selettore di colonne ───────────────────────────────────────
-        print("\n" + "=" * 64)
-        print("3. SELETTORE DI COLONNE NELL'INTERFACCIA")
-        print("=" * 64)
-        controlli = await page.evaluate("""
-            () => {
-                const out = [];
-                const sel = '[class*="option"], [class*="setting"], [class*="column"], [class*="gear"], [class*="filter"], button, .fa, i';
-                document.querySelectorAll(sel).forEach(el => {
-                    const t = (el.textContent || '').trim().slice(0, 40);
-                    const c = typeof el.className === 'string' ? el.className : '';
-                    if (!c && !t) return;
-                    out.push(el.tagName + ' class="' + c + '" testo="' + t + '"');
-                });
-                return [...new Set(out)].slice(0, 30);
+        esito = await page.evaluate("""
+            (volute) => {
+                const log = [];
+                const righe = Array.from(document.querySelectorAll('.table-options-row'));
+                log.push('righe totali disponibili: ' + righe.length);
+                for (const v of volute) {
+                    const r = righe.find(x => x.textContent.trim().toLowerCase() === v);
+                    if (!r) { log.push(v + ': RIGA NON TROVATA'); continue; }
+                    const box = r.querySelector('input[type=checkbox]');
+                    if (box) {
+                        if (!box.checked) { box.click(); log.push(v + ': checkbox attivata'); }
+                        else log.push(v + ': gia attiva');
+                    } else {
+                        r.click();
+                        log.push(v + ': cliccata la riga (nessuna checkbox)');
+                    }
+                }
+                return log;
             }
-        """)
-        for c in controlli:
-            print(f"  {c}")
-        if not controlli:
-            print("  Nessun controllo riconoscibile.")
+        """, list(VOLUTE))
+        for r in esito:
+            print(" ", r)
 
-        # ── 4. Una pagina giocatore ha i tiri? ────────────────────────────
+        await page.wait_for_timeout(3000)
+        dopo = await intestazioni(page)
+        print("\n  Intestazioni dopo il tentativo:")
+        print(" ", dopo)
+        ok = [v for v in VOLUTE if any(v == h.lower() for h in dopo)]
+        print(f"\n  RISULTATO: {'attivate ' + ', '.join(ok) if ok else 'nessuna colonna aggiunta'}")
+
         print("\n" + "=" * 64)
-        print("4. PAGINA DI UN SINGOLO GIOCATORE")
+        print("D. LINK A PAGINE GIOCATORE")
         print("=" * 64)
-        link = await page.evaluate(
-            "() => { const a = document.querySelector('a[href*=\"/player/\"]');"
-            " return a ? a.href : null; }")
-        if link:
-            print(f"  Provo {link}")
-            await page.goto(link, wait_until="load", timeout=45000)
-            await page.wait_for_timeout(2500)
-            intest = await page.evaluate("""
-                () => Array.from(document.querySelectorAll('th'))
-                        .map(th => th.textContent.trim()).filter(Boolean).slice(0, 40)
-            """)
-            print(f"  Intestazioni trovate: {intest}")
-            print("  Sh90 presente:", any(h.lower() == 'sh90' for h in intest))
-        else:
-            print("  Nessun link a pagina giocatore nella tabella.")
+        link = await page.evaluate("""
+            () => Array.from(document.querySelectorAll('a[href*="/player/"]'))
+                    .slice(0, 3).map(a => a.href)
+        """)
+        print(" ", link or "nessuno")
 
         await browser.close()
     print("\nFatto. Incolla tutto l'output.")
