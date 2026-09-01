@@ -1,335 +1,5 @@
 [
   {
-    "team": "Milan",
-    "players": [
-      {
-        "player_id": "4312",
-        "name": "Maignan",
-        "role": "p",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "5833",
-        "name": "Gila",
-        "role": "d",
-        "voto_puro": 6.5,
-        "fantavoto": 6.5,
-        "eventi": []
-      },
-      {
-        "player_id": "4401",
-        "name": "Gabbia",
-        "role": "d",
-        "voto_puro": null,
-        "fantavoto": null,
-        "eventi": []
-      },
-      {
-        "player_id": "5739",
-        "name": "De Winter",
-        "role": "d",
-        "voto_puro": 6.5,
-        "fantavoto": 6.5,
-        "eventi": []
-      },
-      {
-        "player_id": "5022",
-        "name": "Pavlovic",
-        "role": "d",
-        "voto_puro": 6.5,
-        "fantavoto": 6,
-        "eventi": [
-          {
-            "tipo": "Ammonizione  (70°)",
-            "count": "1",
-            "eventId": "1"
-          }
-        ]
-      },
-      {
-        "player_id": "4856",
-        "name": "Chukwueze",
-        "role": "c",
-        "voto_puro": 6.5,
-        "fantavoto": 6.5,
-        "eventi": []
-      },
-      {
-        "player_id": "5295",
-        "name": "Musah",
-        "role": "c",
-        "voto_puro": 6.5,
-        "fantavoto": 6.5,
-        "eventi": []
-      },
-      {
-        "player_id": "2606",
-        "name": "Modric",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "7203",
-        "name": "Jashari",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "6496",
-        "name": "Bartesaghi",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "5273",
-        "name": "Estupinan",
-        "role": "d",
-        "voto_puro": null,
-        "fantavoto": null,
-        "eventi": []
-      },
-      {
-        "player_id": "4199",
-        "name": "Loftus-Cheek",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "4892",
-        "name": "Saelemaekers",
-        "role": "c",
-        "voto_puro": 7,
-        "fantavoto": 8,
-        "eventi": [
-          {
-            "tipo": "Assist  (69°)",
-            "count": "1",
-            "eventId": "22"
-          }
-        ]
-      },
-      {
-        "player_id": "6618",
-        "name": "Cissè A.",
-        "role": "c",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
-        "eventi": []
-      },
-      {
-        "player_id": "2379",
-        "name": "Rabiot",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "6397",
-        "name": "Ramos G.",
-        "role": "a",
-        "voto_puro": 7,
-        "fantavoto": 10,
-        "eventi": [
-          {
-            "tipo": "Gol segnato  (69°)",
-            "count": "1",
-            "eventId": "3"
-          },
-          {
-            "tipo": "Man of the match",
-            "count": "1",
-            "eventId": "26"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "team": "Venezia",
-    "players": [
-      {
-        "player_id": "6248",
-        "name": "Stankovic F.",
-        "role": "p",
-        "voto_puro": 6.5,
-        "fantavoto": 4.5,
-        "eventi": [
-          {
-            "tipo": "Gol subito  (69°)",
-            "count": "2",
-            "eventId": "4"
-          },
-          {
-            "tipo": "Gol subito  (89°)",
-            "count": "1",
-            "eventId": "4"
-          }
-        ]
-      },
-      {
-        "player_id": "6892",
-        "name": "Schingtienne",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 5.5,
-        "eventi": [
-          {
-            "tipo": "Ammonizione",
-            "count": "1",
-            "eventId": "1"
-          }
-        ]
-      },
-      {
-        "player_id": "7253",
-        "name": "Bella-Kotchap",
-        "role": "d",
-        "voto_puro": 5,
-        "fantavoto": 5,
-        "eventi": []
-      },
-      {
-        "player_id": "7478",
-        "name": "Franjic",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": [
-          {
-            "tipo": "Uscito per infortunio",
-            "count": "1",
-            "eventId": "17"
-          }
-        ]
-      },
-      {
-        "player_id": "7538",
-        "name": "Halhal",
-        "role": "d",
-        "voto_puro": 5,
-        "fantavoto": 3,
-        "eventi": [
-          {
-            "tipo": "Autorete  (89°)",
-            "count": "1",
-            "eventId": "10"
-          }
-        ]
-      },
-      {
-        "player_id": "6821",
-        "name": "Hainaut",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "6994",
-        "name": "Perez K.",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 5.5,
-        "eventi": [
-          {
-            "tipo": "Ammonizione  (48°)",
-            "count": "1",
-            "eventId": "1"
-          }
-        ]
-      },
-      {
-        "player_id": "7449",
-        "name": "Rrahmani Al.",
-        "role": "a",
-        "voto_puro": null,
-        "fantavoto": null,
-        "eventi": []
-      },
-      {
-        "player_id": "5507",
-        "name": "Busio",
-        "role": "c",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
-        "eventi": []
-      },
-      {
-        "player_id": "5674",
-        "name": "Basic",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "5319",
-        "name": "Sohm",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "5695",
-        "name": "Haps",
-        "role": "d",
-        "voto_puro": 6.5,
-        "fantavoto": 6,
-        "eventi": [
-          {
-            "tipo": "Ammonizione  (54°)",
-            "count": "1",
-            "eventId": "1"
-          }
-        ]
-      },
-      {
-        "player_id": "4845",
-        "name": "Correia T.",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "7484",
-        "name": "Adams A.",
-        "role": "a",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
-        "eventi": []
-      },
-      {
-        "player_id": "6904",
-        "name": "Yeboah J.",
-        "role": "a",
-        "voto_puro": 6.5,
-        "fantavoto": 6.5,
-        "eventi": []
-      },
-      {
-        "player_id": "7482",
-        "name": "Lauberbach",
-        "role": "a",
-        "voto_puro": null,
-        "fantavoto": null,
-        "eventi": []
-      }
-    ]
-  },
-  {
     "team": "Fiorentina",
     "players": [
       {
@@ -680,699 +350,6 @@
         "role": "a",
         "voto_puro": null,
         "fantavoto": null,
-        "eventi": []
-      }
-    ]
-  },
-  {
-    "team": "Monza",
-    "players": [
-      {
-        "player_id": "4485",
-        "name": "Thiam",
-        "role": "p",
-        "voto_puro": 4.5,
-        "fantavoto": 1.5,
-        "eventi": [
-          {
-            "tipo": "Gol subito",
-            "count": "3",
-            "eventId": "4"
-          },
-          {
-            "tipo": "Gol subito",
-            "count": "2",
-            "eventId": "4"
-          },
-          {
-            "tipo": "Gol subito",
-            "count": "1",
-            "eventId": "4"
-          }
-        ]
-      },
-      {
-        "player_id": "7238",
-        "name": "Kouadio",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "6659",
-        "name": "Lucchesi",
-        "role": "d",
-        "voto_puro": 5.5,
-        "fantavoto": 5,
-        "eventi": [
-          {
-            "tipo": "Ammonizione  (46°)",
-            "count": "1",
-            "eventId": "1"
-          }
-        ]
-      },
-      {
-        "player_id": "2115",
-        "name": "Delli Carri",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "4925",
-        "name": "Carboni A.",
-        "role": "d",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
-        "eventi": []
-      },
-      {
-        "player_id": "7485",
-        "name": "Mangas",
-        "role": "d",
-        "voto_puro": 6.5,
-        "fantavoto": 7.5,
-        "eventi": [
-          {
-            "tipo": "Assist",
-            "count": "1",
-            "eventId": "22"
-          }
-        ]
-      },
-      {
-        "player_id": "7574",
-        "name": "Foe Ondoa",
-        "role": "c",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
-        "eventi": []
-      },
-      {
-        "player_id": "6252",
-        "name": "Folorunsho",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "7575",
-        "name": "Mout",
-        "role": "c",
-        "voto_puro": 5,
-        "fantavoto": 5,
-        "eventi": []
-      },
-      {
-        "player_id": "6593",
-        "name": "Akinsanmiro",
-        "role": "c",
-        "voto_puro": 6.5,
-        "fantavoto": 7.5,
-        "eventi": [
-          {
-            "tipo": "Assist  (63°)",
-            "count": "1",
-            "eventId": "22"
-          }
-        ]
-      },
-      {
-        "player_id": "5838",
-        "name": "Birindelli",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "6592",
-        "name": "Forson O.",
-        "role": "c",
-        "voto_puro": null,
-        "fantavoto": null,
-        "eventi": []
-      },
-      {
-        "player_id": "5878",
-        "name": "Colpani",
-        "role": "c",
-        "voto_puro": 6.5,
-        "fantavoto": 9.5,
-        "eventi": [
-          {
-            "tipo": "Gol segnato",
-            "count": "1",
-            "eventId": "3"
-          }
-        ]
-      },
-      {
-        "player_id": "5882",
-        "name": "Mota",
-        "role": "a",
-        "voto_puro": null,
-        "fantavoto": null,
-        "eventi": []
-      },
-      {
-        "player_id": "2155",
-        "name": "Cutrone",
-        "role": "a",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "7523",
-        "name": "Varela G.",
-        "role": "a",
-        "voto_puro": 7,
-        "fantavoto": 10,
-        "eventi": [
-          {
-            "tipo": "Gol segnato  (63°)",
-            "count": "1",
-            "eventId": "3"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "team": "Udinese",
-    "players": [
-      {
-        "player_id": "6462",
-        "name": "Okoye",
-        "role": "p",
-        "voto_puro": 6,
-        "fantavoto": 4,
-        "eventi": [
-          {
-            "tipo": "Gol subito",
-            "count": "2",
-            "eventId": "4"
-          },
-          {
-            "tipo": "Gol subito  (63°)",
-            "count": "1",
-            "eventId": "4"
-          }
-        ]
-      },
-      {
-        "player_id": "6021",
-        "name": "Abankwah",
-        "role": "d",
-        "voto_puro": 6.5,
-        "fantavoto": 6.5,
-        "eventi": []
-      },
-      {
-        "player_id": "6956",
-        "name": "Solet",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "5994",
-        "name": "Ebosse",
-        "role": "d",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
-        "eventi": []
-      },
-      {
-        "player_id": "5820",
-        "name": "Bertola",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "4994",
-        "name": "Vojvoda",
-        "role": "d",
-        "voto_puro": 6.5,
-        "fantavoto": 6.5,
-        "eventi": []
-      },
-      {
-        "player_id": "7312",
-        "name": "Arizala",
-        "role": "d",
-        "voto_puro": null,
-        "fantavoto": null,
-        "eventi": []
-      },
-      {
-        "player_id": "6680",
-        "name": "Karlstrom",
-        "role": "c",
-        "voto_puro": 6.5,
-        "fantavoto": 6.5,
-        "eventi": []
-      },
-      {
-        "player_id": "7198",
-        "name": "Piotrowski",
-        "role": "c",
-        "voto_puro": 6.5,
-        "fantavoto": 9.5,
-        "eventi": [
-          {
-            "tipo": "Gol segnato",
-            "count": "1",
-            "eventId": "3"
-          }
-        ]
-      },
-      {
-        "player_id": "7208",
-        "name": "Miller L.",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "5555",
-        "name": "Kamara H.",
-        "role": "d",
-        "voto_puro": 7,
-        "fantavoto": 10,
-        "eventi": [
-          {
-            "tipo": "Gol segnato",
-            "count": "1",
-            "eventId": "3"
-          },
-          {
-            "tipo": "Man of the match",
-            "count": "1",
-            "eventId": "26"
-          }
-        ]
-      },
-      {
-        "player_id": "6684",
-        "name": "Ekkelenkamp",
-        "role": "c",
-        "voto_puro": 7.5,
-        "fantavoto": 10.5,
-        "eventi": [
-          {
-            "tipo": "Gol segnato",
-            "count": "1",
-            "eventId": "3"
-          }
-        ]
-      },
-      {
-        "player_id": "6783",
-        "name": "Unai Gomez",
-        "role": "c",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
-        "eventi": []
-      },
-      {
-        "player_id": "6212",
-        "name": "Zarraga",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "5637",
-        "name": "Davis K.",
-        "role": "a",
-        "voto_puro": 6.5,
-        "fantavoto": 6.5,
-        "eventi": []
-      },
-      {
-        "player_id": "7272",
-        "name": "Gueye",
-        "role": "a",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      }
-    ]
-  },
-  {
-    "team": "Sassuolo",
-    "players": [
-      {
-        "player_id": "4236",
-        "name": "Muric",
-        "role": "p",
-        "voto_puro": 6.5,
-        "fantavoto": 5.5,
-        "eventi": [
-          {
-            "tipo": "Gol subito",
-            "count": "1",
-            "eventId": "4"
-          }
-        ]
-      },
-      {
-        "player_id": "7573",
-        "name": "Cinquegrano",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "6672",
-        "name": "Idzes",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "7564",
-        "name": "Leysen F.",
-        "role": "d",
-        "voto_puro": 6.5,
-        "fantavoto": 7.5,
-        "eventi": [
-          {
-            "tipo": "Assist  (78°)",
-            "count": "1",
-            "eventId": "22"
-          }
-        ]
-      },
-      {
-        "player_id": "5851",
-        "name": "Doig",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "7329",
-        "name": "Obrador",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "6677",
-        "name": "Adzic",
-        "role": "c",
-        "voto_puro": 6.5,
-        "fantavoto": 7.5,
-        "eventi": [
-          {
-            "tipo": "Assist GOLD",
-            "count": "1",
-            "eventId": "23"
-          }
-        ]
-      },
-      {
-        "player_id": "5844",
-        "name": "Thorstvedt",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "2528",
-        "name": "Matic",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 5.5,
-        "eventi": [
-          {
-            "tipo": "Ammonizione",
-            "count": "1",
-            "eventId": "1"
-          }
-        ]
-      },
-      {
-        "player_id": "6246",
-        "name": "Lipani",
-        "role": "c",
-        "voto_puro": null,
-        "fantavoto": null,
-        "eventi": []
-      },
-      {
-        "player_id": "7036",
-        "name": "Bakola",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "5735",
-        "name": "Volpato",
-        "role": "c",
-        "voto_puro": 7,
-        "fantavoto": 9.5,
-        "eventi": [
-          {
-            "tipo": "Gol segnato",
-            "count": "1",
-            "eventId": "3"
-          },
-          {
-            "tipo": "Ammonizione  (47°)",
-            "count": "1",
-            "eventId": "1"
-          }
-        ]
-      },
-      {
-        "player_id": "6895",
-        "name": "Dominguez B.",
-        "role": "c",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
-        "eventi": []
-      },
-      {
-        "player_id": "7347",
-        "name": "Bowie",
-        "role": "a",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
-        "eventi": []
-      },
-      {
-        "player_id": "531",
-        "name": "Berardi",
-        "role": "a",
-        "voto_puro": 7,
-        "fantavoto": 10,
-        "eventi": [
-          {
-            "tipo": "Gol segnato  (78°)",
-            "count": "1",
-            "eventId": "3"
-          },
-          {
-            "tipo": "Man of the match",
-            "count": "1",
-            "eventId": "26"
-          }
-        ]
-      },
-      {
-        "player_id": "6060",
-        "name": "Laurientè",
-        "role": "a",
-        "voto_puro": 6.5,
-        "fantavoto": 6,
-        "eventi": [
-          {
-            "tipo": "Ammonizione  (70°)",
-            "count": "1",
-            "eventId": "1"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "team": "Torino",
-    "players": [
-      {
-        "player_id": "7457",
-        "name": "Mascardi",
-        "role": "p",
-        "voto_puro": 5.5,
-        "fantavoto": 3.5,
-        "eventi": [
-          {
-            "tipo": "Gol subito",
-            "count": "2",
-            "eventId": "4"
-          },
-          {
-            "tipo": "Gol subito  (78°)",
-            "count": "1",
-            "eventId": "4"
-          }
-        ]
-      },
-      {
-        "player_id": "6495",
-        "name": "Comuzzo",
-        "role": "d",
-        "voto_puro": 6.5,
-        "fantavoto": 9.5,
-        "eventi": [
-          {
-            "tipo": "Gol segnato",
-            "count": "1",
-            "eventId": "3"
-          }
-        ]
-      },
-      {
-        "player_id": "6642",
-        "name": "Coco",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "7526",
-        "name": "Comert",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "5010",
-        "name": "Ismajli",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "7069",
-        "name": "Fortini",
-        "role": "d",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "7183",
-        "name": "Aboukhlal",
-        "role": "c",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
-        "eventi": []
-      },
-      {
-        "player_id": "6170",
-        "name": "Gineitis",
-        "role": "c",
-        "voto_puro": 5.5,
-        "fantavoto": 5,
-        "eventi": [
-          {
-            "tipo": "Ammonizione",
-            "count": "1",
-            "eventId": "1"
-          }
-        ]
-      },
-      {
-        "player_id": "6005",
-        "name": "Ilkhan",
-        "role": "c",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
-        "eventi": []
-      },
-      {
-        "player_id": "7535",
-        "name": "Fitz-Jim",
-        "role": "c",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "7060",
-        "name": "Cacciamani",
-        "role": "c",
-        "voto_puro": 6.5,
-        "fantavoto": 7.5,
-        "eventi": [
-          {
-            "tipo": "Assist",
-            "count": "1",
-            "eventId": "22"
-          }
-        ]
-      },
-      {
-        "player_id": "5687",
-        "name": "Vlasic",
-        "role": "c",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
-        "eventi": []
-      },
-      {
-        "player_id": "6646",
-        "name": "Adams C.",
-        "role": "a",
-        "voto_puro": 6,
-        "fantavoto": 6,
-        "eventi": []
-      },
-      {
-        "player_id": "608",
-        "name": "Zapata D.",
-        "role": "a",
-        "voto_puro": null,
-        "fantavoto": null,
-        "eventi": []
-      },
-      {
-        "player_id": "2061",
-        "name": "Simeone",
-        "role": "a",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
-        "eventi": []
-      },
-      {
-        "player_id": "7349",
-        "name": "Kulenovic",
-        "role": "a",
-        "voto_puro": 5.5,
-        "fantavoto": 5.5,
         "eventi": []
       }
     ]
@@ -2641,6 +1618,1336 @@
       {
         "player_id": "4923",
         "name": "Colombo",
+        "role": "a",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      }
+    ]
+  },
+  {
+    "team": "atalanta",
+    "players": [
+      {
+        "player_id": "4431",
+        "name": "Carnesecchi",
+        "role": "p",
+        "voto_puro": 7,
+        "fantavoto": 7,
+        "eventi": []
+      },
+      {
+        "player_id": "554",
+        "name": "Zappacosta",
+        "role": "d",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "2640",
+        "name": "Kolasinac",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "4887",
+        "name": "Bellanova",
+        "role": "d",
+        "voto_puro": 55,
+        "fantavoto": 55,
+        "eventi": []
+      },
+      {
+        "player_id": "5526",
+        "name": "Scalvini",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "5578",
+        "name": "Kossounou",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "2077",
+        "name": "Pasalic",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "4364",
+        "name": "Gaetano",
+        "role": "c",
+        "voto_puro": 5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "4479",
+        "name": "Elmas",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5119",
+        "name": "Samardzic",
+        "role": "c",
+        "voto_puro": 7,
+        "fantavoto": 10,
+        "eventi": []
+      },
+      {
+        "player_id": "5422",
+        "name": "Zalewski",
+        "role": "c",
+        "voto_puro": 6.5,
+        "fantavoto": 7.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5792",
+        "name": "Ederson D.S.",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "2137",
+        "name": "Scamacca",
+        "role": "a",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "4371",
+        "name": "Raspadori",
+        "role": "a",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5995",
+        "name": "De Ketelaere",
+        "role": "a",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6435",
+        "name": "Krstovic",
+        "role": "a",
+        "voto_puro": 5.5,
+        "fantavoto": 5,
+        "eventi": []
+      }
+    ]
+  },
+  {
+    "team": "bologna",
+    "players": [
+      {
+        "player_id": "133",
+        "name": "Skorupski",
+        "role": "p",
+        "voto_puro": 5,
+        "fantavoto": 4,
+        "eventi": []
+      },
+      {
+        "player_id": "4433",
+        "name": "Zortea",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "5678",
+        "name": "Holm",
+        "role": "d",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7212",
+        "name": "Heggem",
+        "role": "d",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7326",
+        "name": "Helland",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "7483",
+        "name": "Alhassane",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "184",
+        "name": "Bernardeschi",
+        "role": "c",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "2167",
+        "name": "Orsolini",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "2765",
+        "name": "Odgaard",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "4436",
+        "name": "Cambiaghi",
+        "role": "c",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5298",
+        "name": "Pobega",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "5858",
+        "name": "Ferguson",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "6054",
+        "name": "Moro N.",
+        "role": "c",
+        "voto_puro": 55,
+        "fantavoto": 55,
+        "eventi": []
+      },
+      {
+        "player_id": "7528",
+        "name": "Amondarain",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "4359",
+        "name": "Piccoli",
+        "role": "a",
+        "voto_puro": 5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "6675",
+        "name": "Dovbyk",
+        "role": "a",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      }
+    ]
+  },
+  {
+    "team": "lecce",
+    "players": [
+      {
+        "player_id": "2134",
+        "name": "Falcone",
+        "role": "p",
+        "voto_puro": 5.5,
+        "fantavoto": 1.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6632",
+        "name": "Gaspar K.",
+        "role": "d",
+        "voto_puro": 4,
+        "fantavoto": 4,
+        "eventi": []
+      },
+      {
+        "player_id": "6989",
+        "name": "Tiago Gabriel",
+        "role": "d",
+        "voto_puro": 5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "6990",
+        "name": "Veiga D.",
+        "role": "d",
+        "voto_puro": 5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "7182",
+        "name": "Ndaba",
+        "role": "d",
+        "voto_puro": 5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "7240",
+        "name": "Siebert",
+        "role": "d",
+        "voto_puro": 4.5,
+        "fantavoto": 4.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5007",
+        "name": "Ilic",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "5457",
+        "name": "Maleh",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5504",
+        "name": "Coulibaly L.",
+        "role": "c",
+        "voto_puro": 5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "6549",
+        "name": "Pierotti",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7248",
+        "name": "Gorter",
+        "role": "c",
+        "voto_puro": 5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "7322",
+        "name": "Ngom",
+        "role": "c",
+        "voto_puro": 5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "5029",
+        "name": "Geubbels",
+        "role": "a",
+        "voto_puro": 5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "7001",
+        "name": "N'Dri",
+        "role": "a",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "7252",
+        "name": "Stulic",
+        "role": "a",
+        "voto_puro": 5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "7602",
+        "name": "Fatah",
+        "role": "a",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      }
+    ]
+  },
+  {
+    "team": "milan",
+    "players": [
+      {
+        "player_id": "4312",
+        "name": "Maignan",
+        "role": "p",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "4401",
+        "name": "Gabbia",
+        "role": "d",
+        "voto_puro": 55,
+        "fantavoto": 55,
+        "eventi": []
+      },
+      {
+        "player_id": "5022",
+        "name": "Pavlovic",
+        "role": "d",
+        "voto_puro": 6.5,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "5273",
+        "name": "Estupinan",
+        "role": "d",
+        "voto_puro": 55,
+        "fantavoto": 55,
+        "eventi": []
+      },
+      {
+        "player_id": "5739",
+        "name": "De Winter",
+        "role": "d",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5833",
+        "name": "Gila",
+        "role": "d",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6496",
+        "name": "Bartesaghi",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "2379",
+        "name": "Rabiot",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "2606",
+        "name": "Modric",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "4199",
+        "name": "Loftus-Cheek",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "4856",
+        "name": "Chukwueze",
+        "role": "c",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "4892",
+        "name": "Saelemaekers",
+        "role": "c",
+        "voto_puro": 7,
+        "fantavoto": 8,
+        "eventi": []
+      },
+      {
+        "player_id": "5295",
+        "name": "Musah",
+        "role": "c",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6618",
+        "name": "Cissè A.",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7203",
+        "name": "Jashari",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "6397",
+        "name": "Ramos G.",
+        "role": "a",
+        "voto_puro": 7,
+        "fantavoto": 10,
+        "eventi": []
+      }
+    ]
+  },
+  {
+    "team": "monza",
+    "players": [
+      {
+        "player_id": "4485",
+        "name": "Thiam",
+        "role": "p",
+        "voto_puro": 4.5,
+        "fantavoto": 1.5,
+        "eventi": []
+      },
+      {
+        "player_id": "2115",
+        "name": "Delli Carri",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "4925",
+        "name": "Carboni A.",
+        "role": "d",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5838",
+        "name": "Birindelli",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "6659",
+        "name": "Lucchesi",
+        "role": "d",
+        "voto_puro": 5.5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "7238",
+        "name": "Kouadio",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "7485",
+        "name": "Mangas",
+        "role": "d",
+        "voto_puro": 6.5,
+        "fantavoto": 7.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5878",
+        "name": "Colpani",
+        "role": "c",
+        "voto_puro": 6.5,
+        "fantavoto": 9.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6252",
+        "name": "Folorunsho",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "6592",
+        "name": "Forson O.",
+        "role": "c",
+        "voto_puro": 55,
+        "fantavoto": 55,
+        "eventi": []
+      },
+      {
+        "player_id": "6593",
+        "name": "Akinsanmiro",
+        "role": "c",
+        "voto_puro": 6.5,
+        "fantavoto": 7.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7574",
+        "name": "Foe Ondoa",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7575",
+        "name": "Mout",
+        "role": "c",
+        "voto_puro": 5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "2155",
+        "name": "Cutrone",
+        "role": "a",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "5882",
+        "name": "Mota",
+        "role": "a",
+        "voto_puro": 55,
+        "fantavoto": 55,
+        "eventi": []
+      },
+      {
+        "player_id": "7523",
+        "name": "Varela G.",
+        "role": "a",
+        "voto_puro": 7,
+        "fantavoto": 10,
+        "eventi": []
+      }
+    ]
+  },
+  {
+    "team": "roma",
+    "players": [
+      {
+        "player_id": "5841",
+        "name": "Svilar",
+        "role": "p",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "2296",
+        "name": "Mancini",
+        "role": "d",
+        "voto_puro": 6.5,
+        "fantavoto": 7.5,
+        "eventi": []
+      },
+      {
+        "player_id": "4807",
+        "name": "Hermoso",
+        "role": "d",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "4998",
+        "name": "Molina N.",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "6631",
+        "name": "Ghilardi",
+        "role": "d",
+        "voto_puro": 7,
+        "fantavoto": 7,
+        "eventi": []
+      },
+      {
+        "player_id": "7181",
+        "name": "Wesley",
+        "role": "d",
+        "voto_puro": 7,
+        "fantavoto": 8,
+        "eventi": []
+      },
+      {
+        "player_id": "7599",
+        "name": "Lulli",
+        "role": "d",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "22",
+        "name": "De Roon",
+        "role": "c",
+        "voto_puro": 55,
+        "fantavoto": 55,
+        "eventi": []
+      },
+      {
+        "player_id": "779",
+        "name": "Cristante",
+        "role": "c",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5589",
+        "name": "Konè M.",
+        "role": "c",
+        "voto_puro": 7,
+        "fantavoto": 7,
+        "eventi": []
+      },
+      {
+        "player_id": "6190",
+        "name": "Pisilli",
+        "role": "c",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7556",
+        "name": "Mora",
+        "role": "c",
+        "voto_puro": 7,
+        "fantavoto": 10,
+        "eventi": []
+      },
+      {
+        "player_id": "309",
+        "name": "Dybala",
+        "role": "a",
+        "voto_puro": 7,
+        "fantavoto": 7,
+        "eventi": []
+      },
+      {
+        "player_id": "5585",
+        "name": "Malen",
+        "role": "a",
+        "voto_puro": 8,
+        "fantavoto": 13.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5734",
+        "name": "Soulè",
+        "role": "a",
+        "voto_puro": 7,
+        "fantavoto": 10,
+        "eventi": []
+      },
+      {
+        "player_id": "6572",
+        "name": "Castro S.",
+        "role": "a",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      }
+    ]
+  },
+  {
+    "team": "sassuolo",
+    "players": [
+      {
+        "player_id": "4236",
+        "name": "Muric",
+        "role": "p",
+        "voto_puro": 6.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5851",
+        "name": "Doig",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "6672",
+        "name": "Idzes",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "7329",
+        "name": "Obrador",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "7564",
+        "name": "Leysen F.",
+        "role": "d",
+        "voto_puro": 6.5,
+        "fantavoto": 7.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7573",
+        "name": "Cinquegrano",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "2528",
+        "name": "Matic",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5735",
+        "name": "Volpato",
+        "role": "c",
+        "voto_puro": 7,
+        "fantavoto": 9.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5844",
+        "name": "Thorstvedt",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "6246",
+        "name": "Lipani",
+        "role": "c",
+        "voto_puro": 55,
+        "fantavoto": 55,
+        "eventi": []
+      },
+      {
+        "player_id": "6677",
+        "name": "Adzic",
+        "role": "c",
+        "voto_puro": 6.5,
+        "fantavoto": 7.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6895",
+        "name": "Dominguez B.",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7036",
+        "name": "Bakola",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "531",
+        "name": "Berardi",
+        "role": "a",
+        "voto_puro": 7,
+        "fantavoto": 10,
+        "eventi": []
+      },
+      {
+        "player_id": "6060",
+        "name": "Laurientè",
+        "role": "a",
+        "voto_puro": 6.5,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "7347",
+        "name": "Bowie",
+        "role": "a",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      }
+    ]
+  },
+  {
+    "team": "torino",
+    "players": [
+      {
+        "player_id": "7457",
+        "name": "Mascardi",
+        "role": "p",
+        "voto_puro": 5.5,
+        "fantavoto": 3.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5010",
+        "name": "Ismajli",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "6495",
+        "name": "Comuzzo",
+        "role": "d",
+        "voto_puro": 6.5,
+        "fantavoto": 9.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6642",
+        "name": "Coco",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "7069",
+        "name": "Fortini",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "7526",
+        "name": "Comert",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "5687",
+        "name": "Vlasic",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6005",
+        "name": "Ilkhan",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6170",
+        "name": "Gineitis",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "7060",
+        "name": "Cacciamani",
+        "role": "c",
+        "voto_puro": 6.5,
+        "fantavoto": 7.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7183",
+        "name": "Aboukhlal",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7535",
+        "name": "Fitz-Jim",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "608",
+        "name": "Zapata D.",
+        "role": "a",
+        "voto_puro": 55,
+        "fantavoto": 55,
+        "eventi": []
+      },
+      {
+        "player_id": "2061",
+        "name": "Simeone",
+        "role": "a",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6646",
+        "name": "Adams C.",
+        "role": "a",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "7349",
+        "name": "Kulenovic",
+        "role": "a",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      }
+    ]
+  },
+  {
+    "team": "udinese",
+    "players": [
+      {
+        "player_id": "6462",
+        "name": "Okoye",
+        "role": "p",
+        "voto_puro": 6,
+        "fantavoto": 4,
+        "eventi": []
+      },
+      {
+        "player_id": "4994",
+        "name": "Vojvoda",
+        "role": "d",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5555",
+        "name": "Kamara H.",
+        "role": "d",
+        "voto_puro": 7,
+        "fantavoto": 10,
+        "eventi": []
+      },
+      {
+        "player_id": "5820",
+        "name": "Bertola",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "5994",
+        "name": "Ebosse",
+        "role": "d",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6021",
+        "name": "Abankwah",
+        "role": "d",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6956",
+        "name": "Solet",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "7312",
+        "name": "Arizala",
+        "role": "d",
+        "voto_puro": 55,
+        "fantavoto": 55,
+        "eventi": []
+      },
+      {
+        "player_id": "6212",
+        "name": "Zarraga",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "6680",
+        "name": "Karlstrom",
+        "role": "c",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6684",
+        "name": "Ekkelenkamp",
+        "role": "c",
+        "voto_puro": 7.5,
+        "fantavoto": 10.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6783",
+        "name": "Unai Gomez",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7198",
+        "name": "Piotrowski",
+        "role": "c",
+        "voto_puro": 6.5,
+        "fantavoto": 9.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7208",
+        "name": "Miller L.",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "5637",
+        "name": "Davis K.",
+        "role": "a",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7272",
+        "name": "Gueye",
+        "role": "a",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      }
+    ]
+  },
+  {
+    "team": "venezia",
+    "players": [
+      {
+        "player_id": "6248",
+        "name": "Stankovic F.",
+        "role": "p",
+        "voto_puro": 6.5,
+        "fantavoto": 4.5,
+        "eventi": []
+      },
+      {
+        "player_id": "4845",
+        "name": "Correia T.",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "5695",
+        "name": "Haps",
+        "role": "d",
+        "voto_puro": 6.5,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "6821",
+        "name": "Hainaut",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "6892",
+        "name": "Schingtienne",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7253",
+        "name": "Bella-Kotchap",
+        "role": "d",
+        "voto_puro": 5,
+        "fantavoto": 5,
+        "eventi": []
+      },
+      {
+        "player_id": "7478",
+        "name": "Franjic",
+        "role": "d",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "7538",
+        "name": "Halhal",
+        "role": "d",
+        "voto_puro": 5,
+        "fantavoto": 3,
+        "eventi": []
+      },
+      {
+        "player_id": "5319",
+        "name": "Sohm",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "5507",
+        "name": "Busio",
+        "role": "c",
+        "voto_puro": 5.5,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "5674",
+        "name": "Basic",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 6,
+        "eventi": []
+      },
+      {
+        "player_id": "6994",
+        "name": "Perez K.",
+        "role": "c",
+        "voto_puro": 6,
+        "fantavoto": 5.5,
+        "eventi": []
+      },
+      {
+        "player_id": "6904",
+        "name": "Yeboah J.",
+        "role": "a",
+        "voto_puro": 6.5,
+        "fantavoto": 6.5,
+        "eventi": []
+      },
+      {
+        "player_id": "7449",
+        "name": "Rrahmani Al.",
+        "role": "a",
+        "voto_puro": 55,
+        "fantavoto": 55,
+        "eventi": []
+      },
+      {
+        "player_id": "7482",
+        "name": "Lauberbach",
+        "role": "a",
+        "voto_puro": 55,
+        "fantavoto": 55,
+        "eventi": []
+      },
+      {
+        "player_id": "7484",
+        "name": "Adams A.",
         "role": "a",
         "voto_puro": 5.5,
         "fantavoto": 5.5,
