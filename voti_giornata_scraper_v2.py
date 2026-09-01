@@ -43,6 +43,15 @@ import os
 from playwright.async_api import async_playwright
 
 SEASON = "2026-27"
+
+# Pagina aggregata dei voti ufficiali: contiene TUTTE le partite del turno.
+# Serve come secondo canale perché fantacalcio.it aggiorna i suoi rami a
+# velocità diverse — verificato l'1/09/2026: con Atalanta-Bologna finita
+# 1-0 e i voti già online qui, le rotte per-partita rispondevano ancora
+# "Tabellino non disponibile" e 0-0. Due client su reti diverse (questo
+# scraper da GitHub Actions e una lettura manuale) vedevano lo stesso
+# stato pre-partita, quindi non era una cache locale.
+URL_GENERALE = "https://www.fantacalcio.it/voti-fantacalcio-serie-a"
 GIORNATA = int(sys.argv[1]) if len(sys.argv) > 1 else 1
 os.makedirs("data", exist_ok=True)
 OUT_JSON = f"data/voti_giornata_{GIORNATA}.json"
@@ -70,28 +79,7 @@ def carica_match_ids_giornata(giornata):
     return partite
 
 
-async def scrape_una_partita(page, casa, trasferta, match_id):
-    url = f"https://www.fantacalcio.it/serie-a/calendario/{GIORNATA}/{SEASON}/{casa}-{trasferta}/{match_id}/voti"
-    print(f"📡 {casa} - {trasferta}: {url}")
-    await page.goto(url, wait_until="load", timeout=45000)
-    try:
-        await page.wait_for_selector("#playersListsTemplateTarget", timeout=15000)
-    except Exception:
-        pass  # la diagnostica sotto rivelerà la struttura vera se questo fallisce
-    await page.wait_for_timeout(1000)
-
-    # Scroll di sicurezza (pattern già validato su altre pagine di questo sito,
-    # che caricano contenuti solo quando entrano in viewport)
-    altezza = await page.evaluate("document.body.scrollHeight")
-    y, step, i = 0, 1200, 0
-    while y < altezza and i < 15:
-        await page.evaluate(f"window.scrollTo(0, {y})")
-        await page.wait_for_timeout(300)
-        y += step; i += 1
-        altezza = await page.evaluate("document.body.scrollHeight")
-    await page.wait_for_timeout(800)
-
-    data = await page.evaluate("""
+JS_ESTRAI_SQUADRE = """
         () => {
             const parseVoto = (s) => {
                 if (s == null || s === "" || s.toLowerCase() === "sv") return null;
@@ -194,7 +182,31 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
             });
             return { teams, scartateOrfane, eventi_sconosciuti: [...eventi_sconosciuti], rigoriTrovati };
         }
-    """)
+"""
+
+
+async def scrape_una_partita(page, casa, trasferta, match_id):
+    url = f"https://www.fantacalcio.it/serie-a/calendario/{GIORNATA}/{SEASON}/{casa}-{trasferta}/{match_id}/voti"
+    print(f"📡 {casa} - {trasferta}: {url}")
+    await page.goto(url, wait_until="load", timeout=45000)
+    try:
+        await page.wait_for_selector("#playersListsTemplateTarget", timeout=15000)
+    except Exception:
+        pass  # la diagnostica sotto rivelerà la struttura vera se questo fallisce
+    await page.wait_for_timeout(1000)
+
+    # Scroll di sicurezza (pattern già validato su altre pagine di questo sito,
+    # che caricano contenuti solo quando entrano in viewport)
+    altezza = await page.evaluate("document.body.scrollHeight")
+    y, step, i = 0, 1200, 0
+    while y < altezza and i < 15:
+        await page.evaluate(f"window.scrollTo(0, {y})")
+        await page.wait_for_timeout(300)
+        y += step; i += 1
+        altezza = await page.evaluate("document.body.scrollHeight")
+    await page.wait_for_timeout(800)
+
+    data = await page.evaluate(JS_ESTRAI_SQUADRE)
 
     if data and data.get("eventi_sconosciuti"):
         print(f"   ℹ️  Tipi di evento senza bonus/malus mappato (trattati come 0): {data['eventi_sconosciuti']}")
@@ -229,6 +241,54 @@ async def scrape_una_partita(page, casa, trasferta, match_id):
     return teams, None
 
 
+def _slug(nome):
+    """Confronto tollerante fra 'Atalanta' e lo slug 'atalanta'."""
+    return "".join(c for c in (nome or "").lower() if c.isalnum())
+
+
+async def scrape_pagina_generale(page, squadre_attese):
+    """Secondo canale: legge la pagina aggregata e tiene solo le squadre mancanti.
+
+    Usa lo STESSO script di estrazione delle pagine per-partita: se il sito
+    riusa il componente (come sembra), funziona senza codice duplicato. Se un
+    domani divergessero, il fallimento è esplicito e non silenzioso.
+    """
+    print(f"\n📡 Secondo canale — pagina aggregata: {URL_GENERALE}")
+    print(f"   Squadre ancora mancanti: {', '.join(sorted(squadre_attese))}")
+    await page.goto(URL_GENERALE, wait_until="load", timeout=45000)
+    try:
+        await page.wait_for_selector("#playersListsTemplateTarget", timeout=15000)
+    except Exception:
+        print("   ⚠️  Il contenitore dei voti non è comparso entro 15s")
+
+    # La pagina è lunga (tutte le partite): scorro fino in fondo, altrimenti
+    # i blocchi più in basso non vengono mai caricati.
+    altezza = await page.evaluate("document.body.scrollHeight")
+    y, step, i = 0, 1200, 0
+    while y < altezza and i < 40:
+        await page.evaluate(f"window.scrollTo(0, {y})")
+        await page.wait_for_timeout(250)
+        y += step
+        i += 1
+        altezza = await page.evaluate("document.body.scrollHeight")
+    await page.wait_for_timeout(1000)
+
+    data = await page.evaluate(JS_ESTRAI_SQUADRE)
+    if not data or not data.get("teams"):
+        print("   ⚠️  Nessuna squadra estratta dalla pagina aggregata")
+        return []
+
+    volute = {_slug(x) for x in squadre_attese}
+    tenute = [t for t in data["teams"]
+              if _slug(t.get("team")) in volute and t.get("players")]
+    for t in tenute:
+        print(f"   ✅ {t['team']}: {len(t['players'])} giocatori recuperati")
+    ignorate = len(data["teams"]) - len(tenute)
+    if ignorate:
+        print(f"   ({ignorate} blocchi ignorati: squadre già coperte dal primo canale)")
+    return tenute
+
+
 async def main_async():
     partite = carica_match_ids_giornata(GIORNATA)
     print(f"Partite da scaricare per la giornata {GIORNATA}: {len(partite)}\n")
@@ -252,6 +312,34 @@ async def main_async():
                         diagnostica_salvata = diag
             except Exception as e:
                 print(f"   ❌ Errore su questa partita: {e}\n")
+        # ── SECONDO CANALE ────────────────────────────────────────────
+        # Non sostituisce il primo: interviene solo sulle squadre che sono
+        # rimaste a zero. Così i dati già buoni non vengono toccati e non
+        # rischiamo regressioni su quello che funziona.
+        attese = set()
+        for partita in partite:
+            attese.add(partita["casa"])
+            attese.add(partita["trasferta"])
+        coperte = {_slug(t.get("team")) for t in tutte_squadre if t.get("players")}
+        mancanti = {sq for sq in attese if _slug(sq) not in coperte}
+
+        if mancanti:
+            try:
+                recuperate = await scrape_pagina_generale(page, mancanti)
+                if recuperate:
+                    tutte_squadre.extend(recuperate)
+                    n = sum(len(t["players"]) for t in recuperate)
+                    print(f"\n   🔁 Recuperati {n} giocatori di {len(recuperate)} squadre dal secondo canale")
+                    ancora = {sq for sq in mancanti
+                              if _slug(sq) not in {_slug(t.get("team")) for t in recuperate}}
+                    if ancora:
+                        print(f"   ⚠️  Restano senza voti: {', '.join(sorted(ancora))}")
+                        print("      (la giornata resterà incompleta e verrà riprocessata)")
+            except Exception as e:
+                print(f"   ❌ Secondo canale fallito: {e}")
+        else:
+            print("\n✅ Tutte le squadre coperte dal primo canale, secondo canale non necessario")
+
         await browser.close()
 
     if not tutte_squadre:
