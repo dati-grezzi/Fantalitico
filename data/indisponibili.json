@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-08-31T22:27:59.171489+00:00",
+  "aggiornato": "2026-09-01T07:10:41.342599+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -36,6 +36,13 @@
           "dettaglio": "Lesione del bicipite femorale della coscia sinistra, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "6225",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Orsolini",
+          "dettaglio": "Risentimento ai flessori della coscia sinistra, da valutare",
+          "rientro_giornata": null,
+          "id": "2167",
           "match_score": 1.0
         }
       ],
@@ -183,8 +190,28 @@
       "squalificati": [],
       "diffidati": []
     },
+    "lecce": {
+      "infortunati": [
+        {
+          "nome": "Geubbels",
+          "dettaglio": "Problema alla caviglia, in dubbio per la 3a",
+          "rientro_giornata": 3,
+          "id": "5029",
+          "match_score": 1.0
+        }
+      ],
+      "squalificati": [],
+      "diffidati": []
+    },
     "monza": {
       "infortunati": [
+        {
+          "nome": "Varela",
+          "dettaglio": "Problema all'adduttore, da valutare",
+          "rientro_giornata": null,
+          "id": "7523",
+          "match_score": 1.0
+        },
         {
           "nome": "Ciurria",
           "dettaglio": "Problema fisico, in dubbio per la 3a",
@@ -372,6 +399,13 @@
           "dettaglio": "Fastidio muscolare, in dubbio per la 3a",
           "rientro_giornata": 3,
           "id": "6890",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Franjic",
+          "dettaglio": "Si teme una dislocazione della clavicola, da valutare",
+          "rientro_giornata": null,
+          "id": "7478",
           "match_score": 1.0
         },
         {
