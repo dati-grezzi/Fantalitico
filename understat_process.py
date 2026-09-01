@@ -133,6 +133,29 @@ def to_float(s, default=0.0):
         return default
 
 
+def to_float_o_nulla(s):
+    """Come to_float, ma un valore mancante resta None invece di diventare 0.
+
+    Distinzione tutt'altro che accademica. perfBonus() salta i segnali a null,
+    mentre uno zero lo tratta come misurazione vera: con mean 2,451 e sd 0,943,
+    zero tiri p90 dà z = -2,6, che il cap porta a -2 e produce il malus MASSIMO
+    di -0,42. Cioè il motore puniva al massimo proprio i giocatori di cui non
+    aveva il dato — l'opposto di quello che deve fare.
+    Scoperto l'1/09/2026 su Esposito F.P., che aveva shots_p90 = 0 insieme a
+    xG90 = 0,96: impossibile aver creato quasi un gol atteso ogni 90 minuti
+    senza mai tirare.
+    """
+    if s is None:
+        return None
+    t = str(s).strip()
+    if t == "" or t == "-":
+        return None
+    try:
+        return float(t)
+    except (ValueError, TypeError):
+        return None
+
+
 def to_int(s, default=0):
     try:
         return int(float(s))
@@ -215,18 +238,18 @@ def main() -> int:
                 understat_by_id[best_match_id] = {
                     "apps": to_int(row.get('apps')),
                     "minutes_total": minuti,
-                    "goals": to_int(row.get('goals')),
-                    "assists": to_int(row.get('assists')),
-                    "xG": to_float(row.get('xG')),
-                    "xA": to_float(row.get('xA')),
-                    "xG90": to_float(row.get('xG90')),
-                    "xA90": to_float(row.get('xA90')),
+                    "goals": to_float_o_nulla(row.get('goals')),
+                    "assists": to_float_o_nulla(row.get('assists')),
+                    "xG": to_float_o_nulla(row.get('xG')),
+                    "xA": to_float_o_nulla(row.get('xA')),
+                    "xG90": to_float_o_nulla(row.get('xG90')),
+                    "xA90": to_float_o_nulla(row.get('xA90')),
                     # Nomi allineati a quelli che cerca perfBonus() in index.html:
                     # PERF_W.ruoli.A usa shots_p90 (beta 0,112). Se il campo arriva
                     # con un nome diverso il motore lo ignora in silenzio e il bonus
                     # attaccanti resta a zero, che è esattamente il bug del 25/08.
-                    "shots_p90": to_float(row.get('sh90')),
-                    "key_passes_p90": to_float(row.get('kp90')),
+                    "shots_p90": to_float_o_nulla(row.get('sh90')),
+                    "key_passes_p90": to_float_o_nulla(row.get('kp90')),
                     "understat_name": nome,
                     "match_score": round(best_score, 3),
                 }

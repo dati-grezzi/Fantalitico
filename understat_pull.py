@@ -57,27 +57,41 @@ async def main_async():
                         // mancano del tutto il campo resta null invece di rompere la riga.
                         const prendi = (celle, ...nomi) => {
                             for (const n of nomi) {
-                                if (idx[n] !== undefined && celle[idx[n]] !== undefined) return celle[idx[n]];
+                                if (idx[n] === undefined) continue;
+                                const v = celle[idx[n]];
+                                if (v === undefined) continue;
+                                const t = String(v).trim();
+                                if (t === '' || t === '-') continue;
+                                return t;
                             }
-                            return null;
+                            return null;   // null = non lo sappiamo, non "zero"
                         };
                         const out = [];
                         t.querySelectorAll('tbody tr').forEach(tr => {
                             const celle = Array.from(tr.querySelectorAll('td')).map(td => td.textContent.trim());
                             if (!celle.length) return;
-                            out.push({
-                                player: celle[idx['player']] ?? null,
-                                team: celle[idx['team']] ?? null,
-                                apps: celle[idx['apps']] ?? null,
-                                min: celle[idx['min']] ?? null,
-                                goals: celle[idx['goals']] ?? null,
-                                assists: celle[idx['a']] ?? null,
-                                xG: celle[idx['xg']] ?? null,
-                                xA: celle[idx['xa']] ?? null,
-                                xG90: celle[idx['xg90']] ?? null,
-                                xA90: celle[idx['xa90']] ?? null,
-                                sh90: prendi(celle, 'sh90', 'sh'),
-                                kp90: prendi(celle, 'kp90', 'kp'),
+                            // Ogni campo con i suoi nomi possibili. La mappatura
+                        // rigida era fragile e sbagliava in silenzio: Understat
+                        // intitola i gol "G", non "goals", quindi idx['goals']
+                        // era undefined, la cella usciva null e a valle
+                        // diventava 0. Esposito F.P. risultava con 0 gol dopo
+                        // averne segnato uno (1/09/2026). Stesso difetto sui
+                        // tiri. Meglio elencare gli alias: se nessuno combacia
+                        // il campo resta null, che a valle viene saltato invece
+                        // di essere scambiato per uno zero misurato.
+                        out.push({
+                                player: prendi(celle, 'player'),
+                                team: prendi(celle, 'team'),
+                                apps: prendi(celle, 'apps', 'app'),
+                                min: prendi(celle, 'min', 'minutes'),
+                                goals: prendi(celle, 'g', 'goals'),
+                                assists: prendi(celle, 'a', 'assists'),
+                                xG: prendi(celle, 'xg'),
+                                xA: prendi(celle, 'xa'),
+                                xG90: prendi(celle, 'xg90'),
+                                xA90: prendi(celle, 'xa90'),
+                                sh90: prendi(celle, 'sh90'),
+                                kp90: prendi(celle, 'kp90'),
                             });
                         });
                         if (out.length) return out;
@@ -123,6 +137,19 @@ async def main_async():
                 visti.add((r["player"], r["team"]))
 
         print(f"Pagine raccolte, totale righe: {len(righe)}")
+
+        intestazioni_viste = await page.evaluate("""
+            () => {
+                const t = Array.from(document.querySelectorAll('table'))
+                    .find(t => Array.from(t.querySelectorAll('th'))
+                        .some(th => th.textContent.toLowerCase().includes('xg90')));
+                return t ? Array.from(t.querySelectorAll('th')).map(th => th.textContent.trim()) : [];
+            }
+        """)
+        print(f"   Colonne esposte dalla tabella: {intestazioni_viste}")
+        for atteso in ('Sh90', 'KP90'):
+            if not any(atteso.lower() == h.lower() for h in intestazioni_viste):
+                print(f"   ⚠️  Colonna {atteso} NON presente: il campo resterà vuoto")
 
         if not righe:
             html = await page.content()
