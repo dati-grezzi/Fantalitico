@@ -246,20 +246,100 @@ def _slug(nome):
     return "".join(c for c in (nome or "").lower() if c.isalnum())
 
 
+JS_ESTRAI_PAGINA_GENERALE = r"""
+    () => {
+        // STRUTTURA DELLA PAGINA AGGREGATA (verificata l'1/09/2026 in console).
+        // Diversa da quella delle pagine per-partita: qui sono TABELLE, non
+        // liste, e non esiste #playersListsTemplateTarget.
+        //
+        //   <tr>
+        //     <td><div class="player-item cell">
+        //           <span class="role" data-value="p"></span>
+        //           <a class="player-name player-link"
+        //              href=".../serie-a/squadre/atalanta/carnesecchi/4431">
+        //              <span>Carnesecchi</span></a>
+        //     </div></td>
+        //     <td><div class="group"><div class="pill">
+        //           <span class="player-grade" data-value="7"></span>
+        //           <span class="player-fanta-grade" data-value="7"></span>
+        //     </div>...</div></td>
+        //   </tr>
+        //
+        // Due vantaggi rispetto all'altro canale:
+        // 1) l'href porta SIA l'id SIA la squadra, quindi ogni riga si
+        //    autodichiara e non si puo' sbagliare l'attribuzione risalendo a
+        //    un'intestazione (su questa pagina il titolo nomina entrambe le
+        //    squadre, quindi risalire sarebbe stato pericoloso);
+        // 2) il fantavoto e' gia' pronto in .player-fanta-grade e non va
+        //    ricostruito sommando i bonus.
+        //
+        // Ci sono 3 pill per riga: Redazione Fantacalcio, Voto Statistico e
+        // Voto Italia. Prendiamo la PRIMA, che e' la redazione, coerente con
+        // quanto fa l'altro canale.
+        const num = (el) => {
+            if (!el) return null;
+            const v = (el.getAttribute('data-value') || '').trim().replace(',', '.');
+            if (v === '' || v.toLowerCase() === 'sv') return null;
+            const n = parseFloat(v);
+            return isNaN(n) ? null : n;
+        };
+
+        const perSquadra = {};
+        let senzaVoto = 0, senzaLink = 0;
+
+        document.querySelectorAll('tr').forEach(tr => {
+            const a = tr.querySelector('a.player-name[href*="/serie-a/squadre/"]');
+            if (!a) { return; }
+            const m = a.getAttribute('href').match(/\/serie-a\/squadre\/([^\/]+)\/([^\/]+)\/(\d+)/);
+            if (!m) { senzaLink++; return; }
+            const squadra = m[1];
+            const playerId = m[3];
+
+            const spanNome = a.querySelector('span');
+            const name = (spanNome ? spanNome.textContent : a.textContent).trim();
+            if (!name) { senzaLink++; return; }
+
+            const roleSpan = tr.querySelector('span.role[data-value]');
+            const role = roleSpan ? roleSpan.getAttribute('data-value') : null;
+
+            const votoPuro = num(tr.querySelector('.player-grade'));
+            const fantavoto = num(tr.querySelector('.player-fanta-grade'));
+            if (votoPuro === null && fantavoto === null) { senzaVoto++; return; }
+
+            if (!perSquadra[squadra]) perSquadra[squadra] = [];
+            perSquadra[squadra].push({
+                player_id: playerId,
+                name: name,
+                role: role,
+                voto_puro: votoPuro,
+                fantavoto: fantavoto,
+                eventi: []   // su questa pagina il fantavoto e' gia' calcolato
+            });
+        });
+
+        const teams = Object.keys(perSquadra).map(sq => ({
+            team: sq, players: perSquadra[sq]
+        }));
+        return { teams, senzaVoto, senzaLink };
+    }
+"""
+
+
 async def scrape_pagina_generale(page, squadre_attese):
     """Secondo canale: legge la pagina aggregata e tiene solo le squadre mancanti.
 
-    Usa lo STESSO script di estrazione delle pagine per-partita: se il sito
-    riusa il componente (come sembra), funziona senza codice duplicato. Se un
-    domani divergessero, il fallimento è esplicito e non silenzioso.
+    Usa uno script DEDICATO: verificato in console che questa pagina ha una
+    struttura diversa (tabelle invece di liste, niente #playersListsTemplateTarget).
+    In compenso è più robusta, perché l'href di ogni riga contiene sia l'id del
+    giocatore sia la squadra.
     """
     print(f"\n📡 Secondo canale — pagina aggregata: {URL_GENERALE}")
     print(f"   Squadre ancora mancanti: {', '.join(sorted(squadre_attese))}")
     await page.goto(URL_GENERALE, wait_until="load", timeout=45000)
     try:
-        await page.wait_for_selector("#playersListsTemplateTarget", timeout=15000)
+        await page.wait_for_selector(".player-grade", timeout=15000)
     except Exception:
-        print("   ⚠️  Il contenitore dei voti non è comparso entro 15s")
+        print("   ⚠️  Nessun voto comparso entro 15s: la pagina potrebbe non essere pronta")
 
     # La pagina è lunga (tutte le partite): scorro fino in fondo, altrimenti
     # i blocchi più in basso non vengono mai caricati.
@@ -273,10 +353,14 @@ async def scrape_pagina_generale(page, squadre_attese):
         altezza = await page.evaluate("document.body.scrollHeight")
     await page.wait_for_timeout(1000)
 
-    data = await page.evaluate(JS_ESTRAI_SQUADRE)
+    data = await page.evaluate(JS_ESTRAI_PAGINA_GENERALE)
     if not data or not data.get("teams"):
         print("   ⚠️  Nessuna squadra estratta dalla pagina aggregata")
         return []
+    if data.get("senzaVoto"):
+        print(f"   ({data['senzaVoto']} righe senza voto: non hanno giocato)")
+    if data.get("senzaLink"):
+        print(f"   ⚠️  {data['senzaLink']} righe con link non interpretabile")
 
     volute = {_slug(x) for x in squadre_attese}
     tenute = [t for t in data["teams"]
