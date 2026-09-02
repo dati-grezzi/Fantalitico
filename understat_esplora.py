@@ -1,23 +1,22 @@
 # -*- coding: utf-8 -*-
 """
-FANTALITICO — sonda 2: attivare le colonne dei tiri su Understat.
+FANTALITICO — sonda 3: leggere le etichette del selettore colonne di Understat.
 
-COSA SAPPIAMO (sonda 1, 1/09/2026)
-----------------------------------
-- I tiri NON sono in un JSON incorporato né in una chiamata di rete.
-- Esiste pero' un selettore di colonne: pannelli ".table-options" con una riga
-  ".table-options-row" per colonna. Quello letto dalla prima sonda era della
-  tabella SQUADRE (N, Team, M, W, D, L, G, GA, PTS, xG...).
-- Dopo 4 secondi era renderizzata solo la tabella squadre: serve attendere di
-  piu' perche' compaia quella dei giocatori.
+COSA SAPPIAMO (sonde 1 e 2, 1/09/2026)
+--------------------------------------
+- I tiri non stanno in un JSON incorporato ne' in una chiamata di rete.
+- Esistono due pannelli ".table-options": #0 e' della tabella squadre,
+  #1 della tabella giocatori e ha 20 righe.
+- Non ci sono link alle pagine dei singoli giocatori.
+- Il confronto sul testo della riga fallisce perche' la riga "Player" contiene
+  un filtro con TUTTI i nomi: il suo textContent e' lunghissimo e sporca
+  qualunque confronto.
 
 COSA FA QUESTA
 --------------
-1. Aspetta la tabella giocatori (intestazione con xG90).
-2. Elenca TUTTI i pannelli di opzioni con le rispettive righe.
-3. Prova ad attivare Sh90 e KP90 e ristampa le intestazioni.
-Se al punto 3 le colonne compaiono, la stessa sequenza va messa in
-understat_pull.py e il problema e' chiuso.
+Legge l'ETICHETTA di ogni riga (solo i nodi di testo diretti, non i figli),
+la stampa, e prova ad attivare quelle dei tiri e dei passaggi chiave
+riconoscendole in modo tollerante.
 """
 
 import asyncio
@@ -26,7 +25,6 @@ import sys
 from playwright.async_api import async_playwright
 
 URL = "https://understat.com/league/Serie_A/2026"
-VOLUTE = ("sh90", "kp90")
 
 
 async def intestazioni(page):
@@ -47,83 +45,78 @@ async def main_async():
         page = await browser.new_page()
         print(f"Apro {URL} ...")
         await page.goto(URL, wait_until="load", timeout=45000)
-
-        # La tabella giocatori arriva dopo quella delle squadre.
         try:
             await page.wait_for_function(
                 """() => Array.from(document.querySelectorAll('th'))
                         .some(th => th.textContent.toLowerCase().includes('xg90'))""",
                 timeout=25000)
-            print("Tabella giocatori comparsa.")
         except Exception:
-            print("ATTENZIONE: la tabella giocatori non e' comparsa entro 25s")
+            print("ATTENZIONE: tabella giocatori non comparsa")
         await page.wait_for_timeout(2500)
 
         print("\n" + "=" * 64)
-        print("A. INTESTAZIONI ATTUALI")
+        print("A. ETICHETTE DELLE RIGHE DEL PANNELLO GIOCATORI (#1)")
         print("=" * 64)
-        print(" ", await intestazioni(page))
-
-        print("\n" + "=" * 64)
-        print("B. PANNELLI DI OPZIONI COLONNE")
-        print("=" * 64)
-        pannelli = await page.evaluate("""
-            () => Array.from(document.querySelectorAll('.table-options')).map((p, i) => ({
-                indice: i,
-                classe: p.className,
-                righe: Array.from(p.querySelectorAll('.table-options-row'))
-                        .map(r => r.textContent.trim()).filter(Boolean),
-                visibile: !!(p.offsetWidth || p.offsetHeight)
-            }))
+        righe = await page.evaluate("""
+            () => {
+                const pannelli = document.querySelectorAll('.table-options');
+                const p = pannelli[1] || pannelli[0];
+                if (!p) return [];
+                return Array.from(p.querySelectorAll('.table-options-row')).map((r, i) => {
+                    // Solo i nodi di testo DIRETTI: cosi' la riga "Player",
+                    // che contiene il filtro con tutti i nomi, non sporca nulla.
+                    const diretti = Array.from(r.childNodes)
+                        .filter(n => n.nodeType === 3)
+                        .map(n => n.textContent.trim()).join(' ').trim();
+                    const box = r.querySelector('input[type=checkbox]');
+                    return {
+                        i,
+                        etichetta: diretti || r.textContent.trim().slice(0, 25),
+                        classe: r.className,
+                        checkbox: !!box,
+                        attiva: box ? box.checked : null,
+                        html: r.outerHTML.slice(0, 160)
+                    };
+                });
+            }
         """)
-        for pa in pannelli:
-            print(f"\n  pannello #{pa['indice']} (visibile: {pa['visibile']}) "
-                  f"class=\"{pa['classe']}\"")
-            print(f"  {len(pa['righe'])} righe: {pa['righe']}")
-        if not pannelli:
-            print("  Nessun pannello .table-options trovato.")
+        for r in righe:
+            print(f"  #{r['i']:2d} {r['etichetta']!r:14s} checkbox={r['checkbox']} attiva={r['attiva']}")
+        if righe:
+            print(f"\n  esempio di markup: {righe[0]['html']!r}")
 
         print("\n" + "=" * 64)
-        print("C. TENTATIVO DI ATTIVARE Sh90 e KP90")
+        print("B. TENTATIVO DI ATTIVAZIONE")
         print("=" * 64)
         esito = await page.evaluate("""
-            (volute) => {
+            () => {
                 const log = [];
-                const righe = Array.from(document.querySelectorAll('.table-options-row'));
-                log.push('righe totali disponibili: ' + righe.length);
-                for (const v of volute) {
-                    const r = righe.find(x => x.textContent.trim().toLowerCase() === v);
-                    if (!r) { log.push(v + ': RIGA NON TROVATA'); continue; }
+                const pannelli = document.querySelectorAll('.table-options');
+                const p = pannelli[1] || pannelli[0];
+                if (!p) return ['nessun pannello'];
+                const righe = Array.from(p.querySelectorAll('.table-options-row'));
+                const cerca = ['sh90', 'sh', 'kp90', 'kp', 'shots', 'key passes'];
+                for (const chiave of cerca) {
+                    const r = righe.find(x => {
+                        const d = Array.from(x.childNodes).filter(n => n.nodeType === 3)
+                            .map(n => n.textContent.trim()).join(' ').trim().toLowerCase();
+                        return d === chiave;
+                    });
+                    if (!r) { log.push(chiave + ': non trovata'); continue; }
                     const box = r.querySelector('input[type=checkbox]');
-                    if (box) {
-                        if (!box.checked) { box.click(); log.push(v + ': checkbox attivata'); }
-                        else log.push(v + ': gia attiva');
-                    } else {
-                        r.click();
-                        log.push(v + ': cliccata la riga (nessuna checkbox)');
-                    }
+                    if (box && !box.checked) { box.click(); log.push(chiave + ': ATTIVATA'); }
+                    else if (box) { log.push(chiave + ': gia attiva'); }
+                    else { r.click(); log.push(chiave + ': riga cliccata'); }
                 }
                 return log;
             }
-        """, list(VOLUTE))
-        for r in esito:
-            print(" ", r)
+        """)
+        for e in esito:
+            print(" ", e)
 
         await page.wait_for_timeout(3000)
         dopo = await intestazioni(page)
-        print("\n  Intestazioni dopo il tentativo:")
-        print(" ", dopo)
-        ok = [v for v in VOLUTE if any(v == h.lower() for h in dopo)]
-        print(f"\n  RISULTATO: {'attivate ' + ', '.join(ok) if ok else 'nessuna colonna aggiunta'}")
-
-        print("\n" + "=" * 64)
-        print("D. LINK A PAGINE GIOCATORE")
-        print("=" * 64)
-        link = await page.evaluate("""
-            () => Array.from(document.querySelectorAll('a[href*="/player/"]'))
-                    .slice(0, 3).map(a => a.href)
-        """)
-        print(" ", link or "nessuno")
+        print("\n  Intestazioni dopo:", dopo)
 
         await browser.close()
     print("\nFatto. Incolla tutto l'output.")
