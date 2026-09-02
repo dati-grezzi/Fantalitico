@@ -132,9 +132,17 @@ async def main_async():
             () => {
                 const volute = ['npg','npxg','npxg90','xgchain','xgbuildup','xgchain90','xgbuildup90'];
                 const righe = Array.from(document.querySelectorAll('.table-options-row'));
-                const etichetta = (r) => Array.from(r.childNodes)
-                    .filter(n => n.nodeType === 3)
-                    .map(n => n.textContent.trim()).join(' ').trim().toLowerCase();
+                // L'etichetta sta in .row-title, NON fra i nodi di testo diretti:
+                //   <div class="table-options-row">
+                //     <div class="row-title"><span>xGChain</span></div>
+                //     <div class="row-display"><input type="checkbox" ...
+                // Leggendo i soli nodi diretti si ottengono stringhe vuote, ed
+                // e' per questo che i primi tentativi non trovavano nulla pur
+                // avendo davanti tutte e 39 le righe (log del 02/09/2026).
+                const etichetta = (r) => {
+                    const t = r.querySelector('.row-title');
+                    return (t ? t.textContent : r.textContent).trim().toLowerCase();
+                };
                 const viste = righe.map(etichetta).filter(Boolean);
                 const fatte = [], gia = [];
                 righe.forEach(r => {
