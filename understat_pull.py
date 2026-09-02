@@ -131,18 +131,21 @@ async def main_async():
         esito = await page.evaluate("""
             () => {
                 const volute = ['npg','npxg','npxg90','xgchain','xgbuildup','xgchain90','xgbuildup90'];
-                const righe = Array.from(document.querySelectorAll('.table-options-row'));
-                // L'etichetta sta in .row-title, NON fra i nodi di testo diretti:
-                //   <div class="table-options-row">
-                //     <div class="row-title"><span>xGChain</span></div>
-                //     <div class="row-display"><input type="checkbox" ...
-                // Leggendo i soli nodi diretti si ottengono stringhe vuote, ed
-                // e' per questo che i primi tentativi non trovavano nulla pur
-                // avendo davanti tutte e 39 le righe (log del 02/09/2026).
                 const etichetta = (r) => {
                     const t = r.querySelector('.row-title');
                     return (t ? t.textContent : r.textContent).trim().toLowerCase();
                 };
+                // Solo il pannello dei GIOCATORI: lo riconosco perche' contiene
+                // una riga "xg90", che il pannello delle squadre non ha. Senza
+                // questo filtro si spuntavano caselle anche nella tabella
+                // squadre (nel log 'npxg' compariva due volte).
+                const pannelli = Array.from(document.querySelectorAll('.table-options'));
+                const p = pannelli.find(pa => Array.from(pa.querySelectorAll('.table-options-row'))
+                                                .some(r => etichetta(r) === 'xg90'));
+                if (!p) return {fatte: [], gia: [], righeTotali: 0, viste: [],
+                                nota: 'pannello giocatori non trovato'};
+
+                const righe = Array.from(p.querySelectorAll('.table-options-row'));
                 const viste = righe.map(etichetta).filter(Boolean);
                 const fatte = [], gia = [];
                 righe.forEach(r => {
@@ -151,10 +154,20 @@ async def main_async():
                     const box = r.querySelector('input[type=checkbox]');
                     if (!box) return;
                     if (box.checked) { gia.push(et); return; }
-                    box.click();
+                    // Un clic sull'input via codice non sempre risveglia il
+                    // componente: provo prima l'etichetta associata, che e'
+                    // cio' che tocca una persona, poi ricado sull'input
+                    // emettendo gli eventi che il framework si aspetta.
+                    const lab = box.id ? p.querySelector('label[for="' + box.id + '"]') : null;
+                    if (lab) lab.click();
+                    else {
+                        box.click();
+                        box.dispatchEvent(new Event('input', {bubbles: true}));
+                        box.dispatchEvent(new Event('change', {bubbles: true}));
+                    }
                     fatte.push(et);
                 });
-                return {fatte, gia, righeTotali: righe.length, viste};
+                return {fatte, gia, righeTotali: righe.length, viste, nota: ''};
             }
         """)
         attivate = esito.get("fatte", [])
@@ -164,6 +177,8 @@ async def main_async():
             print(f"   ⚠️  Nessuna colonna attivata — righe di opzioni trovate: "
                   f"{esito.get('righeTotali', 0)}")
             print(f"      etichette viste: {esito.get('viste', [])[:25]}")
+            if esito.get("nota"):
+                print(f"      {esito['nota']}")
 
         if attivate:
             print(f"   Colonne aggiuntive attivate: {attivate}")
