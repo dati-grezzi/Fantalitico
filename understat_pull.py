@@ -37,7 +37,19 @@ async def main_async():
 
         print(f"Scaricando {URL} (Playwright, il sito carica i dati via JS)...")
         await page.goto(URL, wait_until="load", timeout=45000)
-        await page.wait_for_timeout(2000)
+        # Non basta un'attesa fissa: la tabella delle SQUADRE compare subito,
+        # quella dei GIOCATORI parecchio dopo, e con lei il suo selettore di
+        # colonne. Con i 2 secondi di prima il pannello non esisteva ancora e
+        # l'attivazione delle colonne extra falliva in silenzio (log del
+        # 02/09/2026: la riga "Colonne aggiuntive attivate" non compariva).
+        try:
+            await page.wait_for_function(
+                """() => Array.from(document.querySelectorAll('th'))
+                        .some(th => th.textContent.toLowerCase().includes('xg90'))""",
+                timeout=25000)
+        except Exception:
+            print("   ⚠️  La tabella giocatori non è comparsa entro 25s")
+        await page.wait_for_timeout(2500)
 
         # La pagina ha più tabelle (classifica squadre, giocatori, portieri...).
         # Cerco quella con le colonne dei giocatori (contiene "xG90" in intestazione).
@@ -131,7 +143,18 @@ async def main_async():
         """)
         if attivate:
             print(f"   Colonne aggiuntive attivate: {attivate}")
-            await page.wait_for_timeout(2500)
+            # Attendo che la tabella si ridisegni con le colonne nuove, invece
+            # di sperare in una pausa fissa.
+            try:
+                await page.wait_for_function(
+                    """() => Array.from(document.querySelectorAll('th'))
+                            .some(th => th.textContent.toLowerCase().includes('xgchain90'))""",
+                    timeout=12000)
+            except Exception:
+                print("   ⚠️  Le colonne nuove non sono comparse nell'intestazione")
+            await page.wait_for_timeout(1500)
+        else:
+            print("   ⚠️  Nessuna colonna aggiuntiva attivata: pannello non trovato")
 
         # La tabella "Players" mostra i risultati paginati (visto nello screenshot:
         # controlli "« 1 »" in fondo alla tabella) — raccolgo tutte le pagine,
