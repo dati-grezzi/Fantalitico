@@ -250,6 +250,14 @@ def main() -> int:
                     # attaccanti resta a zero, che è esattamente il bug del 25/08.
                     "shots_p90": to_float_o_nulla(row.get('sh90')),
                     "key_passes_p90": to_float_o_nulla(row.get('kp90')),
+                    # In cassaforte dal 02/09/2026: raccolti ma NON ancora usati
+                    # dal motore. I beta della Parte 2.4 valgono per tiri e xA,
+                    # non per questi campi: prima la calibrazione, poi il codice.
+                    "npg": to_float_o_nulla(row.get('npg')),
+                    "npxG": to_float_o_nulla(row.get('npxg')),
+                    "npxG90": to_float_o_nulla(row.get('npxg90')),
+                    "xGChain90": to_float_o_nulla(row.get('xgchain90')),
+                    "xGBuildup90": to_float_o_nulla(row.get('xgbuildup90')),
                     "understat_name": nome,
                     "match_score": round(best_score, 3),
                 }

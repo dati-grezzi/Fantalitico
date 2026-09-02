@@ -41,6 +41,17 @@ CATEGORIE = {
     "key_passes_p90": "key-passes",
     "accurate_passes_p90": "accurate-passes",
     "rating": "player-rating",
+    # AGGIUNTE 02/09/2026 — Understat ha smesso di esporre i tiri: la sua
+    # tabella di lega offre solo N/Player/Team/Apps/Min/G/NPG/A/xG/NPxG/xA e
+    # le varianti per 90 (verificato aprendo il suo selettore colonne, dove
+    # Sh90 e KP90 non esistono piu'). I tiri sono il segnale col peso piu'
+    # alto del bonus attaccanti, quindi li prendiamo qui: stessa fonte gia'
+    # automatizzata, stesso schema di URL, nessuna dipendenza nuova.
+    "shots_p90": "total-shots",
+    "shots_on_target_p90": "shots-on-target",
+    # Copre i portieri, rimasti scoperti da quando SofaScore non e'
+    # raggiungibile dagli IP di GitHub Actions.
+    "saves_p90": "goalkeeper-saves",
 }
 
 HEADERS = {

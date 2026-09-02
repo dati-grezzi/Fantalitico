@@ -92,6 +92,11 @@ async def main_async():
                                 xA90: prendi(celle, 'xa90'),
                                 sh90: prendi(celle, 'sh90'),
                                 kp90: prendi(celle, 'kp90'),
+                                npg: prendi(celle, 'npg'),
+                                npxg: prendi(celle, 'npxg'),
+                                npxg90: prendi(celle, 'npxg90'),
+                                xgchain90: prendi(celle, 'xgchain90'),
+                                xgbuildup90: prendi(celle, 'xgbuildup90'),
                             });
                         });
                         if (out.length) return out;
@@ -99,6 +104,34 @@ async def main_async():
                     return [];
                 }
             """)
+
+        # Le colonne spente del selettore valgono piu' di quelle accese: NPxG
+        # toglie i rigori dal conteggio (quindi non premia i rigoristi per il
+        # solo fatto di batterli), xGChain e xGBuildup misurano il contributo
+        # all'azione anche senza tiro ne' assist. Sono gratis: basta spuntarle.
+        # NON entrano ancora nel motore — i beta misurati valgono per tiri e
+        # xA, non per questi campi. Le raccogliamo ora per poterle calibrare
+        # quando ci saranno giornate a sufficienza.
+        attivate = await page.evaluate("""
+            () => {
+                const volute = ['npg','npxg','npxg90','xgchain','xgbuildup','xgchain90','xgbuildup90'];
+                const pannelli = document.querySelectorAll('.table-options');
+                const p = pannelli[1] || pannelli[0];
+                if (!p) return [];
+                const fatte = [];
+                p.querySelectorAll('.table-options-row').forEach(r => {
+                    const et = Array.from(r.childNodes).filter(n => n.nodeType === 3)
+                        .map(n => n.textContent.trim()).join(' ').trim().toLowerCase();
+                    if (!volute.includes(et)) return;
+                    const box = r.querySelector('input[type=checkbox]');
+                    if (box && !box.checked) { box.click(); fatte.push(et); }
+                });
+                return fatte;
+            }
+        """)
+        if attivate:
+            print(f"   Colonne aggiuntive attivate: {attivate}")
+            await page.wait_for_timeout(2500)
 
         # La tabella "Players" mostra i risultati paginati (visto nello screenshot:
         # controlli "« 1 »" in fondo alla tabella) — raccolgo tutte le pagine,
@@ -166,7 +199,8 @@ async def main_async():
 
         print(f"✅ {len(righe)} giocatori estratti")
         with open(OUT_CSV, "w", newline="", encoding="utf-8") as f:
-            writer = csv.DictWriter(f, fieldnames=["player", "team", "apps", "min", "goals", "assists", "xG", "xA", "xG90", "xA90", "sh90", "kp90"])
+            writer = csv.DictWriter(f, fieldnames=["player", "team", "apps", "min", "goals", "assists", "xG", "xA", "xG90", "xA90", "sh90", "kp90",
+                                                    "npg", "npxg", "npxg90", "xgchain90", "xgbuildup90"])
             writer.writeheader()
             writer.writerows(righe)
         print(f"📝 Salvato in {OUT_CSV}")

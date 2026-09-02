@@ -708,13 +708,31 @@ function perfBonus(st){                          // bonus da statistiche Underst
   // che playerstats non copre, es. saves_box_p90 per i portieri). Se un
   // campo è in entrambi, vince playerstats: è garantito aggiornato ad ogni
   // lancio automatico, SofaScore potrebbe essere di un lancio manuale vecchio.
+  // AGGIORNATO 02/09/2026 — le fonti si UNISCONO invece di escludersi.
+  // Motivo: Understat ha smesso di esporre i tiri (la sua tabella di lega
+  // offre solo N, Player, Team, Apps, Min, G, NPG, A, xG, NPxG, xA e le
+  // varianti per 90 — verificato aprendo il selettore colonne). I tiri, che
+  // per gli attaccanti hanno il peso più alto, arrivano ora da
+  // playerstats.football. Tenendo le fonti separate per ruolo, un attaccante
+  // non li avrebbe mai visti.
+  // Precedenza: SofaScore < playerstats < Understat. Understat vince sugli
+  // xG perché è la fonte su cui i beta sono stati calibrati; playerstats
+  // vince su SofaScore perché è aggiornato a ogni run automatica.
+  const daSofa = (S.sofascore && S.sofascore[st.id]) || null;
+  const daPlayerstats = (S.playerstats && S.playerstats[st.id]) || null;
+  const daUnderstat = (S.understat && S.understat[st.id]) || null;
   let fonte = null;
-  if (role !== "A") {
-    const daSofa = S.sofascore && S.sofascore[st.id];
-    const daPlayerstats = S.playerstats && S.playerstats[st.id];
-    if (daSofa || daPlayerstats) fonte = { ...(daSofa || {}), ...(daPlayerstats || {}) };
-  } else {
-    fonte = S.understat && S.understat[st.id];
+  if (daSofa || daPlayerstats || daUnderstat) {
+    fonte = { ...(daSofa || {}), ...(daPlayerstats || {}), ...(daUnderstat || {}) };
+    // Un campo presente ma nullo non deve mascherare quello di una fonte
+    // meno prioritaria: null significa "non lo so", non "vale zero".
+    for (const k of Object.keys(fonte)) {
+      if (fonte[k] == null) {
+        const ripiego = [daPlayerstats, daSofa].find(f => f && f[k] != null);
+        if (ripiego) fonte[k] = ripiego[k];
+        else delete fonte[k];
+      }
+    }
   }
   if (!w || !fonte) return { val: 0, has: false };   // nessun feed (es. campionato fermo) → 0
   const fvsd = PERF_W.FV_sd[role] || 0;
