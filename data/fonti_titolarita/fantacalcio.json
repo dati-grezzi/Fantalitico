@@ -1,7 +1,7 @@
 {
   "fonte": "fantacalcio.it",
   "giornata": 3,
-  "aggiornato": "2026-09-02T05:26:32.829194+00:00",
+  "aggiornato": "2026-09-02T10:28:09.705247+00:00",
   "giocatori": {
     "7332": {
       "nome": "Bijlow",
@@ -55,8 +55,8 @@
     "7537": {
       "nome": "Mitaj",
       "squadra": "genoa",
-      "percentuale": 45,
-      "confidence": 0.45,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
     "5823": {
@@ -353,13 +353,6 @@
       "confidence": 0.45,
       "match_score": 1.0
     },
-    "6814": {
-      "nome": "Norton-Cuffy",
-      "squadra": "genoa",
-      "percentuale": 55,
-      "confidence": 0.55,
-      "match_score": 1.0
-    },
     "2521": {
       "nome": "De Gea",
       "squadra": "fiorentina",
@@ -552,8 +545,8 @@
     "6170": {
       "nome": "Gineitis",
       "squadra": "torino",
-      "percentuale": 85,
-      "confidence": 0.85,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "7535": {
@@ -643,8 +636,8 @@
     "7183": {
       "nome": "Aboukhlal",
       "squadra": "torino",
-      "percentuale": 20,
-      "confidence": 0.2,
+      "percentuale": 30,
+      "confidence": 0.3,
       "match_score": 1.0
     },
     "7624": {
@@ -661,11 +654,18 @@
       "confidence": 0.4,
       "match_score": 1.0
     },
+    "6889": {
+      "nome": "Anjorin",
+      "squadra": "torino",
+      "percentuale": 20,
+      "confidence": 0.2,
+      "match_score": 1.0
+    },
     "1933": {
       "nome": "Mandragora",
       "squadra": "torino",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 45,
+      "confidence": 0.45,
       "match_score": 1.0
     },
     "608": {
@@ -678,8 +678,8 @@
     "7349": {
       "nome": "Kulenovic",
       "squadra": "torino",
-      "percentuale": 50,
-      "confidence": 0.5,
+      "percentuale": 35,
+      "confidence": 0.35,
       "match_score": 1.0
     },
     "5116": {
@@ -1847,29 +1847,29 @@
     "7301": {
       "nome": "Tornqvist",
       "squadra": "monza",
-      "percentuale": 80,
-      "confidence": 0.8,
-      "match_score": 1.0
-    },
-    "7238": {
-      "nome": "Kouadio",
-      "squadra": "monza",
-      "percentuale": 85,
-      "confidence": 0.85,
+      "percentuale": 90,
+      "confidence": 0.9,
       "match_score": 1.0
     },
     "7260": {
       "nome": "Ziolkowski",
       "squadra": "monza",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 60,
+      "confidence": 0.6,
+      "match_score": 1.0
+    },
+    "6659": {
+      "nome": "Lucchesi",
+      "squadra": "monza",
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "4925": {
       "nome": "Carboni A.",
       "squadra": "monza",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "5838": {
@@ -1879,18 +1879,18 @@
       "confidence": 0.9,
       "match_score": 1.0
     },
-    "7574": {
-      "nome": "Foe Ondoa",
-      "squadra": "monza",
-      "percentuale": 55,
-      "confidence": 0.55,
-      "match_score": 1.0
-    },
     "6593": {
       "nome": "Akinsanmiro",
       "squadra": "monza",
       "percentuale": 80,
       "confidence": 0.8,
+      "match_score": 1.0
+    },
+    "6252": {
+      "nome": "Folorunsho",
+      "squadra": "monza",
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "7485": {
@@ -1903,15 +1903,15 @@
     "5878": {
       "nome": "Colpani",
       "squadra": "monza",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
-    "6252": {
-      "nome": "Folorunsho",
+    "6145": {
+      "nome": "Ngonge",
       "squadra": "monza",
-      "percentuale": 85,
-      "confidence": 0.85,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "2155": {
@@ -1942,11 +1942,18 @@
       "confidence": 0.2,
       "match_score": 1.0
     },
+    "7238": {
+      "nome": "Kouadio",
+      "squadra": "monza",
+      "percentuale": 40,
+      "confidence": 0.4,
+      "match_score": 1.0
+    },
     "6537": {
       "nome": "Goglichidze",
       "squadra": "monza",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 40,
+      "confidence": 0.4,
       "match_score": 1.0
     },
     "7476": {
@@ -1954,13 +1961,6 @@
       "squadra": "monza",
       "percentuale": 30,
       "confidence": 0.3,
-      "match_score": 1.0
-    },
-    "6659": {
-      "nome": "Lucchesi",
-      "squadra": "monza",
-      "percentuale": 40,
-      "confidence": 0.4,
       "match_score": 1.0
     },
     "7604": {
@@ -1973,22 +1973,29 @@
     "7575": {
       "nome": "Mout",
       "squadra": "monza",
-      "percentuale": 45,
-      "confidence": 0.45,
+      "percentuale": 40,
+      "confidence": 0.4,
+      "match_score": 1.0
+    },
+    "7574": {
+      "nome": "Foe Ondoa",
+      "squadra": "monza",
+      "percentuale": 50,
+      "confidence": 0.5,
       "match_score": 1.0
     },
     "6592": {
       "nome": "Forson O.",
       "squadra": "monza",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 40,
+      "confidence": 0.4,
       "match_score": 1.0
     },
     "7146": {
       "nome": "Tourè I.",
       "squadra": "monza",
-      "percentuale": 50,
-      "confidence": 0.5,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "7477": {
@@ -2001,15 +2008,15 @@
     "5882": {
       "nome": "Mota",
       "squadra": "monza",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "7620": {
       "nome": "Zeballos",
       "squadra": "monza",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 50,
+      "confidence": 0.5,
       "match_score": 1.0
     },
     "7546": {
@@ -2019,13 +2026,6 @@
       "confidence": 0.25,
       "match_score": 1.0
     },
-    "6145": {
-      "nome": "Ngonge",
-      "squadra": "monza",
-      "percentuale": 40,
-      "confidence": 0.4,
-      "match_score": 1.0
-    },
     "133": {
       "nome": "Skorupski",
       "squadra": "bologna",
@@ -2033,8 +2033,8 @@
       "confidence": 0.9,
       "match_score": 1.0
     },
-    "5678": {
-      "nome": "Holm",
+    "4433": {
+      "nome": "Zortea",
       "squadra": "bologna",
       "percentuale": 60,
       "confidence": 0.6,
@@ -2124,8 +2124,8 @@
       "confidence": 0.35,
       "match_score": 1.0
     },
-    "4433": {
-      "nome": "Zortea",
+    "5678": {
+      "nome": "Holm",
       "squadra": "bologna",
       "percentuale": 40,
       "confidence": 0.4,
@@ -2505,8 +2505,8 @@
     "5761": {
       "nome": "Zhegrova",
       "squadra": "juventus",
-      "percentuale": 20,
-      "confidence": 0.2,
+      "percentuale": 15,
+      "confidence": 0.15,
       "match_score": 1.0
     },
     "6752": {
@@ -3293,13 +3293,6 @@
       "confidence": 0.6,
       "match_score": 1.0
     },
-    "460": {
-      "nome": "Romagnoli",
-      "squadra": "lazio",
-      "percentuale": 15,
-      "confidence": 0.15,
-      "match_score": 1.0
-    },
     "7580": {
       "nome": "Sutalo J.",
       "squadra": "lazio",
@@ -3312,6 +3305,13 @@
       "squadra": "lazio",
       "percentuale": 40,
       "confidence": 0.4,
+      "match_score": 1.0
+    },
+    "460": {
+      "nome": "Romagnoli",
+      "squadra": "lazio",
+      "percentuale": 15,
+      "confidence": 0.15,
       "match_score": 1.0
     },
     "2728": {
