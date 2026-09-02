@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-09-02T10:28:10.700855+00:00",
+  "aggiornato": "2026-09-02T20:31:51.770280+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -33,8 +33,8 @@
       "infortunati": [
         {
           "nome": "Orsolini",
-          "dettaglio": "Risentimento ai flessori della coscia sinistra, da valutare",
-          "rientro_giornata": null,
+          "dettaglio": "Risentimento ai flessori della coscia sinistra da valutare con esami strumentali, in dubbio per la 4a",
+          "rientro_giornata": 4,
           "id": "2167",
           "match_score": 1.0
         },
@@ -108,6 +108,19 @@
       "squalificati": [],
       "diffidati": []
     },
+    "inter": {
+      "infortunati": [
+        {
+          "nome": "Spence",
+          "dettaglio": "Non si è ancora allenato in gruppo per un ritardo di condizione, in dubbio per la 5a ma c'è il rischio che torni dopo la sosta",
+          "rientro_giornata": 5,
+          "id": "5982",
+          "match_score": 1.0
+        }
+      ],
+      "squalificati": [],
+      "diffidati": []
+    },
     "juventus": {
       "infortunati": [
         {
@@ -125,13 +138,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Thuram K.",
-          "dettaglio": "Problema al ginocchio, da valutare",
-          "rientro_giornata": null,
-          "id": "5562",
-          "match_score": 1.0
-        },
-        {
           "nome": "Ekhator",
           "dettaglio": "Lesione di medio grado del muscolo semitendinoso, in dubbio per la 9a",
           "rientro_giornata": 9,
@@ -143,6 +149,13 @@
           "dettaglio": "Operato per frattura al quinto metatarso del piede sinistro, in dubbio per la 13a",
           "rientro_giornata": 13,
           "id": "6434",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Thuram K.",
+          "dettaglio": "Intervento chirurgico per mettere fine alla sindrome femoro-rotulea al ginocchio destro, in dubbio per la 17a",
+          "rientro_giornata": 17,
+          "id": "5562",
           "match_score": 1.0
         }
       ],
@@ -159,13 +172,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Rovella",
-          "dettaglio": "Problema al polpaccio, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "4459",
-          "match_score": 1.0
-        },
-        {
           "nome": "Dele-Bashiru",
           "dettaglio": "Lesione di primo grado ai flessori della coscia destra, in dubbio per la 4a",
           "rientro_giornata": 4,
@@ -177,6 +183,13 @@
           "dettaglio": "Stiramento ai flessori, in dubbio per la 4a",
           "rientro_giornata": 4,
           "id": "2188",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Rovella",
+          "dettaglio": "Lesione muscolare al polpaccio, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "4459",
           "match_score": 1.0
         },
         {
@@ -214,8 +227,8 @@
         },
         {
           "nome": "Varela G.",
-          "dettaglio": "Problema all'adduttore, da valutare",
-          "rientro_giornata": null,
+          "dettaglio": "Problema all'adduttore, in dubbio per la 3a",
+          "rientro_giornata": 3,
           "id": "7523",
           "match_score": 1.0
         },
@@ -274,7 +287,7 @@
       "infortunati": [
         {
           "nome": "N'dicka",
-          "dettaglio": "Problema all'adduttore, in dubbio per la 3a",
+          "dettaglio": "Infiammazione all'adduttore, in dubbio per la 3a",
           "rientro_giornata": 3,
           "id": "4317",
           "match_score": 1.0
@@ -396,8 +409,8 @@
         },
         {
           "nome": "Franjic",
-          "dettaglio": "Si teme una dislocazione della clavicola, da valutare",
-          "rientro_giornata": null,
+          "dettaglio": "Si teme una dislocazione della clavicola, in dubbio per la 5a",
+          "rientro_giornata": 5,
           "id": "7478",
           "match_score": 1.0
         },

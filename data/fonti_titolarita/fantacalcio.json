@@ -1,7 +1,7 @@
 {
   "fonte": "fantacalcio.it",
   "giornata": 3,
-  "aggiornato": "2026-09-02T10:28:09.705247+00:00",
+  "aggiornato": "2026-09-02T20:31:50.862211+00:00",
   "giocatori": {
     "7332": {
       "nome": "Bijlow",
@@ -1116,6 +1116,13 @@
       "confidence": 0.4,
       "match_score": 1.0
     },
+    "6986": {
+      "nome": "Rensch",
+      "squadra": "roma",
+      "percentuale": 40,
+      "confidence": 0.4,
+      "match_score": 1.0
+    },
     "4705": {
       "nome": "Balerdi",
       "squadra": "roma",
@@ -1140,8 +1147,8 @@
     "530": {
       "nome": "Pellegrini Lo.",
       "squadra": "roma",
-      "percentuale": 10,
-      "confidence": 0.1,
+      "percentuale": 25,
+      "confidence": 0.25,
       "match_score": 1.0
     },
     "5734": {
@@ -1240,6 +1247,13 @@
       "squadra": "atalanta",
       "percentuale": 5,
       "confidence": 0.05,
+      "match_score": 1.0
+    },
+    "7626": {
+      "nome": "Pompei",
+      "squadra": "atalanta",
+      "percentuale": 1,
+      "confidence": 0.01,
       "match_score": 1.0
     },
     "554": {
@@ -2502,13 +2516,6 @@
       "confidence": 0.6,
       "match_score": 1.0
     },
-    "5761": {
-      "nome": "Zhegrova",
-      "squadra": "juventus",
-      "percentuale": 15,
-      "confidence": 0.15,
-      "match_score": 1.0
-    },
     "6752": {
       "nome": "Woltemade",
       "squadra": "juventus",
@@ -2775,15 +2782,15 @@
       "confidence": 0.55,
       "match_score": 1.0
     },
-    "6650": {
-      "nome": "Sherri",
+    "3": {
+      "nome": "Radunovic",
       "squadra": "cagliari",
       "percentuale": 5,
       "confidence": 0.05,
       "match_score": 1.0
     },
-    "3": {
-      "nome": "Radunovic",
+    "6650": {
+      "nome": "Sherri",
       "squadra": "cagliari",
       "percentuale": 1,
       "confidence": 0.01,
