@@ -124,23 +124,39 @@ async def main_async():
         # NON entrano ancora nel motore — i beta misurati valgono per tiri e
         # xA, non per questi campi. Le raccogliamo ora per poterle calibrare
         # quando ci saranno giornate a sufficienza.
-        attivate = await page.evaluate("""
+        # Cerco le righe in TUTTO il documento invece che nel pannello
+        # numero 1: l'indice non è affidabile, se la tabella squadre è l'unica
+        # renderizzata in quel momento si finisce sul selettore sbagliato, dove
+        # queste colonne non esistono (log del 02/09/2026).
+        esito = await page.evaluate("""
             () => {
                 const volute = ['npg','npxg','npxg90','xgchain','xgbuildup','xgchain90','xgbuildup90'];
-                const pannelli = document.querySelectorAll('.table-options');
-                const p = pannelli[1] || pannelli[0];
-                if (!p) return [];
-                const fatte = [];
-                p.querySelectorAll('.table-options-row').forEach(r => {
-                    const et = Array.from(r.childNodes).filter(n => n.nodeType === 3)
-                        .map(n => n.textContent.trim()).join(' ').trim().toLowerCase();
+                const righe = Array.from(document.querySelectorAll('.table-options-row'));
+                const etichetta = (r) => Array.from(r.childNodes)
+                    .filter(n => n.nodeType === 3)
+                    .map(n => n.textContent.trim()).join(' ').trim().toLowerCase();
+                const viste = righe.map(etichetta).filter(Boolean);
+                const fatte = [], gia = [];
+                righe.forEach(r => {
+                    const et = etichetta(r);
                     if (!volute.includes(et)) return;
                     const box = r.querySelector('input[type=checkbox]');
-                    if (box && !box.checked) { box.click(); fatte.push(et); }
+                    if (!box) return;
+                    if (box.checked) { gia.push(et); return; }
+                    box.click();
+                    fatte.push(et);
                 });
-                return fatte;
+                return {fatte, gia, righeTotali: righe.length, viste};
             }
         """)
+        attivate = esito.get("fatte", [])
+        if esito.get("gia"):
+            print(f"   Colonne già attive: {esito['gia']}")
+        if not attivate and not esito.get("gia"):
+            print(f"   ⚠️  Nessuna colonna attivata — righe di opzioni trovate: "
+                  f"{esito.get('righeTotali', 0)}")
+            print(f"      etichette viste: {esito.get('viste', [])[:25]}")
+
         if attivate:
             print(f"   Colonne aggiuntive attivate: {attivate}")
             # Attendo che la tabella si ridisegni con le colonne nuove, invece
