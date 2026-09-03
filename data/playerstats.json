@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-03T10:36:42.761543+00:00",
+ "aggiornato": "2026-09-03T20:33:09.955913+00:00",
  "fonte": "playerstats.football (statistiche difensive/di passaggio, per90, solo top-50 per categoria)",
  "note": "Mapping ID fantacalcio → {tackles_p90, interceptions_p90, clearances_p90, duels_p90, key_passes_p90, accurate_passes_p90, rating}. Copertura parziale: solo chi rientra nei primi 50 di almeno una categoria.",
  "giocatori": {
@@ -64,7 +64,7 @@
    "interceptions_p90": 2.0,
    "duels_p90": 12.0,
    "accurate_passes_p90": 66.5,
-   "rating": 7.22,
+   "rating": 7.26,
    "playerstats_name": "Bryan Cristante",
    "match_score": 0.85
   },
@@ -102,7 +102,7 @@
   "7599": {
    "minuti": 180,
    "tackles_p90": 3.0,
-   "rating": 7.3,
+   "rating": 7.29,
    "playerstats_name": "Emanuele Lulli",
    "match_score": 0.85
   },
@@ -453,14 +453,14 @@
    "playerstats_name": "Adam Bakoune",
    "match_score": 0.85
   },
-  "7268": {
+  "2169": {
    "minuti": 180,
    "interceptions_p90": 2.0,
    "clearances_p90": 5.5,
    "accurate_passes_p90": 58.5,
    "rating": 7.18,
    "playerstats_name": "Juan Rodríguez",
-   "match_score": 0.667
+   "match_score": 0.85
   },
   "5010": {
    "minuti": 113,
@@ -1202,7 +1202,7 @@
   },
   "5585": {
    "minuti": 135,
-   "rating": 11.53,
+   "rating": 11.59,
    "shots_p90": 6.67,
    "shots_on_target_p90": 4.0,
    "playerstats_name": "Donyell Malen",
@@ -1215,18 +1215,18 @@
    "playerstats_name": "Marco Carnesecchi",
    "match_score": 0.85
   },
-  "7556": {
-   "minuti": 84,
-   "rating": 15.79,
-   "shots_on_target_p90": 3.21,
-   "playerstats_name": "Rodrigo Mora",
-   "match_score": 0.85
-  },
   "6415": {
    "minuti": 180,
    "rating": 7.36,
    "saves_p90": 4.0,
    "playerstats_name": "Lorenzo Palmisani",
+   "match_score": 0.85
+  },
+  "7556": {
+   "minuti": 84,
+   "rating": 15.75,
+   "shots_on_target_p90": 3.21,
+   "playerstats_name": "Rodrigo Mora",
    "match_score": 0.85
   },
   "4360": {
