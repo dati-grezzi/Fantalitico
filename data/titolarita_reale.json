@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-09-03T03:38:22.725822+00:00",
+  "aggiornato": "2026-09-03T10:35:09.624730+00:00",
   "fonti_usate": [
     "calciomagazine.it",
     "fantacalcio.it",
@@ -3310,17 +3310,15 @@
     "6039": {
       "nome": "Cabal",
       "squadra": "juventus",
-      "confidence": 0.212,
+      "confidence": 0.15,
       "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it"
+        "calciomagazine.it"
       ],
-      "n_fonti": 2,
+      "n_fonti": 1,
       "valori": {
-        "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.25
+        "calciomagazine.it": 0.15
       },
-      "scarto": 0.1
+      "scarto": null
     },
     "6042": {
       "nome": "Lucumì",
@@ -7625,6 +7623,19 @@
       },
       "scarto": null
     },
+    "795": {
+      "nome": "El Shaarawy",
+      "squadra": "genoa",
+      "confidence": 0.35,
+      "fonti": [
+        "fantacalcio.it"
+      ],
+      "n_fonti": 1,
+      "valori": {
+        "fantacalcio.it": 0.35
+      },
+      "scarto": null
+    },
     "7582": {
       "nome": "Zulevic",
       "squadra": "genoa",
@@ -8171,6 +8182,19 @@
       "n_fonti": 1,
       "valori": {
         "fantacalcio.it": 0.55
+      },
+      "scarto": null
+    },
+    "7627": {
+      "nome": "Enem",
+      "squadra": "bologna",
+      "confidence": 0.2,
+      "fonti": [
+        "fantacalcio.it"
+      ],
+      "n_fonti": 1,
+      "valori": {
+        "fantacalcio.it": 0.2
       },
       "scarto": null
     },
