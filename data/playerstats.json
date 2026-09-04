@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-03T20:33:09.955913+00:00",
+ "aggiornato": "2026-09-04T10:27:34.456034+00:00",
  "fonte": "playerstats.football (statistiche difensive/di passaggio, per90, solo top-50 per categoria)",
  "note": "Mapping ID fantacalcio → {tackles_p90, interceptions_p90, clearances_p90, duels_p90, key_passes_p90, accurate_passes_p90, rating}. Copertura parziale: solo chi rientra nei primi 50 di almeno una categoria.",
  "giocatori": {
@@ -52,9 +52,10 @@
   "7326": {
    "minuti": 180,
    "tackles_p90": 3.5,
-   "interceptions_p90": 1.5,
+   "interceptions_p90": 2.0,
    "clearances_p90": 4.5,
    "accurate_passes_p90": 77.5,
+   "rating": 7.22,
    "playerstats_name": "Eivind Helland",
    "match_score": 0.85
   },
@@ -193,7 +194,7 @@
    "tackles_p90": 2.5,
    "key_passes_p90": 2.0,
    "accurate_passes_p90": 94.0,
-   "rating": 7.35,
+   "rating": 7.39,
    "playerstats_name": "Lewis Ferguson",
    "match_score": 0.85
   },
@@ -546,16 +547,6 @@
    "playerstats_name": "Nemanja Matić",
    "match_score": 0.85
   },
-  "6684": {
-   "minuti": 175,
-   "interceptions_p90": 1.54,
-   "duels_p90": 9.26,
-   "rating": 7.68,
-   "shots_p90": 2.57,
-   "shots_on_target_p90": 1.03,
-   "playerstats_name": "Jurgen Ekkelenkamp",
-   "match_score": 0.85
-  },
   "7485": {
    "minuti": 180,
    "interceptions_p90": 1.5,
@@ -597,12 +588,21 @@
    "playerstats_name": "Hakan Çalhanoğlu",
    "match_score": 0.85
   },
+  "6684": {
+   "minuti": 175,
+   "interceptions_p90": 1.54,
+   "duels_p90": 9.26,
+   "rating": 7.68,
+   "shots_p90": 2.57,
+   "shots_on_target_p90": 1.03,
+   "playerstats_name": "Jurgen Ekkelenkamp",
+   "match_score": 0.85
+  },
   "5641": {
    "minuti": 180,
    "interceptions_p90": 1.5,
    "clearances_p90": 5.0,
    "accurate_passes_p90": 64.0,
-   "rating": 7.18,
    "playerstats_name": "Trevoh Chalobah",
    "match_score": 0.85
   },
@@ -903,6 +903,13 @@
    "playerstats_name": "Ché Adams",
    "match_score": 0.85
   },
+  "6164": {
+   "minuti": 153,
+   "duels_p90": 12.35,
+   "shots_p90": 2.35,
+   "playerstats_name": "Vitinha",
+   "match_score": 1.0
+  },
   "6904": {
    "minuti": 170,
    "duels_p90": 11.12,
@@ -911,13 +918,6 @@
    "shots_on_target_p90": 1.06,
    "playerstats_name": "John Yeboah",
    "match_score": 0.85
-  },
-  "6164": {
-   "minuti": 153,
-   "duels_p90": 12.35,
-   "shots_p90": 2.35,
-   "playerstats_name": "Vitinha",
-   "match_score": 1.0
   },
   "6908": {
    "minuti": 164,
@@ -951,12 +951,6 @@
    "playerstats_name": "Jens Odgaard",
    "match_score": 0.85
   },
-  "7060": {
-   "minuti": 171,
-   "duels_p90": 9.47,
-   "playerstats_name": "Alessio Cacciamani",
-   "match_score": 0.85
-  },
   "5436": {
    "minuti": 179,
    "duels_p90": 9.05,
@@ -969,6 +963,12 @@
    "minuti": 147,
    "duels_p90": 11.02,
    "playerstats_name": "Frank Anguissa",
+   "match_score": 0.85
+  },
+  "7060": {
+   "minuti": 171,
+   "duels_p90": 9.47,
+   "playerstats_name": "Alessio Cacciamani",
    "match_score": 0.85
   },
   "4896": {
