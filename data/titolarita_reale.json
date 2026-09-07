@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-09-06T20:00:58.523186+00:00",
+  "aggiornato": "2026-09-07T11:24:29.797596+00:00",
   "fonti_usate": [
     "calciomagazine.it",
     "fantacalcio.it",
@@ -3855,24 +3855,22 @@
     "6632": {
       "nome": "Gaspar K",
       "squadra": "lecce",
-      "confidence": 0.904,
+      "confidence": 0.881,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
+        "fantacalcio.it"
       ],
-      "n_fonti": 3,
+      "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 0.9
       },
-      "scarto": 0.1
+      "scarto": 0.05
     },
     "6989": {
       "nome": "Tiago Gabriel",
       "squadra": "lecce",
-      "confidence": 0.863,
+      "confidence": 0.716,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -3882,9 +3880,9 @@
       "valori": {
         "calciomagazine.it": 0.85,
         "fantacalcio.it": 0.8,
-        "sosfanta.com": 0.95
+        "sosfanta.com": 0.51
       },
-      "scarto": 0.15
+      "scarto": 0.34
     },
     "4502": {
       "nome": "Gallo",
@@ -4060,17 +4058,19 @@
     "7240": {
       "nome": "Siebert",
       "squadra": "lecce",
-      "confidence": 0.369,
+      "confidence": 0.416,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 2,
+      "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.5
+        "fantacalcio.it": 0.5,
+        "sosfanta.com": 0.51
       },
-      "scarto": 0.35
+      "scarto": 0.36
     },
     "7248": {
       "nome": "Gorter",
