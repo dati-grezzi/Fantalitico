@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-09-08T10:28:39.712559+00:00",
+  "aggiornato": "2026-09-08T20:44:58.812732+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -51,24 +51,17 @@
     "cagliari": {
       "infortunati": [
         {
-          "nome": "Idrissi R.",
-          "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "7125",
-          "match_score": 1.0
-        },
-        {
           "nome": "Felici",
-          "dettaglio": "",
-          "rientro_giornata": null,
+          "dettaglio": "Infortunio da valutare in queste ore, in dubbio almeno per la 5a",
+          "rientro_giornata": 5,
           "id": "6640",
           "match_score": 1.0
         },
         {
-          "nome": "Mina",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "4210",
+          "nome": "Idrissi R.",
+          "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "7125",
           "match_score": 1.0
         }
       ],
@@ -96,13 +89,6 @@
           "rientro_giornata": 10,
           "id": "5449",
           "match_score": 1.0
-        },
-        {
-          "nome": "Oulai",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "7464",
-          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -112,8 +98,8 @@
       "infortunati": [
         {
           "nome": "Venturino",
-          "dettaglio": "Intervento chirurgico di “pulizia” del tendine rotuleo, in dubbio per la 3a",
-          "rientro_giornata": 3,
+          "dettaglio": "Intervento chirurgico di “pulizia” del tendine rotuleo, in dubbio per la 4a",
+          "rientro_giornata": 4,
           "id": "6980",
           "match_score": 1.0
         }
@@ -137,6 +123,13 @@
     "juventus": {
       "infortunati": [
         {
+          "nome": "Boga",
+          "dettaglio": "Sospetto stiramento muscolare, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "2832",
+          "match_score": 1.0
+        },
+        {
           "nome": "Cabal",
           "dettaglio": "Lesione di basso grado del muscolo semimembranoso della coscia sinistra, in dubbio per la 6a",
           "rientro_giornata": 6,
@@ -158,31 +151,17 @@
           "match_score": 1.0
         },
         {
-          "nome": "Thuram K.",
-          "dettaglio": "Intervento di condroplastica per la guarigione della condropatia rotulea del ginocchio destro, in dubbio per la 17a",
-          "rientro_giornata": 17,
-          "id": "5562",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Cambiaso",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "5520",
-          "match_score": 1.0
-        },
-        {
           "nome": "Locatelli",
-          "dettaglio": "",
-          "rientro_giornata": null,
+          "dettaglio": "Operazione al menisco del ginocchio, in dubbio per la 17a",
+          "rientro_giornata": 17,
           "id": "827",
           "match_score": 1.0
         },
         {
-          "nome": "Mckennie",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "4973",
+          "nome": "Thuram K.",
+          "dettaglio": "Intervento di condroplastica per la guarigione della condropatia rotulea del ginocchio destro, in dubbio per la 17a",
+          "rientro_giornata": 17,
+          "id": "5562",
           "match_score": 1.0
         }
       ],
@@ -193,8 +172,8 @@
       "infortunati": [
         {
           "nome": "Patric",
-          "dettaglio": "Autorizzato a osservare alcuni giorni di temporanea indisponibilità per completare un percorso clinico già programmato, in dubbio per la 3a",
-          "rientro_giornata": 3,
+          "dettaglio": "Autorizzato a osservare alcuni giorni di temporanea indisponibilità per completare un percorso clinico già programmato, in dubbio per la 4a",
+          "rientro_giornata": 4,
           "id": "327",
           "match_score": 1.0
         },
@@ -234,8 +213,8 @@
       "infortunati": [
         {
           "nome": "Geubbels",
-          "dettaglio": "Trauma distorsivo alla caviglia sinistra, in dubbio per la 3a",
-          "rientro_giornata": 3,
+          "dettaglio": "Trauma distorsivo alla caviglia sinistra, in dubbio per la 4a",
+          "rientro_giornata": 4,
           "id": "5029",
           "match_score": 1.0
         }
@@ -260,9 +239,37 @@
       "infortunati": [
         {
           "nome": "Ciurria",
-          "dettaglio": "Problema fisico, in dubbio per la 3a",
-          "rientro_giornata": 3,
+          "dettaglio": "Problema fisico, in dubbio per la 4a",
+          "rientro_giornata": 4,
           "id": "5880",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Cutrone",
+          "dettaglio": "Fastidio muscolare, in dubbio per la 4a",
+          "rientro_giornata": 4,
+          "id": "2155",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Varela G.",
+          "dettaglio": "Infortunio muscolare all'adduttore, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "7523",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Tourè I.",
+          "dettaglio": "Sta recuperando da un infortunio al ginocchio, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "7146",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Ziolkowski",
+          "dettaglio": "Problema alla fascia plantare, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "7260",
           "match_score": 1.0
         },
         {
@@ -271,34 +278,6 @@
           "rientro_giornata": 9,
           "id": "2741",
           "match_score": 1.0
-        },
-        {
-          "nome": "Cutrone",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "2155",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Tourè I.",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "7146",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Varela G.",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "7523",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Ziolkowski",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "7260",
-          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -306,6 +285,13 @@
     },
     "napoli": {
       "infortunati": [
+        {
+          "nome": "Zambo Anguissa",
+          "dettaglio": "Problema all'adduttore, in dubbio per la 4a",
+          "rientro_giornata": 4,
+          "id": "4220",
+          "match_score": 1.0
+        },
         {
           "nome": "Giovane",
           "dettaglio": "Intervento di correzione per ernia inguinale, in dubbio per la 6a",
@@ -322,7 +308,7 @@
         },
         {
           "nome": "Mctominay",
-          "dettaglio": "Intervento di correzione mediante ablazione (PFA) in seguito all'insorgenza di una lieve aritmia benigna, rientro previsto per la 6a",
+          "dettaglio": "Intervento di correzione mediante ablazione (PFA) in seguito all'insorgenza di una lieve aritmia benigna, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "4777",
           "match_score": 1.0
@@ -341,24 +327,24 @@
     "parma": {
       "infortunati": [
         {
-          "nome": "Nicolussi Caviglia",
-          "dettaglio": "Sindrome pubalgica, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "4349",
-          "match_score": 1.0
-        },
-        {
           "nome": "Bernabè",
-          "dettaglio": "",
-          "rientro_giornata": null,
+          "dettaglio": "Problema fisico da valutare, in dubbio per la 4a",
+          "rientro_giornata": 4,
           "id": "6666",
           "match_score": 1.0
         },
         {
           "nome": "Diallo O.",
-          "dettaglio": "",
-          "rientro_giornata": null,
+          "dettaglio": "Problema fisico da valutare, in dubbio per la 4a",
+          "rientro_giornata": 4,
           "id": "7536",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Nicolussi Caviglia",
+          "dettaglio": "Sindrome pubalgica, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "4349",
           "match_score": 1.0
         }
       ],
@@ -368,31 +354,45 @@
     "sassuolo": {
       "infortunati": [
         {
+          "nome": "Bakola",
+          "dettaglio": "Infortunio da valutare in queste ore, in dubbio per la 4a",
+          "rientro_giornata": 4,
+          "id": "7036",
+          "match_score": 1.0
+        },
+        {
           "nome": "Boloca",
-          "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per la 3a",
-          "rientro_giornata": 3,
+          "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per la 4a",
+          "rientro_giornata": 4,
           "id": "6219",
           "match_score": 1.0
         },
         {
           "nome": "Candè",
-          "dettaglio": "Intervento di ricostruzione del Legamento Crociato Anteriore del ginocchio destro, in dubbio per la 3a",
-          "rientro_giornata": 3,
+          "dettaglio": "Intervento di ricostruzione del Legamento Crociato Anteriore del ginocchio destro, in dubbio per la 4a",
+          "rientro_giornata": 4,
           "id": "6985",
           "match_score": 1.0
         },
         {
           "nome": "Pieragnolo",
-          "dettaglio": "Intervento chirurgico di ricostruzione del Legamento Crociato Anteriore del ginocchio destro, in dubbio per la 3a",
-          "rientro_giornata": 3,
+          "dettaglio": "Intervento chirurgico di ricostruzione del Legamento Crociato Anteriore del ginocchio destro, in dubbio per la 4a",
+          "rientro_giornata": 4,
           "id": "7156",
           "match_score": 1.0
         },
         {
           "nome": "Walukiewicz",
-          "dettaglio": "Fuori per un problema fisico, in dubbio per la 3a",
-          "rientro_giornata": 3,
+          "dettaglio": "Fuori per un problema fisico, in dubbio per la 4a",
+          "rientro_giornata": 4,
           "id": "4374",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Volpato",
+          "dettaglio": "Sospetto stiramento da valutare con esami, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "5735",
           "match_score": 1.0
         },
         {
@@ -400,20 +400,6 @@
           "dettaglio": "Intervento di riduzione della frattura della gamba sinistra, in dubbio per la 20a",
           "rientro_giornata": 20,
           "id": "6717",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Bakola",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "7036",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Volpato",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "5735",
           "match_score": 1.0
         }
       ],
@@ -424,15 +410,15 @@
       "infortunati": [
         {
           "nome": "Casadei",
-          "dettaglio": "Affaticamento muscolare, in dubbio per la 3a",
-          "rientro_giornata": 3,
+          "dettaglio": "Affaticamento muscolare, in dubbio per la 4a",
+          "rientro_giornata": 4,
           "id": "5888",
           "match_score": 1.0
         },
         {
           "nome": "Coco",
-          "dettaglio": "",
-          "rientro_giornata": null,
+          "dettaglio": "Contusione al ginocchio, in dubbio per la 4a",
+          "rientro_giornata": 4,
           "id": "6642",
           "match_score": 1.0
         }
@@ -443,17 +429,17 @@
     "udinese": {
       "infortunati": [
         {
-          "nome": "Zanoli",
-          "dettaglio": "Intervento chirurgico per lesione del legamento crociato anteriore del ginocchio destro, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "5527",
-          "match_score": 1.0
-        },
-        {
           "nome": "Arizala",
           "dettaglio": "Lesione al bicipite femorale. In dubbio per la 5a",
           "rientro_giornata": 5,
           "id": "7312",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Solet",
+          "dettaglio": "Infortunio muscolare all'adduttore da valutare con esami, in dubbio almeno per la 5a",
+          "rientro_giornata": 5,
+          "id": "6956",
           "match_score": 1.0
         },
         {
@@ -464,6 +450,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Piotrowski",
+          "dettaglio": "Lieve aritmia cardiaca benigna ed è necessario un intervento di ablazione cardiaca, in dubbio per la. 6a",
+          "rientro_giornata": null,
+          "id": "7198",
+          "match_score": 1.0
+        },
+        {
           "nome": "Zaniolo",
           "dettaglio": "Stiramento, in dubbio per la 6a",
           "rientro_giornata": 6,
@@ -471,10 +464,10 @@
           "match_score": 1.0
         },
         {
-          "nome": "Solet",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "6956",
+          "nome": "Zanoli",
+          "dettaglio": "Intervento chirurgico per lesione del legamento crociato anteriore del ginocchio destro, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "5527",
           "match_score": 1.0
         }
       ],
@@ -491,6 +484,20 @@
           "match_score": 1.0
         },
         {
+          "nome": "Franjic",
+          "dettaglio": "Sospetta dislocazione della clavicola da valutare, in dubbio per la 4a",
+          "rientro_giornata": 4,
+          "id": "7478",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Bella-Kotchap",
+          "dettaglio": "Infortunio muscolare da valutare, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "7253",
+          "match_score": 1.0
+        },
+        {
           "nome": "Adorante",
           "dettaglio": "Operazione per un problema alla schiena, in dubbio per la 7a",
           "rientro_giornata": 7,
@@ -502,20 +509,6 @@
           "dettaglio": "Infortunio alle anche, in dubbio per la 7a",
           "rientro_giornata": 7,
           "id": "6673",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Bella-Kotchap",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "7253",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Franjic",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "7478",
           "match_score": 1.0
         }
       ],
