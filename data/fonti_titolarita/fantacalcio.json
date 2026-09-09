@@ -1,7 +1,7 @@
 {
   "fonte": "fantacalcio.it",
   "giornata": 4,
-  "aggiornato": "2026-09-09T10:39:16.357864+00:00",
+  "aggiornato": "2026-09-09T20:25:49.761809+00:00",
   "giocatori": {
     "6248": {
       "nome": "Stankovic F.",
@@ -517,8 +517,8 @@
     "7453": {
       "nome": "Havel",
       "squadra": "genoa",
-      "percentuale": 25,
-      "confidence": 0.25,
+      "percentuale": 20,
+      "confidence": 0.2,
       "match_score": 1.0
     },
     "6415": {
@@ -769,8 +769,8 @@
     "2038": {
       "nome": "Pinamonti",
       "squadra": "lazio",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
     "632": {
@@ -1483,8 +1483,8 @@
     "7318": {
       "nome": "Gandelman",
       "squadra": "lecce",
-      "percentuale": 35,
-      "confidence": 0.35,
+      "percentuale": 25,
+      "confidence": 0.25,
       "match_score": 1.0
     },
     "7319": {
@@ -1627,13 +1627,6 @@
       "confidence": 0.4,
       "match_score": 1.0
     },
-    "7260": {
-      "nome": "Ziolkowski",
-      "squadra": "monza",
-      "percentuale": 25,
-      "confidence": 0.25,
-      "match_score": 1.0
-    },
     "7604": {
       "nome": "Maye",
       "squadra": "monza",
@@ -1697,8 +1690,8 @@
       "confidence": 0.4,
       "match_score": 1.0
     },
-    "572": {
-      "nome": "Meret",
+    "2170": {
+      "nome": "Milinkovic-Savic V.",
       "squadra": "napoli",
       "percentuale": 90,
       "confidence": 0.9,
@@ -1707,8 +1700,8 @@
     "2816": {
       "nome": "Di Lorenzo",
       "squadra": "napoli",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
     "4409": {
@@ -1721,15 +1714,15 @@
     "6638": {
       "nome": "Marin R.",
       "squadra": "napoli",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "1852": {
       "nome": "Spinazzola",
       "squadra": "napoli",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "4220": {
@@ -1749,57 +1742,50 @@
     "7223": {
       "nome": "Vergara",
       "squadra": "napoli",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "536": {
       "nome": "Politano",
       "squadra": "napoli",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 70,
+      "confidence": 0.7,
       "match_score": 1.0
     },
     "6052": {
       "nome": "Hojlund",
       "squadra": "napoli",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
-    "7351": {
-      "nome": "Santos A.",
+    "6831": {
+      "nome": "Neres",
       "squadra": "napoli",
-      "percentuale": 80,
-      "confidence": 0.8,
-      "match_score": 1.0
-    },
-    "2170": {
-      "nome": "Milinkovic-Savic V.",
-      "squadra": "napoli",
-      "percentuale": 5,
-      "confidence": 0.05,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "2845": {
       "nome": "Contini",
       "squadra": "napoli",
-      "percentuale": 1,
-      "confidence": 0.01,
+      "percentuale": 5,
+      "confidence": 0.05,
       "match_score": 1.0
     },
     "5840": {
       "nome": "Olivera",
       "squadra": "napoli",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "7563": {
       "nome": "Favasuli",
       "squadra": "napoli",
-      "percentuale": 20,
-      "confidence": 0.2,
+      "percentuale": 30,
+      "confidence": 0.3,
       "match_score": 1.0
     },
     "6202": {
@@ -1812,43 +1798,36 @@
     "4664": {
       "nome": "Badiashile",
       "squadra": "napoli",
-      "percentuale": 35,
-      "confidence": 0.35,
+      "percentuale": 40,
+      "confidence": 0.4,
       "match_score": 1.0
     },
     "5131": {
       "nome": "Gilmour",
       "squadra": "napoli",
-      "percentuale": 35,
-      "confidence": 0.35,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "2517": {
       "nome": "De Bruyne",
       "squadra": "napoli",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "7120": {
       "nome": "Lang",
       "squadra": "napoli",
-      "percentuale": 50,
-      "confidence": 0.5,
-      "match_score": 1.0
-    },
-    "6831": {
-      "nome": "Neres",
-      "squadra": "napoli",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 45,
+      "confidence": 0.45,
       "match_score": 1.0
     },
     "6215": {
       "nome": "Lucca",
       "squadra": "napoli",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 40,
+      "confidence": 0.4,
       "match_score": 1.0
     },
     "133": {
@@ -3023,8 +3002,8 @@
     "5116": {
       "nome": "Martinez Jo.",
       "squadra": "inter",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 75,
+      "confidence": 0.75,
       "match_score": 1.0
     },
     "6217": {

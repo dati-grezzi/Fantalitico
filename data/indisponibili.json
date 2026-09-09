@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-09-09T10:39:17.542582+00:00",
+  "aggiornato": "2026-09-09T20:25:51.115024+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -51,17 +51,17 @@
     "cagliari": {
       "infortunati": [
         {
-          "nome": "Felici",
-          "dettaglio": "Infortunio da valutare in queste ore, in dubbio almeno per la 5a",
-          "rientro_giornata": 5,
-          "id": "6640",
-          "match_score": 1.0
-        },
-        {
           "nome": "Idrissi R.",
           "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "7125",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Felici",
+          "dettaglio": "Rottura del legamento crociato anteriore, in dubbio per 29a",
+          "rientro_giornata": null,
+          "id": "6640",
           "match_score": 1.0
         }
       ],
@@ -266,17 +266,17 @@
           "match_score": 1.0
         },
         {
-          "nome": "Ziolkowski",
-          "dettaglio": "Problema alla fascia plantare, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "7260",
-          "match_score": 1.0
-        },
-        {
           "nome": "Pessina",
           "dettaglio": "Operato per lussazione della rotula del ginocchio destro, in dubbio per la 9a",
           "rientro_giornata": 9,
           "id": "2741",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Ziolkowski",
+          "dettaglio": "Problema alla fascia plantare, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "7260",
           "match_score": 1.0
         }
       ],
@@ -285,6 +285,13 @@
     },
     "napoli": {
       "infortunati": [
+        {
+          "nome": "Meret",
+          "dettaglio": "Infortunio agli adduttori ancora da valutare, in fortissimo dubbio per la 4a",
+          "rientro_giornata": 4,
+          "id": "572",
+          "match_score": 1.0
+        },
         {
           "nome": "Zambo Anguissa",
           "dettaglio": "Problema all'adduttore, in dubbio per la 4a",
@@ -328,7 +335,7 @@
       "infortunati": [
         {
           "nome": "Bernabè",
-          "dettaglio": "Problema fisico da valutare, in dubbio per la 4a",
+          "dettaglio": "Problema muscolare, in dubbio per la 4a",
           "rientro_giornata": 4,
           "id": "6666",
           "match_score": 1.0
@@ -484,16 +491,9 @@
           "match_score": 1.0
         },
         {
-          "nome": "Franjic",
-          "dettaglio": "Sospetta dislocazione della clavicola da valutare, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "7478",
-          "match_score": 1.0
-        },
-        {
           "nome": "Bella-Kotchap",
-          "dettaglio": "Infortunio muscolare da valutare, in dubbio per la 5a",
-          "rientro_giornata": 5,
+          "dettaglio": "Piccolo risentimento mio-fasciale dell’adduttore della coscia destra, in dubbio per la 6a",
+          "rientro_giornata": 6,
           "id": "7253",
           "match_score": 1.0
         },
@@ -509,6 +509,13 @@
           "dettaglio": "Infortunio alle anche, in dubbio per la 7a",
           "rientro_giornata": 7,
           "id": "6673",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Franjic",
+          "dettaglio": "Intervento chirurgico per una lussazione acromion-claveare, in dubbio per la 15a",
+          "rientro_giornata": 15,
+          "id": "7478",
           "match_score": 1.0
         }
       ],
