@@ -1,7 +1,7 @@
 {
   "fonte": "fantacalcio.it",
   "giornata": 4,
-  "aggiornato": "2026-09-09T20:25:49.761809+00:00",
+  "aggiornato": "2026-09-10T10:27:05.982950+00:00",
   "giocatori": {
     "6248": {
       "nome": "Stankovic F.",
@@ -94,13 +94,6 @@
       "confidence": 0.01,
       "match_score": 1.0
     },
-    "7531": {
-      "nome": "Pozzi",
-      "squadra": "venezia",
-      "percentuale": 1,
-      "confidence": 0.01,
-      "match_score": 1.0
-    },
     "5481": {
       "nome": "Mazzocchi",
       "squadra": "venezia",
@@ -157,6 +150,13 @@
       "confidence": 0.4,
       "match_score": 1.0
     },
+    "7632": {
+      "nome": "Panada",
+      "squadra": "venezia",
+      "percentuale": 20,
+      "confidence": 0.2,
+      "match_score": 1.0
+    },
     "7232": {
       "nome": "Fernandez T.",
       "squadra": "venezia",
@@ -192,8 +192,8 @@
       "confidence": 0.9,
       "match_score": 1.0
     },
-    "7175": {
-      "nome": "Joao Mario",
+    "5885": {
+      "nome": "Dodò",
       "squadra": "fiorentina",
       "percentuale": 55,
       "confidence": 0.55,
@@ -202,12 +202,12 @@
     "5365": {
       "nome": "Dragusin",
       "squadra": "fiorentina",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
-    "7410": {
-      "nome": "Viery",
+    "4378": {
+      "nome": "Ranieri L.",
       "squadra": "fiorentina",
       "percentuale": 70,
       "confidence": 0.7,
@@ -223,29 +223,29 @@
     "6294": {
       "nome": "Ndour",
       "squadra": "fiorentina",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 90,
+      "confidence": 0.9,
       "match_score": 1.0
     },
     "4465": {
       "nome": "Fagioli",
       "squadra": "fiorentina",
-      "percentuale": 70,
-      "confidence": 0.7,
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "6908": {
       "nome": "Atta",
       "squadra": "fiorentina",
-      "percentuale": 85,
-      "confidence": 0.85,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
     "7078": {
       "nome": "Mastantuono",
       "squadra": "fiorentina",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "6827": {
@@ -276,22 +276,22 @@
       "confidence": 0.01,
       "match_score": 1.0
     },
-    "5885": {
-      "nome": "Dodò",
-      "squadra": "fiorentina",
-      "percentuale": 35,
-      "confidence": 0.35,
-      "match_score": 1.0
-    },
-    "6531": {
-      "nome": "Jimenez A.",
+    "7175": {
+      "nome": "Joao Mario",
       "squadra": "fiorentina",
       "percentuale": 45,
       "confidence": 0.45,
       "match_score": 1.0
     },
-    "4378": {
-      "nome": "Ranieri L.",
+    "6531": {
+      "nome": "Jimenez A.",
+      "squadra": "fiorentina",
+      "percentuale": 55,
+      "confidence": 0.55,
+      "match_score": 1.0
+    },
+    "7410": {
+      "nome": "Viery",
       "squadra": "fiorentina",
       "percentuale": 30,
       "confidence": 0.3,
@@ -300,8 +300,8 @@
     "5603": {
       "nome": "Pongracic",
       "squadra": "fiorentina",
-      "percentuale": 30,
-      "confidence": 0.3,
+      "percentuale": 45,
+      "confidence": 0.45,
       "match_score": 1.0
     },
     "4947": {
@@ -321,15 +321,15 @@
     "7625": {
       "nome": "Goncalves P.",
       "squadra": "fiorentina",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 45,
+      "confidence": 0.45,
       "match_score": 1.0
     },
     "7623": {
       "nome": "Gnonto",
       "squadra": "fiorentina",
-      "percentuale": 45,
-      "confidence": 0.45,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "5694": {
@@ -440,8 +440,8 @@
     "7537": {
       "nome": "Mitaj",
       "squadra": "genoa",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 50,
+      "confidence": 0.5,
       "match_score": 1.0
     },
     "7413": {
@@ -463,6 +463,13 @@
       "squadra": "genoa",
       "percentuale": 25,
       "confidence": 0.25,
+      "match_score": 1.0
+    },
+    "7390": {
+      "nome": "Doucouré M.",
+      "squadra": "genoa",
+      "percentuale": 15,
+      "confidence": 0.15,
       "match_score": 1.0
     },
     "7341": {
@@ -496,8 +503,8 @@
     "795": {
       "nome": "El Shaarawy",
       "squadra": "genoa",
-      "percentuale": 35,
-      "confidence": 0.35,
+      "percentuale": 50,
+      "confidence": 0.5,
       "match_score": 1.0
     },
     "6164": {
@@ -505,13 +512,6 @@
       "squadra": "genoa",
       "percentuale": 60,
       "confidence": 0.6,
-      "match_score": 1.0
-    },
-    "7622": {
-      "nome": "Robinho Junior",
-      "squadra": "genoa",
-      "percentuale": 15,
-      "confidence": 0.15,
       "match_score": 1.0
     },
     "7453": {
@@ -860,8 +860,8 @@
     "5833": {
       "nome": "Gila",
       "squadra": "milan",
-      "percentuale": 75,
-      "confidence": 0.75,
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "5739": {
@@ -878,11 +878,11 @@
       "confidence": 0.9,
       "match_score": 1.0
     },
-    "6372": {
-      "nome": "Moreira",
+    "4856": {
+      "nome": "Chukwueze",
       "squadra": "milan",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "2606": {
@@ -902,22 +902,22 @@
     "5273": {
       "nome": "Estupinan",
       "squadra": "milan",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "2379": {
       "nome": "Rabiot",
       "squadra": "milan",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 65,
+      "confidence": 0.65,
       "match_score": 1.0
     },
     "6618": {
       "nome": "Cissè A.",
       "squadra": "milan",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
     "6397": {
@@ -958,8 +958,8 @@
     "6496": {
       "nome": "Bartesaghi",
       "squadra": "milan",
-      "percentuale": 45,
-      "confidence": 0.45,
+      "percentuale": 40,
+      "confidence": 0.4,
       "match_score": 1.0
     },
     "7525": {
@@ -969,25 +969,25 @@
       "confidence": 0.2,
       "match_score": 1.0
     },
-    "4856": {
-      "nome": "Chukwueze",
+    "6372": {
+      "nome": "Moreira",
       "squadra": "milan",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 45,
+      "confidence": 0.45,
       "match_score": 1.0
     },
     "7203": {
       "nome": "Jashari",
       "squadra": "milan",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "4892": {
       "nome": "Saelemaekers",
       "squadra": "milan",
-      "percentuale": 45,
-      "confidence": 0.45,
+      "percentuale": 50,
+      "confidence": 0.5,
       "match_score": 1.0
     },
     "7618": {
@@ -1007,15 +1007,15 @@
     "2423": {
       "nome": "Pulisic",
       "squadra": "milan",
-      "percentuale": 50,
-      "confidence": 0.5,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "4199": {
       "nome": "Loftus-Cheek",
       "squadra": "milan",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 35,
+      "confidence": 0.35,
       "match_score": 1.0
     },
     "6519": {
@@ -1128,6 +1128,13 @@
       "squadra": "atalanta",
       "percentuale": 60,
       "confidence": 0.6,
+      "match_score": 1.0
+    },
+    "7633": {
+      "nome": "Obric",
+      "squadra": "atalanta",
+      "percentuale": 15,
+      "confidence": 0.15,
       "match_score": 1.0
     },
     "6485": {
@@ -1326,6 +1333,13 @@
       "confidence": 0.4,
       "match_score": 1.0
     },
+    "7634": {
+      "nome": "Sulev",
+      "squadra": "cagliari",
+      "percentuale": 15,
+      "confidence": 0.15,
+      "match_score": 1.0
+    },
     "7630": {
       "nome": "Sugamele",
       "squadra": "cagliari",
@@ -1501,6 +1515,13 @@
       "confidence": 0.6,
       "match_score": 1.0
     },
+    "7571": {
+      "nome": "Laerke",
+      "squadra": "lecce",
+      "percentuale": 15,
+      "confidence": 0.15,
+      "match_score": 1.0
+    },
     "7001": {
       "nome": "N'Dri",
       "squadra": "lecce",
@@ -1518,8 +1539,8 @@
     "4485": {
       "nome": "Thiam",
       "squadra": "monza",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 75,
+      "confidence": 0.75,
       "match_score": 1.0
     },
     "7238": {
@@ -1581,15 +1602,15 @@
     "7546": {
       "nome": "Robinson J.",
       "squadra": "monza",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "5882": {
       "nome": "Mota",
       "squadra": "monza",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
     "7301": {
@@ -2159,6 +2180,20 @@
       "confidence": 0.4,
       "match_score": 1.0
     },
+    "1842": {
+      "nome": "Pierini",
+      "squadra": "sassuolo",
+      "percentuale": 15,
+      "confidence": 0.15,
+      "match_score": 1.0
+    },
+    "7159": {
+      "nome": "Skjellerup",
+      "squadra": "sassuolo",
+      "percentuale": 15,
+      "confidence": 0.15,
+      "match_score": 1.0
+    },
     "4964": {
       "nome": "Vicario",
       "squadra": "juventus",
@@ -2260,8 +2295,8 @@
     "294": {
       "nome": "Rugani",
       "squadra": "juventus",
-      "percentuale": 25,
-      "confidence": 0.25,
+      "percentuale": 30,
+      "confidence": 0.3,
       "match_score": 1.0
     },
     "5831": {
@@ -2271,25 +2306,18 @@
       "confidence": 0.55,
       "match_score": 1.0
     },
-    "5520": {
-      "nome": "Cambiaso",
-      "squadra": "juventus",
-      "percentuale": 20,
-      "confidence": 0.2,
-      "match_score": 1.0
-    },
     "4973": {
       "nome": "McKennie",
       "squadra": "juventus",
-      "percentuale": 15,
-      "confidence": 0.15,
+      "percentuale": 20,
+      "confidence": 0.2,
       "match_score": 1.0
     },
     "5680": {
       "nome": "Sarr P.",
       "squadra": "juventus",
-      "percentuale": 20,
-      "confidence": 0.2,
+      "percentuale": 25,
+      "confidence": 0.25,
       "match_score": 1.0
     },
     "5761": {
@@ -2432,6 +2460,13 @@
       "confidence": 0.4,
       "match_score": 1.0
     },
+    "6230": {
+      "nome": "Dossena",
+      "squadra": "como",
+      "percentuale": 15,
+      "confidence": 0.15,
+      "match_score": 1.0
+    },
     "418": {
       "nome": "Goldaniga",
       "squadra": "como",
@@ -2512,8 +2547,8 @@
     "4137": {
       "nome": "Diego Carlos",
       "squadra": "parma",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "7255": {
@@ -2582,8 +2617,8 @@
     "5307": {
       "nome": "Valenti",
       "squadra": "parma",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 40,
+      "confidence": 0.4,
       "match_score": 1.0
     },
     "7202": {
@@ -2810,6 +2845,13 @@
       "confidence": 0.6,
       "match_score": 1.0
     },
+    "7631": {
+      "nome": "Luongo",
+      "squadra": "torino",
+      "percentuale": 20,
+      "confidence": 0.2,
+      "match_score": 1.0
+    },
     "6218": {
       "nome": "Oristanio",
       "squadra": "torino",
@@ -2997,6 +3039,13 @@
       "squadra": "roma",
       "percentuale": 60,
       "confidence": 0.6,
+      "match_score": 1.0
+    },
+    "7277": {
+      "nome": "Arena A.",
+      "squadra": "roma",
+      "percentuale": 15,
+      "confidence": 0.15,
       "match_score": 1.0
     },
     "5116": {
@@ -3226,8 +3275,8 @@
     "6783": {
       "nome": "Unai Gomez",
       "squadra": "udinese",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "6684": {
@@ -3282,8 +3331,15 @@
     "6212": {
       "nome": "Zarraga",
       "squadra": "udinese",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 40,
+      "confidence": 0.4,
+      "match_score": 1.0
+    },
+    "5850": {
+      "nome": "Lovric",
+      "squadra": "udinese",
+      "percentuale": 25,
+      "confidence": 0.25,
       "match_score": 1.0
     },
     "7272": {
