@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-09-10T10:27:07.269961+00:00",
+  "aggiornato": "2026-09-10T20:26:57.640787+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -97,9 +97,16 @@
     "genoa": {
       "infortunati": [
         {
+          "nome": "Havel",
+          "dettaglio": "Infortunio alla caviglia, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "7453",
+          "match_score": 1.0
+        },
+        {
           "nome": "Venturino",
-          "dettaglio": "Intervento chirurgico di “pulizia” del tendine rotuleo, in dubbio per la 4a",
-          "rientro_giornata": 4,
+          "dettaglio": "Intervento chirurgico di “pulizia” del tendine rotuleo, in dubbio per la 6a",
+          "rientro_giornata": 6,
           "id": "6980",
           "match_score": 1.0
         }
@@ -229,19 +236,6 @@
       "squalificati": [],
       "diffidati": []
     },
-    "milan": {
-      "infortunati": [
-        {
-          "nome": "Gabbia",
-          "dettaglio": "Infortunio alla caviglia, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "4401",
-          "match_score": 1.0
-        }
-      ],
-      "squalificati": [],
-      "diffidati": []
-    },
     "monza": {
       "infortunati": [
         {
@@ -286,13 +280,6 @@
     "napoli": {
       "infortunati": [
         {
-          "nome": "Zambo Anguissa",
-          "dettaglio": "Problema all'adduttore, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "4220",
-          "match_score": 1.0
-        },
-        {
           "nome": "Giovane",
           "dettaglio": "Intervento di correzione per ernia inguinale, in dubbio per la 6a",
           "rientro_giornata": 6,
@@ -315,15 +302,15 @@
         },
         {
           "nome": "Meret",
-          "dettaglio": "Infortunio agli adduttori ancora da valutare, in dubbio per la 6a",
+          "dettaglio": "Lesione di basso grado dell'adduttore lungo della coscia sinistra, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "572",
           "match_score": 1.0
         },
         {
           "nome": "Santos A.",
-          "dettaglio": "Infortunio muscolare ancora da valutare, in dubbio per la 6a",
-          "rientro_giornata": 6,
+          "dettaglio": "Lesione di medio grado del bicipite femorale sinistro, in dubbio per la 7a",
+          "rientro_giornata": 7,
           "id": "7351",
           "match_score": 1.0
         },
@@ -450,13 +437,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Solet",
-          "dettaglio": "Infortunio muscolare all'adduttore da valutare con esami, in dubbio almeno per la 5a",
-          "rientro_giornata": 5,
-          "id": "6956",
-          "match_score": 1.0
-        },
-        {
           "nome": "Palma",
           "dettaglio": "Lesione all'adduttore, in dubbio per la 6a",
           "rientro_giornata": 6,
@@ -468,6 +448,13 @@
           "dettaglio": "Lieve aritmia cardiaca benigna ed è necessario un intervento di ablazione cardiaca, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "7198",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Solet",
+          "dettaglio": "Lesione al muscolo pettineo della gamba sinistra, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "6956",
           "match_score": 1.0
         },
         {
@@ -492,9 +479,16 @@
       "infortunati": [
         {
           "nome": "Basic",
-          "dettaglio": "Affaticamento alla fascia plantare. In dubbio per la 4a",
-          "rientro_giornata": 4,
+          "dettaglio": "Affaticamento alla fascia plantare, in dubbio per la 5a",
+          "rientro_giornata": 5,
           "id": "5674",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Dagasso",
+          "dettaglio": "Problema fisico, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "7481",
           "match_score": 1.0
         },
         {
