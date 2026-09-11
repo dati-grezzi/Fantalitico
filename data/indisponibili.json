@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-09-11T10:29:39.478136+00:00",
+  "aggiornato": "2026-09-11T20:27:27.577403+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -88,6 +88,19 @@
           "dettaglio": "Intervento chirurgico per la lesione del legamento crociato anteriore del ginocchio destro, in dubbio per la 10a",
           "rientro_giornata": 10,
           "id": "5449",
+          "match_score": 1.0
+        }
+      ],
+      "squalificati": [],
+      "diffidati": []
+    },
+    "frosinone": {
+      "infortunati": [
+        {
+          "nome": "Grillitsch",
+          "dettaglio": "Sindrome retto-adduttoria, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "7550",
           "match_score": 1.0
         }
       ],
@@ -246,13 +259,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Varela G.",
-          "dettaglio": "Infortunio muscolare all'adduttore, in dubbio per la 5a",
-          "rientro_giornata": 5,
-          "id": "7523",
-          "match_score": 1.0
-        },
-        {
           "nome": "Tourè I.",
           "dettaglio": "Sta recuperando da un infortunio al ginocchio, in dubbio per la 6a",
           "rientro_giornata": 6,
@@ -352,19 +358,6 @@
       "squalificati": [],
       "diffidati": []
     },
-    "roma": {
-      "infortunati": [
-        {
-          "nome": "Konè M.",
-          "dettaglio": "Fastidio al ginocchio da valutare, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "5589",
-          "match_score": 1.0
-        }
-      ],
-      "squalificati": [],
-      "diffidati": []
-    },
     "sassuolo": {
       "infortunati": [
         {
@@ -431,8 +424,8 @@
         },
         {
           "nome": "Coco",
-          "dettaglio": "Contusione al ginocchio, in dubbio per la 4a",
-          "rientro_giornata": 4,
+          "dettaglio": "Trauma contusivo alla tibia, in dubbio per la 5a",
+          "rientro_giornata": 5,
           "id": "6642",
           "match_score": 1.0
         }
