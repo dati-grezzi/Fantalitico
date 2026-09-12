@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-09-12T09:58:08.958336+00:00",
+  "aggiornato": "2026-09-12T20:12:25.110849+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -42,6 +42,20 @@
           "dettaglio": "Lesione ai flessori della coscia sinistra, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "2167",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Dovbyk",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "6675",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Zortea",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "4433",
           "match_score": 1.0
         }
       ],
@@ -198,27 +212,6 @@
     "lazio": {
       "infortunati": [
         {
-          "nome": "Patric",
-          "dettaglio": "Autorizzato a osservare alcuni giorni di temporanea indisponibilità per completare un percorso clinico già programmato, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "327",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Dele-Bashiru",
-          "dettaglio": "Lesione di primo grado ai flessori della coscia destra, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "6629",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Marusic",
-          "dettaglio": "Stiramento ai flessori, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "2188",
-          "match_score": 1.0
-        },
-        {
           "nome": "Rovella",
           "dettaglio": "Lesione muscolare al polpaccio, in dubbio per la 6a",
           "rientro_giornata": 6,
@@ -226,10 +219,31 @@
           "match_score": 1.0
         },
         {
-          "nome": "Cataldi",
-          "dettaglio": "Intervento chirurgico per risolvere i problemi con la pubalgia, in dubbio per la 6a",
+          "nome": "Dele-Bashiru",
+          "dettaglio": "Lesione di primo grado ai flessori della coscia destra, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "6629",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Marusic",
+          "dettaglio": "Stiramento ai flessori, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "2188",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Patric",
+          "dettaglio": "Autorizzato a osservare alcuni giorni di temporanea indisponibilità per completare un percorso clinico già programmato, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "327",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Doekhi",
+          "dettaglio": "Operazione alla mano destra, in dubbio per la 6a",
           "rientro_giornata": 6,
-          "id": "333",
+          "id": "6320",
           "match_score": 1.0
         }
       ],
@@ -240,9 +254,23 @@
       "infortunati": [
         {
           "nome": "Geubbels",
-          "dettaglio": "Trauma distorsivo alla caviglia sinistra, in dubbio per la 4a",
-          "rientro_giornata": 4,
+          "dettaglio": "Trauma distorsivo alla caviglia sinistra, in dubbio per la 5a",
+          "rientro_giornata": 5,
           "id": "5029",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Berisha M.",
+          "dettaglio": "Sovraccarico, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "6015",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Gandelman",
+          "dettaglio": "Problema fisico, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "7318",
           "match_score": 1.0
         }
       ],
@@ -285,6 +313,13 @@
     },
     "napoli": {
       "infortunati": [
+        {
+          "nome": "Zambo Anguissa",
+          "dettaglio": "Problema all'adduttore, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "4220",
+          "match_score": 1.0
+        },
         {
           "nome": "Giovane",
           "dettaglio": "Intervento di correzione per ernia inguinale, in dubbio per la 6a",
@@ -360,13 +395,6 @@
     },
     "sassuolo": {
       "infortunati": [
-        {
-          "nome": "Bakola",
-          "dettaglio": "Infortunio da valutare in queste ore, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "7036",
-          "match_score": 1.0
-        },
         {
           "nome": "Boloca",
           "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per la 4a",
