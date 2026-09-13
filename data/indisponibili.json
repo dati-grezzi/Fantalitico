@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-09-13T10:59:13.812018+00:00",
+  "aggiornato": "2026-09-13T20:20:40.310247+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -158,7 +158,7 @@
       "infortunati": [
         {
           "nome": "Boga",
-          "dettaglio": "Sospetto stiramento muscolare, in dubbio per la 6a",
+          "dettaglio": "Lesione di medio grado del bicipite femorale, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "2832",
           "match_score": 1.0
@@ -168,13 +168,6 @@
           "dettaglio": "Lesione di basso grado del muscolo semimembranoso della coscia sinistra, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "6039",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Cambiaso",
-          "dettaglio": "Distorsione alla caviglia, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "5520",
           "match_score": 1.0
         },
         {
@@ -203,6 +196,20 @@
           "dettaglio": "Intervento di condroplastica per la guarigione della condropatia rotulea del ginocchio destro, in dubbio per la 17a",
           "rientro_giornata": 17,
           "id": "5562",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Cambiaso",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "5520",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Mckennie",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "4973",
           "match_score": 1.0
         }
       ],
@@ -253,13 +260,6 @@
     "lecce": {
       "infortunati": [
         {
-          "nome": "Geubbels",
-          "dettaglio": "Trauma distorsivo alla caviglia sinistra, in dubbio per la 5a",
-          "rientro_giornata": 5,
-          "id": "5029",
-          "match_score": 1.0
-        },
-        {
           "nome": "Berisha M.",
           "dettaglio": "Sovraccarico, in dubbio per la 5a",
           "rientro_giornata": 5,
@@ -272,6 +272,13 @@
           "rientro_giornata": 5,
           "id": "7318",
           "match_score": 1.0
+        },
+        {
+          "nome": "Geubbels",
+          "dettaglio": "Trauma distorsivo alla caviglia sinistra, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "5029",
+          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -281,8 +288,8 @@
       "infortunati": [
         {
           "nome": "Ciurria",
-          "dettaglio": "Problema fisico, in dubbio per la 4a",
-          "rientro_giornata": 4,
+          "dettaglio": "Problema fisico, in dubbio per la 5a",
+          "rientro_giornata": 5,
           "id": "5880",
           "match_score": 1.0
         },
@@ -369,20 +376,6 @@
     "parma": {
       "infortunati": [
         {
-          "nome": "Bernabè",
-          "dettaglio": "Problema muscolare, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "6666",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Diallo O.",
-          "dettaglio": "Problema fisico da valutare, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "7536",
-          "match_score": 1.0
-        },
-        {
           "nome": "Nicolussi Caviglia",
           "dettaglio": "Sindrome pubalgica, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -397,29 +390,29 @@
       "infortunati": [
         {
           "nome": "Boloca",
-          "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per la 4a",
-          "rientro_giornata": 4,
+          "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per la 5a",
+          "rientro_giornata": 5,
           "id": "6219",
           "match_score": 1.0
         },
         {
           "nome": "Candè",
-          "dettaglio": "Intervento di ricostruzione del Legamento Crociato Anteriore del ginocchio destro, in dubbio per la 4a",
-          "rientro_giornata": 4,
+          "dettaglio": "Intervento di ricostruzione del Legamento Crociato Anteriore del ginocchio destro, in dubbio per la 5a",
+          "rientro_giornata": 5,
           "id": "6985",
           "match_score": 1.0
         },
         {
           "nome": "Pieragnolo",
-          "dettaglio": "Intervento chirurgico di ricostruzione del Legamento Crociato Anteriore del ginocchio destro, in dubbio per la 4a",
-          "rientro_giornata": 4,
+          "dettaglio": "Intervento chirurgico di ricostruzione del Legamento Crociato Anteriore del ginocchio destro, in dubbio per la 5a",
+          "rientro_giornata": 5,
           "id": "7156",
           "match_score": 1.0
         },
         {
           "nome": "Walukiewicz",
-          "dettaglio": "Fuori per un problema fisico, in dubbio per la 4a",
-          "rientro_giornata": 4,
+          "dettaglio": "Fuori per un problema fisico, in dubbio per la 5a",
+          "rientro_giornata": 5,
           "id": "4374",
           "match_score": 1.0
         },
@@ -451,10 +444,10 @@
           "match_score": 1.0
         },
         {
-          "nome": "Coco",
-          "dettaglio": "Trauma contusivo alla tibia, in dubbio per la 5a",
+          "nome": "Adams C.",
+          "dettaglio": "Problema all'adduttore, in dubbio per la 5a",
           "rientro_giornata": 5,
-          "id": "6642",
+          "id": "6646",
           "match_score": 1.0
         }
       ],
