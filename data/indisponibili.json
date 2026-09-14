@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-09-14T11:34:38.394728+00:00",
+  "aggiornato": "2026-09-14T21:29:57.138049+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -143,6 +143,13 @@
     },
     "inter": {
       "infortunati": [
+        {
+          "nome": "Calhanoglu",
+          "dettaglio": "Affaticamento muscolare agli adduttori, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "2194",
+          "match_score": 1.0
+        },
         {
           "nome": "Spence",
           "dettaglio": "Non si è ancora allenato in gruppo per un ritardo di condizione, in dubbio per la 5a ma c'è il rischio che torni dopo la sosta",
@@ -381,6 +388,26 @@
           "rientro_giornata": 12,
           "id": "4349",
           "match_score": 1.0
+        },
+        {
+          "nome": "Diallo O.",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "7536",
+          "match_score": 1.0
+        }
+      ],
+      "squalificati": [],
+      "diffidati": []
+    },
+    "roma": {
+      "infortunati": [
+        {
+          "nome": "N'dicka",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "4317",
+          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -437,17 +464,17 @@
     "torino": {
       "infortunati": [
         {
-          "nome": "Casadei",
-          "dettaglio": "Affaticamento muscolare, in dubbio per la 4a",
-          "rientro_giornata": 4,
-          "id": "5888",
-          "match_score": 1.0
-        },
-        {
           "nome": "Adams C.",
           "dettaglio": "Problema all'adduttore, in dubbio per la 5a",
           "rientro_giornata": 5,
           "id": "6646",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Casadei",
+          "dettaglio": "Affaticamento muscolare, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "5888",
           "match_score": 1.0
         }
       ],
