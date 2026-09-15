@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-09-14T21:29:57.138049+00:00",
+  "aggiornato": "2026-09-15T10:54:47.680831+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -19,42 +19,43 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [
-        {
-          "nome": "Gaetano",
-          "id": "4364",
-          "match_score": 1.0
-        }
-      ],
+      "squalificati": [],
       "diffidati": []
     },
     "bologna": {
       "infortunati": [
         {
-          "nome": "El Azzouzi O.",
-          "dettaglio": "Lesione del bicipite femorale della coscia sinistra, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "6225",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Orsolini",
-          "dettaglio": "Lesione ai flessori della coscia sinistra, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "2167",
-          "match_score": 1.0
-        },
-        {
           "nome": "Dovbyk",
-          "dettaglio": "",
-          "rientro_giornata": null,
+          "dettaglio": "Lieve risentimento muscolare ai flessori, in dubbio per la 5a",
+          "rientro_giornata": 5,
           "id": "6675",
           "match_score": 1.0
         },
         {
+          "nome": "El Azzouzi O.",
+          "dettaglio": "Lesione del bicipite femorale della coscia sinistra, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "6225",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Happonen",
+          "dettaglio": "Risentimento all’adduttore destro, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "7533",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Orsolini",
+          "dettaglio": "Lesione ai flessori della coscia sinistra, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "2167",
+          "match_score": 1.0
+        },
+        {
           "nome": "Zortea",
-          "dettaglio": "",
-          "rientro_giornata": null,
+          "dettaglio": "Problema all'anca, in dubbio per la 5a",
+          "rientro_giornata": 5,
           "id": "4433",
           "match_score": 1.0
         }
@@ -138,7 +139,13 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [],
+      "squalificati": [
+        {
+          "nome": "Vasquez",
+          "id": "5514",
+          "match_score": 1.0
+        }
+      ],
       "diffidati": []
     },
     "inter": {
@@ -155,6 +162,13 @@
           "dettaglio": "Non si è ancora allenato in gruppo per un ritardo di condizione, in dubbio per la 5a ma c'è il rischio che torni dopo la sosta",
           "rientro_giornata": 5,
           "id": "5982",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Stones",
+          "dettaglio": "Risentimento ai flessori della coscia sinistra, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "2514",
           "match_score": 1.0
         }
       ],
@@ -204,20 +218,6 @@
           "rientro_giornata": 17,
           "id": "5562",
           "match_score": 1.0
-        },
-        {
-          "nome": "Cambiaso",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "5520",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Mckennie",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "4973",
-          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -233,20 +233,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Dele-Bashiru",
-          "dettaglio": "Lesione di primo grado ai flessori della coscia destra, in dubbio per la 5a",
-          "rientro_giornata": 5,
-          "id": "6629",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Marusic",
-          "dettaglio": "Stiramento ai flessori, in dubbio per la 5a",
-          "rientro_giornata": 5,
-          "id": "2188",
-          "match_score": 1.0
-        },
-        {
           "nome": "Patric",
           "dettaglio": "Autorizzato a osservare alcuni giorni di temporanea indisponibilità per completare un percorso clinico già programmato, in dubbio per la 5a",
           "rientro_giornata": 5,
@@ -258,6 +244,13 @@
           "dettaglio": "Operazione alla mano destra, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "6320",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Marusic",
+          "dettaglio": "Stiramento ai flessori, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "2188",
           "match_score": 1.0
         }
       ],
@@ -388,26 +381,6 @@
           "rientro_giornata": 12,
           "id": "4349",
           "match_score": 1.0
-        },
-        {
-          "nome": "Diallo O.",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "7536",
-          "match_score": 1.0
-        }
-      ],
-      "squalificati": [],
-      "diffidati": []
-    },
-    "roma": {
-      "infortunati": [
-        {
-          "nome": "N'dicka",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "4317",
-          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -427,6 +400,13 @@
           "dettaglio": "Intervento di ricostruzione del Legamento Crociato Anteriore del ginocchio destro, in dubbio per la 5a",
           "rientro_giornata": 5,
           "id": "6985",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Idzes",
+          "dettaglio": "Problema muscolare, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "6672",
           "match_score": 1.0
         },
         {
@@ -491,6 +471,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Zaniolo",
+          "dettaglio": "Lesione muscolare al bicipite femorale della coscia destra, in dubbio per la 5a",
+          "rientro_giornata": 5,
+          "id": "2766",
+          "match_score": 1.0
+        },
+        {
           "nome": "Palma",
           "dettaglio": "Lesione all'adduttore, in dubbio per la 6a",
           "rientro_giornata": 6,
@@ -509,13 +496,6 @@
           "dettaglio": "Lesione al muscolo pettineo della gamba sinistra, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "6956",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Zaniolo",
-          "dettaglio": "Stiramento, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "2766",
           "match_score": 1.0
         },
         {
@@ -564,6 +544,13 @@
           "dettaglio": "Infortunio alle anche, in dubbio per la 7a",
           "rientro_giornata": 7,
           "id": "6673",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Busio",
+          "dettaglio": "Lesione muscolare, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "5507",
           "match_score": 1.0
         },
         {
