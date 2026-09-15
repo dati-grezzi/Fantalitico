@@ -91,6 +91,15 @@ jobs:
         run: python playerstats_process.py
         continue-on-error: true
 
+      # ARCHIVIO (15/09/2026) — i feed vengono sovrascritti a ogni run, quindi
+      # senza questo passo non esiste storico dei PREDITTORI e la calibrazione
+      # dei beta resta impossibile: si finisce per misurare l'xG sulle stesse
+      # giornate del fantavoto, cioe' a descrivere il passato invece di
+      # predire. Deve stare DOPO tutti gli scraper e PRIMA del commit.
+      - name: Archivia i feed del giorno
+        run: python snapshot_fonti.py
+        continue-on-error: true
+
       - name: Commit dei JSON aggiornati
         run: |
           git config user.name "fantalitico-bot"
@@ -101,6 +110,7 @@ jobs:
           # valore sospetto nel consensus.
           git add data/*.json
           git add data/fonti_titolarita/*.json || true
+          git add data/storico_fonti || true
           git diff --cached --quiet || git commit -m "Dati aggiornati $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
 
