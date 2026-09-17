@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-17T10:53:17.440891+00:00",
+ "aggiornato": "2026-09-17T20:59:57.120865+00:00",
  "fonte": "playerstats.football (statistiche difensive/di passaggio, per90, solo top-50 per categoria)",
  "note": "Mapping ID fantacalcio → {tackles_p90, interceptions_p90, clearances_p90, duels_p90, key_passes_p90, accurate_passes_p90, rating}. Copertura parziale: solo chi rientra nei primi 50 di almeno una categoria.",
  "giocatori": {
@@ -9,7 +9,7 @@
    "duels_p90": 13.95,
    "key_passes_p90": 1.64,
    "accurate_passes_p90": 57.17,
-   "rating": 8.32,
+   "rating": 8.31,
    "shots_p90": 4.65,
    "shots_on_target_p90": 0.82,
    "playerstats_name": "Nico Paz",
@@ -183,7 +183,7 @@
    "tackles_p90": 2.66,
    "interceptions_p90": 3.99,
    "accurate_passes_p90": 62.31,
-   "rating": 8.05,
+   "rating": 8.04,
    "playerstats_name": "Mario Hermoso",
    "match_score": 0.85
   },
@@ -353,7 +353,7 @@
    "tackles_p90": 2.33,
    "key_passes_p90": 3.0,
    "accurate_passes_p90": 76.67,
-   "rating": 9.62,
+   "rating": 9.66,
    "shots_p90": 2.33,
    "playerstats_name": "Lucas Da Cunha",
    "match_score": 0.85
@@ -509,7 +509,7 @@
    "interceptions_p90": 1.67,
    "clearances_p90": 4.46,
    "accurate_passes_p90": 67.15,
-   "rating": 8.03,
+   "rating": 8.04,
    "playerstats_name": "Manuel Akanji",
    "match_score": 0.85
   },
@@ -942,7 +942,7 @@
   "309": {
    "minuti": 317,
    "key_passes_p90": 4.83,
-   "rating": 9.08,
+   "rating": 9.15,
    "shots_p90": 3.97,
    "shots_on_target_p90": 1.14,
    "playerstats_name": "Paulo Dybala",
@@ -1206,7 +1206,7 @@
   },
   "6684": {
    "minuti": 345,
-   "rating": 7.62,
+   "rating": 7.63,
    "shots_p90": 2.35,
    "shots_on_target_p90": 1.04,
    "playerstats_name": "Jurgen Ekkelenkamp",
@@ -1234,19 +1234,19 @@
    "playerstats_name": "Christos Mandas",
    "match_score": 0.85
   },
-  "7126": {
-   "minuti": 225,
-   "rating": 11.56,
-   "shots_p90": 3.2,
-   "shots_on_target_p90": 1.2,
-   "playerstats_name": "Martin Baturina",
-   "match_score": 0.85
-  },
   "4360": {
    "minuti": 360,
    "rating": 7.22,
    "saves_p90": 3.25,
    "playerstats_name": "Elia Caprile",
+   "match_score": 0.85
+  },
+  "7126": {
+   "minuti": 225,
+   "rating": 11.55,
+   "shots_p90": 3.2,
+   "shots_on_target_p90": 1.2,
+   "playerstats_name": "Martin Baturina",
    "match_score": 0.85
   },
   "7556": {
@@ -1258,7 +1258,7 @@
   },
   "6662": {
    "minuti": 360,
-   "rating": 7.12,
+   "rating": 7.13,
    "saves_p90": 4.25,
    "playerstats_name": "Edoardo Corvi",
    "match_score": 0.85
