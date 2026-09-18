@@ -1,6 +1,6 @@
 {
   "fonte": "fantacalcio-online.com",
-  "aggiornato": "2026-09-18T10:27:06.114128+00:00",
+  "aggiornato": "2026-09-18T20:25:50.323765+00:00",
   "giocatori": {
     "5585": {
       "nome": "MALEN Donyell",
@@ -1003,17 +1003,6 @@
       "quotazione": 11.0,
       "match_score": 0.717
     },
-    "4896": {
-      "nome": "MALDINI Daniel",
-      "squadra": "Cagliari",
-      "ruolo": "A",
-      "percMax": 3.03,
-      "comprato_pct": 7.3,
-      "prezzo_350": 16.93,
-      "prezzo_500": 15.15,
-      "quotazione": 15.0,
-      "match_score": 0.95
-    },
     "6190": {
       "nome": "PISILLI Niccolo",
       "squadra": "Roma",
@@ -1022,6 +1011,17 @@
       "comprato_pct": 7.3,
       "prezzo_350": 15.81,
       "prezzo_500": 15.38,
+      "quotazione": 15.0,
+      "match_score": 0.95
+    },
+    "4896": {
+      "nome": "MALDINI Daniel",
+      "squadra": "Cagliari",
+      "ruolo": "A",
+      "percMax": 3.03,
+      "comprato_pct": 7.3,
+      "prezzo_350": 16.93,
+      "prezzo_500": 15.15,
       "quotazione": 15.0,
       "match_score": 0.95
     },
@@ -3258,17 +3258,6 @@
       "quotazione": 13.0,
       "match_score": 0.95
     },
-    "5680": {
-      "nome": "SARR Pape Matar",
-      "squadra": "Juventus",
-      "ruolo": "C",
-      "percMax": 2.43,
-      "comprato_pct": 2.4,
-      "prezzo_350": 11.82,
-      "prezzo_500": 12.17,
-      "quotazione": 11.0,
-      "match_score": 0.95
-    },
     "7600": {
       "nome": "OSMAJIC Milutin",
       "squadra": "Genoa",
@@ -3277,6 +3266,17 @@
       "comprato_pct": 2.4,
       "prezzo_350": 11.95,
       "prezzo_500": 11.81,
+      "quotazione": 11.0,
+      "match_score": 0.95
+    },
+    "5680": {
+      "nome": "SARR Pape Matar",
+      "squadra": "Juventus",
+      "ruolo": "C",
+      "percMax": 2.43,
+      "comprato_pct": 2.4,
+      "prezzo_350": 11.82,
+      "prezzo_500": 12.17,
       "quotazione": 11.0,
       "match_score": 0.95
     },
@@ -3819,17 +3819,6 @@
       "quotazione": 2.0,
       "match_score": 0.9
     },
-    "5946": {
-      "nome": "SOW Djibril",
-      "squadra": "Genoa",
-      "ruolo": "C",
-      "percMax": 2.95,
-      "comprato_pct": 1.6,
-      "prezzo_350": null,
-      "prezzo_500": 14.77,
-      "quotazione": 15.0,
-      "match_score": 0.95
-    },
     "7551": {
       "nome": "SCHMID Romano",
       "squadra": "Frosinone",
@@ -3838,6 +3827,17 @@
       "comprato_pct": 1.6,
       "prezzo_350": 17.03,
       "prezzo_500": 14.66,
+      "quotazione": 15.0,
+      "match_score": 0.95
+    },
+    "5946": {
+      "nome": "SOW Djibril",
+      "squadra": "Genoa",
+      "ruolo": "C",
+      "percMax": 2.95,
+      "comprato_pct": 1.6,
+      "prezzo_350": null,
+      "prezzo_500": 14.77,
       "quotazione": 15.0,
       "match_score": 0.95
     },
@@ -5744,17 +5744,6 @@
       "quotazione": 1.0,
       "match_score": 0.95
     },
-    "6916": {
-      "nome": "AHANOR Honest",
-      "squadra": "Estero",
-      "ruolo": "C",
-      "percMax": 0.97,
-      "comprato_pct": 0.3,
-      "prezzo_350": 1.54,
-      "prezzo_500": 4.84,
-      "quotazione": 9.0,
-      "match_score": 0.95
-    },
     "6629": {
       "nome": "DELE-BASHIRU Fisayo",
       "squadra": "Lazio",
@@ -5763,6 +5752,17 @@
       "comprato_pct": 0.3,
       "prezzo_350": null,
       "prezzo_500": null,
+      "quotazione": 9.0,
+      "match_score": 0.95
+    },
+    "6916": {
+      "nome": "AHANOR Honest",
+      "squadra": "Estero",
+      "ruolo": "C",
+      "percMax": 0.97,
+      "comprato_pct": 0.3,
+      "prezzo_350": 1.54,
+      "prezzo_500": 4.84,
       "quotazione": 9.0,
       "match_score": 0.95
     },
@@ -6283,17 +6283,6 @@
       "quotazione": 6.0,
       "match_score": 0.95
     },
-    "7211": {
-      "nome": "ATHEKAME Zachary",
-      "squadra": "Estero",
-      "ruolo": "D",
-      "percMax": 4.5,
-      "comprato_pct": 0.1,
-      "prezzo_350": 15.76,
-      "prezzo_500": null,
-      "quotazione": 5.0,
-      "match_score": 0.95
-    },
     "6601": {
       "nome": "KAMBWALA Willy",
       "squadra": "Como",
@@ -6305,9 +6294,20 @@
       "quotazione": 5.0,
       "match_score": 0.95
     },
-    "4929": {
-      "nome": "CIOCCI Giuseppe",
-      "squadra": "Serie Minori",
+    "7211": {
+      "nome": "ATHEKAME Zachary",
+      "squadra": "Estero",
+      "ruolo": "D",
+      "percMax": 4.5,
+      "comprato_pct": 0.1,
+      "prezzo_350": 15.76,
+      "prezzo_500": null,
+      "quotazione": 5.0,
+      "match_score": 0.95
+    },
+    "6523": {
+      "nome": "SAMOOJA Jasper",
+      "squadra": "Estero",
       "ruolo": "P",
       "percMax": null,
       "comprato_pct": 0.1,
@@ -6316,9 +6316,9 @@
       "quotazione": 1.0,
       "match_score": 0.95
     },
-    "6523": {
-      "nome": "SAMOOJA Jasper",
-      "squadra": "Estero",
+    "4929": {
+      "nome": "CIOCCI Giuseppe",
+      "squadra": "Serie Minori",
       "ruolo": "P",
       "percMax": null,
       "comprato_pct": 0.1,

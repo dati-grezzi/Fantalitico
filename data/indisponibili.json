@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-09-18T10:26:55.042241+00:00",
+  "aggiornato": "2026-09-18T20:25:40.397455+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -130,17 +130,17 @@
     "inter": {
       "infortunati": [
         {
-          "nome": "Spence",
-          "dettaglio": "Non si è ancora allenato in gruppo per un ritardo di condizione, in dubbio per la 5a ma c'è il rischio che torni dopo la sosta",
-          "rientro_giornata": 5,
-          "id": "5982",
-          "match_score": 1.0
-        },
-        {
           "nome": "Calhanoglu",
           "dettaglio": "Risentimento muscolare all'adduttore della coscia destra, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "2194",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Spence",
+          "dettaglio": "Non si è ancora allenato in gruppo per un ritardo di condizione, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "5982",
           "match_score": 1.0
         },
         {
@@ -219,6 +219,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Dele-Bashiru",
+          "dettaglio": "Lesione al retto femorale, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "6629",
+          "match_score": 1.0
+        },
+        {
           "nome": "Marusic",
           "dettaglio": "Stiramento ai flessori, in dubbio per la 6a",
           "rientro_giornata": 6,
@@ -293,13 +300,6 @@
     "napoli": {
       "infortunati": [
         {
-          "nome": "Zambo Anguissa",
-          "dettaglio": "Problema all'adduttore, in dubbio per la 5a",
-          "rientro_giornata": 5,
-          "id": "4220",
-          "match_score": 1.0
-        },
-        {
           "nome": "Giovane",
           "dettaglio": "Intervento di correzione per ernia inguinale, in dubbio per la 6a",
           "rientro_giornata": 6,
@@ -325,6 +325,20 @@
           "dettaglio": "Lesione di basso grado dell'adduttore lungo della coscia sinistra, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "572",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Spinazzola",
+          "dettaglio": "Lieve contrattura al bicipite femorale della coscia destra, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "1852",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Zambo Anguissa",
+          "dettaglio": "Problema all'adduttore, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "4220",
           "match_score": 1.0
         },
         {
@@ -416,17 +430,17 @@
     "torino": {
       "infortunati": [
         {
-          "nome": "Casadei",
-          "dettaglio": "Affaticamento muscolare, in dubbio per la 5a",
-          "rientro_giornata": 5,
-          "id": "5888",
-          "match_score": 1.0
-        },
-        {
           "nome": "Adams C.",
           "dettaglio": "Lesione distrattiva di basso grado agli adduttori della coscia sinistra, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "6646",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Casadei",
+          "dettaglio": "Affaticamento muscolare, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "5888",
           "match_score": 1.0
         }
       ],
@@ -477,17 +491,17 @@
     "venezia": {
       "infortunati": [
         {
-          "nome": "Basic",
-          "dettaglio": "Affaticamento alla fascia plantare, in dubbio per la 5a",
-          "rientro_giornata": 5,
-          "id": "5674",
+          "nome": "Dagasso",
+          "dettaglio": "Problema fisico, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "7481",
           "match_score": 1.0
         },
         {
-          "nome": "Dagasso",
-          "dettaglio": "Problema fisico, in dubbio per la 5a",
-          "rientro_giornata": 5,
-          "id": "7481",
+          "nome": "Basic",
+          "dettaglio": "Problema alla fascia plantare, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "5674",
           "match_score": 1.0
         },
         {
@@ -495,6 +509,13 @@
           "dettaglio": "Piccolo risentimento mio-fasciale dell’adduttore della coscia destra, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "7253",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Haps",
+          "dettaglio": "Fastidio muscolare, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "5695",
           "match_score": 1.0
         },
         {
