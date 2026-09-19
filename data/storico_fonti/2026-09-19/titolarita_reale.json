@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-09-19T10:11:36.657020+00:00",
+  "aggiornato": "2026-09-19T20:03:32.787307+00:00",
   "fonti_usate": [
     "calciomagazine.it",
     "fantacalcio.it",
@@ -43,7 +43,20 @@
     "5578": {
       "nome": "Kossounou",
       "squadra": "atalanta",
-      "confidence": 0.842,
+      "confidence": 0.85,
+      "fonti": [
+        "calciomagazine.it"
+      ],
+      "n_fonti": 1,
+      "valori": {
+        "calciomagazine.it": 0.85
+      },
+      "scarto": null
+    },
+    "6485": {
+      "nome": "Kristensen",
+      "squadra": "atalanta",
+      "confidence": 0.905,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -52,25 +65,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.75,
+        "fantacalcio.it": 0.9,
         "sosfanta.com": 0.95
       },
-      "scarto": 0.2
-    },
-    "6485": {
-      "nome": "Kristensen",
-      "squadra": "atalanta",
-      "confidence": 0.526,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it"
-      ],
-      "n_fonti": 2,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.35
-      },
-      "scarto": 0.5
+      "scarto": 0.1
     },
     "7219": {
       "nome": "Bernasconi",
@@ -366,7 +364,7 @@
     "133": {
       "nome": "Skorupski",
       "squadra": "bologna",
-      "confidence": 0.746,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -375,25 +373,27 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.8,
-        "sosfanta.com": 0.6
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.25
+      "scarto": 0.15
     },
     "4433": {
       "nome": "Zortea",
       "squadra": "bologna",
-      "confidence": 0.569,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 2,
+      "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.4
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.45
+      "scarto": 0.15
     },
     "7068": {
       "nome": "Vitik",
@@ -413,7 +413,7 @@
     "7212": {
       "nome": " Heggem",
       "squadra": "bologna",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -422,15 +422,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "4734": {
       "nome": "Miranda J",
       "squadra": "bologna",
-      "confidence": 0.883,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -439,10 +439,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.85,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "6054": {
       "nome": "Moro N",
@@ -462,7 +462,7 @@
     "5858": {
       "nome": "Ferguson",
       "squadra": "bologna",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -471,15 +471,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "2167": {
       "nome": "Orsolini",
       "squadra": "bologna",
-      "confidence": 0.569,
+      "confidence": 0.694,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -487,14 +487,14 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.4
+        "fantacalcio.it": 0.6
       },
-      "scarto": 0.45
+      "scarto": 0.25
     },
     "184": {
       "nome": "Bernardeschi",
       "squadra": "bologna",
-      "confidence": 0.646,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -503,10 +503,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.6,
-        "sosfanta.com": 0.55
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.3
+      "scarto": 0.15
     },
     "6844": {
       "nome": "Rowe",
@@ -571,17 +571,15 @@
     "5678": {
       "nome": "Holm",
       "squadra": "bologna",
-      "confidence": 0.471,
+      "confidence": 0.431,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
+        "fantacalcio.it"
       ],
-      "n_fonti": 3,
+      "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.6,
-        "sosfanta.com": 0.55
+        "fantacalcio.it": 0.6
       },
       "scarto": 0.45
     },
@@ -603,7 +601,7 @@
     "7326": {
       "nome": "Helland",
       "squadra": "bologna",
-      "confidence": 0.721,
+      "confidence": 0.863,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -612,10 +610,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.45,
-        "fantacalcio.it": 0.7,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.5
+      "scarto": 0.55
     },
     "7483": {
       "nome": "Alhassane",
@@ -665,7 +663,7 @@
     "5298": {
       "nome": "Pobega",
       "squadra": "bologna",
-      "confidence": 0.408,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -674,10 +672,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.45,
-        "sosfanta.com": 0.55
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.4
+      "scarto": 0.85
     },
     "2765": {
       "nome": "Odgaard",
@@ -697,7 +695,7 @@
     "4436": {
       "nome": "Cambiaghi",
       "squadra": "bologna",
-      "confidence": 0.554,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -706,15 +704,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.8,
-        "sosfanta.com": 0.55
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.65
+      "scarto": 0.85
     },
     "4359": {
       "nome": "Piccoli",
       "squadra": "bologna",
-      "confidence": 0.729,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -723,10 +721,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "5498": {
       "nome": "Casale",
@@ -746,7 +744,7 @@
     "4360": {
       "nome": "Caprile",
       "squadra": "cagliari",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -755,15 +753,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "7274": {
       "nome": "Zè Pedro",
       "squadra": "cagliari",
-      "confidence": 0.883,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -772,15 +770,117 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.85,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "4210": {
       "nome": "Mina",
       "squadra": "cagliari",
-      "confidence": 0.6,
+      "confidence": 0.963,
+      "fonti": [
+        "calciomagazine.it",
+        "fantacalcio.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 3,
+      "valori": {
+        "calciomagazine.it": 0.85,
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
+      },
+      "scarto": 0.15
+    },
+    "7268": {
+      "nome": "Rodriguez Ju",
+      "squadra": "cagliari",
+      "confidence": 0.963,
+      "fonti": [
+        "calciomagazine.it",
+        "fantacalcio.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 3,
+      "valori": {
+        "calciomagazine.it": 0.85,
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
+      },
+      "scarto": 0.15
+    },
+    "5701": {
+      "nome": "Obert",
+      "squadra": "cagliari",
+      "confidence": 0.963,
+      "fonti": [
+        "calciomagazine.it",
+        "fantacalcio.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 3,
+      "valori": {
+        "calciomagazine.it": 0.85,
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
+      },
+      "scarto": 0.15
+    },
+    "4870": {
+      "nome": "Adopo",
+      "squadra": "cagliari",
+      "confidence": 0.963,
+      "fonti": [
+        "calciomagazine.it",
+        "fantacalcio.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 3,
+      "valori": {
+        "calciomagazine.it": 0.85,
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
+      },
+      "scarto": 0.15
+    },
+    "4260": {
+      "nome": "Winks",
+      "squadra": "cagliari",
+      "confidence": 0.963,
+      "fonti": [
+        "calciomagazine.it",
+        "fantacalcio.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 3,
+      "valori": {
+        "calciomagazine.it": 0.85,
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
+      },
+      "scarto": 0.15
+    },
+    "7311": {
+      "nome": "Romano",
+      "squadra": "cagliari",
+      "confidence": 0.963,
+      "fonti": [
+        "calciomagazine.it",
+        "fantacalcio.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 3,
+      "valori": {
+        "calciomagazine.it": 0.85,
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
+      },
+      "scarto": 0.15
+    },
+    "6010": {
+      "nome": "Fazzini",
+      "squadra": "cagliari",
+      "confidence": 0.694,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -788,116 +888,14 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.45
+        "fantacalcio.it": 0.6
       },
-      "scarto": 0.4
-    },
-    "7268": {
-      "nome": "Rodriguez Ju",
-      "squadra": "cagliari",
-      "confidence": 0.904,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
-      },
-      "scarto": 0.1
-    },
-    "5701": {
-      "nome": "Obert",
-      "squadra": "cagliari",
-      "confidence": 0.904,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
-      },
-      "scarto": 0.1
-    },
-    "4870": {
-      "nome": "Adopo",
-      "squadra": "cagliari",
-      "confidence": 0.904,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
-      },
-      "scarto": 0.1
-    },
-    "4260": {
-      "nome": "Winks",
-      "squadra": "cagliari",
-      "confidence": 0.904,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
-      },
-      "scarto": 0.1
-    },
-    "7311": {
-      "nome": "Romano",
-      "squadra": "cagliari",
-      "confidence": 0.904,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
-      },
-      "scarto": 0.1
-    },
-    "6010": {
-      "nome": "Fazzini",
-      "squadra": "cagliari",
-      "confidence": 0.904,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
-      },
-      "scarto": 0.1
+      "scarto": 0.25
     },
     "4896": {
       "nome": "Maldini",
       "squadra": "cagliari",
-      "confidence": 0.704,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -906,10 +904,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.7,
-        "sosfanta.com": 0.6
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.25
+      "scarto": 0.15
     },
     "7547": {
       "nome": "Kevin Carlos",
@@ -1030,7 +1028,7 @@
     "1871": {
       "nome": "Deiola",
       "squadra": "cagliari",
-      "confidence": 0.437,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -1039,10 +1037,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.55,
-        "sosfanta.com": 0.51
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.4
+      "scarto": 0.85
     },
     "6640": {
       "nome": "Felici",
@@ -1116,7 +1114,7 @@
     "7374": {
       "nome": "Mendy P",
       "squadra": "cagliari",
-      "confidence": 0.729,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -1125,10 +1123,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "7125": {
       "nome": "Idrissi",
@@ -1853,7 +1851,7 @@
     "1933": {
       "nome": "Mandragora",
       "squadra": "fiorentina",
-      "confidence": 0.729,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -1862,10 +1860,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "5800": {
       "nome": "Gudmundsson",
@@ -1930,22 +1928,24 @@
     "4952": {
       "nome": "Monterisi",
       "squadra": "frosinone",
-      "confidence": 0.569,
+      "confidence": 0.549,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 2,
+      "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.4
+        "fantacalcio.it": 0.4,
+        "sosfanta.com": 0.51
       },
       "scarto": 0.45
     },
     "7467": {
       "nome": "Calvani",
       "squadra": "frosinone",
-      "confidence": 0.904,
+      "confidence": 0.758,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -1955,26 +1955,24 @@
       "valori": {
         "calciomagazine.it": 0.85,
         "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "sosfanta.com": 0.51
       },
-      "scarto": 0.1
+      "scarto": 0.39
     },
     "5757": {
       "nome": "Cittadini",
       "squadra": "frosinone",
-      "confidence": 0.558,
+      "confidence": 0.581,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
+        "fantacalcio.it"
       ],
-      "n_fonti": 3,
+      "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.55,
-        "fantacalcio.it": 0.6,
-        "sosfanta.com": 0.51
+        "fantacalcio.it": 0.6
       },
-      "scarto": 0.09
+      "scarto": 0.05
     },
     "7469": {
       "nome": "Bracaglia",
@@ -2214,7 +2212,7 @@
     "6917": {
       "nome": "Masini",
       "squadra": "frosinone",
-      "confidence": 0.729,
+      "confidence": 0.613,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -2224,9 +2222,9 @@
       "valori": {
         "calciomagazine.it": 0.15,
         "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "sosfanta.com": 0.6
       },
-      "scarto": 0.8
+      "scarto": 0.75
     },
     "7456": {
       "nome": "El Azzouzi A",
@@ -2670,7 +2668,7 @@
     "5116": {
       "nome": "Martinez Jo",
       "squadra": "inter",
-      "confidence": 0.863,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -2679,15 +2677,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.8,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
       "scarto": 0.15
     },
     "4159": {
       "nome": "Akanji",
       "squadra": "inter",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -2696,10 +2694,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "2514": {
       "nome": "Stones",
@@ -2717,7 +2715,7 @@
     "2120": {
       "nome": "Bastoni",
       "squadra": "inter",
-      "confidence": 0.863,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -2726,15 +2724,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.8,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
       "scarto": 0.15
     },
     "6274": {
       "nome": "Diouf",
       "squadra": "inter",
-      "confidence": 0.646,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -2743,15 +2741,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.6,
-        "sosfanta.com": 0.55
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.3
+      "scarto": 0.15
     },
     "1870": {
       "nome": "Barella",
       "squadra": "inter",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -2760,10 +2758,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "2194": {
       "nome": "Calhanoglu",
@@ -2781,7 +2779,7 @@
     "152": {
       "nome": "Zielinski",
       "squadra": "inter",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -2790,15 +2788,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "254": {
       "nome": "Dimarco",
       "squadra": "inter",
-      "confidence": 0.758,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -2807,15 +2805,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.51
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.39
+      "scarto": 0.15
     },
     "2764": {
       "nome": "Martinez L",
       "squadra": "inter",
-      "confidence": 0.829,
+      "confidence": 0.887,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -2824,15 +2822,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.55,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.4
+      "scarto": 0.45
     },
     "7071": {
       "nome": "Esposito F.P",
       "squadra": "inter",
-      "confidence": 0.569,
+      "confidence": 0.694,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -2840,9 +2838,9 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.4
+        "fantacalcio.it": 0.6
       },
-      "scarto": 0.45
+      "scarto": 0.25
     },
     "2814": {
       "nome": "Provedel",
@@ -2907,7 +2905,7 @@
     "6217": {
       "nome": "Bisseck",
       "squadra": "inter",
-      "confidence": 0.729,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -2916,25 +2914,23 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "5982": {
       "nome": "Spence",
       "squadra": "inter",
       "confidence": 0.15,
       "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it"
+        "calciomagazine.it"
       ],
-      "n_fonti": 2,
+      "n_fonti": 1,
       "valori": {
-        "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.15
+        "calciomagazine.it": 0.15
       },
-      "scarto": 0.0
+      "scarto": null
     },
     "7070": {
       "nome": "Sucic P",
@@ -2954,7 +2950,7 @@
     "2848": {
       "nome": "Frattesi",
       "squadra": "inter",
-      "confidence": 0.729,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -2963,15 +2959,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "5301": {
       "nome": "Luis Henrique",
       "squadra": "inter",
-      "confidence": 0.306,
+      "confidence": 0.369,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -2979,9 +2975,9 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.4
+        "fantacalcio.it": 0.5
       },
-      "scarto": 0.25
+      "scarto": 0.35
     },
     "6503": {
       "nome": "Stankovic A",
@@ -3001,7 +2997,7 @@
     "4871": {
       "nome": "Thuram",
       "squadra": "inter",
-      "confidence": 0.604,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -3010,10 +3006,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.6,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "6669": {
       "nome": "Bonny",
@@ -3449,7 +3445,7 @@
     "6482": {
       "nome": "Mandas",
       "squadra": "lazio",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -3458,10 +3454,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "2188": {
       "nome": "Marusic",
@@ -3479,7 +3475,7 @@
     "6320": {
       "nome": "Doekhi",
       "squadra": "lazio",
-      "confidence": 0.569,
+      "confidence": 0.631,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -3487,14 +3483,14 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.4
+        "fantacalcio.it": 0.5
       },
-      "scarto": 0.45
+      "scarto": 0.35
     },
     "7012": {
       "nome": "Provstgaard",
       "squadra": "lazio",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -3503,10 +3499,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "4817": {
       "nome": "Pedraza",
@@ -3526,7 +3522,7 @@
     "7314": {
       "nome": "Taylor K",
       "squadra": "lazio",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -3535,10 +3531,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "4459": {
       "nome": "Rovella",
@@ -3556,7 +3552,7 @@
     "5500": {
       "nome": "Cancellieri",
       "squadra": "lazio",
-      "confidence": 0.633,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -3565,10 +3561,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.6,
-        "sosfanta.com": 0.51
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.34
+      "scarto": 0.15
     },
     "5672": {
       "nome": "Dia",
@@ -3586,7 +3582,7 @@
     "632": {
       "nome": "Zaccagni",
       "squadra": "lazio",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -3595,10 +3591,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "7337": {
       "nome": "Motta",
@@ -3633,7 +3629,7 @@
     "7131": {
       "nome": "Floriani Mussolini",
       "squadra": "lazio",
-      "confidence": 0.729,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -3642,15 +3638,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "5620": {
       "nome": "Tavares N",
       "squadra": "lazio",
-      "confidence": 0.729,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -3659,10 +3655,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "2728": {
       "nome": "Pellegrini Lu",
@@ -3695,7 +3691,7 @@
     "6191": {
       "nome": "Belahyane",
       "squadra": "lazio",
-      "confidence": 0.729,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -3704,40 +3700,36 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "6629": {
       "nome": "Dele-Bashiru",
       "squadra": "lazio",
       "confidence": 0.15,
       "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it"
+        "calciomagazine.it"
       ],
-      "n_fonti": 2,
+      "n_fonti": 1,
       "valori": {
-        "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.15
+        "calciomagazine.it": 0.15
       },
-      "scarto": 0.0
+      "scarto": null
     },
     "7345": {
       "nome": "Przyborek",
       "squadra": "lazio",
-      "confidence": 0.181,
+      "confidence": 0.15,
       "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it"
+        "calciomagazine.it"
       ],
-      "n_fonti": 2,
+      "n_fonti": 1,
       "valori": {
-        "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.2
+        "calciomagazine.it": 0.15
       },
-      "scarto": 0.05
+      "scarto": null
     },
     "7313": {
       "nome": "Ratkov",
@@ -3755,7 +3747,7 @@
     "6556": {
       "nome": "Noslin",
       "squadra": "lazio",
-      "confidence": 0.437,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -3764,10 +3756,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.55,
-        "sosfanta.com": 0.51
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.4
+      "scarto": 0.85
     },
     "327": {
       "nome": "Patric",
@@ -3800,7 +3792,7 @@
     "6398": {
       "nome": "Isaksen",
       "squadra": "lazio",
-      "confidence": 0.258,
+      "confidence": 0.382,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -3808,9 +3800,9 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.02,
-        "fantacalcio.it": 0.4
+        "fantacalcio.it": 0.6
       },
-      "scarto": 0.38
+      "scarto": 0.58
     },
     "2134": {
       "nome": "Falcone",
@@ -4007,17 +3999,15 @@
     "7557": {
       "nome": "Penev",
       "squadra": "lecce",
-      "confidence": 0.062,
+      "confidence": 0.15,
       "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it"
+        "calciomagazine.it"
       ],
-      "n_fonti": 2,
+      "n_fonti": 1,
       "valori": {
-        "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.01
+        "calciomagazine.it": 0.15
       },
-      "scarto": 0.14
+      "scarto": null
     },
     "7182": {
       "nome": "Ndaba",
@@ -5029,7 +5019,7 @@
     "4220": {
       "nome": "Zambo Anguissa",
       "squadra": "napoli",
-      "confidence": 0.444,
+      "confidence": 0.694,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -5037,9 +5027,9 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.2
+        "fantacalcio.it": 0.6
       },
-      "scarto": 0.65
+      "scarto": 0.25
     },
     "4287": {
       "nome": "Lobotka",
@@ -5153,7 +5143,7 @@
     "5840": {
       "nome": "Olivera",
       "squadra": "napoli",
-      "confidence": 0.763,
+      "confidence": 0.783,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -5162,7 +5152,7 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.45,
-        "fantacalcio.it": 0.8,
+        "fantacalcio.it": 0.85,
         "sosfanta.com": 0.95
       },
       "scarto": 0.5
@@ -5170,7 +5160,7 @@
     "5481": {
       "nome": "Mazzocchi",
       "squadra": "napoli",
-      "confidence": 0.306,
+      "confidence": 0.4,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -5178,9 +5168,9 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.4
+        "fantacalcio.it": 0.55
       },
-      "scarto": 0.25
+      "scarto": 0.4
     },
     "7563": {
       "nome": "Favasuli",
@@ -5215,7 +5205,7 @@
     "2517": {
       "nome": "De Bruyne",
       "squadra": "napoli",
-      "confidence": 0.763,
+      "confidence": 0.825,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -5224,7 +5214,7 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.45,
-        "fantacalcio.it": 0.8,
+        "fantacalcio.it": 0.95,
         "sosfanta.com": 0.95
       },
       "scarto": 0.5
@@ -5369,17 +5359,15 @@
     "5307": {
       "nome": "Valenti",
       "squadra": "parma",
-      "confidence": 0.569,
+      "confidence": 0.85,
       "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it"
+        "calciomagazine.it"
       ],
-      "n_fonti": 2,
+      "n_fonti": 1,
       "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.4
+        "calciomagazine.it": 0.85
       },
-      "scarto": 0.45
+      "scarto": null
     },
     "5862": {
       "nome": "Valeri",
@@ -5431,6 +5419,34 @@
     "6666": {
       "nome": "Bernabè",
       "squadra": "parma",
+      "confidence": 0.85,
+      "fonti": [
+        "calciomagazine.it"
+      ],
+      "n_fonti": 1,
+      "valori": {
+        "calciomagazine.it": 0.85
+      },
+      "scarto": null
+    },
+    "6207": {
+      "nome": "Almqvist",
+      "squadra": "parma",
+      "confidence": 0.55,
+      "fonti": [
+        "calciomagazine.it",
+        "fantacalcio.it"
+      ],
+      "n_fonti": 2,
+      "valori": {
+        "calciomagazine.it": 0.55,
+        "fantacalcio.it": 0.55
+      },
+      "scarto": 0.0
+    },
+    "6229": {
+      "nome": "Tourè E",
+      "squadra": "parma",
       "confidence": 0.729,
       "fonti": [
         "calciomagazine.it",
@@ -5441,38 +5457,6 @@
       "valori": {
         "calciomagazine.it": 0.85,
         "fantacalcio.it": 0.8,
-        "sosfanta.com": 0.55
-      },
-      "scarto": 0.3
-    },
-    "6207": {
-      "nome": "Almqvist",
-      "squadra": "parma",
-      "confidence": 0.456,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it"
-      ],
-      "n_fonti": 2,
-      "valori": {
-        "calciomagazine.it": 0.55,
-        "fantacalcio.it": 0.4
-      },
-      "scarto": 0.15
-    },
-    "6229": {
-      "nome": "Tourè E",
-      "squadra": "parma",
-      "confidence": 0.646,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.6,
         "sosfanta.com": 0.55
       },
       "scarto": 0.3
@@ -5568,7 +5552,7 @@
     "7213": {
       "nome": "Frigan",
       "squadra": "parma",
-      "confidence": 0.544,
+      "confidence": 0.419,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -5576,9 +5560,9 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.45,
-        "fantacalcio.it": 0.6
+        "fantacalcio.it": 0.4
       },
-      "scarto": 0.15
+      "scarto": 0.05
     },
     "7342": {
       "nome": "Elphege",
@@ -5656,7 +5640,7 @@
     "5841": {
       "nome": "Svilar",
       "squadra": "roma",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -5665,15 +5649,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "2296": {
       "nome": "Mancini",
       "squadra": "roma",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -5682,15 +5666,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "4317": {
       "nome": "N'Dicka",
       "squadra": "roma",
-      "confidence": 0.662,
+      "confidence": 0.631,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -5698,14 +5682,14 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.55
+        "fantacalcio.it": 0.5
       },
-      "scarto": 0.3
+      "scarto": 0.35
     },
     "4807": {
       "nome": "Hermoso",
       "squadra": "roma",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -5714,30 +5698,32 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "4998": {
       "nome": "Molina",
       "squadra": "roma",
-      "confidence": 0.655,
+      "confidence": 0.965,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 2,
+      "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.55
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.3
+      "scarto": 0.15
     },
     "5589": {
       "nome": "Konè M",
       "squadra": "roma",
-      "confidence": 0.779,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -5746,15 +5732,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.6,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.35
+      "scarto": 0.15
     },
     "779": {
       "nome": "Cristante",
       "squadra": "roma",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -5763,15 +5749,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "7181": {
       "nome": "Wesley",
       "squadra": "roma",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -5780,15 +5766,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "5734": {
       "nome": "Soulè",
       "squadra": "roma",
-      "confidence": 0.571,
+      "confidence": 0.887,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -5797,15 +5783,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.55,
-        "fantacalcio.it": 0.6,
-        "sosfanta.com": 0.55
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.05
+      "scarto": 0.45
     },
     "309": {
       "nome": "Dybala",
       "squadra": "roma",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -5814,15 +5800,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "5585": {
       "nome": "Malen",
       "squadra": "roma",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -5831,10 +5817,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "610": {
       "nome": "Gollini",
@@ -5955,7 +5941,7 @@
     "7556": {
       "nome": "Mora",
       "squadra": "roma",
-      "confidence": 0.419,
+      "confidence": 0.544,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -5963,14 +5949,14 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.45,
-        "fantacalcio.it": 0.4
+        "fantacalcio.it": 0.6
       },
-      "scarto": 0.05
+      "scarto": 0.15
     },
     "6190": {
       "nome": "Pisilli",
       "squadra": "roma",
-      "confidence": 0.306,
+      "confidence": 0.431,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -5978,9 +5964,9 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.4
+        "fantacalcio.it": 0.6
       },
-      "scarto": 0.25
+      "scarto": 0.45
     },
     "6981": {
       "nome": "Vaz",
@@ -6169,7 +6155,7 @@
     "2038": {
       "nome": "Pinamonti",
       "squadra": "sassuolo",
-      "confidence": 0.6,
+      "confidence": 0.694,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -6177,9 +6163,9 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.45
+        "fantacalcio.it": 0.6
       },
-      "scarto": 0.4
+      "scarto": 0.25
     },
     "4867": {
       "nome": "Turati",
@@ -6412,23 +6398,6 @@
     "6495": {
       "nome": "Comuzzo",
       "squadra": "torino",
-      "confidence": 0.904,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
-      },
-      "scarto": 0.1
-    },
-    "5010": {
-      "nome": "Ismajli",
-      "squadra": "torino",
       "confidence": 0.631,
       "fonti": [
         "calciomagazine.it",
@@ -6441,10 +6410,10 @@
       },
       "scarto": 0.35
     },
-    "6642": {
-      "nome": "Coco",
+    "5010": {
+      "nome": "Ismajli",
       "squadra": "torino",
-      "confidence": 0.883,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -6453,10 +6422,27 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.85,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
+    },
+    "6642": {
+      "nome": "Coco",
+      "squadra": "torino",
+      "confidence": 0.963,
+      "fonti": [
+        "calciomagazine.it",
+        "fantacalcio.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 3,
+      "valori": {
+        "calciomagazine.it": 0.85,
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
+      },
+      "scarto": 0.15
     },
     "6426": {
       "nome": "Pedersen",
@@ -6474,58 +6460,7 @@
     "6170": {
       "nome": "Gineitis",
       "squadra": "torino",
-      "confidence": 0.612,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.55,
-        "sosfanta.com": 0.51
-      },
-      "scarto": 0.34
-    },
-    "7535": {
-      "nome": "Fitz‑Jim",
-      "squadra": "torino",
-      "confidence": 0.904,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
-      },
-      "scarto": 0.1
-    },
-    "7060": {
-      "nome": "Cacciamani",
-      "squadra": "torino",
-      "confidence": 0.674,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.7,
-        "sosfanta.com": 0.51
-      },
-      "scarto": 0.34
-    },
-    "5888": {
-      "nome": "Casadei",
-      "squadra": "torino",
-      "confidence": 0.475,
+      "confidence": 0.694,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -6533,14 +6468,61 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.25
+        "fantacalcio.it": 0.6
       },
-      "scarto": 0.6
+      "scarto": 0.25
+    },
+    "7535": {
+      "nome": "Fitz‑Jim",
+      "squadra": "torino",
+      "confidence": 0.963,
+      "fonti": [
+        "calciomagazine.it",
+        "fantacalcio.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 3,
+      "valori": {
+        "calciomagazine.it": 0.85,
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
+      },
+      "scarto": 0.15
+    },
+    "7060": {
+      "nome": "Cacciamani",
+      "squadra": "torino",
+      "confidence": 0.963,
+      "fonti": [
+        "calciomagazine.it",
+        "fantacalcio.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 3,
+      "valori": {
+        "calciomagazine.it": 0.85,
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
+      },
+      "scarto": 0.15
+    },
+    "5888": {
+      "nome": "Casadei",
+      "squadra": "torino",
+      "confidence": 0.85,
+      "fonti": [
+        "calciomagazine.it"
+      ],
+      "n_fonti": 1,
+      "valori": {
+        "calciomagazine.it": 0.85
+      },
+      "scarto": null
     },
     "5687": {
       "nome": "Vlasic",
       "squadra": "torino",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -6549,15 +6531,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "2061": {
       "nome": "Simeone",
       "squadra": "torino",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -6566,10 +6548,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "5320": {
       "nome": "Paleari",
@@ -6602,7 +6584,7 @@
     "7069": {
       "nome": "Fortini",
       "squadra": "torino",
-      "confidence": 0.395,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -6611,10 +6593,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.45,
-        "sosfanta.com": 0.51
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.36
+      "scarto": 0.85
     },
     "252": {
       "nome": "Biraghi",
@@ -6756,7 +6738,7 @@
     "6462": {
       "nome": "Okoye",
       "squadra": "udinese",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -6765,10 +6747,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "5820": {
       "nome": "Bertola",
@@ -6814,7 +6796,7 @@
     "4994": {
       "nome": "Vojvoda",
       "squadra": "udinese",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -6823,10 +6805,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "7198": {
       "nome": "Piotrowski",
@@ -6844,7 +6826,7 @@
     "6680": {
       "nome": "Karlstrom",
       "squadra": "udinese",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -6853,15 +6835,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "6684": {
       "nome": "Ekkelenkamp",
       "squadra": "udinese",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -6870,15 +6852,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "5555": {
       "nome": "Kamara H",
       "squadra": "udinese",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -6887,15 +6869,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "2766": {
       "nome": "Zaniolo",
       "squadra": "udinese",
-      "confidence": 0.612,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -6904,15 +6886,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.55,
-        "sosfanta.com": 0.51
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.34
+      "scarto": 0.15
     },
     "5637": {
       "nome": "Davis K",
       "squadra": "udinese",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -6921,10 +6903,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "543": {
       "nome": "Padelli",
@@ -6957,7 +6939,7 @@
     "5994": {
       "nome": "Ebosse",
       "squadra": "udinese",
-      "confidence": 0.688,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -6966,10 +6948,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.8,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "7356": {
       "nome": "Mlacic",
@@ -6987,7 +6969,7 @@
     "6021": {
       "nome": "Abankwah",
       "squadra": "udinese",
-      "confidence": 0.729,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -6996,10 +6978,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "7312": {
       "nome": "Arizala",
@@ -7017,7 +6999,7 @@
     "7208": {
       "nome": "Miller L",
       "squadra": "udinese",
-      "confidence": 0.729,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -7026,10 +7008,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "6212": {
       "nome": "Zarraga",
@@ -7049,7 +7031,7 @@
     "6783": {
       "nome": "Unai Gomez",
       "squadra": "udinese",
-      "confidence": 0.338,
+      "confidence": 0.431,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -7057,9 +7039,9 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.45
+        "fantacalcio.it": 0.6
       },
-      "scarto": 0.3
+      "scarto": 0.45
     },
     "7161": {
       "nome": "Bayo V",
@@ -7107,7 +7089,7 @@
     "4263": {
       "nome": "Kabasele",
       "squadra": "udinese",
-      "confidence": 0.563,
+      "confidence": 0.755,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -7116,15 +7098,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.02,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.55
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.88
+      "scarto": 0.98
     },
     "5527": {
       "nome": "Zanoli",
       "squadra": "udinese",
-      "confidence": 0.101,
+      "confidence": 0.195,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -7132,9 +7114,9 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.02,
-        "fantacalcio.it": 0.15
+        "fantacalcio.it": 0.3
       },
-      "scarto": 0.13
+      "scarto": 0.28
     },
     "7418": {
       "nome": "Chakvetadze",
@@ -7154,7 +7136,7 @@
     "6248": {
       "nome": "Stankovic F",
       "squadra": "venezia",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -7163,15 +7145,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "6892": {
       "nome": "Schingtienne",
       "squadra": "venezia",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -7180,10 +7162,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "7253": {
       "nome": "Bella‑Kotchap",
@@ -7214,22 +7196,7 @@
     "4845": {
       "nome": "Correia",
       "squadra": "venezia",
-      "confidence": 0.688,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it"
-      ],
-      "n_fonti": 2,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.6
-      },
-      "scarto": 0.25
-    },
-    "6994": {
-      "nome": "Kike Perez",
-      "squadra": "venezia",
-      "confidence": 0.906,
+      "confidence": 0.965,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -7238,10 +7205,27 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
+    },
+    "6994": {
+      "nome": "Kike Perez",
+      "squadra": "venezia",
+      "confidence": 0.965,
+      "fonti": [
+        "calciomagazine.it",
+        "fantacalcio.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 3,
+      "valori": {
+        "calciomagazine.it": 0.85,
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
+      },
+      "scarto": 0.15
     },
     "5507": {
       "nome": "Busio",
@@ -7272,7 +7256,7 @@
     "6821": {
       "nome": "Hainaut",
       "squadra": "venezia",
-      "confidence": 0.779,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -7281,15 +7265,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.6,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.35
+      "scarto": 0.15
     },
     "6904": {
       "nome": "Yeboah J",
       "squadra": "venezia",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -7298,15 +7282,15 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "7484": {
       "nome": "Adams A",
       "squadra": "venezia",
-      "confidence": 0.904,
+      "confidence": 0.963,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -7315,10 +7299,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "4957": {
       "nome": "Montipò",
@@ -7366,7 +7350,7 @@
     "7538": {
       "nome": "Halhal",
       "squadra": "venezia",
-      "confidence": 0.338,
+      "confidence": 0.306,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it"
@@ -7374,9 +7358,9 @@
       "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.45
+        "fantacalcio.it": 0.4
       },
-      "scarto": 0.3
+      "scarto": 0.25
     },
     "7454": {
       "nome": " Gomes",
@@ -7409,24 +7393,22 @@
     "6681": {
       "nome": "Sagrado",
       "squadra": "venezia",
-      "confidence": 0.374,
+      "confidence": 0.4,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
+        "fantacalcio.it"
       ],
-      "n_fonti": 3,
+      "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.4,
-        "sosfanta.com": 0.51
+        "fantacalcio.it": 0.55
       },
-      "scarto": 0.36
+      "scarto": 0.4
     },
     "5319": {
       "nome": "Sohm",
       "squadra": "venezia",
-      "confidence": 0.729,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -7435,10 +7417,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "7481": {
       "nome": "Dagasso",
@@ -7456,7 +7438,7 @@
     "5872": {
       "nome": "Helgason",
       "squadra": "venezia",
-      "confidence": 0.667,
+      "confidence": 0.788,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -7465,10 +7447,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.75,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.8
+      "scarto": 0.85
     },
     "7449": {
       "nome": "Rrahmani Al",
@@ -7529,7 +7511,7 @@
     "6890": {
       "nome": "Moreno",
       "squadra": "venezia",
-      "confidence": 0.564,
+      "confidence": 0.774,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -7538,10 +7520,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.02,
-        "fantacalcio.it": 0.55,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.93
+      "scarto": 0.98
     },
     "6537": {
       "nome": "Goglichidze",
@@ -7682,17 +7664,17 @@
     "5675": {
       "nome": "Theate",
       "squadra": "bologna",
-      "confidence": 0.922,
+      "confidence": 1.0,
       "fonti": [
         "fantacalcio.it",
         "sosfanta.com"
       ],
       "n_fonti": 2,
       "valori": {
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.05
+      "scarto": 0.0
     },
     "7629": {
       "nome": "Libra",
@@ -7736,35 +7718,50 @@
     "6534": {
       "nome": "Perri",
       "squadra": "torino",
-      "confidence": 0.922,
+      "confidence": 1.0,
       "fonti": [
         "fantacalcio.it",
         "sosfanta.com"
       ],
       "n_fonti": 2,
       "valori": {
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.05
+      "scarto": 0.0
     },
     "7526": {
       "nome": "Comert",
       "squadra": "torino",
-      "confidence": 0.922,
+      "confidence": 1.0,
       "fonti": [
         "fantacalcio.it",
         "sosfanta.com"
       ],
       "n_fonti": 2,
       "valori": {
-        "fantacalcio.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.05
+      "scarto": 0.0
     },
-    "7220": {
-      "nome": "Belghali",
+    "7624": {
+      "nome": "Braganca",
+      "squadra": "torino",
+      "confidence": 1.0,
+      "fonti": [
+        "fantacalcio.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 2,
+      "valori": {
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
+      },
+      "scarto": 0.0
+    },
+    "5751": {
+      "nome": "Patterson",
       "squadra": "torino",
       "confidence": 0.55,
       "fonti": [
@@ -7773,19 +7770,6 @@
       "n_fonti": 1,
       "valori": {
         "fantacalcio.it": 0.55
-      },
-      "scarto": null
-    },
-    "5751": {
-      "nome": "Patterson",
-      "squadra": "torino",
-      "confidence": 0.6,
-      "fonti": [
-        "fantacalcio.it"
-      ],
-      "n_fonti": 1,
-      "valori": {
-        "fantacalcio.it": 0.6
       },
       "scarto": null
     },
@@ -7802,29 +7786,16 @@
       },
       "scarto": null
     },
-    "7624": {
-      "nome": "Braganca",
+    "7220": {
+      "nome": "Belghali",
       "squadra": "torino",
-      "confidence": 0.45,
+      "confidence": 0.6,
       "fonti": [
         "fantacalcio.it"
       ],
       "n_fonti": 1,
       "valori": {
-        "fantacalcio.it": 0.45
-      },
-      "scarto": null
-    },
-    "7631": {
-      "nome": "Luongo",
-      "squadra": "torino",
-      "confidence": 0.15,
-      "fonti": [
-        "fantacalcio.it"
-      ],
-      "n_fonti": 1,
-      "valori": {
-        "fantacalcio.it": 0.15
+        "fantacalcio.it": 0.6
       },
       "scarto": null
     },
@@ -7838,19 +7809,6 @@
       "n_fonti": 1,
       "valori": {
         "fantacalcio.it": 0.05
-      },
-      "scarto": null
-    },
-    "7092": {
-      "nome": "Jovanovic",
-      "squadra": "udinese",
-      "confidence": 0.35,
-      "fonti": [
-        "fantacalcio.it"
-      ],
-      "n_fonti": 1,
-      "valori": {
-        "fantacalcio.it": 0.35
       },
       "scarto": null
     },
@@ -7948,75 +7906,60 @@
     "4705": {
       "nome": "Balerdi",
       "squadra": "roma",
-      "confidence": 0.477,
+      "confidence": 1.0,
       "fonti": [
         "fantacalcio.it",
         "sosfanta.com"
       ],
       "n_fonti": 2,
       "valori": {
-        "fantacalcio.it": 0.45,
-        "sosfanta.com": 0.51
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.06
+      "scarto": 0.0
     },
     "7599": {
       "nome": "Lulli",
       "squadra": "roma",
-      "confidence": 0.477,
-      "fonti": [
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 2,
-      "valori": {
-        "fantacalcio.it": 0.45,
-        "sosfanta.com": 0.51
-      },
-      "scarto": 0.06
-    },
-    "7277": {
-      "nome": "Arena A.",
-      "squadra": "roma",
-      "confidence": 0.1,
+      "confidence": 0.6,
       "fonti": [
         "fantacalcio.it"
       ],
       "n_fonti": 1,
       "valori": {
-        "fantacalcio.it": 0.1
+        "fantacalcio.it": 0.6
       },
       "scarto": null
     },
     "5172": {
       "nome": "Jones C.",
       "squadra": "inter",
-      "confidence": 0.671,
+      "confidence": 1.0,
       "fonti": [
         "fantacalcio.it",
         "sosfanta.com"
       ],
       "n_fonti": 2,
       "valori": {
-        "fantacalcio.it": 0.8,
-        "sosfanta.com": 0.51
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.29
+      "scarto": 0.0
     },
     "256": {
       "nome": "Juan Jesus",
       "squadra": "venezia",
-      "confidence": 0.867,
+      "confidence": 1.0,
       "fonti": [
         "fantacalcio.it",
         "sosfanta.com"
       ],
       "n_fonti": 2,
       "valori": {
-        "fantacalcio.it": 0.8,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.15
+      "scarto": 0.0
     },
     "7632": {
       "nome": "Panada",
@@ -8073,17 +8016,17 @@
     "7580": {
       "nome": "Sutalo J.",
       "squadra": "lazio",
-      "confidence": 0.756,
+      "confidence": 1.0,
       "fonti": [
         "fantacalcio.it",
         "sosfanta.com"
       ],
       "n_fonti": 2,
       "valori": {
-        "fantacalcio.it": 0.6,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 1.0,
+        "sosfanta.com": 1.0
       },
-      "scarto": 0.35
+      "scarto": 0.0
     },
     "6319": {
       "nome": "Leite",
@@ -8155,28 +8098,28 @@
     "5131": {
       "nome": "Gilmour",
       "squadra": "napoli",
-      "confidence": 0.894,
+      "confidence": 0.867,
       "fonti": [
         "fantacalcio.it",
         "sosfanta.com"
       ],
       "n_fonti": 2,
       "valori": {
-        "fantacalcio.it": 0.85,
+        "fantacalcio.it": 0.8,
         "sosfanta.com": 0.95
       },
-      "scarto": 0.1
+      "scarto": 0.15
     },
     "6202": {
       "nome": "Beukema",
       "squadra": "napoli",
-      "confidence": 0.5,
+      "confidence": 0.4,
       "fonti": [
         "fantacalcio.it"
       ],
       "n_fonti": 1,
       "valori": {
-        "fantacalcio.it": 0.5
+        "fantacalcio.it": 0.4
       },
       "scarto": null
     },
@@ -8278,15 +8221,17 @@
     "7628": {
       "nome": "Sierro",
       "squadra": "parma",
-      "confidence": 0.9,
+      "confidence": 0.744,
       "fonti": [
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 1,
+      "n_fonti": 2,
       "valori": {
-        "fantacalcio.it": 0.9
+        "fantacalcio.it": 0.9,
+        "sosfanta.com": 0.55
       },
-      "scarto": null
+      "scarto": 0.35
     },
     "7554": {
       "nome": "Romero D.",
@@ -8302,6 +8247,21 @@
         "sosfanta.com": 0.95
       },
       "scarto": 0.4
+    },
+    "7561": {
+      "nome": "Lontani",
+      "squadra": "parma",
+      "confidence": 0.756,
+      "fonti": [
+        "fantacalcio.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 2,
+      "valori": {
+        "fantacalcio.it": 0.6,
+        "sosfanta.com": 0.95
+      },
+      "scarto": 0.35
     },
     "2874": {
       "nome": "Ghidotti",
@@ -8354,21 +8314,6 @@
         "fantacalcio.it": 0.55
       },
       "scarto": null
-    },
-    "7561": {
-      "nome": "Lontani",
-      "squadra": "parma",
-      "confidence": 0.644,
-      "fonti": [
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 2,
-      "valori": {
-        "fantacalcio.it": 0.4,
-        "sosfanta.com": 0.95
-      },
-      "scarto": 0.55
     },
     "6047": {
       "nome": "Ehizibue",
@@ -8467,8 +8412,8 @@
       },
       "scarto": 0.14
     },
-    "7603": {
-      "nome": "Grabara",
+    "1930": {
+      "nome": "Pinsoglio",
       "squadra": "juventus",
       "confidence": 0.05,
       "fonti": [
@@ -8477,19 +8422,6 @@
       "n_fonti": 1,
       "valori": {
         "fantacalcio.it": 0.05
-      },
-      "scarto": null
-    },
-    "1930": {
-      "nome": "Pinsoglio",
-      "squadra": "juventus",
-      "confidence": 0.01,
-      "fonti": [
-        "fantacalcio.it"
-      ],
-      "n_fonti": 1,
-      "valori": {
-        "fantacalcio.it": 0.01
       },
       "scarto": null
     },
@@ -8639,6 +8571,19 @@
       "n_fonti": 1,
       "valori": {
         "fantacalcio.it": 0.35
+      },
+      "scarto": null
+    },
+    "7647": {
+      "nome": "Esteban",
+      "squadra": "lecce",
+      "confidence": 0.3,
+      "fonti": [
+        "fantacalcio.it"
+      ],
+      "n_fonti": 1,
+      "valori": {
+        "fantacalcio.it": 0.3
       },
       "scarto": null
     },

@@ -1,6 +1,6 @@
 {
   "fonte": "fantacalcio-online.com",
-  "aggiornato": "2026-09-19T10:11:36.561663+00:00",
+  "aggiornato": "2026-09-19T20:03:32.686480+00:00",
   "giocatori": {
     "5585": {
       "nome": "MALEN Donyell",
@@ -4270,17 +4270,6 @@
       "quotazione": 2.0,
       "match_score": 0.95
     },
-    "6246": {
-      "nome": "LIPANI Luca",
-      "squadra": "Sassuolo",
-      "ruolo": "C",
-      "percMax": null,
-      "comprato_pct": 1.2,
-      "prezzo_350": null,
-      "prezzo_500": null,
-      "quotazione": 6.0,
-      "match_score": 0.95
-    },
     "7154": {
       "nome": "ODENTHAL Cas",
       "squadra": "Sassuolo",
@@ -4289,6 +4278,17 @@
       "comprato_pct": 1.2,
       "prezzo_350": null,
       "prezzo_500": 1.04,
+      "quotazione": 6.0,
+      "match_score": 0.95
+    },
+    "6246": {
+      "nome": "LIPANI Luca",
+      "squadra": "Sassuolo",
+      "ruolo": "C",
+      "percMax": null,
+      "comprato_pct": 1.2,
+      "prezzo_350": null,
+      "prezzo_500": null,
       "quotazione": 6.0,
       "match_score": 0.95
     },
@@ -4677,17 +4677,6 @@
       "quotazione": 1.0,
       "match_score": 0.95
     },
-    "6981": {
-      "nome": "VAZ Robinio",
-      "squadra": "Estero",
-      "ruolo": "A",
-      "percMax": 2.4,
-      "comprato_pct": 0.9,
-      "prezzo_350": 13.9,
-      "prezzo_500": 11.98,
-      "quotazione": 5.0,
-      "match_score": 0.95
-    },
     "5320": {
       "nome": "PALEARI Alberto",
       "squadra": "Estero",
@@ -4696,6 +4685,17 @@
       "comprato_pct": 0.9,
       "prezzo_350": 0.84,
       "prezzo_500": 1.93,
+      "quotazione": 5.0,
+      "match_score": 0.95
+    },
+    "6981": {
+      "nome": "VAZ Robinio",
+      "squadra": "Estero",
+      "ruolo": "A",
+      "percMax": 2.4,
+      "comprato_pct": 0.9,
+      "prezzo_350": 13.9,
+      "prezzo_500": 11.98,
       "quotazione": 5.0,
       "match_score": 0.95
     },
@@ -5183,17 +5183,6 @@
       "quotazione": 6.0,
       "match_score": 0.95
     },
-    "333": {
-      "nome": "CATALDI Danilo",
-      "squadra": "Lazio",
-      "ruolo": "C",
-      "percMax": 3.25,
-      "comprato_pct": 0.6,
-      "prezzo_350": 18.12,
-      "prezzo_500": 16.25,
-      "quotazione": 7.0,
-      "match_score": 0.95
-    },
     "4374": {
       "nome": "WALUKIEWICZ Sebastian",
       "squadra": "Sassuolo",
@@ -5202,6 +5191,17 @@
       "comprato_pct": 0.6,
       "prezzo_350": 17.15,
       "prezzo_500": null,
+      "quotazione": 7.0,
+      "match_score": 0.95
+    },
+    "333": {
+      "nome": "CATALDI Danilo",
+      "squadra": "Lazio",
+      "ruolo": "C",
+      "percMax": 3.25,
+      "comprato_pct": 0.6,
+      "prezzo_350": 18.12,
+      "prezzo_500": 16.25,
       "quotazione": 7.0,
       "match_score": 0.95
     },
@@ -5436,17 +5436,6 @@
       "quotazione": 7.0,
       "match_score": 0.95
     },
-    "7475": {
-      "nome": "STRAJNAR Aljaž",
-      "squadra": "Monza",
-      "ruolo": "P",
-      "percMax": null,
-      "comprato_pct": 0.4,
-      "prezzo_350": null,
-      "prezzo_500": null,
-      "quotazione": 1.0,
-      "match_score": 0.95
-    },
     "219": {
       "nome": "SOMMARIVA Daniele",
       "squadra": "Genoa",
@@ -5455,6 +5444,17 @@
       "comprato_pct": 0.4,
       "prezzo_350": null,
       "prezzo_500": 0.3,
+      "quotazione": 1.0,
+      "match_score": 0.95
+    },
+    "7475": {
+      "nome": "STRAJNAR Aljaž",
+      "squadra": "Monza",
+      "ruolo": "P",
+      "percMax": null,
+      "comprato_pct": 0.4,
+      "prezzo_350": null,
+      "prezzo_500": null,
       "quotazione": 1.0,
       "match_score": 0.95
     },
@@ -5535,17 +5535,6 @@
       "quotazione": 6.0,
       "match_score": 0.95
     },
-    "6809": {
-      "nome": "MARIANUCCI Luca",
-      "squadra": "Napoli",
-      "ruolo": "D",
-      "percMax": 0.59,
-      "comprato_pct": 0.4,
-      "prezzo_350": 4.42,
-      "prezzo_500": 2.93,
-      "quotazione": 4.0,
-      "match_score": 0.95
-    },
     "7483": {
       "nome": "ALHASSANE Abdel Rahim Bonkano",
       "squadra": "Bologna",
@@ -5557,8 +5546,19 @@
       "quotazione": 4.0,
       "match_score": 0.95
     },
-    "7557": {
-      "nome": "PENEV Plamen",
+    "6809": {
+      "nome": "MARIANUCCI Luca",
+      "squadra": "Napoli",
+      "ruolo": "D",
+      "percMax": 0.59,
+      "comprato_pct": 0.4,
+      "prezzo_350": 4.42,
+      "prezzo_500": 2.93,
+      "quotazione": 4.0,
+      "match_score": 0.95
+    },
+    "4468": {
+      "nome": "BLEVE Marco",
       "squadra": "Lecce",
       "ruolo": "P",
       "percMax": 0.04,
@@ -5568,8 +5568,8 @@
       "quotazione": 1.0,
       "match_score": 0.95
     },
-    "4468": {
-      "nome": "BLEVE Marco",
+    "7557": {
+      "nome": "PENEV Plamen",
       "squadra": "Lecce",
       "ruolo": "P",
       "percMax": 0.04,
@@ -5722,17 +5722,6 @@
       "quotazione": 1.0,
       "match_score": 0.95
     },
-    "6916": {
-      "nome": "AHANOR Honest",
-      "squadra": "Estero",
-      "ruolo": "C",
-      "percMax": 0.97,
-      "comprato_pct": 0.3,
-      "prezzo_350": 1.54,
-      "prezzo_500": 4.84,
-      "quotazione": 9.0,
-      "match_score": 0.95
-    },
     "6629": {
       "nome": "DELE-BASHIRU Fisayo",
       "squadra": "Lazio",
@@ -5741,6 +5730,17 @@
       "comprato_pct": 0.3,
       "prezzo_350": null,
       "prezzo_500": null,
+      "quotazione": 9.0,
+      "match_score": 0.95
+    },
+    "6916": {
+      "nome": "AHANOR Honest",
+      "squadra": "Estero",
+      "ruolo": "C",
+      "percMax": 0.97,
+      "comprato_pct": 0.3,
+      "prezzo_350": 1.54,
+      "prezzo_500": 4.84,
       "quotazione": 9.0,
       "match_score": 0.95
     },
@@ -5920,17 +5920,6 @@
       "quotazione": 4.0,
       "match_score": 0.95
     },
-    "7363": {
-      "nome": "SIVIERO Lapo",
-      "squadra": "Torino",
-      "ruolo": "P",
-      "percMax": 0.06,
-      "comprato_pct": 0.2,
-      "prezzo_350": null,
-      "prezzo_500": 0.3,
-      "quotazione": 1.0,
-      "match_score": 0.95
-    },
     "4518": {
       "nome": "RUSSO Alessandro",
       "squadra": "Sassuolo",
@@ -5939,6 +5928,17 @@
       "comprato_pct": 0.2,
       "prezzo_350": null,
       "prezzo_500": 0.21,
+      "quotazione": 1.0,
+      "match_score": 0.95
+    },
+    "7363": {
+      "nome": "SIVIERO Lapo",
+      "squadra": "Torino",
+      "ruolo": "P",
+      "percMax": 0.06,
+      "comprato_pct": 0.2,
+      "prezzo_350": null,
+      "prezzo_500": 0.3,
       "quotazione": 1.0,
       "match_score": 0.95
     },
