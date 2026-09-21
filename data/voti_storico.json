@@ -56,6 +56,22 @@
             "eventId": "4"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 4.5,
+        "eventi": [
+          {
+            "tipo": "Gol subito",
+            "count": "2",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
       }
     }
   },
@@ -83,6 +99,11 @@
       "3": {
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
         "eventi": []
       }
     }
@@ -123,6 +144,17 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -178,6 +210,17 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (57°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -222,6 +265,11 @@
             "eventId": "22"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -236,6 +284,11 @@
         "eventi": []
       },
       "2": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
@@ -276,6 +329,17 @@
             "tipo": "Gol segnato",
             "count": "1",
             "eventId": "3"
+          }
+        ]
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
           }
         ]
       }
@@ -344,6 +408,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -383,6 +452,11 @@
             "eventId": "22"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -433,6 +507,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -477,6 +556,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
       }
     }
   },
@@ -526,6 +610,27 @@
             "eventId": "26"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 8,
+        "fantavoto_consensus": 14,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (46°)",
+            "count": "2",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Gol segnato  (79°)",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
       }
     }
   },
@@ -554,6 +659,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
       }
     }
   },
@@ -620,6 +730,11 @@
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -652,6 +767,11 @@
       "4": {
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -697,6 +817,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -730,6 +855,11 @@
             "eventId": "23"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7,
+        "eventi": []
       }
     }
   },
@@ -746,6 +876,11 @@
       "2": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
         "eventi": []
       }
     }
@@ -779,6 +914,11 @@
       "4": {
         "voto_consensus": null,
         "fantavoto_consensus": null,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -836,6 +976,11 @@
             "eventId": "17"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -912,6 +1057,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -933,6 +1083,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -961,6 +1116,17 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 4.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -989,6 +1155,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7.5,
+        "fantavoto_consensus": 1.3,
+        "eventi": []
       }
     }
   },
@@ -1014,6 +1185,11 @@
         ]
       },
       "4": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
@@ -1087,6 +1263,17 @@
             "eventId": "4"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Gol subito  (54°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
       }
     }
   },
@@ -1126,6 +1313,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -1164,6 +1356,11 @@
       "4": {
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -1220,6 +1417,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -1258,6 +1460,17 @@
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -1330,6 +1543,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
       }
     }
   },
@@ -1363,6 +1581,11 @@
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -1375,6 +1598,17 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -1436,6 +1670,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -1475,6 +1714,11 @@
             "eventId": "22"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
       }
     }
   },
@@ -1509,6 +1753,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -1536,6 +1785,11 @@
       "4": {
         "voto_consensus": null,
         "fantavoto_consensus": null,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
         "eventi": []
       }
     }
@@ -1577,6 +1831,22 @@
             "eventId": "4"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 4,
+        "eventi": [
+          {
+            "tipo": "Gol subito",
+            "count": "2",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
       }
     }
   },
@@ -1610,6 +1880,17 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -1660,6 +1941,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -1681,6 +1967,11 @@
       "3": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -1710,6 +2001,11 @@
             "eventId": "22"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
       }
     }
   },
@@ -1736,6 +2032,11 @@
       "4": {
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
         "eventi": []
       }
     }
@@ -1764,6 +2065,11 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -1791,6 +2097,11 @@
         "voto_consensus": null,
         "fantavoto_consensus": null,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -1805,6 +2116,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
@@ -1864,6 +2180,11 @@
             "eventId": "23"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -1946,6 +2267,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -1995,6 +2321,17 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (95°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -2031,6 +2368,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
@@ -2099,6 +2441,22 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 4,
+        "eventi": [
+          {
+            "tipo": "Gol subito",
+            "count": "2",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (80°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
       }
     }
   },
@@ -2144,6 +2502,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
       }
     }
   },
@@ -2156,6 +2519,17 @@
         "voto_consensus": 4.5,
         "fantavoto_consensus": 4.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -2239,6 +2613,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -2305,6 +2684,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 7,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -2332,6 +2716,17 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (92°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -2358,6 +2753,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -2386,6 +2786,11 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -2412,6 +2817,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
         "eventi": []
       }
     }
@@ -2446,6 +2856,17 @@
         "voto_consensus": 5,
         "fantavoto_consensus": 2,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist  (70°)",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
       }
     }
   },
@@ -2561,6 +2982,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -2591,6 +3017,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
@@ -2633,6 +3064,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -2654,6 +3090,11 @@
       "4": {
         "voto_consensus": null,
         "fantavoto_consensus": null,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
         "eventi": []
       }
     }
@@ -2704,6 +3145,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
       }
     }
   },
@@ -2753,6 +3199,11 @@
             "eventId": "17"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -2786,6 +3237,17 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
       }
     }
   },
@@ -2824,6 +3286,11 @@
             "eventId": "26"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -2880,6 +3347,17 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist soft",
+            "count": "1",
+            "eventId": "21"
+          }
+        ]
       }
     }
   },
@@ -2958,6 +3436,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -2982,6 +3465,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -3028,6 +3516,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -3090,6 +3583,17 @@
             "eventId": "4"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Gol subito  (70°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
       }
     }
   },
@@ -3123,6 +3627,17 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (85°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -3156,6 +3671,17 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (93°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -3212,6 +3738,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -3244,6 +3775,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -3302,6 +3838,17 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist soft  (80°)",
+            "count": "1",
+            "eventId": "21"
+          }
+        ]
       }
     }
   },
@@ -3323,6 +3870,11 @@
       "3": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
         "eventi": []
       }
     }
@@ -3385,6 +3937,22 @@
             "eventId": "22"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (80°)",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
       }
     }
   },
@@ -3412,6 +3980,17 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist soft",
+            "count": "1",
+            "eventId": "21"
+          }
+        ]
       }
     }
   },
@@ -3449,6 +4028,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -3495,6 +4079,11 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 7,
+        "eventi": []
       }
     }
   },
@@ -3527,6 +4116,11 @@
       "4": {
         "voto_consensus": 7,
         "fantavoto_consensus": 7,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -3579,6 +4173,11 @@
         "voto_consensus": 7,
         "fantavoto_consensus": 7,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -3606,6 +4205,11 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -3630,6 +4234,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
@@ -3678,6 +4287,11 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 7.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -3704,6 +4318,11 @@
       "4": {
         "voto_consensus": 7,
         "fantavoto_consensus": 7,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
         "eventi": []
       }
     }
@@ -3742,6 +4361,11 @@
       "4": {
         "voto_consensus": 7,
         "fantavoto_consensus": 7,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -3843,6 +4467,22 @@
         "voto_consensus": 7,
         "fantavoto_consensus": 10,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (54°)",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
       }
     }
   },
@@ -3881,6 +4521,11 @@
       "4": {
         "voto_consensus": 7,
         "fantavoto_consensus": 10,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -3943,6 +4588,17 @@
         "voto_consensus": 7,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 9,
+        "fantavoto_consensus": 9,
+        "eventi": [
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
       }
     }
   },
@@ -3982,6 +4638,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 7,
+        "eventi": []
       }
     }
   },
@@ -4009,6 +4670,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -4035,6 +4701,11 @@
       "4": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -4073,6 +4744,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -4117,6 +4793,17 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (56°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -4150,6 +4837,11 @@
       "3": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
         "eventi": []
       }
     }
@@ -4201,6 +4893,17 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
       }
     }
   },
@@ -4240,6 +4943,22 @@
         "voto_consensus": 7,
         "fantavoto_consensus": 10,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 9.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          },
+          {
+            "tipo": "Gol segnato",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
       }
     }
   },
@@ -4279,6 +4998,22 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 7.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7.5,
+        "fantavoto_consensus": 9.5,
+        "eventi": [
+          {
+            "tipo": "Assist",
+            "count": "2",
+            "eventId": "22"
+          },
+          {
+            "tipo": "Assist",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
       }
     }
   },
@@ -4311,6 +5046,11 @@
       "4": {
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
         "eventi": []
       }
     }
@@ -4360,6 +5100,11 @@
       "4": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
         "eventi": []
       }
     }
@@ -4425,6 +5170,17 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (92°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -4480,6 +5236,11 @@
             "eventId": "4"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -4519,6 +5280,11 @@
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -4557,6 +5323,22 @@
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (77°)",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
       }
     }
   },
@@ -4578,6 +5360,11 @@
       "4": {
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
         "eventi": []
       }
     }
@@ -4641,6 +5428,11 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -4679,6 +5471,11 @@
       "4": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
         "eventi": []
       }
     }
@@ -4752,6 +5549,22 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 9.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          },
+          {
+            "tipo": "Gol segnato",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
       }
     }
   },
@@ -4785,6 +5598,17 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist soft  (77°)",
+            "count": "1",
+            "eventId": "21"
+          }
+        ]
       }
     }
   },
@@ -4796,6 +5620,11 @@
       "1": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -4864,6 +5693,11 @@
             "eventId": "22"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 7,
+        "eventi": []
       }
     }
   },
@@ -4939,6 +5773,11 @@
             "eventId": "4"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 4,
+        "eventi": []
       }
     }
   },
@@ -4972,6 +5811,11 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -5034,6 +5878,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
       }
     }
   },
@@ -5073,6 +5922,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -5100,6 +5954,11 @@
       "4": {
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -5137,6 +5996,11 @@
         "eventi": []
       },
       "3": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -5216,6 +6080,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -5261,6 +6130,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -5328,6 +6202,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 4.5,
+        "fantavoto_consensus": 1.5,
+        "eventi": []
       }
     }
   },
@@ -5361,6 +6240,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
       }
     }
   },
@@ -5406,6 +6290,27 @@
           },
           {
             "tipo": "Gol subito  (89°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 3,
+        "eventi": [
+          {
+            "tipo": "Gol subito",
+            "count": "3",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (61°)",
+            "count": "2",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (74°)",
             "count": "1",
             "eventId": "4"
           }
@@ -5459,6 +6364,17 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (58°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -5493,6 +6409,11 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
       }
     }
   },
@@ -5526,6 +6447,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 4.5,
+        "fantavoto_consensus": 4.5,
+        "eventi": []
       }
     }
   },
@@ -5553,6 +6479,11 @@
       "4": {
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -5626,6 +6557,11 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -5675,6 +6611,11 @@
             "eventId": "26"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -5708,6 +6649,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -5734,6 +6680,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -5791,6 +6742,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -5824,6 +6780,11 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
       }
     }
   },
@@ -5912,6 +6873,22 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 4.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 4.5,
+        "eventi": [
+          {
+            "tipo": "Gol subito",
+            "count": "2",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (77°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
       }
     }
   },
@@ -5988,6 +6965,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
       }
     }
   },
@@ -6004,6 +6986,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -6086,6 +7073,11 @@
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -6120,6 +7112,11 @@
             "eventId": "2"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -6150,6 +7147,11 @@
         ]
       },
       "4": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -6202,6 +7204,11 @@
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -6228,6 +7235,11 @@
       "4": {
         "voto_consensus": 7,
         "fantavoto_consensus": 10,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -6267,6 +7279,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
       }
     }
   },
@@ -6295,6 +7312,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -6316,6 +7338,11 @@
       "3": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
         "eventi": []
       }
     }
@@ -6377,6 +7404,11 @@
             "eventId": "4"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 4.5,
+        "fantavoto_consensus": 2.5,
+        "eventi": []
       }
     }
   },
@@ -6409,6 +7441,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -6473,6 +7510,11 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -6505,6 +7547,11 @@
       "4": {
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -6550,6 +7597,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": []
       }
     }
   },
@@ -6574,6 +7626,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -6610,6 +7667,11 @@
             "eventId": "22"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -6629,6 +7691,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
@@ -6660,6 +7727,11 @@
             "eventId": "22"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -6738,6 +7810,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -6783,6 +7860,11 @@
             "eventId": "22"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -6844,6 +7926,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -6865,6 +7952,11 @@
       "3": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -6910,6 +8002,22 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (77°)",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
       }
     }
   },
@@ -6948,6 +8056,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -7009,6 +8122,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -7033,6 +8151,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
@@ -7077,6 +8200,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -7153,6 +8281,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -7181,6 +8314,11 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -7231,6 +8369,11 @@
             "eventId": "4"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -7264,6 +8407,11 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -7314,6 +8462,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -7345,6 +8498,17 @@
             "tipo": "Ammonizione  (64°)",
             "count": "1",
             "eventId": "1"
+          }
+        ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist",
+            "count": "1",
+            "eventId": "22"
           }
         ]
       }
@@ -7391,6 +8555,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -7417,6 +8586,11 @@
       "4": {
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
         "eventi": []
       }
     }
@@ -7484,6 +8658,17 @@
             "eventId": "22"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (61°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
       }
     }
   },
@@ -7516,6 +8701,11 @@
       "4": {
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -7550,6 +8740,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -7576,6 +8771,11 @@
       "4": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -7643,6 +8843,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -7670,6 +8875,17 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 8,
+        "eventi": [
+          {
+            "tipo": "Assist  (61°)",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
       }
     }
   },
@@ -7709,6 +8925,17 @@
             "eventId": "4"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 4,
+        "eventi": [
+          {
+            "tipo": "Gol subito  (77°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
       }
     }
   },
@@ -7723,6 +8950,11 @@
         "eventi": []
       },
       "2": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
@@ -7759,6 +8991,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
       }
     }
   },
@@ -7792,6 +9029,11 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -7808,6 +9050,11 @@
       "2": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -7836,6 +9083,11 @@
       "4": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -7867,6 +9119,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -7943,6 +9200,11 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -7957,6 +9219,11 @@
         "eventi": []
       },
       "2": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
@@ -7987,6 +9254,17 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
       }
     }
   },
@@ -8022,6 +9300,11 @@
         ]
       },
       "4": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -8091,6 +9374,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -8105,6 +9393,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -8152,6 +9445,11 @@
             "eventId": "4"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 7.5,
+        "fantavoto_consensus": 10.5,
+        "eventi": []
       }
     }
   },
@@ -8200,6 +9498,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -8264,6 +9567,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -8285,6 +9593,11 @@
       "3": {
         "voto_consensus": null,
         "fantavoto_consensus": null,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -8323,6 +9636,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
         "eventi": []
       }
     }
@@ -8397,6 +9715,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -8447,6 +9770,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -8486,6 +9814,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -8516,6 +9849,11 @@
         ]
       },
       "4": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -8575,6 +9913,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": []
       }
     }
   },
@@ -8625,6 +9968,11 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": []
       }
     }
   },
@@ -8658,6 +10006,22 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Gol subito  (46°)",
+            "count": "2",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Gol subito  (79°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
       }
     }
   },
@@ -8685,6 +10049,11 @@
         "voto_consensus": 7,
         "fantavoto_consensus": 7,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -8702,6 +10071,17 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (73°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -8747,6 +10127,11 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -8759,6 +10144,17 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (82°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -8808,6 +10204,11 @@
         "voto_consensus": 7,
         "fantavoto_consensus": 7,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -8841,6 +10242,22 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 8,
+        "fantavoto_consensus": 14,
+        "eventi": [
+          {
+            "tipo": "Gol segnato",
+            "count": "2",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Gol segnato",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
       }
     }
   },
@@ -8880,6 +10297,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -8906,6 +10328,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -8977,6 +10404,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -9025,6 +10457,11 @@
       "4": {
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 7,
         "eventi": []
       }
     }
@@ -9097,6 +10534,11 @@
             "eventId": "26"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -9210,6 +10652,22 @@
             "eventId": "4"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Gol subito",
+            "count": "1",
+            "eventId": "4"
+          },
+          {
+            "tipo": "Ammonizione  (83°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -9261,6 +10719,11 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -9278,6 +10741,17 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (62°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -9322,6 +10796,11 @@
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -9349,6 +10828,17 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist  (51°)",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
       }
     }
   },
@@ -9388,6 +10878,11 @@
             "eventId": "22"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -9477,6 +10972,17 @@
             "eventId": "21"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (51°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
       }
     }
   },
@@ -9525,6 +11031,17 @@
             "eventId": "26"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -9553,6 +11070,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -9579,6 +11101,11 @@
       "4": {
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -9618,6 +11145,17 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 7,
+        "eventi": [
+          {
+            "tipo": "Assist soft  (77°)",
+            "count": "1",
+            "eventId": "21"
+          }
+        ]
       }
     }
   },
@@ -9663,6 +11201,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -9720,6 +11263,11 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -9759,6 +11307,11 @@
         "voto_consensus": null,
         "fantavoto_consensus": null,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
       }
     }
   },
@@ -9780,6 +11333,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
         "eventi": []
       }
     }
@@ -9814,6 +11372,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -9916,6 +11479,11 @@
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": []
       }
     }
   },
@@ -9937,6 +11505,11 @@
       "4": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
         "eventi": []
       }
     }
@@ -9961,6 +11534,11 @@
             "eventId": "17"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -10038,6 +11616,17 @@
             "tipo": "Ammonizione",
             "count": "1",
             "eventId": "1"
+          }
+        ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": [
+          {
+            "tipo": "Uscito per infortunio",
+            "count": "1",
+            "eventId": "17"
           }
         ]
       }
@@ -10119,6 +11708,11 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -10138,6 +11732,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -10169,6 +11768,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -10185,6 +11789,11 @@
       "4": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
         "eventi": []
       }
     }
@@ -10237,6 +11846,11 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -10271,6 +11885,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -10304,6 +11923,11 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -10316,6 +11940,17 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -10337,6 +11972,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
         "eventi": []
       }
     }
@@ -10366,6 +12006,17 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
       }
     }
   },
@@ -10382,6 +12033,11 @@
       "3": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
         "eventi": []
       }
     }
@@ -10428,6 +12084,11 @@
             "eventId": "26"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -10472,6 +12133,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
       }
     }
   },
@@ -10492,6 +12158,11 @@
         ]
       },
       "4": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -10533,6 +12204,11 @@
       "4": {
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -10578,6 +12254,17 @@
             "eventId": "26"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist  (46°)",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
       }
     }
   },
@@ -10594,6 +12281,11 @@
       "4": {
         "voto_consensus": null,
         "fantavoto_consensus": null,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -10623,6 +12315,11 @@
             "eventId": "1"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -10642,6 +12339,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -10673,6 +12375,17 @@
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (70°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
       }
     }
   },
@@ -10700,6 +12413,11 @@
       "4": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
         "eventi": []
       }
     }
@@ -10740,6 +12458,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -10759,6 +12482,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
@@ -10795,6 +12523,11 @@
             "eventId": "21"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -10814,6 +12547,11 @@
         "eventi": []
       },
       "4": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
@@ -10839,6 +12577,17 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 7.5,
+        "eventi": [
+          {
+            "tipo": "Assist",
+            "count": "1",
+            "eventId": "22"
+          }
+        ]
       }
     }
   },
@@ -10856,6 +12605,17 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (89°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -10902,6 +12662,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -10918,6 +12683,11 @@
       "4": {
         "voto_consensus": null,
         "fantavoto_consensus": null,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -10936,6 +12706,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
       }
     }
   },
@@ -10953,6 +12728,11 @@
         "voto_consensus": null,
         "fantavoto_consensus": null,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -10969,6 +12749,11 @@
       "4": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -11004,6 +12789,17 @@
             "eventId": "4"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Gol subito",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
       }
     }
   },
@@ -11021,6 +12817,17 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -11044,6 +12851,17 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (75°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -11056,6 +12874,17 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione  (78°)",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -11085,6 +12914,11 @@
             "eventId": "3"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -11102,6 +12936,22 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
       }
     }
   },
@@ -11131,6 +12981,11 @@
         "voto_consensus": 7,
         "fantavoto_consensus": 7,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -11148,6 +13003,17 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
       }
     }
   },
@@ -11157,6 +13023,11 @@
     "ruolo": "d",
     "giornate": {
       "3": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": null,
         "fantavoto_consensus": null,
         "eventi": []
@@ -11177,6 +13048,11 @@
         "voto_consensus": 6.5,
         "fantavoto_consensus": 6.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 7,
+        "eventi": []
       }
     }
   },
@@ -11193,6 +13069,11 @@
       "4": {
         "voto_consensus": null,
         "fantavoto_consensus": null,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -11217,6 +13098,11 @@
         "voto_consensus": 5,
         "fantavoto_consensus": 5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -11233,6 +13119,11 @@
       "4": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -11262,6 +13153,11 @@
       "4": {
         "voto_consensus": null,
         "fantavoto_consensus": null,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
         "eventi": []
       }
     }
@@ -11297,6 +13193,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -11308,6 +13209,11 @@
       "3": {
         "voto_consensus": null,
         "fantavoto_consensus": null,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
         "eventi": []
       }
     }
@@ -11350,6 +13256,11 @@
             "eventId": "16"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -11448,6 +13359,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
       }
     }
   },
@@ -11493,6 +13409,17 @@
             "eventId": "26"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 10,
+        "eventi": [
+          {
+            "tipo": "Gol segnato  (74°)",
+            "count": "1",
+            "eventId": "3"
+          }
+        ]
       }
     }
   },
@@ -11504,6 +13431,11 @@
       "3": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
         "eventi": []
       }
     }
@@ -11546,6 +13478,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -11563,6 +13500,11 @@
         "voto_consensus": 4.5,
         "fantavoto_consensus": 4.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5,
+        "fantavoto_consensus": 5,
+        "eventi": []
       }
     }
   },
@@ -11575,6 +13517,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": []
       }
     }
   },
@@ -11584,6 +13531,11 @@
     "ruolo": "c",
     "giornate": {
       "4": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
@@ -11598,6 +13550,11 @@
       "4": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
         "eventi": []
       }
     }
@@ -11646,6 +13603,22 @@
             "eventId": "22"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 7.5,
+        "fantavoto_consensus": 10.5,
+        "eventi": [
+          {
+            "tipo": "Gol segnato",
+            "count": "1",
+            "eventId": "3"
+          },
+          {
+            "tipo": "Man of the match",
+            "count": "1",
+            "eventId": "26"
+          }
+        ]
       }
     }
   },
@@ -11655,6 +13628,11 @@
     "ruolo": "a",
     "giornate": {
       "4": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": null,
         "fantavoto_consensus": null,
         "eventi": []
@@ -11670,15 +13648,25 @@
         "voto_consensus": null,
         "fantavoto_consensus": null,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
   "7647": {
-    "nome": "Paco Esteban",
+    "nome": "Esteban",
     "squadra": "lecce",
     "ruolo": "a",
     "giornate": {
       "4": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
@@ -11712,6 +13700,17 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 6,
+        "eventi": [
+          {
+            "tipo": "Gol subito  (51°)",
+            "count": "1",
+            "eventId": "4"
+          }
+        ]
       }
     }
   },
@@ -11730,6 +13729,11 @@
             "eventId": "22"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
       }
     }
   },
@@ -11772,6 +13776,11 @@
         "voto_consensus": null,
         "fantavoto_consensus": null,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -11795,6 +13804,11 @@
             "eventId": "26"
           }
         ]
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
       }
     }
   },
@@ -11806,6 +13820,11 @@
       "4": {
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
         "eventi": []
       }
     }
@@ -11861,6 +13880,11 @@
         "voto_consensus": null,
         "fantavoto_consensus": null,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -11891,6 +13915,11 @@
         "voto_consensus": 5.5,
         "fantavoto_consensus": 5.5,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -11915,6 +13944,11 @@
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
+      },
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
       }
     }
   },
@@ -11936,6 +13970,149 @@
     "ruolo": "c",
     "giornate": {
       "4": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      },
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "487": {
+    "nome": "De Silvestri",
+    "squadra": "bologna",
+    "ruolo": "d",
+    "giornate": {
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "6218": {
+    "nome": "Oristanio",
+    "squadra": "torino",
+    "ruolo": "c",
+    "giornate": {
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "5527": {
+    "nome": "Zanoli",
+    "squadra": "udinese",
+    "ruolo": "d",
+    "giornate": {
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 6.5,
+        "eventi": []
+      }
+    }
+  },
+  "4210": {
+    "nome": "Mina",
+    "squadra": "cagliari",
+    "ruolo": "d",
+    "giornate": {
+      "5": {
+        "voto_consensus": 7,
+        "fantavoto_consensus": 7,
+        "eventi": []
+      }
+    }
+  },
+  "7456": {
+    "nome": "El Azzouzi A.",
+    "squadra": "frosinone",
+    "ruolo": "c",
+    "giornate": {
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "7413": {
+    "nome": "Puczka",
+    "squadra": "genoa",
+    "ruolo": "d",
+    "giornate": {
+      "5": {
+        "voto_consensus": 6,
+        "fantavoto_consensus": 6,
+        "eventi": []
+      }
+    }
+  },
+  "2857": {
+    "nome": "Traorè Hj.",
+    "squadra": "genoa",
+    "ruolo": "c",
+    "giornate": {
+      "5": {
+        "voto_consensus": null,
+        "fantavoto_consensus": null,
+        "eventi": []
+      }
+    }
+  },
+  "6485": {
+    "nome": "Kristensen T.",
+    "squadra": "atalanta",
+    "ruolo": "d",
+    "giornate": {
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5,
+        "eventi": [
+          {
+            "tipo": "Ammonizione",
+            "count": "1",
+            "eventId": "1"
+          }
+        ]
+      }
+    }
+  },
+  "7301": {
+    "nome": "Tornqvist",
+    "squadra": "monza",
+    "ruolo": "p",
+    "giornate": {
+      "5": {
+        "voto_consensus": 6.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7159": {
+    "nome": "Skjellerup",
+    "squadra": "sassuolo",
+    "ruolo": "a",
+    "giornate": {
+      "5": {
+        "voto_consensus": 5.5,
+        "fantavoto_consensus": 5.5,
+        "eventi": []
+      }
+    }
+  },
+  "7635": {
+    "nome": "Fanne",
+    "squadra": "venezia",
+    "ruolo": "c",
+    "giornate": {
+      "5": {
         "voto_consensus": 6,
         "fantavoto_consensus": 6,
         "eventi": []
