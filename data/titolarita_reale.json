@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-09-21T11:48:01.657249+00:00",
+  "aggiornato": "2026-09-21T21:43:29.950413+00:00",
   "fonti_usate": [
     "calciomagazine.it",
     "fantacalcio.it",
@@ -528,15 +528,17 @@
     "6675": {
       "nome": "Dovbyk",
       "squadra": "bologna",
-      "confidence": 0.85,
+      "confidence": 0.694,
       "fonti": [
-        "calciomagazine.it"
+        "calciomagazine.it",
+        "fantacalcio.it"
       ],
-      "n_fonti": 1,
+      "n_fonti": 2,
       "valori": {
-        "calciomagazine.it": 0.85
+        "calciomagazine.it": 0.85,
+        "fantacalcio.it": 0.6
       },
-      "scarto": null
+      "scarto": 0.25
     },
     "7172": {
       "nome": "Pessina Mas",
@@ -712,7 +714,7 @@
     "4359": {
       "nome": "Piccoli",
       "squadra": "bologna",
-      "confidence": 0.729,
+      "confidence": 0.688,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -721,7 +723,7 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.9,
+        "fantacalcio.it": 0.8,
         "sosfanta.com": 0.95
       },
       "scarto": 0.8
@@ -1157,7 +1159,7 @@
     "6966": {
       "nome": "Butez",
       "squadra": "como",
-      "confidence": 0.863,
+      "confidence": 0.746,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -1167,9 +1169,9 @@
       "valori": {
         "calciomagazine.it": 0.85,
         "fantacalcio.it": 0.8,
-        "sosfanta.com": 0.95
+        "sosfanta.com": 0.6
       },
-      "scarto": 0.15
+      "scarto": 0.25
     },
     "7014": {
       "nome": "Smolcic I",
@@ -2802,7 +2804,7 @@
     "254": {
       "nome": "Dimarco",
       "squadra": "inter",
-      "confidence": 0.788,
+      "confidence": 0.746,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -2811,10 +2813,10 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9,
+        "fantacalcio.it": 0.8,
         "sosfanta.com": 0.6
       },
-      "scarto": 0.3
+      "scarto": 0.25
     },
     "2764": {
       "nome": "Martinez L",
@@ -3210,7 +3212,7 @@
     "5951": {
       "nome": "Kolo Muani",
       "squadra": "juventus",
-      "confidence": 0.821,
+      "confidence": 0.738,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -3220,9 +3222,9 @@
       "valori": {
         "calciomagazine.it": 0.85,
         "fantacalcio.it": 0.7,
-        "sosfanta.com": 0.95
+        "sosfanta.com": 0.7
       },
-      "scarto": 0.25
+      "scarto": 0.15
     },
     "5876": {
       "nome": "Di Gregorio",
@@ -5762,7 +5764,7 @@
     "779": {
       "nome": "Cristante",
       "squadra": "roma",
-      "confidence": 0.863,
+      "confidence": 0.729,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -5772,9 +5774,9 @@
       "valori": {
         "calciomagazine.it": 0.85,
         "fantacalcio.it": 0.8,
-        "sosfanta.com": 0.95
+        "sosfanta.com": 0.55
       },
-      "scarto": 0.15
+      "scarto": 0.3
     },
     "7181": {
       "nome": "Wesley",
@@ -7720,7 +7722,7 @@
     "7615": {
       "nome": "Drobnic",
       "squadra": "parma",
-      "confidence": 0.811,
+      "confidence": 0.616,
       "fonti": [
         "fantacalcio.it",
         "sosfanta.com"
@@ -7728,9 +7730,9 @@
       "n_fonti": 2,
       "valori": {
         "fantacalcio.it": 0.7,
-        "sosfanta.com": 0.95
+        "sosfanta.com": 0.51
       },
-      "scarto": 0.25
+      "scarto": 0.19
     },
     "7628": {
       "nome": "Sierro",
@@ -8088,29 +8090,16 @@
       },
       "scarto": 0.05
     },
-    "7629": {
-      "nome": "Libra",
-      "squadra": "bologna",
-      "confidence": 0.2,
-      "fonti": [
-        "fantacalcio.it"
-      ],
-      "n_fonti": 1,
-      "valori": {
-        "fantacalcio.it": 0.2
-      },
-      "scarto": null
-    },
     "6833": {
       "nome": "Mbangula",
       "squadra": "bologna",
-      "confidence": 0.55,
+      "confidence": 0.4,
       "fonti": [
         "fantacalcio.it"
       ],
       "n_fonti": 1,
       "valori": {
-        "fantacalcio.it": 0.55
+        "fantacalcio.it": 0.4
       },
       "scarto": null
     },
