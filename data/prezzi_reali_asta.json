@@ -1,6 +1,6 @@
 {
   "fonte": "fantacalcio-online.com",
-  "aggiornato": "2026-09-22T10:50:23.280771+00:00",
+  "aggiornato": "2026-09-22T20:54:46.128326+00:00",
   "giocatori": {
     "5585": {
       "nome": "MALEN Donyell",
@@ -2763,17 +2763,6 @@
       "quotazione": 1.0,
       "match_score": 0.95
     },
-    "4459": {
-      "nome": "ROVELLA Nicolo",
-      "squadra": "Lazio",
-      "ruolo": "C",
-      "percMax": 2.03,
-      "comprato_pct": 3.1,
-      "prezzo_350": 12.07,
-      "prezzo_500": 10.13,
-      "quotazione": 10.0,
-      "match_score": 0.95
-    },
     "7464": {
       "nome": "OULAI Christ Ravynel Inao",
       "squadra": "Fiorentina",
@@ -2782,6 +2771,17 @@
       "comprato_pct": 3.1,
       "prezzo_350": 11.82,
       "prezzo_500": 10.2,
+      "quotazione": 10.0,
+      "match_score": 0.95
+    },
+    "4459": {
+      "nome": "ROVELLA Nicolo",
+      "squadra": "Lazio",
+      "ruolo": "C",
+      "percMax": 2.03,
+      "comprato_pct": 3.1,
+      "prezzo_350": 12.07,
+      "prezzo_500": 10.13,
       "quotazione": 10.0,
       "match_score": 0.95
     },
@@ -4666,10 +4666,10 @@
       "quotazione": 10.0,
       "match_score": 0.95
     },
-    "7471": {
-      "nome": "CORRADO Niccolo",
+    "7396": {
+      "nome": "MACCHIONI Tommaso",
       "squadra": "Serie Minori",
-      "ruolo": "C",
+      "ruolo": "D",
       "percMax": null,
       "comprato_pct": 0.9,
       "prezzo_350": null,
@@ -4677,10 +4677,10 @@
       "quotazione": 1.0,
       "match_score": 0.95
     },
-    "7396": {
-      "nome": "MACCHIONI Tommaso",
+    "7471": {
+      "nome": "CORRADO Niccolo",
       "squadra": "Serie Minori",
-      "ruolo": "D",
+      "ruolo": "C",
       "percMax": null,
       "comprato_pct": 0.9,
       "prezzo_350": null,
@@ -5172,17 +5172,6 @@
       "quotazione": 11.0,
       "match_score": 0.95
     },
-    "4374": {
-      "nome": "WALUKIEWICZ Sebastian",
-      "squadra": "Sassuolo",
-      "ruolo": "D",
-      "percMax": 4.9,
-      "comprato_pct": 0.6,
-      "prezzo_350": 17.15,
-      "prezzo_500": null,
-      "quotazione": 7.0,
-      "match_score": 0.95
-    },
     "333": {
       "nome": "CATALDI Danilo",
       "squadra": "Lazio",
@@ -5191,6 +5180,17 @@
       "comprato_pct": 0.6,
       "prezzo_350": 18.12,
       "prezzo_500": 16.25,
+      "quotazione": 7.0,
+      "match_score": 0.95
+    },
+    "4374": {
+      "nome": "WALUKIEWICZ Sebastian",
+      "squadra": "Sassuolo",
+      "ruolo": "D",
+      "percMax": 4.9,
+      "comprato_pct": 0.6,
+      "prezzo_350": 17.15,
+      "prezzo_500": null,
       "quotazione": 7.0,
       "match_score": 0.95
     },
@@ -5403,17 +5403,6 @@
       "quotazione": 11.0,
       "match_score": 0.95
     },
-    "7128": {
-      "nome": "KUHN Nicolas",
-      "squadra": "Estero",
-      "ruolo": "A",
-      "percMax": 5.4,
-      "comprato_pct": 0.4,
-      "prezzo_350": 18.91,
-      "prezzo_500": null,
-      "quotazione": 7.0,
-      "match_score": 0.95
-    },
     "6424": {
       "nome": "PRATI Matteo",
       "squadra": "Estero",
@@ -5421,6 +5410,17 @@
       "percMax": null,
       "comprato_pct": 0.4,
       "prezzo_350": null,
+      "prezzo_500": null,
+      "quotazione": 7.0,
+      "match_score": 0.95
+    },
+    "7128": {
+      "nome": "KUHN Nicolas",
+      "squadra": "Estero",
+      "ruolo": "A",
+      "percMax": 5.4,
+      "comprato_pct": 0.4,
+      "prezzo_350": 18.91,
       "prezzo_500": null,
       "quotazione": 7.0,
       "match_score": 0.95

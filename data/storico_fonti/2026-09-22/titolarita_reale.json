@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-09-22T10:50:23.376095+00:00",
+  "aggiornato": "2026-09-22T20:54:46.230693+00:00",
   "fonti_usate": [
     "calciomagazine.it",
     "fantacalcio.it",
@@ -4936,19 +4936,17 @@
     "7146": {
       "nome": "Tourè I",
       "squadra": "monza",
-      "confidence": 0.405,
+      "confidence": 0.133,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
+        "fantacalcio.it"
       ],
-      "n_fonti": 3,
+      "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.02,
-        "fantacalcio.it": 0.2,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 0.2
       },
-      "scarto": 0.93
+      "scarto": 0.18
     },
     "5880": {
       "nome": "Ciurria",
@@ -5477,17 +5475,19 @@
     "6229": {
       "nome": "Tourè E",
       "squadra": "parma",
-      "confidence": 0.819,
+      "confidence": 0.863,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 2,
+      "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.8
+        "fantacalcio.it": 0.8,
+        "sosfanta.com": 0.95
       },
-      "scarto": 0.05
+      "scarto": 0.15
     },
     "7411": {
       "nome": " Daffara",
@@ -5625,17 +5625,19 @@
     "7255": {
       "nome": "Britschgi",
       "squadra": "parma",
-      "confidence": 0.382,
+      "confidence": 0.572,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 2,
+      "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.02,
-        "fantacalcio.it": 0.6
+        "fantacalcio.it": 0.6,
+        "sosfanta.com": 0.95
       },
-      "scarto": 0.58
+      "scarto": 0.93
     },
     "7276": {
       "nome": "Cremaschi",
@@ -5751,17 +5753,19 @@
     "5589": {
       "nome": "Konè M",
       "squadra": "roma",
-      "confidence": 0.881,
+      "confidence": 0.904,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 2,
+      "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.9
+        "fantacalcio.it": 0.9,
+        "sosfanta.com": 0.95
       },
-      "scarto": 0.05
+      "scarto": 0.1
     },
     "779": {
       "nome": "Cristante",
@@ -7722,17 +7726,15 @@
     "7615": {
       "nome": "Drobnic",
       "squadra": "parma",
-      "confidence": 0.616,
+      "confidence": 0.7,
       "fonti": [
-        "fantacalcio.it",
-        "sosfanta.com"
+        "fantacalcio.it"
       ],
-      "n_fonti": 2,
+      "n_fonti": 1,
       "valori": {
-        "fantacalcio.it": 0.7,
-        "sosfanta.com": 0.51
+        "fantacalcio.it": 0.7
       },
-      "scarto": 0.19
+      "scarto": null
     },
     "7628": {
       "nome": "Sierro",
@@ -8660,20 +8662,7 @@
     },
     "6646": {
       "nome": "Adams A.",
-      "squadra": "fiorentina",
-      "confidence": 0.95,
-      "fonti": [
-        "sosfanta.com"
-      ],
-      "n_fonti": 1,
-      "valori": {
-        "sosfanta.com": 0.95
-      },
-      "scarto": null
-    },
-    "5725": {
-      "nome": "Konè M.",
-      "squadra": "frosinone",
+      "squadra": "udinese",
       "confidence": 0.95,
       "fonti": [
         "sosfanta.com"
