@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-09-23T10:41:46.713379+00:00",
+ "aggiornato": "2026-09-23T21:07:45.247495+00:00",
  "fonte": "playerstats.football (statistiche difensive/di passaggio, per90, solo top-50 per categoria)",
  "note": "Mapping ID fantacalcio → {tackles_p90, interceptions_p90, clearances_p90, duels_p90, key_passes_p90, accurate_passes_p90, rating}. Copertura parziale: solo chi rientra nei primi 50 di almeno una categoria.",
  "giocatori": {
@@ -24,19 +24,19 @@
    "playerstats_name": "Patrizio Masini",
    "match_score": 0.85
   },
-  "5678": {
-   "minuti": 279,
-   "tackles_p90": 4.84,
-   "duels_p90": 14.52,
-   "playerstats_name": "Emil Holm",
-   "match_score": 0.85
-  },
   "6990": {
    "minuti": 450,
    "tackles_p90": 3.0,
    "clearances_p90": 3.2,
    "duels_p90": 11.6,
    "playerstats_name": "Danilo Veiga",
+   "match_score": 0.85
+  },
+  "5678": {
+   "minuti": 279,
+   "tackles_p90": 4.84,
+   "duels_p90": 14.52,
+   "playerstats_name": "Emil Holm",
    "match_score": 0.85
   },
   "2816": {
@@ -62,48 +62,6 @@
    "playerstats_name": "Darryl Bakola",
    "match_score": 0.85
   },
-  "779": {
-   "minuti": 424,
-   "tackles_p90": 2.76,
-   "interceptions_p90": 1.27,
-   "duels_p90": 11.67,
-   "accurate_passes_p90": 63.68,
-   "rating": 7.54,
-   "playerstats_name": "Bryan Cristante",
-   "match_score": 0.85
-  },
-  "5555": {
-   "minuti": 431,
-   "tackles_p90": 2.71,
-   "rating": 7.54,
-   "shots_p90": 1.88,
-   "shots_on_target_p90": 1.04,
-   "playerstats_name": "Hassane Kamara",
-   "match_score": 0.85
-  },
-  "6020": {
-   "minuti": 440,
-   "tackles_p90": 2.66,
-   "playerstats_name": "Mikael Egill Ellertsson",
-   "match_score": 0.85
-  },
-  "5022": {
-   "minuti": 450,
-   "tackles_p90": 2.6,
-   "clearances_p90": 4.6,
-   "duels_p90": 9.4,
-   "accurate_passes_p90": 69.0,
-   "rating": 7.17,
-   "playerstats_name": "Strahinja Pavlović",
-   "match_score": 0.85
-  },
-  "6632": {
-   "minuti": 336,
-   "tackles_p90": 3.48,
-   "clearances_p90": 6.96,
-   "playerstats_name": "Gaspar",
-   "match_score": 1.0
-  },
   "4807": {
    "minuti": 419,
    "tackles_p90": 2.79,
@@ -122,20 +80,73 @@
    "playerstats_name": "Lewis Ferguson",
    "match_score": 0.85
   },
+  "6020": {
+   "minuti": 440,
+   "tackles_p90": 2.66,
+   "playerstats_name": "Mikael Egill Ellertsson",
+   "match_score": 0.85
+  },
+  "6632": {
+   "minuti": 336,
+   "tackles_p90": 3.48,
+   "clearances_p90": 6.96,
+   "playerstats_name": "Gaspar",
+   "match_score": 1.0
+  },
+  "5022": {
+   "minuti": 450,
+   "tackles_p90": 2.6,
+   "clearances_p90": 4.6,
+   "duels_p90": 9.4,
+   "accurate_passes_p90": 69.0,
+   "rating": 7.16,
+   "playerstats_name": "Strahinja Pavlović",
+   "match_score": 0.85
+  },
+  "5555": {
+   "minuti": 431,
+   "tackles_p90": 2.71,
+   "rating": 7.54,
+   "shots_p90": 1.88,
+   "shots_on_target_p90": 1.04,
+   "playerstats_name": "Hassane Kamara",
+   "match_score": 0.85
+  },
+  "779": {
+   "minuti": 424,
+   "tackles_p90": 2.76,
+   "interceptions_p90": 1.27,
+   "duels_p90": 11.67,
+   "accurate_passes_p90": 63.68,
+   "rating": 7.54,
+   "playerstats_name": "Bryan Cristante",
+   "match_score": 0.85
+  },
+  "7240": {
+   "minuti": 384,
+   "tackles_p90": 2.81,
+   "interceptions_p90": 1.64,
+   "clearances_p90": 6.56,
+   "playerstats_name": "Jamil Siebert",
+   "match_score": 0.85
+  },
+  "6869": {
+   "minuti": 450,
+   "tackles_p90": 2.4,
+   "clearances_p90": 4.2,
+   "duels_p90": 10.0,
+   "accurate_passes_p90": 64.8,
+   "rating": 7.13,
+   "playerstats_name": "Jacobo Ramón",
+   "match_score": 0.85
+  },
   "6994": {
    "minuti": 420,
    "tackles_p90": 2.57,
-   "interceptions_p90": 1.07,
    "duels_p90": 11.36,
    "key_passes_p90": 2.36,
    "accurate_passes_p90": 49.93,
    "playerstats_name": "Kike Pérez",
-   "match_score": 0.85
-  },
-  "6495": {
-   "minuti": 335,
-   "tackles_p90": 3.22,
-   "playerstats_name": "Pietro Comuzzo",
    "match_score": 0.85
   },
   "6549": {
@@ -145,22 +156,10 @@
    "playerstats_name": "Santiago Pierotti",
    "match_score": 0.85
   },
-  "6869": {
-   "minuti": 450,
-   "tackles_p90": 2.4,
-   "clearances_p90": 4.2,
-   "duels_p90": 10.0,
-   "accurate_passes_p90": 64.8,
-   "rating": 7.12,
-   "playerstats_name": "Jacobo Ramón",
-   "match_score": 0.85
-  },
-  "7240": {
-   "minuti": 384,
-   "tackles_p90": 2.81,
-   "interceptions_p90": 1.64,
-   "clearances_p90": 6.56,
-   "playerstats_name": "Jamil Siebert",
+  "6495": {
+   "minuti": 335,
+   "tackles_p90": 3.22,
+   "playerstats_name": "Pietro Comuzzo",
    "match_score": 0.85
   },
   "7467": {
@@ -172,17 +171,14 @@
    "playerstats_name": "Gabriele Calvani",
    "match_score": 0.85
   },
-  "7131": {
-   "minuti": 402,
-   "tackles_p90": 2.46,
-   "interceptions_p90": 1.34,
-   "playerstats_name": "Romano Floriani Mussolini",
-   "match_score": 0.85
-  },
-  "7223": {
-   "minuti": 131,
-   "tackles_p90": 7.56,
-   "playerstats_name": "Antonio Vergara",
+  "6638": {
+   "minuti": 441,
+   "tackles_p90": 2.24,
+   "interceptions_p90": 1.63,
+   "clearances_p90": 4.9,
+   "duels_p90": 9.8,
+   "accurate_passes_p90": 52.45,
+   "playerstats_name": "Rafa Marín",
    "match_score": 0.85
   },
   "7238": {
@@ -193,20 +189,23 @@
    "playerstats_name": "Eddy Kouadio",
    "match_score": 0.85
   },
-  "5701": {
-   "minuti": 447,
-   "tackles_p90": 2.21,
-   "interceptions_p90": 1.01,
-   "playerstats_name": "Adam Obert",
+  "7223": {
+   "minuti": 131,
+   "tackles_p90": 7.56,
+   "playerstats_name": "Antonio Vergara",
    "match_score": 0.85
   },
-  "4409": {
-   "minuti": 450,
-   "tackles_p90": 2.2,
-   "clearances_p90": 6.8,
-   "duels_p90": 11.0,
-   "accurate_passes_p90": 60.4,
-   "playerstats_name": "Amir Rrahmani",
+  "7322": {
+   "minuti": 252,
+   "tackles_p90": 3.93,
+   "playerstats_name": "Oumar Ngom",
+   "match_score": 0.85
+  },
+  "7131": {
+   "minuti": 402,
+   "tackles_p90": 2.46,
+   "interceptions_p90": 1.34,
+   "playerstats_name": "Romano Floriani Mussolini",
    "match_score": 0.85
   },
   "6892": {
@@ -215,15 +214,6 @@
    "clearances_p90": 2.6,
    "accurate_passes_p90": 48.0,
    "playerstats_name": "Joël Schingtienne",
-   "match_score": 0.85
-  },
-  "6238": {
-   "minuti": 383,
-   "tackles_p90": 2.58,
-   "interceptions_p90": 1.88,
-   "clearances_p90": 3.76,
-   "duels_p90": 12.22,
-   "playerstats_name": "Anthony Oyono",
    "match_score": 0.85
   },
   "5757": {
@@ -237,27 +227,26 @@
   "7311": {
    "minuti": 445,
    "tackles_p90": 2.22,
-   "clearances_p90": 2.63,
    "accurate_passes_p90": 39.44,
    "rating": 7.29,
    "shots_on_target_p90": 1.01,
    "playerstats_name": "Alessandro Romano",
    "match_score": 0.85
   },
-  "7322": {
-   "minuti": 252,
-   "tackles_p90": 3.93,
-   "playerstats_name": "Oumar Ngom",
+  "5701": {
+   "minuti": 447,
+   "tackles_p90": 2.21,
+   "interceptions_p90": 1.01,
+   "playerstats_name": "Adam Obert",
    "match_score": 0.85
   },
-  "6638": {
-   "minuti": 441,
-   "tackles_p90": 2.24,
-   "interceptions_p90": 1.84,
-   "clearances_p90": 4.9,
-   "duels_p90": 9.8,
-   "accurate_passes_p90": 52.45,
-   "playerstats_name": "Rafa Marín",
+  "6238": {
+   "minuti": 383,
+   "tackles_p90": 2.58,
+   "interceptions_p90": 1.88,
+   "clearances_p90": 3.76,
+   "duels_p90": 12.22,
+   "playerstats_name": "Anthony Oyono",
    "match_score": 0.85
   },
   "2120": {
@@ -265,6 +254,16 @@
    "tackles_p90": 2.53,
    "accurate_passes_p90": 81.05,
    "playerstats_name": "Alessandro Bastoni",
+   "match_score": 0.85
+  },
+  "4409": {
+   "minuti": 450,
+   "tackles_p90": 2.2,
+   "clearances_p90": 7.0,
+   "duels_p90": 11.4,
+   "accurate_passes_p90": 60.4,
+   "rating": 7.09,
+   "playerstats_name": "Amir Rrahmani",
    "match_score": 0.85
   },
   "7314": {
@@ -276,6 +275,13 @@
    "playerstats_name": "Kenneth Taylor",
    "match_score": 0.85
   },
+  "4465": {
+   "minuti": 361,
+   "tackles_p90": 2.49,
+   "interceptions_p90": 1.5,
+   "playerstats_name": "Nicolò Fagioli",
+   "match_score": 0.85
+  },
   "6191": {
    "minuti": 323,
    "tackles_p90": 2.79,
@@ -285,6 +291,7 @@
   "4657": {
    "minuti": 427,
    "tackles_p90": 2.11,
+   "interceptions_p90": 1.05,
    "playerstats_name": "Zeki Çelik",
    "match_score": 0.85
   },
@@ -293,19 +300,6 @@
    "tackles_p90": 2.87,
    "key_passes_p90": 2.58,
    "playerstats_name": "Juan Miranda",
-   "match_score": 0.85
-  },
-  "4465": {
-   "minuti": 361,
-   "tackles_p90": 2.49,
-   "interceptions_p90": 1.5,
-   "playerstats_name": "Nicolò Fagioli",
-   "match_score": 0.85
-  },
-  "5507": {
-   "minuti": 314,
-   "tackles_p90": 2.87,
-   "playerstats_name": "Gianluca Busio",
    "match_score": 0.85
   },
   "2528": {
@@ -318,6 +312,12 @@
    "playerstats_name": "Nemanja Matić",
    "match_score": 0.85
   },
+  "5507": {
+   "minuti": 314,
+   "tackles_p90": 2.87,
+   "playerstats_name": "Gianluca Busio",
+   "match_score": 0.85
+  },
   "2296": {
    "minuti": 392,
    "tackles_p90": 2.07,
@@ -327,11 +327,10 @@
    "playerstats_name": "Gianluca Mancini",
    "match_score": 0.85
   },
-  "7564": {
-   "minuti": 376,
-   "tackles_p90": 2.15,
-   "clearances_p90": 3.35,
-   "playerstats_name": "Fedde Leysen",
+  "4892": {
+   "minuti": 185,
+   "tackles_p90": 4.38,
+   "playerstats_name": "Alexis Saelemaekers",
    "match_score": 0.85
   },
   "6204": {
@@ -343,48 +342,6 @@
    "shots_p90": 2.88,
    "shots_on_target_p90": 1.03,
    "playerstats_name": "Giorgi Kvernadze",
-   "match_score": 0.85
-  },
-  "5791": {
-   "minuti": 450,
-   "tackles_p90": 1.8,
-   "interceptions_p90": 3.2,
-   "accurate_passes_p90": 43.4,
-   "playerstats_name": "Morten Frendrup",
-   "match_score": 0.85
-  },
-  "1871": {
-   "minuti": 443,
-   "tackles_p90": 1.83,
-   "clearances_p90": 4.27,
-   "playerstats_name": "Alessandro Deiola",
-   "match_score": 0.85
-  },
-  "4159": {
-   "minuti": 413,
-   "tackles_p90": 1.96,
-   "interceptions_p90": 1.74,
-   "clearances_p90": 4.79,
-   "accurate_passes_p90": 63.41,
-   "rating": 7.72,
-   "playerstats_name": "Manuel Akanji",
-   "match_score": 0.85
-  },
-  "4952": {
-   "minuti": 266,
-   "tackles_p90": 3.05,
-   "clearances_p90": 8.12,
-   "playerstats_name": "Ilario Monterisi",
-   "match_score": 0.85
-  },
-  "6904": {
-   "minuti": 381,
-   "tackles_p90": 2.13,
-   "duels_p90": 11.81,
-   "key_passes_p90": 2.36,
-   "shots_p90": 3.31,
-   "shots_on_target_p90": 1.42,
-   "playerstats_name": "John Yeboah",
    "match_score": 0.85
   },
   "5739": {
@@ -403,10 +360,52 @@
    "playerstats_name": "Mërgim Vojvoda",
    "match_score": 0.85
   },
-  "4892": {
-   "minuti": 185,
-   "tackles_p90": 4.38,
-   "playerstats_name": "Alexis Saelemaekers",
+  "7564": {
+   "minuti": 376,
+   "tackles_p90": 2.15,
+   "clearances_p90": 3.35,
+   "playerstats_name": "Fedde Leysen",
+   "match_score": 0.85
+  },
+  "5791": {
+   "minuti": 450,
+   "tackles_p90": 1.8,
+   "interceptions_p90": 3.2,
+   "accurate_passes_p90": 43.4,
+   "playerstats_name": "Morten Frendrup",
+   "match_score": 0.85
+  },
+  "4159": {
+   "minuti": 413,
+   "tackles_p90": 1.96,
+   "interceptions_p90": 1.74,
+   "clearances_p90": 4.79,
+   "accurate_passes_p90": 63.41,
+   "playerstats_name": "Manuel Akanji",
+   "match_score": 0.85
+  },
+  "1871": {
+   "minuti": 443,
+   "tackles_p90": 1.83,
+   "clearances_p90": 4.27,
+   "playerstats_name": "Alessandro Deiola",
+   "match_score": 0.85
+  },
+  "4952": {
+   "minuti": 266,
+   "tackles_p90": 3.05,
+   "clearances_p90": 8.12,
+   "playerstats_name": "Ilario Monterisi",
+   "match_score": 0.85
+  },
+  "6904": {
+   "minuti": 381,
+   "tackles_p90": 2.13,
+   "duels_p90": 11.81,
+   "key_passes_p90": 2.36,
+   "shots_p90": 3.31,
+   "shots_on_target_p90": 1.42,
+   "playerstats_name": "John Yeboah",
    "match_score": 0.85
   },
   "6659": {
@@ -442,6 +441,12 @@
    "playerstats_name": "Harry Winks",
    "match_score": 0.85
   },
+  "2169": {
+   "minuti": 150,
+   "shots_p90": 6.0,
+   "playerstats_name": "Jesús Rodríguez",
+   "match_score": 0.85
+  },
   "6664": {
    "minuti": 450,
    "interceptions_p90": 1.8,
@@ -451,7 +456,7 @@
   "7235": {
    "minuti": 444,
    "interceptions_p90": 1.82,
-   "clearances_p90": 6.28,
+   "clearances_p90": 6.08,
    "accurate_passes_p90": 56.76,
    "playerstats_name": "Mariano Troilo",
    "match_score": 0.85
@@ -467,27 +472,15 @@
    "playerstats_name": "Mattia Zaccagni",
    "match_score": 0.85
   },
-  "2169": {
-   "minuti": 150,
-   "shots_p90": 6.0,
-   "playerstats_name": "Jesús Rodríguez",
-   "match_score": 0.85
-  },
   "2788": {
    "minuti": 450,
    "interceptions_p90": 1.6,
    "clearances_p90": 5.0,
    "duels_p90": 8.4,
-   "accurate_passes_p90": 52.8,
+   "accurate_passes_p90": 52.6,
    "rating": 7.37,
    "playerstats_name": "Bremer",
    "match_score": 1.0
-  },
-  "4705": {
-   "minuti": 179,
-   "interceptions_p90": 4.02,
-   "playerstats_name": "Leonardo Balerdi",
-   "match_score": 0.85
   },
   "7012": {
    "minuti": 450,
@@ -497,24 +490,17 @@
    "playerstats_name": "Oliver Provstgaard",
    "match_score": 0.85
   },
+  "4705": {
+   "minuti": 179,
+   "interceptions_p90": 4.02,
+   "playerstats_name": "Leonardo Balerdi",
+   "match_score": 0.85
+  },
   "827": {
    "minuti": 270,
    "interceptions_p90": 2.33,
    "accurate_passes_p90": 67.33,
    "playerstats_name": "Manuel Locatelli",
-   "match_score": 0.85
-  },
-  "6217": {
-   "minuti": 279,
-   "interceptions_p90": 2.26,
-   "playerstats_name": "Yann Bisseck",
-   "match_score": 0.85
-  },
-  "2606": {
-   "minuti": 312,
-   "interceptions_p90": 2.02,
-   "accurate_passes_p90": 76.15,
-   "playerstats_name": "Luka Modrić",
    "match_score": 0.85
   },
   "4317": {
@@ -523,17 +509,31 @@
    "playerstats_name": "Evan Ndicka",
    "match_score": 0.667
   },
-  "5273": {
-   "minuti": 281,
-   "interceptions_p90": 1.92,
-   "clearances_p90": 4.8,
-   "playerstats_name": "Pervis Estupiñán",
+  "2606": {
+   "minuti": 312,
+   "interceptions_p90": 2.02,
+   "accurate_passes_p90": 76.15,
+   "playerstats_name": "Luka Modrić",
    "match_score": 0.85
   },
-  "4364": {
-   "minuti": 288,
-   "interceptions_p90": 1.88,
-   "playerstats_name": "Gianluca Gaetano",
+  "6217": {
+   "minuti": 279,
+   "interceptions_p90": 2.26,
+   "playerstats_name": "Yann Bisseck",
+   "match_score": 0.85
+  },
+  "5851": {
+   "minuti": 411,
+   "interceptions_p90": 1.31,
+   "clearances_p90": 3.28,
+   "playerstats_name": "Josh Doig",
+   "match_score": 0.85
+  },
+  "5010": {
+   "minuti": 253,
+   "interceptions_p90": 2.13,
+   "clearances_p90": 8.89,
+   "playerstats_name": "Ardian Ismajli",
    "match_score": 0.85
   },
   "6042": {
@@ -543,20 +543,10 @@
    "playerstats_name": "Jhon Lucumí",
    "match_score": 0.85
   },
-  "5750": {
-   "minuti": 426,
-   "interceptions_p90": 1.27,
-   "clearances_p90": 5.49,
-   "duels_p90": 9.51,
-   "accurate_passes_p90": 50.07,
-   "playerstats_name": "Leo Østigård",
-   "match_score": 0.8
-  },
-  "5010": {
-   "minuti": 253,
-   "interceptions_p90": 2.13,
-   "clearances_p90": 8.89,
-   "playerstats_name": "Ardian Ismajli",
+  "4364": {
+   "minuti": 288,
+   "interceptions_p90": 1.88,
+   "playerstats_name": "Gianluca Gaetano",
    "match_score": 0.85
   },
   "7208": {
@@ -565,11 +555,57 @@
    "playerstats_name": "Lennon Miller",
    "match_score": 0.85
   },
-  "5851": {
-   "minuti": 411,
+  "5273": {
+   "minuti": 281,
+   "interceptions_p90": 1.92,
+   "clearances_p90": 4.8,
+   "playerstats_name": "Pervis Estupiñán",
+   "match_score": 0.85
+  },
+  "4887": {
+   "minuti": 282,
+   "interceptions_p90": 1.6,
+   "clearances_p90": 4.15,
+   "playerstats_name": "Raoul Bellanova",
+   "match_score": 0.85
+  },
+  "6867": {
+   "minuti": 343,
    "interceptions_p90": 1.31,
-   "clearances_p90": 3.28,
-   "playerstats_name": "Josh Doig",
+   "key_passes_p90": 1.84,
+   "playerstats_name": "Álex Valle",
+   "match_score": 0.85
+  },
+  "5750": {
+   "minuti": 426,
+   "interceptions_p90": 1.06,
+   "clearances_p90": 5.49,
+   "duels_p90": 9.51,
+   "accurate_passes_p90": 50.07,
+   "playerstats_name": "Leo Østigård",
+   "match_score": 0.8
+  },
+  "5994": {
+   "minuti": 382,
+   "interceptions_p90": 1.18,
+   "accurate_passes_p90": 56.07,
+   "playerstats_name": "Enzo Ebosse",
+   "match_score": 0.85
+  },
+  "7326": {
+   "minuti": 238,
+   "interceptions_p90": 1.89,
+   "playerstats_name": "Eivind Helland",
+   "match_score": 0.85
+  },
+  "7469": {
+   "minuti": 420,
+   "interceptions_p90": 1.07,
+   "clearances_p90": 4.29,
+   "duels_p90": 9.43,
+   "rating": 7.75,
+   "shots_on_target_p90": 0.86,
+   "playerstats_name": "Gabriele Bracaglia",
    "match_score": 0.85
   },
   "254": {
@@ -580,41 +616,11 @@
    "playerstats_name": "Federico Dimarco",
    "match_score": 0.85
   },
-  "5119": {
-   "minuti": 257,
-   "interceptions_p90": 1.75,
-   "key_passes_p90": 2.45,
-   "shots_p90": 3.5,
-   "playerstats_name": "Lazar Samardžić",
-   "match_score": 0.85
-  },
-  "6867": {
-   "minuti": 343,
-   "interceptions_p90": 1.31,
-   "key_passes_p90": 1.84,
-   "playerstats_name": "Álex Valle",
-   "match_score": 0.85
-  },
   "6898": {
    "minuti": 435,
    "interceptions_p90": 1.03,
+   "duels_p90": 8.28,
    "playerstats_name": "Mandela Keita",
-   "match_score": 0.85
-  },
-  "4896": {
-   "minuti": 369,
-   "interceptions_p90": 1.22,
-   "duels_p90": 10.24,
-   "shots_p90": 2.44,
-   "shots_on_target_p90": 0.98,
-   "playerstats_name": "Daniel Maldini",
-   "match_score": 0.85
-  },
-  "4887": {
-   "minuti": 282,
-   "interceptions_p90": 1.6,
-   "clearances_p90": 4.15,
-   "playerstats_name": "Raoul Bellanova",
    "match_score": 0.85
   },
   "4925": {
@@ -625,26 +631,19 @@
    "playerstats_name": "Andrea Carboni",
    "match_score": 0.85
   },
-  "7469": {
-   "minuti": 420,
-   "interceptions_p90": 1.07,
-   "clearances_p90": 4.29,
-   "duels_p90": 9.43,
-   "rating": 7.77,
-   "shots_on_target_p90": 0.86,
-   "playerstats_name": "Gabriele Bracaglia",
-   "match_score": 0.85
-  },
   "7476": {
    "minuti": 157,
    "interceptions_p90": 2.87,
    "playerstats_name": "Adam Bakoune",
    "match_score": 0.85
   },
-  "7326": {
-   "minuti": 238,
-   "interceptions_p90": 1.89,
-   "playerstats_name": "Eivind Helland",
+  "4896": {
+   "minuti": 369,
+   "interceptions_p90": 1.22,
+   "duels_p90": 10.24,
+   "shots_p90": 2.44,
+   "shots_on_target_p90": 0.98,
+   "playerstats_name": "Daniel Maldini",
    "match_score": 0.85
   },
   "6642": {
@@ -680,22 +679,16 @@
    "playerstats_name": "Diego Carlos",
    "match_score": 1.0
   },
-  "5514": {
-   "minuti": 341,
-   "clearances_p90": 4.49,
-   "playerstats_name": "Johan Vásquez",
-   "match_score": 0.85
-  },
-  "7615": {
-   "minuti": 180,
-   "clearances_p90": 8.5,
-   "playerstats_name": "Dominik Drobnic",
-   "match_score": 0.85
-  },
   "6660": {
    "minuti": 441,
    "clearances_p90": 3.47,
    "playerstats_name": "Alessandro Marcandalli",
+   "match_score": 0.85
+  },
+  "5514": {
+   "minuti": 341,
+   "clearances_p90": 4.49,
+   "playerstats_name": "Johan Vásquez",
    "match_score": 0.85
   },
   "7526": {
@@ -703,18 +696,6 @@
    "clearances_p90": 4.86,
    "accurate_passes_p90": 75.43,
    "playerstats_name": "Eray Cömert",
-   "match_score": 0.85
-  },
-  "6320": {
-   "minuti": 270,
-   "clearances_p90": 5.33,
-   "playerstats_name": "Danilho Doekhi",
-   "match_score": 0.85
-  },
-  "6021": {
-   "minuti": 436,
-   "clearances_p90": 3.3,
-   "playerstats_name": "James Abankwah",
    "match_score": 0.85
   },
   "6989": {
@@ -729,17 +710,35 @@
    "playerstats_name": "Zé Pedro",
    "match_score": 1.0
   },
+  "5641": {
+   "minuti": 360,
+   "clearances_p90": 4.0,
+   "accurate_passes_p90": 62.0,
+   "playerstats_name": "Trevoh Chalobah",
+   "match_score": 0.85
+  },
+  "6021": {
+   "minuti": 436,
+   "clearances_p90": 3.3,
+   "playerstats_name": "James Abankwah",
+   "match_score": 0.85
+  },
   "4502": {
    "minuti": 316,
    "clearances_p90": 4.56,
    "playerstats_name": "Antonino Gallo",
    "match_score": 0.85
   },
-  "5641": {
-   "minuti": 360,
-   "clearances_p90": 4.0,
-   "accurate_passes_p90": 62.0,
-   "playerstats_name": "Trevoh Chalobah",
+  "6320": {
+   "minuti": 270,
+   "clearances_p90": 5.33,
+   "playerstats_name": "Danilho Doekhi",
+   "match_score": 0.85
+  },
+  "7615": {
+   "minuti": 180,
+   "clearances_p90": 7.5,
+   "playerstats_name": "Dominik Drobnic",
    "match_score": 0.85
   },
   "5675": {
@@ -752,6 +751,14 @@
    "minuti": 174,
    "clearances_p90": 7.24,
    "playerstats_name": "Josip Sutalo",
+   "match_score": 0.85
+  },
+  "5833": {
+   "minuti": 431,
+   "clearances_p90": 2.71,
+   "duels_p90": 8.56,
+   "accurate_passes_p90": 63.06,
+   "playerstats_name": "Mario Gila",
    "match_score": 0.85
   },
   "7253": {
@@ -794,7 +801,7 @@
   },
   "7023": {
    "minuti": 352,
-   "duels_p90": 14.06,
+   "duels_p90": 14.57,
    "playerstats_name": "Mateo Pellegrino",
    "match_score": 0.85
   },
@@ -817,7 +824,7 @@
    "minuti": 338,
    "duels_p90": 13.58,
    "key_passes_p90": 3.46,
-   "rating": 9.88,
+   "rating": 9.92,
    "shots_p90": 2.66,
    "shots_on_target_p90": 0.8,
    "playerstats_name": "Assane Diao",
@@ -851,17 +858,17 @@
    "playerstats_name": "Lorenzo Colombo",
    "match_score": 0.85
   },
+  "7619": {
+   "minuti": 210,
+   "duels_p90": 20.57,
+   "playerstats_name": "Joël Monteiro",
+   "match_score": 0.85
+  },
   "5995": {
    "minuti": 355,
    "duels_p90": 12.17,
    "key_passes_p90": 2.54,
    "playerstats_name": "Charles De Ketelaere",
-   "match_score": 0.85
-  },
-  "7619": {
-   "minuti": 210,
-   "duels_p90": 20.57,
-   "playerstats_name": "Joël Monteiro",
    "match_score": 0.85
   },
   "4359": {
@@ -884,16 +891,16 @@
    "playerstats_name": "Davide Frattesi",
    "match_score": 0.85
   },
-  "5687": {
-   "minuti": 428,
-   "duels_p90": 9.25,
-   "playerstats_name": "Nikola Vlašić",
-   "match_score": 0.85
-  },
   "4436": {
    "minuti": 356,
    "duels_p90": 11.12,
    "playerstats_name": "Nicolò Cambiaghi",
+   "match_score": 0.85
+  },
+  "5687": {
+   "minuti": 428,
+   "duels_p90": 9.25,
+   "playerstats_name": "Nikola Vlašić",
    "match_score": 0.85
   },
   "7561": {
@@ -910,24 +917,11 @@
    "playerstats_name": "Alieu Njie",
    "match_score": 0.85
   },
-  "5833": {
-   "minuti": 431,
-   "duels_p90": 8.56,
-   "accurate_passes_p90": 63.06,
-   "playerstats_name": "Mario Gila",
-   "match_score": 0.85
-  },
   "7546": {
    "minuti": 234,
    "duels_p90": 15.38,
    "shots_on_target_p90": 1.54,
    "playerstats_name": "Jay Robinson",
-   "match_score": 0.85
-  },
-  "6252": {
-   "minuti": 306,
-   "duels_p90": 11.76,
-   "playerstats_name": "Michael Folorunsho",
    "match_score": 0.85
   },
   "309": {
@@ -944,7 +938,7 @@
   "7472": {
    "minuti": 429,
    "key_passes_p90": 4.41,
-   "rating": 8.2,
+   "rating": 8.18,
    "shots_p90": 1.68,
    "playerstats_name": "Giacomo Calò",
    "match_score": 0.85
@@ -1119,11 +1113,18 @@
   "4911": {
    "minuti": 425,
    "key_passes_p90": 1.48,
-   "accurate_passes_p90": 59.93,
+   "accurate_passes_p90": 60.14,
    "rating": 7.73,
    "shots_p90": 2.33,
    "playerstats_name": "Douglas Luiz",
    "match_score": 1.0
+  },
+  "5119": {
+   "minuti": 257,
+   "key_passes_p90": 2.45,
+   "shots_p90": 3.5,
+   "playerstats_name": "Lazar Samardžić",
+   "match_score": 0.85
   },
   "4998": {
    "minuti": 216,
@@ -1176,7 +1177,7 @@
   "4287": {
    "minuti": 439,
    "accurate_passes_p90": 51.05,
-   "rating": 7.3,
+   "rating": 7.31,
    "playerstats_name": "Stanislav Lobotka",
    "match_score": 0.85
   },
@@ -1185,12 +1186,6 @@
    "accurate_passes_p90": 62.64,
    "shots_p90": 2.56,
    "playerstats_name": "Piotr Zielinski",
-   "match_score": 0.85
-  },
-  "5994": {
-   "minuti": 382,
-   "accurate_passes_p90": 56.07,
-   "playerstats_name": "Enzo Ebosse",
    "match_score": 0.85
   },
   "6426": {
@@ -1272,7 +1267,7 @@
   },
   "6662": {
    "minuti": 450,
-   "rating": 7.14,
+   "rating": 7.13,
    "saves_p90": 4.2,
    "playerstats_name": "Edoardo Corvi",
    "match_score": 0.85

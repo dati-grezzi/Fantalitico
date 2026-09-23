@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-09-23T10:40:07.386726+00:00",
+  "aggiornato": "2026-09-23T21:06:08.674219+00:00",
   "fonti_usate": [
     "calciomagazine.it",
     "fantacalcio.it",
@@ -2881,7 +2881,7 @@
     "5877": {
       "nome": "Carlos Augusto",
       "squadra": "inter",
-      "confidence": 0.604,
+      "confidence": 0.458,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -2891,9 +2891,9 @@
       "valori": {
         "calciomagazine.it": 0.15,
         "fantacalcio.it": 0.6,
-        "sosfanta.com": 0.95
+        "sosfanta.com": 0.51
       },
-      "scarto": 0.8
+      "scarto": 0.45
     },
     "4177": {
       "nome": "Pavard",
@@ -5623,7 +5623,7 @@
     "7255": {
       "nome": "Britschgi",
       "squadra": "parma",
-      "confidence": 0.572,
+      "confidence": 0.613,
       "fonti": [
         "calciomagazine.it",
         "fantacalcio.it",
@@ -5632,7 +5632,7 @@
       "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.02,
-        "fantacalcio.it": 0.6,
+        "fantacalcio.it": 0.7,
         "sosfanta.com": 0.95
       },
       "scarto": 0.93
@@ -5832,17 +5832,19 @@
     "5585": {
       "nome": "Malen",
       "squadra": "roma",
-      "confidence": 0.819,
+      "confidence": 0.716,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 2,
+      "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.8
+        "fantacalcio.it": 0.8,
+        "sosfanta.com": 0.51
       },
-      "scarto": 0.05
+      "scarto": 0.34
     },
     "610": {
       "nome": "Gollini",
@@ -6006,19 +6008,17 @@
     "6572": {
       "nome": "Castro S",
       "squadra": "roma",
-      "confidence": 0.583,
+      "confidence": 0.4,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
+        "fantacalcio.it"
       ],
-      "n_fonti": 3,
+      "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.55,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 0.55
       },
-      "scarto": 0.8
+      "scarto": 0.4
     },
     "4236": {
       "nome": "Muric",
@@ -7721,19 +7721,6 @@
       },
       "scarto": 0.05
     },
-    "7615": {
-      "nome": "Drobnic",
-      "squadra": "parma",
-      "confidence": 0.7,
-      "fonti": [
-        "fantacalcio.it"
-      ],
-      "n_fonti": 1,
-      "valori": {
-        "fantacalcio.it": 0.7
-      },
-      "scarto": null
-    },
     "7628": {
       "nome": "Sierro",
       "squadra": "parma",
@@ -7789,6 +7776,19 @@
       "n_fonti": 1,
       "valori": {
         "fantacalcio.it": 0.01
+      },
+      "scarto": null
+    },
+    "7615": {
+      "nome": "Drobnic",
+      "squadra": "parma",
+      "confidence": 0.5,
+      "fonti": [
+        "fantacalcio.it"
+      ],
+      "n_fonti": 1,
+      "valori": {
+        "fantacalcio.it": 0.5
       },
       "scarto": null
     },
