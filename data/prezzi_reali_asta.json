@@ -1,6 +1,6 @@
 {
   "fonte": "fantacalcio-online.com",
-  "aggiornato": "2026-09-24T11:00:03.412854+00:00",
+  "aggiornato": "2026-09-24T21:10:12.074013+00:00",
   "giocatori": {
     "5585": {
       "nome": "MALEN Donyell",
@@ -3753,17 +3753,6 @@
       "quotazione": 1.0,
       "match_score": 0.9
     },
-    "7564": {
-      "nome": "LEYSEN Fedde",
-      "squadra": "Sassuolo",
-      "ruolo": "D",
-      "percMax": 2.1,
-      "comprato_pct": 1.6,
-      "prezzo_350": 12.11,
-      "prezzo_500": 10.52,
-      "quotazione": 10.0,
-      "match_score": 0.95
-    },
     "6534": {
       "nome": "PERRI Lucas Estella",
       "squadra": "Torino",
@@ -3772,6 +3761,17 @@
       "comprato_pct": 1.6,
       "prezzo_350": 11.98,
       "prezzo_500": 10.23,
+      "quotazione": 10.0,
+      "match_score": 0.95
+    },
+    "7564": {
+      "nome": "LEYSEN Fedde",
+      "squadra": "Sassuolo",
+      "ruolo": "D",
+      "percMax": 2.1,
+      "comprato_pct": 1.6,
+      "prezzo_350": 12.11,
+      "prezzo_500": 10.52,
       "quotazione": 10.0,
       "match_score": 0.95
     },
@@ -5909,10 +5909,10 @@
       "quotazione": 6.0,
       "match_score": 0.95
     },
-    "801": {
-      "nome": "GAGLIARDINI Roberto",
-      "squadra": "Cagliari",
-      "ruolo": "C",
+    "7602": {
+      "nome": "FATAH Amar Abdirahman",
+      "squadra": "Lecce",
+      "ruolo": "A",
       "percMax": null,
       "comprato_pct": 0.3,
       "prezzo_350": null,
@@ -5920,10 +5920,10 @@
       "quotazione": 6.0,
       "match_score": 0.95
     },
-    "7602": {
-      "nome": "FATAH Amar Abdirahman",
-      "squadra": "Lecce",
-      "ruolo": "A",
+    "801": {
+      "nome": "GAGLIARDINI Roberto",
+      "squadra": "Cagliari",
+      "ruolo": "C",
       "percMax": null,
       "comprato_pct": 0.3,
       "prezzo_350": null,
@@ -6283,17 +6283,6 @@
       "quotazione": 13.0,
       "match_score": 0.95
     },
-    "7211": {
-      "nome": "ATHEKAME Zachary",
-      "squadra": "Estero",
-      "ruolo": "D",
-      "percMax": 4.5,
-      "comprato_pct": 0.1,
-      "prezzo_350": 15.76,
-      "prezzo_500": null,
-      "quotazione": 5.0,
-      "match_score": 0.95
-    },
     "6601": {
       "nome": "KAMBWALA Willy",
       "squadra": "Como",
@@ -6301,6 +6290,17 @@
       "percMax": null,
       "comprato_pct": 0.1,
       "prezzo_350": null,
+      "prezzo_500": null,
+      "quotazione": 5.0,
+      "match_score": 0.95
+    },
+    "7211": {
+      "nome": "ATHEKAME Zachary",
+      "squadra": "Estero",
+      "ruolo": "D",
+      "percMax": 4.5,
+      "comprato_pct": 0.1,
+      "prezzo_350": 15.76,
       "prezzo_500": null,
       "quotazione": 5.0,
       "match_score": 0.95
