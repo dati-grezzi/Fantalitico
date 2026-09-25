@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-09-25T11:00:15.523018+00:00",
+  "aggiornato": "2026-09-25T21:06:52.935113+00:00",
   "fonti_usate": [
     "calciomagazine.it",
     "fantacalcio.it",
@@ -6781,6 +6781,21 @@
     "5820": {
       "nome": "Bertola",
       "squadra": "udinese",
+      "confidence": 0.475,
+      "fonti": [
+        "calciomagazine.it",
+        "fantacalcio.it"
+      ],
+      "n_fonti": 2,
+      "valori": {
+        "calciomagazine.it": 0.85,
+        "fantacalcio.it": 0.25
+      },
+      "scarto": 0.6
+    },
+    "6925": {
+      "nome": "Palma",
+      "squadra": "udinese",
       "confidence": 0.506,
       "fonti": [
         "calciomagazine.it",
@@ -6792,21 +6807,6 @@
         "fantacalcio.it": 0.3
       },
       "scarto": 0.55
-    },
-    "6925": {
-      "nome": "Palma",
-      "squadra": "udinese",
-      "confidence": 0.569,
-      "fonti": [
-        "calciomagazine.it",
-        "fantacalcio.it"
-      ],
-      "n_fonti": 2,
-      "valori": {
-        "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.4
-      },
-      "scarto": 0.45
     },
     "6956": {
       "nome": "Solet",
@@ -8629,6 +8629,19 @@
       "n_fonti": 1,
       "valori": {
         "fantacalcio.it": 0.05
+      },
+      "scarto": null
+    },
+    "2404": {
+      "nome": "Alaba",
+      "squadra": "udinese",
+      "confidence": 0.35,
+      "fonti": [
+        "fantacalcio.it"
+      ],
+      "n_fonti": 1,
+      "valori": {
+        "fantacalcio.it": 0.35
       },
       "scarto": null
     },
