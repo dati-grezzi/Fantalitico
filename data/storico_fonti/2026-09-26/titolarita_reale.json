@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-09-26T10:42:05.654346+00:00",
+  "aggiornato": "2026-09-26T20:40:19.618105+00:00",
   "fonti_usate": [
     "calciomagazine.it",
     "fantacalcio.it",
@@ -6909,19 +6909,17 @@
     "2766": {
       "nome": "Zaniolo",
       "squadra": "udinese",
-      "confidence": 0.863,
+      "confidence": 0.819,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
+        "fantacalcio.it"
       ],
-      "n_fonti": 3,
+      "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.8,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 0.8
       },
-      "scarto": 0.15
+      "scarto": 0.05
     },
     "5637": {
       "nome": "Davis K",
@@ -7063,17 +7061,19 @@
     "6783": {
       "nome": "Unai Gomez",
       "squadra": "udinese",
-      "confidence": 0.431,
+      "confidence": 0.604,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 2,
+      "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.15,
-        "fantacalcio.it": 0.6
+        "fantacalcio.it": 0.6,
+        "sosfanta.com": 0.95
       },
-      "scarto": 0.45
+      "scarto": 0.8
     },
     "7161": {
       "nome": "Bayo V",
