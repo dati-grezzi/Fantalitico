@@ -1,21 +1,21 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-09-28T12:43:02.019078+00:00",
+  "aggiornato": "2026-09-28T22:57:26.128079+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
-        {
-          "nome": "Hien",
-          "dettaglio": "Fuori per una lesione del tendine prossimale del muscolo semimembranoso della coscia sinistra, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "6046",
-          "match_score": 1.0
-        },
         {
           "nome": "Sulemana K.",
           "dettaglio": "Lesione del collaterale mediale di secondo grado del ginocchio sinistro, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "5918",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Hien",
+          "dettaglio": "Fuori per una lesione del tendine prossimale del muscolo semimembranoso della coscia sinistra, in dubbio per la 7a",
+          "rientro_giornata": 7,
+          "id": "6046",
           "match_score": 1.0
         },
         {
@@ -40,7 +40,7 @@
         },
         {
           "nome": "Holm",
-          "dettaglio": "Problema al bicipite femorale, tempi da definire: rischia almeno un paio di mesi di stop",
+          "dettaglio": "Si opererà al bicipite femorale destro, tempi di recupero da definire",
           "rientro_giornata": null,
           "id": "5678",
           "match_score": 1.0
@@ -52,17 +52,24 @@
     "cagliari": {
       "infortunati": [
         {
-          "nome": "Idrissi R.",
-          "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "7125",
-          "match_score": 1.0
-        },
-        {
           "nome": "Nzola",
           "dettaglio": "Ritardo di condizione, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "5336",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Idrissi R.",
+          "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per la 7a",
+          "rientro_giornata": 7,
+          "id": "7125",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Deiola",
+          "dettaglio": "Operazione di meniscectomia esterna artroscopica selettiva, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "1871",
           "match_score": 1.0
         },
         {
@@ -91,13 +98,6 @@
     },
     "frosinone": {
       "infortunati": [
-        {
-          "nome": "Terzic",
-          "dettaglio": "Lesione di basso grado del bicipite femorale della coscia sinistra, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "4375",
-          "match_score": 1.0
-        },
         {
           "nome": "Grillitsch",
           "dettaglio": "Intervento chirurgico per il trattamento di Sports Hernia destra, in dubbio per la 9a",
@@ -143,13 +143,6 @@
           "dettaglio": "Risentimento muscolare all'adduttore della coscia destra, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "2194",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Spence",
-          "dettaglio": "Percorso di riatletizzazione, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "5982",
           "match_score": 1.0
         },
         {
@@ -242,24 +235,10 @@
           "match_score": 1.0
         },
         {
-          "nome": "Dele-Bashiru",
-          "dettaglio": "Lesione di primo grado al flessore della coscia destra, in dubbio per la 6a",
+          "nome": "Cataldi",
+          "dettaglio": "Problema al quadricipite, in dubbio per la 6a",
           "rientro_giornata": 6,
-          "id": "6629",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Marusic",
-          "dettaglio": "Stiramento ai flessori, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "2188",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Patric",
-          "dettaglio": "Autorizzato a osservare alcuni giorni di temporanea indisponibilità per completare un percorso clinico già programmato, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "327",
+          "id": "333",
           "match_score": 1.0
         },
         {
@@ -511,6 +490,13 @@
           "dettaglio": "Lesione al bicipite femorale, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "7312",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Gueye",
+          "dettaglio": "Distorsione alla caviglia, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "7272",
           "match_score": 1.0
         },
         {

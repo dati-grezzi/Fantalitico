@@ -1,7 +1,7 @@
 {
   "fonte": "fantacalcio.it",
   "giornata": 6,
-  "aggiornato": "2026-09-28T12:43:00.197782+00:00",
+  "aggiornato": "2026-09-28T22:57:24.255026+00:00",
   "giocatori": {
     "7332": {
       "nome": "Bijlow",
@@ -1445,6 +1445,13 @@
       "confidence": 0.5,
       "match_score": 1.0
     },
+    "2188": {
+      "nome": "Marusic",
+      "squadra": "lazio",
+      "percentuale": 20,
+      "confidence": 0.2,
+      "match_score": 1.0
+    },
     "6319": {
       "nome": "Leite",
       "squadra": "lazio",
@@ -1471,13 +1478,6 @@
       "squadra": "lazio",
       "percentuale": 60,
       "confidence": 0.6,
-      "match_score": 1.0
-    },
-    "5800": {
-      "nome": "Gudmundsson A.",
-      "squadra": "lazio",
-      "percentuale": 50,
-      "confidence": 0.5,
       "match_score": 1.0
     },
     "2038": {
@@ -2418,13 +2418,6 @@
       "confidence": 0.9,
       "match_score": 1.0
     },
-    "1871": {
-      "nome": "Deiola",
-      "squadra": "cagliari",
-      "percentuale": 70,
-      "confidence": 0.7,
-      "match_score": 1.0
-    },
     "4260": {
       "nome": "Winks",
       "squadra": "cagliari",
@@ -2437,6 +2430,13 @@
       "squadra": "cagliari",
       "percentuale": 90,
       "confidence": 0.9,
+      "match_score": 1.0
+    },
+    "6010": {
+      "nome": "Fazzini",
+      "squadra": "cagliari",
+      "percentuale": 75,
+      "confidence": 0.75,
       "match_score": 1.0
     },
     "4896": {
@@ -2495,18 +2495,11 @@
       "confidence": 0.2,
       "match_score": 1.0
     },
-    "6010": {
-      "nome": "Fazzini",
-      "squadra": "cagliari",
-      "percentuale": 60,
-      "confidence": 0.6,
-      "match_score": 1.0
-    },
     "5462": {
       "nome": "Ciervo",
       "squadra": "cagliari",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 50,
+      "confidence": 0.5,
       "match_score": 1.0
     },
     "801": {
@@ -2635,11 +2628,18 @@
       "confidence": 0.7,
       "match_score": 1.0
     },
-    "1930": {
-      "nome": "Pinsoglio",
+    "283": {
+      "nome": "Neto",
       "squadra": "juventus",
       "percentuale": 5,
       "confidence": 0.05,
+      "match_score": 1.0
+    },
+    "1930": {
+      "nome": "Pinsoglio",
+      "squadra": "juventus",
+      "percentuale": 1,
+      "confidence": 0.01,
       "match_score": 1.0
     },
     "5520": {
