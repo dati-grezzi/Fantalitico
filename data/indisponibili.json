@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-09-29T12:00:26.162674+00:00",
+  "aggiornato": "2026-09-29T21:53:06.331523+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -99,6 +99,13 @@
     "frosinone": {
       "infortunati": [
         {
+          "nome": "Raimondo",
+          "dettaglio": "Tendinopatia inserzionale del tendine di Achille destro, in dubbio per la 7a",
+          "rientro_giornata": 7,
+          "id": "5436",
+          "match_score": 1.0
+        },
+        {
           "nome": "Grillitsch",
           "dettaglio": "Intervento chirurgico per il trattamento di Sports Hernia destra, in dubbio per la 9a",
           "rientro_giornata": 9,
@@ -119,17 +126,17 @@
           "match_score": 1.0
         },
         {
-          "nome": "Meichtry",
-          "dettaglio": "Risentimento muscolare, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "7409",
-          "match_score": 1.0
-        },
-        {
           "nome": "Venturino",
           "dettaglio": "Intervento chirurgico di “pulizia” del tendine rotuleo, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "6980",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Meichtry",
+          "dettaglio": "Distrazione della muscolatura di un’anca, in dubbio per la 7a",
+          "rientro_giornata": 7,
+          "id": "7409",
           "match_score": 1.0
         }
       ],
@@ -138,13 +145,6 @@
     },
     "inter": {
       "infortunati": [
-        {
-          "nome": "Calhanoglu",
-          "dettaglio": "Risentimento muscolare all'adduttore della coscia destra, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "2194",
-          "match_score": 1.0
-        },
         {
           "nome": "Stones",
           "dettaglio": "Risentimento ai flessori della coscia sinistra, in dubbio per la 6a",
@@ -170,13 +170,6 @@
           "dettaglio": "Lesione di basso grado del muscolo semimembranoso della coscia sinistra, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "6039",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Cambiaso",
-          "dettaglio": "Distorsione alla caviglia destra, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "5520",
           "match_score": 1.0
         },
         {
@@ -504,6 +497,13 @@
           "dettaglio": "Lieve aritmia cardiaca benigna ed è necessario un intervento di ablazione cardiaca, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "7198",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Zaniolo",
+          "dettaglio": "Lesione al bicipite femorale della coscia destra, in dubbio per la 8a",
+          "rientro_giornata": 8,
+          "id": "2766",
           "match_score": 1.0
         }
       ],
