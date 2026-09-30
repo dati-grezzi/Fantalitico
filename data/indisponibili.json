@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-09-30T11:48:41.162566+00:00",
+  "aggiornato": "2026-09-30T21:53:24.390228+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -12,9 +12,16 @@
           "match_score": 1.0
         },
         {
-          "nome": "Hien",
-          "dettaglio": "Fuori per una lesione del tendine prossimale del muscolo semimembranoso della coscia sinistra, in dubbio per la 7a",
+          "nome": "Raspadori",
+          "dettaglio": "Distrazione di basso grado del muscolo bicipite femorale della coscia destra, in dubbio per la 7a",
           "rientro_giornata": 7,
+          "id": "4371",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Hien",
+          "dettaglio": "Fuori per una lesione del tendine prossimale del muscolo semimembranoso della coscia sinistra, in dubbio per la 8a",
+          "rientro_giornata": 8,
           "id": "6046",
           "match_score": 1.0
         },
@@ -173,13 +180,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Kolo Muani",
-          "dettaglio": "Frattura della falange prossimale, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "5951",
-          "match_score": 1.0
-        },
-        {
           "nome": "Ekhator",
           "dettaglio": "Lesione di medio grado del muscolo semitendinoso, in dubbio per la 9a",
           "rientro_giornata": 9,
@@ -221,13 +221,6 @@
     "lazio": {
       "infortunati": [
         {
-          "nome": "Rovella",
-          "dettaglio": "Lesione muscolare al polpaccio, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "4459",
-          "match_score": 1.0
-        },
-        {
           "nome": "Cataldi",
           "dettaglio": "Problema al quadricipite, in dubbio per la 6a",
           "rientro_giornata": 6,
@@ -236,9 +229,23 @@
         },
         {
           "nome": "Przyborek",
-          "dettaglio": "Problema all'adduttore, in dubbio per la 6a",
+          "dettaglio": "Affaticamento muscolare all'adduttore, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "7345",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Rovella",
+          "dettaglio": "Lesione muscolare al polpaccio, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "4459",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Gudmundsson A.",
+          "dettaglio": "Lussazione dell’articolazione gleno-omerale destra, spontaneamente ridotta, in dubbio per la 8a",
+          "rientro_giornata": 8,
+          "id": "5800",
           "match_score": 1.0
         }
       ],
@@ -382,26 +389,6 @@
           "dettaglio": "Sindrome pubalgica, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "4349",
-          "match_score": 1.0
-        }
-      ],
-      "squalificati": [],
-      "diffidati": []
-    },
-    "roma": {
-      "infortunati": [
-        {
-          "nome": "Cristante",
-          "dettaglio": "Lombalgia, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "779",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Wesley",
-          "dettaglio": "Risentimento muscolare alla coscia destra, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "7181",
           "match_score": 1.0
         }
       ],
