@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-10-02T11:46:39.081365+00:00",
+  "aggiornato": "2026-10-02T21:50:19.762170+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -20,8 +20,8 @@
         },
         {
           "nome": "Hien",
-          "dettaglio": "Fuori per una lesione del tendine prossimale del muscolo semimembranoso della coscia sinistra, in dubbio per la 8a",
-          "rientro_giornata": 8,
+          "dettaglio": "Fuori per una lesione del tendine prossimale del muscolo semimembranoso della coscia sinistra, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "6046",
           "match_score": 1.0
         },
@@ -30,6 +30,13 @@
           "dettaglio": "Lesione di medio-alto grado del bicipite femorale della coscia sinistra, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "5578",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Pompei",
+          "dettaglio": "Frattura della falange intermedia della mano destra, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "7626",
           "match_score": 1.0
         }
       ],
@@ -58,13 +65,6 @@
     },
     "cagliari": {
       "infortunati": [
-        {
-          "nome": "Nzola",
-          "dettaglio": "Ritardo di condizione, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "5336",
-          "match_score": 1.0
-        },
         {
           "nome": "Idrissi R.",
           "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per la 7a",
@@ -166,13 +166,6 @@
     "juventus": {
       "infortunati": [
         {
-          "nome": "Boga",
-          "dettaglio": "Lesione di medio grado del bicipite femorale, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "2832",
-          "match_score": 1.0
-        },
-        {
           "nome": "Cabal",
           "dettaglio": "Lesione di basso grado del muscolo semimembranoso della coscia sinistra, in dubbio per la 6a",
           "rientro_giornata": 6,
@@ -180,9 +173,16 @@
           "match_score": 1.0
         },
         {
+          "nome": "Boga",
+          "dettaglio": "Lesione di medio grado del bicipite femorale, in dubbio per la 8a",
+          "rientro_giornata": 8,
+          "id": "2832",
+          "match_score": 1.0
+        },
+        {
           "nome": "Ekhator",
-          "dettaglio": "Lesione di medio grado del muscolo semitendinoso, in dubbio per la 9a",
-          "rientro_giornata": 9,
+          "dettaglio": "Lesione di medio grado del muscolo semitendinoso, in dubbio per la 8a",
+          "rientro_giornata": 8,
           "id": "6822",
           "match_score": 1.0
         },
@@ -259,20 +259,6 @@
           "dettaglio": "Sovraccarico, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "6015",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Gandelman",
-          "dettaglio": "Problema fisico, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "7318",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Geubbels",
-          "dettaglio": "Trauma distorsivo alla caviglia sinistra, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "5029",
           "match_score": 1.0
         }
       ],
@@ -363,6 +349,13 @@
           "rientro_giornata": 12,
           "id": "2724",
           "match_score": 1.0
+        },
+        {
+          "nome": "Favasuli",
+          "dettaglio": "Lesione di secondo grado del retto femorale della coscia destra, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "7563",
+          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -389,6 +382,19 @@
           "dettaglio": "Sindrome pubalgica, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "4349",
+          "match_score": 1.0
+        }
+      ],
+      "squalificati": [],
+      "diffidati": []
+    },
+    "roma": {
+      "infortunati": [
+        {
+          "nome": "Cristante",
+          "dettaglio": "Fastidio al ginocchio, in dubbio per la 7a",
+          "rientro_giornata": 7,
+          "id": "779",
           "match_score": 1.0
         }
       ],
@@ -465,13 +471,6 @@
     },
     "udinese": {
       "infortunati": [
-        {
-          "nome": "Arizala",
-          "dettaglio": "Lesione al bicipite femorale, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "7312",
-          "match_score": 1.0
-        },
         {
           "nome": "Gueye",
           "dettaglio": "Distorsione alla caviglia, in dubbio per la 6a",
