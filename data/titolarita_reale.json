@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-10-03T11:00:43.044471+00:00",
+  "aggiornato": "2026-10-03T20:37:07.728767+00:00",
   "fonti_usate": [
     "calciomagazine.it",
     "fantacalcio.it",
@@ -5690,17 +5690,19 @@
     "4317": {
       "nome": "N'Dicka",
       "squadra": "roma",
-      "confidence": 0.694,
+      "confidence": 0.633,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 2,
+      "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.85,
-        "fantacalcio.it": 0.6
+        "fantacalcio.it": 0.6,
+        "sosfanta.com": 0.51
       },
-      "scarto": 0.25
+      "scarto": 0.34
     },
     "4807": {
       "nome": "Hermoso",
@@ -5784,19 +5786,17 @@
     "5734": {
       "nome": "Soulè",
       "squadra": "roma",
-      "confidence": 0.746,
+      "confidence": 0.644,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it",
-        "sosfanta.com"
+        "fantacalcio.it"
       ],
-      "n_fonti": 3,
+      "n_fonti": 2,
       "valori": {
         "calciomagazine.it": 0.55,
-        "fantacalcio.it": 0.7,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 0.7
       },
-      "scarto": 0.4
+      "scarto": 0.15
     },
     "309": {
       "nome": "Dybala",
@@ -5951,15 +5951,17 @@
     "7556": {
       "nome": "Mora",
       "squadra": "roma",
-      "confidence": 0.544,
+      "confidence": 0.533,
       "fonti": [
         "calciomagazine.it",
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 2,
+      "n_fonti": 3,
       "valori": {
         "calciomagazine.it": 0.45,
-        "fantacalcio.it": 0.6
+        "fantacalcio.it": 0.6,
+        "sosfanta.com": 0.51
       },
       "scarto": 0.15
     },
@@ -7913,17 +7915,15 @@
     "4705": {
       "nome": "Balerdi",
       "squadra": "roma",
-      "confidence": 0.616,
+      "confidence": 0.7,
       "fonti": [
-        "fantacalcio.it",
-        "sosfanta.com"
+        "fantacalcio.it"
       ],
-      "n_fonti": 2,
+      "n_fonti": 1,
       "valori": {
-        "fantacalcio.it": 0.7,
-        "sosfanta.com": 0.51
+        "fantacalcio.it": 0.7
       },
-      "scarto": 0.19
+      "scarto": null
     },
     "7599": {
       "nome": "Lulli",
