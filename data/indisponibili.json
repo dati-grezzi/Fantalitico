@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-10-04T11:42:27.440709+00:00",
+  "aggiornato": "2026-10-04T20:53:02.999374+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -65,6 +65,13 @@
     },
     "cagliari": {
       "infortunati": [
+        {
+          "nome": "Kevin Carlos",
+          "dettaglio": "Problema al retto femorale, in dubbio per la 6a",
+          "rientro_giornata": 6,
+          "id": "7547",
+          "match_score": 1.0
+        },
         {
           "nome": "Idrissi R.",
           "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per la 7a",
@@ -133,17 +140,17 @@
           "match_score": 1.0
         },
         {
-          "nome": "Venturino",
-          "dettaglio": "Intervento chirurgico di “pulizia” del tendine rotuleo, in dubbio per la 7a",
-          "rientro_giornata": 7,
-          "id": "6980",
-          "match_score": 1.0
-        },
-        {
           "nome": "Meichtry",
           "dettaglio": "Distrazione della muscolatura di un’anca, in dubbio per la 7a",
           "rientro_giornata": 7,
           "id": "7409",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Venturino",
+          "dettaglio": "Intervento chirurgico di “pulizia” del tendine rotuleo, in dubbio per la 7a",
+          "rientro_giornata": 7,
+          "id": "6980",
           "match_score": 1.0
         },
         {
