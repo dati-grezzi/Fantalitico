@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-10-05T13:24:04.313340+00:00",
+  "aggiornato": "2026-10-05T23:45:36.141018+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -117,6 +117,13 @@
           "dettaglio": "Tendinopatia inserzionale del tendine di Achille destro, in dubbio per la 7a",
           "rientro_giornata": 7,
           "id": "5436",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Birligea",
+          "dettaglio": "Lesione del vasto intermedio del quadricipite sinistro, in dubbio per l'8a",
+          "rientro_giornata": null,
+          "id": "7610",
           "match_score": 1.0
         },
         {
@@ -279,6 +286,26 @@
       "squalificati": [],
       "diffidati": []
     },
+    "milan": {
+      "infortunati": [
+        {
+          "nome": "Estupinan",
+          "dettaglio": "Risentimento di basso grado del legamento collaterale mediale del ginocchio sinistro, in dubbio per la 7a",
+          "rientro_giornata": 7,
+          "id": "5273",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Saelemaekers",
+          "dettaglio": "Sarà sottoposto ad intervento chirurgico per un problema alla caviglia destra, rientro previsto per il 2027 inoltrato",
+          "rientro_giornata": null,
+          "id": "4892",
+          "match_score": 1.0
+        }
+      ],
+      "squalificati": [],
+      "diffidati": []
+    },
     "monza": {
       "infortunati": [
         {
@@ -316,13 +343,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Marianucci",
-          "dettaglio": "Lesione di alto grado del collaterale mediale del ginocchio sinistro, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "6809",
-          "match_score": 1.0
-        },
-        {
           "nome": "Meret",
           "dettaglio": "Lesione di basso grado dell'adduttore lungo della coscia sinistra, in dubbio per la 6a",
           "rientro_giornata": 6,
@@ -330,17 +350,17 @@
           "match_score": 1.0
         },
         {
-          "nome": "Spinazzola",
-          "dettaglio": "Lieve contrattura al bicipite femorale della coscia destra, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "1852",
-          "match_score": 1.0
-        },
-        {
           "nome": "Mctominay",
           "dettaglio": "Intervento di correzione mediante ablazione (PFA) in seguito all'insorgenza di una lieve aritmia benigna, salvo sorprese salterà la 6a ed è in dubbio per la 7a",
           "rientro_giornata": 7,
           "id": "4777",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Olivera",
+          "dettaglio": "Lieve lesione all'inguine, in dubbio per la 7a",
+          "rientro_giornata": 7,
+          "id": "5840",
           "match_score": 1.0
         },
         {
@@ -370,20 +390,6 @@
     },
     "parma": {
       "infortunati": [
-        {
-          "nome": "Bernabè",
-          "dettaglio": "Lesione muscolare di basso grado, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "6666",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Drobnic",
-          "dettaglio": "Frattura dello scafoide del polso sinistro, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "7615",
-          "match_score": 1.0
-        },
         {
           "nome": "Nicolussi Caviglia",
           "dettaglio": "Sindrome pubalgica, in dubbio per la 12a",
@@ -479,13 +485,6 @@
     "udinese": {
       "infortunati": [
         {
-          "nome": "Gueye",
-          "dettaglio": "Distorsione alla caviglia, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "7272",
-          "match_score": 1.0
-        },
-        {
           "nome": "Piotrowski",
           "dettaglio": "Lieve aritmia cardiaca benigna ed è necessario un intervento di ablazione cardiaca, in dubbio per la 6a",
           "rientro_giornata": 6,
@@ -497,6 +496,13 @@
           "dettaglio": "Lesione al bicipite femorale della coscia destra, in dubbio per la 8a",
           "rientro_giornata": 8,
           "id": "2766",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Gueye",
+          "dettaglio": "Intervento chirurgico alla caviglia destra, in dubbio per la 17a",
+          "rientro_giornata": 17,
+          "id": "7272",
           "match_score": 1.0
         }
       ],
