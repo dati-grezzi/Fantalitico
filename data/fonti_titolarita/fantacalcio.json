@@ -1,7 +1,7 @@
 {
   "fonte": "fantacalcio.it",
   "giornata": 6,
-  "aggiornato": "2026-10-06T12:38:39.301619+00:00",
+  "aggiornato": "2026-10-06T22:21:09.686497+00:00",
   "giocatori": {
     "7332": {
       "nome": "Bijlow",
@@ -45,11 +45,11 @@
       "confidence": 0.9,
       "match_score": 1.0
     },
-    "5946": {
-      "nome": "Sow",
+    "7341": {
+      "nome": "Amorim",
       "squadra": "genoa",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "5823": {
@@ -118,8 +118,8 @@
     "5742": {
       "nome": "Drameh",
       "squadra": "genoa",
-      "percentuale": 30,
-      "confidence": 0.3,
+      "percentuale": 50,
+      "confidence": 0.5,
       "match_score": 1.0
     },
     "6977": {
@@ -129,18 +129,11 @@
       "confidence": 0.35,
       "match_score": 1.0
     },
-    "7341": {
-      "nome": "Amorim",
-      "squadra": "genoa",
-      "percentuale": 60,
-      "confidence": 0.6,
-      "match_score": 1.0
-    },
     "2857": {
       "nome": "Traorè Hj.",
       "squadra": "genoa",
-      "percentuale": 50,
-      "confidence": 0.5,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "795": {
@@ -423,13 +416,6 @@
       "confidence": 0.3,
       "match_score": 1.0
     },
-    "2514": {
-      "nome": "Stones",
-      "squadra": "inter",
-      "percentuale": 15,
-      "confidence": 0.15,
-      "match_score": 1.0
-    },
     "5877": {
       "nome": "Carlos Augusto",
       "squadra": "inter",
@@ -587,8 +573,8 @@
     "7202": {
       "nome": "Ndiaye",
       "squadra": "parma",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 50,
+      "confidence": 0.5,
       "match_score": 1.0
     },
     "6149": {
@@ -640,13 +626,6 @@
       "confidence": 0.2,
       "match_score": 1.0
     },
-    "6207": {
-      "nome": "Almqvist",
-      "squadra": "parma",
-      "percentuale": 55,
-      "confidence": 0.55,
-      "match_score": 1.0
-    },
     "7628": {
       "nome": "Sierro",
       "squadra": "parma",
@@ -661,11 +640,18 @@
       "confidence": 0.4,
       "match_score": 1.0
     },
+    "7568": {
+      "nome": "De Martis",
+      "squadra": "parma",
+      "percentuale": 15,
+      "confidence": 0.15,
+      "match_score": 1.0
+    },
     "7213": {
       "nome": "Frigan",
       "squadra": "parma",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 50,
+      "confidence": 0.5,
       "match_score": 1.0
     },
     "572": {
@@ -706,8 +692,8 @@
     "5131": {
       "nome": "Gilmour",
       "squadra": "napoli",
-      "percentuale": 85,
-      "confidence": 0.85,
+      "percentuale": 90,
+      "confidence": 0.9,
       "match_score": 1.0
     },
     "4287": {
@@ -769,8 +755,8 @@
     "4664": {
       "nome": "Badiashile",
       "squadra": "napoli",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 50,
+      "confidence": 0.5,
       "match_score": 1.0
     },
     "6809": {
@@ -778,13 +764,6 @@
       "squadra": "napoli",
       "percentuale": 30,
       "confidence": 0.3,
-      "match_score": 1.0
-    },
-    "7223": {
-      "nome": "Vergara",
-      "squadra": "napoli",
-      "percentuale": 50,
-      "confidence": 0.5,
       "match_score": 1.0
     },
     "7120": {
@@ -797,8 +776,8 @@
     "7162": {
       "nome": "Giovane",
       "squadra": "napoli",
-      "percentuale": 50,
-      "confidence": 0.5,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "6215": {
@@ -2813,8 +2792,15 @@
     "6890": {
       "nome": "Moreno M.",
       "squadra": "venezia",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 60,
+      "confidence": 0.6,
+      "match_score": 1.0
+    },
+    "7253": {
+      "nome": "Bella-Kotchap",
+      "squadra": "venezia",
+      "percentuale": 75,
+      "confidence": 0.75,
       "match_score": 1.0
     },
     "256": {
@@ -2822,13 +2808,6 @@
       "squadra": "venezia",
       "percentuale": 90,
       "confidence": 0.9,
-      "match_score": 1.0
-    },
-    "7538": {
-      "nome": "Halhal",
-      "squadra": "venezia",
-      "percentuale": 80,
-      "confidence": 0.8,
       "match_score": 1.0
     },
     "6821": {
@@ -2894,6 +2873,13 @@
       "confidence": 0.01,
       "match_score": 1.0
     },
+    "7538": {
+      "nome": "Halhal",
+      "squadra": "venezia",
+      "percentuale": 40,
+      "confidence": 0.4,
+      "match_score": 1.0
+    },
     "7454": {
       "nome": "Gomes",
       "squadra": "venezia",
@@ -2904,15 +2890,15 @@
     "6681": {
       "nome": "Sagrado",
       "squadra": "venezia",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "5481": {
       "nome": "Mazzocchi",
       "squadra": "venezia",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 40,
+      "confidence": 0.4,
       "match_score": 1.0
     },
     "5695": {
