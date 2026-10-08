@@ -1,7 +1,7 @@
 {
   "fonte": "fantacalcio.it",
   "giornata": 6,
-  "aggiornato": "2026-10-08T12:41:29.682324+00:00",
+  "aggiornato": "2026-10-08T22:54:27.170466+00:00",
   "giocatori": {
     "7332": {
       "nome": "Bijlow",
@@ -115,13 +115,6 @@
       "confidence": 0.25,
       "match_score": 1.0
     },
-    "5742": {
-      "nome": "Drameh",
-      "squadra": "genoa",
-      "percentuale": 50,
-      "confidence": 0.5,
-      "match_score": 1.0
-    },
     "6977": {
       "nome": "Otoa",
       "squadra": "genoa",
@@ -129,15 +122,22 @@
       "confidence": 0.35,
       "match_score": 1.0
     },
-    "2857": {
-      "nome": "Traorè Hj.",
+    "5742": {
+      "nome": "Drameh",
       "squadra": "genoa",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 50,
+      "confidence": 0.5,
       "match_score": 1.0
     },
-    "795": {
-      "nome": "El Shaarawy",
+    "4970": {
+      "nome": "Messias",
+      "squadra": "genoa",
+      "percentuale": 40,
+      "confidence": 0.4,
+      "match_score": 1.0
+    },
+    "2857": {
+      "nome": "Traorè Hj.",
       "squadra": "genoa",
       "percentuale": 60,
       "confidence": 0.6,
@@ -146,15 +146,15 @@
     "7608": {
       "nome": "Wiafe",
       "squadra": "genoa",
-      "percentuale": 15,
-      "confidence": 0.15,
-      "match_score": 1.0
-    },
-    "4970": {
-      "nome": "Messias",
-      "squadra": "genoa",
       "percentuale": 40,
       "confidence": 0.4,
+      "match_score": 1.0
+    },
+    "795": {
+      "nome": "El Shaarawy",
+      "squadra": "genoa",
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "2521": {
@@ -311,8 +311,8 @@
       "confidence": 0.45,
       "match_score": 1.0
     },
-    "5116": {
-      "nome": "Martinez Jo.",
+    "2814": {
+      "nome": "Provedel",
       "squadra": "inter",
       "percentuale": 70,
       "confidence": 0.7,
@@ -321,22 +321,22 @@
     "6217": {
       "nome": "Bisseck",
       "squadra": "inter",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 90,
+      "confidence": 0.9,
       "match_score": 1.0
     },
     "4159": {
       "nome": "Akanji",
       "squadra": "inter",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
-    "2120": {
-      "nome": "Bastoni",
+    "5877": {
+      "nome": "Carlos Augusto",
       "squadra": "inter",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
     "6274": {
@@ -349,8 +349,8 @@
     "1870": {
       "nome": "Barella",
       "squadra": "inter",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
     "2194": {
@@ -360,8 +360,8 @@
       "confidence": 0.55,
       "match_score": 1.0
     },
-    "152": {
-      "nome": "Zielinski",
+    "2529": {
+      "nome": "Mkhitaryan",
       "squadra": "inter",
       "percentuale": 80,
       "confidence": 0.8,
@@ -377,19 +377,19 @@
     "4871": {
       "nome": "Thuram",
       "squadra": "inter",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
-    "2764": {
-      "nome": "Martinez L.",
+    "6669": {
+      "nome": "Bonny",
       "squadra": "inter",
       "percentuale": 55,
       "confidence": 0.55,
       "match_score": 1.0
     },
-    "2814": {
-      "nome": "Provedel",
+    "5116": {
+      "nome": "Martinez Jo.",
       "squadra": "inter",
       "percentuale": 30,
       "confidence": 0.3,
@@ -405,22 +405,22 @@
     "4177": {
       "nome": "Pavard",
       "squadra": "inter",
-      "percentuale": 30,
-      "confidence": 0.3,
+      "percentuale": 45,
+      "confidence": 0.45,
+      "match_score": 1.0
+    },
+    "2120": {
+      "nome": "Bastoni",
+      "squadra": "inter",
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "5982": {
       "nome": "Spence",
       "squadra": "inter",
-      "percentuale": 50,
-      "confidence": 0.5,
-      "match_score": 1.0
-    },
-    "5877": {
-      "nome": "Carlos Augusto",
-      "squadra": "inter",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 35,
+      "confidence": 0.35,
       "match_score": 1.0
     },
     "5301": {
@@ -430,18 +430,18 @@
       "confidence": 0.4,
       "match_score": 1.0
     },
-    "2529": {
-      "nome": "Mkhitaryan",
+    "152": {
+      "nome": "Zielinski",
       "squadra": "inter",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 45,
+      "confidence": 0.45,
       "match_score": 1.0
     },
     "7070": {
       "nome": "Sucic P.",
       "squadra": "inter",
-      "percentuale": 45,
-      "confidence": 0.45,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "6503": {
@@ -451,8 +451,8 @@
       "confidence": 0.25,
       "match_score": 1.0
     },
-    "6669": {
-      "nome": "Bonny",
+    "2764": {
+      "nome": "Martinez L.",
       "squadra": "inter",
       "percentuale": 60,
       "confidence": 0.6,
@@ -563,13 +563,6 @@
       "confidence": 0.3,
       "match_score": 1.0
     },
-    "7202": {
-      "nome": "Ndiaye",
-      "squadra": "parma",
-      "percentuale": 50,
-      "confidence": 0.5,
-      "match_score": 1.0
-    },
     "6149": {
       "nome": "Carboni F.",
       "squadra": "parma",
@@ -580,8 +573,8 @@
     "5307": {
       "nome": "Valenti",
       "squadra": "parma",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 50,
+      "confidence": 0.5,
       "match_score": 1.0
     },
     "6206": {
@@ -762,8 +755,8 @@
     "4777": {
       "nome": "McTominay",
       "squadra": "napoli",
-      "percentuale": 25,
-      "confidence": 0.25,
+      "percentuale": 15,
+      "confidence": 0.15,
       "match_score": 1.0
     },
     "7120": {
@@ -948,13 +941,6 @@
       "confidence": 0.6,
       "match_score": 1.0
     },
-    "5436": {
-      "nome": "Raimondo",
-      "squadra": "frosinone",
-      "percentuale": 15,
-      "confidence": 0.15,
-      "match_score": 1.0
-    },
     "6966": {
       "nome": "Butez",
       "squadra": "como",
@@ -1007,15 +993,15 @@
     "6967": {
       "nome": "Diao",
       "squadra": "como",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "6875": {
       "nome": "Paz N.",
       "squadra": "como",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
     "7126": {
@@ -1028,8 +1014,8 @@
     "7017": {
       "nome": "Douvikas",
       "squadra": "como",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 90,
+      "confidence": 0.9,
       "match_score": 1.0
     },
     "6344": {
@@ -1168,8 +1154,8 @@
     "4998": {
       "nome": "Molina N.",
       "squadra": "roma",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 65,
+      "confidence": 0.65,
       "match_score": 1.0
     },
     "22": {
@@ -1238,8 +1224,8 @@
     "7599": {
       "nome": "Lulli",
       "squadra": "roma",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 35,
+      "confidence": 0.35,
       "match_score": 1.0
     },
     "7529": {
@@ -3058,8 +3044,8 @@
     "2169": {
       "nome": "Rodriguez R.",
       "squadra": "torino",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 30,
+      "confidence": 0.3,
       "match_score": 1.0
     },
     "6005": {
@@ -3086,8 +3072,8 @@
     "7183": {
       "nome": "Aboukhlal",
       "squadra": "torino",
-      "percentuale": 30,
-      "confidence": 0.3,
+      "percentuale": 25,
+      "confidence": 0.25,
       "match_score": 1.0
     },
     "6218": {
@@ -3121,8 +3107,8 @@
     "6646": {
       "nome": "Adams C.",
       "squadra": "torino",
-      "percentuale": 25,
-      "confidence": 0.25,
+      "percentuale": 35,
+      "confidence": 0.35,
       "match_score": 1.0
     },
     "6462": {
