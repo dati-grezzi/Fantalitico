@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-10-09T22:16:03.322030+00:00",
+  "aggiornato": "2026-10-10T11:47:44.895931+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -77,6 +77,19 @@
           "dettaglio": "Rottura del legamento crociato anteriore, in dubbio per 29a",
           "rientro_giornata": null,
           "id": "6640",
+          "match_score": 1.0
+        }
+      ],
+      "squalificati": [],
+      "diffidati": []
+    },
+    "como": {
+      "infortunati": [
+        {
+          "nome": "Kean",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "2097",
           "match_score": 1.0
         }
       ],
@@ -236,7 +249,13 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [],
+      "squalificati": [
+        {
+          "nome": "Neto",
+          "id": "283",
+          "match_score": 1.0
+        }
+      ],
       "diffidati": []
     },
     "lazio": {
@@ -357,6 +376,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Zambo Anguissa",
+          "dettaglio": "Ritardo di condizione post-infortunio, in dubbio per la 7a",
+          "rientro_giornata": 7,
+          "id": "4220",
+          "match_score": 1.0
+        },
+        {
           "nome": "Vergara",
           "dettaglio": "Lesione distrattiva di medio grado del soleo destro, in dubbio per la 10a",
           "rientro_giornata": 10,
@@ -431,31 +457,10 @@
           "match_score": 1.0
         },
         {
-          "nome": "Candè",
-          "dettaglio": "Intervento di ricostruzione del Legamento Crociato Anteriore del ginocchio destro, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "6985",
-          "match_score": 1.0
-        },
-        {
           "nome": "Pieragnolo",
           "dettaglio": "Intervento chirurgico di ricostruzione del Legamento Crociato Anteriore del ginocchio destro, in dubbio per la 6a",
           "rientro_giornata": 6,
           "id": "7156",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Volpato",
-          "dettaglio": "Lesione di grado moderato al flessore della gamba destra, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "5735",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Walukiewicz",
-          "dettaglio": "Fuori per un problema fisico, in dubbio per la 6a",
-          "rientro_giornata": 6,
-          "id": "4374",
           "match_score": 1.0
         },
         {

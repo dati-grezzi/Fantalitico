@@ -1,9 +1,16 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-10-09T22:16:05.423529+00:00",
+  "aggiornato": "2026-10-10T11:47:46.717115+00:00",
   "giocatori": {
     "7332": {
       "nome": "Bijlow",
+      "squadra": "genoa",
+      "percentuale": 95,
+      "confidence": 0.95,
+      "match_score": 1.0
+    },
+    "6047": {
+      "nome": "Ehizibue",
       "squadra": "genoa",
       "percentuale": 95,
       "confidence": 0.95,
@@ -30,15 +37,8 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
-    "6047": {
-      "nome": "Ehizibue",
-      "squadra": "genoa",
-      "percentuale": 95,
-      "confidence": 0.95,
-      "match_score": 1.0
-    },
-    "5823": {
-      "nome": "Baldanzi",
+    "6020": {
+      "nome": "Ellertsson",
       "squadra": "genoa",
       "percentuale": 95,
       "confidence": 0.95,
@@ -51,25 +51,25 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
-    "4970": {
-      "nome": "Messias",
-      "squadra": "genoa",
-      "percentuale": 60,
-      "confidence": 0.6,
-      "match_score": 1.0
-    },
-    "6020": {
-      "nome": "Ellertsson",
+    "2857": {
+      "nome": "Traorè Hj.",
       "squadra": "genoa",
       "percentuale": 95,
       "confidence": 0.95,
       "match_score": 1.0
     },
-    "6164": {
-      "nome": "Vitinha O.",
+    "795": {
+      "nome": "El Shaarawy",
       "squadra": "genoa",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 51,
+      "confidence": 0.51,
+      "match_score": 1.0
+    },
+    "4970": {
+      "nome": "Messias",
+      "squadra": "genoa",
+      "percentuale": 51,
+      "confidence": 0.51,
       "match_score": 1.0
     },
     "7600": {
@@ -107,8 +107,8 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
-    "7410": {
-      "nome": "Viery",
+    "7294": {
+      "nome": "Valdepenas",
       "squadra": "fiorentina",
       "percentuale": 51,
       "confidence": 0.51,
@@ -121,6 +121,13 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
+    "6294": {
+      "nome": "Ndour",
+      "squadra": "fiorentina",
+      "percentuale": 60,
+      "confidence": 0.6,
+      "match_score": 1.0
+    },
     "7078": {
       "nome": "Mastantuono",
       "squadra": "fiorentina",
@@ -128,32 +135,25 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
-    "6294": {
-      "nome": "Ndour",
+    "7625": {
+      "nome": "Goncalves P.",
+      "squadra": "fiorentina",
+      "percentuale": 60,
+      "confidence": 0.6,
+      "match_score": 1.0
+    },
+    "6827": {
+      "nome": "Njie",
       "squadra": "fiorentina",
       "percentuale": 95,
       "confidence": 0.95,
       "match_score": 1.0
     },
-    "4947": {
-      "nome": "Brescianini",
-      "squadra": "fiorentina",
-      "percentuale": 55,
-      "confidence": 0.55,
-      "match_score": 1.0
-    },
-    "7625": {
-      "nome": "Goncalves P.",
-      "squadra": "fiorentina",
-      "percentuale": 51,
-      "confidence": 0.51,
-      "match_score": 1.0
-    },
     "7023": {
       "nome": "Pellegrino M.",
       "squadra": "fiorentina",
-      "percentuale": 51,
-      "confidence": 0.51,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "5116": {
@@ -184,8 +184,8 @@
       "confidence": 0.51,
       "match_score": 1.0
     },
-    "5301": {
-      "nome": "Luis Henrique",
+    "6274": {
+      "nome": "Diouf",
       "squadra": "inter",
       "percentuale": 51,
       "confidence": 0.51,
@@ -198,15 +198,15 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
-    "2194": {
-      "nome": "Calhanoglu",
+    "6503": {
+      "nome": "Stankovic A.",
       "squadra": "inter",
       "percentuale": 51,
       "confidence": 0.51,
       "match_score": 1.0
     },
-    "2529": {
-      "nome": "Mkhitaryan",
+    "152": {
+      "nome": "Zielinski",
       "squadra": "inter",
       "percentuale": 51,
       "confidence": 0.51,
@@ -226,8 +226,8 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
-    "6669": {
-      "nome": "Bonny",
+    "2764": {
+      "nome": "Martinez L.",
       "squadra": "inter",
       "percentuale": 51,
       "confidence": 0.51,
@@ -317,13 +317,6 @@
       "confidence": 0.55,
       "match_score": 1.0
     },
-    "2816": {
-      "nome": "Di Lorenzo",
-      "squadra": "napoli",
-      "percentuale": 95,
-      "confidence": 0.95,
-      "match_score": 1.0
-    },
     "4409": {
       "nome": "Rrahmani",
       "squadra": "napoli",
@@ -334,19 +327,19 @@
     "6638": {
       "nome": "Marin R.",
       "squadra": "napoli",
-      "percentuale": 95,
-      "confidence": 0.95,
+      "percentuale": 51,
+      "confidence": 0.51,
       "match_score": 1.0
     },
-    "1852": {
-      "nome": "Spinazzola",
+    "4664": {
+      "nome": "Badiashile",
       "squadra": "napoli",
-      "percentuale": 95,
-      "confidence": 0.95,
+      "percentuale": 51,
+      "confidence": 0.51,
       "match_score": 1.0
     },
-    "5131": {
-      "nome": "Gilmour",
+    "2816": {
+      "nome": "Di Lorenzo",
       "squadra": "napoli",
       "percentuale": 95,
       "confidence": 0.95,
@@ -359,13 +352,6 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
-    "536": {
-      "nome": "Politano",
-      "squadra": "napoli",
-      "percentuale": 51,
-      "confidence": 0.51,
-      "match_score": 1.0
-    },
     "2517": {
       "nome": "De Bruyne",
       "squadra": "napoli",
@@ -373,11 +359,25 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
+    "1852": {
+      "nome": "Spinazzola",
+      "squadra": "napoli",
+      "percentuale": 95,
+      "confidence": 0.95,
+      "match_score": 1.0
+    },
+    "6831": {
+      "nome": "Neres",
+      "squadra": "napoli",
+      "percentuale": 55,
+      "confidence": 0.55,
+      "match_score": 1.0
+    },
     "7120": {
       "nome": "Lang",
       "squadra": "napoli",
-      "percentuale": 51,
-      "confidence": 0.51,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "6052": {
@@ -530,8 +530,8 @@
     "7126": {
       "nome": "Baturina",
       "squadra": "como",
-      "percentuale": 95,
-      "confidence": 0.95,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "7017": {
@@ -541,8 +541,8 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
-    "5841": {
-      "nome": "Svilar",
+    "610": {
+      "nome": "Gollini",
       "squadra": "roma",
       "percentuale": 95,
       "confidence": 0.95,
@@ -845,8 +845,8 @@
     "7619": {
       "nome": "Monteiro J.",
       "squadra": "lecce",
-      "percentuale": 95,
-      "confidence": 0.95,
+      "percentuale": 51,
+      "confidence": 0.51,
       "match_score": 1.0
     },
     "133": {
@@ -929,8 +929,8 @@
     "4236": {
       "nome": "Muric",
       "squadra": "sassuolo",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 95,
+      "confidence": 0.95,
       "match_score": 1.0
     },
     "7573": {
@@ -1153,8 +1153,8 @@
     "7374": {
       "nome": "Mendy P.",
       "squadra": "cagliari",
-      "percentuale": 95,
-      "confidence": 0.95,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "4964": {
@@ -1181,8 +1181,8 @@
     "6766": {
       "nome": "Kelly L.",
       "squadra": "juventus",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 51,
+      "confidence": 0.51,
       "match_score": 1.0
     },
     "5520": {
@@ -1206,8 +1206,8 @@
       "confidence": 0.6,
       "match_score": 1.0
     },
-    "5761": {
-      "nome": "Zhegrova",
+    "6884": {
+      "nome": "Conceicao",
       "squadra": "juventus",
       "percentuale": 51,
       "confidence": 0.51,
@@ -1216,12 +1216,12 @@
     "4973": {
       "nome": "Mckennie",
       "squadra": "juventus",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 95,
+      "confidence": 0.95,
       "match_score": 1.0
     },
-    "7436": {
-      "nome": "Alajbegovic",
+    "4179": {
+      "nome": "Gonzalez N.",
       "squadra": "juventus",
       "percentuale": 51,
       "confidence": 0.51,
@@ -1276,13 +1276,6 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
-    "4364": {
-      "nome": "Gaetano",
-      "squadra": "atalanta",
-      "percentuale": 51,
-      "confidence": 0.51,
-      "match_score": 1.0
-    },
     "5792": {
       "nome": "Ederson D.S.",
       "squadra": "atalanta",
@@ -1290,8 +1283,22 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
+    "4479": {
+      "nome": "Elmas",
+      "squadra": "atalanta",
+      "percentuale": 51,
+      "confidence": 0.51,
+      "match_score": 1.0
+    },
     "5995": {
       "nome": "De Ketelaere",
+      "squadra": "atalanta",
+      "percentuale": 95,
+      "confidence": 0.95,
+      "match_score": 1.0
+    },
+    "6844": {
+      "nome": "Rowe",
       "squadra": "atalanta",
       "percentuale": 95,
       "confidence": 0.95,
@@ -1302,13 +1309,6 @@
       "squadra": "atalanta",
       "percentuale": 51,
       "confidence": 0.51,
-      "match_score": 1.0
-    },
-    "6844": {
-      "nome": "Rowe",
-      "squadra": "atalanta",
-      "percentuale": 60,
-      "confidence": 0.6,
       "match_score": 1.0
     },
     "6248": {
@@ -1325,11 +1325,11 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
-    "7253": {
-      "nome": "Bella-Kotchap",
+    "6892": {
+      "nome": "Schingtienne",
       "squadra": "venezia",
-      "percentuale": 95,
-      "confidence": 0.95,
+      "percentuale": 51,
+      "confidence": 0.51,
       "match_score": 1.0
     },
     "256": {
@@ -1356,8 +1356,8 @@
     "5872": {
       "nome": "Helgason",
       "squadra": "venezia",
-      "percentuale": 95,
-      "confidence": 0.95,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "5319": {
@@ -1412,8 +1412,8 @@
     "7526": {
       "nome": "Comert",
       "squadra": "torino",
-      "percentuale": 95,
-      "confidence": 0.95,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "7220": {
@@ -1472,11 +1472,11 @@
       "confidence": 0.95,
       "match_score": 1.0
     },
-    "6956": {
-      "nome": "Solet",
+    "6021": {
+      "nome": "Abankwah",
       "squadra": "udinese",
-      "percentuale": 95,
-      "confidence": 0.95,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "4263": {
@@ -1486,11 +1486,11 @@
       "confidence": 0.51,
       "match_score": 1.0
     },
-    "5994": {
-      "nome": "Ebosse",
+    "6956": {
+      "nome": "Solet",
       "squadra": "udinese",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 95,
+      "confidence": 0.95,
       "match_score": 1.0
     },
     "4994": {
@@ -1503,8 +1503,8 @@
     "7208": {
       "nome": "Miller L.",
       "squadra": "udinese",
-      "percentuale": 95,
-      "confidence": 0.95,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "6680": {
@@ -1524,8 +1524,8 @@
     "6783": {
       "nome": "Unai Gomez",
       "squadra": "udinese",
-      "percentuale": 95,
-      "confidence": 0.95,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "6684": {
