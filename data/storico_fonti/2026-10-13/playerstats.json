@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-13T00:11:22.989664+00:00",
+ "aggiornato": "2026-10-13T13:26:15.470072+00:00",
  "fonte": "playerstats.football (statistiche difensive/di passaggio, per90, solo top-50 per categoria)",
  "note": "Mapping ID fantacalcio → {tackles_p90, interceptions_p90, clearances_p90, duels_p90, key_passes_p90, accurate_passes_p90, rating}. Copertura parziale: solo chi rientra nei primi 50 di almeno una categoria.",
  "giocatori": {
@@ -416,7 +416,7 @@
    "minuti": 501,
    "tackles_p90": 1.8,
    "key_passes_p90": 1.8,
-   "accurate_passes_p90": 42.4,
+   "accurate_passes_p90": 42.57,
    "playerstats_name": "Mërgim Vojvoda",
    "match_score": 0.85
   },
@@ -706,21 +706,21 @@
    "playerstats_name": "Johan Vásquez",
    "match_score": 0.85
   },
-  "6320": {
-   "minuti": 323,
-   "clearances_p90": 5.57,
-   "playerstats_name": "Danilho Doekhi",
-   "match_score": 0.85
-  },
   "6660": {
    "minuti": 465,
    "clearances_p90": 3.87,
    "playerstats_name": "Alessandro Marcandalli",
    "match_score": 0.85
   },
+  "6320": {
+   "minuti": 323,
+   "clearances_p90": 5.57,
+   "playerstats_name": "Danilho Doekhi",
+   "match_score": 0.85
+  },
   "6021": {
    "minuti": 496,
-   "clearances_p90": 3.45,
+   "clearances_p90": 3.27,
    "playerstats_name": "James Abankwah",
    "match_score": 0.85
   },
@@ -736,13 +736,6 @@
    "playerstats_name": "Antonino Gallo",
    "match_score": 0.85
   },
-  "7526": {
-   "minuti": 315,
-   "clearances_p90": 4.86,
-   "accurate_passes_p90": 75.43,
-   "playerstats_name": "Eray Cömert",
-   "match_score": 0.85
-  },
   "4210": {
    "minuti": 180,
    "clearances_p90": 8.5,
@@ -755,16 +748,23 @@
    "playerstats_name": "Josip Sutalo",
    "match_score": 0.85
   },
-  "6956": {
-   "minuti": 308,
-   "clearances_p90": 4.68,
-   "playerstats_name": "Oumar Solet",
+  "7526": {
+   "minuti": 315,
+   "clearances_p90": 4.86,
+   "accurate_passes_p90": 75.43,
+   "playerstats_name": "Eray Cömert",
    "match_score": 0.85
   },
   "7564": {
    "minuti": 402,
    "clearances_p90": 3.58,
    "playerstats_name": "Fedde Leysen",
+   "match_score": 0.85
+  },
+  "6956": {
+   "minuti": 308,
+   "clearances_p90": 4.68,
+   "playerstats_name": "Oumar Solet",
    "match_score": 0.85
   },
   "7615": {
@@ -829,7 +829,7 @@
   },
   "2061": {
    "minuti": 433,
-   "duels_p90": 12.89,
+   "duels_p90": 13.09,
    "shots_p90": 2.49,
    "playerstats_name": "Giovanni Simeone",
    "match_score": 0.85
