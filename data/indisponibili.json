@@ -1,14 +1,28 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-10-14T11:03:04.858962+00:00",
+  "aggiornato": "2026-10-14T21:18:22.546997+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
+        {
+          "nome": "Kessiè",
+          "dettaglio": "Sovraccarico al polpaccio destro, in dubbio per la 7a",
+          "rientro_giornata": 7,
+          "id": "1850",
+          "match_score": 1.0
+        },
         {
           "nome": "Sulemana K.",
           "dettaglio": "Lesione del collaterale mediale di secondo grado del ginocchio sinistro, in dubbio per la 7a",
           "rientro_giornata": 7,
           "id": "5918",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Scalvini",
+          "dettaglio": "Distrazione di basso grado dei muscoli flessori della gamba sinistra, in dubbio per l'8a",
+          "rientro_giornata": null,
+          "id": "5526",
           "match_score": 1.0
         },
         {
@@ -44,13 +58,6 @@
     },
     "bologna": {
       "infortunati": [
-        {
-          "nome": "Theate",
-          "dettaglio": "Forte contusione, in dubbio per la 7a",
-          "rientro_giornata": 7,
-          "id": "5675",
-          "match_score": 1.0
-        },
         {
           "nome": "Odgaard",
           "dettaglio": "Lesione ai flessori della coscia destra, in dubbio per la 8a",
@@ -99,6 +106,13 @@
     "como": {
       "infortunati": [
         {
+          "nome": "Diao",
+          "dettaglio": "Problema muscolare, in dubbio per la 7a",
+          "rientro_giornata": 7,
+          "id": "6967",
+          "match_score": 1.0
+        },
+        {
           "nome": "Kean",
           "dettaglio": "Forte contusione, in dubbio per la 7a",
           "rientro_giornata": 7,
@@ -113,8 +127,8 @@
       "infortunati": [
         {
           "nome": "Atta",
-          "dettaglio": "Sovraccarico funzionale all'addome, in dubbio per la 7a",
-          "rientro_giornata": 7,
+          "dettaglio": "Sovraccarico funzionale all'addome, in dubbio per l'8a",
+          "rientro_giornata": null,
           "id": "6908",
           "match_score": 1.0
         },
@@ -180,13 +194,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Venturino",
-          "dettaglio": "Intervento chirurgico di “pulizia” del tendine rotuleo, in dubbio per la 7a",
-          "rientro_giornata": 7,
-          "id": "6980",
-          "match_score": 1.0
-        },
-        {
           "nome": "Colombo",
           "dettaglio": "Distorsione alla caviglia, in dubbio per l'8a",
           "rientro_giornata": null,
@@ -198,6 +205,13 @@
           "dettaglio": "Distrazione muscolare al bicipite femorale della coscia sinistra, in dubbio per l'8a",
           "rientro_giornata": null,
           "id": "5946",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Venturino",
+          "dettaglio": "Intervento chirurgico di “pulizia” del tendine rotuleo, in dubbio per la 8a",
+          "rientro_giornata": 8,
+          "id": "6980",
           "match_score": 1.0
         }
       ],
@@ -430,13 +444,6 @@
     "parma": {
       "infortunati": [
         {
-          "nome": "Ndiaye",
-          "dettaglio": "Contusione in allenamento, in dubbio per la 7a",
-          "rientro_giornata": 7,
-          "id": "7202",
-          "match_score": 1.0
-        },
-        {
           "nome": "Almqvist",
           "dettaglio": "Lesione di basso grado del polpaccio della gamba sinistra, in dubbio per la 9a",
           "rientro_giornata": 9,
@@ -512,7 +519,7 @@
         },
         {
           "nome": "Leysen F.",
-          "dettaglio": "Distorsione al ginocchio, tempi da definire",
+          "dettaglio": "Lesione del legamento crociato anteriore della gamba sinistra, tempi da definire",
           "rientro_giornata": null,
           "id": "7564",
           "match_score": 1.0
@@ -539,8 +546,8 @@
         },
         {
           "nome": "Ilkhan",
-          "dettaglio": "Problema all'adduttore, in dubbio per la 7a",
-          "rientro_giornata": 7,
+          "dettaglio": "Problema all'adduttore, in dubbio per la 10a",
+          "rientro_giornata": 10,
           "id": "6005",
           "match_score": 1.0
         }
