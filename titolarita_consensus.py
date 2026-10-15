@@ -38,10 +38,20 @@ PESO_DEFAULT = 0.5  # per fonti non ancora presenti in PESI_FONTE (nuove, non ta
 
 
 def carica_fonti():
+    """Carica le fonti usabili. Una fonte dichiarata ferma (stale) o vuota viene
+    scartata con un avviso: meglio una fonte in meno che una fonte vecchia che
+    sposta il consensus (caso Calciomagazine, 15/10: pagina ferma ad agosto)."""
     fonti = []
     for path in sorted(glob.glob(os.path.join(FONTI_DIR, "*.json"))):
         with open(path, encoding="utf-8") as f:
             data = json.load(f)
+        nome = data.get("fonte", os.path.basename(path))
+        if data.get("stale"):
+            print(f"   ⚠️  {nome}: fonte ferma (contenuto del {data.get('contenuto_modificato')}) - ignorata")
+            continue
+        if not data.get("giocatori"):
+            print(f"   ⚠️  {nome}: nessun giocatore - ignorata")
+            continue
         fonti.append(data)
     return fonti
 

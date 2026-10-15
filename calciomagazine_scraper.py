@@ -43,7 +43,7 @@ import json
 import os
 import re
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 import requests
 from bs4 import BeautifulSoup
@@ -66,6 +66,11 @@ CONF_TITOLARE = 0.85
 CONF_PANCHINA = 0.15
 CONF_FUORI = 0.02
 
+# Oltre questa età del contenuto la pagina è considerata ferma. Il 15/10 la
+# pagina mostrava ancora le formazioni della 1ª giornata (article:modified_time
+# = 7 agosto) pur riportando in alto la data del giorno: lo scraper le leggeva
+# come attuali e dava "indisponibile" a titolari come Isaksen o Berardi.
+MAX_ETA_ORE = 96
 MIN_GIOCATORI = 300     # sotto questa soglia la pagina è cambiata: non sovrascrivo
 
 SQUADRE = ["atalanta", "bologna", "cagliari", "como", "fiorentina", "frosinone",
@@ -180,7 +185,40 @@ def main():
     print(f"Scarico {URL} ...")
     r = requests.get(URL, headers=HEADERS, timeout=40)
     r.raise_for_status()
-    testo = BeautifulSoup(r.text, "lxml").get_text("\n")
+    zuppa = BeautifulSoup(r.text, "lxml")
+    testo = zuppa.get_text("\n")
+
+    # Controllo di freschezza: la data VISIBILE nella pagina è quella di oggi
+    # anche quando il contenuto è vecchio, quindi serve il metadato di modifica.
+    modificata = None
+    for attr in ({"property": "article:modified_time"}, {"property": "og:updated_time"}):
+        tag = zuppa.find("meta", attrs=attr)
+        if tag and tag.get("content"):
+            try:
+                modificata = datetime.fromisoformat(tag["content"].replace("Z", "+00:00"))
+                if modificata.tzinfo is None:
+                    modificata = modificata.replace(tzinfo=timezone.utc)
+                break
+            except ValueError:
+                continue
+    if modificata is None:
+        print("ATTENZIONE: data di modifica non trovata nella pagina, non posso verificarne la freschezza.")
+    else:
+        eta = datetime.now(timezone.utc) - modificata
+        print(f"Contenuto modificato il {modificata.isoformat()} ({eta.days} giorni fa)")
+        if eta > timedelta(hours=MAX_ETA_ORE):
+            print(f"Pagina ferma da oltre {MAX_ETA_ORE}h: la fonte viene SVUOTATA e il consensus la ignora.")
+            os.makedirs(os.path.dirname(OUT), exist_ok=True)
+            with open(OUT, "w", encoding="utf-8") as f:
+                json.dump({
+                    "fonte": FONTE,
+                    "aggiornato": datetime.now(timezone.utc).isoformat(),
+                    "giornata": None,
+                    "stale": True,
+                    "contenuto_modificato": modificata.isoformat(),
+                    "giocatori": {},
+                }, f, ensure_ascii=False, indent=1)
+            return 0
 
     letture = raccogli(testo)
     if not letture:
