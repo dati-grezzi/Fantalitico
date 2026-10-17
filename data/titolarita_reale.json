@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-10-16T20:31:11.500884+00:00",
+  "aggiornato": "2026-10-17T10:02:58.951064+00:00",
   "fonti_usate": [
     "fantacalcio.it",
     "sosfanta.com"
@@ -4559,8 +4559,8 @@
       },
       "scarto": 0.1
     },
-    "4657": {
-      "nome": "Celik",
+    "4973": {
+      "nome": "McKennie",
       "squadra": "juventus",
       "confidence": 0.756,
       "fonti": [
@@ -4604,21 +4604,8 @@
       },
       "scarto": 0.15
     },
-    "5761": {
-      "nome": "Zhegrova",
-      "squadra": "juventus",
-      "confidence": 0.55,
-      "fonti": [
-        "fantacalcio.it"
-      ],
-      "n_fonti": 1,
-      "valori": {
-        "fantacalcio.it": 0.55
-      },
-      "scarto": null
-    },
-    "4973": {
-      "nome": "McKennie",
+    "4657": {
+      "nome": "Celik",
       "squadra": "juventus",
       "confidence": 0.756,
       "fonti": [
@@ -4631,6 +4618,21 @@
         "sosfanta.com": 0.95
       },
       "scarto": 0.35
+    },
+    "6752": {
+      "nome": "Woltemade",
+      "squadra": "juventus",
+      "confidence": 0.56,
+      "fonti": [
+        "fantacalcio.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 2,
+      "valori": {
+        "fantacalcio.it": 0.6,
+        "sosfanta.com": 0.51
+      },
+      "scarto": 0.09
     },
     "4179": {
       "nome": "Gonzalez N.",
@@ -4753,16 +4755,42 @@
       },
       "scarto": null
     },
-    "6884": {
-      "nome": "Conceicao",
+    "5685": {
+      "nome": "Koopmeiners",
       "squadra": "juventus",
-      "confidence": 0.45,
+      "confidence": 0.5,
       "fonti": [
         "fantacalcio.it"
       ],
       "n_fonti": 1,
       "valori": {
-        "fantacalcio.it": 0.45
+        "fantacalcio.it": 0.5
+      },
+      "scarto": null
+    },
+    "5761": {
+      "nome": "Zhegrova",
+      "squadra": "juventus",
+      "confidence": 0.4,
+      "fonti": [
+        "fantacalcio.it"
+      ],
+      "n_fonti": 1,
+      "valori": {
+        "fantacalcio.it": 0.4
+      },
+      "scarto": null
+    },
+    "6884": {
+      "nome": "Conceicao",
+      "squadra": "juventus",
+      "confidence": 0.55,
+      "fonti": [
+        "fantacalcio.it"
+      ],
+      "n_fonti": 1,
+      "valori": {
+        "fantacalcio.it": 0.55
       },
       "scarto": null
     },
@@ -4779,19 +4807,6 @@
       },
       "scarto": null
     },
-    "5685": {
-      "nome": "Koopmeiners",
-      "squadra": "juventus",
-      "confidence": 0.5,
-      "fonti": [
-        "fantacalcio.it"
-      ],
-      "n_fonti": 1,
-      "valori": {
-        "fantacalcio.it": 0.5
-      },
-      "scarto": null
-    },
     "2832": {
       "nome": "Boga",
       "squadra": "juventus",
@@ -4804,21 +4819,6 @@
         "fantacalcio.it": 0.15
       },
       "scarto": null
-    },
-    "6752": {
-      "nome": "Woltemade",
-      "squadra": "juventus",
-      "confidence": 0.449,
-      "fonti": [
-        "fantacalcio.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 2,
-      "valori": {
-        "fantacalcio.it": 0.4,
-        "sosfanta.com": 0.51
-      },
-      "scarto": 0.11
     },
     "6482": {
       "nome": "Mandas",
