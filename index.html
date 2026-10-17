@@ -1905,6 +1905,7 @@ function renderSfida(){
    ============================================================ */
 const IT_PESO_STORICO = 0.12;    // w: peso di TS quando le fonti reali sono disponibili
 const IT_STORICO_NEUTRO = 0.7;   // fallback: né storico né stagione corrente hanno segnale
+const IT_SENZA_FONTE_0PRES = 0.12; // tetto per chi, da ≥3 giornate, ha 0 presenze e nessuna fonte lo cita
 function giornateAttualiGiocate(){
   const g = availableGiornate();
   return g.length ? g[0] : 0;
@@ -1931,7 +1932,16 @@ function indiceTitolarita(st){
 
   const ts = tsOf(st);
   const fonte = S.titolarita_reale && S.titolarita_reale[st.id];
-  if(!fonte || fonte.confidence == null) return ts;             // nessuna fonte reale (es. fuori giornata)
+  if(!fonte || fonte.confidence == null){
+    // Nessuna fonte lo cita. A stagione avviata, un giocatore a 0 presenze che
+    // non compare in nessuna probabile formazione è una riserva: il fallback
+    // neutro (0,7) lo faceva risultare titolare al ~59% e il Mercato lo
+    // consigliava al posto di un titolare (17/10: Lolic, 2° portiere del
+    // Frosinone, 0 presenze, al posto di Skorupski). Il neutro resta valido
+    // solo quando non c'è ancora campo (inizio stagione) o il giocatore ha giocato.
+    if(giornateAttualiGiocate() >= 3 && !(st.pv > 0)) return Math.min(ts, IT_SENZA_FONTE_0PRES);
+    return ts;                                                  // nessuna fonte reale (es. fuori giornata)
+  }
   return IT_PESO_STORICO*ts + (1-IT_PESO_STORICO)*fonte.confidence;
 }
 // pTit in rosa viene "congelato" al momento in cui il giocatore entra (vedi
