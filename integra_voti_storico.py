@@ -12,8 +12,10 @@ USO
 """
 
 import json
+import re
 import sys
 import os
+from collections import defaultdict
 from pathlib import Path
 
 STORICO_PATH = "data/voti_storico.json"
@@ -82,6 +84,64 @@ def flatten(teams_data, giornata):
     return rows
 
 
+# Bonus/malus a evento, per riverificare i fantavoti gia' nello storico.
+_BONUS = {"Gol segnato": 3, "Assist": 1, "Assist soft": 1, "Assist GOLD": 1,
+          "Ammonizione": -0.5, "Espulsione": -1, "Autogol": -2, "Autorete": -2,
+          "Rigore parato": 3, "Rigore sbagliato": -3, "Man of the match": 0,
+          "Uscito per infortunio": 0}
+
+
+def _fv_atteso(voto, eventi):
+    """voto + bonus dagli eventi, oppure None se compare un evento sconosciuto.
+    Il campo 'count' e' l'indice progressivo dell'evento (il 2o gol ha count 2),
+    quindi per ogni tipo vale il massimo, non la somma."""
+    massimi = defaultdict(int)
+    for e in eventi:
+        t = re.sub(r"\s*\(.*\)", "", e.get("tipo", "")).strip()
+        try:
+            massimi[t] = max(massimi[t], int(e.get("count", 1)))
+        except (TypeError, ValueError):
+            return None
+    tot = 0
+    for t, c in massimi.items():
+        if t == "Gol subito":
+            tot -= c
+        elif t in _BONUS:
+            tot += _BONUS[t] * c
+        else:
+            return None
+    return voto + tot
+
+
+def ripara_fantavoti(storico):
+    """Corregge i fantavoti a cui e' stata tolta una cifra: un fantavoto intero
+    fra 11 e 30 (8 + 3 di bonus = 11) veniva diviso per 10 e diventava 1,1.
+    Capitato a Dybala G1, Bracaglia G2, Varela G5.
+
+    Con gli eventi si riconosce con certezza (voto + bonus = fantavoto x 10).
+    Senza eventi (pagina aggregata) si interviene solo nel caso inequivocabile:
+    fantavoto molto sotto il voto e fantavoto x 10 a distanza plausibile da
+    esso. Idempotente: a una seconda passata non trova piu' niente."""
+    riparati = []
+    for pid, r in storico.items():
+        for g, v in r.get("giornate", {}).items():
+            voto, fv = v.get("voto_consensus"), v.get("fantavoto_consensus")
+            if voto is None or fv is None or not (0 < fv < 3.1):
+                continue
+            candidato = round(fv * 10, 1)
+            ev = v.get("eventi") or []
+            if ev:
+                atteso = _fv_atteso(voto, ev)
+                ok = atteso is not None and abs(atteso - fv) > 0.01 and abs(atteso - candidato) < 0.01
+            else:
+                ok = (fv - voto <= -3.5 and r.get("ruolo") != "p"
+                      and 0 <= candidato - voto <= 7 and candidato <= 30)
+            if ok:
+                v["fantavoto_consensus"] = candidato
+                riparati.append(f"{r.get('nome')} G{g}: {fv} -> {candidato}")
+    return riparati
+
+
 def load_storico():
     if Path(STORICO_PATH).exists():
         with open(STORICO_PATH, encoding="utf-8") as f:
@@ -138,6 +198,10 @@ def main():
             "fantavoto_consensus": r["fantavoto_consensus"],
             "eventi": r["eventi"],
         }
+
+    riparati = ripara_fantavoti(storico)
+    if riparati:
+        print(f"🔧 {len(riparati)} fantavoti riparati (cifra persa): {'; '.join(riparati[:10])}")
 
     save_storico(storico)
     print(f"\n📝 voti_storico.json aggiornato: {nuovi} giocatori nuovi, {aggiornati} aggiornati")

@@ -23,18 +23,66 @@ DATA_DIR.mkdir(exist_ok=True)
 JSON_IN = Path(__file__).parent / "playerstats_2026.json"
 
 
-def normalize_name(name: str) -> str:
-    if not name:
-        return ""
-    name = name.lower().strip()
-    name = ''.join(c for c in unicodedata.normalize('NFD', name) if unicodedata.category(c) != 'Mn')
-    name = re.sub(r'\s+[a-z]\.$', '', name)
-    name = re.sub(r'\s+', ' ', name).strip()
-    return name
+import match_nomi as M
 
 
-def levenshtein_ratio(s1: str, s2: str) -> float:
-    return SequenceMatcher(None, s1, s2).ratio()
+# Tetto di plausibilita': i minuti di una fonte non possono superare di molto
+# quelli che la Lega attribuisce al giocatore (presenze con voto x 95, piu' due
+# partite di margine per le sostituzioni senza voto). Serve perche' playerstats
+# non fornisce la squadra: senza questo controllo "Filip Stankovic" (540 minuti)
+# veniva attribuito all'Inter "Stankovic A." con 1 presenza.
+MARGINE_PARTITE = 2
+MINUTI_PARTITA = 95
+
+
+def minuti_plausibili(minuti, pv):
+    if minuti is None:
+        return True
+    return minuti <= ((pv or 0) + MARGINE_PARTITE) * MINUTI_PARTITA
+
+
+def iniziali_ok(norm_fonte, nome_fanta):
+    """Le abbreviazioni del listone ("F.P.", "Je.") non devono contraddire i nomi
+    propri della fonte. Qui la fonte puo' avere meno nomi del listone ("Pio
+    Esposito" contro "Esposito F.P."): basta che ogni nome della fonte inizi
+    con una delle abbreviazioni."""
+    corti = [t for t in nome_fanta.split() if len(t) < 3 and t not in M.PARTICELLE]
+    if not corti:
+        return True
+    cognomi = M.token_identificativi(nome_fanta)
+    propri = [t for t in norm_fonte.split() if t not in cognomi and t not in M.PARTICELLE]
+    return all(any(n.startswith(c) for c in corti) for n in propri)
+
+
+def candidati_per_nome(nome, giocatori):
+    """Giocatori della Lega compatibili col nome, dal migliore al peggiore.
+
+    Il cognome della fonte e' l'ULTIMO token ("Lorenzo Colombo" -> colombo) e
+    deve comparire fra i token del listone: cosi' "Lorenzo" non aggancia
+    "Di Lorenzo". Niente confronto fuzzy sul nome intero: il 17/10 "Éderson"
+    combaciava con "Pedersen" a 0,80 e prendeva i suoi dati."""
+    norm = M.normalize_name(nome)
+    toks = M.token_identificativi(norm)
+    parti = [t for t in norm.split() if t not in M.PARTICELLE]
+    cognome = parti[-1] if parti else ""
+    trovati = []
+    for pid, (nome_fanta, squadra) in giocatori.items():
+        tf = M.token_identificativi(nome_fanta)
+        if cognome in tf or (len(tf) >= 2 and tf <= toks):
+            if iniziali_ok(norm, nome_fanta):
+                jac = len(toks & tf) / max(1, len(toks | tf))
+                trovati.append((jac, pid, nome_fanta, squadra))
+    if not trovati:
+        # Rete di sicurezza per le grafie diverse ("Ndicka" / "N'Dicka"):
+        # solo sul cognome, soglia alta.
+        for pid, (nome_fanta, squadra) in giocatori.items():
+            j = nome_fanta.replace(" ", "")
+            if cognome and len(cognome) >= 5 and any(
+                    M.levenshtein_ratio(cognome, M.normalize_name(x).replace(" ", "")) >= 0.9
+                    for x in [nome_fanta.split(" ")[0] + (nome_fanta.split(" ")[1] if len(nome_fanta.split(" ")) > 1 and len(nome_fanta.split(" ")[0]) <= 2 else "")]):
+                trovati.append((0.5, pid, nome_fanta, squadra))
+    trovati.sort(key=lambda x: -x[0])
+    return [(pid, nf, sq, jac) for jac, pid, nf, sq in trovati]
 
 
 def main() -> int:
@@ -46,7 +94,8 @@ def main() -> int:
         return 1
     with open(players_file, encoding='utf-8') as f:
         players_data = json.load(f)
-    giocatori_fanta = {p['id']: normalize_name(p['nome']) for p in players_data['giocatori'] if p.get('id')}
+    giocatori_fanta = M.indice_giocatori(players_data)
+    pv_by_id = {p['id']: p.get('pv') or 0 for p in players_data['giocatori'] if p.get('id')}
     print(f"  Caricati {len(giocatori_fanta)} giocatori da players.json")
 
     if not JSON_IN.exists():
@@ -59,40 +108,59 @@ def main() -> int:
 
     risultato_by_id = {}
     matched = 0
-    failed = []
+    failed, ambigui, implausibili, collisioni = [], [], [], []
+    id_in_collisione = set()
 
     for player_id_esterno, dati in righe.items():
         nome = (dati.get("nome") or "").strip()
         if not nome:
             continue
 
-        nome_norm = normalize_name(nome)
-        best_match_id = None
-        best_score = 0.65
-        for fanta_id, fanta_name in giocatori_fanta.items():
-            score = levenshtein_ratio(nome_norm, fanta_name)
-            parti_ext = nome_norm.split()
-            parti_fanta = fanta_name.split()
-            if parti_ext and parti_fanta and parti_ext[-1] == parti_fanta[-1]:
-                score = max(score, 0.85)
-            if score > best_score:
-                best_score = score
-                best_match_id = fanta_id
-
-        if best_match_id:
-            voce = {k: v for k, v in dati.items() if k != "nome"}
-            voce["playerstats_name"] = nome
-            voce["match_score"] = round(best_score, 3)
-            risultato_by_id[best_match_id] = voce
-            matched += 1
-        else:
+        cand = candidati_per_nome(nome, giocatori_fanta)
+        if not cand:
             failed.append(nome)
+            continue
+        # Piu' candidati (omonimi in squadre diverse): decidono i minuti.
+        ok = [c for c in cand if minuti_plausibili(dati.get("minuti"), pv_by_id.get(c[0]))]
+        if not ok:
+            implausibili.append(f"{nome} ({dati.get('minuti')} min) vs {', '.join(c[1] for c in cand)}")
+            continue
+        migliore = max(c[3] for c in ok)
+        ok = [c for c in ok if c[3] == migliore]
+        if len(ok) > 1:
+            ambigui.append(f"{nome}: {', '.join(c[1] + ' ' + c[2] for c in ok)}")
+            continue
+        best_match_id = ok[0][0]
+
+        voce = {k: v for k, v in dati.items() if k != "nome"}
+        voce["playerstats_name"] = nome
+        voce["match_score"] = 0.9
+        if best_match_id in id_in_collisione:
+            collisioni.append(f"{nome} (terza riga)")
+            continue
+        if best_match_id in risultato_by_id:
+            id_in_collisione.add(best_match_id)
+            # Due righe della fonte sullo stesso giocatore: non so quale e' giusta.
+            collisioni.append(f"{nome} / {risultato_by_id[best_match_id]['playerstats_name']}")
+            del risultato_by_id[best_match_id]
+            matched -= 1
+            continue
+        risultato_by_id[best_match_id] = voce
+        matched += 1
 
     print(f"  ✓ Matched: {matched} giocatori")
     if failed:
-        print(f"    Falliti ({len(failed)} totali, campione):")
+        print(f"    Senza corrispondenza ({len(failed)} totali, campione):")
         for name in failed[:10]:
             print(f"      - {name}")
+    if ambigui:
+        print(f"    Ambigui, scartati ({len(ambigui)}): {'; '.join(ambigui[:6])}")
+    if implausibili:
+        print(f"    Scartati per minuti incompatibili con le presenze ({len(implausibili)}):")
+        for x in implausibili[:10]:
+            print(f"      - {x}")
+    if collisioni:
+        print(f"    Collisioni (due righe, un giocatore), scartate ({len(collisioni)}): {'; '.join(collisioni[:6])}")
 
     import datetime as dt
     result = {

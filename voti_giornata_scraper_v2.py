@@ -288,12 +288,17 @@ JS_ESTRAI_PAGINA_GENERALE = r"""
             const v = (el.getAttribute('data-value') || '').trim();
             return (v === '' || v.toLowerCase() === 'sv') ? null : v;
         };
-        const num = (el) => {
+        // Voto puro: un intero sopra 10 e' per forza una virgola persa ("75" = 7,5).
+        // Fantavoto: NO, un intero fra 11 e 30 e' un valore legittimo (8 + 3 di
+        // bonus = 11) e dividerlo per 10 lo trasformava in 1,1 (Dybala G1,
+        // Bracaglia G2, Varela G5). Qui l'intero si divide solo oltre 30, dove
+        // un valore vero non puo' arrivare ("105" = 10,5).
+        const num = (el, fanta) => {
             const v = grezzo(el);
             if (v === null) return null;
             const n = parseFloat(v.replace(',', '.'));
             if (isNaN(n)) return null;
-            if (/^\d+$/.test(v) && n > 10) return n / 10;
+            if (/^\d+$/.test(v) && n > (fanta ? 30 : 10)) return n / 10;
             return n;
         };
 
@@ -319,7 +324,7 @@ JS_ESTRAI_PAGINA_GENERALE = r"""
             const elVoto = tr.querySelector('.player-grade');
             const elFanta = tr.querySelector('.player-fanta-grade');
             let votoPuro = num(elVoto);
-            let fantavoto = num(elFanta);
+            let fantavoto = num(elFanta, true);
             if (votoPuro === null && fantavoto === null) { senzaVoto++; return; }
 
             // Le due caselle escono dallo stesso template: se il voto puro ha
@@ -328,8 +333,13 @@ JS_ESTRAI_PAGINA_GENERALE = r"""
             // dove un valore alto può essere legittimo (una tripletta vale 17,5).
             const vGrezzo = grezzo(elVoto), fGrezzo = grezzo(elFanta);
             const vCorretto = vGrezzo !== null && /^\d+$/.test(vGrezzo) && parseFloat(vGrezzo) > 10;
-            if (vCorretto && fGrezzo !== null && /^\d+$/.test(fGrezzo) && fantavoto > 10) {
-                fantavoto = parseFloat(fGrezzo) / 10;
+            // Se il voto ha perso la virgola, anche il fantavoto puo' averla persa
+            // ("25" = 2,5 per un subentrato): lo si divide solo se il risultato
+            // resta a distanza plausibile dal voto. Un 11 con voto 7,5 e' un
+            // 11 vero (distanza da 1,1: 6,4), non un 1,1.
+            if (vCorretto && fGrezzo !== null && /^\d+$/.test(fGrezzo) && fantavoto > 10 && fantavoto <= 30) {
+                const diviso = parseFloat(fGrezzo) / 10;
+                if (Math.abs(diviso - votoPuro) <= 4.5) fantavoto = diviso;
             }
 
             // Rete di sicurezza: un voto puro sta fra 0 e 10. Fuori scala

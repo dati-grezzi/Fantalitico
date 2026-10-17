@@ -9,6 +9,7 @@ Ogni fonte è indipendente: se una fallisce, le altre vengono
 comunque aggiornate e il JSON precedente resta al suo posto.
 """
 
+import html as _htmllib
 import io
 import json
 import re
@@ -307,6 +308,10 @@ def job_rigoristi() -> None:
     matches = re.findall(r"/serie-a/squadre/([^/]+)/([^/]+)/\d+", html)
     per_team = {}
     for team, player in matches:
+        # Il link contiene entita' HTML non decodificate ("tour&#xE8;-e" per Toure' E.,
+        # "cal&#xF2;" per Calo'): senza questo il motore non riconosceva come
+        # rigoristi il primo di Parma e il primo del Frosinone.
+        player = _htmllib.unescape(player)
         per_team.setdefault(team, [])
         if player not in per_team[team] and len(per_team[team]) < 3:
             per_team[team].append(player)  # primi ~3 = gerarchia rigoristi
