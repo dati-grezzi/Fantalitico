@@ -33,6 +33,12 @@ PESI_FONTE = {
     # perché il suo segnale è meno fine: se non pubblica percentuali, la
     # confidence è quasi binaria e porta meno informazione di un "73%".
     "calciomagazine.it": 0.6,
+    # Aggiunte il 17/10 via fantacalcio-online.com (fco_titolarita_scraper.py).
+    # Pesi PROVVISORI: Gazzetta pubblica percentuali fini, Sky quasi solo 90/30/-
+    # quindi porta meno informazione. Da tarare con gli snapshot di
+    # data/storico_fonti (il valore grezzo di ogni fonte e' in "valori").
+    "gazzetta.it": 0.8,
+    "sky.it": 0.5,
 }
 PESO_DEFAULT = 0.5  # per fonti non ancora presenti in PESI_FONTE (nuove, non tarate)
 
@@ -65,6 +71,10 @@ def combina(fonti):
         nome_fonte = f.get("fonte", "sconosciuta")
         peso = PESI_FONTE.get(nome_fonte, PESO_DEFAULT)
         for pid, g in f.get("giocatori", {}).items():
+            # La stessa redazione non conta due volte (es. SOS Fanta dallo scraper
+            # diretto e da FCO): vale la prima lettura incontrata.
+            if any(fn == nome_fonte for _, _, fn in accumulo[pid]):
+                continue
             conf = g.get("confidence")
             if conf is None and g.get("percentuale") is not None:
                 conf = g["percentuale"] / 100
@@ -144,7 +154,7 @@ def main():
     os.makedirs("data", exist_ok=True)
     output = {
         "aggiornato": datetime.now(timezone.utc).isoformat(),
-        "fonti_usate": [f.get("fonte") for f in fonti],
+        "fonti_usate": sorted({f.get("fonte") for f in fonti if f.get("fonte")}),
         "giocatori": consensus,
     }
     with open(OUT_JSON, "w", encoding="utf-8") as f:

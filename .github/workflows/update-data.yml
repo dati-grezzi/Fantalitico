@@ -56,10 +56,19 @@ jobs:
         run: python calciomagazine_scraper.py
         continue-on-error: true
 
+      # QUARTA e QUINTA FONTE (17/10) — Gazzetta e Sky, lette dalla pagina delle
+      # probabili di Fantacalcio-Online, che le affianca a Fantacalcio.it e SOS Fanta.
+      # Le colonne di queste due servono solo a coprire i giocatori che i nostri
+      # scraper diretti non vedono. Se la pagina è ferma da più di 4 giorni o non
+      # c'è ancora, le fonti vengono svuotate e il consensus le ignora.
+      - name: Titolarità da Fantacalcio-Online (Gazzetta e Sky, più copertura)
+        run: python fco_titolarita_scraper.py
+        continue-on-error: true
+
       - name: Prezzi reali d'asta da Fantacalcio-Online (sostituisce la stima FVM per il Max % in Asta)
         run: python fantacalcio_online_scraper.py
 
-      - name: Consensus titolarità (fantacalcio.it + sosfanta.com + calciomagazine.it)
+      - name: Consensus titolarità (fantacalcio.it, sosfanta.com, gazzetta.it, sky.it, calciomagazine.it)
         run: python titolarita_consensus.py
 
       # UNDERSTAT riattivato il 25/08 — il sito ha finalmente pubblicato la
