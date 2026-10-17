@@ -273,7 +273,7 @@ input[type=range]{width:100%; accent-color:var(--fluo); height:26px}
 .mkhint{font-size:13px; color:var(--dim); padding:2px 4px 8px; line-height:1.4}
 .mkline{display:flex; align-items:center; gap:8px; padding:6px 10px}
 .mkteam{font-size:12px; color:var(--dim); font-weight:400}
-.mkstat{text-align:center; font-weight:800; font-variant-numeric:tabular-nums; font-size:14px; flex-shrink:0; min-width:38px}
+.mkstat{text-align:center; font-weight:800; font-variant-numeric:tabular-nums; font-size:14px; flex-shrink:0; min-width:32px}
 .mkstat .mksub{display:block; font-size:8px; font-weight:600; color:var(--dim); text-transform:uppercase; letter-spacing:.06em}
 .mkdelta{font-weight:900; font-variant-numeric:tabular-nums; font-size:13px; flex-shrink:0; min-width:42px; text-align:right}
 .mktag{font-size:9px; font-weight:800; border:1px solid; border-radius:99px; padding:1px 6px; flex-shrink:0}
@@ -2006,6 +2006,14 @@ function availab(st){ return indiceTitolarita(st); }
 function marketScore(st){                  // qualità × titolarità: chi non gioca non viene consigliato
   return (shrunk(st) + teamAdj(st)) * (0.15 + 0.85*availab(st));
 }
+const MKT_MIN_GAIN = 0.30;   // sotto questa differenza di punteggio uno scambio e' rumore, non un consiglio
+// Non si consiglia chi ha un solo dato: con 0-1 presenze il rating e' quasi tutto
+// prior (una partita da 10 porta il rating a 6,70) e la titolarita' viene da una
+// sola fonte. Servono almeno 2 presenze oppure 2 fonti che concordano sul nome.
+function evidenzaSufficiente(p){
+  const f = S.titolarita_reale && S.titolarita_reale[p.id];
+  return (p.pv||0) >= 2 || (f && (f.n_fonti||0) >= 2);
+}
 function statsReady(){                     // i dati stagionali (fantamedie reali) sono disponibili?
   return S.db.filter(p => (p.fm||0) >= 4).length >= 30;
 }
@@ -2015,6 +2023,7 @@ function mkRow(st, tag, tagColor, delta){
     <span class="mrole" style="color:${ROLE_COLOR[role]}">${role}</span>
     <span class="mname">${esc(st.nome)}<span class="mkteam"> ${esc(st.squadra||"")}</span></span>
     <span class="mkstat">${fmt(shrunk(st),2)}<span class="mksub">rating</span></span>
+    <span class="mkstat">${av}%<span class="mksub">tit.</span></span>
     <span class="mkstat">${st.pv||0}<span class="mksub">pres.</span></span>
     ${delta!=null?`<span class="mkdelta ${delta>=0?"pos":"neg"}">${delta>=0?"+":""}${fmt(delta,2)}</span>`:""}
     ${tag?`<span class="mktag" style="color:${tagColor};border-color:${tagColor}">${tag}</span>`:""}
@@ -2075,19 +2084,20 @@ function renderMercato(){
   const used=new Set(); const swaps=[];
   for(const st of mine.slice(0,6)){
     const role=roleOf(st);
-    const fa=freeByRole[role].find(p=>!used.has(p.id) && marketScore(p)>marketScore(st)+0.05);
+    const fa=freeByRole[role].find(p=>!used.has(p.id) && evidenzaSufficiente(p) && marketScore(p)>marketScore(st)+MKT_MIN_GAIN);
     if(fa){ used.add(fa.id); swaps.push({out:st, in:fa}); }
   }
 
   let html=`<div class="rolehead" style="color:var(--dim)">${esc(S.currentLeague)} · ${esc(S.myTeamName)} — spunti di mercato</div>`;
   if(swaps.length){
-    html+=`<div class="mkhint">I tuoi anelli deboli e il miglior svincolato per rimpiazzarli (per rating e titolarità):</div>`;
+    html+=`<div class="mkhint">I tuoi anelli deboli e il miglior svincolato per rimpiazzarli. Il criterio è <b>rating × titolarità</b>
+      (chi non gioca vale poco, anche se il rating è alto): il numero verde è la differenza fra i due punteggi, non fra i rating.</div>`;
     for(const s of swaps){
       const d=marketScore(s.in)-marketScore(s.out);
       html+=`<div class="card" style="padding:8px 4px; margin-bottom:8px">
         ${mkRow(s.out,"CEDI","var(--red)")}
         <div class="mkarrow">↓ rimpiazza con</div>
-        ${mkRow(s.in,"PRENDI","var(--fluo)", shrunk(s.in)-shrunk(s.out))}
+        ${mkRow(s.in,"PRENDI","var(--fluo)", d)}
       </div>`;
     }
   } else {
