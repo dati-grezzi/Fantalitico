@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-10-19T22:00:23.808675+00:00",
+  "aggiornato": "2026-10-20T10:51:02.140548+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -33,6 +33,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Kolasinac",
+          "dettaglio": "Problema muscolare, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "2640",
+          "match_score": 1.0
+        },
+        {
           "nome": "Hien",
           "dettaglio": "Fuori per una lesione del tendine prossimale del muscolo semimembranoso della coscia sinistra, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -54,13 +61,7 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [
-        {
-          "nome": "Elmas",
-          "id": "4479",
-          "match_score": 1.0
-        }
-      ],
+      "squalificati": [],
       "diffidati": []
     },
     "bologna": {
@@ -70,6 +71,13 @@
           "dettaglio": "Lesione di primo grado al bicipite femorale della coscia destra. in dubbio per la 9a",
           "rientro_giornata": 9,
           "id": "2167",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Piccoli",
+          "dettaglio": "Problema ai flessori, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "4359",
           "match_score": 1.0
         },
         {
@@ -106,17 +114,24 @@
     "como": {
       "infortunati": [
         {
-          "nome": "Diao",
-          "dettaglio": "Problema muscolare, in dubbio per la 8a",
-          "rientro_giornata": 8,
-          "id": "6967",
+          "nome": "Kean",
+          "dettaglio": "Forte contusione, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "2097",
           "match_score": 1.0
         },
         {
-          "nome": "Kean",
-          "dettaglio": "Forte contusione, in dubbio per la 8a",
-          "rientro_giornata": 8,
-          "id": "2097",
+          "nome": "Chalobah T.",
+          "dettaglio": "Affaticamento muscolare, in dubbio per la 10a",
+          "rientro_giornata": 10,
+          "id": "5641",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Diao",
+          "dettaglio": "Problema muscolare, in dubbio per l'11a",
+          "rientro_giornata": null,
+          "id": "6967",
           "match_score": 1.0
         }
       ],
@@ -138,13 +153,6 @@
           "rientro_giornata": 10,
           "id": "5449",
           "match_score": 1.0
-        },
-        {
-          "nome": "Ranieri L.",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "4378",
-          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -158,13 +166,6 @@
           "rientro_giornata": 9,
           "id": "7550",
           "match_score": 1.0
-        },
-        {
-          "nome": "Calvani",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "7467",
-          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -177,6 +178,13 @@
           "dettaglio": "Distorsione alla caviglia, in dubbio per l'8a",
           "rientro_giornata": null,
           "id": "4923",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Ehizibue",
+          "dettaglio": "Fastidio muscolare, in dubbio per l'8a",
+          "rientro_giornata": null,
+          "id": "6047",
           "match_score": 1.0
         },
         {
@@ -206,13 +214,6 @@
           "rientro_giornata": null,
           "id": "6980",
           "match_score": 1.0
-        },
-        {
-          "nome": "Ehizibue",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "6047",
-          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -229,9 +230,16 @@
         },
         {
           "nome": "Jones C.",
-          "dettaglio": "Risentimento miofasciale agli adduttori della coscia destra, in dubbio per la 10a",
-          "rientro_giornata": 10,
+          "dettaglio": "Risentimento miofasciale agli adduttori della coscia destra, in dubbio per la 11a",
+          "rientro_giornata": 11,
           "id": "5172",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Pavard",
+          "dettaglio": "Risentimento agli adduttori della coscia destra, in dubbio per la 11a",
+          "rientro_giornata": 11,
+          "id": "4177",
           "match_score": 1.0
         },
         {
@@ -239,13 +247,6 @@
           "dettaglio": "Risentimento muscolare ai flessori della coscia sinistra, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "2764",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Pavard",
-          "dettaglio": "Risentimento agli adduttori della coscia destra, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "4177",
           "match_score": 1.0
         }
       ],
@@ -256,9 +257,16 @@
       "infortunati": [
         {
           "nome": "Ekhator",
-          "dettaglio": "Lesione di medio grado del muscolo semitendinoso, in dubbio per la 8a",
-          "rientro_giornata": 8,
+          "dettaglio": "Lesione di medio grado del muscolo semitendinoso, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "6822",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Conceicao",
+          "dettaglio": "Lussazione gleno-omerale, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "6884",
           "match_score": 1.0
         },
         {
@@ -296,31 +304,10 @@
     "lazio": {
       "infortunati": [
         {
-          "nome": "Cancellieri",
-          "dettaglio": "Ferita sopra al ginocchio, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "5500",
-          "match_score": 1.0
-        },
-        {
           "nome": "Gudmundsson A.",
-          "dettaglio": "Lussazione dell’articolazione gleno-omerale destra, spontaneamente ridotta, in dubbio per la 8a",
-          "rientro_giornata": 8,
+          "dettaglio": "Lussazione dell’articolazione gleno-omerale destra, spontaneamente ridotta, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "5800",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Marusic",
-          "dettaglio": "Ricaduta dopo lo stiramento di primo grado ai flessori della coscia sinistra, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "2188",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Rovella",
-          "dettaglio": "Lesione muscolare al polpaccio, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "4459",
           "match_score": 1.0
         }
       ],
@@ -341,6 +328,13 @@
           "dettaglio": "Problema muscolare, in dubbio per la 9a",
           "rientro_giornata": 9,
           "id": "5007",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Coulibaly L.",
+          "dettaglio": "Lesione di primo grado del bicipite femorale della coscia destra, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "5504",
           "match_score": 1.0
         }
       ],
@@ -377,6 +371,13 @@
     "monza": {
       "infortunati": [
         {
+          "nome": "Lucchesi",
+          "dettaglio": "Problema fisico, in dubbio per l'8a",
+          "rientro_giornata": null,
+          "id": "6659",
+          "match_score": 1.0
+        },
+        {
           "nome": "Maye",
           "dettaglio": "Problema fisico, in dubbio per l'8a",
           "rientro_giornata": null,
@@ -399,34 +400,28 @@
         },
         {
           "nome": "Pessina",
-          "dettaglio": "Operato per lussazione della rotula del ginocchio destro, in dubbio per la 9a",
-          "rientro_giornata": 9,
+          "dettaglio": "Operato per lussazione della rotula del ginocchio destro, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "2741",
           "match_score": 1.0
         },
         {
           "nome": "Ziolkowski",
-          "dettaglio": "Problema alla fascia plantare, in dubbio per la 9a",
-          "rientro_giornata": 9,
+          "dettaglio": "Problema alla fascia plantare, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "7260",
           "match_score": 1.0
         }
       ],
-      "squalificati": [
-        {
-          "nome": "Lucchesi",
-          "id": "6659",
-          "match_score": 1.0
-        }
-      ],
+      "squalificati": [],
       "diffidati": []
     },
     "napoli": {
       "infortunati": [
         {
           "nome": "Vergara",
-          "dettaglio": "Lesione distrattiva di medio grado del soleo destro, in dubbio per la 10a",
-          "rientro_giornata": 10,
+          "dettaglio": "Lesione distrattiva di medio grado del soleo destro, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "7223",
           "match_score": 1.0
         },
@@ -449,6 +444,13 @@
           "dettaglio": "Lesione di secondo grado del retto femorale della coscia destra, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "7563",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Santos A.",
+          "dettaglio": "Lesione distrattiva di medio grado del bicipite femorale sinistro, in dubbio per la 14a",
+          "rientro_giornata": 14,
+          "id": "7351",
           "match_score": 1.0
         }
       ],
@@ -485,13 +487,6 @@
     "roma": {
       "infortunati": [
         {
-          "nome": "Cristante",
-          "dettaglio": "Fastidio al ginocchio, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "779",
-          "match_score": 1.0
-        },
-        {
           "nome": "Dybala",
           "dettaglio": "Lesione muscolare, in dubbio per l'11a",
           "rientro_giornata": null,
@@ -513,13 +508,7 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [
-        {
-          "nome": "Malen",
-          "id": "5585",
-          "match_score": 1.0
-        }
-      ],
+      "squalificati": [],
       "diffidati": []
     },
     "sassuolo": {
@@ -560,8 +549,8 @@
       "infortunati": [
         {
           "nome": "Fortini",
-          "dettaglio": "Problema muscolare alla coscia destra, in dubbio per la 7a",
-          "rientro_giornata": 7,
+          "dettaglio": "Problema muscolare alla coscia destra, in dubbio per la 8a",
+          "rientro_giornata": 8,
           "id": "7069",
           "match_score": 1.0
         },
@@ -587,9 +576,16 @@
         },
         {
           "nome": "Bayo V.",
-          "dettaglio": "Lesione al bicipite femorale della coscia destra, in dubbio per la 9",
-          "rientro_giornata": null,
+          "dettaglio": "Lesione al bicipite femorale della coscia destra, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "7161",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Alaba",
+          "dettaglio": "Risentimento muscolare al polpaccio destro, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "2404",
           "match_score": 1.0
         },
         {
