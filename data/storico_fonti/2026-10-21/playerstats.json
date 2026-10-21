@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-21T11:04:50.367869+00:00",
+ "aggiornato": "2026-10-21T21:18:11.979201+00:00",
  "fonte": "playerstats.football (statistiche difensive/di passaggio, per90, solo top-50 per categoria)",
  "note": "Mapping ID fantacalcio → {tackles_p90, interceptions_p90, clearances_p90, duels_p90, key_passes_p90, accurate_passes_p90, rating}. Copertura parziale: solo chi rientra nei primi 50 di almeno una categoria.",
  "giocatori": {
@@ -86,7 +86,7 @@
    "tackles_p90": 2.43,
    "interceptions_p90": 1.14,
    "accurate_passes_p90": 51.43,
-   "rating": 7.07,
+   "rating": 7.09,
    "playerstats_name": "Pierre Kalulu",
    "match_score": 0.9
   },
@@ -317,7 +317,7 @@
    "duels_p90": 10.71,
    "key_passes_p90": 1.79,
    "accurate_passes_p90": 48.21,
-   "rating": 9.13,
+   "rating": 9.11,
    "playerstats_name": "Nuno Tavares",
    "match_score": 0.9
   },
@@ -361,7 +361,7 @@
    "interceptions_p90": 1.19,
    "duels_p90": 8.48,
    "accurate_passes_p90": 63.82,
-   "rating": 7.33,
+   "rating": 7.32,
    "playerstats_name": "Mario Gila",
    "match_score": 0.9
   },
@@ -722,7 +722,7 @@
    "minuti": 537,
    "duels_p90": 17.09,
    "key_passes_p90": 2.18,
-   "rating": 8.48,
+   "rating": 8.47,
    "shots_p90": 4.53,
    "shots_on_target_p90": 1.51,
    "playerstats_name": "Franco Mastantuono",
@@ -891,12 +891,10 @@
    "playerstats_name": "Douglas Luiz",
    "match_score": 0.9
   },
-  "7484": {
-   "minuti": 586,
-   "duels_p90": 8.45,
-   "shots_p90": 4.15,
-   "shots_on_target_p90": 1.54,
-   "playerstats_name": "Akor Adams",
+  "5687": {
+   "minuti": 537,
+   "duels_p90": 9.22,
+   "playerstats_name": "Nikola Vlašić",
    "match_score": 0.9
   },
   "7472": {
@@ -1016,7 +1014,7 @@
    "minuti": 486,
    "key_passes_p90": 1.67,
    "accurate_passes_p90": 52.22,
-   "rating": 9.69,
+   "rating": 9.68,
    "playerstats_name": "Adrien Rabiot",
    "match_score": 0.9
   },
@@ -1079,7 +1077,7 @@
   "6884": {
    "minuti": 433,
    "key_passes_p90": 1.66,
-   "rating": 10.25,
+   "rating": 10.24,
    "shots_p90": 2.91,
    "shots_on_target_p90": 1.25,
    "playerstats_name": "Francisco Conceição",
@@ -1172,19 +1170,19 @@
    "playerstats_name": "Filip Stanković",
    "match_score": 0.9
   },
+  "4431": {
+   "minuti": 630,
+   "rating": 7.21,
+   "saves_p90": 4.43,
+   "playerstats_name": "Marco Carnesecchi",
+   "match_score": 0.9
+  },
   "6684": {
    "minuti": 615,
    "rating": 7.38,
    "shots_p90": 2.93,
    "shots_on_target_p90": 0.73,
    "playerstats_name": "Jurgen Ekkelenkamp",
-   "match_score": 0.9
-  },
-  "4431": {
-   "minuti": 630,
-   "rating": 7.2,
-   "saves_p90": 4.43,
-   "playerstats_name": "Marco Carnesecchi",
    "match_score": 0.9
   },
   "6415": {
@@ -1233,8 +1231,15 @@
   },
   "6294": {
    "minuti": 566,
-   "rating": 7.75,
+   "rating": 7.76,
    "playerstats_name": "Cher Ndour",
+   "match_score": 0.9
+  },
+  "7484": {
+   "minuti": 586,
+   "shots_p90": 4.15,
+   "shots_on_target_p90": 1.54,
+   "playerstats_name": "Akor Adams",
    "match_score": 0.9
   },
   "4871": {

@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-10-21T11:03:05.765495+00:00",
+  "aggiornato": "2026-10-21T21:16:23.616225+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -136,7 +136,7 @@
         },
         {
           "nome": "Rodriguez Je.",
-          "dettaglio": "In dubbio per la 16a",
+          "dettaglio": "Lesione muscolare di secondo grado, in dubbio per la 16a",
           "rientro_giornata": 16,
           "id": "7129",
           "match_score": 1.0
@@ -224,7 +224,13 @@
         }
       ],
       "squalificati": [],
-      "diffidati": []
+      "diffidati": [
+        {
+          "nome": "Ostigard",
+          "id": "5750",
+          "match_score": 1.0
+        }
+      ]
     },
     "inter": {
       "infortunati": [
@@ -351,6 +357,13 @@
     "milan": {
       "infortunati": [
         {
+          "nome": "Ramos G.",
+          "dettaglio": "Sovraccarico muscolare al polpaccio, in dubbio per l'8a",
+          "rientro_giornata": null,
+          "id": "6397",
+          "match_score": 1.0
+        },
+        {
           "nome": "Terracciano",
           "dettaglio": "Trauma alla spalla destra, in dubbio per l'8a",
           "rientro_giornata": null,
@@ -433,13 +446,6 @@
     "napoli": {
       "infortunati": [
         {
-          "nome": "Vergara",
-          "dettaglio": "Lesione distrattiva di medio grado del soleo destro, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "7223",
-          "match_score": 1.0
-        },
-        {
           "nome": "Neres",
           "dettaglio": "Lesione di basso grado del muscolo semimembranoso della coscia destra, in dubbio per l'11a",
           "rientro_giornata": null,
@@ -462,8 +468,8 @@
         },
         {
           "nome": "Santos A.",
-          "dettaglio": "Lesione distrattiva di medio grado del bicipite femorale sinistro, in dubbio per la 14a",
-          "rientro_giornata": 14,
+          "dettaglio": "Lesione distrattiva di medio grado del bicipite femorale sinistro, in dubbio per la 16a",
+          "rientro_giornata": 16,
           "id": "7351",
           "match_score": 1.0
         }
@@ -500,6 +506,13 @@
     },
     "roma": {
       "infortunati": [
+        {
+          "nome": "Pellegrini Lo.",
+          "dettaglio": "Problema muscolare, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "530",
+          "match_score": 1.0
+        },
         {
           "nome": "Dybala",
           "dettaglio": "Lesione muscolare, in dubbio per l'11a",
@@ -573,6 +586,13 @@
           "dettaglio": "Problema all'adduttore, in dubbio per la 10a",
           "rientro_giornata": 10,
           "id": "6005",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Rodriguez R.",
+          "dettaglio": "Lesione tendinea di basso grado ai muscoli flessori della coscia sinistra, in dubbio per la 10a",
+          "rientro_giornata": 10,
+          "id": "2169",
           "match_score": 1.0
         }
       ],
