@@ -1,6 +1,6 @@
 {
  "fonte": "gazzetta.it",
- "aggiornato": "2026-10-21T21:16:29.504168+00:00",
+ "aggiornato": "2026-10-22T11:01:34.325644+00:00",
  "giornata": 8,
  "via": "fantacalcio-online.com",
  "giocatori": {
@@ -1247,13 +1247,21 @@
   "2296": {
    "nome": "Mancini",
    "squadra": "roma",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.8,
+   "percentuale": 80,
    "match_score": 1.0,
    "lista": "titolare"
   },
   "4317": {
    "nome": "N'Dicka",
+   "squadra": "roma",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "779": {
+   "nome": "Cristante",
    "squadra": "roma",
    "confidence": 0.9,
    "percentuale": 90,
@@ -1279,8 +1287,8 @@
   "6190": {
    "nome": "Pisilli",
    "squadra": "roma",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.6,
+   "percentuale": 60,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -1319,8 +1327,8 @@
   "4705": {
    "nome": "Balerdi",
    "squadra": "roma",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.2,
+   "percentuale": 20,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1342,14 +1350,6 @@
   },
   "6986": {
    "nome": "Rensch",
-   "squadra": "roma",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "779": {
-   "nome": "Cristante",
    "squadra": "roma",
    "confidence": 0.3,
    "percentuale": 30,
@@ -1404,14 +1404,6 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "6629": {
-   "nome": "Dele-Bashiru",
-   "squadra": "lazio",
-   "confidence": 0.9,
-   "percentuale": 90,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
   "7131": {
    "nome": "Floriani Mussolini",
    "squadra": "lazio",
@@ -1422,6 +1414,14 @@
   },
   "2848": {
    "nome": "Frattesi",
+   "squadra": "lazio",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "7314": {
+   "nome": "Taylor K.",
    "squadra": "lazio",
    "confidence": 0.9,
    "percentuale": 90,
@@ -1494,6 +1494,22 @@
   },
   "333": {
    "nome": "Cataldi",
+   "squadra": "lazio",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "6629": {
+   "nome": "Dele-Bashiru",
+   "squadra": "lazio",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "5500": {
+   "nome": "Cancellieri",
    "squadra": "lazio",
    "confidence": 0.3,
    "percentuale": 30,
@@ -1676,6 +1692,166 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "5116": {
+   "nome": "Martinez Jo.",
+   "squadra": "inter",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "4159": {
+   "nome": "Akanji",
+   "squadra": "inter",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "2120": {
+   "nome": "Bastoni",
+   "squadra": "inter",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "6217": {
+   "nome": "Bisseck",
+   "squadra": "inter",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "1870": {
+   "nome": "Barella",
+   "squadra": "inter",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "2194": {
+   "nome": "Calhanoglu",
+   "squadra": "inter",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "6274": {
+   "nome": "Diouf",
+   "squadra": "inter",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "7070": {
+   "nome": "Sucic P.",
+   "squadra": "inter",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "152": {
+   "nome": "Zielinski",
+   "squadra": "inter",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "7071": {
+   "nome": "Esposito F.P.",
+   "squadra": "inter",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "4871": {
+   "nome": "Thuram",
+   "squadra": "inter",
+   "confidence": 0.55,
+   "percentuale": 55,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "1926": {
+   "nome": "Di Gennaro",
+   "squadra": "inter",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "2814": {
+   "nome": "Provedel",
+   "squadra": "inter",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "5877": {
+   "nome": "Carlos Augusto",
+   "squadra": "inter",
+   "confidence": 0.6,
+   "percentuale": 60,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "254": {
+   "nome": "Dimarco",
+   "squadra": "inter",
+   "confidence": 0.4,
+   "percentuale": 40,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "5301": {
+   "nome": "Luis Henrique",
+   "squadra": "inter",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "2529": {
+   "nome": "Mkhitaryan",
+   "squadra": "inter",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "5982": {
+   "nome": "Spence",
+   "squadra": "inter",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "6503": {
+   "nome": "Stankovic A.",
+   "squadra": "inter",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "6669": {
+   "nome": "Bonny",
+   "squadra": "inter",
+   "confidence": 0.45,
+   "percentuale": 45,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
   "2521": {
    "nome": "De Gea",
    "squadra": "fiorentina",
@@ -1703,16 +1879,24 @@
   "5603": {
    "nome": "Pongracic",
    "squadra": "fiorentina",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "7294": {
+   "nome": "Valdepenas",
+   "squadra": "fiorentina",
+   "confidence": 0.55,
+   "percentuale": 55,
    "match_score": 1.0,
    "lista": "titolare"
   },
   "7410": {
    "nome": "Viery",
    "squadra": "fiorentina",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.45,
+   "percentuale": 45,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -1756,14 +1940,6 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "7023": {
-   "nome": "Pellegrino M.",
-   "squadra": "fiorentina",
-   "confidence": 0.9,
-   "percentuale": 90,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
   "6403": {
    "nome": "Christensen O.",
    "squadra": "fiorentina",
@@ -1782,14 +1958,6 @@
   },
   "4378": {
    "nome": "Ranieri L.",
-   "squadra": "fiorentina",
-   "confidence": 0.9,
-   "percentuale": 90,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "7294": {
-   "nome": "Valdepenas",
    "squadra": "fiorentina",
    "confidence": 0.3,
    "percentuale": 30,
@@ -1831,8 +1999,8 @@
   "5694": {
    "nome": "Beto",
    "squadra": "fiorentina",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.4,
+   "percentuale": 40,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1841,6 +2009,14 @@
    "squadra": "fiorentina",
    "confidence": 0.3,
    "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "7023": {
+   "nome": "Pellegrino M.",
+   "squadra": "fiorentina",
+   "confidence": 0.6,
+   "percentuale": 60,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -2247,8 +2423,8 @@
   "795": {
    "nome": "El Shaarawy",
    "squadra": "genoa",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -3031,6 +3207,166 @@
   "7092": {
    "nome": "Jovanovic",
    "squadra": "udinese",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "4312": {
+   "nome": "Maignan",
+   "squadra": "milan",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "5739": {
+   "nome": "De Winter",
+   "squadra": "milan",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "5833": {
+   "nome": "Gila",
+   "squadra": "milan",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "5022": {
+   "nome": "Pavlovic",
+   "squadra": "milan",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "2606": {
+   "nome": "Modric",
+   "squadra": "milan",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "5295": {
+   "nome": "Musah",
+   "squadra": "milan",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "2379": {
+   "nome": "Rabiot",
+   "squadra": "milan",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "6519": {
+   "nome": "Camarda",
+   "squadra": "milan",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "6618": {
+   "nome": "Cissè A.",
+   "squadra": "milan",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "2423": {
+   "nome": "Pulisic",
+   "squadra": "milan",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "6813": {
+   "nome": "Torriani",
+   "squadra": "milan",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "6496": {
+   "nome": "Bartesaghi",
+   "squadra": "milan",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "7525": {
+   "nome": "Diawara S.",
+   "squadra": "milan",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "5273": {
+   "nome": "Estupinan",
+   "squadra": "milan",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "4751": {
+   "nome": "Tomori",
+   "squadra": "milan",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "7572": {
+   "nome": "Comotto",
+   "squadra": "milan",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "7618": {
+   "nome": "Hutchinson",
+   "squadra": "milan",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "7203": {
+   "nome": "Jashari",
+   "squadra": "milan",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "4199": {
+   "nome": "Loftus-Cheek",
+   "squadra": "milan",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "5812": {
+   "nome": "Terracciano F.",
+   "squadra": "milan",
    "confidence": 0.3,
    "percentuale": 30,
    "match_score": 1.0,
