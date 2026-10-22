@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-10-22T11:01:29.626203+00:00",
+  "aggiornato": "2026-10-22T21:13:00.931378+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -202,13 +202,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Meichtry",
-          "dettaglio": "Distrazione della muscolatura di un’anca, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "7409",
-          "match_score": 1.0
-        },
-        {
           "nome": "Sow",
           "dettaglio": "Distrazione muscolare al bicipite femorale della coscia sinistra, in dubbio per l'8a",
           "rientro_giornata": null,
@@ -317,6 +310,20 @@
     "lazio": {
       "infortunati": [
         {
+          "nome": "Marusic",
+          "dettaglio": "Problema muscolare, in dubbio per l'8a",
+          "rientro_giornata": null,
+          "id": "2188",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Rovella",
+          "dettaglio": "Lesione al polpaccio, in dubbio per l'8a",
+          "rientro_giornata": null,
+          "id": "4459",
+          "match_score": 1.0
+        },
+        {
           "nome": "Gudmundsson A.",
           "dettaglio": "Lussazione dell’articolazione gleno-omerale destra, spontaneamente ridotta, in dubbio per la 9a",
           "rientro_giornata": 9,
@@ -334,6 +341,13 @@
           "dettaglio": "Sovraccarico, in dubbio per l'8a",
           "rientro_giornata": null,
           "id": "6015",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Pierotti",
+          "dettaglio": "Trauma contusivo alla caviglia sinistra, in dubbio per l'8a",
+          "rientro_giornata": null,
+          "id": "6549",
           "match_score": 1.0
         },
         {
@@ -357,13 +371,6 @@
     "milan": {
       "infortunati": [
         {
-          "nome": "Ramos G.",
-          "dettaglio": "Sovraccarico muscolare al polpaccio, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "6397",
-          "match_score": 1.0
-        },
-        {
           "nome": "Terracciano",
           "dettaglio": "Trauma alla spalla destra, in dubbio per l'8a",
           "rientro_giornata": null,
@@ -372,8 +379,8 @@
         },
         {
           "nome": "Chukwueze",
-          "dettaglio": "Problema all'anca, in dubbio per la 9a",
-          "rientro_giornata": 9,
+          "dettaglio": "Trattamento infiltrativo per un problema all'anca sinistra, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "4856",
           "match_score": 1.0
         },
@@ -398,31 +405,10 @@
     "monza": {
       "infortunati": [
         {
-          "nome": "Lucchesi",
-          "dettaglio": "Problema fisico, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "6659",
-          "match_score": 1.0
-        },
-        {
           "nome": "Maye",
           "dettaglio": "Problema fisico, in dubbio per l'8a",
           "rientro_giornata": null,
           "id": "7604",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Tourè I.",
-          "dettaglio": "Sta recuperando da un infortunio al ginocchio, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "7146",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Zeballos",
-          "dettaglio": "Infiammazione al ginocchio, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "7620",
           "match_score": 1.0
         },
         {
@@ -507,13 +493,6 @@
     "roma": {
       "infortunati": [
         {
-          "nome": "Pellegrini Lo.",
-          "dettaglio": "Problema muscolare, in dubbio per la 9a",
-          "rientro_giornata": 9,
-          "id": "530",
-          "match_score": 1.0
-        },
-        {
           "nome": "Dybala",
           "dettaglio": "Lesione muscolare, in dubbio per l'11a",
           "rientro_giornata": null,
@@ -532,6 +511,13 @@
           "dettaglio": "Frattura da stress al quinto dito del piede, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "5841",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Pellegrini Lo.",
+          "dettaglio": "Lesione muscolare di alto grado, in dubbio per la 21a",
+          "rientro_giornata": 21,
+          "id": "530",
           "match_score": 1.0
         }
       ],
@@ -601,13 +587,6 @@
     },
     "udinese": {
       "infortunati": [
-        {
-          "nome": "Zaniolo",
-          "dettaglio": "Lesione al bicipite femorale della coscia destra, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "2766",
-          "match_score": 1.0
-        },
         {
           "nome": "Bayo V.",
           "dettaglio": "Lesione al bicipite femorale della coscia destra, in dubbio per la 9a",
