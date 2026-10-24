@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-10-24T10:09:36.956180+00:00",
+  "aggiornato": "2026-10-24T20:13:55.073909+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -195,16 +195,23 @@
     "genoa": {
       "infortunati": [
         {
+          "nome": "Ehizibue",
+          "dettaglio": "Problema muscolare, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "6047",
+          "match_score": 1.0
+        },
+        {
           "nome": "Havel",
-          "dettaglio": "Infortunio alla caviglia, in dubbio per l'8a",
-          "rientro_giornata": null,
+          "dettaglio": "Infortunio alla caviglia, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "7453",
           "match_score": 1.0
         },
         {
           "nome": "Sow",
-          "dettaglio": "Distrazione muscolare al bicipite femorale della coscia sinistra, in dubbio per l'8a",
-          "rientro_giornata": null,
+          "dettaglio": "Distrazione muscolare al bicipite femorale della coscia sinistra, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "5946",
           "match_score": 1.0
         },
@@ -331,13 +338,6 @@
     "lazio": {
       "infortunati": [
         {
-          "nome": "Gudmundsson A.",
-          "dettaglio": "Lussazione dell’articolazione gleno-omerale destra, spontaneamente ridotta, in dubbio per la 9a",
-          "rientro_giornata": 9,
-          "id": "5800",
-          "match_score": 1.0
-        },
-        {
           "nome": "Marusic",
           "dettaglio": "Problema muscolare, in dubbio per l'9a",
           "rientro_giornata": null,
@@ -349,6 +349,13 @@
           "dettaglio": "Lesione al polpaccio, in dubbio per l'9a",
           "rientro_giornata": null,
           "id": "4459",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Gudmundsson A.",
+          "dettaglio": "Lussazione dell’articolazione gleno-omerale destra, spontaneamente ridotta, in dubbio per la 10a",
+          "rientro_giornata": 10,
+          "id": "5800",
           "match_score": 1.0
         }
       ],
@@ -365,13 +372,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Ilic",
-          "dettaglio": "Problema muscolare, in dubbio per la 9a",
-          "rientro_giornata": 9,
-          "id": "5007",
-          "match_score": 1.0
-        },
-        {
           "nome": "Coulibaly L.",
           "dettaglio": "Lesione di primo grado del bicipite femorale della coscia destra, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -384,6 +384,13 @@
           "rientro_giornata": null,
           "id": "6549",
           "match_score": 1.0
+        },
+        {
+          "nome": "Ilic",
+          "dettaglio": "Operato per lesione miotendinea del retto femorale sinistro con lesione parziale del tendine, in dubbio per la 28a",
+          "rientro_giornata": 28,
+          "id": "5007",
+          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -392,8 +399,29 @@
     "milan": {
       "infortunati": [
         {
+          "nome": "Gila",
+          "dettaglio": "Infiammazione da sovraccarico alla caviglia sinistra, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "5833",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Moreira",
+          "dettaglio": "Affaticamento al flessore sinistro, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "6372",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Rabiot",
+          "dettaglio": "Affaticamento al polpaccio destro, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "2379",
+          "match_score": 1.0
+        },
+        {
           "nome": "Terracciano",
-          "dettaglio": "Trauma alla spalla destra, in dubbio per l'8a",
+          "dettaglio": "Trauma alla spalla destra, in dubbio per l'9a",
           "rientro_giornata": null,
           "id": "2815",
           "match_score": 1.0
@@ -452,6 +480,13 @@
     },
     "napoli": {
       "infortunati": [
+        {
+          "nome": "Rrahmani",
+          "dettaglio": "Sindrome simil-influenzale, rientro previsto per la 9a",
+          "rientro_giornata": 9,
+          "id": "4409",
+          "match_score": 1.0
+        },
         {
           "nome": "Neres",
           "dettaglio": "Lesione di basso grado del muscolo semimembranoso della coscia destra, in dubbio per l'11a",
@@ -616,6 +651,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Zanoli",
+          "dettaglio": "Ricaduta, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "5527",
+          "match_score": 1.0
+        },
+        {
           "nome": "Alaba",
           "dettaglio": "Risentimento muscolare al polpaccio destro, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -636,20 +678,6 @@
     "venezia": {
       "infortunati": [
         {
-          "nome": "Bella-Kotchap",
-          "dettaglio": "Problema fisico, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "7253",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Sverko",
-          "dettaglio": "Infortunio alle anche, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "6673",
-          "match_score": 1.0
-        },
-        {
           "nome": "Adorante",
           "dettaglio": "Operazione per un problema alla schiena, in dubbio per l'9a",
           "rientro_giornata": null,
@@ -657,17 +685,17 @@
           "match_score": 1.0
         },
         {
-          "nome": "Busio",
-          "dettaglio": "Dstrazione intratendinea del bicipite femorale destro, in dubbio per la 9a",
-          "rientro_giornata": 9,
-          "id": "5507",
-          "match_score": 1.0
-        },
-        {
           "nome": "Correia T.",
           "dettaglio": "Problema muscolare, in dubbio per l'9a",
           "rientro_giornata": null,
           "id": "4845",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Sverko",
+          "dettaglio": "Infortunio alle anche, in dubbio per l'9a",
+          "rientro_giornata": null,
+          "id": "6673",
           "match_score": 1.0
         },
         {
