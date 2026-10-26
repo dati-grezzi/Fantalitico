@@ -1,14 +1,14 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-10-25T20:23:48.975573+00:00",
+  "aggiornato": "2026-10-26T12:08:12.259459+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
         {
-          "nome": "Sulemana K.",
-          "dettaglio": "Lesione del collaterale mediale di secondo grado del ginocchio sinistro, in dubbio per l'8a",
-          "rientro_giornata": null,
-          "id": "5918",
+          "nome": "Bellanova",
+          "dettaglio": "Problema muscolare alla coscia sinistra, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "4887",
           "match_score": 1.0
         },
         {
@@ -30,6 +30,13 @@
           "dettaglio": "Distrazione di basso grado dei muscoli flessori della gamba sinistra, in dubbio per la 9a",
           "rientro_giornata": 9,
           "id": "5526",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Sulemana K.",
+          "dettaglio": "Lesione del collaterale mediale di secondo grado del ginocchio sinistro, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "5918",
           "match_score": 1.0
         },
         {
@@ -95,9 +102,16 @@
       "infortunati": [
         {
           "nome": "Idrissi R.",
-          "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per l'9a",
-          "rientro_giornata": null,
+          "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "7125",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Winks",
+          "dettaglio": "Problema alla schiena, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "4260",
           "match_score": 1.0
         },
         {
@@ -122,7 +136,7 @@
         },
         {
           "nome": "Liberali",
-          "dettaglio": "Problema al soleo, in dubbio per la 9a giornata",
+          "dettaglio": "Problema al soleo, in dubbio per la 9a",
           "rientro_giornata": 9,
           "id": "6678",
           "match_score": 1.0
@@ -156,9 +170,16 @@
       "infortunati": [
         {
           "nome": "Atta",
-          "dettaglio": "Sovraccarico funzionale all'addome, in dubbio per l'9a",
-          "rientro_giornata": null,
+          "dettaglio": "Sovraccarico funzionale all'addome, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "6908",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Pongracic",
+          "dettaglio": "Problema al bicipite femorale della gamba destra, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "5603",
           "match_score": 1.0
         },
         {
@@ -220,6 +241,13 @@
           "dettaglio": "Intervento chirurgico di “pulizia” del tendine rotuleo, in dubbio per l'9a",
           "rientro_giornata": null,
           "id": "6980",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Wiafe",
+          "dettaglio": "Risentimento muscolare all'adduttore, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "7608",
           "match_score": 1.0
         }
       ],
@@ -345,13 +373,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Pinamonti",
-          "dettaglio": "Tracheite, in dubbio per la 9a",
-          "rientro_giornata": 9,
-          "id": "2038",
-          "match_score": 1.0
-        },
-        {
           "nome": "Rovella",
           "dettaglio": "Lesione al polpaccio, in dubbio per la 9a",
           "rientro_giornata": 9,
@@ -373,8 +394,8 @@
       "infortunati": [
         {
           "nome": "Berisha M.",
-          "dettaglio": "Sovraccarico, in dubbio per l'9a",
-          "rientro_giornata": null,
+          "dettaglio": "Sovraccarico, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "6015",
           "match_score": 1.0
         },
@@ -400,7 +421,13 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [],
+      "squalificati": [
+        {
+          "nome": "Gaspar K.",
+          "id": "6632",
+          "match_score": 1.0
+        }
+      ],
       "diffidati": []
     },
     "milan": {
@@ -410,6 +437,13 @@
           "dettaglio": "Infiammazione da sovraccarico alla caviglia sinistra, in dubbio per la 9a",
           "rientro_giornata": 9,
           "id": "5833",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Loftus-Cheek",
+          "dettaglio": "Problema muscolare, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "4199",
           "match_score": 1.0
         },
         {
@@ -488,6 +522,13 @@
     "napoli": {
       "infortunati": [
         {
+          "nome": "Badiashile",
+          "dettaglio": "Problema al quadricipite femorale destro, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "4664",
+          "match_score": 1.0
+        },
+        {
           "nome": "Rrahmani",
           "dettaglio": "Sindrome simil-influenzale, rientro previsto per la 9a",
           "rientro_giornata": 9,
@@ -556,13 +597,6 @@
     "roma": {
       "infortunati": [
         {
-          "nome": "Dybala",
-          "dettaglio": "Lesione muscolare, in dubbio per la 9a",
-          "rientro_giornata": 9,
-          "id": "309",
-          "match_score": 1.0
-        },
-        {
           "nome": "Konè M.",
           "dettaglio": "Lesione di primo grado alla coscia, in dubbio per l'11a",
           "rientro_giornata": null,
@@ -591,15 +625,15 @@
       "infortunati": [
         {
           "nome": "Boloca",
-          "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per l'9a",
-          "rientro_giornata": null,
+          "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "6219",
           "match_score": 1.0
         },
         {
           "nome": "Idzes",
-          "dettaglio": "Lesione di grado moderato al quadricipite della gamba sinistra, in dubbio per l'9a",
-          "rientro_giornata": null,
+          "dettaglio": "Lesione di grado moderato al quadricipite della gamba sinistra, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "6672",
           "match_score": 1.0
         },
@@ -625,9 +659,16 @@
       "infortunati": [
         {
           "nome": "Fortini",
-          "dettaglio": "Problema muscolare alla coscia destra, in dubbio per l'9a",
-          "rientro_giornata": null,
+          "dettaglio": "Problema muscolare alla coscia destra, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "7069",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Mandragora",
+          "dettaglio": "Problema al flessore della coscia sinistra, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "1933",
           "match_score": 1.0
         },
         {
@@ -655,6 +696,13 @@
           "dettaglio": "Lesione al bicipite femorale della coscia destra, in dubbio per la 9a",
           "rientro_giornata": 9,
           "id": "7161",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Solet",
+          "dettaglio": "Problema muscolare, in dubbio per la 9a",
+          "rientro_giornata": 9,
+          "id": "6956",
           "match_score": 1.0
         },
         {
@@ -686,22 +734,22 @@
       "infortunati": [
         {
           "nome": "Adorante",
-          "dettaglio": "Operazione per un problema alla schiena, in dubbio per l'9a",
-          "rientro_giornata": null,
+          "dettaglio": "Operazione per un problema alla schiena, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "4387",
           "match_score": 1.0
         },
         {
           "nome": "Correia T.",
-          "dettaglio": "Problema muscolare, in dubbio per l'9a",
-          "rientro_giornata": null,
+          "dettaglio": "Problema muscolare, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "4845",
           "match_score": 1.0
         },
         {
           "nome": "Sverko",
-          "dettaglio": "Infortunio alle anche, in dubbio per l'9a",
-          "rientro_giornata": null,
+          "dettaglio": "Infortunio alle anche, in dubbio per la 9a",
+          "rientro_giornata": 9,
           "id": "6673",
           "match_score": 1.0
         },
