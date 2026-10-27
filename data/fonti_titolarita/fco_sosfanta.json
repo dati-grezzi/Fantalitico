@@ -1,6 +1,6 @@
 {
  "fonte": "sosfanta.com",
- "aggiornato": "2026-10-26T22:18:55.964610+00:00",
+ "aggiornato": "2026-10-27T11:29:10.496260+00:00",
  "giornata": 9,
  "via": "fantacalcio-online.com",
  "giocatori": {
@@ -9,14 +9,6 @@
    "squadra": "sassuolo",
    "confidence": 0.4,
    "percentuale": 40,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
-  "7036": {
-   "nome": "Bakola",
-   "squadra": "sassuolo",
-   "confidence": 0.49,
-   "percentuale": 49,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -68,6 +60,14 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "6246": {
+   "nome": "Lipani",
+   "squadra": "sassuolo",
+   "confidence": 0.49,
+   "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
   "6024": {
    "nome": "Sulemana I.",
    "squadra": "sassuolo",
@@ -87,16 +87,16 @@
   "7347": {
    "nome": "Bowie",
    "squadra": "sassuolo",
-   "confidence": 0.45,
-   "percentuale": 45,
+   "confidence": 0.1,
+   "percentuale": 10,
    "match_score": 1.0,
    "lista": "panchina"
   },
   "6895": {
    "nome": "Dominguez B.",
    "squadra": "sassuolo",
-   "confidence": 0.45,
-   "percentuale": 45,
+   "confidence": 0.05,
+   "percentuale": 5,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -119,8 +119,8 @@
   "6320": {
    "nome": "Doekhi",
    "squadra": "lazio",
-   "confidence": 0.49,
-   "percentuale": 49,
+   "confidence": 0.45,
+   "percentuale": 45,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -135,8 +135,8 @@
   "4817": {
    "nome": "Pedraza",
    "squadra": "lazio",
-   "confidence": 0.4,
-   "percentuale": 40,
+   "confidence": 0.05,
+   "percentuale": 5,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -188,14 +188,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "4317": {
-   "nome": "N'Dicka",
-   "squadra": "roma",
-   "confidence": 0.49,
-   "percentuale": 49,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
   "6125": {
    "nome": "Vasquez D.",
    "squadra": "roma",
@@ -204,8 +196,8 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "6631": {
-   "nome": "Ghilardi",
+  "4807": {
+   "nome": "Hermoso",
    "squadra": "roma",
    "confidence": 0.49,
    "percentuale": 49,
@@ -220,6 +212,14 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "2296": {
+   "nome": "Mancini",
+   "squadra": "roma",
+   "confidence": 0.49,
+   "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
   "6986": {
    "nome": "Rensch",
    "squadra": "roma",
@@ -231,8 +231,8 @@
   "22": {
    "nome": "De Roon",
    "squadra": "roma",
-   "confidence": 0.49,
-   "percentuale": 49,
+   "confidence": 0.05,
+   "percentuale": 5,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -364,14 +364,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "7624": {
-   "nome": "Braganca",
-   "squadra": "torino",
-   "confidence": 0.49,
-   "percentuale": 49,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
   "7457": {
    "nome": "Mascardi",
    "squadra": "torino",
@@ -409,6 +401,14 @@
    "squadra": "torino",
    "confidence": 0.05,
    "percentuale": 5,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "6170": {
+   "nome": "Gineitis",
+   "squadra": "torino",
+   "confidence": 0.49,
+   "percentuale": 49,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -460,6 +460,14 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
+  "5036": {
+   "nome": "Caqueret",
+   "squadra": "como",
+   "confidence": 0.49,
+   "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
   "2809": {
    "nome": "Vigorito",
    "squadra": "como",
@@ -494,14 +502,6 @@
   },
   "7014": {
    "nome": "Smolcic I.",
-   "squadra": "como",
-   "confidence": 0.49,
-   "percentuale": 49,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "5036": {
-   "nome": "Caqueret",
    "squadra": "como",
    "confidence": 0.49,
    "percentuale": 49,
@@ -588,6 +588,14 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "6054": {
+   "nome": "Moro N.",
+   "squadra": "bologna",
+   "confidence": 0.49,
+   "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
   "7533": {
    "nome": "Happonen",
    "squadra": "bologna",
@@ -623,8 +631,8 @@
   "7212": {
    "nome": "Heggem",
    "squadra": "bologna",
-   "confidence": 0.05,
-   "percentuale": 5,
+   "confidence": 0.49,
+   "percentuale": 49,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -660,19 +668,11 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "6054": {
-   "nome": "Moro N.",
-   "squadra": "bologna",
-   "confidence": 0.05,
-   "percentuale": 5,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "6675": {
    "nome": "Dovbyk",
    "squadra": "bologna",
-   "confidence": 0.05,
-   "percentuale": 5,
+   "confidence": 0.45,
+   "percentuale": 45,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -692,16 +692,8 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "7255": {
-   "nome": "Britschgi",
-   "squadra": "parma",
-   "confidence": 0.49,
-   "percentuale": 49,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
-  "6206": {
-   "nome": "Fabbian",
+  "4137": {
+   "nome": "Diego Carlos",
    "squadra": "parma",
    "confidence": 0.49,
    "percentuale": 49,
@@ -711,8 +703,8 @@
   "7411": {
    "nome": "Daffara",
    "squadra": "parma",
-   "confidence": 0.05,
-   "percentuale": 5,
+   "confidence": 0.45,
+   "percentuale": 45,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -732,11 +724,11 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "7202": {
-   "nome": "Ndiaye",
+  "7615": {
+   "nome": "Drobnic",
    "squadra": "parma",
-   "confidence": 0.49,
-   "percentuale": 49,
+   "confidence": 0.05,
+   "percentuale": 5,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -751,8 +743,8 @@
   "7138": {
    "nome": "Ordonez C.",
    "squadra": "parma",
-   "confidence": 0.45,
-   "percentuale": 45,
+   "confidence": 0.05,
+   "percentuale": 5,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -771,6 +763,22 @@
    "percentuale": 5,
    "match_score": 1.0,
    "lista": "panchina"
+  },
+  "6229": {
+   "nome": "Tourè E.",
+   "squadra": "parma",
+   "confidence": 0.49,
+   "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "6925": {
+   "nome": "Palma",
+   "squadra": "udinese",
+   "confidence": 0.49,
+   "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "titolare"
   },
   "7611": {
    "nome": "Mrozek",
@@ -796,27 +804,19 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "5994": {
-   "nome": "Ebosse",
-   "squadra": "udinese",
-   "confidence": 0.49,
-   "percentuale": 49,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "7312": {
    "nome": "Arizala",
    "squadra": "udinese",
-   "confidence": 0.45,
-   "percentuale": 45,
+   "confidence": 0.05,
+   "percentuale": 5,
    "match_score": 1.0,
    "lista": "panchina"
   },
   "7418": {
    "nome": "Chakvetadze",
    "squadra": "udinese",
-   "confidence": 0.49,
-   "percentuale": 49,
+   "confidence": 0.45,
+   "percentuale": 45,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -828,11 +828,11 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "7208": {
-   "nome": "Miller L.",
+  "7198": {
+   "nome": "Piotrowski",
    "squadra": "udinese",
-   "confidence": 0.45,
-   "percentuale": 45,
+   "confidence": 0.49,
+   "percentuale": 49,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -967,24 +967,8 @@
   "5982": {
    "nome": "Spence",
    "squadra": "inter",
-   "confidence": 0.4,
-   "percentuale": 40,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
-  "152": {
-   "nome": "Zielinski",
-   "squadra": "inter",
-   "confidence": 0.49,
-   "percentuale": 49,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
-  "6669": {
-   "nome": "Bonny",
-   "squadra": "inter",
-   "confidence": 0.49,
-   "percentuale": 49,
+   "confidence": 0.45,
+   "percentuale": 45,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -1020,11 +1004,27 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "2194": {
+   "nome": "Calhanoglu",
+   "squadra": "inter",
+   "confidence": 0.49,
+   "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
   "6503": {
    "nome": "Stankovic A.",
    "squadra": "inter",
    "confidence": 0.49,
    "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "4871": {
+   "nome": "Thuram",
+   "squadra": "inter",
+   "confidence": 0.45,
+   "percentuale": 45,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1055,8 +1055,8 @@
   "7413": {
    "nome": "Puczka",
    "squadra": "genoa",
-   "confidence": 0.49,
-   "percentuale": 49,
+   "confidence": 0.05,
+   "percentuale": 5,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1151,8 +1151,8 @@
   "6039": {
    "nome": "Cabal",
    "squadra": "juventus",
-   "confidence": 0.4,
-   "percentuale": 40,
+   "confidence": 0.05,
+   "percentuale": 5,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1335,8 +1335,8 @@
   "6809": {
    "nome": "Marianucci",
    "squadra": "napoli",
-   "confidence": 0.05,
-   "percentuale": 5,
+   "confidence": 0.49,
+   "percentuale": 49,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1359,8 +1359,8 @@
   "7223": {
    "nome": "Vergara",
    "squadra": "napoli",
-   "confidence": 0.4,
-   "percentuale": 40,
+   "confidence": 0.05,
+   "percentuale": 5,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1635,6 +1635,14 @@
    "percentuale": 49,
    "match_score": 1.0,
    "lista": "panchina"
+  },
+  "7633": {
+   "nome": "Obric",
+   "squadra": "atalanta",
+   "confidence": 0.49,
+   "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "titolare"
   },
   "2077": {
    "nome": "Pasalic",
