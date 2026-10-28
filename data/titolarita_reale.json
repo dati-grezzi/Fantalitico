@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-10-27T21:50:26.351393+00:00",
+  "aggiornato": "2026-10-28T12:00:13.453233+00:00",
   "fonti_usate": [
     "fantacalcio.it",
     "gazzetta.it",
@@ -4518,25 +4518,6 @@
       },
       "scarto": 0.39
     },
-    "5877": {
-      "nome": "Carlos Augusto",
-      "squadra": "inter",
-      "confidence": 0.767,
-      "fonti": [
-        "fantacalcio.it",
-        "gazzetta.it",
-        "sky.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 4,
-      "valori": {
-        "fantacalcio.it": 0.8,
-        "gazzetta.it": 0.9,
-        "sky.it": 0.9,
-        "sosfanta.com": 0.51
-      },
-      "scarto": 0.39
-    },
     "6217": {
       "nome": "Bisseck",
       "squadra": "inter",
@@ -4574,6 +4555,25 @@
         "sosfanta.com": 0.49
       },
       "scarto": 0.6
+    },
+    "5877": {
+      "nome": "Carlos Augusto",
+      "squadra": "inter",
+      "confidence": 0.767,
+      "fonti": [
+        "fantacalcio.it",
+        "gazzetta.it",
+        "sky.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 4,
+      "valori": {
+        "fantacalcio.it": 0.8,
+        "gazzetta.it": 0.9,
+        "sky.it": 0.9,
+        "sosfanta.com": 0.51
+      },
+      "scarto": 0.39
     },
     "5982": {
       "nome": "Spence",
@@ -5195,20 +5195,22 @@
     "7608": {
       "nome": "Wiafe",
       "squadra": "genoa",
-      "confidence": 0.4,
+      "confidence": 0.449,
       "fonti": [
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 1,
+      "n_fonti": 2,
       "valori": {
-        "fantacalcio.it": 0.4
+        "fantacalcio.it": 0.4,
+        "sosfanta.com": 0.51
       },
-      "scarto": null
+      "scarto": 0.11
     },
     "5823": {
       "nome": "Baldanzi",
       "squadra": "genoa",
-      "confidence": 0.601,
+      "confidence": 0.616,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -5220,7 +5222,7 @@
         "fantacalcio.it": 0.3,
         "gazzetta.it": 0.9,
         "sky.it": 0.9,
-        "sosfanta.com": 0.49
+        "sosfanta.com": 0.55
       },
       "scarto": 0.6
     },
@@ -5297,7 +5299,7 @@
     "6164": {
       "nome": "Vitinha O.",
       "squadra": "genoa",
-      "confidence": 0.458,
+      "confidence": 0.577,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -5309,9 +5311,9 @@
         "fantacalcio.it": 0.45,
         "gazzetta.it": 0.6,
         "sky.it": 0.9,
-        "sosfanta.com": 0.05
+        "sosfanta.com": 0.51
       },
-      "scarto": 0.85
+      "scarto": 0.45
     },
     "4964": {
       "nome": "Vicario",
@@ -5808,7 +5810,7 @@
     "7574": {
       "nome": "Foe Ondoa",
       "squadra": "monza",
-      "confidence": 0.446,
+      "confidence": 0.565,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -5820,9 +5822,9 @@
         "fantacalcio.it": 0.6,
         "gazzetta.it": 0.3,
         "sky.it": 0.3,
-        "sosfanta.com": 0.49
+        "sosfanta.com": 0.95
       },
-      "scarto": 0.3
+      "scarto": 0.65
     },
     "7485": {
       "nome": "Mangas",
@@ -6165,7 +6167,7 @@
     "2170": {
       "nome": "Milinkovic-Savic V.",
       "squadra": "napoli",
-      "confidence": 0.526,
+      "confidence": 0.591,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -6174,7 +6176,7 @@
       ],
       "n_fonti": 4,
       "valori": {
-        "fantacalcio.it": 0.55,
+        "fantacalcio.it": 0.75,
         "gazzetta.it": 0.3,
         "sky.it": 0.9,
         "sosfanta.com": 0.49
@@ -6336,7 +6338,7 @@
     "6052": {
       "nome": "Hojlund",
       "squadra": "napoli",
-      "confidence": 0.881,
+      "confidence": 0.8,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -6345,17 +6347,17 @@
       ],
       "n_fonti": 4,
       "valori": {
-        "fantacalcio.it": 0.8,
+        "fantacalcio.it": 0.55,
         "gazzetta.it": 0.9,
         "sky.it": 0.9,
         "sosfanta.com": 0.95
       },
-      "scarto": 0.15
+      "scarto": 0.4
     },
     "7162": {
       "nome": "Giovane",
       "squadra": "napoli",
-      "confidence": 0.548,
+      "confidence": 0.628,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -6364,7 +6366,7 @@
       ],
       "n_fonti": 4,
       "valori": {
-        "fantacalcio.it": 0.6,
+        "fantacalcio.it": 0.85,
         "gazzetta.it": 0.3,
         "sky.it": 0.9,
         "sosfanta.com": 0.51
@@ -6374,7 +6376,7 @@
     "572": {
       "nome": "Meret",
       "squadra": "napoli",
-      "confidence": 0.557,
+      "confidence": 0.428,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -6383,12 +6385,12 @@
       ],
       "n_fonti": 4,
       "valori": {
-        "fantacalcio.it": 0.45,
+        "fantacalcio.it": 0.05,
         "gazzetta.it": 0.9,
         "sky.it": 0.3,
         "sosfanta.com": 0.51
       },
-      "scarto": 0.6
+      "scarto": 0.85
     },
     "2845": {
       "nome": "Contini",
@@ -6503,7 +6505,7 @@
     "7120": {
       "nome": "Lang",
       "squadra": "napoli",
-      "confidence": 0.536,
+      "confidence": 0.601,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -6512,7 +6514,7 @@
       ],
       "n_fonti": 4,
       "valori": {
-        "fantacalcio.it": 0.4,
+        "fantacalcio.it": 0.6,
         "gazzetta.it": 0.9,
         "sky.it": 0.3,
         "sosfanta.com": 0.49
@@ -6522,7 +6524,7 @@
     "6215": {
       "nome": "Lucca",
       "squadra": "napoli",
-      "confidence": 0.316,
+      "confidence": 0.403,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -6531,12 +6533,12 @@
       ],
       "n_fonti": 4,
       "valori": {
-        "fantacalcio.it": 0.55,
+        "fantacalcio.it": 0.45,
         "gazzetta.it": 0.3,
         "sky.it": 0.3,
-        "sosfanta.com": 0.05
+        "sosfanta.com": 0.51
       },
-      "scarto": 0.5
+      "scarto": 0.21
     },
     "6415": {
       "nome": "Palmisani",
@@ -8118,6 +8120,19 @@
         "sosfanta.com": 0.51
       },
       "scarto": 0.39
+    },
+    "6047": {
+      "nome": "Ehizibue",
+      "squadra": "genoa",
+      "confidence": 0.55,
+      "fonti": [
+        "sosfanta.com"
+      ],
+      "n_fonti": 1,
+      "valori": {
+        "sosfanta.com": 0.55
+      },
+      "scarto": null
     },
     "6989": {
       "nome": "Tiago Gabriel",
