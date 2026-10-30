@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-10-30T12:02:43.639309+00:00",
+ "aggiornato": "2026-10-30T21:58:54.352306+00:00",
  "fonte": "playerstats.football (statistiche difensive/di passaggio, per90, solo top-50 per categoria)",
  "note": "Mapping ID fantacalcio → {tackles_p90, interceptions_p90, clearances_p90, duels_p90, key_passes_p90, accurate_passes_p90, rating}. Copertura parziale: solo chi rientra nei primi 50 di almeno una categoria.",
  "giocatori": {
@@ -89,10 +89,10 @@
    "match_score": 0.9
   },
   "7036": {
-   "minuti": 613,
-   "tackles_p90": 3.08,
-   "duels_p90": 10.28,
-   "accurate_passes_p90": 52.12,
+   "minuti": 612,
+   "tackles_p90": 3.09,
+   "duels_p90": 10.29,
+   "accurate_passes_p90": 52.21,
    "playerstats_name": "Darryl Bakola",
    "match_score": 0.9
   },
@@ -174,7 +174,7 @@
    "tackles_p90": 2.07,
    "clearances_p90": 3.0,
    "duels_p90": 9.56,
-   "rating": 7.23,
+   "rating": 7.22,
    "playerstats_name": "Alessandro Romano",
    "match_score": 0.9
   },
@@ -378,9 +378,9 @@
    "match_score": 0.9
   },
   "4998": {
-   "minuti": 376,
-   "tackles_p90": 3.59,
-   "key_passes_p90": 2.87,
+   "minuti": 375,
+   "tackles_p90": 3.6,
+   "key_passes_p90": 2.88,
    "playerstats_name": "Nahuel Molina",
    "match_score": 0.9
   },
@@ -575,7 +575,7 @@
    "interceptions_p90": 1.14,
    "duels_p90": 9.23,
    "key_passes_p90": 2.51,
-   "rating": 7.72,
+   "rating": 7.77,
    "shots_p90": 2.96,
    "shots_on_target_p90": 1.25,
    "playerstats_name": "Mattia Zaccagni",
@@ -892,7 +892,7 @@
    "minuti": 593,
    "duels_p90": 10.47,
    "key_passes_p90": 2.28,
-   "rating": 10.22,
+   "rating": 10.23,
    "shots_p90": 3.79,
    "shots_on_target_p90": 1.82,
    "playerstats_name": "Matías Soulé",
@@ -959,7 +959,7 @@
    "match_score": 0.9
   },
   "7181": {
-   "minuti": 566,
+   "minuti": 567,
    "key_passes_p90": 3.02,
    "playerstats_name": "Wesley",
    "match_score": 0.9
@@ -1056,8 +1056,8 @@
    "match_score": 0.9
   },
   "4870": {
-   "minuti": 810,
-   "key_passes_p90": 1.44,
+   "minuti": 809,
+   "key_passes_p90": 1.45,
    "playerstats_name": "Michel Adopo",
    "match_score": 0.9
   },
@@ -1166,9 +1166,9 @@
    "match_score": 0.9
   },
   "7314": {
-   "minuti": 697,
-   "accurate_passes_p90": 45.32,
-   "rating": 8.26,
+   "minuti": 696,
+   "accurate_passes_p90": 45.39,
+   "rating": 8.27,
    "playerstats_name": "Kenneth Taylor",
    "match_score": 0.9
   },
@@ -1186,19 +1186,19 @@
    "playerstats_name": "Stanislav Lobotka",
    "match_score": 0.9
   },
+  "6482": {
+   "minuti": 810,
+   "rating": 7.29,
+   "saves_p90": 3.44,
+   "playerstats_name": "Christos Mandas",
+   "match_score": 0.9
+  },
   "6435": {
    "minuti": 537,
    "rating": 10.96,
    "shots_p90": 4.02,
    "shots_on_target_p90": 1.84,
    "playerstats_name": "Nikola Krstović",
-   "match_score": 0.9
-  },
-  "6482": {
-   "minuti": 810,
-   "rating": 7.25,
-   "saves_p90": 3.44,
-   "playerstats_name": "Christos Mandas",
    "match_score": 0.9
   },
   "6684": {
@@ -1211,7 +1211,7 @@
   },
   "4360": {
    "minuti": 810,
-   "rating": 7.16,
+   "rating": 7.17,
    "saves_p90": 4.11,
    "playerstats_name": "Elia Caprile",
    "match_score": 0.9
@@ -1363,12 +1363,6 @@
    "playerstats_name": "Dany Mota",
    "match_score": 0.9
   },
-  "5844": {
-   "minuti": 339,
-   "shots_on_target_p90": 1.86,
-   "playerstats_name": "Kristian Thorstvedt",
-   "match_score": 0.9
-  },
   "6669": {
    "minuti": 220,
    "shots_on_target_p90": 2.86,
@@ -1403,6 +1397,12 @@
    "minuti": 489,
    "shots_on_target_p90": 1.1,
    "playerstats_name": "Tijjani Noslin",
+   "match_score": 0.9
+  },
+  "5844": {
+   "minuti": 339,
+   "shots_on_target_p90": 1.59,
+   "playerstats_name": "Kristian Thorstvedt",
    "match_score": 0.9
   },
   "7272": {
