@@ -1,6 +1,6 @@
 {
  "fonte": "gazzetta.it",
- "aggiornato": "2026-10-30T21:57:16.999493+00:00",
+ "aggiornato": "2026-10-31T11:36:38.056448+00:00",
  "giornata": 10,
  "via": "fantacalcio-online.com",
  "giocatori": {
@@ -700,8 +700,8 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "5273": {
-   "nome": "Estupinan",
+  "7525": {
+   "nome": "Diawara S.",
    "squadra": "milan",
    "confidence": 0.9,
    "percentuale": 90,
@@ -718,14 +718,6 @@
   },
   "5022": {
    "nome": "Pavlovic",
-   "squadra": "milan",
-   "confidence": 0.9,
-   "percentuale": 90,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
-  "7618": {
-   "nome": "Hutchinson",
    "squadra": "milan",
    "confidence": 0.9,
    "percentuale": 90,
@@ -788,8 +780,8 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "7525": {
-   "nome": "Diawara S.",
+  "5273": {
+   "nome": "Estupinan",
    "squadra": "milan",
    "confidence": 0.3,
    "percentuale": 30,
@@ -798,6 +790,14 @@
   },
   "7572": {
    "nome": "Comotto",
+   "squadra": "milan",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "7618": {
+   "nome": "Hutchinson",
    "squadra": "milan",
    "confidence": 0.3,
    "percentuale": 30,
@@ -863,8 +863,8 @@
   "6217": {
    "nome": "Bisseck",
    "squadra": "inter",
-   "confidence": 0.4,
-   "percentuale": 40,
+   "confidence": 0.55,
+   "percentuale": 55,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -887,8 +887,8 @@
   "254": {
    "nome": "Dimarco",
    "squadra": "inter",
-   "confidence": 0.6,
-   "percentuale": 60,
+   "confidence": 0.55,
+   "percentuale": 55,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -943,8 +943,8 @@
   "5877": {
    "nome": "Carlos Augusto",
    "squadra": "inter",
-   "confidence": 0.6,
-   "percentuale": 60,
+   "confidence": 0.45,
+   "percentuale": 45,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1004,6 +1004,14 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
+  "7414": {
+   "nome": "Kaiki",
+   "squadra": "como",
+   "confidence": 0.4,
+   "percentuale": 40,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
   "6893": {
    "nome": "Kempf",
    "squadra": "como",
@@ -1038,14 +1046,6 @@
   },
   "5036": {
    "nome": "Caqueret",
-   "squadra": "como",
-   "confidence": 0.9,
-   "percentuale": 90,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
-  "5559": {
-   "nome": "Da Cunha",
    "squadra": "como",
    "confidence": 0.9,
    "percentuale": 90,
@@ -1100,14 +1100,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "7414": {
-   "nome": "Kaiki",
-   "squadra": "como",
-   "confidence": 0.4,
-   "percentuale": 40,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "6601": {
    "nome": "Kambwala",
    "squadra": "como",
@@ -1121,6 +1113,14 @@
    "squadra": "como",
    "confidence": 0.6,
    "percentuale": 60,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "5559": {
+   "nome": "Da Cunha",
+   "squadra": "como",
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1188,19 +1188,19 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "5507": {
-   "nome": "Busio",
+  "5695": {
+   "nome": "Haps",
    "squadra": "venezia",
    "confidence": 0.6,
    "percentuale": 60,
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "5695": {
-   "nome": "Haps",
+  "5481": {
+   "nome": "Mazzocchi",
    "squadra": "venezia",
-   "confidence": 0.6,
-   "percentuale": 60,
+   "confidence": 0.4,
+   "percentuale": 40,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -1273,6 +1273,14 @@
    "squadra": "venezia",
    "confidence": 0.3,
    "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "5507": {
+   "nome": "Busio",
+   "squadra": "venezia",
+   "confidence": 0.6,
+   "percentuale": 60,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1716,11 +1724,11 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "4952": {
-   "nome": "Monterisi",
+  "5757": {
+   "nome": "Cittadini",
    "squadra": "frosinone",
-   "confidence": 0.55,
-   "percentuale": 55,
+   "confidence": 0.45,
+   "percentuale": 45,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -1828,19 +1836,19 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "5757": {
-   "nome": "Cittadini",
-   "squadra": "frosinone",
-   "confidence": 0.45,
-   "percentuale": 45,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "7553": {
    "nome": "Omar Fayed",
    "squadra": "frosinone",
    "confidence": 0.3,
    "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "4952": {
+   "nome": "Monterisi",
+   "squadra": "frosinone",
+   "confidence": 0.55,
+   "percentuale": 55,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -2508,6 +2516,14 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "294": {
+   "nome": "Rugani",
+   "squadra": "juventus",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
   "6039": {
    "nome": "Cabal",
    "squadra": "juventus",
@@ -2900,14 +2916,6 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "7294": {
-   "nome": "Valdepenas",
-   "squadra": "fiorentina",
-   "confidence": 0.9,
-   "percentuale": 90,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
   "7410": {
    "nome": "Viery",
    "squadra": "fiorentina",
@@ -2926,6 +2934,14 @@
   },
   "4465": {
    "nome": "Fagioli",
+   "squadra": "fiorentina",
+   "confidence": 0.45,
+   "percentuale": 45,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "7175": {
+   "nome": "Joao Mario",
    "squadra": "fiorentina",
    "confidence": 0.9,
    "percentuale": 90,
@@ -2951,8 +2967,8 @@
   "6827": {
    "nome": "Njie",
    "squadra": "fiorentina",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.6,
+   "percentuale": 60,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -2980,6 +2996,14 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "7294": {
+   "nome": "Valdepenas",
+   "squadra": "fiorentina",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
   "5885": {
    "nome": "Dodò",
    "squadra": "fiorentina",
@@ -2991,24 +3015,16 @@
   "7625": {
    "nome": "Goncalves P.",
    "squadra": "fiorentina",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "7175": {
-   "nome": "Joao Mario",
-   "squadra": "fiorentina",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.4,
+   "percentuale": 40,
    "match_score": 1.0,
    "lista": "panchina"
   },
   "7464": {
    "nome": "Oulai",
    "squadra": "fiorentina",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.55,
+   "percentuale": 55,
    "match_score": 1.0,
    "lista": "panchina"
   },
