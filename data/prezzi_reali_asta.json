@@ -1,6 +1,6 @@
 {
   "fonte": "fantacalcio-online.com",
-  "aggiornato": "2026-10-31T11:36:43.524219+00:00",
+  "aggiornato": "2026-10-31T21:00:11.124005+00:00",
   "giocatori": {
     "5585": {
       "nome": "MALEN Donyell",
@@ -2213,17 +2213,6 @@
       "quotazione": 38.0,
       "match_score": 0.95
     },
-    "6519": {
-      "nome": "CAMARDA Francesco",
-      "squadra": "Milan",
-      "ruolo": "A",
-      "percMax": 0.94,
-      "comprato_pct": 4.3,
-      "prezzo_350": 1.39,
-      "prezzo_500": 4.7,
-      "quotazione": 7.0,
-      "match_score": 0.95
-    },
     "2640": {
       "nome": "KOLASINAC Sead",
       "squadra": "Atalanta",
@@ -2232,6 +2221,17 @@
       "comprato_pct": 4.3,
       "prezzo_350": 4.32,
       "prezzo_500": 2.19,
+      "quotazione": 7.0,
+      "match_score": 0.95
+    },
+    "6519": {
+      "nome": "CAMARDA Francesco",
+      "squadra": "Milan",
+      "ruolo": "A",
+      "percMax": 0.94,
+      "comprato_pct": 4.3,
+      "prezzo_350": 1.39,
+      "prezzo_500": 4.7,
       "quotazione": 7.0,
       "match_score": 0.95
     },
@@ -4897,10 +4897,10 @@
       "quotazione": 9.0,
       "match_score": 0.95
     },
-    "7471": {
-      "nome": "CORRADO Niccolo",
+    "7396": {
+      "nome": "MACCHIONI Tommaso",
       "squadra": "Serie Minori",
-      "ruolo": "C",
+      "ruolo": "D",
       "percMax": null,
       "comprato_pct": 0.8,
       "prezzo_350": null,
@@ -4908,10 +4908,10 @@
       "quotazione": 1.0,
       "match_score": 0.95
     },
-    "7396": {
-      "nome": "MACCHIONI Tommaso",
+    "7471": {
+      "nome": "CORRADO Niccolo",
       "squadra": "Serie Minori",
-      "ruolo": "D",
+      "ruolo": "C",
       "percMax": null,
       "comprato_pct": 0.8,
       "prezzo_350": null,
@@ -5546,9 +5546,9 @@
       "quotazione": 1.0,
       "match_score": 0.95
     },
-    "7550": {
-      "nome": "GRILLITSCH Florian",
-      "squadra": "Frosinone",
+    "6424": {
+      "nome": "PRATI Matteo",
+      "squadra": "Estero",
       "ruolo": "C",
       "percMax": null,
       "comprato_pct": 0.4,
@@ -5557,9 +5557,9 @@
       "quotazione": 7.0,
       "match_score": 0.95
     },
-    "6424": {
-      "nome": "PRATI Matteo",
-      "squadra": "Estero",
+    "7550": {
+      "nome": "GRILLITSCH Florian",
+      "squadra": "Frosinone",
       "ruolo": "C",
       "percMax": null,
       "comprato_pct": 0.4,
@@ -5601,17 +5601,6 @@
       "quotazione": 4.0,
       "match_score": 0.95
     },
-    "7557": {
-      "nome": "PENEV Plamen",
-      "squadra": "Lecce",
-      "ruolo": "P",
-      "percMax": 0.06,
-      "comprato_pct": 0.4,
-      "prezzo_350": null,
-      "prezzo_500": 0.3,
-      "quotazione": 1.0,
-      "match_score": 0.95
-    },
     "5485": {
       "nome": "BJARKASON Bjarki",
       "squadra": "Serie Minori",
@@ -5620,6 +5609,17 @@
       "comprato_pct": 0.4,
       "prezzo_350": null,
       "prezzo_500": null,
+      "quotazione": 1.0,
+      "match_score": 0.95
+    },
+    "7557": {
+      "nome": "PENEV Plamen",
+      "squadra": "Lecce",
+      "ruolo": "P",
+      "percMax": 0.06,
+      "comprato_pct": 0.4,
+      "prezzo_350": null,
+      "prezzo_500": 0.3,
       "quotazione": 1.0,
       "match_score": 0.95
     },
@@ -5667,10 +5667,10 @@
       "quotazione": 7.0,
       "match_score": 0.95
     },
-    "7538": {
-      "nome": "HALHAL Redouane",
+    "526": {
+      "nome": "DUNCAN Alfred",
       "squadra": "Venezia",
-      "ruolo": "D",
+      "ruolo": "C",
       "percMax": null,
       "comprato_pct": 0.4,
       "prezzo_350": null,
@@ -5678,10 +5678,10 @@
       "quotazione": 4.0,
       "match_score": 0.95
     },
-    "526": {
-      "nome": "DUNCAN Alfred",
+    "7538": {
+      "nome": "HALHAL Redouane",
       "squadra": "Venezia",
-      "ruolo": "C",
+      "ruolo": "D",
       "percMax": null,
       "comprato_pct": 0.4,
       "prezzo_350": null,
@@ -5909,17 +5909,6 @@
       "quotazione": 4.0,
       "match_score": 0.95
     },
-    "7158": {
-      "nome": "MORO Luca",
-      "squadra": "Serie Minori",
-      "ruolo": "A",
-      "percMax": null,
-      "comprato_pct": 0.3,
-      "prezzo_350": null,
-      "prezzo_500": null,
-      "quotazione": 3.0,
-      "match_score": 0.9
-    },
     "7604": {
       "nome": "MAYE Yvan",
       "squadra": "Monza",
@@ -5930,6 +5919,17 @@
       "prezzo_500": null,
       "quotazione": 3.0,
       "match_score": 0.95
+    },
+    "7158": {
+      "nome": "MORO Luca",
+      "squadra": "Serie Minori",
+      "ruolo": "A",
+      "percMax": null,
+      "comprato_pct": 0.3,
+      "prezzo_350": null,
+      "prezzo_500": null,
+      "quotazione": 3.0,
+      "match_score": 0.9
     },
     "7318": {
       "nome": "GANDELMAN Omri",
