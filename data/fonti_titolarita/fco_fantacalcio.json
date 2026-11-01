@@ -1,20 +1,36 @@
 {
  "fonte": "fantacalcio.it",
- "aggiornato": "2026-11-01T12:33:42.753807+00:00",
+ "aggiornato": "2026-11-01T21:43:05.406300+00:00",
  "giornata": 10,
  "via": "fantacalcio-online.com",
  "giocatori": {
-  "7454": {
-   "nome": "Gomes",
-   "squadra": "venezia",
-   "confidence": 0.2,
-   "percentuale": 20,
+  "6052": {
+   "nome": "Hojlund",
+   "squadra": "napoli",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "2170": {
+   "nome": "Milinkovic-Savic V.",
+   "squadra": "napoli",
+   "confidence": 0.05,
+   "percentuale": 5,
    "match_score": 1.0,
    "lista": "panchina"
   },
   "252": {
    "nome": "Biraghi",
    "squadra": "torino",
+   "confidence": 0.2,
+   "percentuale": 20,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "7454": {
+   "nome": "Gomes",
+   "squadra": "venezia",
    "confidence": 0.2,
    "percentuale": 20,
    "match_score": 1.0,
