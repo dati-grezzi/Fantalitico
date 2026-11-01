@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-10-31T20:59:59.250672+00:00",
+  "aggiornato": "2026-11-01T12:33:37.660917+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -116,8 +116,8 @@
       "infortunati": [
         {
           "nome": "Idrissi R.",
-          "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per la 10a",
-          "rientro_giornata": 10,
+          "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per l'11a",
+          "rientro_giornata": null,
           "id": "7125",
           "match_score": 1.0
         },
@@ -235,13 +235,6 @@
     "genoa": {
       "infortunati": [
         {
-          "nome": "Drameh",
-          "dettaglio": "Problema muscolare, in dubbio per la 10a",
-          "rientro_giornata": 10,
-          "id": "5742",
-          "match_score": 1.0
-        },
-        {
           "nome": "Havel",
           "dettaglio": "Infortunio alla caviglia, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -300,6 +293,13 @@
           "dettaglio": "Risentimento muscolare ai flessori della coscia sinistra, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "2764",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Provedel",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "2814",
           "match_score": 1.0
         }
       ],
@@ -364,6 +364,20 @@
     "lazio": {
       "infortunati": [
         {
+          "nome": "Marusic",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "2188",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Rovella",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "4459",
+          "match_score": 1.0
+        },
+        {
           "nome": "Gudmundsson A.",
           "dettaglio": "Lussazione dell’articolazione gleno-omerale destra, spontaneamente ridotta, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -378,8 +392,8 @@
       "infortunati": [
         {
           "nome": "Berisha M.",
-          "dettaglio": "Sovraccarico, in dubbio per la 10a",
-          "rientro_giornata": 10,
+          "dettaglio": "Sovraccarico, in dubbio per la 11a",
+          "rientro_giornata": 11,
           "id": "6015",
           "match_score": 1.0
         },
@@ -558,19 +572,6 @@
       "squalificati": [],
       "diffidati": []
     },
-    "parma": {
-      "infortunati": [
-        {
-          "nome": "Elphege",
-          "dettaglio": "Intervento di appendicectomia laparoscopica per appendicite acuta, in dubbio per la 10a",
-          "rientro_giornata": 10,
-          "id": "7342",
-          "match_score": 1.0
-        }
-      ],
-      "squalificati": [],
-      "diffidati": []
-    },
     "roma": {
       "infortunati": [
         {
@@ -641,16 +642,23 @@
     "torino": {
       "infortunati": [
         {
+          "nome": "Biraghi",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "252",
+          "match_score": 1.0
+        },
+        {
           "nome": "Cacciamani",
-          "dettaglio": "Problema alla spalla, in dubbio per la 10a",
-          "rientro_giornata": 10,
+          "dettaglio": "Problema alla spalla, in dubbio per l'11a",
+          "rientro_giornata": null,
           "id": "7060",
           "match_score": 1.0
         },
         {
           "nome": "Fortini",
-          "dettaglio": "Problema muscolare alla coscia destra, in dubbio per la 10a",
-          "rientro_giornata": 10,
+          "dettaglio": "Problema muscolare alla coscia destra, in dubbio per l'11a",
+          "rientro_giornata": null,
           "id": "7069",
           "match_score": 1.0
         },
