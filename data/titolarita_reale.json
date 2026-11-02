@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-01T21:43:09.547201+00:00",
+  "aggiornato": "2026-11-02T14:35:32.049067+00:00",
   "fonti_usate": [
     "fantacalcio.it",
     "gazzetta.it",
@@ -6710,19 +6710,6 @@
       },
       "scarto": 0.45
     },
-    "4378": {
-      "nome": "Ranieri L.",
-      "squadra": "fiorentina",
-      "confidence": 0.15,
-      "fonti": [
-        "fantacalcio.it"
-      ],
-      "n_fonti": 1,
-      "valori": {
-        "fantacalcio.it": 0.15
-      },
-      "scarto": null
-    },
     "7464": {
       "nome": "Oulai",
       "squadra": "fiorentina",
@@ -7218,24 +7205,22 @@
       },
       "scarto": 0.39
     },
-    "6666": {
-      "nome": "Bernabè",
+    "6206": {
+      "nome": "Fabbian",
       "squadra": "parma",
-      "confidence": 0.913,
+      "confidence": 0.492,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
-        "sky.it",
         "sosfanta.com"
       ],
-      "n_fonti": 4,
+      "n_fonti": 3,
       "valori": {
-        "fantacalcio.it": 0.9,
-        "gazzetta.it": 0.9,
-        "sky.it": 0.9,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 0.6,
+        "gazzetta.it": 0.3,
+        "sosfanta.com": 0.55
       },
-      "scarto": 0.05
+      "scarto": 0.3
     },
     "7628": {
       "nome": "Sierro",
@@ -7297,7 +7282,7 @@
     "6229": {
       "nome": "Tourè E.",
       "squadra": "parma",
-      "confidence": 0.538,
+      "confidence": 0.652,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -7309,9 +7294,9 @@
         "fantacalcio.it": 0.75,
         "gazzetta.it": 0.45,
         "sky.it": 0.3,
-        "sosfanta.com": 0.51
+        "sosfanta.com": 0.95
       },
-      "scarto": 0.45
+      "scarto": 0.65
     },
     "7554": {
       "nome": "Romero D.",
@@ -7373,7 +7358,7 @@
     "7615": {
       "nome": "Drobnic",
       "squadra": "parma",
-      "confidence": 0.533,
+      "confidence": 0.538,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -7385,7 +7370,7 @@
         "fantacalcio.it": 0.45,
         "gazzetta.it": 0.45,
         "sky.it": 0.9,
-        "sosfanta.com": 0.49
+        "sosfanta.com": 0.51
       },
       "scarto": 0.45
     },
@@ -7446,23 +7431,6 @@
       },
       "scarto": 0.35
     },
-    "6206": {
-      "nome": "Fabbian",
-      "squadra": "parma",
-      "confidence": 0.462,
-      "fonti": [
-        "fantacalcio.it",
-        "gazzetta.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "fantacalcio.it": 0.6,
-        "gazzetta.it": 0.3,
-        "sosfanta.com": 0.45
-      },
-      "scarto": 0.3
-    },
     "7276": {
       "nome": "Cremaschi",
       "squadra": "parma",
@@ -7498,7 +7466,7 @@
     "4349": {
       "nome": "Nicolussi Caviglia",
       "squadra": "parma",
-      "confidence": 0.374,
+      "confidence": 0.503,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -7510,9 +7478,9 @@
         "fantacalcio.it": 0.25,
         "gazzetta.it": 0.9,
         "sky.it": 0.3,
-        "sosfanta.com": 0.05
+        "sosfanta.com": 0.55
       },
-      "scarto": 0.85
+      "scarto": 0.65
     },
     "6207": {
       "nome": "Almqvist",
@@ -7596,6 +7564,25 @@
         "sosfanta.com": 0.05
       },
       "scarto": 0.55
+    },
+    "6666": {
+      "nome": "Bernabè",
+      "squadra": "parma",
+      "confidence": 0.913,
+      "fonti": [
+        "fantacalcio.it",
+        "gazzetta.it",
+        "sky.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 4,
+      "valori": {
+        "fantacalcio.it": 0.9,
+        "gazzetta.it": 0.9,
+        "sky.it": 0.9,
+        "sosfanta.com": 0.95
+      },
+      "scarto": 0.05
     },
     "6052": {
       "nome": "Hojlund",
