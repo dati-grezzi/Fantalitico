@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-11-03T00:31:32.635703+00:00",
+  "aggiornato": "2026-11-03T13:30:05.725573+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -40,13 +40,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Gaetano",
-          "dettaglio": "Distrazione agli adduttori della coscia destra, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "4364",
-          "match_score": 1.0
-        },
-        {
           "nome": "Hien",
           "dettaglio": "Fuori per una lesione del tendine prossimale del muscolo semimembranoso della coscia sinistra, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -62,7 +55,7 @@
         },
         {
           "nome": "Kristensen T.",
-          "dettaglio": "Risentimento muscolare al flessore della coscia sinistra, in dubbio per la 12a",
+          "dettaglio": "Distrazione di basso grado ai muscoli flessori della coscia sinistra, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "6485",
           "match_score": 1.0
@@ -72,6 +65,13 @@
           "dettaglio": "Frattura della falange intermedia della mano destra, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "7626",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Gaetano",
+          "dettaglio": "Distrazione di medio grado ai muscoli adduttori della coscia destra, in dubbio per la 14a",
+          "rientro_giornata": 14,
+          "id": "4364",
           "match_score": 1.0
         }
       ],
@@ -96,8 +96,8 @@
         },
         {
           "nome": "Piccoli",
-          "dettaglio": "Lesione del bicipite femorale della coscia destra, in dubbio per la 12a",
-          "rientro_giornata": 12,
+          "dettaglio": "Lesione del bicipite femorale della coscia destra, in dubbio per l'11a",
+          "rientro_giornata": null,
           "id": "4359",
           "match_score": 1.0
         },
@@ -119,6 +119,13 @@
           "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per l'11a",
           "rientro_giornata": null,
           "id": "7125",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Fadera",
+          "dettaglio": "Stiramento al flessore della coscia destra, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "6815",
           "match_score": 1.0
         },
         {
@@ -221,6 +228,13 @@
           "rientro_giornata": null,
           "id": "7550",
           "match_score": 1.0
+        },
+        {
+          "nome": "Raimondo",
+          "dettaglio": "Lesione multilegamentosa contusivo-distorsiva della caviglia sinistra, in dubbio per la 15a",
+          "rientro_giornata": 15,
+          "id": "5436",
+          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -261,22 +275,8 @@
     "inter": {
       "infortunati": [
         {
-          "nome": "Jones C.",
-          "dettaglio": "Risentimento miofasciale agli adduttori della coscia destra, in dubbio per la 11a",
-          "rientro_giornata": 11,
-          "id": "5172",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Pavard",
-          "dettaglio": "Risentimento agli adduttori della coscia destra, in dubbio per la 11a",
-          "rientro_giornata": 11,
-          "id": "4177",
-          "match_score": 1.0
-        },
-        {
           "nome": "Stones",
-          "dettaglio": "Risentimento ai flessori della coscia sinistra, in dubbio per l'11a",
+          "dettaglio": "Risentimento muscolare ai flessori della coscia sinistra, in dubbio per l'11a",
           "rientro_giornata": null,
           "id": "2514",
           "match_score": 1.0
@@ -294,13 +294,6 @@
           "rientro_giornata": 12,
           "id": "2764",
           "match_score": 1.0
-        },
-        {
-          "nome": "Provedel",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "2814",
-          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -308,6 +301,13 @@
     },
     "juventus": {
       "infortunati": [
+        {
+          "nome": "Mckennie",
+          "dettaglio": "Affaticamento all'adduttore, in dubbio per l'11a",
+          "rientro_giornata": null,
+          "id": "4973",
+          "match_score": 1.0
+        },
         {
           "nome": "Celik",
           "dettaglio": "Lesione di basso grado del bicipite femorale sinistro, in dubbio per la 12a",
@@ -364,20 +364,6 @@
     "lazio": {
       "infortunati": [
         {
-          "nome": "Marusic",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "2188",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Rovella",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "4459",
-          "match_score": 1.0
-        },
-        {
           "nome": "Gudmundsson A.",
           "dettaglio": "Lussazione dell’articolazione gleno-omerale destra, spontaneamente ridotta, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -392,15 +378,15 @@
       "infortunati": [
         {
           "nome": "Berisha M.",
-          "dettaglio": "Sovraccarico, in dubbio per la 11a",
-          "rientro_giornata": 11,
+          "dettaglio": "Sovraccarico, in dubbio per l'11a",
+          "rientro_giornata": null,
           "id": "6015",
           "match_score": 1.0
         },
         {
           "nome": "Coulibaly L.",
-          "dettaglio": "Lesione di primo grado del bicipite femorale della coscia destra, in dubbio per la 12a",
-          "rientro_giornata": 12,
+          "dettaglio": "Lesione di primo grado del bicipite femorale della coscia destra, in dubbio per l'11a",
+          "rientro_giornata": null,
           "id": "5504",
           "match_score": 1.0
         },
@@ -412,9 +398,16 @@
           "match_score": 1.0
         },
         {
+          "nome": "Monteiro J.",
+          "dettaglio": "Lesione di primo grado al polpaccio sinistro, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "7619",
+          "match_score": 1.0
+        },
+        {
           "nome": "Pierotti",
-          "dettaglio": "Frattura composta del malleolo mediale della caviglia destra, il suo 2026 è sicuramente terminato",
-          "rientro_giornata": null,
+          "dettaglio": "Intervento per frattura composta del malleolo mediale della caviglia destra, in dubbio per la 19a",
+          "rientro_giornata": 19,
           "id": "6549",
           "match_score": 1.0
         },
@@ -426,13 +419,7 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [
-        {
-          "nome": "Gaspar K.",
-          "id": "6632",
-          "match_score": 1.0
-        }
-      ],
+      "squalificati": [],
       "diffidati": []
     },
     "milan": {
@@ -520,10 +507,10 @@
     "napoli": {
       "infortunati": [
         {
-          "nome": "Hojlund",
-          "dettaglio": "Leggero stato influenzale, rientro previsto per l'11a",
+          "nome": "Di Lorenzo",
+          "dettaglio": "Risentimento all'adduttore, in dubbio per l'11a",
           "rientro_giornata": null,
-          "id": "6052",
+          "id": "2816",
           "match_score": 1.0
         },
         {
@@ -538,6 +525,13 @@
           "dettaglio": "Lesione di basso grado del muscolo semimembranoso della coscia destra, in dubbio per l'11a",
           "rientro_giornata": null,
           "id": "6831",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Olivera",
+          "dettaglio": "Affaticamento muscolare, in dubbio per l'11a",
+          "rientro_giornata": null,
+          "id": "5840",
           "match_score": 1.0
         },
         {
@@ -583,7 +577,13 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [],
+      "squalificati": [
+        {
+          "nome": "Marianucci",
+          "id": "6809",
+          "match_score": 1.0
+        }
+      ],
       "diffidati": []
     },
     "parma": {
@@ -637,8 +637,8 @@
       "infortunati": [
         {
           "nome": "Boloca",
-          "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per la 10a",
-          "rientro_giornata": 10,
+          "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per l'11a",
+          "rientro_giornata": null,
           "id": "6219",
           "match_score": 1.0
         },
@@ -664,24 +664,11 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [
-        {
-          "nome": "Thorstvedt",
-          "id": "5844",
-          "match_score": 1.0
-        }
-      ],
+      "squalificati": [],
       "diffidati": []
     },
     "torino": {
       "infortunati": [
-        {
-          "nome": "Biraghi",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "252",
-          "match_score": 1.0
-        },
         {
           "nome": "Cacciamani",
           "dettaglio": "Problema alla spalla, in dubbio per l'11a",
