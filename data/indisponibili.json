@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-11-02T14:35:20.890532+00:00",
+  "aggiornato": "2026-11-03T00:31:32.635703+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -41,8 +41,8 @@
         },
         {
           "nome": "Gaetano",
-          "dettaglio": "Distrazione di medio grado ai muscoli adduttori della coscia destra, in dubbio per la 14a",
-          "rientro_giornata": 14,
+          "dettaglio": "Distrazione agli adduttori della coscia destra, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "4364",
           "match_score": 1.0
         },
@@ -62,7 +62,7 @@
         },
         {
           "nome": "Kristensen T.",
-          "dettaglio": "Distrazione di basso grado ai muscoli flessori della coscia sinistra, in dubbio per la 12a",
+          "dettaglio": "Risentimento muscolare al flessore della coscia sinistra, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "6485",
           "match_score": 1.0
@@ -182,17 +182,17 @@
     "fiorentina": {
       "infortunati": [
         {
-          "nome": "Ranieri L.",
-          "dettaglio": "Problema a un piede, in dubbio per la 10a",
-          "rientro_giornata": 10,
-          "id": "4378",
-          "match_score": 1.0
-        },
-        {
           "nome": "Atta",
           "dettaglio": "Sovraccarico funzionale all'addome, in dubbio per l'11a",
           "rientro_giornata": null,
           "id": "6908",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Ranieri L.",
+          "dettaglio": "Problema a un piede, in dubbio per l'11a",
+          "rientro_giornata": null,
+          "id": "4378",
           "match_score": 1.0
         },
         {
@@ -520,6 +520,20 @@
     "napoli": {
       "infortunati": [
         {
+          "nome": "Hojlund",
+          "dettaglio": "Leggero stato influenzale, rientro previsto per l'11a",
+          "rientro_giornata": null,
+          "id": "6052",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Milinkovic-Savic V.",
+          "dettaglio": "Leggero affaticamento muscolare, in dubbio per l'11a",
+          "rientro_giornata": null,
+          "id": "2170",
+          "match_score": 1.0
+        },
+        {
           "nome": "Neres",
           "dettaglio": "Lesione di basso grado del muscolo semimembranoso della coscia destra, in dubbio per l'11a",
           "rientro_giornata": null,
@@ -572,6 +586,19 @@
       "squalificati": [],
       "diffidati": []
     },
+    "parma": {
+      "infortunati": [
+        {
+          "nome": "Bernabè",
+          "dettaglio": "Distrazione di basso grado al retto femorale della coscia sinistra, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "6666",
+          "match_score": 1.0
+        }
+      ],
+      "squalificati": [],
+      "diffidati": []
+    },
     "roma": {
       "infortunati": [
         {
@@ -613,6 +640,13 @@
           "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per la 10a",
           "rientro_giornata": 10,
           "id": "6219",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Volpato",
+          "dettaglio": "Problema muscolare, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "5735",
           "match_score": 1.0
         },
         {
