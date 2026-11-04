@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-04T13:42:11.929068+00:00",
+ "aggiornato": "2026-11-04T23:14:44.780370+00:00",
  "fonte": "playerstats.football (statistiche difensive/di passaggio, per90, solo top-50 per categoria)",
  "note": "Mapping ID fantacalcio → {tackles_p90, interceptions_p90, clearances_p90, duels_p90, key_passes_p90, accurate_passes_p90, rating}. Copertura parziale: solo chi rientra nei primi 50 di almeno una categoria.",
  "giocatori": {
@@ -48,7 +48,7 @@
    "tackles_p90": 2.42,
    "interceptions_p90": 1.62,
    "key_passes_p90": 1.11,
-   "rating": 6.97,
+   "rating": 6.96,
    "playerstats_name": "Adam Obert",
    "match_score": 0.9
   },
@@ -457,7 +457,7 @@
    "minuti": 564,
    "interceptions_p90": 2.71,
    "clearances_p90": 6.38,
-   "accurate_passes_p90": 62.55,
+   "accurate_passes_p90": 62.39,
    "playerstats_name": "Josip Sutalo",
    "match_score": 0.9
   },
@@ -472,16 +472,9 @@
   },
   "4952": {
    "minuti": 535,
-   "interceptions_p90": 2.69,
+   "interceptions_p90": 2.52,
    "clearances_p90": 5.72,
    "playerstats_name": "Ilario Monterisi",
-   "match_score": 0.9
-  },
-  "5010": {
-   "minuti": 657,
-   "interceptions_p90": 1.92,
-   "clearances_p90": 8.36,
-   "playerstats_name": "Ardian Ismajli",
    "match_score": 0.9
   },
   "6042": {
@@ -491,6 +484,13 @@
    "playerstats_name": "Jhon Lucumí",
    "match_score": 0.9
   },
+  "5010": {
+   "minuti": 657,
+   "interceptions_p90": 1.92,
+   "clearances_p90": 8.36,
+   "playerstats_name": "Ardian Ismajli",
+   "match_score": 0.9
+  },
   "6664": {
    "minuti": 900,
    "interceptions_p90": 1.4,
@@ -498,11 +498,11 @@
    "playerstats_name": "Enrico Delprato",
    "match_score": 0.9
   },
-  "2528": {
-   "minuti": 697,
-   "interceptions_p90": 1.68,
-   "accurate_passes_p90": 58.36,
-   "playerstats_name": "Nemanja Matić",
+  "6217": {
+   "minuti": 677,
+   "interceptions_p90": 1.73,
+   "accurate_passes_p90": 56.5,
+   "playerstats_name": "Yann Bisseck",
    "match_score": 0.9
   },
   "256": {
@@ -510,20 +510,6 @@
    "interceptions_p90": 2.09,
    "clearances_p90": 4.33,
    "playerstats_name": "Juan Jesus",
-   "match_score": 0.9
-  },
-  "4317": {
-   "minuti": 637,
-   "interceptions_p90": 1.84,
-   "clearances_p90": 5.65,
-   "playerstats_name": "Evan Ndicka",
-   "match_score": 0.9
-  },
-  "6217": {
-   "minuti": 677,
-   "interceptions_p90": 1.73,
-   "accurate_passes_p90": 56.5,
-   "playerstats_name": "Yann Bisseck",
    "match_score": 0.9
   },
   "2606": {
@@ -534,17 +520,32 @@
    "playerstats_name": "Luka Modrić",
    "match_score": 0.9
   },
+  "2528": {
+   "minuti": 697,
+   "interceptions_p90": 1.68,
+   "accurate_passes_p90": 58.36,
+   "playerstats_name": "Nemanja Matić",
+   "match_score": 0.9
+  },
+  "4317": {
+   "minuti": 637,
+   "interceptions_p90": 1.84,
+   "clearances_p90": 5.65,
+   "playerstats_name": "Evan Ndicka",
+   "match_score": 0.9
+  },
+  "7012": {
+   "minuti": 721,
+   "interceptions_p90": 1.5,
+   "accurate_passes_p90": 62.54,
+   "playerstats_name": "Oliver Provstgaard",
+   "match_score": 0.9
+  },
   "6989": {
    "minuti": 662,
    "interceptions_p90": 1.63,
    "clearances_p90": 7.21,
    "playerstats_name": "Tiago Gabriel",
-   "match_score": 0.9
-  },
-  "5675": {
-   "minuti": 583,
-   "interceptions_p90": 1.85,
-   "playerstats_name": "Arthur Theate",
    "match_score": 0.9
   },
   "2788": {
@@ -564,17 +565,10 @@
    "playerstats_name": "Matías Moreno",
    "match_score": 0.9
   },
-  "7012": {
-   "minuti": 721,
-   "interceptions_p90": 1.37,
-   "accurate_passes_p90": 62.54,
-   "playerstats_name": "Oliver Provstgaard",
-   "match_score": 0.9
-  },
-  "5498": {
-   "minuti": 439,
-   "interceptions_p90": 2.26,
-   "playerstats_name": "Nicolò Casale",
+  "5675": {
+   "minuti": 583,
+   "interceptions_p90": 1.85,
+   "playerstats_name": "Arthur Theate",
    "match_score": 0.9
   },
   "6021": {
@@ -588,6 +582,12 @@
    "minuti": 659,
    "interceptions_p90": 1.5,
    "playerstats_name": "Gianluca Mancini",
+   "match_score": 0.9
+  },
+  "5498": {
+   "minuti": 439,
+   "interceptions_p90": 2.26,
+   "playerstats_name": "Nicolò Casale",
    "match_score": 0.9
   },
   "4260": {
@@ -607,23 +607,23 @@
    "playerstats_name": "Mattia Zaccagni",
    "match_score": 0.9
   },
-  "4887": {
-   "minuti": 468,
-   "interceptions_p90": 1.92,
-   "playerstats_name": "Raoul Bellanova",
-   "match_score": 0.9
-  },
   "4705": {
    "minuti": 331,
    "interceptions_p90": 2.72,
    "playerstats_name": "Leonardo Balerdi",
    "match_score": 0.9
   },
+  "4887": {
+   "minuti": 468,
+   "interceptions_p90": 1.92,
+   "playerstats_name": "Raoul Bellanova",
+   "match_score": 0.9
+  },
   "4409": {
-   "minuti": 720,
-   "clearances_p90": 7.13,
-   "duels_p90": 10.75,
-   "accurate_passes_p90": 61.88,
+   "minuti": 721,
+   "clearances_p90": 7.12,
+   "duels_p90": 10.74,
+   "accurate_passes_p90": 61.79,
    "playerstats_name": "Amir Rrahmani",
    "match_score": 0.9
   },
@@ -743,9 +743,9 @@
    "match_score": 0.9
   },
   "7374": {
-   "minuti": 681,
-   "duels_p90": 14.67,
-   "shots_p90": 2.25,
+   "minuti": 682,
+   "duels_p90": 14.65,
+   "shots_p90": 2.24,
    "shots_on_target_p90": 0.79,
    "playerstats_name": "Paul Mendy",
    "match_score": 0.9
@@ -874,9 +874,9 @@
    "match_score": 0.9
   },
   "2816": {
-   "minuti": 846,
-   "duels_p90": 7.98,
-   "accurate_passes_p90": 42.34,
+   "minuti": 845,
+   "duels_p90": 7.99,
+   "accurate_passes_p90": 42.39,
    "playerstats_name": "Giovanni Di Lorenzo",
    "match_score": 0.9
   },
@@ -919,9 +919,9 @@
    "match_score": 0.9
   },
   "2517": {
-   "minuti": 541,
-   "key_passes_p90": 3.49,
-   "rating": 12.03,
+   "minuti": 540,
+   "key_passes_p90": 3.5,
+   "rating": 12.05,
    "playerstats_name": "Kevin De Bruyne",
    "match_score": 0.9
   },
@@ -957,7 +957,7 @@
   "7551": {
    "minuti": 772,
    "key_passes_p90": 2.1,
-   "rating": 8.24,
+   "rating": 8.25,
    "playerstats_name": "Romano Schmid",
    "match_score": 0.9
   },
@@ -1076,7 +1076,7 @@
   "4896": {
    "minuti": 650,
    "key_passes_p90": 1.66,
-   "rating": 9.58,
+   "rating": 9.59,
    "shots_on_target_p90": 0.83,
    "playerstats_name": "Daniel Maldini",
    "match_score": 0.9
