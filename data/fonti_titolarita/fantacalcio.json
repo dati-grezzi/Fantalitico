@@ -1,7 +1,7 @@
 {
   "fonte": "fantacalcio.it",
   "giornata": 11,
-  "aggiornato": "2026-11-03T22:55:48.485849+00:00",
+  "aggiornato": "2026-11-04T13:40:58.301978+00:00",
   "giocatori": {
     "6248": {
       "nome": "Stankovic F.",
@@ -344,6 +344,13 @@
       "squadra": "udinese",
       "percentuale": 60,
       "confidence": 0.6,
+      "match_score": 1.0
+    },
+    "7161": {
+      "nome": "Bayo V.",
+      "squadra": "udinese",
+      "percentuale": 20,
+      "confidence": 0.2,
       "match_score": 1.0
     },
     "7652": {
@@ -1270,8 +1277,8 @@
       "confidence": 0.9,
       "match_score": 1.0
     },
-    "2765": {
-      "nome": "Odgaard",
+    "4359": {
+      "nome": "Piccoli",
       "squadra": "bologna",
       "percentuale": 55,
       "confidence": 0.55,
@@ -1343,8 +1350,8 @@
     "6833": {
       "nome": "Mbangula",
       "squadra": "bologna",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "7629": {
@@ -1361,18 +1368,25 @@
       "confidence": 0.6,
       "match_score": 1.0
     },
-    "6675": {
-      "nome": "Dovbyk",
+    "2765": {
+      "nome": "Odgaard",
       "squadra": "bologna",
       "percentuale": 45,
       "confidence": 0.45,
       "match_score": 1.0
     },
+    "6675": {
+      "nome": "Dovbyk",
+      "squadra": "bologna",
+      "percentuale": 55,
+      "confidence": 0.55,
+      "match_score": 1.0
+    },
     "610": {
       "nome": "Gollini",
       "squadra": "roma",
-      "percentuale": 70,
-      "confidence": 0.7,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "2296": {
@@ -1448,8 +1462,8 @@
     "6125": {
       "nome": "Vasquez D.",
       "squadra": "roma",
-      "percentuale": 5,
-      "confidence": 0.05,
+      "percentuale": 45,
+      "confidence": 0.45,
       "match_score": 1.0
     },
     "7048": {
@@ -1779,13 +1793,6 @@
       "squadra": "napoli",
       "percentuale": 1,
       "confidence": 0.01,
-      "match_score": 1.0
-    },
-    "2816": {
-      "nome": "Di Lorenzo",
-      "squadra": "napoli",
-      "percentuale": 20,
-      "confidence": 0.2,
       "match_score": 1.0
     },
     "7223": {
@@ -2726,25 +2733,32 @@
       "confidence": 0.35,
       "match_score": 1.0
     },
+    "2514": {
+      "nome": "Stones",
+      "squadra": "inter",
+      "percentuale": 25,
+      "confidence": 0.25,
+      "match_score": 1.0
+    },
     "2529": {
       "nome": "Mkhitaryan",
       "squadra": "inter",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 40,
+      "confidence": 0.4,
       "match_score": 1.0
     },
     "6503": {
       "nome": "Stankovic A.",
       "squadra": "inter",
-      "percentuale": 35,
-      "confidence": 0.35,
+      "percentuale": 30,
+      "confidence": 0.3,
       "match_score": 1.0
     },
     "5172": {
       "nome": "Jones C.",
       "squadra": "inter",
-      "percentuale": 20,
-      "confidence": 0.2,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "7070": {
@@ -2757,8 +2771,8 @@
     "7307": {
       "nome": "Lavelli",
       "squadra": "inter",
-      "percentuale": 20,
-      "confidence": 0.2,
+      "percentuale": 10,
+      "confidence": 0.1,
       "match_score": 1.0
     },
     "6669": {
@@ -2813,8 +2827,8 @@
     "5559": {
       "nome": "Da Cunha",
       "squadra": "como",
-      "percentuale": 100,
-      "confidence": 1.0,
+      "percentuale": 70,
+      "confidence": 0.7,
       "match_score": 1.0
     },
     "6678": {
@@ -2971,8 +2985,8 @@
       "confidence": 0.9,
       "match_score": 1.0
     },
-    "4947": {
-      "nome": "Brescianini",
+    "7464": {
+      "nome": "Oulai",
       "squadra": "fiorentina",
       "percentuale": 60,
       "confidence": 0.6,
@@ -3027,8 +3041,8 @@
       "confidence": 0.4,
       "match_score": 1.0
     },
-    "7464": {
-      "nome": "Oulai",
+    "4947": {
+      "nome": "Brescianini",
       "squadra": "fiorentina",
       "percentuale": 40,
       "confidence": 0.4,

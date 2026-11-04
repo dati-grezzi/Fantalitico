@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-11-03T22:55:50.086675+00:00",
+  "aggiornato": "2026-11-04T13:40:59.893103+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -88,13 +88,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Piccoli",
-          "dettaglio": "Lesione del bicipite femorale della coscia destra, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "4359",
-          "match_score": 1.0
-        },
-        {
           "nome": "Holm",
           "dettaglio": "Intervento chirurgico di sutura del tendine degli hamstring della coscia destra, tempi di recupero previsti di 4-6 mesi dal 1 ottobre",
           "rientro_giornata": null,
@@ -108,22 +101,22 @@
     "cagliari": {
       "infortunati": [
         {
-          "nome": "Idrissi R.",
-          "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "7125",
-          "match_score": 1.0
-        },
-        {
           "nome": "Fadera",
-          "dettaglio": "Stiramento al flessore della coscia destra, in dubbio per la 12a",
+          "dettaglio": "Lesione del bicipite femorale, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "6815",
           "match_score": 1.0
         },
         {
+          "nome": "Idrissi R.",
+          "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "7125",
+          "match_score": 1.0
+        },
+        {
           "nome": "Felici",
-          "dettaglio": "Rottura del legamento crociato anteriore, in dubbio per 30a",
+          "dettaglio": "Rottura del legamento crociato anteriore, in dubbio per 34a",
           "rientro_giornata": null,
           "id": "6640",
           "match_score": 1.0
@@ -268,13 +261,6 @@
     "inter": {
       "infortunati": [
         {
-          "nome": "Stones",
-          "dettaglio": "Risentimento muscolare ai flessori della coscia sinistra, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "2514",
-          "match_score": 1.0
-        },
-        {
           "nome": "Luis Henrique",
           "dettaglio": "Risentimento all'adduttore lungo della coscia sinistra, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -392,15 +378,15 @@
         },
         {
           "nome": "Pierotti",
-          "dettaglio": "Intervento per frattura composta del malleolo mediale della caviglia destra, in dubbio per la 19a",
-          "rientro_giornata": 19,
+          "dettaglio": "Intervento per frattura composta del malleolo mediale della caviglia destra, in dubbio per la 20a",
+          "rientro_giornata": 20,
           "id": "6549",
           "match_score": 1.0
         },
         {
           "nome": "Ilic",
-          "dettaglio": "Operato per lesione miotendinea del retto femorale sinistro con lesione parziale del tendine, in dubbio per la 28a",
-          "rientro_giornata": 28,
+          "dettaglio": "Operato per lesione miotendinea del retto femorale sinistro con lesione parziale del tendine, in dubbio per la 29a",
+          "rientro_giornata": 29,
           "id": "5007",
           "match_score": 1.0
         }
@@ -410,13 +396,6 @@
     },
     "milan": {
       "infortunati": [
-        {
-          "nome": "Chukwueze",
-          "dettaglio": "Trattamento infiltrativo per un problema all'anca sinistra, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "4856",
-          "match_score": 1.0
-        },
         {
           "nome": "Loftus-Cheek",
           "dettaglio": "Lesione a carico di un muscolo flessore mediale della coscia sinistra, in dubbio per la 12a",
@@ -443,6 +422,13 @@
           "dettaglio": "Lesione del muscolo flessore della coscia sinistra, con parziale interessamento tendineo, in dubbio per la 20a",
           "rientro_giornata": 20,
           "id": "4401",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Chukwueze",
+          "dettaglio": "Operato per la rottura del tendine del muscolo tensore della fascia lata dell'anca sinistra, in dubbio per la 23a",
+          "rientro_giornata": 23,
+          "id": "4856",
           "match_score": 1.0
         },
         {
@@ -521,13 +507,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Favasuli",
-          "dettaglio": "Lesione di secondo grado del retto femorale della coscia destra, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "7563",
-          "match_score": 1.0
-        },
-        {
           "nome": "Spinazzola",
           "dettaglio": "Lesione di basso grado del bicipite femorale della coscia destra, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -535,10 +514,10 @@
           "match_score": 1.0
         },
         {
-          "nome": "Buongiorno",
-          "dettaglio": "Intervento chirurgico di riparazione della radice del menisco mediale del ginocchio destro, in dubbio per la 15a",
-          "rientro_giornata": 15,
-          "id": "2724",
+          "nome": "Favasuli",
+          "dettaglio": "Lesione di secondo grado del retto femorale della coscia destra, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "7563",
           "match_score": 1.0
         },
         {
@@ -553,6 +532,13 @@
           "dettaglio": "Lesione distrattiva di medio grado del retto femorale destro, in dubbio per la 16a",
           "rientro_giornata": 16,
           "id": "4664",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Buongiorno",
+          "dettaglio": "Intervento chirurgico di riparazione della radice del menisco mediale del ginocchio destro, in dubbio per la 16a",
+          "rientro_giornata": 16,
+          "id": "2724",
           "match_score": 1.0
         },
         {
@@ -606,6 +592,13 @@
           "dettaglio": "Lesione di primo grado alla coscia, in dubbio per l'11a",
           "rientro_giornata": null,
           "id": "5589",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Rensch",
+          "dettaglio": "Risentimento muscolare all'adduttore destro, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "6986",
           "match_score": 1.0
         },
         {
@@ -696,13 +689,6 @@
     },
     "udinese": {
       "infortunati": [
-        {
-          "nome": "Bayo V.",
-          "dettaglio": "Lesione al bicipite femorale della coscia destra, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "7161",
-          "match_score": 1.0
-        },
         {
           "nome": "Alaba",
           "dettaglio": "Risentimento muscolare al polpaccio destro, in dubbio per la 12a",
