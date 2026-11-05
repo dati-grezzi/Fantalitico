@@ -1,7 +1,7 @@
 {
   "fonte": "fantacalcio.it",
   "giornata": 11,
-  "aggiornato": "2026-11-05T13:53:43.507160+00:00",
+  "aggiornato": "2026-11-05T23:17:07.878270+00:00",
   "giocatori": {
     "6248": {
       "nome": "Stankovic F.",
@@ -87,13 +87,6 @@
       "confidence": 0.05,
       "match_score": 1.0
     },
-    "6671": {
-      "nome": "Grandi",
-      "squadra": "venezia",
-      "percentuale": 1,
-      "confidence": 0.01,
-      "match_score": 1.0
-    },
     "6892": {
       "nome": "Schingtienne",
       "squadra": "venezia",
@@ -120,6 +113,13 @@
       "squadra": "venezia",
       "percentuale": 45,
       "confidence": 0.45,
+      "match_score": 1.0
+    },
+    "4845": {
+      "nome": "Correia T.",
+      "squadra": "venezia",
+      "percentuale": 40,
+      "confidence": 0.4,
       "match_score": 1.0
     },
     "5872": {
@@ -150,18 +150,18 @@
       "confidence": 0.3,
       "match_score": 1.0
     },
-    "7635": {
-      "nome": "Fanne",
-      "squadra": "venezia",
-      "percentuale": 20,
-      "confidence": 0.2,
-      "match_score": 1.0
-    },
     "526": {
       "nome": "Duncan",
       "squadra": "venezia",
       "percentuale": 15,
       "confidence": 0.15,
+      "match_score": 1.0
+    },
+    "7635": {
+      "nome": "Fanne",
+      "squadra": "venezia",
+      "percentuale": 20,
+      "confidence": 0.2,
       "match_score": 1.0
     },
     "7482": {
@@ -374,6 +374,13 @@
       "confidence": 0.9,
       "match_score": 1.0
     },
+    "7532": {
+      "nome": "Kofler",
+      "squadra": "cagliari",
+      "percentuale": 70,
+      "confidence": 0.7,
+      "match_score": 1.0
+    },
     "4210": {
       "nome": "Mina",
       "squadra": "cagliari",
@@ -386,13 +393,6 @@
       "squadra": "cagliari",
       "percentuale": 90,
       "confidence": 0.9,
-      "match_score": 1.0
-    },
-    "7548": {
-      "nome": "Aurelio",
-      "squadra": "cagliari",
-      "percentuale": 70,
-      "confidence": 0.7,
       "match_score": 1.0
     },
     "4870": {
@@ -454,15 +454,15 @@
     "7621": {
       "nome": "Sugawara",
       "squadra": "cagliari",
-      "percentuale": 55,
-      "confidence": 0.55,
-      "match_score": 1.0
-    },
-    "7532": {
-      "nome": "Kofler",
-      "squadra": "cagliari",
       "percentuale": 45,
       "confidence": 0.45,
+      "match_score": 1.0
+    },
+    "7548": {
+      "nome": "Aurelio",
+      "squadra": "cagliari",
+      "percentuale": 15,
+      "confidence": 0.15,
       "match_score": 1.0
     },
     "6010": {
@@ -734,8 +734,8 @@
     "7220": {
       "nome": "Belghali",
       "squadra": "torino",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 65,
+      "confidence": 0.65,
       "match_score": 1.0
     },
     "5687": {
@@ -811,8 +811,8 @@
     "7183": {
       "nome": "Aboukhlal",
       "squadra": "torino",
-      "percentuale": 40,
-      "confidence": 0.4,
+      "percentuale": 35,
+      "confidence": 0.35,
       "match_score": 1.0
     },
     "6218": {
@@ -881,8 +881,8 @@
     "7240": {
       "nome": "Siebert",
       "squadra": "lecce",
-      "percentuale": 80,
-      "confidence": 0.8,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "6989": {
@@ -899,8 +899,8 @@
       "confidence": 0.9,
       "match_score": 1.0
     },
-    "7248": {
-      "nome": "Gorter",
+    "5504": {
+      "nome": "Coulibaly L.",
       "squadra": "lecce",
       "percentuale": 55,
       "confidence": 0.55,
@@ -958,8 +958,8 @@
     "6632": {
       "nome": "Gaspar K.",
       "squadra": "lecce",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 40,
+      "confidence": 0.4,
       "match_score": 1.0
     },
     "7182": {
@@ -990,18 +990,18 @@
       "confidence": 0.45,
       "match_score": 1.0
     },
-    "5504": {
-      "nome": "Coulibaly L.",
+    "7248": {
+      "nome": "Gorter",
       "squadra": "lecce",
-      "percentuale": 50,
-      "confidence": 0.5,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "7318": {
       "nome": "Gandelman",
       "squadra": "lecce",
-      "percentuale": 55,
-      "confidence": 0.55,
+      "percentuale": 50,
+      "confidence": 0.5,
       "match_score": 1.0
     },
     "7319": {
@@ -1518,8 +1518,8 @@
     "4867": {
       "nome": "Turati",
       "squadra": "sassuolo",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
     "4374": {
@@ -1742,8 +1742,8 @@
     "5131": {
       "nome": "Gilmour",
       "squadra": "napoli",
-      "percentuale": 85,
-      "confidence": 0.85,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "4777": {
@@ -1763,15 +1763,15 @@
     "2517": {
       "nome": "De Bruyne",
       "squadra": "napoli",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "6052": {
       "nome": "Hojlund",
       "squadra": "napoli",
-      "percentuale": 85,
-      "confidence": 0.85,
+      "percentuale": 90,
+      "confidence": 0.9,
       "match_score": 1.0
     },
     "2845": {
@@ -2008,8 +2008,8 @@
     "6047": {
       "nome": "Ehizibue",
       "squadra": "genoa",
-      "percentuale": 70,
-      "confidence": 0.7,
+      "percentuale": 60,
+      "confidence": 0.6,
       "match_score": 1.0
     },
     "5791": {
@@ -2092,15 +2092,8 @@
     "7413": {
       "nome": "Puczka",
       "squadra": "genoa",
-      "percentuale": 55,
-      "confidence": 0.55,
-      "match_score": 1.0
-    },
-    "5742": {
-      "nome": "Drameh",
-      "squadra": "genoa",
-      "percentuale": 15,
-      "confidence": 0.15,
+      "percentuale": 40,
+      "confidence": 0.4,
       "match_score": 1.0
     },
     "7608": {
@@ -2150,6 +2143,13 @@
       "squadra": "genoa",
       "percentuale": 15,
       "confidence": 0.15,
+      "match_score": 1.0
+    },
+    "7453": {
+      "nome": "Havel",
+      "squadra": "genoa",
+      "percentuale": 20,
+      "confidence": 0.2,
       "match_score": 1.0
     },
     "4923": {
@@ -2225,8 +2225,8 @@
     "2379": {
       "nome": "Rabiot",
       "squadra": "milan",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
     "6397": {
@@ -2253,8 +2253,8 @@
     "5273": {
       "nome": "Estupinan",
       "squadra": "milan",
-      "percentuale": 60,
-      "confidence": 0.6,
+      "percentuale": 55,
+      "confidence": 0.55,
       "match_score": 1.0
     },
     "5812": {
@@ -2491,8 +2491,8 @@
     "5526": {
       "nome": "Scalvini",
       "squadra": "atalanta",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "7633": {
@@ -2505,8 +2505,8 @@
     "7219": {
       "nome": "Bernasconi",
       "squadra": "atalanta",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 85,
+      "confidence": 0.85,
       "match_score": 1.0
     },
     "2077": {
@@ -2579,6 +2579,13 @@
       "confidence": 0.3,
       "match_score": 1.0
     },
+    "2640": {
+      "nome": "Kolasinac",
+      "squadra": "atalanta",
+      "percentuale": 15,
+      "confidence": 0.15,
+      "match_score": 1.0
+    },
     "5119": {
       "nome": "Samardzic",
       "squadra": "atalanta",
@@ -2591,6 +2598,13 @@
       "squadra": "atalanta",
       "percentuale": 40,
       "confidence": 0.4,
+      "match_score": 1.0
+    },
+    "1850": {
+      "nome": "Kessiè",
+      "squadra": "atalanta",
+      "percentuale": 20,
+      "confidence": 0.2,
       "match_score": 1.0
     },
     "5918": {
@@ -3079,8 +3093,8 @@
     "6042": {
       "nome": "Lucumì",
       "squadra": "juventus",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
     "6039": {
@@ -3121,8 +3135,8 @@
     "6752": {
       "nome": "Woltemade",
       "squadra": "juventus",
-      "percentuale": 90,
-      "confidence": 0.9,
+      "percentuale": 80,
+      "confidence": 0.8,
       "match_score": 1.0
     },
     "5951": {

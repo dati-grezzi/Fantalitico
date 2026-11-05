@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-11-05T13:53:44.695865+00:00",
+  "aggiornato": "2026-11-05T23:17:09.325991+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -129,7 +129,13 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [],
+      "squalificati": [
+        {
+          "nome": "Obert",
+          "id": "5701",
+          "match_score": 1.0
+        }
+      ],
       "diffidati": [
         {
           "nome": "Deiola",
@@ -240,22 +246,7 @@
       ]
     },
     "genoa": {
-      "infortunati": [
-        {
-          "nome": "Havel",
-          "dettaglio": "Infortunio alla caviglia, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "7453",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Venturino",
-          "dettaglio": "Intervento chirurgico di “pulizia” del tendine rotuleo, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "6980",
-          "match_score": 1.0
-        }
-      ],
+      "infortunati": [],
       "squalificati": [],
       "diffidati": [
         {
