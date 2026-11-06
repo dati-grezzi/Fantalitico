@@ -1,13 +1,13 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-11-06T13:44:58.357799+00:00",
+  "aggiornato": "2026-11-06T22:44:00.677672+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
         {
           "nome": "Raspadori",
-          "dettaglio": "Distrazione di basso grado del bicipite femorale della coscia destra, in dubbio per l'11a",
-          "rientro_giornata": null,
+          "dettaglio": "Distrazione di basso grado del bicipite femorale della coscia destra, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "4371",
           "match_score": 1.0
         },
@@ -61,15 +61,15 @@
       "infortunati": [
         {
           "nome": "De Silvestri",
-          "dettaglio": "Risentimento muscolare ai flessori della coscia sinistra, in dubbio per l'11a",
-          "rientro_giornata": null,
+          "dettaglio": "Risentimento muscolare ai flessori della coscia sinistra, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "487",
           "match_score": 1.0
         },
         {
           "nome": "Enem",
-          "dettaglio": "Problema al tendine d'Achille, in dubbio per l'11a",
-          "rientro_giornata": null,
+          "dettaglio": "Problema al tendine d'Achille, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "7627",
           "match_score": 1.0
         },
@@ -223,8 +223,8 @@
       "infortunati": [
         {
           "nome": "Grillitsch",
-          "dettaglio": "Intervento chirurgico per il trattamento di Sports Hernia destra, in dubbio per l'11a",
-          "rientro_giornata": null,
+          "dettaglio": "Intervento chirurgico per il trattamento di Sports Hernia destra, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "7550",
           "match_score": 1.0
         },
@@ -355,16 +355,9 @@
       "infortunati": [
         {
           "nome": "Berisha M.",
-          "dettaglio": "Sovraccarico, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "6015",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Geubbels",
-          "dettaglio": "Lesione di basso grado all’adduttore della coscia destra, in dubbio per la 12a",
+          "dettaglio": "Sovraccarico, in dubbio per la 12a",
           "rientro_giornata": 12,
-          "id": "5029",
+          "id": "6015",
           "match_score": 1.0
         },
         {
@@ -477,24 +470,10 @@
     "napoli": {
       "infortunati": [
         {
-          "nome": "Di Lorenzo",
-          "dettaglio": "Risentimento all'adduttore, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "2816",
-          "match_score": 1.0
-        },
-        {
           "nome": "Neres",
-          "dettaglio": "Lesione di basso grado del muscolo semimembranoso della coscia destra, in dubbio per l'11a",
-          "rientro_giornata": null,
+          "dettaglio": "Lesione di basso grado del muscolo semimembranoso della coscia destra, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "6831",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Olivera",
-          "dettaglio": "Affaticamento muscolare, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "5840",
           "match_score": 1.0
         },
         {
@@ -502,6 +481,13 @@
           "dettaglio": "Lesione di basso grado del bicipite femorale della coscia destra, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "1852",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Di Lorenzo",
+          "dettaglio": "Lesione distrattiva del muscolo adduttore lungo della coscia sinistra, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "2816",
           "match_score": 1.0
         },
         {
@@ -620,6 +606,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Berardi",
+          "dettaglio": "Problema fisico di natura non specificata, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "531",
+          "match_score": 1.0
+        },
+        {
           "nome": "Volpato",
           "dettaglio": "Problema muscolare, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -701,8 +694,8 @@
       "infortunati": [
         {
           "nome": "Adorante",
-          "dettaglio": "Operazione per un problema alla schiena, in dubbio per l'11a",
-          "rientro_giornata": null,
+          "dettaglio": "Operazione per un problema alla schiena, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "4387",
           "match_score": 1.0
         },
