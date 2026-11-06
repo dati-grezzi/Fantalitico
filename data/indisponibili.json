@@ -1,23 +1,9 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-11-05T23:17:09.325991+00:00",
+  "aggiornato": "2026-11-06T13:44:58.357799+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
-        {
-          "nome": "Kessiè",
-          "dettaglio": "Distrazione di basso grado al polpaccio della gamba destra, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "1850",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Kolasinac",
-          "dettaglio": "Distrazione di basso grado del retto femorale della coscia sinistra, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "2640",
-          "match_score": 1.0
-        },
         {
           "nome": "Raspadori",
           "dettaglio": "Distrazione di basso grado del bicipite femorale della coscia destra, in dubbio per l'11a",
@@ -101,6 +87,13 @@
     "cagliari": {
       "infortunati": [
         {
+          "nome": "Aurelio",
+          "dettaglio": "Affaticamento al soleo della gamba sinistra, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "7548",
+          "match_score": 1.0
+        },
+        {
           "nome": "Fadera",
           "dettaglio": "Lesione del bicipite femorale, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -119,6 +112,13 @@
           "dettaglio": "Distrazione di basso grado ai flessori, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "5336",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Mina",
+          "dettaglio": "Lesione muscolare al bicipite femorale, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "4210",
           "match_score": 1.0
         },
         {
@@ -484,13 +484,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Milinkovic-Savic V.",
-          "dettaglio": "Leggero affaticamento muscolare, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "2170",
-          "match_score": 1.0
-        },
-        {
           "nome": "Neres",
           "dettaglio": "Lesione di basso grado del muscolo semimembranoso della coscia destra, in dubbio per l'11a",
           "rientro_giornata": null,
@@ -654,24 +647,10 @@
     "torino": {
       "infortunati": [
         {
-          "nome": "Cacciamani",
-          "dettaglio": "Problema alla spalla, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "7060",
-          "match_score": 1.0
-        },
-        {
           "nome": "Fortini",
-          "dettaglio": "Problema muscolare alla coscia destra, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "7069",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Mandragora",
-          "dettaglio": "Problema al flessore della coscia sinistra, in dubbio per la 12a",
+          "dettaglio": "Problema muscolare alla coscia destra, in dubbio per la 12a",
           "rientro_giornata": 12,
-          "id": "1933",
+          "id": "7069",
           "match_score": 1.0
         },
         {
@@ -725,13 +704,6 @@
           "dettaglio": "Operazione per un problema alla schiena, in dubbio per l'11a",
           "rientro_giornata": null,
           "id": "4387",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Correia T.",
-          "dettaglio": "Problema muscolare, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "4845",
           "match_score": 1.0
         },
         {
