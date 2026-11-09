@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-11-08T21:41:49.303672+00:00",
+  "aggiornato": "2026-11-09T14:58:14.529708+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -74,6 +74,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Miranda J.",
+          "dettaglio": "Lesione di primo grado al bicipite femorale della coscia sinistra, in dubbio per la 14a",
+          "rientro_giornata": 14,
+          "id": "4734",
+          "match_score": 1.0
+        },
+        {
           "nome": "Holm",
           "dettaglio": "Intervento chirurgico di sutura del tendine degli hamstring della coscia destra, tempi di recupero previsti di 4-6 mesi dal 1 ottobre",
           "rientro_giornata": null,
@@ -115,6 +122,20 @@
           "match_score": 1.0
         },
         {
+          "nome": "Trepy",
+          "dettaglio": "Fastidio muscolare ai flessori della coscia sinistra, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "7317",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Winks",
+          "dettaglio": "Problema alla schiena, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "4260",
+          "match_score": 1.0
+        },
+        {
           "nome": "Mina",
           "dettaglio": "Lesione muscolare al bicipite femorale, in dubbio per la 13a",
           "rientro_giornata": 13,
@@ -129,13 +150,7 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [
-        {
-          "nome": "Obert",
-          "id": "5701",
-          "match_score": 1.0
-        }
-      ],
+      "squalificati": [],
       "diffidati": [
         {
           "nome": "Deiola",
@@ -147,17 +162,17 @@
     "como": {
       "infortunati": [
         {
-          "nome": "Chalobah T.",
-          "dettaglio": "Affaticamento muscolare, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "5641",
-          "match_score": 1.0
-        },
-        {
           "nome": "Addai",
           "dettaglio": "Problema muscolare, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "7127",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Chalobah T.",
+          "dettaglio": "Affaticamento muscolare, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "5641",
           "match_score": 1.0
         },
         {
@@ -189,16 +204,9 @@
       "infortunati": [
         {
           "nome": "Atta",
-          "dettaglio": "Sovraccarico funzionale all'addome, in dubbio per l'11a",
-          "rientro_giornata": null,
+          "dettaglio": "Sovraccarico funzionale all'addome, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "6908",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Ranieri L.",
-          "dettaglio": "Problema a un piede, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "4378",
           "match_score": 1.0
         },
         {
@@ -243,14 +251,14 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [],
-      "diffidati": [
+      "squalificati": [
         {
           "nome": "Bracaglia",
           "id": "7469",
           "match_score": 1.0
         }
-      ]
+      ],
+      "diffidati": []
     },
     "genoa": {
       "infortunati": [],
@@ -286,13 +294,6 @@
     "juventus": {
       "infortunati": [
         {
-          "nome": "Celik",
-          "dettaglio": "Lesione di basso grado del bicipite femorale sinistro, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "4657",
-          "match_score": 1.0
-        },
-        {
           "nome": "Cambiaso",
           "dettaglio": "Affaticamento muscolare, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -311,6 +312,13 @@
           "dettaglio": "Lesione di basso grado del soleo destro, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "4179",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Kalulu",
+          "dettaglio": "Lesione ai muscoli ischiocrurali della gamba sinistra, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "4976",
           "match_score": 1.0
         },
         {
@@ -352,6 +360,20 @@
           "dettaglio": "Lussazione dell’articolazione gleno-omerale destra, spontaneamente ridotta, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "5800",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Sutalo J.",
+          "dettaglio": "Lesione al flessore, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "7580",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Tavares N.",
+          "dettaglio": "Fastidio al flessore, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "5620",
           "match_score": 1.0
         },
         {
@@ -409,6 +431,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Pavlovic",
+          "dettaglio": "Forti coliche, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "5022",
+          "match_score": 1.0
+        },
+        {
           "nome": "Terracciano",
           "dettaglio": "Trauma alla spalla destra, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -451,30 +480,16 @@
       "infortunati": [
         {
           "nome": "Folorunsho",
-          "dettaglio": "Problema al polpaccio, in dubbio per l'11a",
-          "rientro_giornata": null,
+          "dettaglio": "Problema al polpaccio, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "6252",
           "match_score": 1.0
         },
         {
           "nome": "Maye",
-          "dettaglio": "Problema fisico, in dubbio per l'11a",
-          "rientro_giornata": null,
+          "dettaglio": "Problema fisico, in dubbio per la 12a",
+          "rientro_giornata": 12,
           "id": "7604",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Pessina",
-          "dettaglio": "Operato per lussazione della rotula del ginocchio destro, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "2741",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Ziolkowski",
-          "dettaglio": "Problema alla fascia plantare, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "7260",
           "match_score": 1.0
         }
       ],
@@ -540,13 +555,7 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [
-        {
-          "nome": "Marianucci",
-          "id": "6809",
-          "match_score": 1.0
-        }
-      ],
+      "squalificati": [],
       "diffidati": []
     },
     "parma": {
@@ -559,6 +568,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Romero D.",
+          "dettaglio": "Lussazione acromion claveare della spalla destra, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "7554",
+          "match_score": 1.0
+        },
+        {
           "nome": "Bernabè",
           "dettaglio": "Distrazione di basso grado al retto femorale della coscia sinistra, in dubbio per la 13a",
           "rientro_giornata": 13,
@@ -566,7 +582,13 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [],
+      "squalificati": [
+        {
+          "nome": "Ndiaye",
+          "id": "7202",
+          "match_score": 1.0
+        }
+      ],
       "diffidati": []
     },
     "roma": {
@@ -576,6 +598,13 @@
           "dettaglio": "Problema al polpaccio, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "309",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Mancini",
+          "dettaglio": "Risentimento muscolare al flessore destro, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "2296",
           "match_score": 1.0
         },
         {
@@ -606,17 +635,17 @@
     "sassuolo": {
       "infortunati": [
         {
-          "nome": "Boloca",
-          "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per l'11a",
-          "rientro_giornata": null,
-          "id": "6219",
-          "match_score": 1.0
-        },
-        {
           "nome": "Berardi",
           "dettaglio": "Problema fisico di natura non specificata, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "531",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Boloca",
+          "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "6219",
           "match_score": 1.0
         },
         {
