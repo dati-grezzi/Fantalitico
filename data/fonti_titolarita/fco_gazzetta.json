@@ -1,6 +1,6 @@
 {
  "fonte": "gazzetta.it",
- "aggiornato": "2026-11-09T14:58:19.719151+00:00",
+ "aggiornato": "2026-11-10T01:12:07.282557+00:00",
  "giornata": 12,
  "via": "fantacalcio-online.com",
  "giocatori": {
@@ -548,11 +548,11 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "7579": {
-   "nome": "Massolin",
+  "6010": {
+   "nome": "Fazzini",
    "squadra": "cagliari",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -604,14 +604,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "6010": {
-   "nome": "Fazzini",
-   "squadra": "cagliari",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "801": {
    "nome": "Gagliardini",
    "squadra": "cagliari",
@@ -622,6 +614,14 @@
   },
   "7165": {
    "nome": "Liteta",
+   "squadra": "cagliari",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "7579": {
+   "nome": "Massolin",
    "squadra": "cagliari",
    "confidence": 0.3,
    "percentuale": 30,
@@ -875,6 +875,14 @@
    "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
+  },
+  "610": {
+   "nome": "Gollini",
+   "squadra": "roma",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
   },
   "6631": {
    "nome": "Ghilardi",
@@ -2012,6 +2020,14 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
+  "7483": {
+   "nome": "Alhassane",
+   "squadra": "bologna",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
   "5498": {
    "nome": "Casale",
    "squadra": "bologna",
@@ -2084,14 +2100,6 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "2167": {
-   "nome": "Orsolini",
-   "squadra": "bologna",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
   "7533": {
    "nome": "Happonen",
    "squadra": "bologna",
@@ -2102,14 +2110,6 @@
   },
   "7172": {
    "nome": "Pessina Mas.",
-   "squadra": "bologna",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "7483": {
-   "nome": "Alhassane",
    "squadra": "bologna",
    "confidence": 0.3,
    "percentuale": 30,
@@ -2174,6 +2174,14 @@
   },
   "6833": {
    "nome": "Mbangula",
+   "squadra": "bologna",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "2167": {
+   "nome": "Orsolini",
    "squadra": "bologna",
    "confidence": 0.3,
    "percentuale": 30,
@@ -2919,8 +2927,8 @@
   "7071": {
    "nome": "Esposito F.P.",
    "squadra": "inter",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.6,
+   "percentuale": 60,
    "match_score": 1.0,
    "lista": "titolare"
   },

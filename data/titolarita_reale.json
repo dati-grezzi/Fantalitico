@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-09T14:58:24.061604+00:00",
+  "aggiornato": "2026-11-10T01:12:14.633975+00:00",
   "fonti_usate": [
     "fantacalcio.it",
     "gazzetta.it",
@@ -669,7 +669,7 @@
     "6010": {
       "nome": "Fazzini",
       "squadra": "cagliari",
-      "confidence": 0.48,
+      "confidence": 0.665,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -678,10 +678,10 @@
       "n_fonti": 3,
       "valori": {
         "fantacalcio.it": 0.6,
-        "gazzetta.it": 0.3,
+        "gazzetta.it": 0.9,
         "sosfanta.com": 0.51
       },
-      "scarto": 0.3
+      "scarto": 0.39
     },
     "7634": {
       "nome": "Sulev",
@@ -2132,14 +2132,16 @@
     "610": {
       "nome": "Gollini",
       "squadra": "roma",
-      "confidence": 0.45,
+      "confidence": 0.404,
       "fonti": [
         "fantacalcio.it",
+        "gazzetta.it",
         "sosfanta.com"
       ],
-      "n_fonti": 2,
+      "n_fonti": 3,
       "valori": {
         "fantacalcio.it": 0.05,
+        "gazzetta.it": 0.3,
         "sosfanta.com": 0.95
       },
       "scarto": 0.9
@@ -4920,7 +4922,7 @@
     "7483": {
       "nome": "Alhassane",
       "squadra": "bologna",
-      "confidence": 0.442,
+      "confidence": 0.626,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -4929,10 +4931,10 @@
       "n_fonti": 3,
       "valori": {
         "fantacalcio.it": 0.5,
-        "gazzetta.it": 0.3,
+        "gazzetta.it": 0.9,
         "sosfanta.com": 0.51
       },
-      "scarto": 0.21
+      "scarto": 0.4
     },
     "7068": {
       "nome": "Vitik",
@@ -6046,7 +6048,7 @@
     "7071": {
       "nome": "Esposito F.P.",
       "squadra": "inter",
-      "confidence": 0.754,
+      "confidence": 0.785,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -6055,8 +6057,8 @@
       "n_fonti": 3,
       "valori": {
         "fantacalcio.it": 0.8,
-        "gazzetta.it": 0.9,
-        "sosfanta.com": 0.55
+        "gazzetta.it": 0.6,
+        "sosfanta.com": 0.95
       },
       "scarto": 0.35
     },
@@ -6263,17 +6265,15 @@
     "6669": {
       "nome": "Bonny",
       "squadra": "inter",
-      "confidence": 0.462,
+      "confidence": 0.467,
       "fonti": [
         "fantacalcio.it",
-        "gazzetta.it",
-        "sosfanta.com"
+        "gazzetta.it"
       ],
-      "n_fonti": 3,
+      "n_fonti": 2,
       "valori": {
         "fantacalcio.it": 0.6,
-        "gazzetta.it": 0.3,
-        "sosfanta.com": 0.45
+        "gazzetta.it": 0.3
       },
       "scarto": 0.3
     },
