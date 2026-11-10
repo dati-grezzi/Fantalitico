@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-11-10T14:13:07.475198+00:00",
+  "aggiornato": "2026-11-10T22:51:42.829144+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -281,17 +281,24 @@
           "match_score": 1.0
         },
         {
-          "nome": "Martinez L.",
-          "dettaglio": "Risentimento muscolare ai flessori della coscia sinistra, in dubbio per la 12a",
+          "nome": "Thuram",
+          "dettaglio": "Problema al bicipite femorale destro, in dubbio per la 12a",
           "rientro_giornata": 12,
-          "id": "2764",
+          "id": "4871",
           "match_score": 1.0
         },
         {
           "nome": "Bonny",
-          "dettaglio": "Risentimento muscolare ai flessori della coscia destra, in dubbio per la 13a",
-          "rientro_giornata": 13,
+          "dettaglio": "Risentimento muscolare ai flessori della coscia destra, in dubbio per la 14a",
+          "rientro_giornata": 14,
           "id": "6669",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Stankovic A.",
+          "dettaglio": "Lesione al muscolo adduttore della coscia destra, in dubbio per la 14a",
+          "rientro_giornata": 14,
+          "id": "6503",
           "match_score": 1.0
         }
       ],
@@ -323,7 +330,7 @@
         },
         {
           "nome": "Kalulu",
-          "dettaglio": "Lesione ai muscoli ischiocrurali della gamba sinistra, in dubbio per la 13a",
+          "dettaglio": "Lesione di basso grado del bicipite femorale sinistro, in dubbio per la 13a",
           "rientro_giornata": 13,
           "id": "4976",
           "match_score": 1.0
@@ -370,17 +377,17 @@
           "match_score": 1.0
         },
         {
-          "nome": "Sutalo J.",
-          "dettaglio": "Lesione al flessore, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "7580",
-          "match_score": 1.0
-        },
-        {
           "nome": "Tavares N.",
           "dettaglio": "Fastidio al flessore, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "5620",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Sutalo J.",
+          "dettaglio": "Lesione al flessore, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "7580",
           "match_score": 1.0
         },
         {
@@ -506,6 +513,13 @@
     "napoli": {
       "infortunati": [
         {
+          "nome": "Favasuli",
+          "dettaglio": "Lesione di secondo grado del retto femorale della coscia destra, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "7563",
+          "match_score": 1.0
+        },
+        {
           "nome": "Neres",
           "dettaglio": "Lesione di basso grado del muscolo semimembranoso della coscia destra, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -520,6 +534,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Badiashile",
+          "dettaglio": "Lesione distrattiva di medio grado del retto femorale destro, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "4664",
+          "match_score": 1.0
+        },
+        {
           "nome": "Di Lorenzo",
           "dettaglio": "Lesione distrattiva del muscolo adduttore lungo della coscia sinistra, in dubbio per la 13a",
           "rientro_giornata": 13,
@@ -527,10 +548,10 @@
           "match_score": 1.0
         },
         {
-          "nome": "Favasuli",
-          "dettaglio": "Lesione di secondo grado del retto femorale della coscia destra, in dubbio per la 13a",
-          "rientro_giornata": 13,
-          "id": "7563",
+          "nome": "Santos A.",
+          "dettaglio": "Lesione distrattiva di medio grado del bicipite femorale sinistro, in dubbio per la 14a",
+          "rientro_giornata": 14,
+          "id": "7351",
           "match_score": 1.0
         },
         {
@@ -541,24 +562,10 @@
           "match_score": 1.0
         },
         {
-          "nome": "Badiashile",
-          "dettaglio": "Lesione distrattiva di medio grado del retto femorale destro, in dubbio per la 16a",
-          "rientro_giornata": 16,
-          "id": "4664",
-          "match_score": 1.0
-        },
-        {
           "nome": "Buongiorno",
           "dettaglio": "Intervento chirurgico di riparazione della radice del menisco mediale del ginocchio destro, in dubbio per la 16a",
           "rientro_giornata": 16,
           "id": "2724",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Santos A.",
-          "dettaglio": "Lesione distrattiva di medio grado del bicipite femorale sinistro, in dubbio per la 16a",
-          "rientro_giornata": 16,
-          "id": "7351",
           "match_score": 1.0
         }
       ],
@@ -596,7 +603,13 @@
           "match_score": 1.0
         }
       ],
-      "diffidati": []
+      "diffidati": [
+        {
+          "nome": "Troilo",
+          "id": "7235",
+          "match_score": 1.0
+        }
+      ]
     },
     "roma": {
       "infortunati": [
