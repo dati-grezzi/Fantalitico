@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-10T22:51:53.183518+00:00",
+  "aggiornato": "2026-11-11T13:27:29.605660+00:00",
   "fonti_usate": [
     "fantacalcio.it",
     "gazzetta.it",
@@ -1025,7 +1025,7 @@
     "6320": {
       "nome": "Doekhi",
       "squadra": "lazio",
-      "confidence": 0.408,
+      "confidence": 0.369,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -1033,11 +1033,11 @@
       ],
       "n_fonti": 3,
       "valori": {
-        "fantacalcio.it": 0.5,
+        "fantacalcio.it": 0.4,
         "gazzetta.it": 0.3,
         "sosfanta.com": 0.4
       },
-      "scarto": 0.2
+      "scarto": 0.1
     },
     "2263": {
       "nome": "Lazzari",
@@ -1157,6 +1157,19 @@
         "sosfanta.com": 0.4
       },
       "scarto": 0.3
+    },
+    "632": {
+      "nome": "Zaccagni",
+      "squadra": "lazio",
+      "confidence": 0.5,
+      "fonti": [
+        "fantacalcio.it"
+      ],
+      "n_fonti": 1,
+      "valori": {
+        "fantacalcio.it": 0.5
+      },
+      "scarto": null
     },
     "2134": {
       "nome": "Falcone",
@@ -5861,13 +5874,13 @@
     "4371": {
       "nome": "Raspadori",
       "squadra": "atalanta",
-      "confidence": 0.2,
+      "confidence": 0.3,
       "fonti": [
         "fantacalcio.it"
       ],
       "n_fonti": 1,
       "valori": {
-        "fantacalcio.it": 0.2
+        "fantacalcio.it": 0.3
       },
       "scarto": null
     },
