@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-11-11T13:27:19.164802+00:00",
+  "aggiornato": "2026-11-12T00:03:26.794488+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -105,13 +105,6 @@
           "dettaglio": "Lesione del bicipite femorale, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "6815",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Idrissi R.",
-          "dettaglio": "Intervento chirurgico di ricostruzione del legamento crociato anteriore del ginocchio sinistro, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "7125",
           "match_score": 1.0
         },
         {
@@ -261,7 +254,15 @@
       "diffidati": []
     },
     "genoa": {
-      "infortunati": [],
+      "infortunati": [
+        {
+          "nome": "Frendrup",
+          "dettaglio": "Problema alla caviglia, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "5791",
+          "match_score": 1.0
+        }
+      ],
       "squalificati": [],
       "diffidati": [
         {
@@ -312,13 +313,6 @@
           "dettaglio": "Affaticamento muscolare, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "5520",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Conceicao",
-          "dettaglio": "Lussazione gleno-omerale, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "6884",
           "match_score": 1.0
         },
         {
@@ -377,17 +371,17 @@
           "match_score": 1.0
         },
         {
-          "nome": "Tavares N.",
-          "dettaglio": "Fastidio al flessore, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "5620",
-          "match_score": 1.0
-        },
-        {
           "nome": "Sutalo J.",
           "dettaglio": "Lesione al flessore, in dubbio per la 13a",
           "rientro_giornata": 13,
           "id": "7580",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Tavares N.",
+          "dettaglio": "Fastidio al flessore, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "5620",
           "match_score": 1.0
         },
         {
@@ -403,13 +397,6 @@
     },
     "lecce": {
       "infortunati": [
-        {
-          "nome": "Berisha M.",
-          "dettaglio": "Sovraccarico, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "6015",
-          "match_score": 1.0
-        },
         {
           "nome": "Monteiro J.",
           "dettaglio": "Lesione di primo grado al polpaccio sinistro, in dubbio per la 12a",
@@ -613,20 +600,6 @@
     },
     "roma": {
       "infortunati": [
-        {
-          "nome": "Dybala",
-          "dettaglio": "Problema al polpaccio, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "309",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Mancini",
-          "dettaglio": "Risentimento muscolare al flessore destro, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "2296",
-          "match_score": 1.0
-        },
         {
           "nome": "Svilar",
           "dettaglio": "Frattura da stress al quinto dito del piede, in dubbio per la 12a",

@@ -1,5 +1,5 @@
 {
- "aggiornato": "2026-11-11T13:28:35.032185+00:00",
+ "aggiornato": "2026-11-12T00:04:39.677992+00:00",
  "fonte": "playerstats.football (statistiche difensive/di passaggio, per90, solo top-50 per categoria)",
  "note": "Mapping ID fantacalcio → {tackles_p90, interceptions_p90, clearances_p90, duels_p90, key_passes_p90, accurate_passes_p90, rating}. Copertura parziale: solo chi rientra nei primi 50 di almeno una categoria.",
  "giocatori": {
@@ -80,7 +80,7 @@
    "interceptions_p90": 1.12,
    "duels_p90": 17.16,
    "key_passes_p90": 2.15,
-   "rating": 8.15,
+   "rating": 8.14,
    "shots_p90": 4.49,
    "shots_on_target_p90": 1.33,
    "playerstats_name": "Franco Mastantuono",
@@ -188,7 +188,7 @@
    "interceptions_p90": 1.18,
    "clearances_p90": 2.82,
    "accurate_passes_p90": 46.09,
-   "rating": 7.06,
+   "rating": 7.05,
    "playerstats_name": "Pierre Kalulu",
    "match_score": 0.9
   },
@@ -287,7 +287,7 @@
    "clearances_p90": 8.29,
    "duels_p90": 9.5,
    "accurate_passes_p90": 42.58,
-   "rating": 7.28,
+   "rating": 7.29,
    "playerstats_name": "Leo Østigård",
    "match_score": 0.9
   },
@@ -420,7 +420,7 @@
   },
   "6659": {
    "minuti": 771,
-   "interceptions_p90": 2.45,
+   "interceptions_p90": 2.33,
    "clearances_p90": 4.44,
    "playerstats_name": "Lorenzo Lucchesi",
    "match_score": 0.9
@@ -750,9 +750,9 @@
   },
   "5995": {
    "minuti": 852,
-   "duels_p90": 12.25,
+   "duels_p90": 12.36,
    "key_passes_p90": 2.75,
-   "rating": 8.18,
+   "rating": 8.2,
    "shots_p90": 1.9,
    "shots_on_target_p90": 0.63,
    "playerstats_name": "Charles De Ketelaere",
@@ -870,6 +870,14 @@
    "playerstats_name": "Nikola Krstović",
    "match_score": 0.9
   },
+  "5436": {
+   "minuti": 762,
+   "duels_p90": 10.16,
+   "shots_p90": 3.78,
+   "shots_on_target_p90": 1.3,
+   "playerstats_name": "Antonio Raimondo",
+   "match_score": 0.9
+  },
   "184": {
    "minuti": 783,
    "duels_p90": 9.89,
@@ -878,14 +886,6 @@
    "shots_p90": 3.22,
    "shots_on_target_p90": 1.38,
    "playerstats_name": "Federico Bernardeschi",
-   "match_score": 0.9
-  },
-  "5436": {
-   "minuti": 762,
-   "duels_p90": 10.16,
-   "shots_p90": 3.78,
-   "shots_on_target_p90": 1.3,
-   "playerstats_name": "Antonio Raimondo",
    "match_score": 0.9
   },
   "6904": {
@@ -960,7 +960,7 @@
   "254": {
    "minuti": 657,
    "key_passes_p90": 2.88,
-   "rating": 10.76,
+   "rating": 10.74,
    "shots_p90": 2.6,
    "playerstats_name": "Federico Dimarco",
    "match_score": 0.9
@@ -990,7 +990,7 @@
    "minuti": 916,
    "key_passes_p90": 1.77,
    "accurate_passes_p90": 66.71,
-   "rating": 8.0,
+   "rating": 7.99,
    "shots_p90": 2.06,
    "playerstats_name": "Douglas Luiz",
    "match_score": 0.9
@@ -1095,9 +1095,9 @@
    "match_score": 0.9
   },
   "6151": {
-   "minuti": 593,
-   "accurate_passes_p90": 82.26,
-   "rating": 11.6,
+   "minuti": 594,
+   "accurate_passes_p90": 82.12,
+   "rating": 11.58,
    "playerstats_name": "Máximo Perrone",
    "match_score": 0.9
   },
@@ -1205,7 +1205,7 @@
   },
   "7017": {
    "minuti": 858,
-   "rating": 7.92,
+   "rating": 7.93,
    "shots_p90": 2.94,
    "shots_on_target_p90": 1.36,
    "playerstats_name": "Anastasios Douvikas",
@@ -1252,15 +1252,15 @@
    "match_score": 0.9
   },
   "7071": {
-   "minuti": 581,
-   "shots_p90": 2.94,
-   "shots_on_target_p90": 1.39,
+   "minuti": 580,
+   "shots_p90": 2.95,
+   "shots_on_target_p90": 1.4,
    "playerstats_name": "Pio Esposito",
    "match_score": 0.9
   },
   "7126": {
-   "minuti": 489,
-   "shots_p90": 3.5,
+   "minuti": 490,
+   "shots_p90": 3.49,
    "shots_on_target_p90": 1.29,
    "playerstats_name": "Martin Baturina",
    "match_score": 0.9
@@ -1335,8 +1335,8 @@
    "match_score": 0.9
   },
   "6669": {
-   "minuti": 245,
-   "shots_on_target_p90": 2.57,
+   "minuti": 246,
+   "shots_on_target_p90": 2.56,
    "playerstats_name": "Ange-Yoan Bonny",
    "match_score": 0.9
   },
