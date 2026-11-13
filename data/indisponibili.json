@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-11-13T13:49:03.033578+00:00",
+  "aggiornato": "2026-11-13T23:15:38.195437+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -196,13 +196,6 @@
     "fiorentina": {
       "infortunati": [
         {
-          "nome": "Atta",
-          "dettaglio": "Sovraccarico funzionale all'addome, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "6908",
-          "match_score": 1.0
-        },
-        {
           "nome": "Pongracic",
           "dettaglio": "Lesione mio-fasciale a carico del capo lungo del bicipite femorale della coscia destra, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -274,13 +267,6 @@
     },
     "inter": {
       "infortunati": [
-        {
-          "nome": "Luis Henrique",
-          "dettaglio": "Risentimento all'adduttore lungo della coscia sinistra, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "5301",
-          "match_score": 1.0
-        },
         {
           "nome": "Thuram",
           "dettaglio": "Problema al bicipite femorale destro, in dubbio per la 12a",
@@ -363,6 +349,20 @@
     },
     "lazio": {
       "infortunati": [
+        {
+          "nome": "Frattesi",
+          "dettaglio": "Risentimento muscolare all'adduttore, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "2848",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Marusic",
+          "dettaglio": "Ricaduta, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "2188",
+          "match_score": 1.0
+        },
         {
           "nome": "Zaccagni",
           "dettaglio": "Lesione muscolare alla coscia sinistra, in dubbio per la 13a",
@@ -555,6 +555,13 @@
     "parma": {
       "infortunati": [
         {
+          "nome": "Bernabè",
+          "dettaglio": "Distrazione di basso grado al retto femorale della coscia sinistra, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "6666",
+          "match_score": 1.0
+        },
+        {
           "nome": "Drobnic",
           "dettaglio": "Fascite plantare al piede sinistro, in dubbio per la 12a",
           "rientro_giornata": 12,
@@ -563,16 +570,9 @@
         },
         {
           "nome": "Romero D.",
-          "dettaglio": "Lussazione acromion claveare della spalla destra, in dubbio per la 12a",
-          "rientro_giornata": 12,
+          "dettaglio": "Lussazione acromion claveare della spalla destra, in dubbio per la 13a",
+          "rientro_giornata": 13,
           "id": "7554",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Bernabè",
-          "dettaglio": "Distrazione di basso grado al retto femorale della coscia sinistra, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "6666",
           "match_score": 1.0
         }
       ],
@@ -593,13 +593,6 @@
     },
     "roma": {
       "infortunati": [
-        {
-          "nome": "Svilar",
-          "dettaglio": "Frattura da stress al quinto dito del piede, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "5841",
-          "match_score": 1.0
-        },
         {
           "nome": "Rensch",
           "dettaglio": "Lieve lesione muscolare all'adduttore destro, in dubbio per la 13a",
@@ -662,17 +655,17 @@
     "torino": {
       "infortunati": [
         {
+          "nome": "Belghali",
+          "dettaglio": "Problema al ginocchio, in dubbio per la 12a",
+          "rientro_giornata": 12,
+          "id": "7220",
+          "match_score": 1.0
+        },
+        {
           "nome": "Fortini",
           "dettaglio": "Problema muscolare alla coscia destra, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "7069",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Rodriguez R.",
-          "dettaglio": "Lesione tendinea di basso grado ai muscoli flessori della coscia sinistra, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "2169",
           "match_score": 1.0
         }
       ],
@@ -693,6 +686,13 @@
           "dettaglio": "Ricaduta, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "5527",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Bertola",
+          "dettaglio": "Lesione al muscolo semimembranoso della coscia destra, in dubbio per la 14a",
+          "rientro_giornata": 14,
+          "id": "5820",
           "match_score": 1.0
         },
         {
