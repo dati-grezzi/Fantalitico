@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-13T23:15:49.679583+00:00",
+  "aggiornato": "2026-11-14T12:53:12.491249+00:00",
   "fonti_usate": [
     "fantacalcio.it",
     "gazzetta.it",
@@ -868,7 +868,7 @@
     "4817": {
       "nome": "Pedraza",
       "squadra": "lazio",
-      "confidence": 0.75,
+      "confidence": 0.788,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -876,24 +876,28 @@
       ],
       "n_fonti": 3,
       "valori": {
-        "fantacalcio.it": 0.75,
+        "fantacalcio.it": 0.85,
         "gazzetta.it": 0.9,
         "sosfanta.com": 0.6
       },
       "scarto": 0.3
     },
-    "2848": {
-      "nome": "Frattesi",
+    "6629": {
+      "nome": "Dele-Bashiru",
       "squadra": "lazio",
-      "confidence": 0.7,
+      "confidence": 0.692,
       "fonti": [
-        "fantacalcio.it"
+        "fantacalcio.it",
+        "gazzetta.it",
+        "sosfanta.com"
       ],
-      "n_fonti": 1,
+      "n_fonti": 3,
       "valori": {
-        "fantacalcio.it": 0.7
+        "fantacalcio.it": 0.8,
+        "gazzetta.it": 0.3,
+        "sosfanta.com": 0.95
       },
-      "scarto": null
+      "scarto": 0.65
     },
     "6191": {
       "nome": "Belahyane",
@@ -1068,23 +1072,6 @@
     "4459": {
       "nome": "Rovella",
       "squadra": "lazio",
-      "confidence": 0.262,
-      "fonti": [
-        "fantacalcio.it",
-        "gazzetta.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "fantacalcio.it": 0.4,
-        "gazzetta.it": 0.3,
-        "sosfanta.com": 0.05
-      },
-      "scarto": 0.35
-    },
-    "333": {
-      "nome": "Cataldi",
-      "squadra": "lazio",
       "confidence": 0.319,
       "fonti": [
         "fantacalcio.it",
@@ -1098,6 +1085,23 @@
         "sosfanta.com": 0.05
       },
       "scarto": 0.5
+    },
+    "333": {
+      "nome": "Cataldi",
+      "squadra": "lazio",
+      "confidence": 0.338,
+      "fonti": [
+        "fantacalcio.it",
+        "gazzetta.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 3,
+      "valori": {
+        "fantacalcio.it": 0.6,
+        "gazzetta.it": 0.3,
+        "sosfanta.com": 0.05
+      },
+      "scarto": 0.55
     },
     "7345": {
       "nome": "Przyborek",
@@ -1116,22 +1120,18 @@
       },
       "scarto": 0.25
     },
-    "6629": {
-      "nome": "Dele-Bashiru",
+    "2848": {
+      "nome": "Frattesi",
       "squadra": "lazio",
-      "confidence": 0.615,
+      "confidence": 0.5,
       "fonti": [
-        "fantacalcio.it",
-        "gazzetta.it",
-        "sosfanta.com"
+        "fantacalcio.it"
       ],
-      "n_fonti": 3,
+      "n_fonti": 1,
       "valori": {
-        "fantacalcio.it": 0.6,
-        "gazzetta.it": 0.3,
-        "sosfanta.com": 0.95
+        "fantacalcio.it": 0.5
       },
-      "scarto": 0.65
+      "scarto": null
     },
     "5500": {
       "nome": "Cancellieri",
@@ -1153,13 +1153,13 @@
     "5800": {
       "nome": "Gudmundsson A.",
       "squadra": "lazio",
-      "confidence": 0.35,
+      "confidence": 0.5,
       "fonti": [
         "fantacalcio.it"
       ],
       "n_fonti": 1,
       "valori": {
-        "fantacalcio.it": 0.35
+        "fantacalcio.it": 0.5
       },
       "scarto": null
     },
