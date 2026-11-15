@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-14T21:59:36.878211+00:00",
+  "aggiornato": "2026-11-15T13:20:29.332832+00:00",
   "fonti_usate": [
     "fantacalcio.it",
     "gazzetta.it",
@@ -2118,17 +2118,15 @@
     "7556": {
       "nome": "Mora",
       "squadra": "roma",
-      "confidence": 0.656,
+      "confidence": 0.7,
       "fonti": [
-        "fantacalcio.it",
-        "sosfanta.com"
+        "fantacalcio.it"
       ],
-      "n_fonti": 2,
+      "n_fonti": 1,
       "valori": {
-        "fantacalcio.it": 0.7,
-        "sosfanta.com": 0.6
+        "fantacalcio.it": 0.7
       },
-      "scarto": 0.1
+      "scarto": null
     },
     "5585": {
       "nome": "Malen",
@@ -2265,7 +2263,7 @@
     "6190": {
       "nome": "Pisilli",
       "squadra": "roma",
-      "confidence": 0.446,
+      "confidence": 0.338,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -2275,9 +2273,9 @@
       "valori": {
         "fantacalcio.it": 0.6,
         "gazzetta.it": 0.3,
-        "sosfanta.com": 0.4
+        "sosfanta.com": 0.05
       },
-      "scarto": 0.3
+      "scarto": 0.55
     },
     "22": {
       "nome": "De Roon",
@@ -2329,7 +2327,7 @@
     "309": {
       "nome": "Dybala",
       "squadra": "roma",
-      "confidence": 0.328,
+      "confidence": 0.532,
       "fonti": [
         "fantacalcio.it",
         "sosfanta.com"
@@ -2337,9 +2335,9 @@
       "n_fonti": 2,
       "valori": {
         "fantacalcio.it": 0.55,
-        "sosfanta.com": 0.05
+        "sosfanta.com": 0.51
       },
-      "scarto": 0.5
+      "scarto": 0.04
     },
     "2170": {
       "nome": "Milinkovic-Savic V.",
@@ -6792,7 +6790,7 @@
     "4159": {
       "nome": "Akanji",
       "squadra": "inter",
-      "confidence": 0.915,
+      "confidence": 0.838,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -6800,11 +6798,11 @@
       ],
       "n_fonti": 3,
       "valori": {
-        "fantacalcio.it": 0.9,
+        "fantacalcio.it": 0.7,
         "gazzetta.it": 0.9,
         "sosfanta.com": 0.95
       },
-      "scarto": 0.05
+      "scarto": 0.25
     },
     "2120": {
       "nome": "Bastoni",
@@ -6874,10 +6872,10 @@
       },
       "scarto": 0.05
     },
-    "152": {
-      "nome": "Zielinski",
+    "5172": {
+      "nome": "Jones C.",
       "squadra": "inter",
-      "confidence": 0.531,
+      "confidence": 0.377,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -6887,9 +6885,9 @@
       "valori": {
         "fantacalcio.it": 0.7,
         "gazzetta.it": 0.3,
-        "sosfanta.com": 0.55
+        "sosfanta.com": 0.05
       },
-      "scarto": 0.4
+      "scarto": 0.65
     },
     "254": {
       "nome": "Dimarco",
@@ -7026,41 +7024,7 @@
     "6274": {
       "nome": "Diouf",
       "squadra": "inter",
-      "confidence": 0.442,
-      "fonti": [
-        "fantacalcio.it",
-        "gazzetta.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "fantacalcio.it": 0.55,
-        "gazzetta.it": 0.3,
-        "sosfanta.com": 0.45
-      },
-      "scarto": 0.25
-    },
-    "2529": {
-      "nome": "Mkhitaryan",
-      "squadra": "inter",
-      "confidence": 0.442,
-      "fonti": [
-        "fantacalcio.it",
-        "gazzetta.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 3,
-      "valori": {
-        "fantacalcio.it": 0.55,
-        "gazzetta.it": 0.3,
-        "sosfanta.com": 0.45
-      },
-      "scarto": 0.25
-    },
-    "5172": {
-      "nome": "Jones C.",
-      "squadra": "inter",
-      "confidence": 0.338,
+      "confidence": 0.462,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -7070,9 +7034,43 @@
       "valori": {
         "fantacalcio.it": 0.6,
         "gazzetta.it": 0.3,
-        "sosfanta.com": 0.05
+        "sosfanta.com": 0.45
       },
-      "scarto": 0.55
+      "scarto": 0.3
+    },
+    "2529": {
+      "nome": "Mkhitaryan",
+      "squadra": "inter",
+      "confidence": 0.462,
+      "fonti": [
+        "fantacalcio.it",
+        "gazzetta.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 3,
+      "valori": {
+        "fantacalcio.it": 0.6,
+        "gazzetta.it": 0.3,
+        "sosfanta.com": 0.45
+      },
+      "scarto": 0.3
+    },
+    "152": {
+      "nome": "Zielinski",
+      "squadra": "inter",
+      "confidence": 0.454,
+      "fonti": [
+        "fantacalcio.it",
+        "gazzetta.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 3,
+      "valori": {
+        "fantacalcio.it": 0.5,
+        "gazzetta.it": 0.3,
+        "sosfanta.com": 0.55
+      },
+      "scarto": 0.25
     },
     "5301": {
       "nome": "Luis Henrique",
