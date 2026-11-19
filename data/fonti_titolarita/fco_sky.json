@@ -1,6 +1,6 @@
 {
  "fonte": "sky.it",
- "aggiornato": "2026-11-18T23:53:50.077352+00:00",
+ "aggiornato": "2026-11-19T15:07:08.149757+00:00",
  "giornata": 12,
  "via": "fantacalcio-online.com",
  "giocatori": {
@@ -23,8 +23,8 @@
   "7012": {
    "nome": "Provstgaard",
    "squadra": "lazio",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.3,
+   "percentuale": 30,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -103,8 +103,8 @@
   "6320": {
    "nome": "Doekhi",
    "squadra": "lazio",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -388,11 +388,11 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "7412": {
-   "nome": "Milla",
+  "6678": {
+   "nome": "Liberali",
    "squadra": "como",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -484,11 +484,11 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "6678": {
-   "nome": "Liberali",
+  "7412": {
+   "nome": "Milla",
    "squadra": "como",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.3,
+   "percentuale": 30,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -863,21 +863,13 @@
   "309": {
    "nome": "Dybala",
    "squadra": "roma",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
-  "5585": {
-   "nome": "Malen",
-   "squadra": "roma",
    "confidence": 0.9,
    "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "5734": {
-   "nome": "Soulè",
+  "5585": {
+   "nome": "Malen",
    "squadra": "roma",
    "confidence": 0.9,
    "percentuale": 90,
@@ -956,19 +948,27 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "5734": {
+   "nome": "Soulè",
+   "squadra": "roma",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
   "572": {
    "nome": "Meret",
    "squadra": "napoli",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.3,
+   "percentuale": 30,
    "match_score": 1.0,
    "lista": "titolare"
   },
   "6202": {
    "nome": "Beukema",
    "squadra": "napoli",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.3,
+   "percentuale": 30,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -991,13 +991,21 @@
   "4220": {
    "nome": "Zambo Anguissa",
    "squadra": "napoli",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.3,
+   "percentuale": 30,
    "match_score": 1.0,
    "lista": "titolare"
   },
   "2517": {
    "nome": "De Bruyne",
+   "squadra": "napoli",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "5131": {
+   "nome": "Gilmour",
    "squadra": "napoli",
    "confidence": 0.9,
    "percentuale": 90,
@@ -1012,8 +1020,8 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "5840": {
-   "nome": "Olivera",
+  "7223": {
+   "nome": "Vergara",
    "squadra": "napoli",
    "confidence": 0.9,
    "percentuale": 90,
@@ -1028,14 +1036,6 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "7120": {
-   "nome": "Lang",
-   "squadra": "napoli",
-   "confidence": 0.9,
-   "percentuale": 90,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
   "536": {
    "nome": "Politano",
    "squadra": "napoli",
@@ -1044,51 +1044,27 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "2845": {
-   "nome": "Contini",
-   "squadra": "napoli",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "2170": {
    "nome": "Milinkovic-Savic V.",
    "squadra": "napoli",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "panchina"
   },
   "6809": {
    "nome": "Marianucci",
    "squadra": "napoli",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "7563": {
-   "nome": "Favasuli",
+  "5840": {
+   "nome": "Olivera",
    "squadra": "napoli",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "5131": {
-   "nome": "Gilmour",
-   "squadra": "napoli",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "7223": {
-   "nome": "Vergara",
-   "squadra": "napoli",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1097,6 +1073,14 @@
    "squadra": "napoli",
    "confidence": 0.3,
    "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "7120": {
+   "nome": "Lang",
+   "squadra": "napoli",
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1414,6 +1398,14 @@
   },
   "6884": {
    "nome": "Conceicao",
+   "squadra": "juventus",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "5761": {
+   "nome": "Zhegrova",
    "squadra": "juventus",
    "confidence": 0.3,
    "percentuale": 30,
@@ -1975,8 +1967,8 @@
   "7483": {
    "nome": "Alhassane",
    "squadra": "bologna",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -2030,6 +2022,14 @@
   },
   "184": {
    "nome": "Bernardeschi",
+   "squadra": "bologna",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "2765": {
+   "nome": "Odgaard",
    "squadra": "bologna",
    "confidence": 0.9,
    "percentuale": 90,
@@ -2119,16 +2119,16 @@
   "6833": {
    "nome": "Mbangula",
    "squadra": "bologna",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.3,
+   "percentuale": 30,
    "match_score": 1.0,
    "lista": "panchina"
   },
   "4359": {
    "nome": "Piccoli",
    "squadra": "bologna",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.3,
+   "percentuale": 30,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -2326,6 +2326,14 @@
   },
   "5833": {
    "nome": "Gila",
+   "squadra": "milan",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "5022": {
+   "nome": "Pavlovic",
    "squadra": "milan",
    "confidence": 0.9,
    "percentuale": 90,
@@ -3156,6 +3164,14 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
+  "7625": {
+   "nome": "Goncalves P.",
+   "squadra": "fiorentina",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
   "7175": {
    "nome": "Joao Mario",
    "squadra": "fiorentina",
@@ -3177,14 +3193,6 @@
    "squadra": "fiorentina",
    "confidence": 0.9,
    "percentuale": 90,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
-  "7464": {
-   "nome": "Oulai",
-   "squadra": "fiorentina",
-   "confidence": 0.3,
-   "percentuale": 30,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -3252,11 +3260,11 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "7625": {
-   "nome": "Goncalves P.",
+  "7464": {
+   "nome": "Oulai",
    "squadra": "fiorentina",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.3,
+   "percentuale": 30,
    "match_score": 1.0,
    "lista": "panchina"
   },
