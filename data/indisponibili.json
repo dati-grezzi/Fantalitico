@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-11-20T14:47:56.213215+00:00",
+  "aggiornato": "2026-11-20T23:41:51.820120+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -26,13 +26,6 @@
           "match_score": 1.0
         },
         {
-          "nome": "Gaetano",
-          "dettaglio": "Distrazione di medio grado ai muscoli adduttori della coscia destra, in dubbio per la 14a",
-          "rientro_giornata": 14,
-          "id": "4364",
-          "match_score": 1.0
-        },
-        {
           "nome": "Pompei",
           "dettaglio": "Frattura della falange intermedia della mano destra, in dubbio per la 14a",
           "rientro_giornata": 14,
@@ -46,17 +39,17 @@
     "bologna": {
       "infortunati": [
         {
-          "nome": "De Silvestri",
-          "dettaglio": "Risentimento muscolare ai flessori della coscia sinistra, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "487",
-          "match_score": 1.0
-        },
-        {
           "nome": "Enem",
           "dettaglio": "Problema al tendine d'Achille, in dubbio per la 12a",
           "rientro_giornata": 12,
           "id": "7627",
+          "match_score": 1.0
+        },
+        {
+          "nome": "El Azzouzi O.",
+          "dettaglio": "Lesione all’adduttore della coscia sinistra, in dubbio per la 14a",
+          "rientro_giornata": 14,
+          "id": "6225",
           "match_score": 1.0
         },
         {
@@ -80,9 +73,23 @@
     "cagliari": {
       "infortunati": [
         {
+          "nome": "Liteta",
+          "dettaglio": "Problema al ginocchio, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "7165",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Mina",
+          "dettaglio": "Lesione muscolare, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "4210",
+          "match_score": 1.0
+        },
+        {
           "nome": "Winks",
-          "dettaglio": "Problema alla schiena, in dubbio per la 12a",
-          "rientro_giornata": 12,
+          "dettaglio": "Problema alla schiena, in dubbio per la 13a",
+          "rientro_giornata": 13,
           "id": "4260",
           "match_score": 1.0
         },
@@ -107,8 +114,8 @@
       "infortunati": [
         {
           "nome": "Addai",
-          "dettaglio": "Problema muscolare, in dubbio per la 12a",
-          "rientro_giornata": 12,
+          "dettaglio": "Problema muscolare, in dubbio per la 13a",
+          "rientro_giornata": 13,
           "id": "7127",
           "match_score": 1.0
         },
@@ -202,13 +209,6 @@
           "rientro_giornata": 14,
           "id": "6669",
           "match_score": 1.0
-        },
-        {
-          "nome": "Stankovic A.",
-          "dettaglio": "Lesione al muscolo adduttore della coscia destra, in dubbio per la 14a",
-          "rientro_giornata": 14,
-          "id": "6503",
-          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -249,6 +249,13 @@
           "dettaglio": "Lesione del legamento crociato anteriore del ginocchio destro, in dubbio per la 34a",
           "rientro_giornata": 34,
           "id": "7603",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Gonzalez N.",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "4179",
           "match_score": 1.0
         }
       ],
@@ -429,16 +436,9 @@
       "infortunati": [
         {
           "nome": "Drobnic",
-          "dettaglio": "Fascite plantare al piede sinistro, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "7615",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Diego Carlos",
-          "dettaglio": "Risentimento muscolare agli adduttori della coscia sinistra, in dubbio per la 13a",
+          "dettaglio": "Fascite plantare al piede sinistro, in dubbio per la 13a",
           "rientro_giornata": 13,
-          "id": "4137",
+          "id": "7615",
           "match_score": 1.0
         },
         {
@@ -535,10 +535,10 @@
     "udinese": {
       "infortunati": [
         {
-          "nome": "Zanoli",
-          "dettaglio": "Ricaduta, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "5527",
+          "nome": "Alaba",
+          "dettaglio": "Risentimento muscolare al polpaccio, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "2404",
           "match_score": 1.0
         },
         {
