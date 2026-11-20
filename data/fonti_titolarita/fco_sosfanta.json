@@ -1,9 +1,17 @@
 {
  "fonte": "sosfanta.com",
- "aggiornato": "2026-11-19T15:07:08.147705+00:00",
+ "aggiornato": "2026-11-20T00:24:15.419806+00:00",
  "giornata": 12,
  "via": "fantacalcio-online.com",
  "giocatori": {
+  "7012": {
+   "nome": "Provstgaard",
+   "squadra": "lazio",
+   "confidence": 0.49,
+   "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
   "7337": {
    "nome": "Motta",
    "squadra": "lazio",
@@ -17,14 +25,6 @@
    "squadra": "lazio",
    "confidence": 0.05,
    "percentuale": 5,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "6320": {
-   "nome": "Doekhi",
-   "squadra": "lazio",
-   "confidence": 0.45,
-   "percentuale": 45,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -172,14 +172,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "6678": {
-   "nome": "Liberali",
-   "squadra": "como",
-   "confidence": 0.49,
-   "percentuale": 49,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
   "6344": {
    "nome": "Sanchez Ro.",
    "squadra": "como",
@@ -241,6 +233,14 @@
    "squadra": "como",
    "confidence": 0.05,
    "percentuale": 5,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "6678": {
+   "nome": "Liberali",
+   "squadra": "como",
+   "confidence": 0.49,
+   "percentuale": 49,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -308,14 +308,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "7342": {
-   "nome": "Elphege",
-   "squadra": "parma",
-   "confidence": 0.49,
-   "percentuale": 49,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
   "6662": {
    "nome": "Corvi",
    "squadra": "parma",
@@ -364,6 +356,14 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "7342": {
+   "nome": "Elphege",
+   "squadra": "parma",
+   "confidence": 0.49,
+   "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
   "7213": {
    "nome": "Frigan",
    "squadra": "parma",
@@ -372,19 +372,19 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "5734": {
+   "nome": "Soulè",
+   "squadra": "roma",
+   "confidence": 0.49,
+   "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
   "610": {
    "nome": "Gollini",
    "squadra": "roma",
    "confidence": 0.4,
    "percentuale": 40,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "6125": {
-   "nome": "Vasquez D.",
-   "squadra": "roma",
-   "confidence": 0.05,
-   "percentuale": 5,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -444,22 +444,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "5734": {
-   "nome": "Soulè",
-   "squadra": "roma",
-   "confidence": 0.49,
-   "percentuale": 49,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "572": {
-   "nome": "Meret",
-   "squadra": "napoli",
-   "confidence": 0.49,
-   "percentuale": 49,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
   "6202": {
    "nome": "Beukema",
    "squadra": "napoli",
@@ -476,19 +460,27 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "7223": {
-   "nome": "Vergara",
-   "squadra": "napoli",
-   "confidence": 0.49,
-   "percentuale": 49,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
   "2845": {
    "nome": "Contini",
    "squadra": "napoli",
    "confidence": 0.05,
    "percentuale": 5,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "1852": {
+   "nome": "Spinazzola",
+   "squadra": "napoli",
+   "confidence": 0.05,
+   "percentuale": 5,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "7223": {
+   "nome": "Vergara",
+   "squadra": "napoli",
+   "confidence": 0.49,
+   "percentuale": 49,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -513,14 +505,6 @@
    "squadra": "torino",
    "confidence": 0.49,
    "percentuale": 49,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
-  "6170": {
-   "nome": "Gineitis",
-   "squadra": "torino",
-   "confidence": 0.05,
-   "percentuale": 5,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -561,6 +545,14 @@
    "squadra": "torino",
    "confidence": 0.49,
    "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "6170": {
+   "nome": "Gineitis",
+   "squadra": "torino",
+   "confidence": 0.05,
+   "percentuale": 5,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -892,6 +884,14 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "5514": {
+   "nome": "Vasquez",
+   "squadra": "genoa",
+   "confidence": 0.95,
+   "percentuale": 95,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
   "219": {
    "nome": "Sommariva",
    "squadra": "genoa",
@@ -1188,19 +1188,19 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "6813": {
-   "nome": "Torriani",
-   "squadra": "milan",
-   "confidence": 0.45,
-   "percentuale": 45,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "6496": {
    "nome": "Bartesaghi",
    "squadra": "milan",
    "confidence": 0.49,
    "percentuale": 49,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "6813": {
+   "nome": "Torriani",
+   "squadra": "milan",
+   "confidence": 0.45,
+   "percentuale": 45,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1255,8 +1255,8 @@
   "6618": {
    "nome": "Cissè A.",
    "squadra": "milan",
-   "confidence": 0.4,
-   "percentuale": 40,
+   "confidence": 0.2,
+   "percentuale": 20,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1356,6 +1356,14 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "2077": {
+   "nome": "Pasalic",
+   "squadra": "atalanta",
+   "confidence": 0.4,
+   "percentuale": 40,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
   "4": {
    "nome": "Sportiello",
    "squadra": "atalanta",
@@ -1366,14 +1374,6 @@
   },
   "7633": {
    "nome": "Obric",
-   "squadra": "atalanta",
-   "confidence": 0.05,
-   "percentuale": 5,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "2077": {
-   "nome": "Pasalic",
    "squadra": "atalanta",
    "confidence": 0.05,
    "percentuale": 5,
@@ -1492,14 +1492,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "5838": {
-   "nome": "Birindelli",
-   "squadra": "monza",
-   "confidence": 0.49,
-   "percentuale": 49,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
   "7546": {
    "nome": "Robinson J.",
    "squadra": "monza",
@@ -1553,6 +1545,14 @@
    "squadra": "monza",
    "confidence": 0.05,
    "percentuale": 5,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "5838": {
+   "nome": "Birindelli",
+   "squadra": "monza",
+   "confidence": 0.49,
+   "percentuale": 49,
    "match_score": 1.0,
    "lista": "panchina"
   },
