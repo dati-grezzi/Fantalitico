@@ -1,16 +1,9 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-11-22T13:57:03.100845+00:00",
+  "aggiornato": "2026-11-22T23:15:37.366670+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
-        {
-          "nome": "Kristensen T.",
-          "dettaglio": "Distrazione di basso grado ai muscoli flessori della coscia sinistra, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "6485",
-          "match_score": 1.0
-        },
         {
           "nome": "Hien",
           "dettaglio": "Fuori per una lesione del tendine prossimale del muscolo semimembranoso della coscia sinistra, in dubbio per la 13a",
@@ -40,8 +33,8 @@
       "infortunati": [
         {
           "nome": "Enem",
-          "dettaglio": "Problema al tendine d'Achille, in dubbio per la 12a",
-          "rientro_giornata": 12,
+          "dettaglio": "Problema al tendine d'Achille, in dubbio per la 13a",
+          "rientro_giornata": 13,
           "id": "7627",
           "match_score": 1.0
         },
@@ -148,8 +141,8 @@
       "infortunati": [
         {
           "nome": "Pongracic",
-          "dettaglio": "Lesione mio-fasciale a carico del capo lungo del bicipite femorale della coscia destra, in dubbio per la 12a",
-          "rientro_giornata": 12,
+          "dettaglio": "Lesione mio-fasciale a carico del capo lungo del bicipite femorale della coscia destra, in dubbio per la 13a",
+          "rientro_giornata": 13,
           "id": "5603",
           "match_score": 1.0
         },
@@ -191,7 +184,22 @@
       "diffidati": []
     },
     "genoa": {
-      "infortunati": [],
+      "infortunati": [
+        {
+          "nome": "Havel",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "7453",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Robinho Junior",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "7622",
+          "match_score": 1.0
+        }
+      ],
       "squalificati": [],
       "diffidati": [
         {
@@ -203,6 +211,13 @@
     },
     "inter": {
       "infortunati": [
+        {
+          "nome": "Zielinski",
+          "dettaglio": "Problema alla pianta del piede, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "152",
+          "match_score": 1.0
+        },
         {
           "nome": "Bonny",
           "dettaglio": "Risentimento muscolare ai flessori della coscia destra, in dubbio per la 14a",
@@ -368,16 +383,23 @@
       "infortunati": [
         {
           "nome": "Folorunsho",
-          "dettaglio": "Problema al polpaccio, in dubbio per la 12a",
-          "rientro_giornata": 12,
+          "dettaglio": "Problema al polpaccio, in dubbio per la 13a",
+          "rientro_giornata": 13,
           "id": "6252",
           "match_score": 1.0
         },
         {
           "nome": "Maye",
-          "dettaglio": "Problema fisico, in dubbio per la 12a",
-          "rientro_giornata": 12,
+          "dettaglio": "Problema fisico, in dubbio per la 13a",
+          "rientro_giornata": 13,
           "id": "7604",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Ngonge",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "6145",
           "match_score": 1.0
         }
       ],
@@ -430,8 +452,8 @@
         },
         {
           "nome": "Meret",
-          "dettaglio": "Frattura della quinta vertebra lombare, in dubbio per la 17a",
-          "rientro_giornata": 17,
+          "dettaglio": "Frattura della quinta vertebra lombare, in dubbio per la 24a",
+          "rientro_giornata": 24,
           "id": "572",
           "match_score": 1.0
         }
@@ -494,17 +516,17 @@
     "sassuolo": {
       "infortunati": [
         {
-          "nome": "Boloca",
-          "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per la 12a",
-          "rientro_giornata": 12,
-          "id": "6219",
-          "match_score": 1.0
-        },
-        {
           "nome": "Adzic",
           "dettaglio": "Problema al ginocchio, in dubbio per la 13a",
           "rientro_giornata": 13,
           "id": "6677",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Boloca",
+          "dettaglio": "Intervento chirurgico in artroscopia al ginocchio sinistro per la pulizia meniscale e l’applicazione di PRP, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "6219",
           "match_score": 1.0
         },
         {
@@ -535,13 +557,6 @@
     "udinese": {
       "infortunati": [
         {
-          "nome": "Alaba",
-          "dettaglio": "Risentimento muscolare al polpaccio, in dubbio per la 13a",
-          "rientro_giornata": 13,
-          "id": "2404",
-          "match_score": 1.0
-        },
-        {
           "nome": "Bertola",
           "dettaglio": "Lesione al muscolo semimembranoso della coscia destra, in dubbio per la 14a",
           "rientro_giornata": 14,
@@ -553,6 +568,20 @@
           "dettaglio": "Intervento chirurgico alla caviglia destra, in dubbio per la 17a",
           "rientro_giornata": 17,
           "id": "7272",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Davis K.",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "5637",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Ebosse",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "5994",
           "match_score": 1.0
         }
       ],
@@ -569,15 +598,15 @@
       "infortunati": [
         {
           "nome": "Adorante",
-          "dettaglio": "Operazione per un problema alla schiena, in dubbio per la 12a",
-          "rientro_giornata": 12,
+          "dettaglio": "Operazione per un problema alla schiena, in dubbio per la 13a",
+          "rientro_giornata": 13,
           "id": "4387",
           "match_score": 1.0
         },
         {
           "nome": "Sverko",
-          "dettaglio": "Infortunio alle anche, in dubbio per la 12a",
-          "rientro_giornata": 12,
+          "dettaglio": "Infortunio alle anche, in dubbio per la 13a",
+          "rientro_giornata": 13,
           "id": "6673",
           "match_score": 1.0
         },
@@ -586,6 +615,27 @@
           "dettaglio": "Intervento chirurgico per una lussazione acromion-claveare, in dubbio per la 15a",
           "rientro_giornata": 15,
           "id": "7478",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Basic",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "5674",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Correia T.",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "4845",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Mazzocchi",
+          "dettaglio": "",
+          "rientro_giornata": null,
+          "id": "5481",
           "match_score": 1.0
         }
       ],
