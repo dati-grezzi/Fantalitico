@@ -1,5 +1,5 @@
 {
-  "aggiornato": "2026-11-22T23:15:49.728868+00:00",
+  "aggiornato": "2026-11-23T17:10:59.175094+00:00",
   "fonti_usate": [
     "fantacalcio.it",
     "gazzetta.it",
@@ -7107,7 +7107,7 @@
     "7574": {
       "nome": "Foe Ondoa",
       "squadra": "monza",
-      "confidence": 0.596,
+      "confidence": 0.568,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -7119,7 +7119,7 @@
         "fantacalcio.it": 0.75,
         "gazzetta.it": 0.3,
         "sky.it": 0.9,
-        "sosfanta.com": 0.51
+        "sosfanta.com": 0.4
       },
       "scarto": 0.6
     },
@@ -7217,7 +7217,7 @@
     "4485": {
       "nome": "Thiam",
       "squadra": "monza",
-      "confidence": 0.155,
+      "confidence": 0.284,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -7229,9 +7229,9 @@
         "fantacalcio.it": 0.05,
         "gazzetta.it": 0.3,
         "sky.it": 0.3,
-        "sosfanta.com": 0.05
+        "sosfanta.com": 0.55
       },
-      "scarto": 0.25
+      "scarto": 0.5
     },
     "7475": {
       "nome": "Strajnar",
@@ -7768,7 +7768,7 @@
     "4378": {
       "nome": "Ranieri L.",
       "squadra": "fiorentina",
-      "confidence": 0.332,
+      "confidence": 0.451,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -7780,9 +7780,9 @@
         "fantacalcio.it": 0.4,
         "gazzetta.it": 0.55,
         "sky.it": 0.3,
-        "sosfanta.com": 0.05
+        "sosfanta.com": 0.51
       },
-      "scarto": 0.5
+      "scarto": 0.25
     },
     "7464": {
       "nome": "Oulai",
@@ -7863,7 +7863,7 @@
     "7623": {
       "nome": "Gnonto",
       "squadra": "fiorentina",
-      "confidence": 0.423,
+      "confidence": 0.428,
       "fonti": [
         "fantacalcio.it",
         "gazzetta.it",
@@ -7875,9 +7875,47 @@
         "fantacalcio.it": 0.45,
         "gazzetta.it": 0.4,
         "sky.it": 0.3,
-        "sosfanta.com": 0.49
+        "sosfanta.com": 0.51
       },
-      "scarto": 0.19
+      "scarto": 0.21
+    },
+    "5880": {
+      "nome": "Ciurria",
+      "squadra": "monza",
+      "confidence": 0.203,
+      "fonti": [
+        "fantacalcio.it",
+        "gazzetta.it",
+        "sky.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 4,
+      "valori": {
+        "fantacalcio.it": 0.2,
+        "gazzetta.it": 0.3,
+        "sky.it": 0.3,
+        "sosfanta.com": 0.05
+      },
+      "scarto": 0.25
+    },
+    "6145": {
+      "nome": "Ngonge",
+      "squadra": "monza",
+      "confidence": 0.406,
+      "fonti": [
+        "fantacalcio.it",
+        "gazzetta.it",
+        "sky.it",
+        "sosfanta.com"
+      ],
+      "n_fonti": 4,
+      "valori": {
+        "fantacalcio.it": 0.55,
+        "gazzetta.it": 0.3,
+        "sky.it": 0.3,
+        "sosfanta.com": 0.4
+      },
+      "scarto": 0.25
     },
     "7453": {
       "nome": "Havel",
@@ -7992,44 +8030,6 @@
         "sosfanta.com": 0.05
       },
       "scarto": 0.35
-    },
-    "5880": {
-      "nome": "Ciurria",
-      "squadra": "monza",
-      "confidence": 0.203,
-      "fonti": [
-        "fantacalcio.it",
-        "gazzetta.it",
-        "sky.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 4,
-      "valori": {
-        "fantacalcio.it": 0.2,
-        "gazzetta.it": 0.3,
-        "sky.it": 0.3,
-        "sosfanta.com": 0.05
-      },
-      "scarto": 0.25
-    },
-    "6145": {
-      "nome": "Ngonge",
-      "squadra": "monza",
-      "confidence": 0.406,
-      "fonti": [
-        "fantacalcio.it",
-        "gazzetta.it",
-        "sky.it",
-        "sosfanta.com"
-      ],
-      "n_fonti": 4,
-      "valori": {
-        "fantacalcio.it": 0.55,
-        "gazzetta.it": 0.3,
-        "sky.it": 0.3,
-        "sosfanta.com": 0.4
-      },
-      "scarto": 0.25
     },
     "252": {
       "nome": "Biraghi",
