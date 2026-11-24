@@ -1,6 +1,6 @@
 {
   "fonte": "sosfanta.com",
-  "aggiornato": "2026-11-23T17:10:46.105518+00:00",
+  "aggiornato": "2026-11-24T03:53:43.341057+00:00",
   "squadre": {
     "atalanta": {
       "infortunati": [
@@ -23,6 +23,13 @@
           "dettaglio": "Frattura della falange intermedia della mano destra, in dubbio per la 14a",
           "rientro_giornata": 14,
           "id": "7626",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Carnesecchi",
+          "dettaglio": "Intervento chirurgico di regolarizzazione della lesione del menisco mediale del ginocchio sinistro, in dubbio per la 17a",
+          "rientro_giornata": 17,
+          "id": "4431",
           "match_score": 1.0
         }
       ],
@@ -53,6 +60,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Happonen",
+          "dettaglio": "Trauma distorsivo del quinto dito della mano sinistra, in dubbio per la 15a",
+          "rientro_giornata": 15,
+          "id": "7533",
+          "match_score": 1.0
+        },
+        {
           "nome": "Holm",
           "dettaglio": "Intervento chirurgico di sutura del tendine degli hamstring della coscia destra, tempi di recupero previsti di 4-6 mesi dal 1 ottobre",
           "rientro_giornata": null,
@@ -66,10 +80,10 @@
     "cagliari": {
       "infortunati": [
         {
-          "nome": "Liteta",
+          "nome": "Mendy P.",
           "dettaglio": "Problema al ginocchio, in dubbio per la 13a",
           "rientro_giornata": 13,
-          "id": "7165",
+          "id": "7374",
           "match_score": 1.0
         },
         {
@@ -84,6 +98,13 @@
           "dettaglio": "Problema alla schiena, in dubbio per la 13a",
           "rientro_giornata": 13,
           "id": "4260",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Liteta",
+          "dettaglio": "Severa distorsione dell’articolazione, con lesione parziale del legamento collaterale mediale e interessamento del legamento crociato anteriore, tempi da definire",
+          "rientro_giornata": null,
+          "id": "7165",
           "match_score": 1.0
         },
         {
@@ -110,6 +131,13 @@
           "dettaglio": "Problema muscolare, in dubbio per la 13a",
           "rientro_giornata": 13,
           "id": "7127",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Caqueret",
+          "dettaglio": "Problema muscolare, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "5036",
           "match_score": 1.0
         },
         {
@@ -147,6 +175,13 @@
           "match_score": 1.0
         },
         {
+          "nome": "Viery",
+          "dettaglio": "Problema muscolare, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "7410",
+          "match_score": 1.0
+        },
+        {
           "nome": "Parisi",
           "dettaglio": "Intervento chirurgico per la lesione del legamento crociato anteriore del ginocchio destro, in dubbio per la 15a",
           "rientro_giornata": 15,
@@ -172,31 +207,32 @@
           "rientro_giornata": 14,
           "id": "5436",
           "match_score": 1.0
-        }
-      ],
-      "squalificati": [
+        },
         {
-          "nome": "Bracaglia",
-          "id": "7469",
+          "nome": "Birligea",
+          "dettaglio": "Lesione del bicipite femorale destro, in dubbio per la 15a",
+          "rientro_giornata": 15,
+          "id": "7610",
           "match_score": 1.0
         }
       ],
+      "squalificati": [],
       "diffidati": []
     },
     "genoa": {
       "infortunati": [
         {
           "nome": "Havel",
-          "dettaglio": "",
-          "rientro_giornata": null,
+          "dettaglio": "Problema fisico, in dubbio per la 13a",
+          "rientro_giornata": 13,
           "id": "7453",
           "match_score": 1.0
         },
         {
-          "nome": "Robinho Junior",
-          "dettaglio": "",
+          "nome": "Colombo",
+          "dettaglio": "Lesione del legamento crociato anteriore del ginocchio destro, stagione finita",
           "rientro_giornata": null,
-          "id": "7622",
+          "id": "4923",
           "match_score": 1.0
         }
       ],
@@ -224,6 +260,13 @@
           "rientro_giornata": 14,
           "id": "6669",
           "match_score": 1.0
+        },
+        {
+          "nome": "Calhanoglu",
+          "dettaglio": "Problema al flessore della coscia destra, in dubbio per la 14a",
+          "rientro_giornata": 14,
+          "id": "2194",
+          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -231,6 +274,13 @@
     },
     "juventus": {
       "infortunati": [
+        {
+          "nome": "Gonzalez N.",
+          "dettaglio": "Lesione di basso grado al muscolo soleo della gamba destra, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "4179",
+          "match_score": 1.0
+        },
         {
           "nome": "Kalulu",
           "dettaglio": "Lesione di basso grado del bicipite femorale sinistro, in dubbio per la 13a",
@@ -264,13 +314,6 @@
           "dettaglio": "Lesione del legamento crociato anteriore del ginocchio destro, in dubbio per la 34a",
           "rientro_giornata": 34,
           "id": "7603",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Gonzalez N.",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "4179",
           "match_score": 1.0
         }
       ],
@@ -335,8 +378,8 @@
       "infortunati": [
         {
           "nome": "Terracciano",
-          "dettaglio": "Trauma alla spalla destra, in dubbio per la 12a",
-          "rientro_giornata": 12,
+          "dettaglio": "Trauma alla spalla destra, in dubbio per la 13a",
+          "rientro_giornata": 13,
           "id": "5812",
           "match_score": 1.0
         },
@@ -382,6 +425,13 @@
     "monza": {
       "infortunati": [
         {
+          "nome": "Ciurria",
+          "dettaglio": "Problema fisico, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "5880",
+          "match_score": 1.0
+        },
+        {
           "nome": "Folorunsho",
           "dettaglio": "Problema al polpaccio, in dubbio per la 13a",
           "rientro_giornata": 13,
@@ -397,8 +447,8 @@
         },
         {
           "nome": "Ngonge",
-          "dettaglio": "",
-          "rientro_giornata": null,
+          "dettaglio": "Problema fisico, in dubbio per la 13a",
+          "rientro_giornata": 13,
           "id": "6145",
           "match_score": 1.0
         }
@@ -408,27 +458,6 @@
     },
     "napoli": {
       "infortunati": [
-        {
-          "nome": "Badiashile",
-          "dettaglio": "Lesione distrattiva di medio grado del retto femorale destro, in dubbio per la 13a",
-          "rientro_giornata": 13,
-          "id": "4664",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Di Lorenzo",
-          "dettaglio": "Lesione distrattiva del muscolo adduttore lungo della coscia sinistra, in dubbio per la 13a",
-          "rientro_giornata": 13,
-          "id": "2816",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Neres",
-          "dettaglio": "Ritardo di condizione, in dubbio per la 13a",
-          "rientro_giornata": 13,
-          "id": "6831",
-          "match_score": 1.0
-        },
         {
           "nome": "Santos A.",
           "dettaglio": "Lesione distrattiva di medio grado del bicipite femorale sinistro, in dubbio per la 14a",
@@ -456,6 +485,13 @@
           "rientro_giornata": 24,
           "id": "572",
           "match_score": 1.0
+        },
+        {
+          "nome": "Vergara",
+          "dettaglio": "Lesione di alto grado del bicipite femorale della coscia sinistra, in dubbio per la 24a",
+          "rientro_giornata": 24,
+          "id": "7223",
+          "match_score": 1.0
         }
       ],
       "squalificati": [],
@@ -478,13 +514,7 @@
           "match_score": 1.0
         }
       ],
-      "squalificati": [
-        {
-          "nome": "Ndiaye",
-          "id": "7202",
-          "match_score": 1.0
-        }
-      ],
+      "squalificati": [],
       "diffidati": [
         {
           "nome": "Troilo",
@@ -516,10 +546,10 @@
     "sassuolo": {
       "infortunati": [
         {
-          "nome": "Adzic",
-          "dettaglio": "Problema al ginocchio, in dubbio per la 13a",
+          "nome": "Bakola",
+          "dettaglio": "Problema fisico, in dubbio per la 13a",
           "rientro_giornata": 13,
-          "id": "6677",
+          "id": "7036",
           "match_score": 1.0
         },
         {
@@ -534,6 +564,13 @@
           "dettaglio": "Problema muscolare, in dubbio per la 13a",
           "rientro_giornata": 13,
           "id": "5735",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Adzic",
+          "dettaglio": "Problema al ginocchio, in dubbio per la 14a",
+          "rientro_giornata": 14,
+          "id": "6677",
           "match_score": 1.0
         },
         {
@@ -554,8 +591,49 @@
       "squalificati": [],
       "diffidati": []
     },
+    "torino": {
+      "infortunati": [
+        {
+          "nome": "Belghali",
+          "dettaglio": "Infiammazione al ginocchio, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "7220",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Biraghi",
+          "dettaglio": "Affaticamento al flessore, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "252",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Ismajli",
+          "dettaglio": "Distrazione di basso grado agli adduttori della coscia sinistra e frattura alla mano destra, in dubbio per la 15a",
+          "rientro_giornata": 15,
+          "id": "5010",
+          "match_score": 1.0
+        }
+      ],
+      "squalificati": [],
+      "diffidati": []
+    },
     "udinese": {
       "infortunati": [
+        {
+          "nome": "Davis K.",
+          "dettaglio": "Problema muscolare, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "5637",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Ebosse",
+          "dettaglio": "Problema alla caviglia, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "5994",
+          "match_score": 1.0
+        },
         {
           "nome": "Bertola",
           "dettaglio": "Lesione al muscolo semimembranoso della coscia destra, in dubbio per la 14a",
@@ -568,20 +646,6 @@
           "dettaglio": "Intervento chirurgico alla caviglia destra, in dubbio per la 17a",
           "rientro_giornata": 17,
           "id": "7272",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Davis K.",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "5637",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Ebosse",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "5994",
           "match_score": 1.0
         }
       ],
@@ -604,6 +668,27 @@
           "match_score": 1.0
         },
         {
+          "nome": "Basic",
+          "dettaglio": "Affaticamento muscolare, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "5674",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Correia T.",
+          "dettaglio": "Risentimento muscolare, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "4845",
+          "match_score": 1.0
+        },
+        {
+          "nome": "Mazzocchi",
+          "dettaglio": "Risentimento muscolare, in dubbio per la 13a",
+          "rientro_giornata": 13,
+          "id": "5481",
+          "match_score": 1.0
+        },
+        {
           "nome": "Sverko",
           "dettaglio": "Infortunio alle anche, in dubbio per la 13a",
           "rientro_giornata": 13,
@@ -615,27 +700,6 @@
           "dettaglio": "Intervento chirurgico per una lussazione acromion-claveare, in dubbio per la 15a",
           "rientro_giornata": 15,
           "id": "7478",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Basic",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "5674",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Correia T.",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "4845",
-          "match_score": 1.0
-        },
-        {
-          "nome": "Mazzocchi",
-          "dettaglio": "",
-          "rientro_giornata": null,
-          "id": "5481",
           "match_score": 1.0
         }
       ],
