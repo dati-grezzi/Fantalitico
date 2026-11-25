@@ -1,6 +1,6 @@
 {
  "fonte": "gazzetta.it",
- "aggiornato": "2026-11-25T01:56:14.540116+00:00",
+ "aggiornato": "2026-11-25T16:41:45.568895+00:00",
  "giornata": 13,
  "via": "fantacalcio-online.com",
  "giocatori": {
@@ -399,8 +399,8 @@
   "6917": {
    "nome": "Masini",
    "squadra": "frosinone",
-   "confidence": 0.6,
-   "percentuale": 60,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -415,8 +415,8 @@
   "7612": {
    "nome": "Bobcek",
    "squadra": "frosinone",
-   "confidence": 0.6,
-   "percentuale": 60,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -492,19 +492,11 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "4375": {
-   "nome": "Terzic",
-   "squadra": "frosinone",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "7473": {
    "nome": "Cichella",
    "squadra": "frosinone",
-   "confidence": 0.4,
-   "percentuale": 40,
+   "confidence": 0.3,
+   "percentuale": 30,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -719,8 +711,8 @@
   "7526": {
    "nome": "Comert",
    "squadra": "torino",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -787,6 +779,14 @@
    "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
+  },
+  "2103": {
+   "nome": "Pellegri",
+   "squadra": "torino",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
   },
   "7457": {
    "nome": "Mascardi",
@@ -1223,16 +1223,16 @@
   "6660": {
    "nome": "Marcandalli",
    "squadra": "genoa",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.4,
+   "percentuale": 40,
    "match_score": 1.0,
    "lista": "titolare"
   },
   "5750": {
    "nome": "Ostigard",
    "squadra": "genoa",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.6,
+   "percentuale": 60,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -3164,6 +3164,14 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
+  "7662": {
+   "nome": "Grandu",
+   "squadra": "cagliari",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
   "7311": {
    "nome": "Romano",
    "squadra": "cagliari",
@@ -3364,14 +3372,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "6496": {
-   "nome": "Bartesaghi",
-   "squadra": "milan",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "5273": {
    "nome": "Estupinan",
    "squadra": "milan",
@@ -3406,14 +3406,6 @@
   },
   "5812": {
    "nome": "Terracciano F.",
-   "squadra": "milan",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "6519": {
-   "nome": "Camarda",
    "squadra": "milan",
    "confidence": 0.3,
    "percentuale": 30,
