@@ -1,6 +1,6 @@
 {
  "fonte": "gazzetta.it",
- "aggiornato": "2026-11-25T16:41:45.568895+00:00",
+ "aggiornato": "2026-11-26T01:35:20.750971+00:00",
  "giornata": 13,
  "via": "fantacalcio-online.com",
  "giocatori": {
@@ -47,16 +47,16 @@
   "5507": {
    "nome": "Busio",
    "squadra": "venezia",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.4,
+   "percentuale": 40,
    "match_score": 1.0,
    "lista": "titolare"
   },
   "5695": {
    "nome": "Haps",
    "squadra": "venezia",
-   "confidence": 0.6,
-   "percentuale": 60,
+   "confidence": 0.4,
+   "percentuale": 40,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -1060,14 +1060,6 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "2120": {
-   "nome": "Bastoni",
-   "squadra": "inter",
-   "confidence": 0.9,
-   "percentuale": 90,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
   "6217": {
    "nome": "Bisseck",
    "squadra": "inter",
@@ -1113,6 +1105,14 @@
    "squadra": "inter",
    "confidence": 0.9,
    "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
+  "7071": {
+   "nome": "Esposito F.P.",
+   "squadra": "inter",
+   "confidence": 0.45,
+   "percentuale": 45,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -1204,14 +1204,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "7071": {
-   "nome": "Esposito F.P.",
-   "squadra": "inter",
-   "confidence": 0.45,
-   "percentuale": 45,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "7332": {
    "nome": "Bijlow",
    "squadra": "genoa",
@@ -1223,16 +1215,16 @@
   "6660": {
    "nome": "Marcandalli",
    "squadra": "genoa",
-   "confidence": 0.4,
-   "percentuale": 40,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
   "5750": {
    "nome": "Ostigard",
    "squadra": "genoa",
-   "confidence": 0.6,
-   "percentuale": 60,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -1876,14 +1868,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "7156": {
-   "nome": "Pieragnolo",
-   "squadra": "sassuolo",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "6896": {
    "nome": "Van Der Brempt",
    "squadra": "sassuolo",
@@ -2108,6 +2092,14 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
+  "4998": {
+   "nome": "Molina N.",
+   "squadra": "roma",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
   "7181": {
    "nome": "Wesley",
    "squadra": "roma",
@@ -2129,14 +2121,6 @@
    "squadra": "roma",
    "confidence": 0.9,
    "percentuale": 90,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
-  "5734": {
-   "nome": "Soulè",
-   "squadra": "roma",
-   "confidence": 0.3,
-   "percentuale": 30,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -2196,14 +2180,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "4998": {
-   "nome": "Molina N.",
-   "squadra": "roma",
-   "confidence": 0.9,
-   "percentuale": 90,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "6190": {
    "nome": "Pisilli",
    "squadra": "roma",
@@ -2214,6 +2190,14 @@
   },
   "6572": {
    "nome": "Castro S.",
+   "squadra": "roma",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "5734": {
+   "nome": "Soulè",
    "squadra": "roma",
    "confidence": 0.3,
    "percentuale": 30,
@@ -2420,16 +2404,16 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "6727": {
-   "nome": "Couto",
+  "5641": {
+   "nome": "Chalobah T.",
    "squadra": "como",
    "confidence": 0.9,
    "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "6893": {
-   "nome": "Kempf",
+  "6727": {
+   "nome": "Couto",
    "squadra": "como",
    "confidence": 0.9,
    "percentuale": 90,
@@ -2516,14 +2500,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "5641": {
-   "nome": "Chalobah T.",
-   "squadra": "como",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "418": {
    "nome": "Goldaniga",
    "squadra": "como",
@@ -2542,6 +2518,14 @@
   },
   "6601": {
    "nome": "Kambwala",
+   "squadra": "como",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "6893": {
+   "nome": "Kempf",
    "squadra": "como",
    "confidence": 0.3,
    "percentuale": 30,
