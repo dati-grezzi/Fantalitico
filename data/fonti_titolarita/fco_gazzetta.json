@@ -1,6 +1,6 @@
 {
  "fonte": "gazzetta.it",
- "aggiornato": "2026-11-26T01:35:20.750971+00:00",
+ "aggiornato": "2026-11-26T16:15:30.875830+00:00",
  "giornata": 13,
  "via": "fantacalcio-online.com",
  "giocatori": {
@@ -116,6 +116,14 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "5674": {
+   "nome": "Basic",
+   "squadra": "venezia",
+   "confidence": 0.6,
+   "percentuale": 60,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
   "7481": {
    "nome": "Dagasso",
    "squadra": "venezia",
@@ -137,6 +145,14 @@
    "squadra": "venezia",
    "confidence": 0.3,
    "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "5481": {
+   "nome": "Mazzocchi",
+   "squadra": "venezia",
+   "confidence": 0.6,
+   "percentuale": 60,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -281,14 +297,6 @@
    "squadra": "bologna",
    "confidence": 0.9,
    "percentuale": 90,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "487": {
-   "nome": "De Silvestri",
-   "squadra": "bologna",
-   "confidence": 0.3,
-   "percentuale": 30,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1079,8 +1087,8 @@
   "5877": {
    "nome": "Carlos Augusto",
    "squadra": "inter",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -1092,8 +1100,8 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "5982": {
-   "nome": "Spence",
+  "5172": {
+   "nome": "Jones C.",
    "squadra": "inter",
    "confidence": 0.9,
    "percentuale": 90,
@@ -1111,8 +1119,8 @@
   "7071": {
    "nome": "Esposito F.P.",
    "squadra": "inter",
-   "confidence": 0.45,
-   "percentuale": 45,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -1127,8 +1135,8 @@
   "4871": {
    "nome": "Thuram",
    "squadra": "inter",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.45,
+   "percentuale": 45,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -1167,16 +1175,8 @@
   "6274": {
    "nome": "Diouf",
    "squadra": "inter",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "5172": {
-   "nome": "Jones C.",
-   "squadra": "inter",
-   "confidence": 0.4,
-   "percentuale": 40,
+   "confidence": 0.45,
+   "percentuale": 45,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -1196,11 +1196,19 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
+  "5982": {
+   "nome": "Spence",
+   "squadra": "inter",
+   "confidence": 0.55,
+   "percentuale": 55,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
   "6503": {
    "nome": "Stankovic A.",
    "squadra": "inter",
-   "confidence": 0.6,
-   "percentuale": 60,
+   "confidence": 0.3,
+   "percentuale": 30,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -2204,19 +2212,11 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "4485": {
-   "nome": "Thiam",
+  "7301": {
+   "nome": "Tornqvist",
    "squadra": "monza",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "titolare"
-  },
-  "4925": {
-   "nome": "Carboni A.",
-   "squadra": "monza",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -2276,6 +2276,14 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
+  "7146": {
+   "nome": "Tourè I.",
+   "squadra": "monza",
+   "confidence": 0.9,
+   "percentuale": 90,
+   "match_score": 1.0,
+   "lista": "titolare"
+  },
   "7546": {
    "nome": "Robinson J.",
    "squadra": "monza",
@@ -2300,16 +2308,24 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "7301": {
-   "nome": "Tornqvist",
+  "4485": {
+   "nome": "Thiam",
    "squadra": "monza",
-   "confidence": 0.9,
-   "percentuale": 90,
+   "confidence": 0.3,
+   "percentuale": 30,
    "match_score": 1.0,
    "lista": "panchina"
   },
   "5399": {
    "nome": "Antov",
+   "squadra": "monza",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "4925": {
+   "nome": "Carboni A.",
    "squadra": "monza",
    "confidence": 0.3,
    "percentuale": 30,
@@ -2369,14 +2385,6 @@
    "squadra": "monza",
    "confidence": 0.3,
    "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
-  "7146": {
-   "nome": "Tourè I.",
-   "squadra": "monza",
-   "confidence": 0.9,
-   "percentuale": 90,
    "match_score": 1.0,
    "lista": "panchina"
   },
@@ -2900,14 +2908,6 @@
    "match_score": 1.0,
    "lista": "panchina"
   },
-  "6410": {
-   "nome": "Kaba",
-   "squadra": "lecce",
-   "confidence": 0.3,
-   "percentuale": 30,
-   "match_score": 1.0,
-   "lista": "panchina"
-  },
   "7619": {
    "nome": "Monteiro J.",
    "squadra": "lecce",
@@ -3132,19 +3132,19 @@
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "1871": {
-   "nome": "Deiola",
+  "4870": {
+   "nome": "Adopo",
    "squadra": "cagliari",
    "confidence": 0.9,
    "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
-  "6010": {
-   "nome": "Fazzini",
+  "1871": {
+   "nome": "Deiola",
    "squadra": "cagliari",
-   "confidence": 0.3,
-   "percentuale": 30,
+   "confidence": 0.9,
+   "percentuale": 90,
    "match_score": 1.0,
    "lista": "titolare"
   },
@@ -3214,6 +3214,14 @@
   },
   "6815": {
    "nome": "Fadera",
+   "squadra": "cagliari",
+   "confidence": 0.3,
+   "percentuale": 30,
+   "match_score": 1.0,
+   "lista": "panchina"
+  },
+  "6010": {
+   "nome": "Fazzini",
    "squadra": "cagliari",
    "confidence": 0.3,
    "percentuale": 30,
